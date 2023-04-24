@@ -1,45 +1,81 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Easy to Use 🤝",
+    img: "/img/features/microsoftstore.png",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        No need to compile shit. As a certified Microsoft Partner our Client
+        Application is officially available for everyone in{" "}
+        <a href="https://www.microsoft.com/en-us/p/crackpipe/9pmjlf08x8p0">
+          the Microsoft Store
+        </a>
+        .
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Your Platform - Your Rules 👑",
+    img: "/img/features/auth.png",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        No Cloud Bullshit. Everything is Selfhosted. It's your games and you can
+        decide who can download and play them.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Social Features 👥",
+    img: "/img/features/social.png",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Track your play times, keep up to date with what your friends are
+        playing and mark completed games as finished.
+      </>
+    ),
+  },
+  {
+    title: "Good Looking ✨",
+    img: "/img/features/library.png",
+    description: (
+      <>
+        Browse, Sort and Filter your game library using an epic user interface
+      </>
+    ),
+  },
+  {
+    title: "Enriched with Metadata 📜",
+    img: "/img/features/enrichments.png",
+    description: (
+      <>
+        Unlock the full power of Crackpipe and{" "}
+        <a href="https://rawg.io/login/?forward=developer">
+          sign up for a free RAWG API Key
+        </a>
+        . Enrich all your games with juicy metadata.
+      </>
+    ),
+  },
+  {
+    title: "Open Source 📂",
+    img: "/img/features/opensource.png",
+    description: (
+      <>
+        <a href="/docs/contribute">Contribute to our project</a> and extend the
+        features and capabilities of this project!
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ title, img, description }) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={img}></img>
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

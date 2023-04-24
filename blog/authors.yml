@@ -1,17 +1,11 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+alfagun74:
+  name: Alper Alkan
+  title: Co-Founder of Phalcode
+  url: https://github.com/Alfagun74
+  image_url: https://github.com/Alfagun74.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+yelo420:
+  name: Philip Schäfer
+  title: Co-Founder of Phalcode
+  url: https://github.com/Yelo420
+  image_url: https://github.com/Yelo420.png
