@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://crackpipeapp.com/blog</id>
+    <title>Crackpipe Blog</title>
+    <updated>2023-06-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://crackpipeapp.com/blog"/>
+    <subtitle>Crackpipe Blog</subtitle>
+    <icon>https://crackpipeapp.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Crackpipe is released 🚀]]></title>
+        <id>https://crackpipeapp.com/blog/1</id>
+        <link href="https://crackpipeapp.com/blog/1"/>
+        <updated>2023-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Congratulations!]]></summary>
+        <content type="html"><![CDATA[<p>Congratulations!</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <author>
+            <name>Philip Schäfer</name>
+            <uri>https://github.com/Yelo420</uri>
+        </author>
+        <category label="open-source" term="open-source"/>
+    </entry>
+</feed>
