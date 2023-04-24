@@ -2,10 +2,17 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
+import Feature1 from "@site/static/img/features/microsoftstore.png";
+import Feature2 from "@site/static/img/features/auth.png";
+import Feature3 from "@site/static/img/features/social.png";
+import Feature4 from "@site/static/img/features/library.png";
+import Feature5 from "@site/static/img/features/enrichments.png";
+import Feature6 from "@site/static/img/features/opensource.png";
+
 const FeatureList = [
   {
     title: "Easy to Use 🤝",
-    img: "/img/features/microsoftstore.png",
+    img: Feature1,
     description: (
       <>
         No need to compile shit. As a certified Microsoft Partner our Client
@@ -19,7 +26,7 @@ const FeatureList = [
   },
   {
     title: "Your Platform - Your Rules 👑",
-    img: "/img/features/auth.png",
+    img: Feature2,
     description: (
       <>
         No Cloud Bullshit. Everything is Selfhosted. It's your games and you can
@@ -29,7 +36,7 @@ const FeatureList = [
   },
   {
     title: "Social Features 👥",
-    img: "/img/features/social.png",
+    img: Feature3,
     description: (
       <>
         Track your play times, keep up to date with what your friends are
@@ -39,7 +46,7 @@ const FeatureList = [
   },
   {
     title: "Good Looking ✨",
-    img: "/img/features/library.png",
+    img: Feature4,
     description: (
       <>
         Browse, Sort and Filter your game library using an epic user interface
@@ -48,7 +55,7 @@ const FeatureList = [
   },
   {
     title: "Enriched with Metadata 📜",
-    img: "/img/features/enrichments.png",
+    img: Feature5,
     description: (
       <>
         Unlock the full power of Crackpipe and{" "}
@@ -61,7 +68,7 @@ const FeatureList = [
   },
   {
     title: "Open Source 📂",
-    img: "/img/features/opensource.png",
+    img: Feature6,
     description: (
       <>
         <a href="/docs/contribute">Contribute to our project</a> and extend the
