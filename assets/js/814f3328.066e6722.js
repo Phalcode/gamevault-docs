@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Crackpipe is released \ud83d\ude80","permalink":"/blog/1"}]}')}}]);
