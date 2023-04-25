@@ -71,8 +71,8 @@ const FeatureList = [
     img: Feature6,
     description: (
       <>
-        <a href="/docs/contribute">Contribute to our project</a> and extend the
-        features and capabilities of this project!
+        <a href="/docs/contribute">Contribute to our project</a> and endlessly extend the
+        features and capabilities of it!
       </>
     ),
   },
