@@ -7,14 +7,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Crackpipe",
-  tagline: "decentralized gaming platform for alternatively obtained games",
-  favicon: "img/favicon.ico",
+  tagline: "decentralized gaming platform for 'alternatively obtained' games",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
   url: "https://phalcode.github.io/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/crackpipe-docs/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -48,6 +48,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
+
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
