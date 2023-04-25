@@ -57,7 +57,7 @@ The above code defines two Docker services:
 
 #### 3. Configure Crackpipe
 
-Configure the `config.yml` file located in the `backend` folder. This file contains various settings, including the path to the directory where the zipped games are located, the path to the directory where the games will be installed, and the URL of the server.
+See [this page for all configuration options](configuration.md)
 
 #### 4. Start the Crackpipe server
 
