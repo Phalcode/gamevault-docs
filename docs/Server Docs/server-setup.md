@@ -6,12 +6,15 @@ sidebar_position: 1
 
 Setting up a Crackpipe server can be done in a few simple steps. Before starting, there are some prerequisites you need to have in place.
 
-### Prerequisites
+There are many ways to deploy a Crackpipe Server. Choose one from below.
 
+## Prerequisites
+
+- **Zipped Games in a specific name format**: Crackpipe needs the games to be in a specific name format to be able to identify and install them correctly. Definitely have a read on [this chapter.](structure.md)
 - **TypeORM-compatible PostgreSQL Server**: Crackpipe uses a PostgreSQL server to store all the data. Ensure that you have a TypeORM-compatible PostgreSQL server installed and running on your system.
-- **Zipped Games in a specific name format**: Crackpipe needs the games to be in a specific name format to be able to identify and install them correctly.
+  - With the right setup using sqlite, Crackpipe doesn't need a Postgres database to run, so it can be skipped if necessary. Nevertheless, we suggest configuring a Postgres database to ensure the best performance. See [Method 1.1.](#method-11-docker-setup-without-postgresql)
 
-### Step-by-Step Guide
+### Method 1: Docker Setup
 
 #### 1. Install Docker and Docker Compose
 
@@ -67,3 +70,27 @@ docker-compose up -d
 This will start the Crackpipe server and PostgreSQL server in the background. The `-d` parameter detaches the process from the terminal.
 
 Congratulations! You have successfully set up a Crackpipe server. You can now start adding games and managing your game library.
+
+### Method 1.1: Docker Setup without PostgreSQL
+
+We really don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
+
+```yaml
+version: "3.1"
+services:
+  crackpipe-backend:
+    image: crackpipe-backend
+    restart: unless-stopped
+    environment:
+      CONFIG_DB_SYSTEM: "SQLITE"
+    volumes:
+      - /files:/your/games/folder:ro
+```
+
+### Method 2: Caprover One Click App
+
+Not yet available
+
+### Method 2: Portrainer One Click App
+
+Not yet available
