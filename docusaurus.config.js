@@ -41,13 +41,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/phalcode/crackpipe-docs",
+          editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/phalcode/crackpipe-docs",
+          editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
