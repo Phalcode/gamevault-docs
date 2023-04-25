@@ -8,7 +8,9 @@ sidebar_position: 1
 
 ## What is Crackpipe
 
-Crackpipe is an open-source, decentralized, selfhosted and liberal alternative to Game Platforms and Launchers like Steam, Origin, Epic Games, GoG, etc. which allows you to play and track games that are on a fileserver.
+Crackpipe is an open-source, decentralized, selfhosted and liberal alternative to Game Platforms and Launchers like Steam, Origin, Epic Games, GoG, etc. which allows you and your friends to play and track games that are **on a fileserver**.
+
+Think of Jellyfin, but for Videogames. You must provide the games. You can not buy games on Crackpipe.
 
 The Crackpipe ecosystem consists of a selfhostable NestJS Backend Application and one or more Windows Store App Clients.
 
