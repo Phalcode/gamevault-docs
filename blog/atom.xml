@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://phalcode.github.io/crackpipe-docs/blog</id>
+    <id>https://phalcode.github.io/blog</id>
     <title>Crackpipe Blog</title>
     <updated>2023-06-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://phalcode.github.io/crackpipe-docs/blog"/>
+    <link rel="alternate" href="https://phalcode.github.io/blog"/>
     <subtitle>Crackpipe Blog</subtitle>
-    <icon>https://phalcode.github.io/crackpipe-docs/img/favicon.ico</icon>
+    <icon>https://phalcode.github.io/img/logo.png</icon>
     <entry>
         <title type="html"><![CDATA[Crackpipe is released 🚀]]></title>
-        <id>https://phalcode.github.io/crackpipe-docs/blog/1</id>
-        <link href="https://phalcode.github.io/crackpipe-docs/blog/1"/>
+        <id>https://phalcode.github.io/blog/1</id>
+        <link href="https://phalcode.github.io/blog/1"/>
         <updated>2023-06-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Congratulations!]]></summary>
         <content type="html"><![CDATA[<p>Congratulations!</p>]]></content>
