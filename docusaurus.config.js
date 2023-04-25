@@ -7,11 +7,11 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Crackpipe",
-  tagline: "decentralized gaming platform for 'alternatively obtained' games",
+  tagline: "the decentralized gaming platform for 'alternatively obtained' games",
   favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https://phalcode.github.io/",
+  url: "https://crackpipe.de/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
