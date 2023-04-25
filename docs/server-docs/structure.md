@@ -4,33 +4,34 @@ sidebar_position: 2
 
 # File and Folder Structure
 
-## Game Name Format
+If you want to set up a Crackpipe Server, you need to pay attention to the file and folder structure. The `/files` folder that you mount into the server must contain zip files with games. These games must be in either .zip or .7z format, and they must follow a specific naming convention in order to be detected correctly by Crackpipe.
 
-Here comes the most Painful part of setting up a Crackpipe Server. But it is definitely worth every effort.
-The `/files` folder you mount into the server must contain zip files with games.
+## Naming Convention for Games
 
-These Games **must** be in a .zip or .7z format and follow this name
-scheme to work correctly and get detected:
+The name of each game file must follow this format:
 
 `Gamename (vVersion) (EA) (ReleaseYear).zip`
 
-> **The Parentheses must be included**
+Note that the parentheses must be included, and the naming convention is case sensitive.
 
-Everything else will be ignored by Crackpipe.
+Here's an explanation of each part of the naming convention:
 
-### Syntax Explanation
+| Part            | Description                                                        | Example Value(s)         |
+| --------------- | ------------------------------------------------------------------ | ------------------------ |
+| **Gamename**    | The name of the game                                               | `Far Cry 6`, `HITMAN 3`  |
+| **Version**     | An optional version tag that must begin with a lowercase `v`       | `(v1.0)`, `(v1.224)`     |
+| **EA**          | An optional tag that indicates whether the game is in Early Access | `(EA)`                   |
+| **ReleaseYear** | The year of the game's release, for accurate detection             | `(2021)`, `(2019)`, etc. |
 
-- Game name could be: `Far Cry 6`
-- Version Tag is optional
-  - it **must** begin with a lowercase `v`: e.g. `(v1.0)`, `(v1.224)`, `(vALPHA_BUILD123)`
-- EA Tag is optional
-  - it will set the Early Access Status of the game to true if given ``(EA)
-- Release Year
-  - For the most accurate detection I recommend using the release year on rawg.io's website `(2021)`
+Here's an example of a full game name that follows this convention:
 
-Full Example would be: `Far Cry 6 (v1.5.0) (2021).zip`
+`Far Cry 6 (v1.5.0) (2021).zip`
 
-### Other valid Examples
+By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by Crackpipe.
+
+### Other Examples
+
+Here are some other valid examples of game names that follow the naming convention:
 
 - `Star Wars Jedi - Fallen Order (v1.0.10.0) (2019).zip`
 - `HITMAN 3 (v3.10.1) (2021).7z`
@@ -38,9 +39,3 @@ Full Example would be: `Far Cry 6 (v1.5.0) (2021).zip`
 - `Saints Row (2022).zip`
 - `Stray (2022).7z`
 - `Captain of Industry (v0.4.12b) (EA) (2022).zip`
-
-## I have a ton of unsorted Games with different naming some compressed some not how do i make it work with crackpipe?
-
-Manual Labour. Lets go through this step by step.
-
-First you will need to compress all games.
