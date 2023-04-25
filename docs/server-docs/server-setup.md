@@ -10,7 +10,7 @@ There are many ways to deploy a Crackpipe Server. Choose one from below.
 
 ## Prerequisites
 
-- **Zipped Games in a specific name format**: Crackpipe needs the games to be in a specific name format to be able to identify and install them correctly. Definitely have a read on [this chapter.](Structure.md)
+- **Zipped Games in a specific name format**: Crackpipe needs the games to be in a specific name format to be able to identify and install them correctly. Definitely have a read on [this chapter.](structure.md)
 - **TypeORM-compatible PostgreSQL Server**: Crackpipe uses a PostgreSQL server to store all the data. Ensure that you have a TypeORM-compatible PostgreSQL server installed and running on your system.
   - With the right setup using sqlite, Crackpipe doesn't need a Postgres database to run, so it can be skipped if necessary. Nevertheless, we suggest configuring a Postgres database to ensure the best performance. See [Method 1.1.](#method-11-docker-setup-without-postgresql)
 
