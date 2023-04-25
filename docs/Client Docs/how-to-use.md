@@ -20,10 +20,10 @@ Let's say you found the game `Assassin's Creed Unity (Game ID: 74)` in the Libra
 
 As stated above, Crackpipe generates two folders to store the game files and uses the game ID in the name to identify them:
 
-- `D:/Crackpipe/Downloads/(74) Assassin's Creed Unity/`
-- `D:/Crackpipe/Installations/(74) Assassin's Creed Unity/`
+- `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/`
+- `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/`
 
-Your downloaded zip file will be saved in `D:/Crackpipe/Downloads/(74) Assassin's Creed Unity/`. The `D:/Crackpipe/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
+Your downloaded zip file will be saved in `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/`. The `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
 
 ## Installing Games
 
@@ -37,11 +37,11 @@ Here are the steps to install the game:
 1. All Crackpipe Games are compressed by default. You need to extract them using a tool like [7Zip](https://www.7-zip.org/).
 2. Now install your game into the appropriate folder in the library:
 
-   - `<Crackpipe Root>/Installations/(74) Assassin's Creed Unity/` - This is where the final game files and .exe should be located.
+   - `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` - This is where the final game files and .exe should be located.
 
 3. You will need to choose an .exe file in the Installations tab before you can play the game. Crackpipe will will enable the Play button in the Installations tab.
 
-4. Feel free to delete `D:/Crackpipe/Downloads/(74) Assassin's Creed Unity/` after you installed the game. You can do it manually or by pressing the Delete-Icon / Clear All in your Downloads Tab.
+4. Feel free to delete `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/` after you installed the game. You can do it manually or by pressing the Delete-Icon / Clear All in your Downloads Tab.
 
 ## Playing Games
 

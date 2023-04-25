@@ -21,7 +21,7 @@ To get started, install the Crackpipe app from [the official Microsoft Store](ht
 
 Once you have installed and launched Crackpipe, you need to do some initial configuration to get it up and running properly. Here's what you need to do:
 
-- Enter the URL of your Crackpipe Server. This is the server that will provide the games you want to download and install. The Scheme is: ``https://example-crackpipe-server.com``.
+- Enter the URL of your Crackpipe Server. This is the server that will provide the games you want to download and install. The Scheme is: `https://example-crackpipe-server.com`.
 
 - Create an account if you haven't already done so. If you already have an account, simply log in. Note that your account may need to be manually activated by your Crackpipe-Server Administrators before you can use it.
 
