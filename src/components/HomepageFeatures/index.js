@@ -39,8 +39,8 @@ const FeatureList = [
     img: Feature3,
     description: (
       <>
-        Track your play times, keep up to date with what your friends are
-        playing and mark completed games as finished.
+        Stay up to Date. Track your play times, keep up to date with what your
+        friends are playing and mark completed games as finished.
       </>
     ),
   },
@@ -49,7 +49,8 @@ const FeatureList = [
     img: Feature4,
     description: (
       <>
-        Browse, Sort and Filter your game library using an epic user interface
+        Don't get lost. Browse, Sort and Filter your game library using an epic
+        user interface
       </>
     ),
   },
@@ -58,11 +59,12 @@ const FeatureList = [
     img: Feature5,
     description: (
       <>
-        Unlock the full power of Crackpipe and{" "}
+        Enrich all your games with juicy metadata. Unlock the full power of
+        Crackpipe and{" "}
         <a href="https://rawg.io/login/?forward=developer">
           sign up for a free RAWG API Key
         </a>
-        . Enrich all your games with juicy metadata.
+        .
       </>
     ),
   },
@@ -71,8 +73,8 @@ const FeatureList = [
     img: Feature6,
     description: (
       <>
-        <a href="/docs/contribute">Contribute to our project</a> and endlessly extend the
-        features and capabilities of it!
+        <a href="/docs/contribute">Contribute to our project.</a> Endlessly
+        extend the features and capabilities of it!
       </>
     ),
   },
