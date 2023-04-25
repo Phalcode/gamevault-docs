@@ -14,11 +14,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: pnpm
       - name: Install Dependencies
-        run: npm run install
+        run: pnpm ci
       - name: Build website
-        run: npm run build
+        run: pnpm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
