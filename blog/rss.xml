@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Crackpipe Blog</title>
-        <link>https://phalcode.github.io/blog</link>
+        <link>https://crackpipe.de/blog</link>
         <description>Crackpipe Blog</description>
         <lastBuildDate>Thu, 01 Jun 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Crackpipe is released 🚀]]></title>
-            <link>https://phalcode.github.io/blog/1</link>
-            <guid>https://phalcode.github.io/blog/1</guid>
+            <link>https://crackpipe.de/blog/1</link>
+            <guid>https://crackpipe.de/blog/1</guid>
             <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Congratulations!]]></description>
             <content:encoded><![CDATA[<p>Congratulations!</p>]]></content:encoded>
