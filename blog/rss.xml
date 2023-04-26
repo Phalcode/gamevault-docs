@@ -9,12 +9,12 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Crackpipe is released 🚀]]></title>
+            <title><![CDATA[Introducing Crackpipe 🚀 - The Open-Source Alternative to Traditional Game Platforms]]></title>
             <link>https://crackpipe.de/blog/1</link>
             <guid>https://crackpipe.de/blog/1</guid>
             <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Congratulations!]]></description>
-            <content:encoded><![CDATA[<p>Congratulations!</p>]]></content:encoded>
+            <description><![CDATA[Hey Guys,]]></description>
+            <content:encoded><![CDATA[<p>Hey Guys,</p><p>Our team has been working tirelessly for the past eight months on creating Crackpipe, the open-source, decentralized, self-hosted, and liberal alternative to traditional cloud-based game platforms like Steam, Origin, Epic Games, and GoG. We are excited to share that Crackpipe is now available for everyone to use, and we are delighted to open-source it to the community.</p><p>With Crackpipe, you can play and track games together with your friends on a shared file server, free from any restrictions that traditional game platforms may impose. We have designed it to work with "alternatively obtained" games such as DRM-free games, providing a unique solution for those who want a more flexible and open approach to gaming. Think of it like Jellyfin, but for Videogames.</p><p>Crackpipe offers a self-hosted approach that gives you complete control over your gaming experience. The platform enables you to browse your server's game collection, securely download games, launch and play them, and even track your playtimes and progress - regardless of whether the server is offline. Additionally, you can compare stats and play states with other users on the server.</p><p>Our server features offer automatic indexing of games on the file system into a database, enrichment of games with metadata like tags and genres using RAWG API, multi-user authentication, and configurable logging. We have also implemented health monitoring, full-text search, filters, sorting, pagination, and a fully documented API. The Crackpipe platform is highly configurable to suit your needs.</p><p>We are thrilled that you have found us, and we invite you to try Crackpipe today. We would be grateful for any contributions, feedback, bug reports, and feature requests you might have. You can also support us by donating using the "Support Us" link on our website. If you have any questions or would like to connect with other Crackpipe users, please join our Discord server and Reddit forum - links to which are available in the footer.</p><p>We are passionate about creating a gaming experience that is more open, flexible, and enjoyable for everyone. We hope you will join us on this journey and experience the benefits of a truly open-source alternative to traditional game platforms with Crackpipe.</p>]]></content:encoded>
             <category>open-source</category>
         </item>
     </channel>
