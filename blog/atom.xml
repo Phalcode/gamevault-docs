@@ -22,6 +22,22 @@
             <name>Philip Schäfer</name>
             <uri>https://github.com/Yelo420</uri>
         </author>
+        <category label="gaming" term="gaming"/>
+        <category label="Crackpipe" term="Crackpipe"/>
         <category label="open-source" term="open-source"/>
+        <category label="decentralized" term="decentralized"/>
+        <category label="self-hosted" term="self-hosted"/>
+        <category label="alternative" term="alternative"/>
+        <category label="cloud-based game platforms" term="cloud-based game platforms"/>
+        <category label="DRM-free games" term="DRM-free games"/>
+        <category label="Jellyfin" term="Jellyfin"/>
+        <category label="file server" term="file server"/>
+        <category label="multi-user authentication" term="multi-user authentication"/>
+        <category label="metadata" term="metadata"/>
+        <category label="RAWG API" term="RAWG API"/>
+        <category label="health monitoring" term="health monitoring"/>
+        <category label="API" term="API"/>
+        <category label="Discord server" term="Discord server"/>
+        <category label="Reddit forum" term="Reddit forum"/>
     </entry>
 </feed>
