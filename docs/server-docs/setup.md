@@ -39,6 +39,7 @@ services:
       CONFIG_DB_PASSWORD: "default"
     volumes:
       - /files:/your/games/folder:ro
+      - /images:/your/images/folder
   db:
     image: postgres
     restart: unless-stopped
@@ -85,6 +86,8 @@ services:
       CONFIG_DB_SYSTEM: "SQLITE"
     volumes:
       - /files:/your/games/folder:ro
+      - /db:/your/database/folder
+      - /images:/your/images/folder
 ```
 
 ### Method 2: Caprover One Click App
@@ -94,3 +97,7 @@ Not yet available
 ### Method 2: Portrainer One Click App
 
 Not yet available
+
+## Configuration
+
+Congratulations! Now that you have set up your server you can begin configuring it. There are a ton of configuration options which will be explained [on the next page](configuration.md). But most importantly you should set up Rawg
