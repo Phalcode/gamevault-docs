@@ -6,24 +6,18 @@ sidebar_position: 1
 
 Setting up a Crackpipe server can be done in a few simple steps. Before starting, there are some prerequisites you need to have in place.
 
-There are many ways to deploy a Crackpipe Server. Choose one from below.
+There are many ways to deploy a Crackpipe Server. You can choose one from below.
 
-## Prerequisites
+## Method 1: Docker Setup
 
-- **Zipped Games in a specific name format**: Crackpipe needs the games to be in a specific name format to be able to identify and install them correctly. Definitely have a read on [this chapter.](structure.md)
-- **TypeORM-compatible PostgreSQL Server**: Crackpipe uses a PostgreSQL server to store all the data. Ensure that you have a TypeORM-compatible PostgreSQL server installed and running on your system.
-  - With the right setup using sqlite, Crackpipe doesn't need a Postgres database to run, so it can be skipped if necessary. Nevertheless, we suggest configuring a Postgres database to ensure the best performance. See [Method 1.1.](#method-11-docker-setup-without-postgresql)
-
-### Method 1: Docker Setup
-
-#### 1. Install Docker and Docker Compose
+### 1. Install Docker and Docker Compose
 
 Docker and Docker Compose are recommended to set up the Crackpipe server. If you do not have Docker and Docker Compose installed on your system, follow these steps to install them:
 
 - **Docker**: You can download Docker from the official [Docker website](https://www.docker.com/get-started).
 - **Docker Compose**: Docker Compose is already included in the Docker Desktop installation for Windows and macOS users. If you are using Linux, follow the instructions on the [Docker Compose installation page](https://docs.docker.com/compose/install/).
 
-#### 2. Create a Docker Compose file
+### 2. Create a Docker Compose file
 
 Create a new file named `docker-compose.yml` in a directory of your choice and copy the following code:
 
@@ -41,7 +35,7 @@ services:
       - /files:/your/games/folder:ro
       - /images:/your/images/folder
   db:
-    image: postgres
+    image: postgres:15-alpine
     restart: unless-stopped
     environment:
       POSTGRES_USER: default
@@ -51,7 +45,7 @@ services:
       - 5432:5432
 ```
 
-#### 3. Start the Crackpipe server
+### 3. Start the Crackpipe server
 
 Open a terminal, navigate to the directory where the `docker-compose.yml` file is located, and run the following command:
 
@@ -63,7 +57,7 @@ This will start the Crackpipe server and PostgreSQL server in the background. Th
 
 Congratulations! You have successfully set up a Crackpipe server. You can now start adding games and managing your game library.
 
-### Method 1.1: Docker Setup without PostgreSQL
+#### Method 1.1: Docker Setup without PostgreSQL
 
 We really don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
 
@@ -77,20 +71,25 @@ services:
       CONFIG_DB_SYSTEM: "SQLITE"
     volumes:
       - /files:/your/games/folder:ro
-      - /db:/your/database/folder
+      - /db:/your/sqlite/database/folder
       - /images:/your/images/folder
 ```
 
-### Method 2: Caprover One Click App
+## Method 2: Caprover One Click App
 
 Not yet available
 
-### Method 2: Portrainer One Click App
+## Method 3: Portrainer One Click App
 
 Not yet available
 
-## Configuration
+## What Next?
 
-Congratulations! Now that you have set up your server you can begin configuring it. There are a ton of configuration options which will be explained [on the next page](configuration.md).
+### 🥳 Congratulations! 🥳
 
-Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is a video game database that Crackpipe uses to fetch game metadata.
+Now that you have set up your server you can begin configuring it and importing games.
+There are a ton of configuration options which will be explained [on the next page](configuration.md).
+
+- Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is a video game database that Crackpipe uses to fetch game metadata.
+
+- Also Crackpipe needs your games to be in a specific name format to be able to identify and install them correctly. Definitely also have a read on [this chapter.](structure.md)
