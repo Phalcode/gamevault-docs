@@ -33,11 +33,11 @@ All configuration properties of your Crackpipe server are passed as environment 
 
 ## RAWG API Configuration Properties
 
-| Property Name       | Default Value           | Explanation                                      | Possible Values          |
-| ------------------- | ----------------------- | ------------------------------------------------ | ------------------------ |
-| RAWG_API_URL        | https://api.rawg.io/api | The base URL of RAWG API                         | Any valid URL            |
-| RAWG_API_KEY        | 123456789               | The API KEY for Rawg API                         | Any valid string         |
-| RAWG_API_CACHE_DAYS | 7                       | The number of days to renew Rawg API cached data | Any valid number of days |
+| Property Name       | Default Value           | Explanation                                                                                  | Possible Values          |
+| ------------------- | ----------------------- | -------------------------------------------------------------------------------------------- | ------------------------ |
+| RAWG_API_URL        | https://api.rawg.io/api | The base URL of RAWG API                                                                     | Any valid URL            |
+| RAWG_API_KEY        | 123456789               | The API KEY for Rawg API You can obtain one [here](https://rawg.io/login/?forward=developer) | Any valid string         |
+| RAWG_API_CACHE_DAYS | 7                       | The number of days to renew Rawg API cached data                                             | Any valid number of days |
 
 ## CRON Configuration Properties
 

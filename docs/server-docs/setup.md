@@ -51,16 +51,7 @@ services:
       - 5432:5432
 ```
 
-The above code defines two Docker services:
-
-- **crackpipe-backend**: This is the Crackpipe server itself. The `image` parameter specifies the Docker image to be used. `CONFIG_RAWG_API_KEY` is the API key for [RAWG](https://rawg.io/), which is a video game database that Crackpipe uses to obtain game information. `CONFIG_DB_HOST`, `CONFIG_DB_USERNAME`, and `CONFIG_DB_PASSWORD` are the PostgreSQL server connection details. The `volumes` parameter mounts the directory that contains the zipped games to `/your/games/folder` inside the container.
-- **db**: This is the PostgreSQL server. The `image` parameter specifies the Docker image to be used. `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DB` are the PostgreSQL server settings.
-
-#### 3. Configure Crackpipe
-
-See [this page for all configuration options](configuration.md)
-
-#### 4. Start the Crackpipe server
+#### 3. Start the Crackpipe server
 
 Open a terminal, navigate to the directory where the `docker-compose.yml` file is located, and run the following command:
 
@@ -100,4 +91,6 @@ Not yet available
 
 ## Configuration
 
-Congratulations! Now that you have set up your server you can begin configuring it. There are a ton of configuration options which will be explained [on the next page](configuration.md). But most importantly you should set up Rawg
+Congratulations! Now that you have set up your server you can begin configuring it. There are a ton of configuration options which will be explained [on the next page](configuration.md).
+
+Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is a video game database that Crackpipe uses to fetch game metadata.
