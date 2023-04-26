@@ -10,13 +10,14 @@ All configuration properties of your Crackpipe server are passed as environment 
 
 ## Server Configuration Properties
 
-| Property Name               | Default Value | Explanation                                     | Possible Values                 |
-| --------------------------- | ------------- | ----------------------------------------------- | ------------------------------- |
-| SERVER_PORT                 | 8080          | The port the server should listen on            | Any valid port number           |
-| SERVER_LOG_LEVEL            | info          | The Log Level (debug, info, warn, error, fatal) | debug, info, warn, error, fatal |
-| SERVER_CORS_ALLOWED_ORIGINS | \*            | Allowed CORS origins                            | Any valid CORS origin           |
-| SERVER_REGISTRATION_ENABLED | false         | Whether or not registration is enabled          | true, false                     |
-| SERVER_IMAGE_STORAGE_PATH   | /images       | The path where images will be stored            | Any valid file path             |
+| Property Name                     | Default Value | Explanation                                                 | Possible Values                 |
+| --------------------------------- | ------------- | ----------------------------------------------------------- | ------------------------------- |
+| SERVER_PORT                       | 8080          | The port the server should listen on                        | Any valid port number           |
+| SERVER_LOG_LEVEL                  | info          | The Log Level (debug, info, warn, error, fatal)             | debug, info, warn, error, fatal |
+| SERVER_CORS_ALLOWED_ORIGINS       | \*            | Allowed CORS origins                                        | Any valid CORS origin           |
+| SERVER_IMAGE_STORAGE_PATH         | /images       | The path where images will be stored                        | Any valid file path             |
+| SERVER_REGISTRATION_ENABLED       | true          | Whether or not registration is enabled                      | true, false                     |
+| SERVER_ACCOUNT_ACTIVATION_ENABLED | true          | Whether or not account activation is required for new users | true, false                     |
 
 ## Database Configuration Properties
 
@@ -41,9 +42,10 @@ All configuration properties of your Crackpipe server are passed as environment 
 
 ## CRON Configuration Properties
 
-| Property Name                  | Default Value | Explanation                                   | Possible Values             |
-| ------------------------------ | ------------- | --------------------------------------------- | --------------------------- |
-| CRON_INDEX_INTERVAL_IN_MINUTES | 5             | The interval in minutes for file API indexing | Any valid number of minutes |
+| Property Name                  | Default Value | Explanation                                          | Possible Values             |
+| ------------------------------ | ------------- | ---------------------------------------------------- | --------------------------- |
+| CRON_INDEX_INTERVAL_IN_MINUTES | 5             | The interval in minutes for file API indexing        | Any valid number of minutes |
+| CRON_IMAGE_GC_IN_MINUTES       | 60            | The interval in minutes for image garbage collection | Any valid number of minutes |
 
 ## Testing Configuration Properties
 
@@ -52,4 +54,5 @@ All configuration properties of your Crackpipe server are passed as environment 
 | TESTING_AUTHENTICATION_DISABLED | false         | Whether or not to accept any auth Header during testing                         | true, false     |
 | TESTING_MOCK_FILES              | false         | Whether or not to mock existing game files during testing                       | true, false     |
 | TESTING_IN_MEMORY_DB            | false         | Whether or not to use fake in-memory database during testing (only with sqlite) | true, false     |
-| TESTING_RAWG_API_DISABLED       | false         | Whether or not                                                                  |
+| TESTING_RAWG_API_DISABLED       | false         | Whether or not to make requests to RAWG API for metadata                        | true, false     |
+| TESTING_GOOGLE_API_DISABLED     | false         | Whether or not to make requests to GOOGLE API for images                        | true, false     |
