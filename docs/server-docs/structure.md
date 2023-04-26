@@ -4,7 +4,12 @@ sidebar_position: 2
 
 # File and Folder Structure
 
-If you want to set up a Crackpipe Server, you need to pay attention to the file and folder structure. The `/files` folder that you mount into the server must contain zip files with games. These games must be in either .zip or .7z format, and they must follow a specific naming convention in order to be detected correctly by Crackpipe.
+If you want to set up a Crackpipe Server, you need to pay attention to the file and folder structure. The `/files` folder that you mount into the server must contain compressed archives with games. These games must be in one of the supported archive formats, and they must follow a specific naming convention in order to be detected correctly by Crackpipe.
+
+## Supported Archive Formats
+
+- `.zip`
+- `.7z`
 
 ## Naming Convention for Games
 

@@ -87,9 +87,8 @@ Not yet available
 
 ### 🥳 Congratulations! 🥳
 
-Now that you have set up your server you can begin configuring it and importing games.
-There are a ton of configuration options which will be explained [on the next page](configuration.md).
+Now that you have set up your server you can begin [configuring it](configuration.md) and [importing games](adding-games.md).
 
-- Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is a video game database that Crackpipe uses to fetch game metadata.
+- Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which the worlds largest video game database that Crackpipe uses to fetch game metadata. You can apply for one [from here](https://rawg.io/login/?forward=developer).
 
 - Also Crackpipe needs your games to be in a specific name format to be able to identify and install them correctly. Definitely also have a read on [this chapter.](structure.md)
