@@ -12,6 +12,7 @@ All configuration properties of your Crackpipe server are passed as environment 
 
 | Property Name                     | Default Value | Explanation                                                 | Possible Values                 |
 | --------------------------------- | ------------- | ----------------------------------------------------------- | ------------------------------- |
+| SERVER_TZ                         | Europe/Berlin | The timezone the server should run on                       | Any valid Timezone              |
 | SERVER_PORT                       | 8080          | The port the server should listen on                        | Any valid port number           |
 | SERVER_LOG_LEVEL                  | info          | The Log Level (debug, info, warn, error, fatal)             | debug, info, warn, error, fatal |
 | SERVER_CORS_ALLOWED_ORIGINS       | \*            | Allowed CORS origins                                        | Any valid CORS origin           |
