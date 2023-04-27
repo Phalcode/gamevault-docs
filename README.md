@@ -1,6 +1,6 @@
 # Crackpipe Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+[You can find the official Website/Documentation here](https://crackpipe.de)
 
 ## Local Development
 
