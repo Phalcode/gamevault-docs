@@ -26,7 +26,7 @@ Here is an overview of all core functions of Crackpipe
 - 📥 Download games from your server securely
 - 🎮 Launch the games and play them
 - ⏱️ Track your playtimes and progress (even if the server is offline)
-- 👥 Compare your stat and play states with other users on the server
+- 👥 Compare your statistics and play states with other users on the server
 
 ### Server Features
 
