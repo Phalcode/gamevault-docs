@@ -14,7 +14,7 @@ Think of Jellyfin, but for Videogames. You must provide the games. You can not b
 
 The Crackpipe ecosystem consists of a selfhostable NestJS Backend Application and one or more Windows Store App Clients.
 
-It was designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used to install cracked games, it does not encourage or condone piracy.
+It was designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used with cracked games, it does not encourage or condone piracy.
 
 ## Features
 
