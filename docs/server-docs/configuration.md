@@ -8,52 +8,61 @@ sidebar_position: 2
 
 All configuration properties of your Crackpipe server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
 
-## Server Configuration Properties
+# Configuration Properties
 
-| Property Name                     | Default Value | Explanation                                                 | Possible Values                 |
-| --------------------------------- | ------------- | ----------------------------------------------------------- | ------------------------------- |
-| TZ                                | UTC           | The timezone the server should run on                       | Any valid Timezone              |
-| SERVER_PORT                       | 8080          | The port the server should listen on                        | Any valid port number           |
-| SERVER_LOG_LEVEL                  | info          | The Log Level (debug, info, warn, error, fatal)             | debug, info, warn, error, fatal |
-| SERVER_CORS_ALLOWED_ORIGINS       | \*            | Allowed CORS origins                                        | Any valid CORS origin           |
-| SERVER_IMAGE_STORAGE_PATH         | /images       | The path where images will be stored                        | Any valid file path             |
-| SERVER_REGISTRATION_ENABLED       | true          | Whether or not registration is enabled                      | true, false                     |
-| SERVER_ACCOUNT_ACTIVATION_ENABLED | true          | Whether or not account activation is required for new users | true, false                     |
+This page describes the various configuration properties used in the application. These properties can be configured in the environment variables or in a `.env` file.
 
-## Database Configuration Properties
+## Server
 
-| Property Name  | Default Value | Explanation                                                                                                          | Possible Values       |
-| -------------- | ------------- | -------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| DB_SYSTEM      | POSTGRESQL    | The host of the database (POSTGRESQL or SQLITE)                                                                      | POSTGRESQL, SQLITE    |
-| DB_HOST        | localhost     | The host of the database (not needed for SQLITE)                                                                     | Any valid host name   |
-| DB_PORT        | 5432          | The port of the database (not needed for SQLITE)                                                                     | Any valid port number |
-| DB_USERNAME    | default       | The username of the database (not needed for SQLITE)                                                                 | Any valid string      |
-| DB_PASSWORD    | default       | The password of the database (not needed for SQLITE)                                                                 | Any valid string      |
-| DB_DATABASE    | crackpipe     | The name of the database (not needed for SQLITE)                                                                     | Any valid string      |
-| DB_LOCATION    | /db           | The path of the Sqlite DB (not needed for POSTGRESQL)                                                                | Any valid file path   |
-| DB_SYNCHRONIZE | false         | Whether or not to synchronize the database (Use if create table failure occurs but watch out it could break your db) | true, false           |
+| Property                            | Description                                                     | Default Value | Possible Values                           |
+| ----------------------------------- | --------------------------------------------------------------- | ------------- | ----------------------------------------- |
+| `SERVER_PORT`                       | The port the server should listen on.                           | `8080`        | Any valid port number                     |
+| `SERVER_LOG_LEVEL`                  | The log level of the server (debug, info, warn, error, fatal).  | `info`        | `debug`, `info`, `warn`, `error`, `fatal` |
+| `SERVER_CORS_ALLOWED_ORIGINS`       | Allowed CORS origins for the server.                            | `*`           | A comma-separated list of origins         |
+| `SERVER_REGISTRATION_ENABLED`       | If registration is enabled or not.                              | `true`        | `true`, `false`                           |
+| `SERVER_ACCOUNT_ACTIVATION_ENABLED` | If accounts need to be activated by an admin before using them. | `true`        | `true`, `false`                           |
 
-## RAWG API Configuration Properties
+## DB
 
-| Property Name       | Default Value           | Explanation                                                                                  | Possible Values          |
-| ------------------- | ----------------------- | -------------------------------------------------------------------------------------------- | ------------------------ |
-| RAWG_API_URL        | https://api.rawg.io/api | The base URL of RAWG API                                                                     | Any valid URL            |
-| RAWG_API_KEY        | 123456789               | The API KEY for Rawg API You can obtain one [here](https://rawg.io/login/?forward=developer) | Any valid string         |
-| RAWG_API_CACHE_DAYS | 7                       | The number of days to renew Rawg API cached data                                             | Any valid number of days |
+| Property         | Description                                                                                          | Default Value             | Possible Values         |
+| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------- | ----------------------- |
+| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                                     | `POSTGRESQL`              | `POSTGRESQL`, `SQLITE`  |
+| `DB_HOST`        | The host of the database (not needed for SQLITE).                                                    | `localhost`               | Any valid host name     |
+| `DB_PORT`        | The port of the database (not needed for SQLITE).                                                    | `5432`                    | Any valid port number   |
+| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                               | `default`                 | Any valid username      |
+| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                               | `default`                 | Any valid password      |
+| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                           | `crackpipe`               | Any valid database name |
+| `DB_LOCATION`    | The location of the SQLITE DB file (not needed for POSTGRESQL).                                      | `/db/crackpipe_db.sqlite` | Any valid file path     |
+| `DB_SYNCHRONIZE` | Synchronize the database (use if create table failure occurs but watch out, it could break your db). | `false`                   | `true`, `false`         |
 
-## CRON Configuration Properties
+## RAWG_API
 
-| Property Name                  | Default Value | Explanation                                          | Possible Values             |
-| ------------------------------ | ------------- | ---------------------------------------------------- | --------------------------- |
-| CRON_INDEX_INTERVAL_IN_MINUTES | 5             | The interval in minutes for file API indexing        | Any valid number of minutes |
-| CRON_IMAGE_GC_IN_MINUTES       | 60            | The interval in minutes for image garbage collection | Any valid number of minutes |
+| Property              | Description                                   | Default Value             | Possible Values      |
+| --------------------- | --------------------------------------------- | ------------------------- | -------------------- |
+| `RAWG_API_URL`        | Base URL of the RAWG API.                     | `https://api.rawg.io/api` | Any valid URL        |
+| `RAWG_API_KEY`        | API key for the RAWG API.                     | `""`                      | Any valid API key    |
+| `RAWG_API_CACHE_DAYS` | When to renew RAWG API cached data (in days). | `7`                       | Any positive integer |
 
-## Testing Configuration Properties
+## GAMES
 
-| Property Name                   | Default Value | Explanation                                                                     | Possible Values |
-| ------------------------------- | ------------- | ------------------------------------------------------------------------------- | --------------- |
-| TESTING_AUTHENTICATION_DISABLED | false         | Whether or not to accept any auth Header during testing                         | true, false     |
-| TESTING_MOCK_FILES              | false         | Whether or not to mock existing game files during testing                       | true, false     |
-| TESTING_IN_MEMORY_DB            | false         | Whether or not to use fake in-memory database during testing (only with sqlite) | true, false     |
-| TESTING_RAWG_API_DISABLED       | false         | Whether or not to make requests to RAWG API for metadata                        | true, false     |
-| TESTING_GOOGLE_API_DISABLED     | false         | Whether or not to make requests to GOOGLE API for images                        | true, false     |
+| Property                          | Default | Possible Values | Description                                                                                    |
+| --------------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------- |
+| `GAMES_INDEX_INTERVAL_IN_MINUTES` | `5`     | Any number      | The index interval in minutes. Determines how often the server should index the list of games. |
+
+## IMAGE
+
+| Property                   | Default   | Possible Values | Description                                                                                                                    |
+| -------------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `IMAGEGC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                   |
+| `IMAGEGC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                      |
+| `IMAGE_STORAGE_PATH`       | `/images` | Any string      | The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
+
+## TESTING
+
+| Property                  | Default | Possible Values | Description                                                                                                            |
+| ------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                             |
+| `MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files. |
+| `IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database.          |
+| `RAWG_API_DISABLED`       | `false` | `true`, `false` | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.   |
+| `GOOGLE_API_DISABLED`     | `false` | `true`, `false` | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API. |
