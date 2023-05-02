@@ -25,7 +25,7 @@ Create a new file named `docker-compose.yml` in a directory of your choice and c
 version: "3.1"
 services:
   crackpipe-backend:
-    image: crackpipe-backend
+    image: phalcode/crackpipe-backend:latest
     restart: unless-stopped
     environment:
       CONFIG_DB_HOST: "db"
@@ -65,7 +65,7 @@ We really don't recommend it but you can run Crackpipe without a PostgreSQL Data
 version: "3.1"
 services:
   crackpipe-backend:
-    image: crackpipe-backend
+    image: phalcode/crackpipe-backend:latest
     restart: unless-stopped
     environment:
       CONFIG_DB_SYSTEM: "SQLITE"
