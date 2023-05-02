@@ -7,7 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Crackpipe",
-  tagline: "the decentralized gaming platform for 'alternatively obtained' games",
+  tagline:
+    "the decentralized gaming platform for 'alternatively obtained' games",
   favicon: "img/logo.png",
 
   // Set the production url of your site here
@@ -31,7 +32,7 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
   presets: [
     [
       "classic",
@@ -48,7 +49,6 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
-
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -140,6 +140,15 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      zoom: {
+        selector: "img",
+        config: {
+          background: {
+            light: "rgb(255, 255, 255)",
+            dark: "rgb(50, 50, 50)",
+          },
+        },
       },
     }),
 };
