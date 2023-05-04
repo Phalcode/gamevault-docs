@@ -53,8 +53,8 @@ This page describes the various configuration properties used in the application
 
 | Property                   | Default   | Possible Values | Description                                                                                                                    |
 | -------------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `IMAGEGC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                   |
-| `IMAGEGC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                      |
+| `IMAGE_GC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                   |
+| `IMAGE_GC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                      |
 | `IMAGE_STORAGE_PATH`       | `/images` | Any string      | The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
 
 ## TESTING
