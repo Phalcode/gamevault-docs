@@ -20,4 +20,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1em;
+}
+
+.buttons > * {
+  width: 10em;
 }

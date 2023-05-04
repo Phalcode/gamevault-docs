@@ -88,8 +88,8 @@ const config = {
       },
       footer: {
         logo: {
-          src: "img/phalcode_bright.svg",
-          srcDark: "img/phalcode_dark.svg",
+          src: "img/phalcode_bright.png",
+          srcDark: "img/phalcode_dark.png",
           height: "30vh",
           href: "https://phalco.de",
         },

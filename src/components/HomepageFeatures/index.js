@@ -2,79 +2,75 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
-import Feature1 from "@site/static/img/features/microsoftstore.png";
-import Feature2 from "@site/static/img/features/auth.png";
-import Feature3 from "@site/static/img/features/social.png";
-import Feature4 from "@site/static/img/features/library.png";
-import Feature5 from "@site/static/img/features/enrichments.png";
-import Feature6 from "@site/static/img/features/opensource.png";
+import ImgLibrary from "@site/static/img/features/library.png";
+import ImgMicrosoftStore from "@site/static/img/features/microsoftstore.png";
+import ImgAuth from "@site/static/img/features/auth.png";
+import ImgSocial from "@site/static/img/features/social.png";
+import ImgEnrichments from "@site/static/img/features/enrichments.png";
+import ImgOpenSource from "@site/static/img/features/opensource.png";
 
 const FeatureList = [
   {
-    title: "Easy to Use 🤝",
-    img: Feature1,
+    title: "🎮 Build Your Game Library and Share It with Friends!",
+    img: ImgMicrosoftStore,
     description: (
       <>
-        No need to compile shit. As a certified Microsoft Partner our Client
-        Application is officially available for everyone in{" "}
+        Keep your game collection organized and share your favorite titles with
+        your friends with our easy-to-use platform. There's no need to compile
+        anything. Our client application is officially available in the{" "}
         <a href="https://www.microsoft.com/en-us/p/crackpipe/9pmjlf08x8p0">
-          the Microsoft Store
+          Microsoft Store
         </a>
-        .
       </>
     ),
   },
   {
-    title: "Your Platform - Your Rules 👑",
-    img: Feature2,
+    title: "🔒 Total Control Over Your Games and Access!",
+    img: ImgAuth,
     description: (
       <>
-        No Cloud Bullshit. Everything is Selfhosted. It's your games and you can
-        decide who can download and play them.
+        Unlike cloud-based gaming platforms, our self-hosted platform gives you
+        complete control over who can download and play your games.
       </>
     ),
   },
   {
-    title: "Social Features 👥",
-    img: Feature3,
+    title: "🕹️ Stay Connected with Friends and Track Your Playtime!",
+    img: ImgSocial,
     description: (
       <>
-        Stay up to Date. Track your play times, keep up to date with what your
-        friends are playing and mark completed games as finished.
+        With social features, you can stay connected with friends and track your
+        playtime to know what they're playing and discover new games to play.
       </>
     ),
   },
   {
-    title: "Good Looking ✨",
-    img: Feature4,
+    title: "🔍 Easily Browse, Sort and Filter Your Game Library!",
+    img: ImgLibrary,
     description: (
       <>
-        Don't get lost. Browse, Sort and Filter your game library using an epic
-        user interface
+        Our sleek and intuitive interface makes it easy to browse, sort and
+        filter your game library, so you never get lost in your collection.
       </>
     ),
   },
   {
-    title: "Enriched with Metadata 📜",
-    img: Feature5,
+    title: "📈 Unleash the Full Power of Crackpipe with Metadata Enrichment!",
+    img: ImgEnrichments,
     description: (
       <>
-        Enrich all your games with juicy metadata. Unlock the full power of
-        Crackpipe and{" "}
-        <a href="https://rawg.io/login/?forward=developer">
-          sign up for a free RAWG API Key
-        </a>
-        .
+        Add juicy metadata to your games with our powerful metadata enrichment
+        tool, and unlock the full potential of Crackpipe.
       </>
     ),
   },
   {
-    title: "Open Source 📂",
-    img: Feature6,
+    title: "👥 Join Our Community and Contribute to Our Open-Source Project!",
+    img: ImgOpenSource,
     description: (
       <>
-        <a href="/docs/contribute">Contribute to our project.</a> Endlessly
-        extend the features and capabilities of it!
+        Become part of our growing community and contribute to our open-source
+        project, and enjoy endless features and capabilities.
       </>
     ),
   },

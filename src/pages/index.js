@@ -21,6 +21,14 @@ function HomepageHeader() {
           >
             Introduction
           </Link>
+
+          <a
+            className="button button--secondary button--lg"
+            href="https://www.microsoft.com/en-us/p/crackpipe/9pmjlf08x8p0"
+            target="_blank"
+          >
+            Download
+          </a>
         </div>
       </div>
     </header>
