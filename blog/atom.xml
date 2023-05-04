@@ -30,7 +30,6 @@
         <category label="alternative" term="alternative"/>
         <category label="cloud-based game platforms" term="cloud-based game platforms"/>
         <category label="DRM-free games" term="DRM-free games"/>
-        <category label="Jellyfin" term="Jellyfin"/>
         <category label="file server" term="file server"/>
         <category label="multi-user authentication" term="multi-user authentication"/>
         <category label="metadata" term="metadata"/>
