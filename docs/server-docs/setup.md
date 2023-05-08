@@ -77,11 +77,21 @@ services:
 
 ## Method 2: Caprover One Click App
 
-Not yet available
+If you're using a [Caprover](https://caprover.com) server, setting up a Crackpipe Server with a postgres is just a click away.
+
+Simply search for 'Crackpipe' in the official One-Click-App Repository of [Caprover](https://caprover.com) and follow the installation wizard.
 
 ## Method 3: Portrainer One Click App
 
-Not yet available
+Not yet available. You can help us with it!
+
+## More Methods
+
+We're excited to announce that we're expanding our support for One-Click App Mechanisms! In the future, we plan to add more hosting systems to our lineup.
+
+We do want to point out that each system has its own unique blueprint syntax, and it can take a bit of time to set up the blueprints of new One-Click Apps just right.
+
+However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up a one-click app for any of these hosting systems, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
 
 ## What Next?
 
