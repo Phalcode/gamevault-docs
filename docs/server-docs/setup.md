@@ -28,9 +28,9 @@ services:
     image: phalcode/crackpipe-backend:latest
     restart: unless-stopped
     environment:
-      CONFIG_DB_HOST: "db"
-      CONFIG_DB_USERNAME: "default"
-      CONFIG_DB_PASSWORD: "default"
+      DB_HOST: "db"
+      DB_USERNAME: "default"
+      DB_PASSWORD: "default"
     volumes:
       - /your/games/folder:/files
       - /your/images/folder:/images
@@ -68,7 +68,7 @@ services:
     image: phalcode/crackpipe-backend:latest
     restart: unless-stopped
     environment:
-      CONFIG_DB_SYSTEM: "SQLITE"
+      DB_SYSTEM: "SQLITE"
     volumes:
       - /your/games/folder:/files
       - /your/images/folder:/images
@@ -89,6 +89,6 @@ Not yet available
 
 Now that you have set up your server you can begin [configuring it](configuration.md) and [importing games](adding-games.md).
 
-- Most notably you should set the `CONFIG_RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is the worlds largest video game database that Crackpipe uses to fetch game metadata. You can apply for a free one [here](https://rawg.io/login/?forward=developer).
+- Most notably you should set the `RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is the worlds largest video game database that Crackpipe uses to fetch game metadata. You can apply for a free one [here](https://rawg.io/login/?forward=developer).
 
 - Also Crackpipe needs your games to be in a specific format to be able to identify and install them correctly. Definitely also have a read on [this chapter.](structure.md)
