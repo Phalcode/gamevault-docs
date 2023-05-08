@@ -32,8 +32,8 @@ services:
       CONFIG_DB_USERNAME: "default"
       CONFIG_DB_PASSWORD: "default"
     volumes:
-      - /files:/your/games/folder:ro
-      - /images:/your/images/folder
+      - /your/games/folder:/files
+      - /your/images/folder:/images
   db:
     image: postgres:15-alpine
     restart: unless-stopped
@@ -70,9 +70,9 @@ services:
     environment:
       CONFIG_DB_SYSTEM: "SQLITE"
     volumes:
-      - /files:/your/games/folder:ro
-      - /db:/your/sqlite/database/folder
-      - /images:/your/images/folder
+      - /your/games/folder:/files
+      - /your/images/folder:/images
+      - /your/sqlite/database/folder:/db
 ```
 
 ## Method 2: Caprover One Click App
