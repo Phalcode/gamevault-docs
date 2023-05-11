@@ -6,11 +6,13 @@ sidebar_position: 3
 
 If you are looking to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you've come to the right place. In this chapter, you will learn the correct process to add games to your crackpipe server.
 
-> Adding games to your server is a manual process, and requires some effort. Follow these steps for each game.
-
 ## Before You Begin
 
 Please read the chapter for [File and Folder Structure](structure.md) first!
+
+Adding games to your server is a manual process that demands effort and expertise. But it is definitely worth it.
+
+To ensure that the task is executed accurately, follow the steps outlined below for each game. With practice, you will become more proficient and adept at performing these steps with ease.
 
 ## Step 1: Preparing
 
