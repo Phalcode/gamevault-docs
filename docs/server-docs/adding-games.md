@@ -4,9 +4,13 @@ sidebar_position: 3
 
 # Adding Games to Crackpipe
 
-You have a large number of games that are unorganized, have different names, and some are compressed while others are not?
+If you are looking to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you've come to the right place. In this chapter, you will learn the correct process to add games to your crackpipe server.
 
-You want to learn how to use crackpipe to make them work. This requires manual labor, and we will need to go through each game step by step.
+> Adding games to your server is a manual process, and requires some effort. Follow these steps for each game.
+
+## Before You Begin
+
+Please read the chapter for [File and Folder Structure](structure.md) first!
 
 ## Step 1: Preparing
 
