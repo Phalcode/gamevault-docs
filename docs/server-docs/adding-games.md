@@ -4,31 +4,29 @@ sidebar_position: 3
 
 # Adding Games to Crackpipe
 
-If you are looking to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you've come to the right place. In this chapter, you will learn the correct process to add games to your crackpipe server.
+If you wish to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you have come to the right place. In this chapter, you will learn the correct process to add games to your Crackpipe server.
 
 ## Before You Begin
 
-Please read the chapter for [File and Folder Structure](structure.md) first!
+Please read the [File and Folder Structure](structure.md) chapter first.
 
-Adding games to your server is a manual process that demands effort and expertise. But it is definitely worth it.
-
-To ensure that the task is executed accurately, follow the steps outlined below for each game. With practice, you will become more proficient and adept at performing these steps with ease.
+Adding games to your server is a manual process that demands effort and expertise. However, it is worth the effort. To execute the task accurately, follow the steps outlined below for each game. With practice, you will become more proficient and adept at performing these steps with ease.
 
 ## Step 1: Preparing
 
-Let's say you have obtained a DRM-free copy of "Crawl", and it's sitting in your file system as follows:
+Suppose you have obtained a DRM-free copy of "Crawl," and it is located in your file system as follows:
 
 - Crawl/
   - setup.bin
   - setup.exe
 
-> Not a real world example
+> This is not a real-world example.
 
-If the game files are already compressed in a format that Crackpipe can understand, such as "Crawl.zip", you can skip the next step. However, if you want to maximize disk space and repack the files, you can do that. Datahoarders for example rely on every bit and byte on their disks and tend to repack everything to the maximum compression available.
+If the game files are already compressed in a format that Crackpipe can understand, such as "Crawl.zip", you can skip the next step. However, if you want to maximize disk space and repack the files, you can do that. Datahoarders, for example, rely on every bit and byte on their disks and tend to repack everything to the maximum compression available.
 
 ## Step 2: Compression
 
-To make your game files compatible with Crackpipe, you need to compress them. We recommend [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
+To make your game files compatible with Crackpipe, you need to compress them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
 
 ### Method 1: The Fast Way
 
@@ -46,7 +44,7 @@ This command uses the following options:
 
 ### Method 2: The Hardcore Way
 
-To achieve the smallest possible archive size, use the maximum settings of 7zip. The resulting archive may or may not be much smaller than before, but it definitely will be as small as possible. However, this process could take a long time, depending on your hardware, and is very resource-intensive.
+To achieve the smallest possible archive size, use the maximum settings of 7zip. The resulting archive may or may not be much smaller than before, but it will definitely be as small as possible. However, this process could take a long time, depending on your hardware, and is very resource-intensive.
 
 ```bash
 7z a -mx=9 -mfb=64 -md=32m -ms=on game.7z /path/to/game/folder/Crawl/*
@@ -62,24 +60,32 @@ This command uses the following options:
 
 ### Method 3: The Balanced Way
 
-If you're not happy with either, you can use the preselected options of 7zip to compress the files as effectively and balanced as possible:
+If you are not happy with either method, you can use the preselected options of 7zip to compress the files as effectively and balanced as possible:
 
 ```bash
 7z a game.7z /path/to/game/folder/Crawl/*
 ```
 
+Apologies for the confusion. Here's an improved version of Step 3:
+
 ## Step 3: Naming the Archive
 
-Do a quick Research about the game you have by asking yourself or the search engine of your choice questions like:
+Before you name the archive, do a quick research about the game you have by asking yourself or using a search engine to find out the following information:
 
 - "What version is the game?"
 - "When was the game released?"
 - "Is the game still in early access?"
 
-Then, name your archive accordingly using the [Crackpipe Naming Structure](structure.md).
+Once you have the necessary information, you can name the archive using the [Crackpipe Naming Structure](structure.md). 
 
-> In our Example it is: `Crawl (v1.0.1) (2014).7z`
+In our Example we have a copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
 
-## Step 4: Deploy!
+```bash
+Crawl (v1.0.1) (2014).7z
+```
 
-Put the archive into the folder on your host system that is mounted to Crackpipe's `/files` folder. Crackpipe will index the game, enrich it with metadata, and save it in your database soon.
+## Step 4: Deploy 🥳
+
+Once you have named the archive, place it into the folder on your host system that is mounted to Crackpipe's `/files` folder. Once the archive is in place, Crackpipe will automatically index the game, enrich it with metadata, and save it in your database.
+
+Congratulations! You have successfully added a game to your Crackpipe server. Repeat the process for any additional games you want to add.
