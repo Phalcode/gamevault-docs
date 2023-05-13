@@ -10,6 +10,16 @@ If you want to set up a Crackpipe Server, you need to pay attention to the file 
 
 - `.zip`
 - `.7z`
+- `.zip`
+- `.7z`
+- `.rar`
+- `.tar`
+- `.tar.gz`
+- `.tar.bz2`
+- `.tar.xz`
+- `.tgz`
+- `.tbz2`
+- `.txz`
 
 ## Naming Convention for Games
 
