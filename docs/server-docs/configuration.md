@@ -14,13 +14,13 @@ This page describes the various configuration properties used in the application
 
 ## Server
 
-| Property                            | Description                                                     | Default Value | Possible Values                           |
-| ----------------------------------- | --------------------------------------------------------------- | ------------- | ----------------------------------------- |
-| `SERVER_PORT`                       | The port the server should listen on.                           | `8080`        | Any valid port number                     |
-| `SERVER_LOG_LEVEL`                  | The log level of the server (debug, info, warn, error, fatal).  | `info`        | `debug`, `info`, `warn`, `error`, `fatal` |
-| `SERVER_CORS_ALLOWED_ORIGINS`       | Allowed CORS origins for the server.                            | `*`           | A comma-separated list of origins         |
-| `SERVER_REGISTRATION_ENABLED`       | If registration is enabled or not.                              | `true`        | `true`, `false`                           |
-| `SERVER_ACCOUNT_ACTIVATION_ENABLED` | If accounts need to be activated by an admin before using them. | `true`        | `true`, `false`                           |
+| Property                             | Description                                                     | Default Value | Possible Values                           |
+| ------------------------------------ | --------------------------------------------------------------- | ------------- | ----------------------------------------- |
+| `SERVER_PORT`                        | The port the server should listen on.                           | `8080`        | Any valid port number                     |
+| `SERVER_LOG_LEVEL`                   | The log level of the server (debug, info, warn, error, fatal).  | `info`        | `debug`, `info`, `warn`, `error`, `fatal` |
+| `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                            | `*`           | A comma-separated list of origins         |
+| `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                              | `false`       | `true`, `false`                           |
+| `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them. | `false`       | `true`, `false`                           |
 
 ## DB
 
@@ -51,11 +51,11 @@ This page describes the various configuration properties used in the application
 
 ## IMAGE
 
-| Property                   | Default   | Possible Values | Description                                                                                                                    |
-| -------------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Property                    | Default   | Possible Values | Description                                                                                                                    |
+| --------------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `IMAGE_GC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                   |
 | `IMAGE_GC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                      |
-| `IMAGE_STORAGE_PATH`       | `/images` | Any string      | The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
+| `IMAGE_STORAGE_PATH`        | `/images` | Any string      | The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
 
 ## TESTING
 
