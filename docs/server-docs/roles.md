@@ -2,15 +2,9 @@
 sidebar_position: 5
 ---
 
-# (WIP) Roles
-
-:::note
-This page is a work in progress and subject to change.
-:::
+# Roles
 
 Roles play a crucial role in ensuring the security and proper functioning of a software application. They determine what actions and data a user can access or manipulate based on their assigned role. In Crackpipe, we have implemented a straightforward role system to enhance security and prevent unauthorized access and manipulation of data.
-
-## Roles
 
 | Role            | Description                                                                                                        | Level |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ | ----- |

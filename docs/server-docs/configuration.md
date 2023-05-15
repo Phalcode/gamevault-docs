@@ -21,6 +21,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                            | `*`           | A comma-separated list of origins         |
 | `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                              | `false`       | `true`, `false`                           |
 | `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them. | `false`       | `true`, `false`                           |
+| `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username      | -             | Any username                              |
 
 ## DB
 
