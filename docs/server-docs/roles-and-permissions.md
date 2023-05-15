@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Roles and Permission
+# Roles and Permissions
 
 Roles and permissions are critical components of any software application to ensure that users can only access and manipulate data based on their roles and privileges. In Crackpipe, we have developed a sophisticated role and permission system to enhance security and prevent unauthorized access and manipulation of data.
 
