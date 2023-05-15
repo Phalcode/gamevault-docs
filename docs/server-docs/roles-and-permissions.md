@@ -1,14 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 ---
 
-# Roles and Permissions
+# Roles and Permission
 
-Roles and permissions are essential components of any larger app to ensure that users can only access and manipulate data based on their roles and permissions. In Crackpipe, we have developed a sophisticated role and permission system to improve security and prevent unauthorized access and manipulation of data.
+Roles and permissions are critical components of any software application to ensure that users can only access and manipulate data based on their roles and privileges. In Crackpipe, we have developed a sophisticated role and permission system to enhance security and prevent unauthorized access and manipulation of data.
 
 ## Roles
 
-Roles are default sets of permissions that grant basic functionalities to a user, depending on their role. In a Crackpipe Server, there are three default roles:
+Roles are pre-defined sets of permissions that grant users certain functions based on their role in the system. In a Crackpipe Server, there are three default roles:
 
 | Role            | Description                             | Permissions                                                                                                                |
 | --------------- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -39,4 +39,4 @@ The permission matrix includes the following granular permissions:
 | WRITE_ALL_PROGRESSES | Grants permission to write user game progress |
 | ALL                  | Grants access to all permissions              |
 
-Overall, our role and permission system ensures that users only have access to the parts of the app that they need and are authorized to use. By granting specific permissions and roles, we improve security and prevent unauthorized access and manipulation of data.
+Our role and permission system ensures that users only have access to the parts of the app that they need and are authorized to use. By granting specific permissions and roles, we improve security and prevent unauthorized access and manipulation of data.
