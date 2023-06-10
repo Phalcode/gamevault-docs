@@ -36,6 +36,7 @@ This page describes the various configuration properties used in the application
 | `DB_DATABASE`    | The database name (not needed for SQLITE).                                                           | `crackpipe`               | Any valid database name |
 | `DB_LOCATION`    | The location of the SQLITE DB file (not needed for POSTGRESQL).                                      | `/db/crackpipe_db.sqlite` | Any valid file path     |
 | `DB_SYNCHRONIZE` | Synchronize the database (use if create table failure occurs but watch out, it could break your db). | `false`                   | `true`, `false`         |
+| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                         | `false`                   | `true`, `false`         |
 
 ## RAWG_API
 
