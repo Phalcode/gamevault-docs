@@ -34,7 +34,7 @@ This page describes the various configuration properties used in the application
 | `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                               | `default`                 | Any valid username      |
 | `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                               | `default`                 | Any valid password      |
 | `DB_DATABASE`    | The database name (not needed for SQLITE).                                                           | `crackpipe`               | Any valid database name |
-| `DB_LOCATION`    | The location of the SQLITE DB file (not needed for POSTGRESQL).                                      | `/db/crackpipe_db.sqlite` | Any valid file path     |
+| `DB_LOCATION`    | The folder of the SQLITE DB file (not needed for POSTGRESQL). "/crackpipe_db.sqlite" gets appended automatically                                      | `/db` | Any valid folder path     |
 | `DB_SYNCHRONIZE` | Synchronize the database (use if create table failure occurs but watch out, it could break your db). | `false`                   | `true`, `false`         |
 | `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                         | `false`                   | `true`, `false`         |
 
