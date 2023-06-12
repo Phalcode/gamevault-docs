@@ -59,7 +59,7 @@ Congratulations! You have successfully set up a Crackpipe server. You can now st
 
 #### Method 1.1: Docker Setup without PostgreSQL
 
-We really don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
+We don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
 
 ```yaml
 version: "3.1"
@@ -95,10 +95,16 @@ However, we're always looking for passionate individuals to join us in our missi
 
 ## What Next?
 
-### 🥳 Congratulations! 🥳
+🥳 Congratulations! 🥳
 
-Now that you have set up your server you can begin [configuring it](configuration.md) and [importing games](adding-games.md).
+To set up and start using server, follow these steps:
 
-- Most notably you should set the `RAWG_API_KEY` Environment Variable for [RAWG](https://rawg.io/), which is the worlds largest video game database that Crackpipe uses to fetch game metadata. You can apply for a free one [here](https://rawg.io/login/?forward=developer).
+1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](configuration.md) for detailed instructions.
 
-- Also Crackpipe needs your games to be in a specific format to be able to identify and install them correctly. Definitely also have a read on [this chapter.](structure.md)
+2. **Add games:** Prepare your game files in the required format for Crackpipe to identify and install them correctly. Read the [structure chapter](structure.md) for important information. Once ready, proceed to [add your games](adding-games.md).
+
+3. **Enhance with Metadata:** Connect your server to RAWG, the world's largest video game database that Crackpipe utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](indexing-and-metadata.md).
+
+4. **Create an admin user:** Set up an admin user account to gain full access to the application. Refer to the [user management guide](user-management.md) for instructions on setting up the first user.
+
+Enjoy your gaming experience with Crackpipe!

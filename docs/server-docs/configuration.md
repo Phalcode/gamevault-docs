@@ -26,17 +26,17 @@ This page describes the various configuration properties used in the application
 
 ## DB
 
-| Property         | Description                                                                                          | Default Value             | Possible Values         |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------------------- | ----------------------- |
-| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                                     | `POSTGRESQL`              | `POSTGRESQL`, `SQLITE`  |
-| `DB_HOST`        | The host of the database (not needed for SQLITE).                                                    | `localhost`               | Any valid host name     |
-| `DB_PORT`        | The port of the database (not needed for SQLITE).                                                    | `5432`                    | Any valid port number   |
-| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                               | `default`                 | Any valid username      |
-| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                               | `default`                 | Any valid password      |
-| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                           | `crackpipe`               | Any valid database name |
-| `DB_LOCATION`    | The folder of the SQLITE DB file (not needed for POSTGRESQL). "/crackpipe_db.sqlite" gets appended automatically                                      | `/db` | Any valid folder path     |
-| `DB_SYNCHRONIZE` | Synchronize the database (use if create table failure occurs but watch out, it could break your db). | `false`                   | `true`, `false`         |
-| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                         | `false`                   | `true`, `false`         |
+| Property         | Description                                                                                                                                | Default Value | Possible Values         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ----------------------- |
+| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                                                                           | `POSTGRESQL`  | `POSTGRESQL`, `SQLITE`  |
+| `DB_HOST`        | The host of the database (not needed for SQLITE).                                                                                          | `localhost`   | Any valid host name     |
+| `DB_PORT`        | The port of the database (not needed for SQLITE).                                                                                          | `5432`        | Any valid port number   |
+| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid username      |
+| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid password      |
+| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                                                                 | `crackpipe`   | Any valid database name |
+| `DB_LOCATION`    | The folder of the SQLITE DB file (not needed for POSTGRESQL). "/crackpipe_db.sqlite" gets appended automatically                           | `/db`         | Any valid folder path   |
+| `DB_SYNCHRONIZE` | Synchronize the database with the entities (it could break your db). Currently the default because we have not implemented migrations yet. | `true`        | `true`, `false`         |
+| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                                                               | `false`       | `true`, `false`         |
 
 ## RAWG_API
 
@@ -62,8 +62,8 @@ This page describes the various configuration properties used in the application
 
 ## TESTING
 
-| Property                  | Default | Possible Values | Description                                                                                                            |
-| ------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Property                          | Default | Possible Values | Description                                                                                                            |
+| --------------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | `TESTING_AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                             |
 | `TESTING_MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files. |
 | `TESTING_IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database.          |
