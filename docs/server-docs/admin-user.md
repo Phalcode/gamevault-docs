@@ -2,13 +2,15 @@
 sidebar_position: 6
 ---
 
-# Admin User Configuration
+# User Management
 
-This documentation provides instructions on how to configure the initial admin user for the Crackpipe server using Docker environment variables. The initial admin user has permissions to administrate the server including all privileges.
+This documentation provides instructions on user management for the Crackpipe server. User management involves configuring the initial admin user, enabling/disabling user registration, managing user activation, and assigning roles. These features are crucial for controlling user access, maintaining security, and administering the server effectively.
 
-## Initial Admin User Configuration
+## Admin User
 
-To configure the admin user for the Crackpipe you need to set the `SERVER_ADMIN_USERNAME` environment variable to the desired username for the admin user.
+### Initial Setup
+
+To configure the initial admin user for the Crackpipe server, you can utilize Docker environment variables. By setting the `SERVER_ADMIN_USERNAME` environment variable to the desired username for the admin user and afterwards registering that user, you can establish the initial admin user account.
 
 For example:
 
@@ -18,19 +20,23 @@ SERVER_ADMIN_USERNAME=adminuser
 
 > Note: Replace `adminuser` with your preferred username.
 
-Now you can register your User.
+Once the admin user is configured and registered, you can proceed with user registration, activation, and role assignment.
 
-## Automatic Admin Permissions
+### Automatic Admin Permissions
 
-Upon registration of the initial admin user, the Crackpipe Server will automatically grant administrative permissions to the user. This ensures that the admin user has the necessary privileges to administrate the server.
+Upon registration of the initial admin user, the Crackpipe server will automatically grant administrative permissions to the user. This ensures that the admin user has the necessary privileges to administrate the server.
 
 If the admin user was misconfigured to not have admin permissions or if the user already exists, the server will automatically grant admin permissions to that user upon startup. This ensures that the admin user has the correct permissions even if there are configuration errors or existing users.
+
+By automatically assigning admin permissions, Crackpipe simplifies the setup process and ensures that the admin user has the appropriate access levels from the start.
 
 ## Recovering Access to Admin User
 
 In the event that the server owner gets locked out of the admin user account due to password loss or other reasons, the Crackpipe Server provides a way to recover access.
 
-Set the `SERVER_ADMIN_PASSWORD` environment variable to the desired password for the admin user. For example:
+To regain access, set the `SERVER_ADMIN_PASSWORD` environment variable to the desired password for the admin user.
+
+For example:
 
 ```plaintext
 SERVER_ADMIN_PASSWORD=mynewpassword
@@ -38,14 +44,37 @@ SERVER_ADMIN_PASSWORD=mynewpassword
 
 > Note: Replace `mynewpassword` with your preferred password.
 
-> Warning: We do not enforce the minimum password length when using this environment variable, but we recommend a password with more than 8 characters
+Upon the next startup of the Crackpipe server, the admin user's password will be updated to the specified password, allowing the
 
-Upon the next startup of the Crackpipe Server, the User with `SERVER_ADMIN_USERNAME` as Username will be set to the specified password, allowing the server owner to regain access to the admin user account.
+## User Registration
 
-## Conclusion
+Crackpipe offers a user registration feature that allows new users to create accounts and gain access to the application. However, in certain scenarios where tighter control over user access is required, you have the option to disable user registration.
 
-Configuring the admin user for the Crackpipe Server grants the necessary permissions to administrate the server. By setting the Docker environment variable `SERVER_ADMIN_USERNAME` to the desired username, the admin user will have admin privileges upon registration. 
+By setting the `SERVER_REGISTRATION_DISABLED` environment variable to `true`, you can easily disable user registration in Crackpipe. Disabling registration prevents new users from creating accounts and accessing the application.
 
-Additionally, if the admin user was misconfigured or already exists, the server will grant admin permissions upon startup. In case of a lockout situation, the `SERVER_ADMIN_PASSWORD` environment variable can be used to regain access to the admin user account.
+This feature provides administrators with flexibility and control over user onboarding, ensuring that only approved users can utilize the application.
 
-Feel free to reach out to our support team if you encounter any issues or have further questions.
+## User Activation
+
+In Crackpipe, the activation process is a crucial step to authorize and activate new user accounts. By default, newly registered users are required to be activated by an administrator before they can fully utilize the application.
+
+Unactivated users have limited rights, even less than that of a guest. They are unable to access certain locked APIs within Crackpipe. Activation ensures that only authorized individuals can interact with the application and its sensitive functionalities.
+
+Admins, with their highest level of control, are exempt from activation checks. They can activate new users through the admin panel within the Crackpipe application.
+
+However, if you wish to bypass the mandatory activation step and allow new users to immediately gain full access to Crackpipe, you can disable the activation process. Simply set the `SERVER_ACCOUNT_ACTIVATION_DISABLED` environment variable to `true`. This activates users automatically upon registration, removes the activation requirement and grants immediate access to new users.
+
+## User Roles
+
+Roles play a crucial role in ensuring the security and proper functioning of the Crackpipe server. They determine the permissions and access levels granted to users within the application.
+
+Crackpipe implements the following roles:
+
+| Role            | Description                                                                                                        | Level |
+| --------------- | ------------------------------------------------------------------------------------------------------------------ | ----- |
+| Guest           | This role allows users to view all content within the application.                                                 | 1     |
+| Users (Default) | This role includes permissions such as downloading games, creating progresses, and editing the user's own profile. | 2     |
+| Editors         | Editors have the ability to edit and remap games within the application.                                           | 3     |
+| Admins          | Admins possess full control over user management and can edit user profiles.                                       | 4     |
+
+By assigning appropriate roles to users, you can ensure that they have the necessary access and privileges based on their responsibilities.
