@@ -22,7 +22,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                 | `false`       | `true`, `false`                           |
 | `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                    | `false`       | `true`, `false`                           |
 | `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup | -             | Any username                              |
-| `SERVER_ADMIN_USERNAME`              | Resets the admin user passwort to this password on startup                         | -             | Any password (No Length Validation)       |
+| `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup                         | -             | Any password (No Length Validation)       |
 
 ## DB
 
