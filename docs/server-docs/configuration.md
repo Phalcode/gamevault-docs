@@ -64,8 +64,8 @@ This page describes the various configuration properties used in the application
 
 | Property                  | Default | Possible Values | Description                                                                                                            |
 | ------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                             |
-| `MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files. |
-| `IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database.          |
-| `RAWG_API_DISABLED`       | `false` | `true`, `false` | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.   |
-| `GOOGLE_API_DISABLED`     | `false` | `true`, `false` | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API. |
+| `TESTING_AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                             |
+| `TESTING_MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files. |
+| `TESTING_IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database.          |
+| `TESTING_RAWG_API_DISABLED`       | `false` | `true`, `false` | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.   |
+| `TESTING_GOOGLE_API_DISABLED`     | `false` | `true`, `false` | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API. |
