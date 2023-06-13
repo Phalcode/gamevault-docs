@@ -8,7 +8,7 @@ sidebar_position: 2
 
 All configuration properties of your Crackpipe server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
 
-# Configuration Properties
+## Configuration Properties
 
 This page describes the various configuration properties used in the application. These properties can be configured in the environment variables or in a `.env` file.
 
