@@ -55,7 +55,7 @@ If you only want to try out Crackpipe, without setting up your own server, you c
 2. This will allow you to explore the features and functionality of Crackpipe.
 3. Click "Next" to proceed
 
-> *Demo Server Credentials:* Username: **demo**, Password: **demodemo**
+> _Demo Server Credentials:_ Username: **demo**, Password: **demodemo**
 
 ### Step 3: Login or Register
 
@@ -78,6 +78,8 @@ If you don't have an account on the selected Crackpipe backend server, follow th
 2. Follow the instructions provided to create your Crackpipe account on the backend server.
 3. The server administrators may have to activate your account before you can use it to log in. Contact them if necessary.
 
-Congratulations! You have completed the initial configuration of Crackpipe. You are now ready to explore and enjoy the features and functionality of the app. If you have any further questions or need assistance, refer to the remaining chapters of this documentation or reach out to our support team for help.
+## Conclusion
+
+Congratulations! You have successfully installed and completed the initial configuration of Crackpipe. You are now ready to explore and enjoy the features and functionality of the app. If you have any further questions or need assistance, refer to the remaining chapters of this documentation or reach out to our support team for help.
 
 We specifically recommend to read the ["How to Use" Chapter](how-to-use.md) to understand how Crackpipe works.
