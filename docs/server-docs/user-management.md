@@ -10,7 +10,7 @@ This documentation provides instructions on user management for the Crackpipe se
 
 ### Initial Setup
 
-To configure the initial admin user for the Crackpipe server, you can utilize Docker environment variables. By setting the `SERVER_ADMIN_USERNAME` environment variable to the desired username for the admin user and afterwards registering that user, you can establish the initial admin user account.
+To configure the initial admin user for the Crackpipe server, you can utilize Docker environment variables. By setting the `SERVER_ADMIN_USERNAME` environment variable to the desired username for the admin user and afterwards manually registering that user in the Crackpipe App, you can establish the initial admin user account.
 
 For example:
 
