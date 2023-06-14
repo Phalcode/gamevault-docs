@@ -49,7 +49,7 @@ If you have your own self-hosted Crackpipe server, please enter its URL in the p
 
 #### Option 2: Using the Demo Server
 
-If you only want to try out Crackpipe, without setting up your own server, you can use the demo server. There are no real games on the demo server and the functionality is very limited. Follow the instructions below:
+If you only want to try out Crackpipe, without setting up your own server, you can use the demo server. There are no real games on the demo server and the functionality is very limited. ToFollow the instructions below:
 
 1. Enter "demo.crackpipe.de" as the URL in the provided field.
 2. This will allow you to explore the features and functionality of Crackpipe.
