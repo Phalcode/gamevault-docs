@@ -50,24 +50,33 @@ To disable all calls to the RAWG API, you can use the `TESTING_RAWG_API_DISABLED
 
 ## Game Box Arts
 
+Crackpipe utilizes a simple Google Image Search library to find suitable box arts for games. This is necessary because RAWG does not provide box arts directly.
+
 ### Google Image Search
 
 #### Finding Box Arts
 
-Crackpipe uses a simple Google Image Search library to find suitable box arts for games. This is necessary because RAWG does not provide box arts directly.
+Crackpipe uses the following algorithm to find box arts:
 
-#### Rate Limiting
+1. Searches for `GAME-TITLE inurl:steamgriddb.com`.
+2. If no results are found, searches for `GAME-TITLE game box art`.
+3. Filters the results to PNG and JPG formats.
+4. Selects the first available image that matches the target aspect ratio.
 
-When adding or updating a large number of games (more than 100), there might be rate limits imposed by Google on your IP address. In such cases, it is recommended to wait for a day or two before continuing the search.
+#### Rate Limiting and Cooldown
 
-### Box Art Selection Algorithm
+When adding or updating a large number of games (more than 100), there might be rate limits imposed by Google on your IP address. In such cases, Crackpipe implements a cooldown mechanism to manage the rate limit.
 
-The following algorithm is used to select box arts:
+The cooldown works as follows:
 
-1. Searches for `GAME-TITLE (RELEASE-YEAR) game box art`.
-2. Filter the results to PNG and JPG formats.
-3. Filter the results to images where the height is less than the width.
-4. Select the first available image.
+- The cooldown duration is determined by the `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` configuration value, expressed in hours.
+- If no box art images are found for multiple games, indicating a potential Google Image Search rate limit, the cooldown is activated for the specified duration.
+- The cooldown prevents further box art searches until the cooldown duration has elapsed.
+- Once the cooldown is activated, a warning message is logged, whenever crackpipe tries to search for new boxarts, indicating the remaining cooldown time.
+
+#### Disabling Google Image
+
+If you rather set your box-arts yourself and want to completely disable the Google Image Search feature, you can use the `TESTING_GOOGLE_API_DISABLED` environment variable. This will block all Google requests.
 
 ### Image Storage
 
@@ -80,10 +89,6 @@ For more information on Crackpipe's image management, refer to [this page](image
 #### Customizing Storage Path
 
 The storage path for images can be customized by modifying the `IMAGE_STORAGE_PATH` environment variable.
-
-### Disabling Box Art Behavior
-
-To completely disable the box art feature, you can use the `TESTING_GOOGLE_API_DISABLED` environment variable. This will result in no box arts being displayed.
 
 ## Data Integrity Checks
 
