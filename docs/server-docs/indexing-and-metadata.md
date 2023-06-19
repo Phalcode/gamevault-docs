@@ -59,7 +59,7 @@ Crackpipe utilizes a simple Google Image Search library to find suitable box art
 Crackpipe uses the following algorithm to find box arts:
 
 1. Searches for `"GAME-TITLE" inurl:steamgriddb.com`.
-2. If no results are found, searches for "`"GAME-TITLE" game box art`.
+2. If no results are found, searches for `"GAME-TITLE" game box art`.
 3. Selects the first available image that matches the target aspect ratio.
 
 #### Rate Limiting and Cooldown
