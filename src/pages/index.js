@@ -46,15 +46,6 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <div class="marquee">
-          <marquee>
-            COMING SOON - COMING SOON - COMING SOON - COMING SOON - COMING SOON
-            - COMING SOON - COMING SOON - COMING SOON - COMING SOON - COMING
-            SOON - COMING SOON - COMING SOON - COMING SOON - COMING SOON -
-            COMING SOON - COMING SOON - COMING SOON - COMING SOON - COMING SOON
-            - COMING SOON
-          </marquee>
-        </div>
         <HomepageFeatures />
       </main>
     </Layout>
