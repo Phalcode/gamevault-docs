@@ -26,13 +26,16 @@ Here is an overview of all core functions of Crackpipe
 - 📥 Download games from your server securely
 - 🎮 Launch the games and play them
 - ⏱️ Track your playtimes and progress (even if the server is offline)
-- 👥 Compare your statistics and play states with other users on the server
+- 👥 Compare your statistics and game progresses with other users on the server
+- 🔒 Manage your Users and Games using a powerful Admin UI
 
 ### Server Features
 
 - ♻️ Automatically indexes games on the file system into a database
 - 📚 Enriches the games with metadata like tags & genres and much more using RAWG API
+- 📸 Uses Google Image Search to find beautiful box-arts for your library.
 - 👥 Multi User Authentication
+- 🔒 Role Based Access Control
 - ⏱️ Keeps track of your users game progresses and state
 - 🚨 Health Monitoring and configurable Logging
 - 🔎 Full-Text-Search, Filters, Sorting, Pagination
