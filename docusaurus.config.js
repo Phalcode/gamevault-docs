@@ -142,7 +142,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: "img:not(nav img):not(footer img)",
+        selector: "img:not(nav img):not(footer img):not(#producthunt)",
         config: {
           background: {
             light: "rgb(255, 255, 255)",
