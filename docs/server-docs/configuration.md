@@ -14,15 +14,16 @@ This page describes the various configuration properties used in the application
 
 ## Server
 
-| Property                             | Description                                                                        | Default Value | Possible Values                           |
-| ------------------------------------ | ---------------------------------------------------------------------------------- | ------------- | ----------------------------------------- |
-| `SERVER_PORT`                        | The port the server should listen on.                                              | `8080`        | Any valid port number                     |
-| `SERVER_LOG_LEVEL`                   | The log level of the server (debug, info, warn, error, fatal).                     | `info`        | `debug`, `info`, `warn`, `error`, `fatal` |
-| `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                                               | `*`           | A comma-separated list of origins         |
-| `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                 | `false`       | `true`, `false`                           |
-| `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                    | `false`       | `true`, `false`                           |
-| `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup | -             | Any username                              |
-| `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup                         | -             | Any password (No Length Validation)       |
+| Property                             | Description                                                                        | Default Value     | Possible Values                           |
+| ------------------------------------ | ---------------------------------------------------------------------------------- | ----------------- | ----------------------------------------- |
+| `SERVER_PORT`                        | The port the server should listen on.                                              | `8080`            | Any valid port number                     |
+| `SERVER_LOG_LEVEL`                   | The log level of the server (debug, info, warn, error, fatal).                     | `info`            | `debug`, `info`, `warn`, `error`, `fatal` |
+| `SERVER_REQUEST_LOG_FORMAT`          | The morgen log format for incoming HTTP Requests                                   | Custom Log Format | `short, combined` any many more           |
+| `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                                               | `*`               | A comma-separated list of origins         |
+| `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                 | `false`           | `true`, `false`                           |
+| `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                    | `false`           | `true`, `false`                           |
+| `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup | -                 | Any username                              |
+| `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup                         | -                 | Any password (No Length Validation)       |
 
 ## DB
 
