@@ -39,7 +39,7 @@ Here are the steps to install the game:
 
    - `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` - This is where the final game files and .exe should be located.
 
-3. You will need to choose an .exe file in the Installations tab before you can play the game. Crackpipe will will enable the Play button in the Installations tab.
+3. You will need to choose an .exe file in the Installations tab before you can play the game. Then Crackpipe will enable the Play button in the Installations tab.
 
 4. Feel free to delete `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/` after you installed the game. You can do it manually or by pressing the Delete-Icon / Clear All in your Downloads Tab.
 
