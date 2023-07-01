@@ -18,7 +18,7 @@ const FeatureList = [
         Keep your game collection organized and share your favorite titles with
         your friends with our easy-to-use platform. There's no need to compile
         anything. Our client application is officially available in the{" "}
-        <a href="https://www.microsoft.com/en-us/p/crackpipe/9pmjlf08x8p0">
+        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
           Microsoft Store
         </a>
       </>
