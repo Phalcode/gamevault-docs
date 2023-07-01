@@ -24,7 +24,7 @@ function HomepageHeader() {
 
           <a
             className="button button--secondary button--lg"
-            href="https://www.microsoft.com/en-us/p/crackpipe/9pmjlf08x8p0"
+            href="https://www.microsoft.com/store/apps/9PCKDV76GL75"
             target="_blank"
           >
             Download
