@@ -98,11 +98,11 @@ We haven't had the time to create a Portrainer One-Click-App Template yet. But y
 
 ## More Methods
 
-We're excited to announce that we're expanding our support for One-Click App Integrations! In the future, we plan to add more hosting systems to our lineup.
+We're excited to announce that we're expanding our support for One-Click-App Integrations! In the future, we plan to add more hosting systems to our lineup.
 
-We do want to point out that each system has its own unique blueprint syntax, and it can take a bit of time to set up the blueprints of new One-Click Apps just right.
+We do want to point out that each system has its own unique blueprint syntax, and it can take a bit of time to set up the blueprints of new One-Click-Apps just right.
 
-However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up a one-click app for any of these hosting systems, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
+However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up a one-click-app for any of these hosting systems, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
 
 ## What Next?
 
