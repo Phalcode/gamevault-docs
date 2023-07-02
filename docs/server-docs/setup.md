@@ -116,6 +116,6 @@ To set up and start using server, follow these steps:
 
 3. **Enhance with Metadata:** Connect your server to RAWG, the world's largest video game database that Crackpipe utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](indexing-and-metadata.md).
 
-4. **Create an admin user:** Set up an admin user account to gain full access to the application. Refer to the [user management guide](user-management.md) for instructions on setting up the first user.
+4. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](user-management.md) for instructions on setting up the first user.
 
 Enjoy your gaming experience with Crackpipe!
