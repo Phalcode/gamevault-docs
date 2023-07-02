@@ -77,13 +77,18 @@ services:
 
 ## Method 2: Caprover One Click App
 
-> Upcoming, but not yet available.
+If you're using [Caprover](https://caprover.com), setting up a Crackpipe Server with a Postgres DB is just a click away.
 
-If you're using a [Caprover](https://caprover.com) server, setting up a Crackpipe Server with a postgres database should just be a click away.
+We have already created a Caprover One-Click-App Integration for this purpose. However, our app hasn't gained enough prominence to be included in the official One-Click-App Repository of Caprover. So, we decided to create our own [third-party repository](https://github.com/Phalcode/caprover-one-click-apps).
 
-We have already coded a Caprover One-Click-Implementation but unfortunately our app is not prominent enough to make it into the official One-Click-App Repository of Caprover, so for now we will try to file an application to some third party repositories.
+To use it, follow these simple steps:
 
-Once we are listed in some repo we will put the instructions on how to setup crackpipe this way here.
+1. Log in to your CapRover dashboard
+2. Go to "Apps" and click on "One-Click Apps/Databases." Scroll down to the bottom
+3. Under "3rd party repositories", copy and paste the following link: `https://phalcode.github.io/caprover-one-click-apps`
+4. Click the "Connect New Repository" button
+
+Now, all you need to do is search for 'Crackpipe' using the search box and follow the installation wizard.
 
 ## Method 3: Portrainer One Click App
 
