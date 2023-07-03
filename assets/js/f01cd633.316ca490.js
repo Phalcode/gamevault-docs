@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[4259],{9279:e=>{e.exports=JSON.parse('{"label":"alternative sources","permalink":"/blog/tags/alternative-sources","allTagsPath":"/blog/tags","count":1}')}}]);

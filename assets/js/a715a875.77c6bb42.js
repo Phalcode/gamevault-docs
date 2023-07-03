@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[8155],{3711:a=>{a.exports=JSON.parse('{"label":"app launch","permalink":"/blog/tags/app-launch","allTagsPath":"/blog/tags","count":1}')}}]);

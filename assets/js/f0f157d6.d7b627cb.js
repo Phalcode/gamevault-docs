@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[3950],{1473:s=>{s.exports=JSON.parse('{"label":"Discord","permalink":"/blog/tags/discord","allTagsPath":"/blog/tags","count":1}')}}]);

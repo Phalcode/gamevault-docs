@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[7940],{6894:e=>{e.exports=JSON.parse('{"label":"Subreddit","permalink":"/blog/tags/subreddit","allTagsPath":"/blog/tags","count":1}')}}]);

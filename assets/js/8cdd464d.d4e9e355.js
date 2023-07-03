@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[8800],{3913:a=>{a.exports=JSON.parse('{"label":"official statement","permalink":"/blog/tags/official-statement","allTagsPath":"/blog/tags","count":1}')}}]);
