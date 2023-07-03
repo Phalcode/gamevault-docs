@@ -132,6 +132,10 @@ const config = {
                 href: "https://ko-fi.com/phalcode",
                 label: "Support Us",
               },
+              { 
+                href: "https://phalco.de", 
+                label: "Imprint" 
+              },
             ],
           },
         ],
