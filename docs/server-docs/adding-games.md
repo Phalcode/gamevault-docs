@@ -66,8 +66,6 @@ If you are not happy with either method, you can use the preselected options of 
 7z a game.7z /path/to/game/folder/Crawl/*
 ```
 
-Apologies for the confusion. Here's an improved version of Step 3:
-
 ## Step 3: Naming the Archive
 
 Before you name the archive, do a quick research about the game you have by asking yourself or using a search engine to find out the following information:
