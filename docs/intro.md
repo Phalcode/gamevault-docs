@@ -8,13 +8,15 @@ sidebar_position: 1
 
 ## What is Crackpipe
 
-Crackpipe is a free, open-source, and decentralized gaming platform, offering an alternative to popular ones like Steam, Epic Games, and others. Unlike traditional platforms where you buy games, Crackpipe allows you and your friends to play and keep track of games stored on a file server.
+Crackpipe is an innovative gaming platform providing a decentralized, open-source alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
 
-Think of it as Jellyfin, but for video games. You don't buy games on Crackpipe; instead, you bring your games from wherever you have them, and the platform organizes them for you.
+But Crackpipe operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam or Jellyfin for video games. You bring your own games from wherever you have them, and the platform detects and provides a user-friendly interface to easily download, install, and track your playtimes and progress. You can not stream games with this app.
 
-Crackpipe has two main components: a self-hosted NestJS Backend Application and one or more Windows Store App Clients.
+The Crackpipe ecosystem consists of two main components: a self-hosted NestJS Backend Application and one or more Windows Store App Clients, ensuring a seamless and efficient gaming experience.
 
-It is intended to work with "alternatively obtained" games, like DRM-free games, instead of games from traditional platforms While Crackpipe can be used with cracked games, it does not promote or support piracy.
+Crackpipe is specifically designed for "alternatively obtained" games, such as DRM-free games, rather than games from conventional platforms. It's important to note that while Crackpipe can be used with cracked games, it does not endorse or support piracy.
+
+In summary, Crackpipe empowers gamers by offering a flexible and convenient way to organize and play their game library from a self-hosted file server.
 
 ## Features
 
