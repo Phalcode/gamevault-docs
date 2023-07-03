@@ -8,37 +8,37 @@ sidebar_position: 1
 
 ## What is Crackpipe
 
-Crackpipe is an open-source, decentralized, selfhosted and liberal alternative to Game Platforms and Launchers like Steam, Origin, Epic Games, GoG, etc. which allows you and your friends to play and track games that are **on a fileserver**.
+Crackpipe is a free, open-source, and decentralized gaming platform, offering an alternative to popular ones like Steam, Epic Games, and others. Unlike traditional platforms where you buy games, Crackpipe allows you and your friends to play and keep track of games stored on a file server.
 
-Think of Jellyfin, but for Videogames. You must provide the games. You can not buy games on Crackpipe.
+Think of it as Jellyfin, but for video games. You don't buy games on Crackpipe; instead, you bring your games from wherever you have them, and the platform organizes them for you.
 
-The Crackpipe ecosystem consists of a selfhostable NestJS Backend Application and one or more Windows Store App Clients.
+Crackpipe has two main components: a self-hosted NestJS Backend Application and one or more Windows Store App Clients.
 
-It was designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used with cracked games, it does not encourage or condone piracy.
+It is intended to work with "alternatively obtained" games, like DRM-free games, instead of games from traditional platforms While Crackpipe can be used with cracked games, it does not promote or support piracy.
 
 ## Features
 
-Here is an overview of all core functions of Crackpipe
+Let's take a look at all the main functions of Crackpipe:
 
 ### Client Features
 
-- 🔎 Browse through your servers game collection
-- 📥 Download games from your server securely
-- 🎮 Launch the games and play them
-- ⏱️ Track your playtimes and progress (even if the server is offline)
-- 👥 Compare your statistics and game progresses with other users on the server
-- 🔒 Manage your Users and Games using a powerful Admin UI
+- 🔎 Browse your server's game collection
+- 📥 Securely download games from your server
+- 🎮 Launch and play games on your PC
+- ⏱️ Track playtimes and progress (even when the server is offline)
+- 👥 Compare statistics and game progress with other users on the server
+- 🔒 Manage users and games with a powerful Admin UI
 
 ### Server Features
 
-- ♻️ Automatically indexes games on the file system into a database
-- 📚 Enriches the games with metadata like tags & genres and much more using RAWG API
-- 📸 Uses Google Image Search to find beautiful box-arts for your library.
-- 👥 Multi User Authentication
-- 🔒 Role Based Access Control
-- ⏱️ Keeps track of your users game progresses and state
+- ♻️ Automatically index games from the file system into a database
+- 📚 Enhances games with metadata like tags, genres, and more using RAWG API
+- 📸 Use Google Image Search to find beautiful box art for your library
+- 👥 Multi-User Authentication
+- 🔒 Role-Based Access Control
+- ⏱️ Keep track of your users' game progress and state
 - 🚨 Health Monitoring and configurable Logging
-- 🔎 Full-Text-Search, Filters, Sorting, Pagination
+- 🔎 Full-Text Search, Filters, Sorting, Pagination
 - 🔌 Fully Documented API
 - ⚙️ Highly Configurable
 
