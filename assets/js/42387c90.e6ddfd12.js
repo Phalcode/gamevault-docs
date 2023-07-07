@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[6571],{542:a=>{a.exports=JSON.parse('{"label":"platform values","permalink":"/blog/tags/platform-values","allTagsPath":"/blog/tags","count":1}')}}]);
