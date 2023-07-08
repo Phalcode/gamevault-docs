@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[6099],{1954:e=>{e.exports=JSON.parse('{"label":"improvement","permalink":"/blog/tags/improvement","allTagsPath":"/blog/tags","count":1}')}}]);
