@@ -22,7 +22,7 @@ Docker and Docker Compose are recommended to set up the Crackpipe server. If you
 Create a new file named `docker-compose.yml` in a directory of your choice and copy the following code:
 
 ```yaml
-version: "3.1"
+version: "3.8"
 services:
   crackpipe-backend:
     image: phalcode/crackpipe-backend:latest
@@ -41,6 +41,8 @@ services:
       POSTGRES_USER: default
       POSTGRES_PASSWORD: default
       POSTGRES_DB: crackpipe
+    volumes:
+      - /your/database/folder:/var/lib/postgresql
     ports:
       - 5432:5432
 ```
@@ -62,7 +64,7 @@ Congratulations! You have successfully set up a Crackpipe server. You can now st
 We don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
 
 ```yaml
-version: "3.1"
+version: "3.8"
 services:
   crackpipe-backend:
     image: phalcode/crackpipe-backend:latest
