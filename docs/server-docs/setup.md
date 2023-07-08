@@ -74,8 +74,13 @@ services:
   crackpipe-backend:
     image: phalcode/crackpipe-backend:latest
     restart: unless-stopped
+    user: 1000:1000
     environment:
       DB_SYSTEM: "SQLITE"
+      # The Following Line grants Admin Role to account with this username upon registration.
+      SERVER_ADMIN_USERNAME: admin
+      # Uncomment and Insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
+      # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       - /your/games/folder:/files
       - /your/images/folder:/images
