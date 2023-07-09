@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[3291],{4067:a=>{a.exports=JSON.parse('{"label":"racist","permalink":"/blog/tags/racist","allTagsPath":"/blog/tags","count":1}')}}]);
