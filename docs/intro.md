@@ -44,7 +44,12 @@ Let's take a look at all the main functions of Crackpipe:
 - 🔌 Fully Documented API
 - ⚙️ Highly Configurable
 
+## Support
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R76Q6KD)
+
 ## License
+
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
