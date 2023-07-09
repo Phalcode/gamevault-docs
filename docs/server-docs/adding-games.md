@@ -82,6 +82,19 @@ In our Example we have a copy of Crawl Version 1.0.1 released in 2014, so we nam
 Crawl (v1.0.1) (2014).7z
 ```
 
+### Adding the same game multiple times
+
+If you wish to add the same game multiple times to your Crackpipe server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex.
+
+Here's a good example:
+
+- Game 1: `Minecraft [Tekkit Modpack] (v1.7.10) (2011).zip`
+- Game 2: `Minecraft [Hexxit Modpack] (v1.13.2) (2011).zip`
+
+By using this approach, the indexer will treat these two games as separate entities.
+
+In case the RAWG Matching feature does not work accurately for these games, you have the option to manually remap them in the client if you have the Role Editor or higher privileges.
+
 ## Step 4: Deploy 🥳
 
 Once you have named the archive, place it into the folder on your host system that is mounted to Crackpipe's `/files` folder. Once the archive is in place, Crackpipe will automatically index the game, enrich it with metadata, and save it in your database.

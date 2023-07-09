@@ -6,9 +6,19 @@ sidebar_position: 7
 
 ## Game Indexing
 
-### Indexing Frequency
+The server regularly scans the `/files` directory to create an index of archived games. The indexing frequency is determined by the `GAMES_INDEX_INTERVAL_IN_MINUTES` environment variable, which has a default value of 5 minutes.
 
-The server regularly scans the `/files` directory for archived games to create an index. The frequency of indexing is determined by the `GAMES_INDEX_INTERVAL_IN_MINUTES` environment variable, which has a default value of 5 minutes.
+The indexing algorithm follows these steps:
+
+- It recursively scans all games in the `/files` directory.
+
+- For each game:
+  - It checks if the exact same game already exists in the database, either based on the file path or a combination of the title and release year. If it does, the game is skipped.
+  - It checks if the game exists in the database but was previously deleted, again based on the file path or a combination of the title and release year. If so, it restores the game and updates its information with the current file's details, such as size, title, year, early access flag, path, and version.
+  - It checks if the game already exists in the database. If so, it updates the game's information with the current file's details.
+  - If the game does not exist in the database at all, it indexes the game.
+
+Finally, a simple integrity check is performed to ensure that the games in the database also exist in the `/files` folder, and vice versa.
 
 ## Retrieving and Storing Game Information
 
@@ -92,13 +102,3 @@ The storage path for images can be customized by modifying the `IMAGE_STORAGE_PA
 ## Data Integrity Checks
 
 The autoindexer also performs various integrity checks on game files to maintain data consistency.
-
-### Game File Checks
-
-For each game file, the autoindexer verifies the following:
-
-- Game Existence: Checks if the game exists in the database based on the file path.
-- Size Verification: Compares the file size in the database with the actual file size and updates the game size if they differ.
-- Restoring Deleted Games: Restores, re-indexes, and updates games that were previously deleted but are found in the file system based on the file path or a combination of title and release year.
-
-These integrity checks ensure the accuracy and reliability of game data in the Crackpipe Backend Application.
