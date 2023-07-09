@@ -31,6 +31,7 @@ Additionally, there is a community-driven approach for running Crackpipe on Linu
 ## Initial Configuration
 
 Once you have installed and launched Crackpipe, you need to do some initial configuration to get it up and running properly.
+
 ### Step 1: Select the Root Folder
 
 In this step, you will choose the location where all your downloaded and installed games will be stored. This folder will act as the central location for your game library. We recommend you to have a read on the ["How to Use" Chapter](how-to-use.md) to understand how the root folder works.
