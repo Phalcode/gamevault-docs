@@ -46,3 +46,13 @@ Here are the steps to install the game:
 ## Playing Games
 
 When you launch Crackpipe, the app automatically starts a time-tracking daemon running in the background. This daemon will count your playtime automatically and report it to the server when there is any .exe running in any folder within your library folder `<Crackpipe Root>/Installations/*`.
+
+## Modifying Games
+
+If you find the Box-Art of a game on your server unsatisfactory or if incorrect Metadata is associated with a game, there is a simple solution.
+
+If you have the `EDITOR` role or higher on your Crackpipe server, navigate to the game's Detail Page and click on the Pencil icon in the corner.
+
+In the resulting popup, you should be able to paste a URL for a different box-art image. Additionally, there should be a manual search box for the RAWG database, allowing you to remap the game to the correct one on your own.
+
+These changes will affect every user on the server.
