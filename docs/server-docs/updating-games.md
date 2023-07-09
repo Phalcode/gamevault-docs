@@ -8,9 +8,9 @@ sidebar_position: 5
 
 To update a game, simply delete the existing game file and replace it with a new one in the `/files` directory.
 
-You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, Crackpipe's indexer will recognize it as an update. The old game will be restored and updated with the new file's information, while preserving any progress associated with the game.
+You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, Crackpipe's indexer will recognize it as an update. The same game entity will be restored if needed and updated with the new file's information, while preserving any progress associated with the game.
 
-Example:
+### Example
 
 Let's say you have a very outdated version of the game `Minecraft (EA) (v1.8b) (2011).zip` and you want to update it to the newest version, such as `Minecraft (v1.20.1) (2011).7z`:
 
