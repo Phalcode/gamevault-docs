@@ -74,7 +74,7 @@ Before you name the archive, do a quick research about the game you have by aski
 - "When was the game released?"
 - "Is the game still in early access?"
 
-Once you have the necessary information, you can name the archive using the [Crackpipe Naming Structure](structure.md). 
+Once you have the necessary information, you can name the archive using the [Crackpipe Naming Structure](structure.md).
 
 In our Example we have a copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
 
@@ -84,12 +84,21 @@ Crawl (v1.0.1) (2014).7z
 
 ### Adding the same game multiple times
 
-If you wish to add the same game multiple times to your Crackpipe server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex.
+If you wish to add the same game multiple times to your Crackpipe server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex. It also does not matter if the files are in the same sub-folder or in different ones.
 
-Here's a good example:
+**Here's a good example:**
 
 - Game 1: `Minecraft [Tekkit Modpack] (v1.7.10) (2011).zip`
 - Game 2: `Minecraft [Hexxit Modpack] (v1.13.2) (2011).zip`
+
+> Will result in two seperate games
+
+**And here's a bad example:**
+
+- Game 1: `Minecraft (v1.7.10) (2011).zip`
+- Game 2: `Minecraft (v1.13.2) (2011).zip`
+
+> Will result in a single game that gets overwritten!
 
 By using this approach, the indexer will treat these two games as separate entities.
 
