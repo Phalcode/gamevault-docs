@@ -4,7 +4,9 @@ sidebar_position: 2
 
 # Configuration
 
-> Check out [configuration.ts](https://github.com/Phalcode/crackpipe-backend/blob/master/src/configuration.ts) for all possible environment variables.
+:::tip
+Check out [configuration.ts](https://github.com/Phalcode/crackpipe-backend/blob/master/src/configuration.ts) for all possible environment variables incase we forgot to update this page.
+:::
 
 All configuration properties of your Crackpipe server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
 

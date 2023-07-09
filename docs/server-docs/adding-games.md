@@ -20,7 +20,9 @@ Suppose you have obtained a DRM-free copy of "Crawl," and it is located in your 
   - setup.bin
   - setup.exe
 
-> This is not a real-world example.
+:::note
+This is not a real-world example.
+:::
 
 If the game files are already compressed in a format that Crackpipe can understand, such as "Crawl.zip", you can skip the next step. However, if you want to maximize disk space and repack the files, you can do that. Datahoarders, for example, rely on every bit and byte on their disks and tend to repack everything to the maximum compression available.
 
@@ -95,14 +97,18 @@ In case the RAWG Matching feature does not work accurately for these games, you 
 - Game 1: `Minecraft [Tekkit Modpack] (v1.7.10) (2011).zip`
 - Game 2: `Minecraft [Hexxit Modpack] (v1.13.2) (2011).zip`
 
-> Will result in two seperate games
+:::info
+Will result in two seperate games
+:::
 
 **And here's a bad example:**
 
 - Game 1: `Minecraft (v1.7.10) (2011).zip`
 - Game 2: `Minecraft (v1.13.2) (2011).zip`
 
-> Will result in a single game that gets overwritten!
+:::danger
+Will result in a single game that gets overwritten!
+:::
 
 ## Step 4: Deploy 🥳
 

@@ -4,8 +4,6 @@ sidebar_position: 1
 
 # Introduction
 
-> Let's discover Crackpipe!
-
 ## What is Crackpipe
 
 Crackpipe is an innovative gaming platform providing a decentralized, open-source alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.

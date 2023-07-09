@@ -6,7 +6,9 @@ sidebar_position: 2
 
 ## File & Folder Structure
 
-> Lets say you installed Crackpipe freshly and configured your Root folder path to `D:/` because your D Drive is larger
+:::note Example
+Lets say you installed Crackpipe freshly and configured your Root folder path to `D:/` because your D Drive is larger
+:::
 
 Crackpipe will now generate its folder structure. When everything is done your file system will look like this:
 
@@ -29,8 +31,9 @@ Your downloaded zip file will be saved in `<Crackpipe Root>/Crackpipe/Downloads/
 
 After downloading the game, you will need to **install it manually** before you can play it.
 
-> **Why does Crackpipe not install the game automatically?**
-> Crackpipe is designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used to install cracked games, it does not encourage or condone piracy. Some Games come with Installers, some come ready to play out of the box, some game repacks are archived with a very good compression and need to get uncompressed before. Automating all of this would be very hard. All Methods have one thing in common: You can choose where your game installation should land. And Crackpipe makes use of this.
+:::info Why does Crackpipe not install the game automatically?
+Crackpipe is designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used to install cracked games, it does not encourage or condone piracy. Some Games come with Installers, some come ready to play out of the box, some game repacks are archived with a very good compression and need to get uncompressed before. Automating all of this would be very hard. All Methods have one thing in common: You can choose where your game installation should land. And Crackpipe makes use of this.
+:::
 
 Here are the steps to install the game:
 
@@ -53,7 +56,9 @@ The progress entry includes the completion state, which can be modified through 
 
 You have the ability to change the progress state or delete it using the community tab. Certain states also change automatically, such as transitioning from UNPLAYED to PLAYING when the game is launched.
 
+:::caution
 Please note that this Progress does not include your savegames. Crackpipe does not have the capability to synchronize or store your savegames. Therefore, it is advisable to create backups of your savegames before uninstalling any games.
+:::
 
 ## Modifying Games
 

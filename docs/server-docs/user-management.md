@@ -18,7 +18,9 @@ For example:
 SERVER_ADMIN_USERNAME=adminuser
 ```
 
-> Note: Replace `adminuser` with your preferred username.
+:::note
+Replace `adminuser` with your preferred username.
+:::
 
 Once the admin user is configured and registered, you can proceed with user registration, activation, and role assignment.
 
@@ -42,7 +44,9 @@ For example:
 SERVER_ADMIN_PASSWORD=mynewpassword
 ```
 
-> Note: Replace `mynewpassword` with your preferred password.
+:::note
+Replace `mynewpassword` with your preferred password.
+:::
 
 Upon the next startup of the Crackpipe server, the admin user's password will be updated to the specified password, allowing the
 

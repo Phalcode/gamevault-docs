@@ -32,7 +32,9 @@ After adding games, the server attempts to find the corresponding game in the RA
 
 To use the RAWG integration feature, users can set up a RAWG API Key by configuring the `RAWG_API_KEY` environment variable. The API Key can be obtained from the [RAWG Developer Portal](https://rawg.io/login/?forward=developer). The free tier of the API should be sufficient for most users.
 
-> If you encounter limitations with your RAWG API Key, you have the option to upgrade your account on RAWG or [contact us](mailto:contact@phalco.de) for assistance.
+:::tip
+If you encounter limitations with your RAWG API Key, you have the option to upgrade your account on RAWG or [contact us](mailto:contact@phalco.de) for assistance.
+:::
 
 #### Probability Logs for Game Matching
 

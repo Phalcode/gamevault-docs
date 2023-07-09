@@ -104,9 +104,9 @@ Now, all you need to do is search for 'Crackpipe' using the search box and follo
 
 ## Method 3: Portrainer One Click App
 
-> Not yet available.
-
+:::note Not yet available
 We haven't had the time to create a Portrainer One-Click-App Template yet. But you can help us with it! Talk to us if you are interested.
+:::
 
 ## More Methods
 

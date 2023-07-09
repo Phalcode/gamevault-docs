@@ -6,25 +6,33 @@ sidebar_position: 1
 
 If you want to use Crackpipe to download and install games on your computer, you need to follow these steps.
 
-## Setup
+## Installation
+
+### Recommended Installation Option
 
 **Requirement:** Windows 10/11 Operating System with Microsoft Store installed
 
-To begin, install the Crackpipe application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This process should be straightforward and will only consume a few minutes of your time.
+To begin, install the Crackpipe application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
 
 ### Alternative Installation Options
 
-If you prefer not to use the Microsoft Store or if you are operating on a different platform, there are multiple **unsupported** and **unrecommended** methods available for installing the Crackpipe App:
+If you for some reason prefer not to use the Microsoft Store or if you are operating on a different platform, there are multiple other methods available for installing the Crackpipe Client Application.
 
-- Compiling the source code by yourself
-- Downloading the pre-built binaries from GitHub
-- Extracting the App from the .appxbundle file in the Microsoft Store
+:::caution
+Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client#other-sources)
+:::
 
-[Please note that you will be responsible for managing updates manually!](updating-client#other-sources)
+#### Installation on Linux
 
-### Installation on Linux
+There is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](../advanced-usage/linux-client) page to acquire further information.
 
-Additionally, there is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](../advanced-usage/linux-client.md) page to acquire further information.
+#### Additional Options
+
+There exist various alternative methods for installing Crackpipe that you may consider. Feel free to expand upon or supplement the following list:
+
+- Self-compiling the source code
+- Acquiring and using pre-built binaries from GitHub
+- Extracting the application from the .appxbundle file found in the Microsoft Store
 
 ## Initial Configuration
 
@@ -62,7 +70,10 @@ If you only want to try out Crackpipe, without setting up your own server, you c
 2. This will allow you to explore the features and functionality of Crackpipe.
 3. Click "Next" to proceed
 
-> _Demo Server Credentials:_ Username: **demo**, Password: **demodemo**
+:::info Demo Server Credentials
+Username: **demo**  
+Password: **demodemo**  
+:::
 
 ### Step 3: Login or Register
 
