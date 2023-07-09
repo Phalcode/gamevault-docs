@@ -12,9 +12,11 @@ But Crackpipe operates differently. You can not buy games on this platform. Inst
 
 The Crackpipe ecosystem consists of two main components: a self-hosted NestJS Backend Application and one or more App Clients for you and your close ones.
 
-Crackpipe is specifically designed for "alternatively obtained" games, such as DRM-free games, rather than games from conventional platforms. It's important to note that while Crackpipe can be used with cracked games, it does not endorse or support piracy.
-
 In summary, Crackpipe empowers gamers by offering a flexible and convenient way to organize and play their game library from a self-hosted file server.
+
+:::caution Piracy Disclaimer
+Crackpipe is primarily intended for "alternatively obtained" games, such as DRM-free games, rather than games obtained from conventional platforms like Steam or EPIC Games. It's crucial to understand that while Crackpipe _can_ theoretically be utilized with cracked games, it does **not** endorse or support piracy. We view piracy as an improper and unauthorized usage of our application.
+:::
 
 ## Features
 
@@ -23,7 +25,7 @@ Let's take a look at all the main functions of Crackpipe:
 ### Client Features
 
 - 🔎 Browse your server's game collection
-- 📥 Securely download games from your server
+- 📥 Securely download your games from your server
 - 🎮 Launch and play games on your PC
 - ⏱️ Track playtimes and progress (even when the server is offline)
 - 👥 Compare statistics and game progress with other users on the server
