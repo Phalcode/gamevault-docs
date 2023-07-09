@@ -24,9 +24,7 @@ If you prefer not to use the Microsoft Store or if you are operating on a differ
 
 ### Installation on Linux
 
-> LINK TBD
-
-Additionally, there is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](.) page to acquire further information.
+Additionally, there is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](../advanced-usage/linux-client.md) page to acquire further information.
 
 ## Initial Configuration
 
