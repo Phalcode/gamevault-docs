@@ -98,7 +98,3 @@ For more information on Crackpipe's image management, refer to [this page](image
 #### Customizing Storage Path
 
 The storage path for images can be customized by modifying the `IMAGE_STORAGE_PATH` environment variable.
-
-## Data Integrity Checks
-
-The autoindexer also performs various integrity checks on game files to maintain data consistency.
