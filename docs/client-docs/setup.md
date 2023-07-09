@@ -4,25 +4,33 @@ sidebar_position: 1
 
 # Setting up a Crackpipe Client
 
-If you want to use Crackpipe to download and install games on your Windows 10/11 operating system, you need to follow these steps.
+If you want to use Crackpipe to download and install games on your computer, you need to follow these steps.
 
-## Prerequisites
+## Setup
 
-Before you start, make sure you have the following:
+**Requirement:** Windows 10/11 Operating System with Microsoft Store installed
 
-- Windows 10/11 Operating System with Microsoft Store installed
-- A running [Crackpipe Server](https://github.com/Phalcode/crackpipe-backend)
+To begin, install the Crackpipe application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This process should be straightforward and will only consume a few minutes of your time.
 
-## Installation
+### Alternative Installation Options
 
-To get started, install the Crackpipe app from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This should be a simple process that only takes a few minutes.
+If you prefer not to use the Microsoft Store or if you are operating on a different platform, there are multiple **unsupported** and **unrecommended** methods available for installing the Crackpipe App:
+
+- Compiling the source code by yourself
+- Downloading the pre-built binaries from GitHub
+- Extracting the App from the .appxbundle file in the Microsoft Store
+
+[Please note that you will be responsible for managing updates manually!](updating-client#other-sources)
+
+### Installation on Linux
+
+> LINK TBD
+
+Additionally, there is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](.) page to acquire further information.
 
 ## Initial Configuration
 
 Once you have installed and launched Crackpipe, you need to do some initial configuration to get it up and running properly.
-
-Here's what you need to do:
-
 ### Step 1: Select the Root Folder
 
 In this step, you will choose the location where all your downloaded and installed games will be stored. This folder will act as the central location for your game library. We recommend you to have a read on the ["How to Use" Chapter](how-to-use.md) to understand how the root folder works.
