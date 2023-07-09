@@ -126,7 +126,7 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/phalcode/crackpipe-docs",
+                href: "https://github.com/phalcode",
               },
               {
                 href: "https://ko-fi.com/phalcode",
