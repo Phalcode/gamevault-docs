@@ -42,7 +42,7 @@ services:
     ports:
       - 8080:8080
   db:
-    image: postgres:15
+    image: postgres:15-alpine
     restart: unless-stopped
     environment:
       POSTGRES_USER: crackpipe
