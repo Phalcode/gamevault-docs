@@ -52,9 +52,9 @@ Keep that in mind when unpacking games to install them.
 :::
 
 1. Install [Bottles](https://usebottles.com/)
-2. Create a new bottle
+2. Create a new bottle  
    ![Creating a new Bottle](/img/linux/bottles/make_bottle.png)
-3. Inside your bottle click `Dependencies` and install `dotnetcoredesktop6`
+3. Inside your bottle click `Dependencies` and install `dotnetcoredesktop6`  
    ![Configuring the .NET Core Dependency](/img/linux/bottles/dotnet.png)
 4. Go back to the main page for your bottle and press `Run Executable...` and select `crackpipe.exe`
 
