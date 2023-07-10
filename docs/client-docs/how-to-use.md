@@ -25,26 +25,56 @@ As stated above, Crackpipe generates two folders to store the game files and use
 - `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/`
 - `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/`
 
-Your downloaded zip file will be saved in `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/`. The `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
+Your downloaded game archive will be saved in `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/`. The `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
 
-## Installing Games
+## Game Installation Process
 
-After downloading the game, you will need to **install it manually** before you can play it.
+To start playing a game after downloading it, you need to follow the installation process. This process is designed to make it easier for you by simplifying most of the steps.
 
-:::info Why does Crackpipe not install the game automatically?
-Crackpipe is designed to work with "alternatively obtained" games such as DRM-free games. While Crackpipe can be used to install cracked games, it does not encourage or condone piracy. Some Games come with Installers, some come ready to play out of the box, some game repacks are archived with a very good compression and need to get uncompressed before. Automating all of this would be very hard. All Methods have one thing in common: You can choose where your game installation should land. And Crackpipe makes use of this.
+Game installation involves two main parts:
+
+### 1. Extracting the Game
+
+By default, Crackpipe games are compressed, so you need to extract them. Once the download is complete, you'll see an "Extract" button. Clicking this button will extract the game into a subfolder called "Extracted" within the game's Download Directory. A progress bar will show you the extraction progress and estimate the remaining time. Keep in mind that larger or higher-quality compressed games may take longer to extract and use more system resources. If any extraction errors occur, the process will stop with a retry option. The user interface will display the error details. If you encounter repeated extraction errors, it's recommended to contact your Crackpipe server administrators to check the integrity of the game archive.
+
+:::tip
+To make the extraction process easier for each game, you can enable the auto-extract option in the settings. This feature automatically extracts completed downloads.
 :::
 
-Here are the steps to install the game:
+### 2. Installing the Game
 
-1. All Crackpipe Games are compressed by default. You need to extract them using a tool like [7Zip](https://www.7-zip.org/).
-2. Now install your game into the appropriate folder in the library:
+Once the game is extracted, it's important to understand the two types of games on Crackpipe: Direct-Play games and games that require installation.
 
-   - `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/` - This is where the final game files and .exe should be located.
+#### Direct-Play Games
 
-3. You will need to choose an .exe file in the Installations tab before you can play the game. Then Crackpipe will enable the Play button in the Installations tab.
+Direct-Play games come ready to play out of the box!
 
-4. Feel free to delete `<Crackpipe Root>/Crackpipe/Downloads/(74) Assassin's Creed Unity/` after you installed the game. You can do it manually or by pressing the Delete-Icon / Clear All in your Downloads Tab.
+For Direct-Play games, Crackpipe provides a simple installation process. You don't need to select an executable file. Just press the available "Install" button now. Crackpipe will automatically move all the extracted game content to your game's installation directory. The progress bar will show the installation progress and estimate the remaining time. Once the installation is complete, your game is ready to be played.
+
+:::note
+The uploader determines if a game is Direct Play by including "(DP)" in the file name based on the game's structure. If this attribute is not specified, the game requires installation using a setup.
+:::
+
+#### Games Requiring Installation
+
+Follow these steps for games that require installation:
+
+1. Crackpipe will offer you to launch a setup executable file via a Dropdown menu.
+
+2. Make sure to select the appropriate setup.exe file and press the now available "Install" button.
+
+3. During the installation process, set the destination folder for your game files to be your games Installation folder. For example `<Crackpipe Root>/Crackpipe/Installations/(74) Assassin's Creed Unity/`. This is where the final game files and executable should be located.
+
+4. Wait for the installation to finish. Once you've confirmed a successful installation, you can delete the corresponding game folder by using the trash icon or the "Clear all" option in the downloads tab.
+
+:::info Why does Crackpipe fully automate the setup procedure?
+
+Different installers work in different ways, so it's not possible to fully automate every type of installer. However, all installers have one thing in common: the ability to choose the installation path for the game. Crackpipe takes advantage of this by guiding you through the process, but you still need to manually select the installation path.
+:::
+
+## Playing a Game
+
+Launching a game on Crackpipe is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If it didn't correctly select the correct executable automatically, you can select the appropriate executable from the dropdown menu and click the "Play" button to start the game.
 
 ## Tracking Your Game Progress
 
