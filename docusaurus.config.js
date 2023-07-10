@@ -146,7 +146,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: "img:not(nav img):not(footer img):not(#producthunt)",
+        selector: "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi'])",
         config: {
           background: {
             light: "rgb(255, 255, 255)",
