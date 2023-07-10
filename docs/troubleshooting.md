@@ -25,6 +25,7 @@ Below, we will gradually list some common issues and corresponding solutions to 
 
 ### Games Not Appearing in the List
 
+- Clear the Searchbox and Press the Search button
 - Check the server log and index logs for any errors. It's likely that [your file names are incorrect](./server-docs/structure.md).
 
 ### Missing Box Arts
