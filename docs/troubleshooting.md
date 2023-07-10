@@ -40,4 +40,4 @@ Below, we will gradually list some common issues and corresponding solutions to 
 
 ### Forgot my Admin Password
 
-Refer to [this](./server-docs/user-management.md#recovering-access-to-admin-user) for instructions on how to regain access to your admin account.
+- Refer to [this](./server-docs/user-management.md#recovering-access-to-admin-user) for instructions on how to regain access to your admin account.
