@@ -19,6 +19,10 @@ Below, we will gradually list some common issues and corresponding solutions to 
 - Ensure that you use the correct protocol (http or https) in the connection string, particularly if your server doesn't support SSL.
 - If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](./server-docs/configuration.md) for more information.
 
+### Server wont save images
+- Review your server log for error details.
+- Check if the user you run the crackpipe-backend with, has the required permissions for its mounted volume folders.
+
 ### User Registration Activation
 
 - Find instructions on granting privileges to your first user in [this](./server-docs/user-management.md#initial-setup) guide.
