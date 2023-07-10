@@ -38,6 +38,7 @@ Below, we will gradually list some common issues and corresponding solutions to 
 - Monitor your server logs.
 - Check the RAWG-API Dashboard for any requests associated with your API Key.
 - Verify if [the RAWG API is disabled in your server configuration](./server-docs/configuration.md).
+- Verify if [your file names are correct](./server-docs/structure.md)
 
 ### Forgot my Admin Password
 
