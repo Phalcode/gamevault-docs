@@ -8,24 +8,7 @@ Please note that running Crackpipe on Linux using this method is considered **un
 
 ## Getting the application
 
-To use Crackpipe on Linux you first need to get the application. There are currently 2 ways of doing it until build artifacts are put on Github, which is [planned](https://github.com/Phalcode/crackpipe-app/issues/14).
-
-### Compiling on Windows
-
-1. Install Visual Studio to Windows
-2. Add the 2017 build system
-3. Clone the source code of crackpipe-app
-4. Open Visual Studio and select the `.sln` file
-5. Build > Build crackpipe
-6. Copy the built files to your Linux machine
-
-### Extracting from the Appx
-
-1. Go to [https://store.rg-adguard.net](https://store.rg-adguard.net)
-2. Paste the Microsoft Store link for Crackpipe into the search box
-3. Download the .appxbundle
-4. Extract the .appxbundle, and then the `ReleasePackage_[VERSION]_x64.appx`
-5. Copy the `crackpipe` folder to a more convenient location
+To start, you need the Application files. The simplest way to get them is explained [here](../client-docs/setup.md#option-1-obtain-pre-built-artifacts-from-github).
 
 ## Setting up with Wine
 
