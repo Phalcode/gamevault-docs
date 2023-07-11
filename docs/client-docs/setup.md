@@ -22,17 +22,30 @@ If you for some reason prefer not to use the Microsoft Store or if you are opera
 Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client#other-sources)
 :::
 
-#### Installation on Linux
+#### Option 1: Obtain Pre-Built Artifacts from Github
 
-There is a community-driven approach for running Crackpipe on Linux using Wine. Visit [this](../advanced-usage/linux-client) page to acquire further information.
+Access the most recent Pre-Built Artifact [here.](https://github.com/Phalcode/crackpipe-app/releases/latest)
 
-#### Additional Options
+#### Option 2: Linux Installation
 
-There exist various alternative methods for installing Crackpipe that you may consider. Feel free to expand upon or supplement the following list:
+To run Crackpipe on Linux utilizing Wine, follow this community-driven method. Visit [this](../advanced-usage/linux-client) page for more details.
 
-- Self-compiling the source code
-- Acquiring and using pre-built binaries from GitHub
-- Extracting the application from the .appxbundle file found in the Microsoft Store
+#### Option 3: Self-Compiling on Windows
+
+1. Install Visual Studio IDE
+2. Include the 2017 build system
+3. Clone the crackpipe-app source code
+4. Open Visual Studio and choose the `.sln` file
+5. Pick `Release` from the Dropdown menu.
+6. Build > Build crackpipe
+7. Utilize the output files.
+
+#### Option 4: Extracting from the .appxbundle
+
+1. Go to [https://store.rg-adguard.net](https://store.rg-adguard.net)
+2. Paste `https://www.microsoft.com/store/apps/9PCKDV76GL75` in the search box
+3. Download the current .appxbundle
+4. Extract the .appxbundle, followed by the `ReleasePackage_[VERSION]_x64.appx` file.
 
 ## Initial Configuration
 
