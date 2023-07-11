@@ -26,6 +26,10 @@ Please not that any other method than installing it from the Microsoft Store is 
 
 Access the most recent Pre-Built Artifact [here.](https://github.com/Phalcode/crackpipe-app/releases/latest)
 
+:::note Antivirus/Smartscreen Warning
+Your Antivirus or Windows Smartscreen may attempt to prevent you from running our pre-built application, because it is a suspicious-looking binary compiled by an unfamiliar source. This is because we lack a Code Signing Certificate due to budget constraints. You can safely disregard this warning and proceed to run the App by selecting `More Details` and then choosing `Run Anyway`.
+:::
+
 #### Option 2: Linux Installation
 
 To run Crackpipe on Linux utilizing Wine, follow this community-driven method. Visit [this](../advanced-usage/linux-client) page for more details.
