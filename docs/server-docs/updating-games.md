@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Applying an Update to a Game
 
-To update a game, simply delete the existing game file and replace it with a new one in the `/files` directory.
+To update a game, simply delete the existing game file and replace it with a new one in the files directory (by default `/files`).
 
 You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, Crackpipe's indexer will recognize it as an update. The same game entity will be restored if needed and updated with the new file's information, while preserving any progress associated with the game.
 

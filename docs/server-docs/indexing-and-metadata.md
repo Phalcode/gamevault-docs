@@ -6,11 +6,11 @@ sidebar_position: 7
 
 ## Game Indexing
 
-The server regularly scans the `/files` directory to create an index of archived games. The indexing frequency is determined by the `GAMES_INDEX_INTERVAL_IN_MINUTES` environment variable, which has a default value of 5 minutes.
+The server regularly scans the files directory (by default `/files`) to create an index of archived games. The indexing frequency is determined by the `GAMES_INDEX_INTERVAL_IN_MINUTES` environment variable, which has a default value of 5 minutes.
 
 The indexing algorithm follows these steps:
 
-- It recursively scans all games in the `/files` directory.
+- It recursively scans all games in the files directory.
 
 - For each game:
   - It checks if the exact same game already exists in the database, either based on the file path or a combination of the title and release year. If it does, the game is skipped.
@@ -18,7 +18,7 @@ The indexing algorithm follows these steps:
   - It checks if the game already exists in the database. If so, it updates the game's information with the current file's details.
   - If the game does not exist in the database at all, it indexes the game.
 
-Finally, a simple integrity check is performed to ensure that the games in the database also exist in the `/files` folder, and vice versa.
+Finally, a simple integrity check is performed to ensure that the games in the database also exist in the files directory, and vice versa.
 
 ## Retrieving and Storing Game Information
 
@@ -58,7 +58,7 @@ In the event that RAWG discontinues its service, Crackpipe will retain the lates
 
 ### Disabling RAWG Integration
 
-To disable all calls to the RAWG API, you can use the `TESTING_RAWG_API_DISABLED` environment variable. This will result in no box arts being displayed.
+To turn off all calls to the RAWG API, utilize the `TESTING_RAWG_API_DISABLED` environmental variable. Omitting the `RAWG_API_KEY` value will also disable RAWG integration.
 
 ## Game Box Arts
 
@@ -93,10 +93,10 @@ If you rather set your box-arts yourself and want to completely disable the Goog
 
 #### Storing Box Arts
 
-To ensure availability, performance, and efficient compression, Crackpipe stores the found box arts on the filesystem under the `/images` directory.
+To ensure availability, performance, and efficient compression, Crackpipe stores the found box arts on the filesystem under the images directory (by default `/images`).
 
 For more information on Crackpipe's image management, refer to [this page](images.md).
 
 #### Customizing Storage Path
 
-The storage path for images can be customized by modifying the `IMAGE_STORAGE_PATH` environment variable.
+The storage path for images can be customized by modifying the `VOLUMES_IMAGES` environment variable.

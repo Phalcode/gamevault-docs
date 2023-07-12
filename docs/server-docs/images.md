@@ -8,7 +8,7 @@ In Crackpipe, images play a crucial role in providing visual representations of 
 
 ## Image Persistence
 
-To ensure availability, performance, and efficient compression, Crackpipe persists all images on the filesystem using the `/images` directory and the database. This includes various types of images, such as box arts, screenshots, and thumbnails. The storage path `/images` for images can be customized by modifying the `IMAGE_STORAGE_PATH` environment variable.
+To ensure availability, performance, and efficient compression, Crackpipe persists all images on the filesystem using the images directory (by default `/images`) and the database. This includes various types of images, such as box arts, screenshots, and thumbnails. The storage path for images can be customized by modifying the `VOLUMES_IMAGES` environment variable.
 
 ## Image Reuse
 
