@@ -113,6 +113,6 @@ Will result in a single game that gets overwritten!
 
 ## Step 4: Deploy 🥳
 
-Once you have named the archive, place it into the folder on your host system that is mounted to Crackpipe's `/files` folder. Once the archive is in place, Crackpipe will automatically index the game, enrich it with metadata, and save it in your database.
+Once you have named the archive, place it into the folder on your host system that is mounted to Crackpipe's files folder (by default `/files`). Once the archive is in place, Crackpipe will automatically index the game, enrich it with metadata, and save it in your database.
 
 Congratulations! You have successfully added a game to your Crackpipe server. Repeat the process for any additional games you want to add.

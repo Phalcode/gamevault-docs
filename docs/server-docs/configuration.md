@@ -14,7 +14,7 @@ All configuration properties of your Crackpipe server are passed as environment 
 
 This page describes the various configuration properties used in the application. These properties can be configured in the environment variables or in a `.env` file.
 
-## Server
+## SERVER
 
 | Property                             | Description                                                                                                 | Default Value     | Possible Values                                                                              |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
@@ -27,27 +27,36 @@ This page describes the various configuration properties used in the application
 | `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup                          | -                 | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup                                                  | -                 | Any password (No Length Validation)                                                          |
 
+## VOLUMES
+
+| Property           | Description                                                                                                 | Default Value | Possible Values       |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | ------------- | --------------------- |
+| `VOLUMES_FILES`    | Folder inside container used for game files                                                                 | `/files`      | Any valid folder path |
+| `VOLUMES_IMAGES`   | Folder inside container used for images                                                                     | `/images`     | Any valid folder path |
+| `VOLUMES_LOGS`     | Folder inside container used for logs.                                                                      | `/logs`       | Any valid folder path |
+| `VOLUMES_SQLITEDB` | Folder inside container used for `SQLITE` database. (Not needed id you use `POSTGRESQL` as database system) | `/db`         | Any valid folder path |
+
 ## DB
 
-| Property         | Description                                                                                                                                | Default Value | Possible Values         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ----------------------- |
-| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                                                                           | `POSTGRESQL`  | `POSTGRESQL`, `SQLITE`  |
-| `DB_HOST`        | The host of the database (not needed for SQLITE).                                                                                          | `localhost`   | Any valid host name     |
-| `DB_PORT`        | The port of the database (not needed for SQLITE).                                                                                          | `5432`        | Any valid port number   |
-| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid username      |
-| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid password      |
-| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                                                                 | `crackpipe`   | Any valid database name |
-| `DB_LOCATION`    | The folder of the SQLITE DB file (not needed for POSTGRESQL). "/crackpipe_db.sqlite" gets appended automatically                           | `/db`         | Any valid folder path   |
-| `DB_SYNCHRONIZE` | Synchronize the database with the entities (it could break your db). Currently the default because we have not implemented migrations yet. | `true`        | `true`, `false`         |
-| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                                                               | `false`       | `true`, `false`         |
+| Property          | Description                                                                                                                                | Default Value | Possible Values         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ----------------------- |
+| `DB_SYSTEM`       | The database system used (POSTGRESQL or SQLITE).                                                                                           | `POSTGRESQL`  | `POSTGRESQL`, `SQLITE`  |
+| `DB_HOST`         | The host of the database (not needed for SQLITE).                                                                                          | `localhost`   | Any valid host name     |
+| `DB_PORT`         | The port of the database (not needed for SQLITE).                                                                                          | `5432`        | Any valid port number   |
+| `DB_USERNAME`     | The username for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid username      |
+| `DB_PASSWORD`     | The password for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid password      |
+| `DB_DATABASE`     | The database name (not needed for SQLITE).                                                                                                 | `crackpipe`   | Any valid database name |
+| `DB_SYNCHRONIZE`  | Synchronize the database with the entities (it could break your db). Currently the default because we have not implemented migrations yet. | `true`        | `true`, `false`         |
+| `DB_DEBUG`        | Log all SQL Statements sent to the database.                                                                                               | `false`       | `true`, `false`         |
+| ~~`DB_LOCATION`~~ | **[Deprecated in favor of `VOLUMES_SQLITEDB`]** The folder of the SQLITE DB file (not needed for POSTGRESQL).                              | `/db`         | Any valid folder path   |
 
 ## RAWG_API
 
-| Property              | Description                                   | Default Value             | Possible Values      |
-| --------------------- | --------------------------------------------- | ------------------------- | -------------------- |
-| `RAWG_API_URL`        | Base URL of the RAWG API.                     | `https://api.rawg.io/api` | Any valid URL        |
-| `RAWG_API_KEY`        | API key for the RAWG API.                     | `""`                      | Any valid API key    |
-| `RAWG_API_CACHE_DAYS` | When to renew RAWG API cached data (in days). | `7`                       | Any positive integer |
+| Property              | Description                                   | Default Value             | Possible Values        |
+| --------------------- | --------------------------------------------- | ------------------------- | ---------------------- |
+| `RAWG_API_URL`        | Base URL of the RAWG API.                     | `https://api.rawg.io/api` | Any valid URL          |
+| `RAWG_API_KEY`        | API key for the RAWG API.                     | `""`                      | Any valid RAWG API key |
+| `RAWG_API_CACHE_DAYS` | When to renew RAWG API cached data (in days). | `7`                       | Any positive integer   |
 
 ## GAMES
 
@@ -57,11 +66,11 @@ This page describes the various configuration properties used in the application
 
 ## IMAGE
 
-| Property                    | Default   | Possible Values | Description                                                                                                                    |
-| --------------------------- | --------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `IMAGE_GC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                   |
-| `IMAGE_GC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                      |
-| `IMAGE_STORAGE_PATH`        | `/images` | Any string      | The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
+| Property                    | Default   | Possible Values | Description                                                                                                                                                                  |
+| --------------------------- | --------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `IMAGE_GC_KEEP_DAYS`        | `30`      | Any number      | The number of days to keep unused images. After this period, images that have not been accessed are deleted.                                                                 |
+| `IMAGE_GC_INTERVAL_MINUTES` | `60`      | Any number      | How often to run the image garbage collector, in minutes.                                                                                                                    |
+| ~~`IMAGE_STORAGE_PATH`~~    | `/images` | Any string      | **[Deprecated in favor of `VOLUMES_IMAGES`]** The path to the directory where the images will be stored. This should be a valid path on the server where the app is running. |
 
 ## TESTING
 
