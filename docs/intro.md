@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Crackpipe is an innovative gaming platform providing a decentralized, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
 
-But Crackpipe operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam for video games. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects and provides a user-friendly interface to easily download, install, and track your playtimes and progress. You can not _stream_ games with this app.
+But Crackpipe operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam for video games. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects them and provides a user-friendly interface to easily download, install, and track your playtimes and progress. You can not _stream_ games with this app.
 
 The Crackpipe ecosystem consists of two main components: a self-hosted NestJS Backend Application and one or more App Clients for you and your close ones.
 
