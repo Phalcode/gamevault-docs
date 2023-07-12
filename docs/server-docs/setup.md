@@ -80,7 +80,7 @@ services:
       DB_SYSTEM: "SQLITE"
       # The Following Line grants Admin Role to account with this username upon registration.
       SERVER_ADMIN_USERNAME: admin
-      # Uncomment and Insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
+      # Uncomment and Insert your RAWG API Key here if you have one (https://crackpipe.de/docs/server-docs/indexing-and-metadata#rawg-api-key)
       # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       - /your/games/folder:/files
