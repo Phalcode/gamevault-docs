@@ -65,11 +65,11 @@ const FeatureList = [
     ),
   },
   {
-    title: "👥 Join Our Community and Contribute to Our Open-Source Project!",
+    title: "👥 Join Our Community and Contribute to Our Project!",
     img: ImgOpenSource,
     description: (
       <>
-        Become part of our growing community and contribute to our open-source
+        Become part of our growing community and contribute to our source-available
         project, and enjoy endless features and capabilities.
       </>
     ),
