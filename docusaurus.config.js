@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Crackpipe",
   tagline:
-    "the decentralized gaming platform for 'alternatively obtained' games",
+    "the self-hosted gaming platform for 'alternatively obtained' games",
   favicon: "img/logo.png",
 
   // Set the production url of your site here

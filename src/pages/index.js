@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A decentralized gaming platform for alternatively obtained games"
+      description="the self-hosted gaming platform for alternatively obtained games"
     >
       <HomepageHeader />
       <main>
