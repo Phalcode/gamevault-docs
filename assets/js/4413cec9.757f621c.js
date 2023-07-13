@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[9066],{1801:e=>{e.exports=JSON.parse('{"label":"software development","permalink":"/blog/tags/software-development","allTagsPath":"/blog/tags","count":1}')}}]);

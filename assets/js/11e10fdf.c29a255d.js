@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[3191],{1386:e=>{e.exports=JSON.parse('{"label":"revenue generation","permalink":"/blog/tags/revenue-generation","allTagsPath":"/blog/tags","count":1}')}}]);

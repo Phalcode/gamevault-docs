@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[3088],{3530:a=>{a.exports=JSON.parse('{"label":"source-available software","permalink":"/blog/tags/source-available-software","allTagsPath":"/blog/tags","count":1}')}}]);

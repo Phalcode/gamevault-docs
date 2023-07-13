@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[6535],{5730:s=>{s.exports=JSON.parse('{"label":"software licensing","permalink":"/blog/tags/software-licensing","allTagsPath":"/blog/tags","count":1}')}}]);
