@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[6605],{2812:s=>{s.exports=JSON.parse('{"label":"self-hosted","permalink":"/blog/tags/self-hosted","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[185],{5883:a=>{a.exports=JSON.parse('{"label":"app renaming","permalink":"/blog/tags/app-renaming","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[4519],{2089:a=>{a.exports=JSON.parse('{"label":"cloud-based game platforms","permalink":"/blog/tags/cloud-based-game-platforms","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[3451],{250:a=>{a.exports=JSON.parse('{"label":"gaming platform","permalink":"/blog/tags/gaming-platform","allTagsPath":"/blog/tags","count":1}')}}]);

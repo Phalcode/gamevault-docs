@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[4394],{2594:e=>{e.exports=JSON.parse('{"label":"future development","permalink":"/blog/tags/future-development","allTagsPath":"/blog/tags","count":1}')}}]);

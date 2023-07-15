@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[9021],{5573:e=>{e.exports=JSON.parse('{"label":"DRM-free games","permalink":"/blog/tags/drm-free-games","allTagsPath":"/blog/tags","count":1}')}}]);

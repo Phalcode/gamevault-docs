@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3291],{4936:a=>{a.exports=JSON.parse('{"label":"racist","permalink":"/blog/tags/racist","allTagsPath":"/blog/tags","count":1}')}}]);

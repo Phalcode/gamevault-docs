@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[525],{3076:e=>{e.exports=JSON.parse('{"label":"safe environment","permalink":"/blog/tags/safe-environment","allTagsPath":"/blog/tags","count":1}')}}]);

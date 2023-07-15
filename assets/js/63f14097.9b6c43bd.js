@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcrackpipe_docs=self.webpackChunkcrackpipe_docs||[]).push([[301],{5352:a=>{a.exports=JSON.parse('{"label":"voting","permalink":"/blog/tags/voting","allTagsPath":"/blog/tags","count":1}')}}]);
