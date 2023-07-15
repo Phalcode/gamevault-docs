@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What is GameVault
 
-GameVault is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
+GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
 
 But GameVault operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam for video games. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects them and provides you and your close ones a user-friendly interface to easily download, install, and track your playtimes and progress. You can not _stream_ games with this app.
 
