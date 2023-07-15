@@ -8,7 +8,7 @@ sidebar_position: 5
 
 To update a game, simply delete the existing game file and replace it with a new one in the files directory (by default `/files`).
 
-You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, Crackpipe's indexer will recognize it as an update. The same game entity will be restored if needed and updated with the new file's information, while preserving any progress associated with the game.
+You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, GameVault's indexer will recognize it as an update. The same game entity will be restored if needed and updated with the new file's information, while preserving any progress associated with the game.
 
 ### Example
 
@@ -24,4 +24,4 @@ If you want to keep multiple versions of the same game, refer to the documentati
 
 ## Changing or Moving a Game
 
-Changing or moving a game is also a breeze. As long as the **path** or **the combination of title and release year** of the moved or renamed file matches the old file, Crackpipe's indexer will recognize it as an update. The same game entity will be updated with the new file's information, while preserving any progress associated with the game.
+Changing or moving a game is also a breeze. As long as the **path** or **the combination of title and release year** of the moved or renamed file matches the old file, GameVault's indexer will recognize it as an update. The same game entity will be updated with the new file's information, while preserving any progress associated with the game.

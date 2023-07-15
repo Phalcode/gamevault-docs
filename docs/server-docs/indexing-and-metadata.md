@@ -46,7 +46,7 @@ When the `SERVER_LOG_LEVEL` environment variable is set to `DEBUG`, the server l
 
 The server automatically caches all metadata obtained from RAWG for each game. If a game is already cached, the cache is updated if necessary. The cached metadata includes detailed descriptions, screenshots, release dates, as well as information about developers, publishers, genres, tags, images, and stores.
 
-Crackpipe relies heavily on RAWG integration to enhance the game data.
+GameVault relies heavily on RAWG integration to enhance the game data.
 
 #### Cache Expiry
 
@@ -54,7 +54,7 @@ Cached metadata is stored in the database permanently and remains valid for a co
 
 #### Alternative Database Integration
 
-In the event that RAWG discontinues its service, Crackpipe will retain the latest metadata and work on integrating another video game database as a replacement.
+In the event that RAWG discontinues its service, GameVault will retain the latest metadata and work on integrating another video game database as a replacement.
 
 ### Disabling RAWG Integration
 
@@ -62,13 +62,13 @@ To turn off all calls to the RAWG API, utilize the `TESTING_RAWG_API_DISABLED` e
 
 ## Game Box Arts
 
-Crackpipe utilizes a simple Google Image Search library to find suitable box arts for games. This is necessary because RAWG does not provide box arts directly.
+GameVault utilizes a simple Google Image Search library to find suitable box arts for games. This is necessary because RAWG does not provide box arts directly.
 
 ### Google Image Search
 
 #### Finding Box Arts
 
-Crackpipe uses the following algorithm to find box arts:
+GameVault uses the following algorithm to find box arts:
 
 1. Searches for `"GAME-TITLE" inurl:steamgriddb.com`.
 2. If no results are found, searches for `"GAME-TITLE" game box art`.
@@ -76,14 +76,14 @@ Crackpipe uses the following algorithm to find box arts:
 
 #### Rate Limiting and Cooldown
 
-When adding or updating a large number of games (more than 100), there might be rate limits imposed by Google on your IP address. In such cases, Crackpipe implements a cooldown mechanism to manage the rate limit.
+When adding or updating a large number of games (more than 100), there might be rate limits imposed by Google on your IP address. In such cases, GameVault implements a cooldown mechanism to manage the rate limit.
 
 The cooldown works as follows:
 
 - The cooldown duration is determined by the `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` configuration value, expressed in hours.
 - If no box art images are found for multiple games, indicating a potential Google Image Search rate limit, the cooldown is activated for the specified duration.
 - The cooldown prevents further box art searches until the cooldown duration has elapsed.
-- Once the cooldown is activated, a warning message is logged, whenever crackpipe tries to search for new boxarts, indicating the remaining cooldown time.
+- Once the cooldown is activated, a warning message is logged, whenever gamevault tries to search for new boxarts, indicating the remaining cooldown time.
 
 #### Disabling Google Image
 
@@ -93,9 +93,9 @@ If you rather set your box-arts yourself and want to completely disable the Goog
 
 #### Storing Box Arts
 
-To ensure availability, performance, and efficient compression, Crackpipe stores the found box arts on the filesystem under the images directory (by default `/images`).
+To ensure availability, performance, and efficient compression, GameVault stores the found box arts on the filesystem under the images directory (by default `/images`).
 
-For more information on Crackpipe's image management, refer to [this page](images.md).
+For more information on GameVault's image management, refer to [this page](images.md).
 
 #### Customizing Storage Path
 

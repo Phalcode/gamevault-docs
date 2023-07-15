@@ -55,12 +55,12 @@ const FeatureList = [
     ),
   },
   {
-    title: "📈 Unleash the Full Power of Crackpipe with Metadata Enrichment!",
+    title: "📈 Unleash the Full Power of GameVault with Metadata Enrichment!",
     img: ImgEnrichments,
     description: (
       <>
         Add juicy metadata to your games with our powerful metadata enrichment
-        tool, and unlock the full potential of Crackpipe.
+        tool, and unlock the full potential of GameVault.
       </>
     ),
   },

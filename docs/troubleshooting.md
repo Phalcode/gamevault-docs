@@ -22,7 +22,7 @@ Below, we will gradually list some common issues and corresponding solutions to 
 ### Server wont save images
 
 - Review your server log for error details.
-- Check if the user you run the crackpipe-backend with, has the required permissions for its mounted volume folders.
+- Check if the user you run the gamevault-backend with, has the required permissions for its mounted volume folders.
 
 ### User Registration Activation
 

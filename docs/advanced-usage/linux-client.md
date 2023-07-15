@@ -1,9 +1,9 @@
 # Running the Client on Linux
 
-This page serves as a community-driven guide to assist you in setting up the Crackpipe client on Linux.
+This page serves as a community-driven guide to assist you in setting up the GameVault client on Linux.
 
 :::caution
-Please note that running Crackpipe on Linux using this method is considered **unsupported** and **unrecommended**. It should only be utilized as a last resort when no other options are available.
+Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**. It should only be utilized as a last resort when no other options are available.
 :::
 
 ## Getting the application
@@ -20,7 +20,7 @@ As of writing this page, using wine outside of bottles did not work in my testin
 
 1. Install Wine
 2. Install [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-3. Run `crackpipe.exe`
+3. Run `gamevault.exe`
 
 ## Setting up with Bottles
 
@@ -39,12 +39,12 @@ Keep that in mind when unpacking games to install them.
    ![Creating a new Bottle](/img/linux/bottles/make_bottle.png)
 3. Inside your bottle click `Dependencies` and install `dotnetcoredesktop6`  
    ![Configuring the .NET Core Dependency](/img/linux/bottles/dotnet.png)
-4. Go back to the main page for your bottle and press `Run Executable...` and select `crackpipe.exe`
+4. Go back to the main page for your bottle and press `Run Executable...` and select `gamevault.exe`
 
 ## Updating the Client
 
 :::caution
-Since there is currently no auto-update functionality available (as mentioned in [this link](../client-docs/updating-client.md#other-sources)), it is your responsibility to manually update your Crackpipe client. To update your client, you will need to repeat the procedure in this documentation.
+Since there is currently no auto-update functionality available (as mentioned in [this link](../client-docs/updating-client.md#other-sources)), it is your responsibility to manually update your GameVault client. To update your client, you will need to repeat the procedure in this documentation.
 :::
 
 ## Known issues

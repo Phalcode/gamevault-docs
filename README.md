@@ -1,6 +1,6 @@
-# Crackpipe Website
+# GameVault Website
 
-[You can find the official Website/Documentation here](https://crackpipe.de)
+[You can find the official Website/Documentation here](https://gamevau.lt)
 
 ## Local Development
 

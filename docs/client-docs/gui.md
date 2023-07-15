@@ -4,7 +4,7 @@ sidebar_position: 98
 
 # GUI
 
-This page provides an overview of the Graphical User Interface (GUI) for Crackpipe, a game launcher and management tool. The GUI includes several tabs, each with its own set of functions
+This page provides an overview of the Graphical User Interface (GUI) for GameVault, a game launcher and management tool. The GUI includes several tabs, each with its own set of functions
 
 ## Library
 
@@ -36,7 +36,7 @@ This page provides an overview of the Graphical User Interface (GUI) for Crackpi
 
 ## Social
 
-1. See a list of all users on the Crackpipe Server.
+1. See a list of all users on the GameVault Server.
 2. Select any user to see more details on their game progress.
 3. See your own progress by clicking on your own user.
 4. Sort the progresses.
@@ -49,4 +49,4 @@ This page provides an overview of the Graphical User Interface (GUI) for Crackpi
 2. Select a root folder.
 3. Re-login and register a new account.
 4. Set the server URL.
-5. Configure Crackpipe further.
+5. Configure GameVault further.

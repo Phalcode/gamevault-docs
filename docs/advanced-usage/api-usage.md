@@ -4,11 +4,11 @@ sidebar_position: 4
 
 # API Usage
 
-The Crackpipe API is fully documented and available for use to everyone. With the API, you can build your own Crackpipe clients, integrate the data into progress tracking sites, and manage your libraries automatically.
+The GameVault API is fully documented and available for use to everyone. With the API, you can build your own GameVault clients, integrate the data into progress tracking sites, and manage your libraries automatically.
 
 ## Register a Separate User
 
-To use the Crackpipe API, it is recommended to register a separate user. This user will be used to authenticate your API requests. You can do this by using the Register Form in the settings tab of the Crackpipe App.
+To use the GameVault API, it is recommended to register a separate user. This user will be used to authenticate your API requests. You can do this by using the Register Form in the settings tab of the GameVault App.
 
 ## API Documentation
 

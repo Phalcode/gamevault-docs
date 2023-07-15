@@ -2,17 +2,17 @@
 sidebar_position: 1
 ---
 
-# Setting up a Crackpipe Server
+# Setting up a GameVault Server
 
-Setting up a Crackpipe server can be done in a few simple steps. Before starting, there are some prerequisites you need to have in place.
+Setting up a GameVault server can be done in a few simple steps. Before starting, there are some prerequisites you need to have in place.
 
-There are many ways to deploy a Crackpipe Server. You can choose one from below.
+There are many ways to deploy a GameVault Server. You can choose one from below.
 
 ## Method 1: Docker Setup
 
 ### 1. Install Docker and Docker Compose
 
-Docker and Docker Compose are recommended to set up the Crackpipe server. If you do not have Docker and Docker Compose installed on your system, follow these steps to install them:
+Docker and Docker Compose are recommended to set up the GameVault server. If you do not have Docker and Docker Compose installed on your system, follow these steps to install them:
 
 - **Docker**: You can download Docker from the official [Docker website](https://www.docker.com/get-started).
 - **Docker Compose**: Docker Compose is already included in the Docker Desktop installation for Windows and macOS users. If you are using Linux, follow the instructions on the [Docker Compose installation page](https://docs.docker.com/compose/install/).
@@ -24,12 +24,12 @@ Create a new file named `docker-compose.yml` in a directory of your choice and c
 ```yaml
 version: "3.8"
 services:
-  crackpipe-backend:
-    image: phalcode/crackpipe-backend:latest
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
     restart: unless-stopped
     environment:
       DB_HOST: db
-      DB_USERNAME: crackpipe
+      DB_USERNAME: gamevault
       DB_PASSWORD: RANDOMPASSWORD
       # The Following Line grants Admin Role to account with this username upon registration.
       SERVER_ADMIN_USERNAME: admin
@@ -38,7 +38,7 @@ services:
     volumes:
       # Mount the folder where your games are
       - /your/games/folder:/files
-      # Mount the folder where crackpipe should store its images
+      # Mount the folder where gamevault should store its images
       - /your/images/folder:/images
     ports:
       - 8080:8080
@@ -46,15 +46,15 @@ services:
     image: postgres:15
     restart: unless-stopped
     environment:
-      POSTGRES_USER: crackpipe
+      POSTGRES_USER: gamevault
       POSTGRES_PASSWORD: RANDOMPASSWORD
-      POSTGRES_DB: crackpipe
+      POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your postgres database files should land
       - /your/database/folder:/var/lib/postgresql
 ```
 
-### 3. Start the Crackpipe server
+### 3. Start the GameVault server
 
 Open a terminal, navigate to the directory where the `docker-compose.yml` file is located, and run the following command:
 
@@ -62,25 +62,25 @@ Open a terminal, navigate to the directory where the `docker-compose.yml` file i
 docker-compose up -d
 ```
 
-This will start the Crackpipe server and PostgreSQL server in the background. The `-d` parameter detaches the process from the terminal.
+This will start the GameVault server and PostgreSQL server in the background. The `-d` parameter detaches the process from the terminal.
 
-Congratulations! You have successfully set up a Crackpipe server. You can now start adding games and managing your game library.
+Congratulations! You have successfully set up a GameVault server. You can now start adding games and managing your game library.
 
 #### Method 1.1: Docker Setup without PostgreSQL
 
-We don't recommend it but you can run Crackpipe without a PostgreSQL Database too using the following configuration:
+We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
 ```yaml
 version: "3.8"
 services:
-  crackpipe-backend:
-    image: phalcode/crackpipe-backend:latest
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
     restart: unless-stopped
     environment:
       DB_SYSTEM: "SQLITE"
       # The Following Line grants Admin Role to account with this username upon registration.
       SERVER_ADMIN_USERNAME: admin
-      # Uncomment and Insert your RAWG API Key here if you have one (https://crackpipe.de/docs/server-docs/indexing-and-metadata#rawg-api-key)
+      # Uncomment and Insert your RAWG API Key here if you have one (https://gamevau.lt/docs/server-docs/indexing-and-metadata#rawg-api-key)
       # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       - /your/games/folder:/files
@@ -90,7 +90,7 @@ services:
 
 ## Method 2: Caprover One Click App
 
-If you're using [Caprover](https://caprover.com), setting up a Crackpipe Server with a Postgres DB is just a click away.
+If you're using [Caprover](https://caprover.com), setting up a GameVault Server with a Postgres DB is just a click away.
 
 We have already created a Caprover One-Click-App Integration for this purpose. However, our app hasn't gained enough prominence to be included in the official One-Click-App Repository of Caprover. So, we decided to create our own [third-party repository](https://github.com/Phalcode/caprover-one-click-apps).
 
@@ -101,7 +101,7 @@ To use it, follow these simple steps:
 3. Under "3rd party repositories", copy and paste the following link: `https://phalcode.github.io/caprover-one-click-apps`
 4. Click the "Connect New Repository" button
 
-Now, all you need to do is search for 'Crackpipe' using the search box and follow the installation wizard.
+Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
 ## Method 3: Portrainer One Click App
 
@@ -125,10 +125,10 @@ To set up and start using server, follow these steps:
 
 1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](configuration.md) for detailed instructions.
 
-2. **Add games:** Prepare your game files in the required format for Crackpipe to identify and install them correctly. Read the [structure chapter](structure.md) for important information. Once ready, proceed to [add your games](adding-games.md).
+2. **Add games:** Prepare your game files in the required format for GameVault to identify and install them correctly. Read the [structure chapter](structure.md) for important information. Once ready, proceed to [add your games](adding-games.md).
 
-3. **Enhance with Metadata:** Connect your server to RAWG, the world's largest video game database that Crackpipe utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](indexing-and-metadata.md).
+3. **Enhance with Metadata:** Connect your server to RAWG, the world's largest video game database that GameVault utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](indexing-and-metadata.md).
 
 4. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](user-management.md) for instructions on setting up the first user.
 
-Enjoy your gaming experience with Crackpipe!
+Enjoy your gaming experience with GameVault!

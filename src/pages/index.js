@@ -32,13 +32,10 @@ function HomepageHeader() {
         </div>
 
         <br />
-        <a
-          href="https://www.producthunt.com/posts/crackpipe?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-crackpipe"
-          target="_blank"
-        >
+        <a href="https://www.producthunt.com/posts/gamevault" target="_blank">
           <img
             src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=400344&theme=neutral"
-            alt="Crackpipe - Selfhosted&#0032;platform&#0032;for&#0032;&#0039;alternatively&#0032;obtained&#0039;&#0032;games | Product Hunt"
+            alt="GameVault on ProductHunt"
             id="producthunt"
             width="190"
           />

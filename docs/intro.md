@@ -4,23 +4,23 @@ sidebar_position: 1
 
 # Introduction
 
-## What is Crackpipe
+## What is GameVault
 
-Crackpipe is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
+GameVault is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms like Steam and Epic Games. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
 
-But Crackpipe operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam for video games. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects them and provides you and your close ones a user-friendly interface to easily download, install, and track your playtimes and progress. You can not _stream_ games with this app.
+But GameVault operates differently. You can not buy games on this platform. Instead, think of it as your personal Steam for video games. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects them and provides you and your close ones a user-friendly interface to easily download, install, and track your playtimes and progress. You can not _stream_ games with this app.
 
-The Crackpipe ecosystem consists of two main components: a self-hosted NestJS Backend Application and one or more App Clients for you and your close ones.
+The GameVault ecosystem consists of two main components: a self-hosted NestJS Backend Application and one or more App Clients for you and your close ones.
 
-In summary, Crackpipe empowers gamers by offering a flexible and convenient way to organize and play their game library from a self-hosted file server.
+In summary, GameVault empowers gamers by offering a flexible and convenient way to organize and play their game library from a self-hosted file server.
 
 :::caution Piracy Disclaimer
-Crackpipe is primarily intended for "alternatively obtained" games, such as DRM-free games, rather than games obtained from conventional platforms like Steam or EPIC Games. It's crucial to understand that while Crackpipe _can_ theoretically be utilized with cracked games, it does **not** endorse or support piracy. We view piracy as an improper and unauthorized usage of our application.
+GameVault is primarily intended for "alternatively obtained" games, such as DRM-free games, rather than games obtained from conventional platforms like Steam or EPIC Games. It's crucial to understand that while GameVault _can_ theoretically be utilized with cracked games, it does **not** endorse or support piracy. We view piracy as an improper and unauthorized usage of our application.
 :::
 
 ## Features
 
-Let's take a look at all the main functions of Crackpipe:
+Let's take a look at all the main functions of GameVault:
 
 ### Client Features
 

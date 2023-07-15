@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Adding Games to Crackpipe
+# Adding Games to GameVault
 
-If you wish to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you have come to the right place. In this chapter, you will learn the correct process to add games to your Crackpipe server.
+If you wish to add games to your server but are struggling with unorganized files, varying file formats, and compressed files, you have come to the right place. In this chapter, you will learn the correct process to add games to your GameVault server.
 
 ## Before You Begin
 
@@ -24,11 +24,11 @@ Suppose you have obtained a DRM-free copy of "Crawl," and it is located in your 
 This is not a real-world example.
 :::
 
-If the game files are already compressed in a format that Crackpipe can understand, such as "Crawl.zip", you can skip the next step. However, if you want to maximize disk space and repack the files, you can do that. Datahoarders, for example, rely on every bit and byte on their disks and tend to repack everything to the maximum compression available.
+If the game files are already compressed in a format that GameVault can understand, such as "Crawl.zip", you can skip the next step. However, if you want to maximize disk space and repack the files, you can do that. Datahoarders, for example, rely on every bit and byte on their disks and tend to repack everything to the maximum compression available.
 
 ## Step 2: Compression
 
-To make your game files compatible with Crackpipe, you need to compress them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
+To make your game files compatible with GameVault, you need to compress them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
 
 ### Method 1: The Fast Way
 
@@ -76,7 +76,7 @@ Before you name the archive, do a quick research about the game you have by aski
 - "When was the game released?"
 - "Is the game still in early access?"
 
-Once you have the necessary information, you can name the archive using the [Crackpipe Naming Structure](structure.md).
+Once you have the necessary information, you can name the archive using the [GameVault Naming Structure](structure.md).
 
 In our Example we have a copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
 
@@ -86,7 +86,7 @@ Crawl (v1.0.1) (2014).7z
 
 ### Adding the same game multiple times
 
-If you wish to add the same game multiple times to your Crackpipe server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex. It also does not matter if the files are in the same sub-folder or in different ones.
+If you wish to add the same game multiple times to your GameVault server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex. It also does not matter if the files are in the same sub-folder or in different ones.
 
 By using this approach, the indexer will treat these two games as separate entities.
 
@@ -112,6 +112,6 @@ Will result in a single game that gets overwritten!
 
 ## Step 4: Deploy 🥳
 
-Once you have named the archive, place it into the folder on your host system that is mounted to Crackpipe's files folder (by default `/files`). Once the archive is in place, Crackpipe will automatically index the game, enrich it with metadata, and save it in your database.
+Once you have named the archive, place it into the folder on your host system that is mounted to GameVault's files folder (by default `/files`). Once the archive is in place, GameVault will automatically index the game, enrich it with metadata, and save it in your database.
 
-Congratulations! You have successfully added a game to your Crackpipe server. Repeat the process for any additional games you want to add.
+Congratulations! You have successfully added a game to your GameVault server. Repeat the process for any additional games you want to add.

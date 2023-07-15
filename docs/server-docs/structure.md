@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # File and Folder Structure
 
-If you want to set up a Crackpipe Server, you need to pay attention to the file and folder structure. The files volume that you map into the container must contain compressed archives with games. These games must be in one of the supported archive formats, and they must follow a specific naming convention in order to be detected correctly by Crackpipe.
+If you want to set up a GameVault Server, you need to pay attention to the file and folder structure. The files volume that you map into the container must contain compressed archives with games. These games must be in one of the supported archive formats, and they must follow a specific naming convention in order to be detected correctly by GameVault.
 
 ## Supported Archive Formats
 
@@ -42,7 +42,7 @@ Here's an example of a full game name that follows this convention:
 
 `Far Cry 6 (v1.5.0) (2021).zip`
 
-By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by Crackpipe.
+By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by GameVault.
 
 ### Other Examples
 

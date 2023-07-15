@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Crackpipe",
+  title: "GameVault",
   tagline:
     "the self-hosted gaming platform for 'alternatively obtained' games",
   favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https://crackpipe.de/",
+  url: "https://gamevau.lt/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "Phalcode", // Usually your GitHub org/user name.
-  projectName: "crackpipe-docs", // Usually your repo name.
+  projectName: "gamevault-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -42,13 +42,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
+          editUrl: "https://github.com/phalcode/gamevault-docs/tree/master",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/phalcode/crackpipe-docs/tree/master",
+          editUrl: "https://github.com/phalcode/gamevault-docs/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -61,7 +61,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Crackpipe",
+        title: "GameVault",
         logo: {
           alt: "Logo",
           src: "img/logo.png",
@@ -113,7 +113,7 @@ const config = {
             items: [
               {
                 label: "Reddit",
-                href: "https://reddit.com/r/Crackpipe",
+                href: "https://reddit.com/r/GameVault",
               },
               {
                 label: "Discord",

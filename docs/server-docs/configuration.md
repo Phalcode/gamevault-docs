@@ -5,10 +5,10 @@ sidebar_position: 2
 # Configuration
 
 :::tip
-Check out [configuration.ts](https://github.com/Phalcode/crackpipe-backend/blob/master/src/configuration.ts) for all possible environment variables incase we forgot to update this page.
+Check out [configuration.ts](https://github.com/Phalcode/gamevault-backend/blob/master/src/configuration.ts) for all possible environment variables incase we forgot to update this page.
 :::
 
-All configuration properties of your Crackpipe server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
+All configuration properties of your GameVault server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
 
 ## Configuration Properties
 
@@ -45,7 +45,7 @@ This page describes the various configuration properties used in the application
 | `DB_PORT`         | The port of the database (not needed for SQLITE).                                                                                          | `5432`        | Any valid port number   |
 | `DB_USERNAME`     | The username for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid username      |
 | `DB_PASSWORD`     | The password for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid password      |
-| `DB_DATABASE`     | The database name (not needed for SQLITE).                                                                                                 | `crackpipe`   | Any valid database name |
+| `DB_DATABASE`     | The database name (not needed for SQLITE).                                                                                                 | `gamevault`   | Any valid database name |
 | `DB_SYNCHRONIZE`  | Synchronize the database with the entities (it could break your db). Currently the default because we have not implemented migrations yet. | `true`        | `true`, `false`         |
 | `DB_DEBUG`        | Log all SQL Statements sent to the database.                                                                                               | `false`       | `true`, `false`         |
 | ~~`DB_LOCATION`~~ | **[Deprecated in favor of `VOLUMES_SQLITEDB`]** The folder of the SQLITE DB file (not needed for POSTGRESQL).                              | `/db`         | Any valid folder path   |
