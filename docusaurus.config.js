@@ -64,7 +64,7 @@ const config = {
         logo: {
           alt: "GameVault",
           src: "img/logo-text-and-image-sbs.png",
-          
+
         },
         items: [
           {
@@ -146,7 +146,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi'])",
+        selector: "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi']):not([alt~='GameVault'])",
         config: {
           background: {
             light: "rgb(255, 255, 255)",
