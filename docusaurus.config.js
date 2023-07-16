@@ -9,7 +9,7 @@ const config = {
   title: "GameVault",
   tagline:
     "the self-hosted gaming platform for 'alternatively obtained' games",
-  favicon: "img/logo.png",
+  favicon: "img/logo-image.png",
 
   // Set the production url of your site here
   url: "https://gamevau.lt/",
@@ -61,10 +61,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "GameVault",
         logo: {
-          alt: "Logo",
-          src: "img/logo.png",
+          alt: "GameVault",
+          src: "img/logo-text-and-image-sbs.png",
+          
         },
         items: [
           {
