@@ -7,8 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "GameVault",
-  tagline:
-    "the self-hosted gaming platform for 'alternatively obtained' games",
+  tagline: "the self-hosted gaming platform for 'alternatively obtained' games",
   favicon: "img/logo-image.png",
 
   // Set the production url of your site here
@@ -64,7 +63,6 @@ const config = {
         logo: {
           alt: "GameVault",
           src: "img/logo-text-and-image-sbs.png",
-
         },
         items: [
           {
@@ -132,9 +130,9 @@ const config = {
                 href: "https://ko-fi.com/phalcode",
                 label: "Support Us",
               },
-              { 
-                href: "https://phalco.de", 
-                label: "Imprint" 
+              {
+                href: "https://phalco.de",
+                label: "Imprint",
               },
             ],
           },
@@ -146,7 +144,8 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi']):not([alt~='GameVault'])",
+        selector:
+          "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi']):not([alt~='GameVault'])",
         config: {
           background: {
             light: "rgb(255, 255, 255)",
