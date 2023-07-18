@@ -75,13 +75,14 @@ Before you name the archive, do a quick research about the game you have by aski
 - "What version is the game?"
 - "When was the game released?"
 - "Is the game still in early access?"
+- "Is the game ready to play out of the box or does it require an installation?"
 
 Once you have the necessary information, you can name the archive using the [GameVault Naming Structure](structure.md).
 
-In our Example we have a copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
+In our fictitious example we have a direct-play copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
 
 ```bash
-Crawl (v1.0.1) (2014).7z
+Crawl (v1.0.1) (DP) (2014).7z
 ```
 
 ### Adding the same game multiple times
