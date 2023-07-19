@@ -19,7 +19,8 @@ This page describes the various configuration properties used in the application
 | Property                             | Description                                                                                                 | Default Value     | Possible Values                                                                              |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
 | `SERVER_PORT`                        | The port the server should listen on.                                                                       | `8080`            | Any valid port number                                                                        |
-| `SERVER_LOG_LEVEL`                   | The log level of the server (debug, info, warn, error, fatal).                                              | `info`            | `debug`, `info`, `warn`, `error`, `fatal`                                                    |
+| `SERVER_LOG_LEVEL`                   | The log level of the server                                                                                 | `info`            | `debug`, `info`, `warn`, `error`, `fatal`, `off`                                             |
+| `SERVER_LOG_FILES_ENABLED`           | Wether or not the server should also write the logs to the `VOLUMES_LOGS` directory via rolling file        | `false`           | `true`, `false`                                                                              |
 | `SERVER_REQUEST_LOG_FORMAT`          | The [morgan log format](https://www.npmjs.com/package/morgan#predefined-formats) for incoming HTTP Requests | Custom Log Format | `short`, `combined` [and many more](https://www.npmjs.com/package/morgan#predefined-formats) |
 | `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                                                                        | `*`               | A comma-separated list of origins                                                            |
 | `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                                          | `false`           | `true`, `false`                                                                              |
@@ -74,10 +75,10 @@ This page describes the various configuration properties used in the application
 
 ## TESTING
 
-| Property                          | Default | Possible Values | Description                                                                                                            |
-| --------------------------------- | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `TESTING_AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                             |
-| `TESTING_MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files. |
-| `TESTING_IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database.          |
-| `TESTING_RAWG_API_DISABLED`       | `false` | `true`, `false` | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.   |
-| `TESTING_GOOGLE_API_DISABLED`     | `false` | `true`, `false` | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API. |
+| Property                          | Default | Possible Values | Description                                                                                                                           |
+| --------------------------------- | ------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `TESTING_AUTHENTICATION_DISABLED` | `false` | `true`, `false` | If `true`, the API will accept any auth header. Useful for testing without authentication.                                            |
+| `TESTING_MOCK_FILES`              | `false` | `true`, `false` | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files.                |
+| `TESTING_IN_MEMORY_DB`            | `false` | `true`, `false` | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database. Only works with SQLITE. |
+| `TESTING_RAWG_API_DISABLED`       | `false` | `true`, `false` | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.                  |
+| `TESTING_GOOGLE_API_DISABLED`     | `false` | `true`, `false` | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API.                |
