@@ -103,12 +103,12 @@ To use it, follow these simple steps:
 
 Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
-## Method 3: Truenas Scale
+## Method 3: TrueNAS Scale
 
-To add **gamevault-backend** to scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started).
+To add **gamevault-backend** to TrueNAS Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started).
 
 :::note
-gamevault-backend is pre-configured on your belalf with postgres as the default database backend which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
+gamevault-backend is pre-configured on your behalf with postgres as the default database which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
 :::
 
 Setup your **Server Admin User** and **Server Admin Password** credentials.
@@ -126,7 +126,7 @@ Setup your **Server Admin User** and **Server Admin Password** credentials.
 
 - **Show RAWG Server Settings**, enable this to show the RAWG section.
   - Optionally set your RAWG API Key.
-   - additional variables are available for RAWG.
+  - additional variables are available for RAWG.
 
 Leave the Logs and Images storage options as PVC.
 
