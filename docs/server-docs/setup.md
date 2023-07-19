@@ -105,17 +105,17 @@ Now, all you need to do is search for 'GameVault' using the search box and follo
 
 ## Method 3: TrueNAS Scale
 
-To add **gamevault-backend** to TrueNAS Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started).
+To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
 
 :::note
-gamevault-backend is pre-configured on your behalf with postgres as the default database which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
+gamevault-backend is pre-configured on your behalf with cloudnative-postgres as the default database which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
 :::
 
 Setup your **Server Admin User** and **Server Admin Password** credentials.
 
 - **Show Server Settings**, enable this to display additional server sections.
-  - [ ] Server Registration Disabled
-  - [ ] Server Account Activation Disabled
+  - &#9744; Server Registration Disabled.
+  - &#9744; Server Account Activation Disabled.
   - Server Cors Allowed Origin: "*"
   - Server Log Level: **info**
 
@@ -131,7 +131,7 @@ Setup your **Server Admin User** and **Server Admin Password** credentials.
 Leave the Logs and Images storage options as PVC.
 
 Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise.
-- Add yuor games/zips here.
+- Add your games/zips here.
 
 ## Method 4: Portrainer One Click App
 
