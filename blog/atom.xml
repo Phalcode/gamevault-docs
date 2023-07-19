@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2023-07-15T00:00:00.000Z</updated>
+    <updated>2023-07-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo-image.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Quick Migration Update and new Logo]]></title>
+        <id>https://gamevau.lt/blog/2023/07/19/</id>
+        <link href="https://gamevau.lt/blog/2023/07/19/"/>
+        <updated>2023-07-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey guys,]]></summary>
+        <content type="html"><![CDATA[<p>Hey guys,</p><p>We have a brief update on the progress of the name migration.</p><p>We've successfully completed the migration of the backend application, which is now accessible as <code>gamevault-backend</code> instead of <code>crackpipe-backend</code>.</p><p>Furthermore, we've migrated the documentation and acquired this domain gamevau.lt. We've set up redirects for our previous domain and the demo server as well.</p><p>We're nearly finished, you might say.</p><p>The only remaining task is the Client Application. We're actively working on it and currently testing the application on our developer edition. Soon, you'll be able to seamlessly update your client with the new name and appearance.</p><p>In the meantime, our graphic designer has crafted a fresh logo for our new name, GameVault.</p><p><img loading="lazy" alt="logo" src="/assets/images/logo-text-and-image-sbs-18c030e730661b2ec0e212c989dcd9bd.png" width="1000" height="103" class="img_OS_2"></p><p>To make good use of your time while the migrations are in progress, what do you speculate the new logo represents?</p><p>Share your theories in gamevaults #chat channel on discord! We'll reveal the answer and shoutout the winner(s) in the next blog post, once the migration is finalized!</p><p>Until then :)</p><p>Phalcode</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[A New Name]]></title>
         <id>https://gamevau.lt/blog/2023/07/15/</id>
