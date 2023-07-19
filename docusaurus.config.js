@@ -111,7 +111,7 @@ const config = {
             items: [
               {
                 label: "Reddit",
-                href: "https://reddit.com/r/GameVault",
+                href: "https://reddit.com/r/Phalcode",
               },
               {
                 label: "Discord",
