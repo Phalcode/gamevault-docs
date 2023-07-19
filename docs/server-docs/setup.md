@@ -103,7 +103,32 @@ To use it, follow these simple steps:
 
 Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
-## Method 3: Portrainer One Click App
+## Method 3: Truenas Scale
+
+To add **gamevault-backend** to scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started).
+
+:::note
+gamevault-backend is pre-configured on your belalf with postgres as the default database backend which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
+:::
+
+Setup your **Server Admin User** and **Server Admin Password** credentials.
+
+- **Show Server Settings**, enable this to display additional server sections.
+  - [ ] Server Registration Disabled
+  - [ ] Server Account Activation Disabled
+  - Server Cors Allowed Origin: "*"
+  - Server Log Level: **info**
+
+- **Show Games and Images Settings**
+  - Games Index Interval In Minutes: **5**
+  - Image GC Keep Days: **30**
+  - Image GC Interval Minutes: **60**
+
+- **Show RAWG Server Settings**, enable this to show the RAWG section.
+  - Optionally set your RAWG API Key.
+   - additional variables are available for RAWG.
+
+## Method 4: Portrainer One Click App
 
 :::note Not yet available
 We haven't had the time to create a Portrainer One-Click-App Template yet. But you can help us with it! Talk to us if you are interested.
