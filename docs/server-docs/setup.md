@@ -128,6 +128,11 @@ Setup your **Server Admin User** and **Server Admin Password** credentials.
   - Optionally set your RAWG API Key.
    - additional variables are available for RAWG.
 
+Leave the Logs and Images storage options as PVC.
+
+Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise.
+- Add yuor games/zips here.
+
 ## Method 4: Portrainer One Click App
 
 :::note Not yet available
