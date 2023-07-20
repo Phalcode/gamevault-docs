@@ -1,9 +1,7 @@
 ---
-name: Wrong/Outdated Documentation
-about: Report a wrong or outdated documentation entry.
-labels: bug, documentation
-assignees: ''
-
+name: ❌ Wrong/Outdated Documentation
+about: Want to report wrong or outdated documentation?
+labels: ["📖 docs", "🪲 bug"]
 ---
 
 **Link**

@@ -1,10 +1,7 @@
 ---
-name: Documentation Enhancement
-about: Suggest an improvement or new feature for the project documentation
-title: ''
-labels: documentation, enhancement
-assignees: ''
-
+name: 📖 Documentation Improvement
+about: Do you have an idea to improve our Documentation?
+labels: ["📖 docs","🔧 feature"]
 ---
 
 **Description**
