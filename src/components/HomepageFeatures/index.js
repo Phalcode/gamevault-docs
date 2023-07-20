@@ -7,70 +7,71 @@ import ImgMicrosoftStore from "@site/static/img/features/microsoftstore.png";
 import ImgAuth from "@site/static/img/features/adminview.png";
 import ImgSocial from "@site/static/img/features/communitytab.png";
 import ImgEnrichments from "@site/static/img/features/gameview.png";
-import ImgOpenSource from "@site/static/img/features/opensource.png";
+import ImgGithub from "@site/static/img/features/opensource.png";
 
 const FeatureList = [
   {
-    title: "🎮 Build Your Game Library and Share It with Friends!",
-    img: ImgMicrosoftStore,
-    description: (
-      <>
-        Keep your game collection organized and share your favorite titles with
-        your friends with our easy-to-use platform. There's no need to compile
-        anything. Our client application is officially available in the{" "}
-        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
-          Microsoft Store
-        </a>
-      </>
-    ),
-  },
-  {
-    title: "🔒 Total Control Over Your Games and Access!",
-    img: ImgAuth,
-    description: (
-      <>
-        Unlike cloud-based gaming platforms, our self-hosted platform gives you
-        complete control over who can download and play your games.
-      </>
-    ),
-  },
-  {
-    title: "🕹️ Stay Connected with Friends and Track Your Playtime!",
-    img: ImgSocial,
-    description: (
-      <>
-        With social features, you can stay connected with friends and track your
-        playtime to know what they're playing and discover new games to play.
-      </>
-    ),
-  },
-  {
-    title: "🔍 Easily Browse, Sort and Filter Your Game Library!",
+    title: "🎮 Create your own Gaming Platform and Share It with Friends!",
     img: ImgLibrary,
     description: (
       <>
-        Our sleek and intuitive interface makes it easy to browse, sort and
-        filter your game library, so you never get lost in your collection.
+        Keep your game collection organized and share your favorite titles with
+        your friends using our user-friendly platform on your file server.
       </>
     ),
   },
   {
-    title: "📈 Unleash the Full Power of GameVault with Metadata Enrichment!",
+    title: "🔒 Complete Control of Your Server, Games, and Access!",
+    img: ImgAuth,
+    description: (
+      <>
+        Our platform allows you to control who can access your server and choose
+        who can download and play your games.
+      </>
+    ),
+  },
+  {
+    title:
+      "🕹️ Keep in touch with your buddies and check their gaming progress!",
+    img: ImgSocial,
+    description: (
+      <>
+        Using social features, you can keep in touch with friends and find out
+        what they're playing and explore new games to try.
+      </>
+    ),
+  },
+  {
+    title: "📈 Enhance your Games with endless Metadata!",
     img: ImgEnrichments,
     description: (
       <>
-        Add juicy metadata to your games with our powerful metadata enrichment
-        tool, and unlock the full potential of GameVault.
+        Add juicy metadata to your games with our powerful integrations and
+        unlock the full potential of GameVault.
       </>
     ),
   },
   {
-    title: "👥 Join Our Community and Contribute to Our Project!",
-    img: ImgOpenSource,
+    title: "🪟 Install easily from Microsoft Store",
+    img: ImgMicrosoftStore,
     description: (
       <>
-        Become part of our growing community and contribute to our source-available
-        project, and enjoy endless features and capabilities.
+        There's no need to compile anything. Our client application is
+        officially available in the{" "}
+        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
+          Microsoft Store
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    title: "👥 Join our community and help us with our project!",
+    img: ImgGithub,
+    description: (
+      <>
+        Join our expanding community, contribute to our source-available
+        project! Everybody can help!
       </>
     ),
   },

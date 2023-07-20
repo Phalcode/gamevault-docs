@@ -79,7 +79,7 @@ const config = {
           },
           {
             href: "https://ko-fi.com/phalcode",
-            label: "Support Us",
+            label: "Buy us a coffee",
             position: "right",
           },
         ],
@@ -128,7 +128,7 @@ const config = {
               },
               {
                 href: "https://ko-fi.com/phalcode",
-                label: "Support Us",
+                label: "Buy us a coffee",
               },
               {
                 href: "https://phalco.de",
