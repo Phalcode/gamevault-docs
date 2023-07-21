@@ -133,7 +133,7 @@ Leave the Logs and Images storage options as PVC.
 Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise.
 - Add your games/zips here.
 
-## Method 4: Portrainer One Click App
+## Method 4: Portainer One Click App
 
 :::note Not yet available
 We haven't had the time to create a Portrainer One-Click-App Template yet. But you can help us with it! Talk to us if you are interested.
