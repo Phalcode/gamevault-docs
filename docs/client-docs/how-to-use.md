@@ -24,57 +24,69 @@ As stated above, GameVault generates two folders to store the game files and use
 
 - `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`
 - `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`
-  
+
 Your downloaded game archive will be saved in `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`. The `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
 
-## Game Installation Process
+To start playing a game you've downloaded, follow these steps to install it. This process makes it easier for you.
 
-To start playing a game after downloading it, you need to follow the installation process. This process is designed to make it easier for you by simplifying most of the steps.
+Game installation has two main parts:
 
-Game installation involves two main parts:
+### Extracting the Game
 
-### 1. Extracting the Game
+By default, GameVault games are contained in some kind of archive format. You need to extract them.
 
-By default, GameVault games are compressed, so you need to extract them. Once the download is complete, you'll see an "Extract" button. Clicking this button will extract the game into a subfolder called "Extracted" within the game's Download Directory. A progress bar will show you the extraction progress and estimate the remaining time. Keep in mind that larger or higher-quality compressed games may take longer to extract and use more system resources. If any extraction errors occur, the process will stop with a retry option. The user interface will display the error details. If you encounter repeated extraction errors, it's recommended to contact your GameVault server administrators to check the integrity of the game archive.
+After the download is complete, find the "Extract" button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory.
 
-:::tip
-To make the extraction process easier for each game, you can enable the auto-extract option in the settings. This feature automatically extracts completed downloads.
+A progress bar shows the extraction progress and estimated remaining time. Larger or higher-quality compressed games may take longer to extract.
+
+If there are extraction errors, you are able to retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you have repeated extraction errors for the same game, contact your GameVault server administrators to check the integrity of those games.
+
+:::tip Auto-Extract
+To make extraction easier, enable the auto-extract option in the settings. This will automatically extract completed downloads.
 :::
 
-### 2. Installing the Game
+### Installing the Game
 
-Once the game is extracted, it's important to understand the two types of games on GameVault: Direct-Play games and games that require installation.
+There are two types of GameVault games: **Direct-Play** games and **Setup-Needed** Games.
 
-#### Direct-Play Games
+Direct-Play games are ready to play out of the box, while Setup-Needed games require a setup before playing.
 
-Direct-Play games come ready to play out of the box!
-
-For Direct-Play games, GameVault provides a simple installation process. You don't need to select an executable file. Just press the available "Install" button now. GameVault will automatically move all the extracted game content to your game's installation directory. The progress bar will show the installation progress and estimate the remaining time. Once the installation is complete, your game is ready to be played.
-
-:::note
-The uploader determines if a game is Direct Play by including "(DP)" in the file name based on the game's structure. If this attribute is not specified, the game requires installation using a setup.
+:::note What determines the game type?
+The server automatically determines if a game is Direct-Play or Setup-Needed, but errors can occur. Administrators can manually overwrite the detected game type by including `(DP)` or `(SN)` in the file name.
 :::
 
-#### Games Requiring Installation
+#### Installing Direct-Play Games
 
-Follow these steps for games that require installation:
+For Direct-Play games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the "Install" button. GameVault will automatically move all the extracted game content to your game's installation directory. The progress bar shows the installation progress and estimated remaining time.
 
-1. GameVault will offer you to launch a setup executable file via a Dropdown menu.
+Once the installation is complete, your game is ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
+:::note No Game Executable
+If you don't see a game executable here but instead see a setup executable, contact your server administrators to manually set that game as Setup-Needed.
+:::
 
-2. Make sure to select the appropriate setup.exe file and press the now available "Install" button.
+Once you confirmed the game works, you can delete the games corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
 
-3. During the installation process, set the destination folder for your game files to be your games Installation folder. For example `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`. This is where the final game files and executable should be located.
+#### Installing Setup-Needed Games
 
-4. Wait for the installation to finish. Once you've confirmed a successful installation, you can delete the corresponding game folder by using the trash icon or the "Clear all" option in the downloads tab.
+For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup.exe file and press the "Install" button.
 
-:::info Why does GameVault fully automate the setup procedure?
+:::note No Setup Executable
+If you don't see a setup executable here but instead see the game's executable, contact your server administrators to manually set that game as Direct-Play.
+:::
 
-Different installers work in different ways, so it's not possible to fully automate every type of installer. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault takes advantage of this by guiding you through the process, but you still need to manually select the installation path.
+During the setup process, **set the destination folder for your game files as your game's Installation folder** (e.g., \<GameVault Root\>/GameVault/Installations/(74) Assassin's Creed Unity/). This is where the final game files and executable should be located.
+
+Wait for the setup to finish. Your game now should be ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
+
+Once you confirmed the game works, you can delete the games corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
+
+:::info Why does GameVault not fully automate the setup procedure?
+Different installers work differently, making it impossible to fully automate every type. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault guides you through the process, but you still need to manually select the installation path.
 :::
 
 ## Playing a Game
 
-Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If it didn't correctly select the correct executable automatically, you can select the appropriate executable from the dropdown menu and click the "Play" button to start the game.
+Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If GameVault didn't correctly predict the correct executable to launch automatically, you can select it from the dropdown menu and click the "Play" button to start the game.
 
 ## Tracking Your Game Progress
 
