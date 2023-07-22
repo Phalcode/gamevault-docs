@@ -114,6 +114,10 @@ const config = {
                 href: "https://reddit.com/r/Phalcode",
               },
               {
+                label: "Lemmy",
+                href: "https://lemmy.world/c/phalcode",
+              },
+              {
                 label: "Discord",
                 href: "https://discord.gg/NEdNen2dSu",
               },
