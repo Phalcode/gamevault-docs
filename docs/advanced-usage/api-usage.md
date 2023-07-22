@@ -12,9 +12,9 @@ To use the GameVault API, it is recommended to register a separate user. This us
 
 ## API Documentation
 
-Once you have registered your account, you can check out the API documentation at `example.com/api/v1/docs`. The API documentation provides a complete guide on how to use the API, including authentication, endpoints, and parameters.
+Once you have registered your account, you can check out the API documentation at `example.com/api/docs`. The API documentation provides a complete guide on how to use the API, including authentication, endpoints, and parameters.
 
-You can also download the OpenAPI Specification using `example.com/api/v1/docs-json` or `example.com/api/v1/docs-yaml`. This is useful for importing the Calls into a tool like Postman or generate the client code using the openapi-generator.
+You can also download the OpenAPI Specification using `example.com/api/docs-json` or `example.com/api/docs-yaml`. This is useful for importing the Calls into a tool like Postman or generate the client code using the openapi-generator.
 
 ## API Endpoints
 
