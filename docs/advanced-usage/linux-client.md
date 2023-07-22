@@ -39,7 +39,8 @@ Keep that in mind when unpacking games to install them.
    ![Creating a new Bottle](/img/linux/bottles/make_bottle.png)
 3. Inside your bottle click `Dependencies` and install `dotnetcoredesktop6`  
    ![Configuring the .NET Core Dependency](/img/linux/bottles/dotnet.png)
-4. Go back to the main page for your bottle and press `Run Executable...` and select `gamevault.exe`
+4. For fonts problems Inside your bottle click `Dependencies` and install `allfonts`  
+5. Go back to the main page for your bottle and press `Run Executable...` and select `gamevault.exe`
 
 ## Updating the Client
 
