@@ -4,10 +4,35 @@
         <title>GameVault Blog</title>
         <link>https://gamevau.lt/blog</link>
         <description>GameVault Blog</description>
-        <lastBuildDate>Thu, 20 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Jul 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Celebrating 600+ Installations and announcing the upcoming big feature]]></title>
+            <link>https://gamevau.lt/blog/2023/07/24/</link>
+            <guid>https://gamevau.lt/blog/2023/07/24/</guid>
+            <pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey everyone,]]></description>
+            <content:encoded><![CDATA[<p>Hey everyone,</p><p>We're excited to share some great news with you all! GameVault has reached a small milestone with over 600 official installations of our GameVault Client Application. What's even more amazing is that around 200 dedicated users, a third of these installations, have joined our Discord community to connect, chat, and share their experiences.</p><p>We want to express our immense gratitude for your incredible support, feedback, and love for GameVault. Your ongoing encouragement inspires us to push boundaries and enhance your gaming experience. We're thrilled to announce that an awesome update is being worked on right now - the highly anticipated release of GameVault's Installation Pipeline!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4><p>The Installation Pipeline is designed to revolutionize how you install and manage your games. It was suggested by members on our discord server. We understand the challenges of navigating through different installation processes, especially for family members who may not be tech-savvy. With the Installation Pipeline, our goal is to simplify the entire process and make it user-friendly. Whether you're an experienced gamer or not, this update will make installing games easier for you.</p><p>You can read the details <a href="https://github.com/Phalcode/gamevault-app/issues/18" target="_blank" rel="noopener noreferrer">here on the GitHub issue</a>.</p><p>Stay tuned for its upcoming release, and to be among the first to try out this awesome feature, make sure to subscribe to the <code>@Updates</code> Role on our Discord server, if you haven't already. We'll ping you as soon as it's live!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="join-us-on-lemmy-community">Join Us on Lemmy Community<a href="#join-us-on-lemmy-community" class="hash-link" aria-label="Direct link to Join Us on Lemmy Community" title="Direct link to Join Us on Lemmy Community">​</a></h4><p>To further connect with our amazing community, we're excited to announce the launch of our <a href="https://lemmy.world/c/phalcode" target="_blank" rel="noopener noreferrer">official Lemmy community</a>. From now on, we'll also regularly share new blog posts there, providing you with more ways to stay informed and engaged. Join the Lemmy forum and become part of the growing GameVault community!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="share-gamevault-with-others">Share GameVault with Others<a href="#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4><p>As we celebrate this milestone and eagerly anticipate more exciting updates, we invite you to spread the word about GameVault among your friends, family, and gaming or self-hosting communities. Your personal recommendations and referrals have played a significant role in our journey so far, and we believe they'll continue to do so in the future.</p><p>We want to express our heartfelt appreciation for the feature requests, discussions, and invaluable help on our GitHub. Your support and collaborative efforts help a lot.</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="support-us">Support Us<a href="#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4><p>As we move forward, we kindly ask for your continued support. GameVault's success is currently solely built upon our incredible community, and your encouragement is what fuels us. If you love our app and believe in our vision, please consider supporting us in any way you can. It could even be something simple like a rating on the Microsoft Store. Your backing empowers us to keep our hard work going.</p><p>We're eagerly looking forward to celebrating more achievements with all of you.</p><p>Stay tuned, stay connected, and let's continue this journey together!</p>]]></content:encoded>
+            <category>GameVault milestone</category>
+            <category>official installations</category>
+            <category>Discord community growth</category>
+            <category>gratitude</category>
+            <category>feedback</category>
+            <category>love for GameVault</category>
+            <category>upcoming update</category>
+            <category>Installation Pipeline</category>
+            <category>simplifying game installation</category>
+            <category>GitHub issue</category>
+            <category>subscription to Updates role</category>
+            <category>Lemmy community launch</category>
+            <category>sharing blog posts</category>
+            <category>spreading the word</category>
+            <category>support request</category>
+            <category>continued support</category>
+            <category>celebration of achievements</category>
+        </item>
         <item>
             <title><![CDATA[The Migrations are finally completed]]></title>
             <link>https://gamevau.lt/blog/2023/07/20/</link>
@@ -16,6 +41,16 @@
             <description><![CDATA[Hey folks,]]></description>
             <content:encoded><![CDATA[<p>Hey folks,</p><p>Great news. We've successfully migrated our App name in its entirety and will resume advertising as soon as it's published on the Microsoft Store.</p><p>Just a heads up, there might be a surge of new users joining the Discord server due to us promoting Gamevault across all available platforms now.</p><p>You're welcome to join in and spread the word about Crackpipe with your friends, family, social network, or colleagues!</p><p><strong>Let's decipher the mystery behind the new logo:</strong>
 <img loading="lazy" alt="logo" src="/assets/images/logo-text-and-image-sbs-18c030e730661b2ec0e212c989dcd9bd.png" width="1000" height="103" class="img_OS_2"></p><ul><li>The Box represents a Vault with a Keyhole, but it also symbolizes a game dice.</li><li>The Keyhole represents a Keyhole, and simultaneously signifies a game piece.</li></ul><p>Did you find the logo concept creative? Share your thoughts on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">discord</a>!</p>]]></content:encoded>
+            <category>app name migration</category>
+            <category>Microsoft Store publication</category>
+            <category>surge of new users</category>
+            <category>Discord server promotion</category>
+            <category>spreading the word</category>
+            <category>logo deciphering</category>
+            <category>box representation</category>
+            <category>keyhole representation</category>
+            <category>logo concept discussion</category>
+            <category>Discord channel</category>
         </item>
         <item>
             <title><![CDATA[Quick Migration Update and new Logo]]></title>
@@ -24,6 +59,18 @@
             <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey guys,]]></description>
             <content:encoded><![CDATA[<p>Hey guys,</p><p>We have a brief update on the progress of the name migration.</p><p>We've successfully completed the migration of the backend application, which is now accessible as <code>gamevault-backend</code> instead of <code>crackpipe-backend</code>.</p><p>Furthermore, we've migrated the documentation and acquired this domain gamevau.lt. We've set up redirects for our previous domain and the demo server as well.</p><p>Lastly we migrated our Subreddit from r/Crackpipe to <a href="https://reddit.com/r/Phalcode" target="_blank" rel="noopener noreferrer">r/Phalcode</a> and opened up a new community on <a href="https://lemmy.world/c/phalcode" target="_blank" rel="noopener noreferrer">Lemmy</a>. All further Updates and discussions regarding GameVault can be found there.</p><p>We're nearly finished, you might say.</p><p>The only remaining task is the Client Application. We're actively working on it and currently testing the application on our developer edition. Soon, you'll be able to seamlessly update your client with the new name and appearance.</p><p>In the meantime, our graphic designer has crafted a fresh logo for our new name, GameVault.</p><p><img loading="lazy" alt="logo" src="/assets/images/logo-text-and-image-sbs-18c030e730661b2ec0e212c989dcd9bd.png" width="1000" height="103" class="img_OS_2"></p><p>To make good use of your time while the migrations are in progress, what do you speculate the new logo represents?</p><p>Share your theories in gamevaults #chat channel on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">discord</a>! We'll reveal the answer and shoutout the winner(s) in the next blog post, once the migration is finalized!</p><p>Until then ✌️</p>]]></content:encoded>
+            <category>name migration progress</category>
+            <category>backend application migration</category>
+            <category>documentation migration</category>
+            <category>domain acquisition</category>
+            <category>Subreddit migration</category>
+            <category>Lemmy community</category>
+            <category>Client Application update</category>
+            <category>testing</category>
+            <category>new logo</category>
+            <category>speculation</category>
+            <category>Discord channel</category>
+            <category>migration finalization</category>
         </item>
         <item>
             <title><![CDATA[A New Name]]></title>
@@ -38,6 +85,21 @@
 <!-- -->Possible Domains: harborapp.de</p><ul><li><p>"Harbor" is a very common word, making it challenging to find a suitable domain that aligns with our brand identity.</p></li><li><p>Additionally, there's a well-known app called <a href="https://goharbor.io" target="_blank" rel="noopener noreferrer">Harbor on the Market</a> related to Docker/Kubernetes.</p></li></ul><h3 class="anchor anchorWithStickyNavbar_TVGU" id="5-gamehub">5. GameHub<a href="#5-gamehub" class="hash-link" aria-label="Direct link to 5. GameHub" title="Direct link to 5. GameHub">​</a></h3><p>Google Search Results: ~5,690,000
 Possible Domains: gamehubapp.de</p><ul><li><a href="https://github.com/tkashkin/GameHub" target="_blank" rel="noopener noreferrer">GameHub</a> is a popular game library manager</li><li>it also sounds like a popular adult site 😁</li></ul><h2 class="anchor anchorWithStickyNavbar_TVGU" id="whats-next">What's Next?<a href="#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2><p>We understand your eagerness for a new name, and we are equally committed to distancing ourselves from the old one. Taking into account all the suggested names and feedback, we engaged in extensive internal brainstorming, free from outside influences.</p><p>We sought a name that is descriptive, intuitive, and effectively conveys the purpose of our app. Additionally, we aimed for a name that is easily memorable and emphasizes the ownership and control of a self-hosted server, security, and exclusivity.</p><p>Introducing our new name: <strong>GameVault</strong><br>
 <!-- -->Available soon under this domain: <a href="https://gamevau.lt" target="_blank" rel="noopener noreferrer">gamevau.lt</a></p><p>We have already secured the domain and registered the name wherever possible. The transition process will commence shortly. We are eager to hear your thoughts on the new name. Do you like it?</p><h2 class="anchor anchorWithStickyNavbar_TVGU" id="special-thanks-️">Special Thanks ❤️<a href="#special-thanks-️" class="hash-link" aria-label="Direct link to Special Thanks ❤️" title="Direct link to Special Thanks ❤️">​</a></h2><p>Well, as you all know, this was quite a journey to get here, and we wanted to give our special thanks to:</p><ul><li><p>Everybody who gave this project's idea a chance, even if the name was kind of weird.</p></li><li><p>Everybody who made suggestions on our Discord server and participated in the discussions.</p></li><li><p>Everybody who voted.</p></li><li><p>A special shoutout to @KairuByte on Discord for coming up with the name GameVault.</p></li><li><p>We would also like to extend our gratitude to <a href="https://selfhosted.show/101?t=2731" target="_blank" rel="noopener noreferrer">The Selfhosted Podcast</a> for discussing our app. (Brent, we are excited to hear your thoughts on the new name from a marketing standpoint 😜)</p></li><li><p>Last but not least, thank you to <a href="https://selfh.st/newsletter/2023-07-07/" target="_blank" rel="noopener noreferrer">The Self-Hosted Newsletter</a> for mentioning our release.</p></li></ul><p>Thank you all for your continued support!</p><p>We will keep you updated as the transition unfolds. In the meantime, head over to our Discord channel to celebrate and share your thoughts on the new name.</p><p>Oh, and by the way, just a heads up: The transition for the "crackpipe_user" field in the database might take a bit longer, because it will need a migration. It seems getting 500 users "off the crackpipe" isn't as easy as we thought! 😉</p><p>Stay tuned!</p>]]></content:encoded>
+            <category>poll results</category>
+            <category>renaming app</category>
+            <category>community feedback</category>
+            <category>GameStash</category>
+            <category>GameVault</category>
+            <category>GameShelf</category>
+            <category>Harbor</category>
+            <category>GameHub</category>
+            <category>market analysis</category>
+            <category>new name announcement</category>
+            <category>GameVault domain</category>
+            <category>special thanks</category>
+            <category>Selfhosted Podcast</category>
+            <category>Self-Hosted Newsletter</category>
+            <category>transition process</category>
         </item>
         <item>
             <title><![CDATA[A Closer Look at Crackpipes 'Source-Available' Nature]]></title>

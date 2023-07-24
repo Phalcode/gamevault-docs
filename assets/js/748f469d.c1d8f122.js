@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3466],{6871:a=>{a.exports=JSON.parse('{"label":"Discord community growth","permalink":"/blog/tags/discord-community-growth","allTagsPath":"/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3261],{2815:e=>{e.exports=JSON.parse('{"label":"keyhole representation","permalink":"/blog/tags/keyhole-representation","allTagsPath":"/blog/tags","count":1}')}}]);

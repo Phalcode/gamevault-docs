@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2023-07-20T00:00:00.000Z</updated>
+    <updated>2023-07-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo-image.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Celebrating 600+ Installations and announcing the upcoming big feature]]></title>
+        <id>https://gamevau.lt/blog/2023/07/24/</id>
+        <link href="https://gamevau.lt/blog/2023/07/24/"/>
+        <updated>2023-07-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone,]]></summary>
+        <content type="html"><![CDATA[<p>Hey everyone,</p><p>We're excited to share some great news with you all! GameVault has reached a small milestone with over 600 official installations of our GameVault Client Application. What's even more amazing is that around 200 dedicated users, a third of these installations, have joined our Discord community to connect, chat, and share their experiences.</p><p>We want to express our immense gratitude for your incredible support, feedback, and love for GameVault. Your ongoing encouragement inspires us to push boundaries and enhance your gaming experience. We're thrilled to announce that an awesome update is being worked on right now - the highly anticipated release of GameVault's Installation Pipeline!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4><p>The Installation Pipeline is designed to revolutionize how you install and manage your games. It was suggested by members on our discord server. We understand the challenges of navigating through different installation processes, especially for family members who may not be tech-savvy. With the Installation Pipeline, our goal is to simplify the entire process and make it user-friendly. Whether you're an experienced gamer or not, this update will make installing games easier for you.</p><p>You can read the details <a href="https://github.com/Phalcode/gamevault-app/issues/18" target="_blank" rel="noopener noreferrer">here on the GitHub issue</a>.</p><p>Stay tuned for its upcoming release, and to be among the first to try out this awesome feature, make sure to subscribe to the <code>@Updates</code> Role on our Discord server, if you haven't already. We'll ping you as soon as it's live!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="join-us-on-lemmy-community">Join Us on Lemmy Community<a href="#join-us-on-lemmy-community" class="hash-link" aria-label="Direct link to Join Us on Lemmy Community" title="Direct link to Join Us on Lemmy Community">​</a></h4><p>To further connect with our amazing community, we're excited to announce the launch of our <a href="https://lemmy.world/c/phalcode" target="_blank" rel="noopener noreferrer">official Lemmy community</a>. From now on, we'll also regularly share new blog posts there, providing you with more ways to stay informed and engaged. Join the Lemmy forum and become part of the growing GameVault community!</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="share-gamevault-with-others">Share GameVault with Others<a href="#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4><p>As we celebrate this milestone and eagerly anticipate more exciting updates, we invite you to spread the word about GameVault among your friends, family, and gaming or self-hosting communities. Your personal recommendations and referrals have played a significant role in our journey so far, and we believe they'll continue to do so in the future.</p><p>We want to express our heartfelt appreciation for the feature requests, discussions, and invaluable help on our GitHub. Your support and collaborative efforts help a lot.</p><h4 class="anchor anchorWithStickyNavbar_TVGU" id="support-us">Support Us<a href="#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4><p>As we move forward, we kindly ask for your continued support. GameVault's success is currently solely built upon our incredible community, and your encouragement is what fuels us. If you love our app and believe in our vision, please consider supporting us in any way you can. It could even be something simple like a rating on the Microsoft Store. Your backing empowers us to keep our hard work going.</p><p>We're eagerly looking forward to celebrating more achievements with all of you.</p><p>Stay tuned, stay connected, and let's continue this journey together!</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <category label="GameVault milestone" term="GameVault milestone"/>
+        <category label="official installations" term="official installations"/>
+        <category label="Discord community growth" term="Discord community growth"/>
+        <category label="gratitude" term="gratitude"/>
+        <category label="feedback" term="feedback"/>
+        <category label="love for GameVault" term="love for GameVault"/>
+        <category label="upcoming update" term="upcoming update"/>
+        <category label="Installation Pipeline" term="Installation Pipeline"/>
+        <category label="simplifying game installation" term="simplifying game installation"/>
+        <category label="GitHub issue" term="GitHub issue"/>
+        <category label="subscription to Updates role" term="subscription to Updates role"/>
+        <category label="Lemmy community launch" term="Lemmy community launch"/>
+        <category label="sharing blog posts" term="sharing blog posts"/>
+        <category label="spreading the word" term="spreading the word"/>
+        <category label="support request" term="support request"/>
+        <category label="continued support" term="continued support"/>
+        <category label="celebration of achievements" term="celebration of achievements"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The Migrations are finally completed]]></title>
         <id>https://gamevau.lt/blog/2023/07/20/</id>
@@ -19,6 +48,16 @@
             <name>Alper Alkan</name>
             <uri>https://github.com/Alfagun74</uri>
         </author>
+        <category label="app name migration" term="app name migration"/>
+        <category label="Microsoft Store publication" term="Microsoft Store publication"/>
+        <category label="surge of new users" term="surge of new users"/>
+        <category label="Discord server promotion" term="Discord server promotion"/>
+        <category label="spreading the word" term="spreading the word"/>
+        <category label="logo deciphering" term="logo deciphering"/>
+        <category label="box representation" term="box representation"/>
+        <category label="keyhole representation" term="keyhole representation"/>
+        <category label="logo concept discussion" term="logo concept discussion"/>
+        <category label="Discord channel" term="Discord channel"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Quick Migration Update and new Logo]]></title>
@@ -31,6 +70,18 @@
             <name>Alper Alkan</name>
             <uri>https://github.com/Alfagun74</uri>
         </author>
+        <category label="name migration progress" term="name migration progress"/>
+        <category label="backend application migration" term="backend application migration"/>
+        <category label="documentation migration" term="documentation migration"/>
+        <category label="domain acquisition" term="domain acquisition"/>
+        <category label="Subreddit migration" term="Subreddit migration"/>
+        <category label="Lemmy community" term="Lemmy community"/>
+        <category label="Client Application update" term="Client Application update"/>
+        <category label="testing" term="testing"/>
+        <category label="new logo" term="new logo"/>
+        <category label="speculation" term="speculation"/>
+        <category label="Discord channel" term="Discord channel"/>
+        <category label="migration finalization" term="migration finalization"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[A New Name]]></title>
@@ -49,6 +100,21 @@ Possible Domains: gamehubapp.de</p><ul><li><a href="https://github.com/tkashkin/
             <name>Alper Alkan</name>
             <uri>https://github.com/Alfagun74</uri>
         </author>
+        <category label="poll results" term="poll results"/>
+        <category label="renaming app" term="renaming app"/>
+        <category label="community feedback" term="community feedback"/>
+        <category label="GameStash" term="GameStash"/>
+        <category label="GameVault" term="GameVault"/>
+        <category label="GameShelf" term="GameShelf"/>
+        <category label="Harbor" term="Harbor"/>
+        <category label="GameHub" term="GameHub"/>
+        <category label="market analysis" term="market analysis"/>
+        <category label="new name announcement" term="new name announcement"/>
+        <category label="GameVault domain" term="GameVault domain"/>
+        <category label="special thanks" term="special thanks"/>
+        <category label="Selfhosted Podcast" term="Selfhosted Podcast"/>
+        <category label="Self-Hosted Newsletter" term="Self-Hosted Newsletter"/>
+        <category label="transition process" term="transition process"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[A Closer Look at Crackpipes 'Source-Available' Nature]]></title>
