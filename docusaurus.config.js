@@ -62,8 +62,9 @@ const config = {
       navbar: {
         logo: {
           alt: "GameVault",
-          src: "img/logo-text-and-image-sbs.png",
+          src: "img/logo-image.png",
         },
+        title: "GameVault",
         items: [
           {
             type: "docSidebar",
