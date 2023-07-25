@@ -78,6 +78,11 @@ const config = {
             position: "right",
           },
           {
+            label: "Discord",
+            href: "https://discord.gg/NEdNen2dSu",
+            position: "right",
+          },
+          {
             href: "https://ko-fi.com/phalcode",
             label: "Buy us a coffee",
             position: "right",
@@ -149,7 +154,7 @@ const config = {
       },
       zoom: {
         selector:
-          "img:not(nav img):not(footer img):not(#producthunt):not([alt~='ko-fi']):not([alt~='GameVault'])",
+          "img:not(nav img):not(footer img):not(.nozoom):not([alt~='ko-fi']):not([alt~='GameVault'])",
         config: {
           background: {
             light: "rgb(255, 255, 255)",

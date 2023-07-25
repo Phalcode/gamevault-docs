@@ -34,14 +34,22 @@ function HomepageHeader() {
         </div>
 
         <br />
-        <a href="https://www.producthunt.com/posts/gamevault" target="_blank">
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=400344&theme=neutral"
-            alt="GameVault on ProductHunt"
-            id="producthunt"
-            width="190"
-          />
-        </a>
+        <div className={styles.buttons}>
+          <a href="https://www.producthunt.com/posts/gamevault" target="_blank">
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=400344&theme=neutral"
+              alt="GameVault on ProductHunt"
+              class="nozoom"
+            />
+          </a>
+          <a href="https://discord.gg/NEdNen2dSu" target="_blank">
+            <img
+              src="/img/discord.svg"
+              alt="Join us on Discord"
+              class="nozoom"
+            />
+          </a>
+        </div>
       </div>
     </header>
   );
