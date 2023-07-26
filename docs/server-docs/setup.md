@@ -29,6 +29,7 @@ services:
     restart: unless-stopped
     environment:
       DB_HOST: db
+      DB_DATABASE: gamevault
       DB_USERNAME: gamevault
       DB_PASSWORD: RANDOMPASSWORD
       # The Following Line grants Admin Role to account with this username upon registration.
