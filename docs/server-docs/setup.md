@@ -111,41 +111,25 @@ To add the gamevault server Truenas Scale, just add the [truecharts catalog](htt
 gamevault-backend is pre-configured on your behalf with cloudnative-postgres as the default database which requires the prometheus-operator and cloudnative-pg operator to be installed prior.
 :::
 
-Setup your **Server Admin User** and **Server Admin Password** credentials.
+Setup your **Server Admin Username**.
 
-- **Show Server Settings**, enable this to display additional server sections.
-  - &#9744; Server Registration Disabled.
-  - &#9744; Server Account Activation Disabled.
-  - Server Cors Allowed Origin: "*"
-  - Server Log Level: **info**
-
+You can enable these Menus to further configure your server:
+- **Show Server Settings**
 - **Show Games and Images Settings**
-  - Games Index Interval In Minutes: **5**
-  - Image GC Keep Days: **30**
-  - Image GC Interval Minutes: **60**
-
-- **Show RAWG Server Settings**, enable this to show the RAWG section.
-  - Optionally set your RAWG API Key.
-  - additional variables are available for RAWG.
+- **Show RAWG Server Settings**
 
 Leave the Logs and Images storage options as PVC.
 
 Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise.
 - Add your games/zips here.
 
-## Method 4: Portainer One Click App
-
-:::note Not yet available
-We haven't had the time to create a Portrainer One-Click-App Template yet. But you can help us with it! Talk to us if you are interested.
-:::
-
 ## More Methods
 
-We're excited to announce that we're expanding our support for One-Click-App Integrations! In the future, we plan to add more hosting systems to our lineup.
+We're excited to announce that we're expanding our support for Setup Integrations! In the future, we plan to add more to our lineup.
 
-We do want to point out that each system has its own unique blueprint syntax, and it can take a bit of time to set up the blueprints of new One-Click-Apps just right.
+We do want to point out that each system has its own unique blueprint syntax, and it can take a bit of time to set up the blueprints of new Integrations just right.
 
-However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up a one-click-app for any of these hosting systems, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
+However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up an integration for any system, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
 
 ## What Next?
 
