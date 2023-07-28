@@ -15,7 +15,7 @@ There are many ways to deploy a GameVault Server. You can choose one from below.
 Docker and Docker Compose are recommended to set up the GameVault server. If you do not have Docker and Docker Compose installed on your system, follow these steps to install them:
 
 - **Docker**: You can download Docker from the official [Docker website](https://www.docker.com/get-started).
-- **Docker Compose**: Docker Compose is already included in the Docker Desktop installation for Windows and macOS users. If you are using Linux, follow the instructions on the [Docker Compose installation page](https://docs.docker.com/compose/install/).
+- **Docker Compose**: Docker Compose is already included in the current Docker installations for Windows, Linux and macOS users as `docker compose`. If you are still using `docker-compose`, follow the instructions on the [Docker Compose Migration Guide](https://docs.docker.com/compose/migrate/).
 
 ### 2. Create a Docker Compose file
 
@@ -59,7 +59,7 @@ services:
 Open a terminal, navigate to the directory where the `docker-compose.yml` file is located, and run the following command:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 This will start the GameVault server and PostgreSQL server in the background. The `-d` parameter detaches the process from the terminal.
@@ -132,8 +132,7 @@ We do want to point out that each system has its own unique blueprint syntax, an
 However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up an integration for any system, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
 
 ## What Next?
-
-🥳 Congratulations! 🥳
+**Congratulations! 🥳**
 
 To set up and start using server, follow these steps:
 
