@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[8500],{5556:e=>{e.exports=JSON.parse('{"label":"Council Member","permalink":"/blog/tags/council-member","allTagsPath":"/blog/tags","count":1}')}}]);

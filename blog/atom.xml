@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2023-07-24T00:00:00.000Z</updated>
+    <updated>2023-07-29T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo-image.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Please help us prioritize!]]></title>
+        <id>https://gamevau.lt/blog/2023/07/29/</id>
+        <link href="https://gamevau.lt/blog/2023/07/29/"/>
+        <updated>2023-07-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello everyone!]]></summary>
+        <content type="html"><![CDATA[<p>Hello everyone!</p><p>We hope you're all doing well. We wanted to take a moment to express our heartfelt gratitude for the flood of feature requests and bug reports that have been pouring into our issue trackers. Your enthusiasm and dedication to making GameVault even better are truly inspiring to us.</p><p>As many of you may already know, GameVault is a passion project for us, and while we are mostly convinced by your fantastic ideas, it may take some time for us to implement them. Our team meetings happen in our free time, and although we genuinely want to incorporate your suggestions into our roadmap, we are limited by the time and capacity we can dedicate to the project. Moreover, we want to ensure that the features we develop are refined, polished, and also the most desired in the users' opinions, which adds to the timeline.</p><p>We believe that collaboration with our incredible community is the key to success, and that's why we want to introduce you to our Roadmap. It displays all new issues, planned tasks we want to work on, and all the ongoing work in a well-organized Kanban Board. <a href="https://github.com/orgs/Phalcode/projects/4" target="_blank" rel="noopener noreferrer">You can find it right here.</a></p><p>To ensure that GameVault's development aligns better with your needs, we kindly request your active participation. By voting on GitHub with a Thumbs Up or a Thumbs Down on new and planned issues, you can help us prioritize them effectively. We value your opinion: What features do you feel are most crucial? What aspects of the platform do you find most bothersome? What issues do you see as unnecessary or bloated? Your input will mainly shape the direction we take.</p><p>If you're eager to go the extra mile and actively contribute to shaping GameVault further, we invite you to <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">join our Discord community</a> and becoming a "Council Member". By becoming a "Council Member" and enabling Poll Notifications under "#Channels &amp; Roles", you will have a direct say in the future of GameVault because you will get notifications about opinion polls we run from time to time.</p><p>We cannot stress enough how much we appreciate your involvement in our endeavor to create the ultimate gaming experience for all of you. Your passion and feedback are invaluable, and we are committed to making GameVault the best it can be, together.</p><p>Thank you for being part of this amazing journey with us!</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <category label="community" term="community"/>
+        <category label="GameVault" term="GameVault"/>
+        <category label="development" term="development"/>
+        <category label="roadmap" term="roadmap"/>
+        <category label="collaboration" term="collaboration"/>
+        <category label="feedback" term="feedback"/>
+        <category label="GitHub" term="GitHub"/>
+        <category label="voting" term="voting"/>
+        <category label="features" term="features"/>
+        <category label="platform" term="platform"/>
+        <category label="Kanban Board" term="Kanban Board"/>
+        <category label="Discord" term="Discord"/>
+        <category label="Council Member" term="Council Member"/>
+        <category label="polls" term="polls"/>
+        <category label="gaming experience" term="gaming experience"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Celebrating 600+ Installations and announcing the upcoming big feature]]></title>
         <id>https://gamevau.lt/blog/2023/07/24/</id>
