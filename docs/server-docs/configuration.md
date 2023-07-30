@@ -27,6 +27,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                                             | `false`           | `true`, `false`                                                                              |
 | `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup                          | -                 | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup                                                  | -                 | Any password (No Length Validation)                                                          |
+| `FORCED_SHARP_VERSION`               | Specify a wanted sharp version (ie 0.27.1 for non avx cpus)             | unset                 | valid sharp version                                                          |
 
 ## VOLUMES
 

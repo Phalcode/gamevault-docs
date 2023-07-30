@@ -48,3 +48,8 @@ Below, we will gradually list some common issues and corresponding solutions to 
 ### Forgot my Admin Password
 
 - Refer to [this](./server-docs/user-management.md#recovering-access-to-admin-user) for instructions on how to regain access to your admin account.
+
+### Server won't start (ERR! SignalSIGKILL)
+
+- Check if your CPU supports AVX : `grep avx /proc/cpuinfo`
+- If the result is empty, check [this](./server-docs/configuration.md#configuration-properties) and try FORCED_SHARP_VERSION=0.27.1
