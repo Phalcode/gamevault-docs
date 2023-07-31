@@ -40,16 +40,16 @@ This page describes the various configuration properties used in the application
 
 ## DB
 
-| Property         | Description                                                                                                                                | Default Value | Possible Values         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------- | ----------------------- |
-| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                                                                           | `POSTGRESQL`  | `POSTGRESQL`, `SQLITE`  |
-| `DB_HOST`        | The host of the database (not needed for SQLITE).                                                                                          | `localhost`   | Any valid host name     |
-| `DB_PORT`        | The port of the database (not needed for SQLITE).                                                                                          | `5432`        | Any valid port number   |
-| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid username      |
-| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                                                                     | `default`     | Any valid password      |
-| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                                                                 | `gamevault`   | Any valid database name |
-| `DB_SYNCHRONIZE` | Synchronize the database with the entities (it could break your db). Currently the default because we have not implemented migrations yet. | `true`        | `true`, `false`         |
-| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                                                               | `false`       | `true`, `false`         |
+| Property         | Description                                                                 | Default Value | Possible Values         |
+| ---------------- | --------------------------------------------------------------------------- | ------------- | ----------------------- |
+| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                            | `POSTGRESQL`  | `POSTGRESQL`, `SQLITE`  |
+| `DB_HOST`        | The host of the database (not needed for SQLITE).                           | `localhost`   | Any valid host name     |
+| `DB_PORT`        | The port of the database (not needed for SQLITE).                           | `5432`        | Any valid port number   |
+| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                      | `default`     | Any valid username      |
+| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                      | `default`     | Any valid password      |
+| `DB_DATABASE`    | The database name (not needed for SQLITE).                                  | `gamevault`   | Any valid database name |
+| `DB_SYNCHRONIZE` | Force synchronizes the database with the entities (it could break your db!) | `false`       | `true`, `false`         |
+| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                | `false`       | `true`, `false`         |
 
 ## RAWG_API
 
