@@ -31,57 +31,62 @@ To start playing a game you've downloaded, follow these steps to install it. Thi
 
 Game installation has two main parts:
 
-### Extracting the Game
+### 1. Extracting the Game
 
 By default, GameVault games are contained in some kind of archive format. You need to extract them.
 
-After the download is complete, find the "Extract" button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory.
+After the download is complete, locate the "Extract" button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory.
 
-A progress bar shows the extraction progress and estimated remaining time. Larger or higher-quality compressed games may take longer to extract.
+A progress bar shows the extraction progress and estimated remaining time. Larger or extremely compressed games may take longer to extract.
 
-If there are extraction errors, you are able to retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you have repeated extraction errors for the same game, contact your GameVault server administrators to check the integrity of those games.
+If there are extraction errors, you can retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you encounter repeated extraction errors for the same game, contact your GameVault server administrators to check the integrity of those games.
 
 :::tip Auto-Extract
 To make extraction easier, enable the auto-extract option in the settings. This will automatically extract completed downloads.
 :::
 
-### Installing the Game
+### 2. Installing the Game
 
-There are two types of GameVault games: **Direct-Play** games and **Setup-Needed** Games.
+There are different types of GameVault games. [You can find more information about them here](../server-docs/game-types.md).
 
-Direct-Play games are ready to play out of the box, while Setup-Needed games require a setup before playing.
+For now, we will focus on the general concept of Portable and Setup Games.
+
+Portable games are ready to play out of the box, while Setup games require a setup before playing.
 
 :::note What determines the game type?
-The server automatically determines if a game is Direct-Play or Setup-Needed, but errors can occur. Administrators can manually overwrite the detected game type by including `(DP)` or `(SN)` in the file name.
+The server automatically tries to determine the game's type, but errors can occur. Administrators can manually overwrite the detected game type by including a [type override in the file name](../server-docs/structure.md).
 :::
 
-#### Installing Direct-Play Games
+#### Installing Portable Games
 
-For Direct-Play games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the "Install" button. GameVault will automatically move all the extracted game content to your game's installation directory. The progress bar shows the installation progress and estimated remaining time.
+For portable games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the "Install" button. GameVault will automatically move all the extracted game content to your game's installation directory. The progress bar shows the installation progress and estimated remaining time.
 
 Once the installation is complete, your game is ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
+
 :::note No Game Executable
-If you don't see a game executable here but instead see a setup executable, contact your server administrators to manually set that game as Setup-Needed.
+If you don't see a game executable here but instead see a setup executable, it got wrongly detected on the server. Contact your server administrators to manually override that games type to a setup type.
+Then, manually move the files inside your game's installation folder back into the games download folder. Run the installer and manually select the now-empty game's installation folder as its destination.
 :::
 
-Once you confirmed the game works, you can delete the games corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
+Once you have confirmed that the game works, you can delete the game's corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
 
-#### Installing Setup-Needed Games
+#### Installing Setup Games
 
 For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup.exe file and press the "Install" button.
 
 :::note No Setup Executable
-If you don't see a setup executable here but instead see the game's executable, contact your server administrators to manually set that game as Direct-Play.
+If you don't see a setup executable here but instead see the game's executable, it got wrongly detected on the server. Contact your server administrators to manually override that games type to a portable type.
+Then, manually move the files inside the `Extracted/` folder inside the game's downloads folder to the game's installation folder, and you should be ready to play.
 :::
 
 During the setup process, **set the destination folder for your game files as your game's Installation folder** (e.g., \<GameVault Root\>/GameVault/Installations/(74) Assassin's Creed Unity/). This is where the final game files and executable should be located.
 
-Wait for the setup to finish. Your game now should be ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
+Wait for the setup to finish. Your game should now be ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
 
-Once you confirmed the game works, you can delete the games corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
+Once you have confirmed that the game works, you can delete the game's corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
 
 :::info Why does GameVault not fully automate the setup procedure?
-Different installers work differently, making it impossible to fully automate every type. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault guides you through the process, but you still need to manually select the installation path.
+Different installers work differently, making it impossible to fully automate every type. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault guides you through the process, but you still need to manually select the installation path and run the installer.
 :::
 
 ## Playing a Game

@@ -4,18 +4,45 @@ sidebar_position: 2.5
 
 # Game Types
 
-GameVault provides various **Types** of Games. The client application will treat different kinds of games in different ways. For example when installing them.
+GameVault offers various **Types** of Games. The application will handle different kinds of games differently, for example during installation.
 
-The Game Type is detected by the server automatically, but can be overwritten by using the Type Tag from [GameVaults Naming Structure](structure.md).
+The Game Type is automatically detected by the server, but it can be manually overridden using the Type Tag from [GameVaults Naming Structure](structure.md).
 
-A game can only have one type tag. If it has multiple type tags, all type tags will be ignored.
+Each game can only have one type tag. If it has multiple type tags only one of them gets used.
 
 ## List of currently supported Game Types
 
-### Direct-Play Games (DP)
+:::info
+More game types may be added in the future (e.g., ROMS, Linux, Android, etc.)
+You can request more game types [on our github](https://github.com/Phalcode/gamevault-backend/issues/new).
+:::
 
-Direct-Play games are game files that can be played immediately. No additional setup is necessary.
+### Windows
 
-### Setup-Needed Games (SN)
+#### Portable (W_P)
 
-For Setup-Needed games, users must go through a setup process (e.g. "setup.exe") before playing the game.
+Portable Windows games are game files that can be played immediately. No additional setup is necessary.
+
+Example file structure:
+
+- Butcher_Data/
+- Butcher.exe
+
+#### Setup (W_S)
+
+For Windows Setup games, users must go through a setup process (e.g., "setup.exe") before playing the game.
+
+Example file structure:
+
+- data.bin
+- data2.bin
+- setup.exe
+
+### Undetected
+
+This is the default game type if the server cannot automatically determine the game type. Users will have to manually install the game into the game's installation folder.
+
+Example file structure:
+
+- data/
+- setup.sh
