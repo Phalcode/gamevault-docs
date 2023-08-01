@@ -4,7 +4,7 @@ sidebar_position: 99
 
 # Troubleshooting
 
-Below, we will gradually list some common issues and corresponding solutions to help you maximize the potential of your app. If you can't find a solution to your problem here, feel free to open a ticket on our Github board or seek assistance or enhancements via Discord or Reddit. (Links can be found in the website's Footer.) Alternatively, you may also directly [email our company address](mailto:contact@phalco.de) if the issue is confidential.
+Below, we will gradually list some common issues and corresponding solutions to help you maximize the potential of your app. If you can't find a solution to your problem here, feel free to open a ticket on our Github board or seek assistance via [Discord](https://discord.gg/NEdNen2dSu). Alternatively, you may also directly [email our company address](mailto:contact@phalco.de) if the issue is confidential.
 
 ## Common Problems and Solutions
 
