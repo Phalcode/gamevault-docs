@@ -10,7 +10,15 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
+
     <header className={clsx("hero", styles.heroBanner)}>
+      <noscript>
+        <img
+          src="https://api.swetrix.com/log/noscript?pid=K6k7j6GHClhh"
+          alt=""
+          referrerpolicy="no-referrer-when-downgrade"
+        />
+      </noscript>
       <div className="container">
         <h1 className="hero__title">
           <img src="img/logo-text-and-image-sbs.png" alt="GameVault" />
