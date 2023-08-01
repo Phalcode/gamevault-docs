@@ -48,3 +48,12 @@ Below, we will gradually list some common issues and corresponding solutions to 
 ### Forgot my Admin Password
 
 - Refer to [this](./server-docs/user-management.md#recovering-access-to-admin-user) for instructions on how to regain access to your admin account.
+
+### GameVault Backend: SIGILL / Illegal Instruction (Core Dumped)
+
+Phew. Tough one. Apologies, but your CPU is too dated to run the official gamevault-backend image. The reason is that [our image Compression library "sharp" relies on another library called "libvips," which only functions on processors built after ~2011](https://github.com/lovell/sharp/issues/3743), supporting the AVX and SSE 4.2 Instruction set. We've already encountered a couple users facing this issue. Despite countless hours of analysis and debugging, we attempted almost everything to enable the code to run on both older and newer hardware, even considering switching to another library. Unfortunately, we found ourselves at a dilemma. We had to choose between removing server-side image compression for everyone or officially discontinuing support for older hardware. We conducted a poll, and the results were clear: official support for old hardware should be discontinued. We reached out to the community, urging them to maintain an active fork of gamevault backend with compression completely removed, and the latest update suggests that people are working on it.
+
+- In case you manage such a community fork that addresses this issue, we'd gladly promote it in this documentation.
+- If you discover a solution that works for both older and newer hardware, we welcome a PR for this problem.
+
+Until then, we're constrained by our current circumstances. Sorry.
