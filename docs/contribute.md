@@ -13,3 +13,15 @@ Besides rating GameVault on the Microsoft Store or recommending it to a friend, 
 As we constantly strive to enhance GameVault's performance and features, your assistance is crucial. If you're a developer, please consider opening a pull request on our GitHub repository to contribute directly to the codebase. Alternatively, if you encounter any issues or have suggestions, feel free to create an issue and provide detailed feedback. Your expertise and insights will greatly support our ongoing development efforts.
 
 Please also read the rules in the CONTRIBUTING.md file of each repository you want to contribute to.
+
+## Community Forks
+
+Here you can find an incomplete list of community-driven forks of our Projects. You can add your fork here by submitting a pull-request.
+
+### gamevault-app
+
+### gamevault-backend
+
+| Github                                       | Container Image                                    | Description                                                                                                                     |
+| -------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| https://github.com/Ben2303/gamevault-backend | https://hub.docker.com/r/ben2303/gamevault-backend | Fork that eliminates `sharp` server-side image compression to make it compatible with older CPUs lacking AVX or SSE 4.2 support |
