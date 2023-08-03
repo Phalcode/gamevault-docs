@@ -25,73 +25,26 @@ As stated above, GameVault generates two folders to store the game files and use
 - `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`
 - `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`
 
-Your downloaded game archive will be saved in `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`. The `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
+Your downloaded zip file will be saved in `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`. The `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
 
-To start playing a game you've downloaded, follow these steps to install it. This process makes it easier for you.
+## Installing Games
 
-Game installation has two main parts:
+After downloading the game, you will need to **install it manually** before you can play it.
 
-### 1. Extracting the Game
-
-By default, GameVault games are contained in some kind of archive format. You need to extract them.
-
-After the download is complete, locate the "Extract" button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory.
-
-A progress bar shows the extraction progress and estimated remaining time. Larger or extremely compressed games may take longer to extract.
-
-If there are extraction errors, you can retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you encounter repeated extraction errors for the same game, contact your GameVault server administrators to check the integrity of those games.
-
-:::tip Auto-Extract
-To make extraction easier, enable the auto-extract option in the settings. This will automatically extract completed downloads.
+:::info Why does GameVault not install the game automatically?
+GameVault is designed to work with "alternatively obtained" games such as DRM-free games. While GameVault can be used to install cracked games, it does not encourage or condone piracy. Some Games come with Installers, some come ready to play out of the box, some game repacks are archived with a very good compression and need to get uncompressed before. Automating all of this would be very hard. All Methods have one thing in common: You can choose where your game installation should land. And GameVault makes use of this.
 :::
 
-### 2. Installing the Game
+Here are the steps to install the game:
 
-There are different types of GameVault games. [You can find more information about them here](../server-docs/game-types.md).
+1. All GameVault Games are compressed by default. You need to extract them using a tool like [7Zip](https://www.7-zip.org/).
+2. Now install your game into the appropriate folder in the library:
 
-For now, we will focus on the general concept of Portable and Setup Games.
+   - `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` - This is where the final game files and .exe should be located.
 
-Portable games are ready to play out of the box, while Setup games require a setup before playing.
+3. You will need to choose an .exe file in the Installations tab before you can play the game. Then GameVault will enable the Play button in the Installations tab.
 
-:::note What determines the game type?
-The server automatically tries to determine the game's type, but errors can occur. Administrators can manually overwrite the detected game type by including a [type override in the file name](../server-docs/structure.md).
-:::
-
-#### Installing Portable Games
-
-For portable games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the "Install" button. GameVault will automatically move all the extracted game content to your game's installation directory. The progress bar shows the installation progress and estimated remaining time.
-
-Once the installation is complete, your game is ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
-
-:::note No Game Executable
-If you don't see a game executable here but instead see a setup executable, it got wrongly detected on the server. Contact your server administrators to manually override that games type to a setup type.
-Then, manually move the files inside your game's installation folder back into the games download folder. Run the installer and manually select the now-empty game's installation folder as its destination.
-:::
-
-Once you have confirmed that the game works, you can delete the game's corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
-
-#### Installing Setup Games
-
-For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup.exe file and press the "Install" button.
-
-:::note No Setup Executable
-If you don't see a setup executable here but instead see the game's executable, it got wrongly detected on the server. Contact your server administrators to manually override that games type to a portable type.
-Then, manually move the files inside the `Extracted/` folder inside the game's downloads folder to the game's installation folder, and you should be ready to play.
-:::
-
-During the setup process, **set the destination folder for your game files as your game's Installation folder** (e.g., \<GameVault Root\>/GameVault/Installations/(74) Assassin's Creed Unity/). This is where the final game files and executable should be located.
-
-Wait for the setup to finish. Your game should now be ready to be played. Just select the appropriate .exe file in the Installations tab and click Play.
-
-Once you have confirmed that the game works, you can delete the game's corresponding Downloads folder using the trash icon or the "Clear all" option in the downloads tab.
-
-:::info Why does GameVault not fully automate the setup procedure?
-Different installers work differently, making it impossible to fully automate every type. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault guides you through the process, but you still need to manually select the installation path and run the installer.
-:::
-
-## Playing a Game
-
-Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If GameVault didn't correctly predict the correct executable to launch automatically, you can select it from the dropdown menu and click the "Play" button to start the game.
+4. Feel free to delete `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/` after you installed the game. You can do it manually or by pressing the Delete-Icon / Clear All in your Downloads Tab.
 
 ## Tracking Your Game Progress
 
