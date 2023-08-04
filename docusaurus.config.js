@@ -85,7 +85,7 @@ const config = {
           },
           {
             href: "https://ko-fi.com/phalcode",
-            label: "Buy us a coffee",
+            label: "Buy us a Coffee",
             position: "right",
           },
         ],
@@ -100,10 +100,10 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Shortcuts",
             items: [
               {
-                label: "Tutorial",
+                label: "Introduction",
                 to: "/docs/intro",
               },
               {
@@ -138,11 +138,28 @@ const config = {
               },
               {
                 href: "https://ko-fi.com/phalcode",
-                label: "Buy us a coffee",
+                label: "Buy us a Coffee",
+              },
+            ],
+          },
+          {
+            title: "Legals",
+            items: [
+              {
+                label: "Privacy Policy",
+                href: "https://phalco.de/privacy",
               },
               {
-                href: "https://phalco.de",
-                label: "Imprint",
+                label: "Legal Notice",
+                href: "https://phalco.de/legal",
+              },
+              {
+                label: "Datenschutzerklärung",
+                href: "https://phalco.de/privacy-de",
+              },
+              {
+                label: "Impressum",
+                href: "https://phalco.de/legal-de",
               },
             ],
           },
