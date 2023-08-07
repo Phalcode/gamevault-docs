@@ -8,7 +8,7 @@ sidebar_position: 1
 
 GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
 
-Think of it as your personal Steam for your drm-free video game collection. You bring your own game files (installers, binaries, etc.) from wherever you have them, and the platform detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
+Think of it as your personal Steam for your DRM-free video game collection. You bring your own game files (installers, binaries, etc.) from wherever you have them, and the platform detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
 
 You cannot purchase or stream games using this platform. The GameVault system has two main components: a self-hosted Backend Server and one or more App Clients for you and your friends.
 
