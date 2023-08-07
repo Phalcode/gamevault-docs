@@ -32,7 +32,7 @@ Your downloaded zip file will be saved in `<GameVault Root>/GameVault/Downloads/
 After downloading the game, you will need to **install it manually** before you can play it.
 
 :::info Why does GameVault not install the game automatically?
-GameVault is designed to work with "alternatively obtained" games such as DRM-free games. While GameVault can be used to install cracked games, it does not encourage or condone piracy. Some Games come with Installers, some come ready to play out of the box, some game repacks are archived with a very good compression and need to get uncompressed before. Automating all of this would be very hard. All Methods have one thing in common: You can choose where your game installation should land. And GameVault makes use of this.
+GameVault is designed to work with all kinds of games. Some Games come with Installers, some come ready to play out of the box, some games are archived with a very good compression and need to get uncompressed before. Automating these processes would prove quite challenging. However, all these methods share a common feature: you can decide where your final game installation should reside - And GameVault takes advantage of this functionality.
 :::
 
 Here are the steps to install the game:

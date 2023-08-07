@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "GameVault",
-  tagline: "the self-hosted gaming platform for 'alternatively obtained' games",
+  tagline: "the self-hosted gaming platform for drm-free games",
   favicon: "img/logo-image.png",
 
   // Set the production url of your site here

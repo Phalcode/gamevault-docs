@@ -6,14 +6,14 @@ sidebar_position: 1
 
 ## What is GameVault
 
-GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It allows you and your friends to enjoy playing and organizing games stored **on your own file server**.
+GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
 
-Think of it as your personal Steam for your own video game collection. You bring your own game files (installers, binaries and so on) from wherever you have them, and the platform detects them and provides you and your close ones a user-friendly interface to easily organize, download, install and play your games and even to track your playtimes and progress.
+Think of it as your personal Steam for your drm-free video game collection. You bring your own game files (installers, binaries, etc.) from wherever you have them, and the platform detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
 
-You can not _buy_ or _stream_ games with this app. The GameVault ecosystem consists of two main components: a self-hosted Backend Server and one or more App Clients for you and your close ones.
+You cannot purchase or stream games using this platform. The GameVault system has two main components: a self-hosted Backend Server and one or more App Clients for you and your friends.
 
 :::caution Piracy Disclaimer
-GameVault is primarily intended for "alternatively obtained" games, such as DRM-free games, rather than games obtained from conventional platforms like Steam or EPIC Games. It's crucial to understand that while GameVault _can_ theoretically be utilized with cracked games, it does **not** endorse or support piracy. We view piracy as an improper and unauthorized usage of our application.
+GameVault primarily caters to DRM-free games, not DRM-protected games from conventional platforms like Steam or EPIC Games. When we refer to DRM-free games, we still mean games acquired legally. It's crucial to understand that while GameVault _can_ theoretically be used with pirated games, it does **not** endorse or support piracy. We consider piracy as improper and unauthorized usage of our application.
 :::
 
 ## Features
