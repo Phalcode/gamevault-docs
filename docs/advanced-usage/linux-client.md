@@ -52,4 +52,5 @@ Since there is currently no auto-update functionality available (as mentioned in
 - Text can look very broken if certain fonts are not installed on your system.
   - If you're on Arch Linux, [this](https://aur.archlinux.org/packages/ttf-ms-win11-auto) AUR package fixes most of them.
   - If you're on Debian, you could try to use [this](https://packages.debian.org/ttf-mscorefonts-installer) package. (untested)
+  - Additionally - you can also try [this](https://archive.org/details/windows-11-21h2-complete-font-collection) and install it to your wine prefix's fonts folder ~/.wine/drive_c/windows/Fonts ; This works on the steamdeck
 - Closing the app will cause it to throw an error, seems to be related to closing to tray
