@@ -51,7 +51,7 @@ services:
       POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your postgres database files should land
-      - /your/database/folder:/var/lib/postgresql
+      - /your/database/folder:/var/lib/postgresql/data
 ```
 
 ### 3. Start the GameVault server
