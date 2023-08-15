@@ -29,7 +29,11 @@ If the game files are already compressed in a format that GameVault can understa
 
 ## Step 2: Compression
 
-To make your game files compatible with GameVault, you need to compress them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
+To make your game files compatible with GameVault, you need to archive them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
+
+:::tip single-file executables
+If the game you're about to add only consists of a single executable file such as `setup_game.exe` or `setup_game.sh`, you can choose to skip this stage and proceed with [naming it](#step-3-naming-the-archive). See [here](structure.md#single-executable) for more details.
+:::
 
 ### Method 1: The Fast Way
 
@@ -71,13 +75,13 @@ If you are not happy with either method, you can use the preselected options of 
 
 ## Step 3: Naming the Archive
 
-Before you name the archive, do a quick research about the game you have by asking yourself or using a search engine to find out the following information:
+Before naming the archive, take a moment to research the game you're about to add. Ask yourself questions or use a search engine to answer  the following questions:
 
 - "What version is the game?"
-- "When was the game released?"
+- "What year was the game released?"
 - "Is the game still in early access?"
 
-Once you have the necessary information, you can name the archive using the [GameVault Naming Structure](structure.md).
+Once you have gathered all the necessary information, you can name the archive using the [GameVault Naming Structure](structure.md).
 
 In our fictitious example we have a copy of Crawl Version 1.0.1 released in 2014, so we named the archive:
 

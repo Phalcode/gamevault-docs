@@ -37,7 +37,7 @@ Game installation has two main parts:
 
 ### 1. Extracting the Game
 
-GameVault games are served in some kind of archive format. So you need to extract them.
+GameVault games are [always served in some kind of archive format](../server-docs/structure.md). So you will need to extract them.
 
 After the download is complete, locate the `Extract` button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory. A progress bar shows the extraction progress and estimated remaining time. Larger or extremely compressed games may take longer to extract.
 
