@@ -36,6 +36,10 @@ Here's an example of a full game name that follows this convention:
 
 By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by GameVault.
 
+:::caution Illegal Filenames and Characters
+File names must not include certain characters such as `/`, `<`, `>`, `:`, `"`, `\`, `|`, `?`, and `*`. Additionally, don't end filenames with spaces or dots. Please replace these problematic characters with suitable ones to ensure compatibility across all systems. Also, avoid using reserved filenames like `CON`, `PRN`, `AUX`, `NUL`, `COM(1-9)`, `LPT(1-9)` etc.
+:::
+
 ### Other Examples
 
 Here are some other valid examples of game names that follow the naming convention:
