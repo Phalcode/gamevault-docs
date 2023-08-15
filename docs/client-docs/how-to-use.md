@@ -83,11 +83,11 @@ Different external installers and setups work very differently, making it nearly
 
 #### Clearing Remains
 
-Once you have confirmed that a game works, you are free to delete the game's corresponding Download using the trash icon in the downloads tab.
+Once you have fully confirmed that a game works, you are free to delete the game's corresponding Download using the trash icon in the downloads tab.
 
 ## Playing a Game
 
-Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If GameVault didn't correctly predict the correct executable to launch automatically, you can select it from the dropdown menu and click the "Play" button to start the game.
+Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If GameVault didn't correctly predict the correct executable to launch automatically, you can select it from the dropdown menu and click the `Play` button to start the game.
 
 ## Tracking Your Game Progress
 
