@@ -2,12 +2,12 @@ import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
 
-import ImgLibrary from "@site/static/img/features/library.png";
+import ImgLibrary from "@site/static/img/features/library.jpg";
 import ImgMicrosoftStore from "@site/static/img/features/microsoftstore.png";
-import ImgAuth from "@site/static/img/features/adminview.png";
-import ImgSocial from "@site/static/img/features/communitytab.png";
-import ImgEnrichments from "@site/static/img/features/gameview.png";
-import ImgGithub from "@site/static/img/features/opensource.png";
+import ImgAuth from "@site/static/img/features/adminview.jpg";
+import ImgSocial from "@site/static/img/features/communitytab.jpg";
+import ImgEnrichments from "@site/static/img/features/gameview.jpg";
+import ImgGithub from "@site/static/img/features/sourcecode.png";
 
 const FeatureList = [
   {
