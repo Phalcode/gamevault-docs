@@ -8,7 +8,7 @@ If you want to set up a GameVault Server, you need to pay attention to the file 
 
 ## Supported Archive Formats
 
-GameVault supports all file formats 7zip does:
+GameVault supports all file formats 7zip 23.01 (2023-06-20) does:
 
 `.7z` `.xz` `.bz2` `.gz` `.tar` `.zip` `.wim` `.ar` `.arj` `.cab` `.chm` `.cpio` `.cramfs` `.dmg` `.ext` `.fat` `.gpt` `.hfs` `.ihex` `.iso` `.lzh` `.lzma` `.mbr` `.msi` `.nsis` `.ntfs` `.qcow2` `.rar` `.rpm` `.squashfs` `.udf` `.uefi` `.vdi` `.vhd` `.vmdk` `.wim` `.xar` `.z`
 
