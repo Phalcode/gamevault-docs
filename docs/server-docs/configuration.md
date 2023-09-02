@@ -69,10 +69,10 @@ This page describes the various configuration properties used in the application
 
 ## IMAGE
 
-| Property                                        | Description                                                                                  | Default           | Possible Values |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------- | --------------- |
-| `IMAGE_MAX_SIZE_IN_BYTES`                       | he maximum size for image uploads in bytes. Set it to 0 to disable image uploads.            | `10000000` (10MB) | Any number      |
-| `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` | The amount of time to wait when the server reaches the rate limit for the Google Images API. | `24`              | Any number      |
+| Property                                        | Description                                                                                  | Default        | Possible Values |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------- | --------------- |
+| `IMAGE_MAX_SIZE_IN_KB`                          | he maximum size for image uploads in kilobytes. Set it to 0 to disable image uploads.        | `10000` (10MB) | Any number      |
+| `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` | The amount of time to wait when the server reaches the rate limit for the Google Images API. | `24`           | Any number      |
 
 ## TESTING
 
