@@ -16,17 +16,17 @@ This page describes the various configuration properties used in the application
 
 ## SERVER
 
-| Property                             | Description                                                                                                 | Default Value     | Possible Values                                                                              |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
-| `PUID`                               | The User-Identifer that should be used                                                                      | `1000`            | any user id (number)                                                                         |
-| `PGID`                               | The Group-Identifer that should be used                                                                     | `1000`            | any group id (number)                                                                        |
-| `SERVER_LOG_LEVEL`                   | The log level of the server                                                                                 | `info`            | `debug`, `info`, `warn`, `error`, `fatal`, `off`                                             |
-| `SERVER_LOG_FILES_ENABLED`           | If the server should also write the logs to the `VOLUMES_LOGS` directory via rolling file logger            | `false`           | `true`, `false`                                                                              |
-| `SERVER_REQUEST_LOG_FORMAT`          | The [morgan log format](https://www.npmjs.com/package/morgan#predefined-formats) for incoming HTTP Requests | Custom Log Format | `short`, `combined` [and many more](https://www.npmjs.com/package/morgan#predefined-formats) |
-| `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                                                                        | `*`               | A comma-separated list of origins                                                            |
-| `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                                          | `false`           | `true`, `false`                                                                              |
-| `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                                             | `false`           | `true`, `false`                                                                              |
-| `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup                          | -                 | Any username                                                                                 |
+| Property                             | Description                                                                                                                                             | Default Value     | Possible Values                                                                              |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
+| `PUID`                               | The User-Identifer that should be used                                                                                                                  | `1000`            | any user id (number)                                                                         |
+| `PGID`                               | The Group-Identifer that should be used                                                                                                                 | `1000`            | any group id (number)                                                                        |
+| `SERVER_LOG_LEVEL`                   | The log level of the server                                                                                                                             | `info`            | `debug`, `info`, `warn`, `error`, `fatal`, `off`                                             |
+| `SERVER_LOG_FILES_ENABLED`           | If the server should also write the logs to the `VOLUMES_LOGS` directory via rolling file logger                                                        | `false`           | `true`, `false`                                                                              |
+| `SERVER_REQUEST_LOG_FORMAT`          | The [morgan log format](https://www.npmjs.com/package/morgan#predefined-formats) for incoming HTTP Requests                                             | Custom Log Format | `short`, `combined` [and many more](https://www.npmjs.com/package/morgan#predefined-formats) |
+| `SERVER_CORS_ALLOWED_ORIGINS`        | Allowed CORS origins for the server.                                                                                                                    | `*`               | A comma-separated list of origins                                                            |
+| `SERVER_REGISTRATION_DISABLED`       | If registration is enabled or not.                                                                                                                      | `false`           | `true`, `false`                                                                              |
+| `SERVER_ACCOUNT_ACTIVATION_DISABLED` | If accounts need to be activated by an admin before using them.                                                                                         | `false`           | `true`, `false`                                                                              |
+| `SERVER_ADMIN_USERNAME`              | Automatically grants Admin Role to User with this Username on register, or startup                                                                      | -                 | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`              | Resets the admin user password to this password on startup. Only used for password reset in case of lockout. This won't register a new account for you! | -                 | Any password (No Length Validation)                                                          |
 
 ## VOLUMES
@@ -69,10 +69,10 @@ This page describes the various configuration properties used in the application
 
 ## IMAGE
 
-| Property                    | Description                                                                                                  | Default | Possible Values |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------ | ------- | --------------- |
-| `IMAGE_GC_KEEP_DAYS`        | The number of days to keep unused images. After this period, images that have not been accessed are deleted. | `30`    | Any number      |
-| `IMAGE_GC_INTERVAL_MINUTES` | How often to run the image garbage collector, in minutes.                                                    | `60`    | Any number      |
+| Property                                        | Description                                                                                  | Default           | Possible Values |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------- | --------------- |
+| `IMAGE_MAX_SIZE_IN_BYTES`                       | he maximum size for image uploads in bytes. Set it to 0 to disable image uploads.            | `10000000` (10MB) | Any number      |
+| `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` | The amount of time to wait when the server reaches the rate limit for the Google Images API. | `24`              | Any number      |
 
 ## TESTING
 
