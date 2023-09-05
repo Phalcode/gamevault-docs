@@ -8,7 +8,9 @@ Setting up a GameVault server can be done in a few simple steps. Before starting
 
 There are many ways to deploy a GameVault Server. You can choose one from below.
 
-## Method 1: Docker Setup
+## Methods
+
+### Method 1: Docker Setup
 
 #### 1. Install Docker and Docker Compose
 
@@ -88,7 +90,7 @@ services:
       - /your/sqlite/database/folder:/db
 ```
 
-## Method 2: Caprover One Click App
+### Method 2: Caprover One Click App
 
 If you're using [Caprover](https://caprover.com), setting up a GameVault Server with a Postgres DB is just a click away.
 
@@ -103,7 +105,7 @@ To use it, follow these simple steps:
 
 Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
-## Method 3: TrueNAS Scale
+### Method 3: TrueNAS Scale
 
 To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
 
@@ -125,14 +127,14 @@ Games storage option can be safely set hostpath if not using using any shares or
 
 - Add your games/zips here.
 
-## Method 4: Installing Without Containers
+### Method 4: Installing Without Containers
 
 If none of the methods above are suitable for you, you can also install Gamevault directly on your system without using containers.
 
 #### Prerequisites
 
 - Ensure Node is installed on your system (Check the required version in the first line of GameVaults Dockerfile).
-- Have a PostgreSQL server already running.
+- Have a PostgreSQL server already running. (Or configure SQLITE later on)
 - Install necessary packages: `p7zip-full`, and `p7zip-rar` (or their equivalents in your distribution).
 - Install the far superior package manager PNPM using the command: `npm i -g pnpm`.
 
@@ -169,7 +171,7 @@ node dist/src/main
 
 Press CTRL + C to stop the Server.
 
-## More Methods
+### More Methods
 
 We're excited to announce that we're expanding our support for Setup Integrations! In the future, we plan to add more to our lineup.
 
