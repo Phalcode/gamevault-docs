@@ -58,7 +58,7 @@ This page describes the various configuration properties used in the application
 | --------------------- | --------------------------------------------- | ------------------------- | ---------------------- |
 | `RAWG_API_URL`        | Base URL of the RAWG API.                     | `https://api.rawg.io/api` | Any valid URL          |
 | `RAWG_API_KEY`        | API key for the RAWG API.                     | `""`                      | Any valid RAWG API key |
-| `RAWG_API_CACHE_DAYS` | When to renew RAWG API cached data (in days). | `7`                       | Any positive integer   |
+| `RAWG_API_CACHE_DAYS` | When to renew RAWG API cached data (in days). | `30`                       | Any positive integer   |
 
 ## GAMES
 

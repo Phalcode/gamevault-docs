@@ -50,7 +50,7 @@ GameVault relies heavily on RAWG integration to enhance the game data.
 
 #### Cache Expiry
 
-Cached metadata is stored in the database permanently and remains valid for a configurable period of time. The duration can be set using the `RAWG_API_CACHE_DAYS` environment variable, with a default validity period of 7 days. The purpose of caching is to reduce the number of RAWG API calls. If you encounter rate limits with your RAWG API Key, you can extend the validity duration. Game metadata does not change frequently, so longer validity periods are generally acceptable.
+Cached metadata is stored in the database permanently and remains valid for a configurable period of time. The duration can be set using the `RAWG_API_CACHE_DAYS` environment variable, with a default validity period of 30 days. The purpose of caching is to reduce the number of RAWG API calls. If you encounter rate limits with your RAWG API Key, you can extend the validity duration. Game metadata does not change frequently, so longer validity periods are generally acceptable.
 
 #### Alternative Database Integration
 
