@@ -163,7 +163,16 @@ Your production ready server is now in the `dist/` folder.
 
 Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](configuration.md) or set them in your system / VM directly.
 
+Example:
+
+```env
+DB_SYSTEM=SQLITE
+SERVER_ADMIN_USERNAME=admin
+```
+
 #### Step 5: Start & Stop the Server
+
+To start the Server run:
 
 ```bash
 node dist/src/main
