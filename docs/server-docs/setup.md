@@ -165,7 +165,8 @@ Create a .env file in the `dist/src/` directory and [configure your GameVault as
 
 Example:
 
-```env
+```bash
+#dist/src/.env
 DB_SYSTEM=SQLITE
 SERVER_ADMIN_USERNAME=admin
 ```
