@@ -28,7 +28,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_ACCOUNT_ACTIVATION_DISABLED`           | If accounts need to be activated by an admin before using them.                                                                                                     | `false`           | `true`, `false`                                                                              |
 | `SERVER_ADMIN_USERNAME`                        | Automatically grants Admin Role to User with this Username on register, or startup.                                                                                 | -                 | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`                        | Resets the admin user password to this password on startup. Only used for password reset in case of lockout. ⚠️ CAUTION: This won't register a new account for you! | -                 | Any password (No Length Validation)                                                          |
-| `SERVER_SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s. (Maximum 10 GiB/s)                                                                                          | `10 GiB/s`        | Any Number                                                                                   |
+| `SERVER_SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s.                                                                                                             | `Unlimited`       | Any Number                                                                                   |
 
 ## VOLUMES
 
