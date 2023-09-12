@@ -31,7 +31,10 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    require.resolve("@cmfcmf/docusaurus-search-local"),
+  ],
   presets: [
     [
       "classic",

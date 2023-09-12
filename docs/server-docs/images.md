@@ -8,7 +8,7 @@ This page outlines how images are handled within the backend application.
 
 ## Supported Image Types
 
-`.bmp` `.jpeg` `.png` `.gif` `.ico`
+`.bmp`, `.jpg`, `.jpeg`, `.png`, `.gif`, `.ico`, `.tif`, `.tiff`
 
 ## Image Persistence
 

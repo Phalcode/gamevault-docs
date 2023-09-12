@@ -8,16 +8,18 @@ Setting up a GameVault server can be done in a few simple steps. Before starting
 
 There are many ways to deploy a GameVault Server. You can choose one from below.
 
-## Method 1: Docker Setup
+## Methods
 
-### 1. Install Docker and Docker Compose
+### Method 1: Docker Setup
+
+#### 1. Install Docker and Docker Compose
 
 Docker and Docker Compose are recommended to set up the GameVault server. If you do not have Docker and Docker Compose installed on your system, follow these steps to install them:
 
 - **Docker**: You can download Docker from the official [Docker website](https://www.docker.com/get-started).
 - **Docker Compose**: Docker Compose is already included in the current Docker installations for Windows, Linux and macOS users as `docker compose`. If you are still using `docker-compose`, follow the instructions on the [Docker Compose Migration Guide](https://docs.docker.com/compose/migrate/).
 
-### 2. Create a Docker Compose file
+#### 2. Create a Docker Compose file
 
 Create a new file named `docker-compose.yml` in a directory of your choice and copy the following code:
 
@@ -54,7 +56,7 @@ services:
       - /your/database/folder:/var/lib/postgresql/data
 ```
 
-### 3. Start the GameVault server
+#### 3. Start the GameVault server
 
 Open a terminal, navigate to the directory where the `docker-compose.yml` file is located, and run the following command:
 
@@ -66,7 +68,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 Congratulations! You have successfully set up a GameVault server. You can now start adding games and managing your game library.
 
-#### Method 1.1: Docker Setup without PostgreSQL
+##### Method 1.1: Docker Setup without PostgreSQL
 
 We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
@@ -88,7 +90,7 @@ services:
       - /your/sqlite/database/folder:/db
 ```
 
-## Method 2: Caprover One Click App
+### Method 2: Caprover One Click App
 
 If you're using [Caprover](https://caprover.com), setting up a GameVault Server with a Postgres DB is just a click away.
 
@@ -103,7 +105,7 @@ To use it, follow these simple steps:
 
 Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
-## Method 3: TrueNAS Scale
+### Method 3: TrueNAS Scale
 
 To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
 
@@ -114,6 +116,7 @@ gamevault-backend is pre-configured on your behalf with cloudnative-postgres as 
 Setup your **Server Admin Username**.
 
 You can enable these Menus to further configure your server:
+
 - **Show Server Settings**
 - **Show Games and Images Settings**
 - **Show RAWG Server Settings**
@@ -121,9 +124,64 @@ You can enable these Menus to further configure your server:
 Leave the Logs and Images storage options as PVC.
 
 Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise.
+
 - Add your games/zips here.
 
-## More Methods
+### Method 4: Installing Without Containers
+
+If none of the methods above are suitable for you, you can also install Gamevault directly on your system without using containers.
+
+#### Prerequisites
+
+- Ensure Node is installed on your system (Check the required version in the first line of GameVaults Dockerfile).
+- Have a PostgreSQL server already running. (Or configure SQLITE later on)
+- Install necessary packages: `p7zip-full`, and `p7zip-rar` (or their equivalents in your distribution).
+- Install the far superior package manager PNPM using the command: `npm i -g pnpm`.
+
+#### Step 1: Clone the Source Code
+
+```bash
+git clone https://github.com/Phalcode/gamevault-backend.git
+cd gamevault-backend
+```
+
+#### Step 2: Install Dependencies
+
+```bash
+pnpm install
+```
+
+#### Step 3: Build
+
+```bash
+pnpm run build
+```
+
+Your production ready server is now in the `dist/` folder.
+
+#### Step 4: Set Up .env File
+
+Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](configuration.md) or set them in your system / VM directly.
+
+Example:
+
+```bash
+#dist/src/.env
+DB_SYSTEM=SQLITE
+SERVER_ADMIN_USERNAME=admin
+```
+
+#### Step 5: Start & Stop the Server
+
+To start the Server run:
+
+```bash
+node dist/src/main
+```
+
+Press CTRL + C to stop the Server.
+
+### More Methods
 
 We're excited to announce that we're expanding our support for Setup Integrations! In the future, we plan to add more to our lineup.
 
@@ -132,6 +190,7 @@ We do want to point out that each system has its own unique blueprint syntax, an
 However, we're always looking for passionate individuals to join us in our mission! If you're interested in contributing and setting up an integration for any system, we'd love to have you on board. Together, we can make our platform even more accessible and user-friendly for everyone.
 
 ## What Next?
+
 **Congratulations! 🥳**
 
 To set up and start using server, follow these steps:
