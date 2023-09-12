@@ -32,7 +32,7 @@ Your Antivirus or Windows Smartscreen may attempt to prevent you from running ou
 
 #### Option 2: Linux Installation
 
-To run GameVault on Linux utilizing Wine, follow this community-driven method. Visit [this](../../advanced-usage/linux-client) page for more details.
+To run GameVault on Linux utilizing Wine, follow this community-driven method. Visit [this](../advanced-usage/linux-client) page for more details.
 
 #### Option 3: Self-Compiling on Windows
 
