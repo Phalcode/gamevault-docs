@@ -105,24 +105,24 @@ Please note that this Progress does not include your savegames. GameVault does n
 
 ## Modifying Games
 
-If you are unhappy with the Box-Art or Background Image of a game on your server or if there are incorrect Metadata associated with a game, there is a straightforward solution.
+If you are unhappy with the Box Art or Background Image of a game on your server or if there are incorrect Metadata associated with a game, there is a straightforward solution.
 
 If you have the `EDITOR` role or higher on your GameVault server, you can modify games by following these steps:
 
 1. Navigate to the game's Detail Page.
 2. Locate and click on the Pencil icon in the corner.
-3. A popup will appear, where you can select/paste/drop a image or paste a URL for a different box-art or background image.
+3. A popup will appear, where you can select/paste/drop a image or paste a URL for a different box art or background image.
 4. Additionally, there will be a manual search box for the RAWG database, allowing you to remap the game to the correct one on your own.
 
 Please note that any changes made will affect all users on the server.
 
 ## Modifying Users
 
-If you are unhappy with the Data, Profile Picture or Background Image of your User, there is a straightforward solution.
+If you want to change the data, profile picture or background image of your User:
 
 1. Navigate to the Community Tab and select your Profile.
 2. Locate and click on the Pencil icon in the right corner.
-3. A popup will appear, where you can edit your userdata or select/paste/drop a image or paste a URL for a different profile picture or background image.
+3. A popup will appear, where you can edit your users data or select/paste/drop a image or paste a URL for a different profile picture or background image.
 
 If you have the `ADMIN` role or higher on your GameVault server, you can do the same for all other userprofiles.
 

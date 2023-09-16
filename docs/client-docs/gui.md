@@ -23,8 +23,8 @@ The Setup Wizard is a sub page that appears when the settings required to use Ga
 - Add the game to the Download queue using the download button.
 - Remap the game. To do so, you have to search it in the RAWG serach field. If you found the right game click on the Remap Button.
 - Set a different thumbnail/background image. You can do this by passng an URL or upload a Image. (only available for Editors)
-- By clicking the Re-cache button, the game data will be fetched from RAWG. Use this if the game have broken or old data. (only available for Editors)
-- Use the back-arrow button in the top left corner to return to the Library Tab. (Also works by pressing the 'ESC' Key)
+- By clicking the Re-cache button, the game data will be fetched from RAWG. Use this if the game have broken or old data. (only available for Editors or Administrators)
+- Press the back-arrow button in the top left corner or `ÈSC` to return to the Library Tab.
 
 ## Downloads Tab
 
@@ -54,7 +54,9 @@ The Setup Wizard is a sub page that appears when the settings required to use Ga
 - Edit your User.
 
 ## Settings Tab
-**Application**
+
+### Application
+
 - Auto-Load Library from Server on Startup.
 - Auto-Extract Downloaded Games (truggers right after download completed).
 - Set Server URL (Automatically add 'https' if not included)
@@ -62,12 +64,14 @@ The Setup Wizard is a sub page that appears when the settings required to use Ga
 - Launch GameVault on Computer Startup.
 - Minimize GameVault to System Tray on Startup.
 
-**User**
+### User
+
 - Login.
 - Logout.
 - Register new User.
 
-**Data**
+### Data
+
 - Select GameVault Root Path (Destination for Downloads ins Installs).
 - Clear Image Cache (Shows size).
 - Clear Offline Cache (Shows size).

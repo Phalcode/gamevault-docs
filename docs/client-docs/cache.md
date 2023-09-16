@@ -2,38 +2,36 @@
 sidebar_position: 4
 ---
 
-# Cache
+# Storage, Cache & Offline Usage
 
-This page provides an overview of the heardpiece of GameVault. Everything the App saves to storage in any form. All of this Data will be located in your `../AppData/Roaming/GameVault` Folder.
+This page gives you an overview of one of GameVault's hidden features: Caching and storing data. 
+
+All the data your app saves (except for the GameVault Root Folder for your Downloads and Installations) can be found in your `%APPDATA%/GameVault` folder. If you obtained the app from the Microsoft Store, it could also be in some sort of "Virtual Appdata" located within the `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` folder.
 
 :::caution
-Please note that manually changing the data, can lead to unwanted behavior in GameVault
+Please be aware that manually altering this data may lead to unwanted issues in GameVault.
 :::
-
 
 ## Image Cache
 
-All images in GameVault are stored locally. This ensures that they can be reloaded quickly. They are stored with the format "identifier.imageID" in the respective sub folder. The identifier stands for example for the game ID or the user ID.  
-Since the ImageID is unique, it is possible for GameVault to detect if an image is outdated (for example, a box art image of a game has been modified by another user). The next time this image is requested, the image cache is also updated immediately. So GameVault is always up to date.
+GameVault caches all loaded images locally for faster retrieval. They're kept in a specific subfolder with a format like "ParentID.ImageID," where the ParentID could represent the Game ID or User ID. This unique ImageID allows GameVault to detect when an image becomes outdated (e.g., when another user modifies a game's box art). When you request that image again, the cache is immediately updated.
 
 ## Image Optimization
 
-Every time you start GameVault, it runs an image optimization process. This optimally crops the images to the user's screen size and thus ensures even faster loading times and less unnecessary storage usage.
+In the Microsoft Store version of GameVault, when you open the app, it performs an image optimization process. This process efficiently adjusts images to match your screen size, leading to faster loading times and reduced storage usage.
 
 ## Offline Cache (Progress)
 
-Whenever there is no connection to the server, GameVault continues to track game times. These are transmitted to the server the next time it is connected.
+Even when you or your GameVault Server is offline, as long as the GameVault Client is running in the background, it continues to track your playtime. This data is sent to the server the next time you or it is online.
 
 ## Offline Cache (Game Metadata)
 
-Once a download is complete, GameVault stores the game metadata locally. This way you can use all the functions related to this game, even if there is no connection to the server.
+After completing a download, GameVault stores the game's metadata locally. This allows you to see all game details even when you or the server is offline.
 
 ## Settings
 
-In a user file all possible settings related to GameVault are stored and retrieved.
-Data like password and server URL are encrypted.
+All GameVault settings are stored and retrieved in a user file. Sensitive data like passwords and server URLs are encrypted for security.
 
 ## Ignore List
 
-The Ignore List contains a list of entries that occur quite often. This list is retrieved from the server (if not already present). It is used by the time tracker to exclude for example installation processes from tracking, but also when selecting the executable in the installation tab, it is used so that only game relevant executables are displayed.
-The Ignore List is locally extensible. To do this, open the "ignorelist" file and add your own entries that you want to ignore.
+The Ignore List includes commonly encountered false positives of sidecar-executables, such as `setup.exe`, `UnityCrashHandler.exe` or `uninstall.exe`. This list is retrieved from the server if not already present. It's used by the playtime tracker for instance to avoid counting `setup.exe` as playtime. Furthermore, these executables are hidden in the selection list within the installation tab, ensuring that only game-related executables are shown. You can also expand the Ignore List locally by opening the "ignorelist" file and adding your own entries to be excluded.
