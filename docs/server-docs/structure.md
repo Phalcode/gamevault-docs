@@ -49,8 +49,12 @@ Here's an example of a file that follows this convention:
 By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by GameVault.
 
 :::caution Illegal Filenames and Characters
-File names must not include certain characters such as `/`, `<`, `>`, `:`, `"`, `\`, `|`, `?`, and `*`. Additionally, don't end filenames with spaces or dots. Please replace these problematic characters with suitable ones to ensure compatibility across all systems. Also, avoid using reserved filenames like `CON`, `PRN`, `AUX`, `NUL`, `COM(1-9)`, `LPT(1-9)` etc.
-:::
+
+- File names must not contain the following characters: `/`, `<`, `>`, `:`, `"`, `\`, `|`, `?`, and `*`. Replace these problematic characters with appropriate ones to ensure compatibility across all systems.
+- Avoid ending file names with spaces or dots.
+- Do not use reserved file names such as `CON`, `PRN`, `AUX`, `NUL`, `COM(1-9)`, `LPT(1-9)`, etc.
+- Avoid using multiple chained extensions like `.tar.gz` or `.tar.bz2`. Instead, use only the last extension like `.gz` or `.bz2`.
+  :::
 
 ### Other Examples
 
