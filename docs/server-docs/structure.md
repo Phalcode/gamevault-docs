@@ -54,7 +54,8 @@ By following this naming convention and using the common values listed in the ta
 - Avoid ending file names with spaces or dots.
 - Do not use reserved file names such as `CON`, `PRN`, `AUX`, `NUL`, `COM(1-9)`, `LPT(1-9)`, etc.
 - Avoid using multiple chained extensions like `.tar.gz` or `.tar.bz2`. Instead, use only the last extension like `.gz` or `.bz2`.
-  :::
+
+:::
 
 ### Other Examples
 
