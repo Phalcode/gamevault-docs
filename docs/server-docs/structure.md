@@ -34,13 +34,13 @@ Note that the parentheses must be included, and the naming convention is **case 
 
 Here's an explanation of each part of the naming convention:
 
-| Part            | Description                                                        | Example Value(s)        |
-| --------------- | ------------------------------------------------------------------ | ----------------------- |
-| **Gamename**    | The name of the game **REQUIRED**                                  | `Far Cry 6`, `HITMAN 3` |
-| **Version**     | An optional version tag that must begin with a lowercase `v`       | `(v1.0)`, `(v1.224)`    |
-| **EA**          | An optional tag that indicates whether the game is in Early Access | `(EA)`                  |
-| **Game Type**   | Override for the games type. [See here.](game-types.md)            | `(W_P)`, `(W_S)`, `...` |
-| **ReleaseYear** | The year of the game's release, for accurate detection             | `(2021)`, `(2019)`      |
+| Part            | Description                                                        | Example Value(s)        | Required? |
+| --------------- | ------------------------------------------------------------------ | ----------------------- | --------- |
+| **Gamename**    | The name of the game                                               | `Far Cry 6`, `HITMAN 3` | Yes       |
+| **Version**     | An optional version tag that must begin with a lowercase `v`       | `(v1.0)`, `(v1.224)`    | No        |
+| **EA**          | An optional tag that indicates whether the game is in Early Access | `(EA)`                  | No        |
+| **Game Type**   | Override for the games type. [See here.](game-types.md)            | `(W_P)`, `(W_S)`, `...` | No        |
+| **ReleaseYear** | The year of the game's release, for accurate detection             | `(2021)`, `(2019)`      | No        |
 
 Here's an example of a file that follows this convention:
 
