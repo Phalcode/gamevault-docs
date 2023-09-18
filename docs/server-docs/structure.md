@@ -63,8 +63,8 @@ Here are some other valid examples of game names that follow the naming conventi
 
 - `Star Wars Jedi - Fallen Order(v1.0.10.0) (2019).zip`
 - `HITMAN 3 (v3.10.1) (2021).7z`
-- `The Wandering Village (v0.1.32) (EA) (2022).zip`
+- `The Wandering Village (v0.1.32) (EA) (2022).iso`
 - `Saints Row (W_S) (2022).zip`
 - `Stray (2022).7z`
-- `Captain of Industry (v0.4.12b) (EA) (2022).zip`
+- `Captain of Industry (v0.4.12b) (EA) (2022).gz`
 - `Minecraft (2011).exe`
