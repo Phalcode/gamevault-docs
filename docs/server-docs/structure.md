@@ -28,19 +28,20 @@ Single-file executables are packed into a `.tar` file (no compression) and cache
 
 The name of each game file must follow this format:
 
-`Gamename (vVersion) (EA) (Type) (ReleaseYear).zip`
+`Title (Version) (EarlyAccess) (GameType) (NoCache) (ReleaseYear).zip`
 
 Note that the parentheses must be included, and the naming convention is **case sensitive**.
 
 Here's an explanation of each part of the naming convention:
 
-| Part            | Description                                                        | Example Value(s)        | Required? |
-| --------------- | ------------------------------------------------------------------ | ----------------------- | --------- |
-| **Gamename**    | The name of the game                                               | `Far Cry 6`, `HITMAN 3` | Yes       |
-| **Version**     | An optional version tag that must begin with a lowercase `v`       | `(v1.0)`, `(v1.224)`    | No        |
-| **EA**          | An optional tag that indicates whether the game is in Early Access | `(EA)`                  | No        |
-| **Game Type**   | Override for the games type. [See here.](game-types.md)            | `(W_P)`, `(W_S)`, `...` | No        |
-| **ReleaseYear** | The year of the game's release, for accurate detection             | `(2021)`, `(2019)`      | No        |
+| Part            | Description                                                                                                             | Example Value(s)              | Required? |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------- | --------- |
+| **Title**       | The name of the game                                                                                                    | `Far Cry 6`, `HITMAN 3`       | Yes       |
+| **Version**     | An optional version tag that must begin with a lowercase `v`                                                            | `(v1.0)`, `(v1.224)` , N/A    | No        |
+| **EarlyAccess** | An optional tag that indicates whether the game is in Early Access                                                      | `(EA)`, N/A                   | No        |
+| **GameType**    | Override for the games type. [See here.](game-types.md)                                                                 | `(W_P)`, `(W_S)`, `...` , N/A | No        |
+| **NoCache**     | An optional "NO CACHE"-flag that prevents the server searching for this game on external videogame databases like RAWG. | `(NC)`, N/A                   | No        |
+| **ReleaseYear** | The year of the game's release, for accurate detection                                                                  | `(2021)`, `(2019)`, N/A       | No        |
 
 Here's an example of a file that follows this convention:
 
@@ -52,6 +53,7 @@ By following this naming convention and using the common values listed in the ta
 
 - File names must not contain the following characters: `/`, `<`, `>`, `:`, `"`, `\`, `|`, `?`, and `*`. Replace these problematic characters with appropriate ones to ensure compatibility across all systems.
 - Avoid ending file names with spaces or dots.
+- Avoid using text within Round brackets such as `(GOTY)` in your file names, as GameVault will remove them. Round brackets are reserved for the different flags mentioned above. Use square brackets instead: `[GOTY]`
 - Do not use reserved file names such as `CON`, `PRN`, `AUX`, `NUL`, `COM(1-9)`, `LPT(1-9)`, etc.
 - Avoid using multiple chained extensions like `.tar.gz` or `.tar.bz2`. Instead, use only the last extension like `.gz` or `.bz2`.
 
@@ -65,6 +67,7 @@ Here are some other valid examples of game names that follow the naming conventi
 - `HITMAN 3 (v3.10.1) (2021).7z`
 - `The Wandering Village (v0.1.32) (EA) (2022).iso`
 - `Saints Row (W_S) (2022).zip`
+- `My personal IndieGame (v1.2.9) (NC) (2018).zip`
 - `Stray (2022).7z`
 - `Captain of Industry (v0.4.12b) (EA) (2022).gz`
 - `Minecraft (2011).exe`

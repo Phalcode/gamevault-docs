@@ -28,6 +28,10 @@ Finally, a simple integrity check is performed to ensure that the games in the d
 
 After adding games, the server attempts to find the corresponding game in the RAWG database. It looks for games on RAWG with similar titles and release years to establish a match. Once a match is found, it becomes the official mapping for that game, and any changes to the mapping must be done manually.
 
+#### Disabling Integration for a single Game
+
+To avoid GameVault looking up your game on RAWG and matching it (for example if it's your personal indie game or a game not available on RAWG), you can use the NO-CACHE-Flag `(NC)` in the file path, as explained [here](structure.md#naming-convention-for-games).
+
 #### RAWG API Key
 
 To use the RAWG integration feature, users can set up a RAWG API Key by configuring the `RAWG_API_KEY` environment variable. The API Key can be obtained from the [RAWG Developer Portal](https://rawg.io/login/?forward=developer). The free tier of the API should be sufficient for most users.
