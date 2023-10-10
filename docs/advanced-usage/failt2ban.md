@@ -56,7 +56,7 @@ Insert the following content into the file:
 
 ```bash
 [Definition]
-failregex = ^\[:date[^\]]+\] [^@]+@ <ADDR> - .* -> 401 - .*$
+failregex = .*<HOST> - GET.*401
 ```
 
 Note that this regular expression may require adjustments. You can test it using the command:
@@ -79,7 +79,7 @@ Add the following block and customize the settings based on your preferences:
 [gamevault]
 enabled = true
 filter = gamevault-filter
-logpath = /your/logs/folder/*.log
+logpath = /your/logs/folder/*.log*
 maxretry = 10
 findtime = 3600
 bantime = 3600
