@@ -14,14 +14,13 @@ jobs:
         with:
           version: latest
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18
-          cache: pnpm
+          bun-version: latest
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: bun install
       - name: Build website
-        run: pnpm run build
+        run: bun run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
