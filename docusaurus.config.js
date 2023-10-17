@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer').themes.github;
-const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -113,6 +113,27 @@ const config = {
                 label: "Blog",
                 to: "/blog",
               },
+              {
+                label: "Server Setup",
+                to: "/docs/server-docs/setup.md",
+              },
+              {
+                label: "Troubleshooting",
+                to: "/docs/troubleshooting.md",
+              },
+            ],
+          },
+          {
+            title: "Source Control",
+            items: [
+              {
+                label: "Roadmap",
+                href: "https://github.com/orgs/Phalcode/projects/4",
+              },
+              {
+                label: "Repositories",
+                href: "https://github.com/orgs/Phalcode/repositories?q=gamevault",
+              },
             ],
           },
           {
@@ -133,15 +154,19 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Support us",
             items: [
               {
-                label: "GitHub",
-                href: "https://github.com/phalcode",
+                label: "💙 GitHub Sponsors",
+                href: "https://github.com/sponsors/Phalcode",
               },
               {
                 href: "https://ko-fi.com/phalcode",
-                label: "Buy us a Coffee",
+                label: "❤️ Ko-Fi",
+              },
+              {
+                href: "https://liberapay.com/phalcode",
+                label: "💛 Liberapay",
               },
             ],
           },
