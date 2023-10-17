@@ -31,3 +31,5 @@ You can trigger the restoration and upload backups using the GameVault Client or
 2. **Never, under any circumstances**, attempt to restore a backup from a different database technology (e.g., SQLite to Postgres or vice versa). This will result in a catastrophic failure.
 
 3. Always monitor the server logs while restoring a backup. If you notice anything unusual or different than a harmless warning, make a copy and securely store the file located at /tmp/gamevault-pre-restore.db on your container/server. This file serves as a backup created just before restoring the uploaded backup. In case of a major failure, Gamevault may also perform this pre-restore backup restoration automatically. If you encounter difficulties, attempt to restore from this file. If this doesn't resolve the issue, you may need to explore manual restoration or consider other backup options.
+
+4. The Restoration is not incremental. It hard-deletes everything and hard-restores everything.
