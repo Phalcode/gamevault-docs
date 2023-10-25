@@ -105,6 +105,10 @@ To use it, follow these simple steps:
 
 Now, all you need to do is search for 'GameVault' using the search box and follow the installation wizard.
 
+:::note WebSocket-Support  
+Make sure WebSocket-Support is enabled in Caprover.  
+:::
+
 ### Method 3: TrueNAS Scale
 
 To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
