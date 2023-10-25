@@ -115,11 +115,11 @@ const config = {
               },
               {
                 label: "Server Setup",
-                to: "/docs/server-docs/setup.md",
+                to: "/docs/server-docs/setup",
               },
               {
                 label: "Troubleshooting",
-                to: "/docs/troubleshooting.md",
+                to: "/docs/troubleshooting",
               },
             ],
           },
