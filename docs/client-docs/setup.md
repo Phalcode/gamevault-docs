@@ -12,7 +12,15 @@ If you want to use GameVault to download and install games on your computer, you
 
 **Requirement:** Windows 10/11 Operating System with Microsoft Store installed
 
-To begin, install the GameVault application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
+To begin, install the GameVault application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75).
+
+Experienced users can also simply run this command in the PowerShell:
+
+```ps
+winget install gamevault
+```  
+
+This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
 
 ### Alternative Installation Options
 
