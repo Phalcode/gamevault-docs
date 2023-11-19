@@ -44,7 +44,13 @@ Let's take a look at all the main functions of GameVault:
 
 ## Support
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R76Q6KD)
+We're working hard in our free time to provide you, your friends, and families with the best self-hosted gaming experience. It would mean a lot to us if you could support us developers by donating us some spare dollars on any of these platforms:
+
+- https://ko-fi.com/phalcode
+- https://liberapay.com/Phalcode
+- https://github.com/sponsors/Phalcode
+
+Tip: If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters"-Role and permanently stand out in our [Discord](https://discord.gg/NEdNen2dSu) members list. You'll be acknowledged as a generous and wonderful person. If you donate through a different platform and want to obtain the role, simply send us a message with your receipt as proof that you're truly a Supporter.
 
 ## License
 

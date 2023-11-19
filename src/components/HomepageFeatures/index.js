@@ -11,12 +11,12 @@ import ImgGithub from "@site/static/img/features/sourcecode.png";
 
 const FeatureList = [
   {
-    title: "🎮 Create your own Gaming Platform and Share It with Friends!",
+    title: "🎮 Run your own Gaming Platform and share it with Friends!",
     img: ImgLibrary,
     description: (
       <>
-        Keep your game collection organized and share your favorite titles with
-        your friends using our user-friendly platform on your file server.
+        Keep your game collection organized and share them with your friends
+        using our user-friendly platform on your file server.
       </>
     ),
   },
@@ -25,19 +25,19 @@ const FeatureList = [
     img: ImgAuth,
     description: (
       <>
-        Our platform allows you to control who can access your server and choose
+        The platform allows you to control who can access your server and choose
         who can download and play your games.
       </>
     ),
   },
   {
     title:
-      "🕹️ Keep in touch with your buddies and check their gaming progress!",
+      "🕹️ Keep in touch with your friends and check their gaming progress!",
     img: ImgSocial,
     description: (
       <>
-        Using social features, you can keep in touch with friends and find out
-        what they're playing and explore new games to try.
+        Using social features, you can keep in touch with friends on your
+        server, find out what they're playing and explore new games to try.
       </>
     ),
   },
@@ -70,8 +70,8 @@ const FeatureList = [
     img: ImgGithub,
     description: (
       <>
-        Join our expanding community, contribute to our source-available
-        project! Everybody can help!
+        Join our expanding community, <a href="/docs/contribute">contribute</a>{" "}
+        to our source-available project! Everybody can help!
       </>
     ),
   },
