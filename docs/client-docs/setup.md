@@ -27,7 +27,7 @@ This process should be straightforward and will only consume a few minutes of yo
 If you for some reason prefer not to use the Microsoft Store or if you are operating on a different platform, there are multiple other methods available for installing the GameVault Client Application.
 
 :::caution
-Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client#other-sources)
+Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client.md#other-sources)
 :::
 
 #### Option 1: Obtain Pre-Built Artifacts from Github
