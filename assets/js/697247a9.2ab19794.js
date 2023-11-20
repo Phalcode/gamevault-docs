@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[6535],{5730:a=>{a.exports=JSON.parse('{"label":"software licensing","permalink":"/blog/tags/software-licensing","allTagsPath":"/blog/tags","count":1}')}}]);

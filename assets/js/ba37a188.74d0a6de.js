@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3567],{3158:s=>{s.exports=JSON.parse('{"label":"continued support","permalink":"/blog/tags/continued-support","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

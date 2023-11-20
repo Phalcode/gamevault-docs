@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[9059],{487:a=>{a.exports=JSON.parse('{"label":"simplifying game installation","permalink":"/blog/tags/simplifying-game-installation","allTagsPath":"/blog/tags","count":1}')}}]);

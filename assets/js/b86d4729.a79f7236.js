@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[4457],{6762:a=>{a.exports=JSON.parse('{"label":"backend application migration","permalink":"/blog/tags/backend-application-migration","allTagsPath":"/blog/tags","count":1}')}}]);

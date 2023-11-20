@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[5351],{2579:a=>{a.exports=JSON.parse('{"label":"Lemmy community","permalink":"/blog/tags/lemmy-community","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[7399],{8208:a=>{a.exports=JSON.parse('{"label":"domain acquisition","permalink":"/blog/tags/domain-acquisition","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

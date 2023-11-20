@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[2788],{7480:e=>{e.exports=JSON.parse('{"label":"logo deciphering","permalink":"/blog/tags/logo-deciphering","allTagsPath":"/blog/tags","count":1}')}}]);

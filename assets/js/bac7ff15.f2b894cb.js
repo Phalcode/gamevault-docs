@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[2508],{9649:a=>{a.exports=JSON.parse('{"label":"Microsoft Store publication","permalink":"/blog/tags/microsoft-store-publication","allTagsPath":"/blog/tags","count":1}')}}]);

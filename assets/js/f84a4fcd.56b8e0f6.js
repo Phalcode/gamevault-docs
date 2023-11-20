@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[9524],{4874:s=>{s.exports=JSON.parse('{"label":"logo concept discussion","permalink":"/blog/tags/logo-concept-discussion","allTagsPath":"/blog/tags","count":1}')}}]);

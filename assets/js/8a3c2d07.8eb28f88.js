@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[4519],{2089:a=>{a.exports=JSON.parse('{"label":"cloud-based game platforms","permalink":"/blog/tags/cloud-based-game-platforms","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
