@@ -4,7 +4,7 @@ sidebar_position: 7.5
 
 # Database Backup & Restoration
 
-:::caution Experimental
+:::warning Experimental
 The Backup and Restoration Mechanisms in Gamevault are currently experimental and should **not** be your primary backup solution. Always maintain your database backups independently and only consider using this as a last resort. In summary, we recommend avoiding this entire process whenever possible, as it can potentially be quite fragile and prone to issues. But i guess something is better than nothing...
 :::
 

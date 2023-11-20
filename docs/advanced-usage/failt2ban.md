@@ -3,7 +3,7 @@ id: fail2ban-gamevault-guide
 title: Configuring Fail2Ban for GameVault
 ---
 
-:::caution Not tested
+:::warning Not tested
 This guide is purely theoretical and has not been personally tested by our team. We cannot guarantee its effectiveness as we do not use fail2ban. Feel free to try it out and remove this warning from the documentation if it works for you. If you find any mistakes or misconfigurations, you can also edit the guide accordingly.
 :::
 

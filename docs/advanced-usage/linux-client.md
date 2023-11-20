@@ -2,7 +2,7 @@
 
 This page serves as a community-driven guide to assist you in setting up the GameVault client on Linux.
 
-:::caution
+:::warning
 Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**. It should only be utilized as a last resort when no other options are available.
 :::
 
@@ -12,7 +12,7 @@ To start, you need the Application files. The simplest way to get them is explai
 
 ## Setting up with Wine
 
-:::caution
+:::warning
 
 As of writing this page, using wine outside of bottles did not work in my testing. All it did was open a black box and nothing else.
 
@@ -43,7 +43,7 @@ Keep that in mind when unpacking games to install them.
 
 ## Updating the Client
 
-:::caution
+:::warning
 Since there is currently no auto-update functionality available (as mentioned in [this link](../client-docs/updating-client.md#other-sources)), it is your responsibility to manually update your GameVault client. To update your client, you will need to repeat the procedure in this documentation.
 :::
 
