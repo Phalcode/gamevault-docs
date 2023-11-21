@@ -2,11 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2023-07-29T00:00:00.000Z</updated>
+    <updated>2023-11-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo-image.png</icon>
+    <entry>
+        <title type="html"><![CDATA[A Look Back and a Glimpse Forward]]></title>
+        <id>https://gamevau.lt/blog/2023/11/20/</id>
+        <link href="https://gamevau.lt/blog/2023/11/20/"/>
+        <updated>2023-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello,]]></summary>
+        <content type="html"><![CDATA[<p>Hello,</p>
+<p>It's been a while since we caught up here, but if you've been following the action on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a>, you're up to speed. Nevertheless, this blog remains your spot for the key updates and announements.</p>
+<p>Let's dive into what's been happening with GameVault since release and what's on the horizon. We've hit version 9 on the backend and 1.7 on the frontend, showcasing our commitment to continuous improvement.</p>
+<p>Alongside the usual optimizations and bug fixes, we've been paying a lot of attention to your feature requests and implemented a bunch of them.</p>
+<p>Here's the highlight reel:</p>
+<ul>
+<li>Auto Extraction and Installation of Videogames</li>
+<li>Uninstalling Games through GameVault</li>
+<li>Uploading Images</li>
+<li>Support for more Archive Formats</li>
+<li>Bandwidth Control Features</li>
+<li>Database Backups &amp; Restorations</li>
+<li>Crash Reporting</li>
+<li>Random Game Finder</li>
+</ul>
+<p>So, what's cooking now? We asked for your top three desired features recently, and here are the results:</p>
+<ol>
+<li>UI Redesign for the Library and Installations Tab</li>
+<li>Support for ROMS and Emulators</li>
+<li>Support for extra files like Soundtracks, Mods, etc.</li>
+</ol>
+<p>By the way, if you want to take part in polls like this in the future aswell, make sure to become a council member on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a>!</p>
+<p>Right now we're knee-deep in redesigning the Library, the heart of our application. Big changes are on the way, waving goodbye to the installations tab and ushering in a sleeker UI for Library, Game View, and Game Settings.</p>
+<p>Here are some sneak peeks and mockups: (still work in progress):</p>
+<ol>
+<li>Library (Mockup)
+<img loading="lazy" alt="Filters" src="https://gamevau.lt/assets/images/filters-f2a63aa5f8026620c96a6af4d668e8de.png" width="1896" height="1080" class="img_ev3q">
+<img loading="lazy" alt="Empty States" src="https://gamevau.lt/assets/images/emptystates-cac04f51fc52e209e202e0611b7fc9ce.png" width="1896" height="1080" class="img_ev3q"></li>
+<li>Library (current implementation)
+<img loading="lazy" alt="Library" src="https://gamevau.lt/assets/images/library-bcbcee63f7ae744a97dc39b732a3e6e4.png" width="2548" height="1389" class="img_ev3q"></li>
+<li>Game (Mockup)
+<img loading="lazy" alt="Game View" src="https://gamevau.lt/assets/images/game-1a2301146090a980e3af454aa57abb22.png" width="1896" height="1080" class="img_ev3q"></li>
+<li>Game Settings (Mockup)
+<img loading="lazy" alt="Game Settings" src="https://gamevau.lt/assets/images/settings-ec331d2e53857decc5abb85f44855896.png" width="1080" height="792" class="img_ev3q"></li>
+</ol>
+<p>Remember, these are teasers. Anything can look different once it ships. There's a lot of work left, and we're on it. To be technical here: Most of these modern controls require us to rewrite WPF Controls from the core. On the backend, we're not slacking either – tons of end-to-end tests are being written to ensure our app's reliability.</p>
+<p>Excited about the new UI or got something to say? Head over to <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> and spill the beans!</p>
+<p>We're eager to wrap up these tasks and ship the update out to you guys.</p>
+<p>We also wanted to mention we've already crossed 2000 GameVault users with a growing engaged <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> community of 350 members!</p>
+<p>And your donations help keeping the lights on, though we're not rolling in dough just yet. Every penny counts, and we're truly grateful. Thanks a lot. ❤️</p>
+<p>Help us promote GameVault among fellow self-hosters. Your efforts could inspire a bored developer to join and contribute to our project!</p>
+<p>Stay tuned for the UI update – we'll be back in touch soon.</p>
+<p>Until then, happy gaming! 🎮</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <category label="Game Development" term="Game Development"/>
+        <category label="Software Updates" term="Software Updates"/>
+        <category label="Gaming Community" term="Gaming Community"/>
+        <category label="UI Redesign" term="UI Redesign"/>
+        <category label="Development Milestones" term="Development Milestones"/>
+        <category label="Tech Progress" term="Tech Progress"/>
+        <category label="Future Features" term="Future Features"/>
+        <category label="GameVault Journey" term="GameVault Journey"/>
+        <category label="Coding Chronicle" term="Coding Chronicle"/>
+        <category label="November Update" term="November Update"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Please help us prioritize!]]></title>
         <id>https://gamevau.lt/blog/2023/07/29/</id>
