@@ -12,8 +12,12 @@ Think of it as your personal Steam for your DRM-free video game collection. You 
 
 You cannot purchase or stream games using this platform. The GameVault system has two main components: a self-hosted Backend Server and one or more App Clients for you and your friends.
 
-:::warning Piracy Disclaimer
-GameVault primarily caters to DRM-free games, not DRM-protected games from conventional platforms like Steam or EPIC Games. When we refer to DRM-free games, we still mean games acquired legally. It's crucial to understand that while GameVault _can_ theoretically be used with pirated games, it does **not** endorse or support piracy. We consider piracy as improper and unauthorized usage of our application.
+:::warning Legal Disclaimer
+GameVault manages DRM-free games and is solely a tool to address this need. We are not responsible for the content or files users store or share.
+
+When we say DRM-free games, we only mean games obtained legally. While GameVault _can_ theoretically be used with illegally obtained games, we do not endorse or support piracy.
+
+Users must also be aware of and comply with copyright laws in their respective jurisdictions. We encourage responsible and legal use of GameVault. Unlawful use is strictly improper and unauthorized.
 :::
 
 ## Features
