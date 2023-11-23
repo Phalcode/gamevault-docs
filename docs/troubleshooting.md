@@ -19,10 +19,11 @@ Below, we will gradually list some common issues and corresponding solutions to 
 - Ensure that you use the correct protocol (http or https) in the connection string, particularly if your server doesn't support SSL.
 - If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](./server-docs/configuration.md) for more information.
 
-### Server wont save images
+### Server fails to save images / create SQLITE Database / index games
 
-- Review your server log for error details.
-- Check if the user you run the gamevault-backend with, has the required permissions for its mounted volume folders.
+This is most probably a permissions issue due to the fact that gamevault runs as a non-root user (1000:1000) by default for security purposes.
+
+Either make sure this user has permissions to read/write to the folders you map in as volumes, or run GameVault with a user that has using the `PUID` & `PGID` environment variables.
 
 ### User Registration Activation
 
@@ -45,6 +46,7 @@ Below, we will gradually list some common issues and corresponding solutions to 
 - Check the RAWG-API Dashboard for any requests associated with your API Key.
 - Verify if [the RAWG API is disabled in your server configuration](./server-docs/configuration.md).
 - Verify if [your file names are correct](./server-docs/structure.md)
+- Verify if you accidently marked your game as `(NC)` (No Cache Flag)
 
 ### Forgot my Admin Password
 
@@ -52,7 +54,7 @@ Below, we will gradually list some common issues and corresponding solutions to 
 
 ### GameVault Backend: SIGILL / Illegal Instruction (Core Dumped)
 
-Phew. Tough one. Apologies, but your CPU is too dated to run the official gamevault-backend image. The reason is that [our image Compression library "sharp" relies on another library called "libvips," which only functions on processors built after ~2011](https://github.com/lovell/sharp/issues/3743), supporting the AVX and SSE 4.2 Instruction set. We've already encountered a couple users facing this issue. Despite countless hours of analysis and debugging, we attempted almost everything to enable the code to run on both older and newer hardware, even considering switching to another library. Unfortunately, we found ourselves at a dilemma. We had to choose between removing server-side image compression for everyone or officially discontinuing support for older hardware. We conducted a poll, and the results were clear: official support for old hardware should be discontinued. We reached out to the community, urging them to maintain an active fork of gamevault backend with compression completely removed, and the latest update suggests that people have started working on it. You can check [here](contribute.md#gamevault-backend) to see if such a fork already exists.
+Phew. Tough one. Apologies, but your CPU is too dated to run the official gamevault-backend image. The reason is that [our image Compression library "sharp" relies on another library called "libvips," which only functions on processors built after ~2011](https://github.com/lovell/sharp/issues/3743), supporting the AVX and SSE 4.2 Instruction set. We've already encountered a couple users facing this issue. Despite countless hours of analysis and debugging, we attempted almost everything to enable the code to run on both older and newer hardware, even considering switching to another library. Unfortunately, we found ourselves at a dilemma. We had to choose between removing server-side image compression for everyone or officially discontinuing support for older hardware. We conducted a poll, and the results were clear: official support for old hardware should be discontinued. We reached out to the community, urging them to maintain an active fork of gamevault backend with compression completely removed. You may find one [here](contribute.md#gamevault-backend).
 
 - In case you manage such a community fork that addresses this issue, we'd gladly promote it [here](contribute.md#gamevault-backend).
 - If you discover a solution that works for both older and newer hardware, we welcome a PR for this problem.

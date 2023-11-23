@@ -28,6 +28,7 @@ Let's take a look at all the main functions of GameVault:
 
 - 🔎 Browse your server's game collection
 - 📥 Securely download your games from your server
+- ⚙️ Automatically extract and install games
 - 🎮 Launch and play games on your PC
 - ⏱️ Track playtimes and progress (even when the server is offline)
 - 👥 Compare statistics and game progress with other users on the server
@@ -35,13 +36,13 @@ Let's take a look at all the main functions of GameVault:
 
 ### Server Features
 
-- ♻️ Automatically index games from the file system into a database
+- ♻️ Automatically indexes games from the file system into a database
 - 📚 Enhances games with metadata like tags, genres, description and more using RAWG API
 - 📸 Automatically finds beautiful box art for your library
 - 👥 Multi-User Authentication
 - 🔒 Role-Based Access Control
-- ⏱️ Keep track of your users' game progress and state
-- 🚨 Health Monitoring and configurable Logging
+- ⏱️ Keeps track of your users' game progress and state
+- 🚨 Health Monitoring and Logging
 - 🔎 Full-Text Search, Filters, Sorting, Pagination
 - 🔌 Fully Documented API
 - ⚙️ Highly Configurable
