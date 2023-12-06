@@ -25,3 +25,14 @@ Here you can find an incomplete list of community-driven forks of our Projects. 
 | Github                                       | Container Image                                    | Description                                                                                                                     |
 | -------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | https://github.com/Ben2303/gamevault-backend | https://hub.docker.com/r/ben2303/gamevault-backend | Fork that eliminates `sharp` server-side image compression to make it compatible with older CPUs lacking AVX or SSE 4.2 support |
+
+## Contributors to this Documentation
+
+If you contributed to these docs, feel free to append your github username to the list below.
+
+- @Alfagun74
+- @Yelo420
+- @46620
+- @xstar97
+- @Ronald-Diemicke
+- @FletcherAU
