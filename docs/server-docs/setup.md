@@ -136,9 +136,11 @@ Games storage option can be safely set hostpath if not using using any shares or
  - It is required to have the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications) plugin installed.
 #### Step 1:
 Install the offical postgresql15 by postgres on the CA store.
+```yaml
       POSTGRES_USER: gamevault
       POSTGRES_PASSWORD: RANDOMPASSWORD
       POSTGRES_DB: gamevault
+```
 #### Step 2: Backend Installation
 Find the template for GameVault-Backend by phalcode on the CA store and fill out the template with your folder paths including your information from step 1.
 
