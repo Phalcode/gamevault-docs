@@ -10,7 +10,7 @@ There are many ways to deploy a GameVault Server. You can choose one from below.
 
 ## Methods
 
-### Docker Setup:
+### Docker Compose:
 
 #### 1. Install Docker and Docker Compose
 
@@ -68,7 +68,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 Congratulations! You have successfully set up a GameVault server. You can now start adding games and managing your game library.
 
-##### Docker Setup: without PostgreSQL
+##### Docker Compose: without PostgreSQL
 
 We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
