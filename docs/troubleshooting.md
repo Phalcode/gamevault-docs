@@ -60,3 +60,11 @@ Phew. Tough one. Apologies, but your CPU is too dated to run the official gameva
 - If you discover a solution that works for both older and newer hardware, we welcome a PR for this problem.
 
 Until then, we're constrained by our current circumstances. Sorry.
+
+### Game Downloads are slow
+
+- Make sure the Clients Bandwidth Speed Limit is unset (0)
+- Make sure the Servers Bandwidth Speed Limit is unset (`SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS`)
+- Restart your Client and Server
+- If your server is in your LAN, make sure you don't mistakenly access it from WAN
+- Check your middle-mans: Proxies, VPNs and older Network Hardware could all affect the download speeds.
