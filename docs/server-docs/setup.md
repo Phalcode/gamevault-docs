@@ -145,6 +145,7 @@ Install the offical postgresql15 by postgres on the CA store.
 Find the template for GameVault-Backend by phalcode on the CA store and fill out the template with your folder paths including your information from step 1.
 
 ### Unraid: SQLITE
+We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following CA template.
 #### Prerequisites
  - It is required to have the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications) plugin installed.
 #### Coming Soon
