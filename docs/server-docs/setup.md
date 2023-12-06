@@ -10,7 +10,7 @@ There are many ways to deploy a GameVault Server. You can choose one from below.
 
 ## Methods
 
-### Method 1: Docker Setup
+### Docker Setup:
 
 #### 1. Install Docker and Docker Compose
 
@@ -68,7 +68,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 Congratulations! You have successfully set up a GameVault server. You can now start adding games and managing your game library.
 
-##### Method 1.1: Docker Setup without PostgreSQL
+##### Docker Setup: without PostgreSQL
 
 We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
@@ -90,7 +90,7 @@ services:
       - /your/sqlite/database/folder:/db
 ```
 
-### Method 2: Caprover One Click App
+### Caprover One Click App:
 
 If you're using [Caprover](https://caprover.com), setting up a GameVault Server with a Postgres DB is just a click away.
 
@@ -109,7 +109,7 @@ Now, all you need to do is search for 'GameVault' using the search box and follo
 Make sure WebSocket-Support is enabled in Caprover.  
 :::
 
-### Method 3: TrueNAS Scale
+### TrueNAS Scale:
 
 To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
 
@@ -131,7 +131,7 @@ Games storage option can be safely set hostpath if not using using any shares or
 
 - Add your games/zips here.
 
-### Method 4: Installing Without Containers
+### Installing Without Containers:
 
 If none of the methods above are suitable for you, you can also install Gamevault directly on your system without using containers.
 
