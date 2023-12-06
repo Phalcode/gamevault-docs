@@ -144,7 +144,7 @@ Install the offical postgresql15 by postgres on the CA store.
 #### Step 2: Backend Installation
 Find the template for GameVault-Backend by phalcode on the CA store and fill out the template with your folder paths including your information from step 1.
 
-### Unraid:SQLITE
+### Unraid: SQLITE
 #### Prerequisites
  - It is required to have the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications) plugin installed.
 #### Coming Soon
