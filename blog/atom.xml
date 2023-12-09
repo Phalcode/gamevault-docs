@@ -15,16 +15,16 @@
         <summary type="html"><![CDATA[Hey, Guys!]]></summary>
         <content type="html"><![CDATA[<p>Hey, Guys!</p>
 <p>For the upcoming large UI update of GameVault, we're launching a brand new GameVault Early-Access Program, and we want <strong>YOU</strong> to be a part of it!</p>
-<p><strong>What's the Early-Access Program?</strong>
-Early-Access is your golden ticket to test-drive upcoming GameVault updates before anyone else. You'll be part of an exclusive group and get a sneak peek into the latest features, but here's the deal – it might not be as stable as our regular releases and you need to interact with us. Your feedback will help us fine-tune everything before the big release for everyone else.</p>
-<p><strong>How to Join:</strong>
-<!-- -->📋<!-- --> Complete the <a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Application Form</a>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="whats-the-early-access-program">What's the Early-Access Program?<a href="https://gamevau.lt/blog/2023/12/09/#whats-the-early-access-program" class="hash-link" aria-label="Direct link to What's the Early-Access Program?" title="Direct link to What's the Early-Access Program?">​</a></h2>
+<p>Early-Access is your golden ticket to test-drive upcoming GameVault updates before anyone else. You'll be part of an exclusive group and get a sneak peek into the latest features, but here's the deal – it might not be as stable as our regular releases and you need to interact with us. Your feedback will help us fine-tune everything before the big release for everyone else.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-to-join">How to Join<a href="https://gamevau.lt/blog/2023/12/09/#how-to-join" class="hash-link" aria-label="Direct link to How to Join" title="Direct link to How to Join">​</a></h2>
+<p>📋<!-- --> Complete the <a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Application Form</a><br>
 <!-- -->📅<!-- --> The first early-access phase kicks off on December 17 and lasts for one week.</p>
-<p><strong>Prerequisites:</strong>
-<!-- -->💬<!-- --> Active participation in the designated Discord channel.
-<!-- -->🎮<!-- --> GameVault installed from the Microsoft Store with a Microsoft Account logged in. If not, grab it <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">here</a>.
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="https://gamevau.lt/blog/2023/12/09/#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<p>💬<!-- --> Active participation in the designated Discord channel.<br>
+<!-- -->🎮<!-- --> GameVault installed from the Microsoft Store with a Microsoft Account logged in. If not, grab it <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">here</a>.<br>
 <!-- -->🚀<!-- --> A GameVault Server running the <strong>phalcode/gamevault-backend<!-- -->:early-access</strong> image. (Only run this if you are accepted as a Tester as it could break things!)</p>
-<p>Important Note:</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="important-note">Important Note<a href="https://gamevau.lt/blog/2023/12/09/#important-note" class="hash-link" aria-label="Direct link to Important Note" title="Direct link to Important Note">​</a></h3>
 <ul>
 <li>There are only a limited number of slots in the Early-Access Program. Supporters and Trusted Members are prioritized.</li>
 <li>If you're accepted and later found not meeting the requirements, you might be removed from future testing and the next applicant on our list gets the opportunity.</li>
