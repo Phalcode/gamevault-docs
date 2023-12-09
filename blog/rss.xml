@@ -4,10 +4,44 @@
         <title>GameVault Blog</title>
         <link>https://gamevau.lt/blog</link>
         <description>GameVault Blog</description>
-        <lastBuildDate>Mon, 20 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Join the GameVault Early-Access Program Now!]]></title>
+            <link>https://gamevau.lt/blog/2023/12/09/</link>
+            <guid>https://gamevau.lt/blog/2023/12/09/</guid>
+            <pubDate>Sat, 09 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey, Guys!]]></description>
+            <content:encoded><![CDATA[<p>Hey, Guys!</p>
+<p>For the upcoming large UI update of GameVault, we're launching a brand new GameVault Early-Access Program, and we want <strong>YOU</strong> to be a part of it!</p>
+<p><strong>What's the Early-Access Program?</strong>
+Early-Access is your golden ticket to test-drive upcoming GameVault updates before anyone else. You'll be part of an exclusive group and get a sneak peek into the latest features, but here's the deal – it might not be as stable as our regular releases and you need to interact with us. Your feedback will help us fine-tune everything before the big release for everyone else.</p>
+<p><strong>How to Join:</strong>
+<!-- -->📋<!-- --> Complete the <a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Application Form</a>
+<!-- -->📅<!-- --> The first early-access phase kicks off on December 17 and lasts for one week.</p>
+<p><strong>Prerequisites:</strong>
+<!-- -->💬<!-- --> Active participation in the designated Discord channel.
+<!-- -->🎮<!-- --> GameVault installed from the Microsoft Store with a Microsoft Account logged in. If not, grab it <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">here</a>.
+<!-- -->🚀<!-- --> A GameVault Server running the <strong>phalcode/gamevault-backend<!-- -->:early-access</strong> image. (Only run this if you are accepted as a Tester as it could break things!)</p>
+<p>Important Note:</p>
+<ul>
+<li>There are only a limited number of slots in the Early-Access Program. Supporters and Trusted Members are prioritized.</li>
+<li>If you're accepted and later found not meeting the requirements, you might be removed from future testing and the next applicant on our list gets the opportunity.</li>
+</ul>
+<p><a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Apply here!</a></p>]]></content:encoded>
+            <category>Gaming</category>
+            <category>GameVault</category>
+            <category>Early Access</category>
+            <category>UI Update</category>
+            <category>Beta Testing</category>
+            <category>Community Feedback</category>
+            <category>Exclusive Preview</category>
+            <category>Microsoft Store</category>
+            <category>Discord</category>
+            <category>Gaming Servers</category>
+        </item>
         <item>
             <title><![CDATA[A Look Back and a Glimpse Forward]]></title>
             <link>https://gamevau.lt/blog/2023/11/20/</link>
