@@ -1,5 +1,5 @@
 ---
-title: "Native"
+title: "Using Native Approach"
 sidebar_position: 99
 ---
 
