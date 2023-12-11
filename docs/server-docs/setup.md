@@ -10,7 +10,7 @@ There are many ways to deploy a GameVault Server. You can choose one from below.
 
 ## Methods
 
-### Docker Compose:
+### Docker Compose
 
 #### 1. Install Docker and Docker Compose
 
@@ -68,7 +68,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 Congratulations! You have successfully set up a GameVault server. You can now start adding games and managing your game library.
 
-##### Docker Compose: without PostgreSQL
+##### Docker Compose without PostgreSQL
 
 We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
@@ -90,7 +90,7 @@ services:
       - /your/sqlite/database/folder:/db
 ```
 
-### Caprover One Click App:
+### Caprover One Click App
 
 If you're using [Caprover](https://caprover.com), setting up a GameVault Server with a Postgres DB is just a click away.
 
@@ -109,7 +109,7 @@ Now, all you need to do is search for 'GameVault' using the search box and follo
 Make sure WebSocket-Support is enabled in Caprover.  
 :::
 
-### TrueNAS Scale:
+### TrueNAS Scale
 
 To add the gamevault server Truenas Scale, just add the [truecharts catalog](https://truecharts.org/manual/SCALE/guides/getting-started), a community based catalog for Truenas Scale and install the **gamevault-backend** chart.
 
@@ -131,30 +131,29 @@ Games storage option can be safely set hostpath if not using using any shares or
 
 - Add your games/zips here.
 
-### Unraid:
+### Unraid
 #### Prerequisites
  - It is required to have the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications) plugin installed.
-#### Step 1:
+#### Step 1: Setting up the Database
 Install the offical postgresql15 by postgres on the CA store.
 ```yaml
       POSTGRES_USER: gamevault
       POSTGRES_PASSWORD: RANDOMPASSWORD
       POSTGRES_DB: gamevault
 ```
+
 #### Step 2: Backend Installation
 Find the template for GameVault-Backend by phalcode on the CA store and fill out the template with your folder paths including your information from step 1. Your server should now be available at http://tower.local:8080/ or HOSTNAME:PORTS if you changed your hostname and ports. 
 
-
-### Unraid: SQLITE
+### Unraid without PostgreSQL
 We don't recommend it but you can run GameVault without a PostgreSQL Database too using the following CA template.
 #### Prerequisites
  - It is required to have the [Community Applications](https://forums.unraid.net/topic/38582-plug-in-community-applications) plugin installed.
-#### Step 1:
+#### Step 1
 Find the template for GameVault-Backend-SQLITE by phalcode on the CA store and fill out the template with your folder paths. No extra database is required. Your server should now be available at http://tower.local:8080/ or HOSTNAME:PORTS if you changed your hostname and ports. 
 
-### Installing Without Containers:
-
-If none of the methods above are suitable for you, you can also install Gamevault directly on your system without using containers.
+### Installing natively
+We strongly advise against it but if none of the methods above are suitable for you, you can also install Gamevault directly on your system without using containers.
 
 #### Prerequisites
 
