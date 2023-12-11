@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[4478],{38077:s=>{s.exports=JSON.parse('{"label":"subscription to Updates role","permalink":"/blog/tags/subscription-to-updates-role","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

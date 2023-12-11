@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[814],{98187:a=>{a.exports=JSON.parse('{"label":"financial support","permalink":"/blog/tags/financial-support","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[9021],{15573:e=>{e.exports=JSON.parse('{"label":"DRM-free games","permalink":"/blog/tags/drm-free-games","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

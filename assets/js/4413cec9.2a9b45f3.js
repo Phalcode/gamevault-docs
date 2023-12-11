@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[9066],{91801:e=>{e.exports=JSON.parse('{"label":"software development","permalink":"/blog/tags/software-development","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[5705],{9544:a=>{a.exports=JSON.parse('{"label":"new logo","permalink":"/blog/tags/new-logo","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

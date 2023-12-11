@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[5061],{2899:a=>{a.exports=JSON.parse('{"label":"app name migration","permalink":"/blog/tags/app-name-migration","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

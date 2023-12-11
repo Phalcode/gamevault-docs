@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3088],{43530:a=>{a.exports=JSON.parse('{"label":"source-available software","permalink":"/blog/tags/source-available-software","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

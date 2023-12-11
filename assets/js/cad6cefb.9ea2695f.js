@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[4394],{62594:e=>{e.exports=JSON.parse('{"label":"future development","permalink":"/blog/tags/future-development","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

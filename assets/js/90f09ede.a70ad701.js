@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[4877],{449:a=>{a.exports=JSON.parse('{"label":"Kanban Board","permalink":"/blog/tags/kanban-board","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
