@@ -12,15 +12,9 @@ To start, you need the Application files. The simplest way to get them is explai
 
 ## Setting up with Wine
 
-:::warning
-
-As of writing this page, using wine outside of bottles did not work in my testing. All it did was open a black box and nothing else.
-
-:::
-
-1. Install Wine
-2. Install [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-3. Run `gamevault.exe`
+1. Install Wine and winetricks
+2. Run `winetricks dotnetdesktop6` in a terminal
+3. Launch `gamevault.exe`
 
 ## Setting up with Bottles
 
@@ -50,7 +44,6 @@ Since there is currently no auto-update functionality available (as mentioned in
 ## Known issues
 
 - Text can look very broken if certain fonts are not installed on your system.
-  - If you're on Arch Linux, [this](https://aur.archlinux.org/packages/ttf-ms-win11-auto) AUR package fixes most of them.
+  - If you're on Arch Linux, [this](https://aur.archlinux.org/packages/ttf-ms-win11-auto) AUR package fixes the issue.
   - If you're on Debian, you could try to use [this](https://packages.debian.org/ttf-mscorefonts-installer) package. (untested)
   - Additionally - you can also try [this](https://archive.org/details/windows-11-21h2-complete-font-collection) and install it to your wine prefix's fonts folder ~/.wine/drive_c/windows/Fonts ; This works on the steamdeck
-- Closing the app will cause it to throw an error, seems to be related to closing to tray
