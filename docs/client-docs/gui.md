@@ -2,84 +2,110 @@
 sidebar_position: 98
 ---
 
-# GUI
+# GUI Overview
 
-This page provides an overview of the Graphical User Interface (GUI) for GameVault. The GUI includes several tabs, each with its own set of functions
+This documentation provides a clear overview of the Graphical User Interface (GUI) for GameVault. The GUI encompasses various tabs, each offering distinct functionalities.
 
 ## Setup Wizard
 
-The Setup Wizard is a sub page that appears when the settings required to use GameVault are not set. The setup wizard guides you through all these settings with a more detailed explanation. You can exit it at any time by clicking on the tab bar on the left. This is optional, because you can do all the settings in the settings tab as well.
+The Setup Wizard is a sub-page that appears when the necessary settings for GameVault are not configured. It guides users through these settings with detailed explanations. Exiting the wizard is optional, as all settings can also be configured in the settings tab.
 
 ## Library Tab
 
-- Browse, search, filter available games on the server.
-- Click on games to open the corresponding game page.
-- The Library is paged. A maximum of 80 Games are reloaded at once to save bandwidth and improve performance. When scrolling down, more pages are loaded.
+- Browse available and installed games.
+- Expand or collapse sections with expanders.
+- Launch installed games by clicking the play button on box art.
+- Download available games by clicking the download button on box art.
+- Access game settings directly with the cogwheel icon.
+- The paged Library loads a maximum of 80 games at once for bandwidth efficiency.
+- Use the dice icon to open a random game on the server.
+- Employ the Filter icon for server game filtering.
+- Utilize the search bar to find specific games.
 
 ## Game Page
 
-- Find all available details for a game.
-- Set a progress state (e.g. completed or aborted).
-- Add the game to the Download queue using the download button.
-- Remap the game. To do so, you have to search it in the RAWG serach field. If you found the right game click on the Remap Button.
-- Set a different thumbnail/background image. You can do this by passng an URL or upload a Image. (only available for Editors)
-- By clicking the Re-cache button, the game data will be fetched from RAWG. Use this if the game have broken or old data. (only available for Editors or Administrators)
-- Press the back-arrow button in the top left corner or `ÈSC` to return to the Library Tab.
+- View comprehensive game details.
+- Set progress states (e.g., completed or aborted).
+- Review personal progress and that of other users.
+- Add games to the download queue or launch installed games.
+- Navigate back to the Library Tab using the back-arrow button or `ESC` key.
+
+## Game Settings
+
+### Your Computer
+
+- Settings affecting local game installations.
+
+#### Installation
+
+- View installation directory.
+- Uninstall games.
+- Check disk usage for the game.
+
+#### Launch Options
+
+- Set default executable and launch parameters.
+- Create desktop shortcuts.
+
+### Server
+
+- Settings affecting all users on the server (visible to editors or higher).
+
+#### Edit Images
+
+- Set a different thumbnail/background image using URLs or uploads (editors only).
+
+#### RAWG Integration
+
+- View and remap RAWG game data.
+- Refresh game data from RAWG.
 
 ## Downloads Tab
 
-- View all running and completed downloads.
-- See current download statistics and progress for running downloads.
-- Abort downloads at any time.
-- [Extract the Game Archive](../client-docs/how-to-use.md#1-extracting-the-game).
-- See current extraction statistics and progress for running extractions.
-- Performs the [Installation](../client-docs/how-to-use.md#2-installing-the-game) depending on the game type.
-- Open the corresponding folder.
-- Delete downloaded files using the delete icon.
-
-## Installations Tab
-
-- View all installed games.
-- Choose which .exe file you want to start.
-- Click on a game to see more details and launch it using the play button.
-- Open the corresponding folder.
+- Monitor running and completed downloads.
+- View download statistics and progress.
+- Abort downloads.
+- Extract game archives and view extraction progress.
+- Perform installations based on game types.
+- Open download folders and delete downloaded files.
 
 ## Community Tab
 
-- See a list of all users on the GameVault Server.
-- Select any user to see more details on their game progresses.
-- See your own progress by clicking on your own user.
-- Sort the progresses.
-- Delete your progresses.
-- Edit your User.
+- View all users on the GameVault Server.
+- Select users for detailed game progress information.
+- Sort and delete progresses.
+- Edit user details and reload progresses.
+
+## User Settings
+
+### Edit Images
+
+- Set avatar/background images using URLs or uploads.
+
+### Edit Details
+
+- View and update user details.
+- Update passwords with confirmation.
 
 ## Settings Tab
 
 ### Application
 
-- Auto-Load Library from Server on Startup.
-- Auto-Extract Downloaded Games (truggers right after download completed).
-- Set Server URL (Automatically add 'https' if not included)
-- Set Download Limit. Control auto re-calculate the input.
-- Launch GameVault on Computer Startup.
-- Minimize GameVault to System Tray on Startup.
+- Configure auto-load library, auto-extract downloaded games, and server URL.
+- Set download bandwidth limit and configure startup behavior.
 
 ### User
 
-- Login.
-- Logout.
-- Register new User.
+- Login, logout, and register new users.
 
 ### Data
 
-- Select GameVault Root Path (Destination for Downloads ins Installs).
-- Clear Image Cache (Shows size).
-- Clear Offline Cache (Shows size).
+- Select GameVault root path and clear image and offline caches.
 
-## Admin Tab (only visible for Admins)
+## Admin Tab
 
-- Administrate your Users
-- Activate or Deactivate Users
-- Change User Roles (also your own)
-- Delete or Restore Users
-- Re-index games on the server
+- Visible to admins only.
+- View, activate/deactivate, and edit user roles.
+- Delete or restore users.
+- Open Community Tab profile by clicking on users' avatars.
+- Re-index games on the server.
