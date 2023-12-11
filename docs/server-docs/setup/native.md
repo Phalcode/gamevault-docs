@@ -37,7 +37,7 @@ Your server files are now in the `dist/` folder.
 
 ### Step 4: Set up an .env File
 
-Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](configuration.md) or set them in your system/VM directly.
+Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](../configuration.md) or set them in your system/VM directly.
 
 Example:
 
@@ -59,7 +59,7 @@ node dist/src/main
 
 You have now successfully set up your GameVault Server.
 
-[Click here to continue.](setup#what-next)
+[Click here to continue.](setup.md#what-next)
 
 ## Additional Info
 

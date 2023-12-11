@@ -92,7 +92,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 You have now successfully set up your GameVault Server using Docker and Docker Compose.
 
-[Click here to continue.](setup#what-next)
+[Click here to continue.](setup.md#what-next)
 
 ## Additional Info
 

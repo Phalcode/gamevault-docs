@@ -14,7 +14,7 @@ This guide explains how to set up Fail2Ban to safeguard your GameVault applicati
 ## Prerequisites
 
 - Fail2Ban installed on your host system
-- Running GameVault instance as outlined in the [server setup documentation](../server-docs/setup/setup)
+- Running GameVault instance as outlined in the [server setup documentation](../server-docs/setup/setup.md)
 
 ## Steps
 

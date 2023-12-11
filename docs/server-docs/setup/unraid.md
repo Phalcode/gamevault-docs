@@ -38,4 +38,4 @@ Your GameVault should now be available at `http://tower.local:8080/` or `HOSTNAM
 
 You have now successfully set up your GameVault Server using UNRAID.
 
-[Click here to continue.](setup#what-next)
+[Click here to continue.](setup.md#what-next)

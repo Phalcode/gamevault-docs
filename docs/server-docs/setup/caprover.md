@@ -55,7 +55,7 @@ Configure your mounted volumes as you like.
 
 You have now successfully set up your GameVault Server using CapRover.
 
-[Click here to continue.](setup#what-next)
+[Click here to continue.](setup.md#what-next)
 
 ## Additional Info
 

@@ -41,4 +41,4 @@ Games storage option can be safely set hostpath if not using using any shares or
 
 You have now successfully set up your GameVault Server using TrueNAS Scale.
 
-[Click here to continue.](setup#what-next)
+[Click here to continue.](setup.md#what-next)
