@@ -30,7 +30,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_ADMIN_USERNAME`                 | Automatically grants Admin Role to User with this Username on register, or startup.                                                                                  | -                     | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`                 | Resets the admin user password to this password on startup. Only used for password reset in case of lockout. ⚠️ CAUTION: This won't register a new account for you!  | -                     | Any password (No Length Validation)                                                          |
 | `SERVER_API_DOCS_ENABLED`               | Enables the API Specification Documenation on `/api/docs`, `/api/docs-json` & `/api/docs/yaml`.                                                                      | `false`               | `true`, `false`                                                                              |
-| `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s. ⚠️ CAUTION: Too high number may crash the server upon game download.                                         | `10485760` (10 GiB/s) | Any Number                                                                                   |
+| `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s. ⚠️ CAUTION: Too high number may crash the server upon game download.                                         | `1000000` (10 GB/s) | Any Number                                                                                   |
 
 ## VOLUMES
 

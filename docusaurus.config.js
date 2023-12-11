@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer").themes.github;
-const darkCodeTheme = require("prism-react-renderer").themes.dracula;
+const { themes } = require("prism-react-renderer");
+const lightTheme = themes.github;
+const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -51,6 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/phalcode/gamevault-docs/tree/master",
+          blogSidebarCount: "ALL",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -115,11 +116,11 @@ const config = {
               },
               {
                 label: "Server Setup",
-                to: "/docs/server-docs/setup.md",
+                to: "/docs/server-docs/setup",
               },
               {
                 label: "Troubleshooting",
-                to: "/docs/troubleshooting.md",
+                to: "/docs/troubleshooting",
               },
             ],
           },
@@ -195,8 +196,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} <a href="https://phalco.de">Phalcode</a>`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        additionalLanguages: ["bash", "json"],
       },
       zoom: {
         selector:

@@ -12,14 +12,22 @@ If you want to use GameVault to download and install games on your computer, you
 
 **Requirement:** Windows 10/11 Operating System with Microsoft Store installed
 
-To begin, install the GameVault application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75). This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
+To begin, install the GameVault application from [the official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75).
+
+Experienced users can also simply run this command in the PowerShell:
+
+```ps
+winget install gamevault
+```  
+
+This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
 
 ### Alternative Installation Options
 
 If you for some reason prefer not to use the Microsoft Store or if you are operating on a different platform, there are multiple other methods available for installing the GameVault Client Application.
 
-:::caution
-Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client#other-sources)
+:::warning
+Please not that any other method than installing it from the Microsoft Store is **unsupported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client.md#other-sources)
 :::
 
 #### Option 1: Obtain Pre-Built Artifacts from Github
@@ -32,7 +40,7 @@ Your Antivirus or Windows Smartscreen may attempt to prevent you from running ou
 
 #### Option 2: Linux Installation
 
-To run GameVault on Linux utilizing Wine, follow this community-driven method. Visit [this](../advanced-usage/linux-client) page for more details.
+To run GameVault on Linux utilizing Wine, follow this community-driven method. Visit [this](../advanced-usage/linux-client.md) page for more details.
 
 #### Option 3: Self-Compiling on Windows
 

@@ -12,8 +12,12 @@ Think of it as your personal Steam for your DRM-free video game collection. You 
 
 You cannot purchase or stream games using this platform. The GameVault system has two main components: a self-hosted Backend Server and one or more App Clients for you and your friends.
 
-:::caution Piracy Disclaimer
-GameVault primarily caters to DRM-free games, not DRM-protected games from conventional platforms like Steam or EPIC Games. When we refer to DRM-free games, we still mean games acquired legally. It's crucial to understand that while GameVault _can_ theoretically be used with pirated games, it does **not** endorse or support piracy. We consider piracy as improper and unauthorized usage of our application.
+:::warning Legal Disclaimer
+GameVault manages DRM-free games and is solely a tool to address this need. We are not responsible for the content or files users store or share.
+
+When we say DRM-free games, we only mean games obtained legally. While GameVault _can_ theoretically be used with illegally obtained games, we do not endorse or support piracy.
+
+Users must also be aware of and comply with copyright laws in their respective jurisdictions. We encourage responsible and legal use of GameVault. Unlawful use is strictly improper and unauthorized.
 :::
 
 ## Features
@@ -24,6 +28,7 @@ Let's take a look at all the main functions of GameVault:
 
 - 🔎 Browse your server's game collection
 - 📥 Securely download your games from your server
+- ⚙️ Automatically extract and install games
 - 🎮 Launch and play games on your PC
 - ⏱️ Track playtimes and progress (even when the server is offline)
 - 👥 Compare statistics and game progress with other users on the server
@@ -31,20 +36,26 @@ Let's take a look at all the main functions of GameVault:
 
 ### Server Features
 
-- ♻️ Automatically index games from the file system into a database
+- ♻️ Automatically indexes games from the file system into a database
 - 📚 Enhances games with metadata like tags, genres, description and more using RAWG API
 - 📸 Automatically finds beautiful box art for your library
 - 👥 Multi-User Authentication
 - 🔒 Role-Based Access Control
-- ⏱️ Keep track of your users' game progress and state
-- 🚨 Health Monitoring and configurable Logging
+- ⏱️ Keeps track of your users' game progress and state
+- 🚨 Health Monitoring and Logging
 - 🔎 Full-Text Search, Filters, Sorting, Pagination
 - 🔌 Fully Documented API
 - ⚙️ Highly Configurable
 
 ## Support
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R76Q6KD)
+We're working hard in our free time to provide you, your friends, and families with the best self-hosted gaming experience. It would mean a lot to us if you could support us developers by donating us some spare dollars on any of these platforms:
+
+- [Ko-Fi](https://ko-fi.com/phalcode)
+- [Liberapay](https://liberapay.com/Phalcode)
+- [GitHub Sponsors](https://github.com/sponsors/Phalcode)
+
+Tip: If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters"-Role and permanently stand out in our [Discord](https://discord.gg/NEdNen2dSu) members list. You'll be acknowledged as a generous and wonderful person. If you donate through a different platform and want to obtain the role, simply send us a message with your receipt as proof that you're truly a Supporter.
 
 ## License
 

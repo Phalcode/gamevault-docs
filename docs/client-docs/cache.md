@@ -8,7 +8,7 @@ This page gives you an overview of one of GameVault's hidden features: Caching a
 
 All the data your app saves (except for the GameVault Root Folder for your Downloads and Installations) can be found in your `%APPDATA%/GameVault` folder. If you obtained the app from the Microsoft Store, it could also be in some sort of "Virtual Appdata" located within the `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` folder.
 
-:::caution
+:::warning
 Please be aware that manually altering this data may lead to unwanted issues in GameVault.
 :::
 

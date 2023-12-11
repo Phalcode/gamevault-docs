@@ -20,7 +20,7 @@ GameVault will now generate its folder structure. When everything is done your f
 
 Let's say you found the game `Assassin's Creed Unity (Game ID: 74)` in the Library tab and chose to download it.
 
-:::caution
+:::warning
 Only download games from servers you fully trust! There's a potential risk of malware. If your antivirus alerts during the following process, abort any download and installation of the game, fully delete the downloaded data and warn your server admins to address the malware promptly.
 :::
 
@@ -99,7 +99,7 @@ The progress entry includes the completion state, which can be modified through 
 
 You have the ability to change the progress state or delete it using the community tab. Certain states also change automatically, such as transitioning from UNPLAYED to PLAYING when the game is launched.
 
-:::caution
+:::warning
 Please note that this Progress does not include your savegames. GameVault does not have the capability to synchronize or store your savegames. Therefore, it is advisable to create backups of your savegames before uninstalling any games.
 :::
 

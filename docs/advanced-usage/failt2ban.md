@@ -3,8 +3,8 @@ id: fail2ban-gamevault-guide
 title: Configuring Fail2Ban for GameVault
 ---
 
-:::caution Not tested
-This guide is purely theoretical and has not been personally tested by our team. We cannot guarantee its effectiveness as we do not use fail2ban. Feel free to try it out and remove this warning from the documentation if it works for you. If you find any mistakes or misconfigurations, you can also edit the guide accordingly.
+:::note Community-Created Guide
+This guide was created and tested by a community member. It hasn't been personally tested by our team. We cannot guarantee its effectiveness as we don't use fail2ban. Feel free to give it a try. If you find any errors, you can edit the guide accordingly.
 :::
 
 ## Introduction
@@ -14,7 +14,7 @@ This guide explains how to set up Fail2Ban to safeguard your GameVault applicati
 ## Prerequisites
 
 - Fail2Ban installed on your host system
-- Running GameVault instance as outlined in the [server setup documentation](../server-docs/setup.md)
+- Running GameVault instance as outlined in the [server setup documentation](../server-docs/setup/setup.md)
 
 ## Steps
 

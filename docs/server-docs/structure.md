@@ -49,7 +49,7 @@ Here's an example of a file that follows this convention:
 
 By following this naming convention and using the common values listed in the table above, you can ensure that your games are detected correctly by GameVault.
 
-:::caution Illegal Filenames and Characters
+:::warning Illegal Filenames and Characters
 
 - File names must not contain the following characters: `/`, `<`, `>`, `:`, `"`, `\`, `|`, `?`, and `*`. Replace these problematic characters with appropriate ones to ensure compatibility across all systems.
 - Avoid ending file names with spaces or dots.

@@ -19,6 +19,10 @@ Starting from Gamevault Backend Version 9.0.0, Gamevault allows clients to share
 
 Once a user reports his activity, it will propagate to all other users. Clients have the freedom to report their activities. If they don't, the server will display them as offline by default.
 
-## Disabling Activities
+### Disabling Activities
 
 For server owners who wish to disable activities, it's as simple as setting the `SERVER_ONLINE_ACTIVITIES_DISABLED` environment variable to `true`. Please be aware that, depending on your clients implementation, this might result in everyone appearing as offline all the time.
+
+## Security
+
+Each user is assigned a randomly generated Socket Secret that they can retrieve at ``/api/users/me``. This secret must be included in the headers (X-Socket-Secret) of every subsequent Socket.IO Handshake request to the server.
