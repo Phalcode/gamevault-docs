@@ -39,12 +39,15 @@ Your server files are now in the `dist/` folder.
 
 Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](../configuration.md) or set them in your system/VM directly.
 
-Example:
+Example with SQLITE:
 
 ```bash
 #dist/src/.env
 DB_SYSTEM=SQLITE
 SERVER_ADMIN_USERNAME=admin
+VOLUMES_SQLITEDB=/path/for/database/files
+VOLUMES_FILES=/path/for/gane/files
+VOLUMES_IMAGES=~/path/for/image/files
 ```
 
 ### Step 5: Start the Server
