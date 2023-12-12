@@ -16,7 +16,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Expand or collapse sections with expanders.
 - Launch installed games by clicking the play button on box art.
 - Download available games by clicking the download button on box art.
-- Access game settings directly with the cogwheel icon.
+- Access game settings directly with the Settings icon.
 - The paged Library loads a maximum of 80 games at once for bandwidth efficiency.
 - Use the dice icon to open a random game on the server.
 - Employ the Filter icon for server game filtering.
