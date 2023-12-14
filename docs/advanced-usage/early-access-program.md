@@ -29,14 +29,28 @@ To become part of the program, follow these simple steps:
 ### How to switch to an early access version?
 
 1. Wait for the early access phase to start.
-2. Update the app using the Microsoft Store.
-3. Check the version in the settings. If it contains `EA`, you're on the early-access channel.
+2. Start the app and accept early access update.
+3. Restart the App and check the version in the settings. If it contains `EA`, you're on the early-access channel.
 
 ### How to return to a stable version?
 
-1. Uninstall the app.
-2. Reinstall it from the Microsoft Store.
-3. Check the version in the settings. If it does not contain `EA`, you're back on the stable channel.
+1. Contact the Phalcode Team via Discord to remove you from our testers list in the Microsoft Store.
+
+2. Exit and Uninstall the app.
+
+   ```ps1
+   winget uninstall gamevault
+   ```
+
+3. Reinstall it by running.
+
+   ```ps1
+   winget install gamevault
+   ```
+
+4. Start the App. If it asks if you want to update you have to decline it every time.
+
+5. Check the version in the settings. If it does not contain `EA`, you're back on the stable channel.
 
 ### Where to report bugs and suggest/discuss changes?
 
