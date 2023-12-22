@@ -4,9 +4,9 @@ import styles from "./styles.module.css";
 
 import ImgLibrary from "@site/static/img/features/library.png";
 import ImgMicrosoftStore from "@site/static/img/features/microsoftstore.png";
-import ImgAuth from "@site/static/img/features/admin.jpg";
-import ImgSocial from "@site/static/img/features/community.jpg";
-import ImgEnrichments from "@site/static/img/features/game.jpg";
+import ImgAuth from "@site/static/img/features/admin.png";
+import ImgSocial from "@site/static/img/features/community.png";
+import ImgEnrichments from "@site/static/img/features/game.png";
 import ImgGithub from "@site/static/img/features/github.png";
 
 const FeatureList = [
