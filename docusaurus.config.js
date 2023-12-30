@@ -169,6 +169,10 @@ const config = {
                 href: "https://liberapay.com/phalcode",
                 label: "💛 Liberapay",
               },
+              {
+                href: "https://www.paypal.me/phalcode",
+                label: "🩵 PayPal",
+              },
             ],
           },
           {
