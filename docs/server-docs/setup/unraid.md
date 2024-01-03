@@ -35,7 +35,7 @@ Make sure you remember the password and port you set we will use this in step 3
 
 
 
-## Step 3: Setting up your Gamevault backend server
+## Step 3: Setting up your GameVault Backend server
 
 Search for `gamevault-backend` on the Unraid app store making sure to click the one without the SQLITE in the title. 
 
