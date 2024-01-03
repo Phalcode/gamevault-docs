@@ -54,6 +54,7 @@ We're working hard in our free time to provide you, your friends, and families w
 - [Ko-Fi](https://ko-fi.com/phalcode)
 - [Liberapay](https://liberapay.com/Phalcode)
 - [GitHub Sponsors](https://github.com/sponsors/Phalcode)
+- [PayPal](https://www.paypal.me/phalcode)
 
 Tip: If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters"-Role and permanently stand out in our [Discord](https://discord.gg/NEdNen2dSu) members list. You'll be acknowledged as a generous and wonderful person. If you donate through a different platform and want to obtain the role, simply send us a message with your receipt as proof that you're truly a Supporter.
 

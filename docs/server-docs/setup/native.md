@@ -17,42 +17,51 @@ Although we strongly discourage it, if none of the alternative installation meth
 ### Step 1: Clone the Source Code
 
 ```bash
+cd ~
 git clone https://github.com/Phalcode/gamevault-backend.git
 cd gamevault-backend
 ```
 
 ### Step 2: Install Dependencies
 
+Now we need to install all necessary node dependencies.
+
 ```bash
 pnpm install
 ```
 
-### Step 3: Build
-
-```bash
-pnpm run build
-```
-
 Your server files are now in the `dist/` folder.
 
-### Step 4: Set up an .env File
+### Step 3: Set up an .env File
 
 Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](../configuration.md) or set them in your system/VM directly.
 
-Example:
+Example with SQLITE:
+
+First create the necessary folders or just use existing ones in your config:
+
+For example:
 
 ```bash
-#dist/src/.env
-DB_SYSTEM=SQLITE
-SERVER_ADMIN_USERNAME=admin
+cd ~
+mkdirp gv-db gv-images gv-games`
 ```
 
-### Step 5: Start the Server
+```ini
+#/gamevault-backend/.env
+DB_SYSTEM=SQLITE
+SERVER_ADMIN_USERNAME=admin
+VOLUMES_SQLITEDB=/path/for/database/files
+VOLUMES_FILES=/path/for/gane/files
+VOLUMES_IMAGES=/path/for/image/files
+```
+
+### Step 4: Build and Start the Server
 
 To start the server, run:
 
 ```bash
-node dist/src/main
+pnpm start
 ```
 
 ## Conclusion
@@ -63,6 +72,27 @@ You have now successfully set up your GameVault Server.
 
 ## Additional Info
 
+Don't put/change anything except the .env file inside the gamevault-backend folder if you don't know what you're doing.
+
 ### Stopping the Server
 
 Press CTRL + C to stop the server.
+
+### Updating the Server
+
+You can update the server by running
+
+```bash
+git pull
+```
+
+inside of your gamevault-backend git repository. It will auto update to the latest version.
+
+You can update to a specific version by using:
+
+```bash
+git fetch --all --tags --prune
+git checkout tags/9.0.0
+```
+
+for example.

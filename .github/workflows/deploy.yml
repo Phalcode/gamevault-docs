@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
         with:
-          bun-version: latest
-      - name: Install Dependencies
-        run: bun install
+          version: latest
+          run_install: true
       - name: Build website
-        run: bun run build
+        run: pnpm run build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:

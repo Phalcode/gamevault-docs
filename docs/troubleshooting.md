@@ -6,6 +6,15 @@ sidebar_position: 99
 
 Below, we will gradually list some common issues and corresponding solutions to help you maximize the potential of your app. If you can't find a solution to your problem here, feel free to open a ticket on our Github board or seek assistance via [Discord](https://discord.gg/NEdNen2dSu). Alternatively, you may also directly [email our company address](mailto:contact@phalco.de) if the issue is confidential.
 
+## All-Rounder Solutions that Fix Most Problems
+
+I can't mention these in every single Section below, so before you try to solve anything, try these:
+
+- Check if the server is running healthily and is reachable from your client.
+- Restart GameVault Client and Server.
+- Examine Client and Server Logs for error details. (Set `SERVER_LOG_LEVEL` to `debug`)
+- Check Server [Configuration](./server-docs/configuration.md).
+
 ## Common Problems and Solutions
 
 ### Incorrect Game Mapping
@@ -14,35 +23,42 @@ Below, we will gradually list some common issues and corresponding solutions to 
 
 ### Unable to Connect to Server / 500 Internal Server Error
 
-- Review your server log for error details.
-- Examine the error log of the client app.
+- [Try these solutions first.](#all-rounder-solutions-that-fix-most-problems)
 - Ensure that you use the correct protocol (http or https) in the connection string, particularly if your server doesn't support SSL.
 - If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](./server-docs/configuration.md) for more information.
 
-### Server fails to save images / create SQLITE Database / index games
+### Server fails to save images / create SQLITE Database / index games or throws a Permissions Denied / No Permission / EACCES error
 
 This is most probably a permissions issue due to the fact that gamevault runs as a non-root user (1000:1000) by default for security purposes.
 
 Either make sure this user has permissions to read/write to the folders you map in as volumes, or run GameVault with a user that has using the `PUID` & `PGID` environment variables.
 
-### User Registration Activation
+### Initial Admin User is not working / has no permissions / needs to be activated
 
+- You need to register the first user.
 - Find instructions on granting privileges to your first user in [this](./server-docs/user-management.md#initial-setup) guide.
 
-### Games Not Appearing in the List
+### Games Not Appearing in the Installations / Servers List
 
-- Clear the Searchbox and Press the Search button
-- Check the server log and index logs for any errors. It's likely that [your file names are incorrect](./server-docs/structure.md).
-- Check the Filesystem Permissions
+- [Add Games to your server](./server-docs/adding-games.md)
+- Clear the Searchbox
+- Write something into the searchbox, then remove it, to trigger a new search
+- Clear the filters
+- For installations, verify your correct root folder is set [in the settings](./client-docs/gui.md#data).
+- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](./client-docs/gui.md#game-settings)).
+- Verify [your file names are correct](./server-docs/structure.md).
+- Check the Filesystem Permissions. See [here](#server-fails-to-save-images--create-sqlite-database--index-games-or-throws-a-permissions-denied--no-permission--eacces-error)
 
 ### Missing Box Arts
 
 - Verify if [the Google API is disabled in your server configuration](./server-docs/configuration.md).
+- Verify you have not hit the Google API's rate limit. (Server Logs will tell)
+- Clear image caches [in the settings.](./client-docs/gui.md#data)
+- Verify you don't live in a problematic third world country with questionable political connections and positions, where you are being monitored by the government and Google is blocked by a national firewall to get you to use the government's controlled substitute services to isolate you from the outside world and manipulate you with false information.
 
 ### Lack of Metadata in Games
 
 - If you haven't set up RAWG yet, follow [these steps](./server-docs/indexing-and-metadata.md#rawg-api-key).
-- Monitor your server logs.
 - Check the RAWG-API Dashboard for any requests associated with your API Key.
 - Verify if [the RAWG API is disabled in your server configuration](./server-docs/configuration.md).
 - Verify if [your file names are correct](./server-docs/structure.md)

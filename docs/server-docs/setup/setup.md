@@ -11,11 +11,11 @@ If you have any trouble setting up a GameVault server dont give up! There are a 
 
 ## Supported Methods
 
-- [Docker Compose](docker-compose)
-- [Caprover](caprover)
-- [TrueNAS Scale](truenas-scale)
-- [UNRAID](unraid)
-- [Native](native)
+- [Docker Compose](./docker-compose.md)
+- [Caprover](./caprover.md)
+- [TrueNAS Scale](./truenas-scale.md)
+- [UNRAID](./unraid.md)
+- [Native](./native.md)
 
 ### More Methods
 
