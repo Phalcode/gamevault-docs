@@ -102,4 +102,4 @@ Once you selected the main pod and container pod; you should see the logs for th
 
 You can then download the logs, but you might have to reselect the correct pods again when downloading the logs.
 
-![gamevault-workloads-logs-4](/img/docs/setup/scale/gamevault-workloads-logs-3=4.png)
+![gamevault-workloads-logs-4](/img/docs/setup/scale/gamevault-workloads-logs-4.png)
