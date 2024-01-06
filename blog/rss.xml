@@ -16,16 +16,16 @@
             <description><![CDATA[Hey, Guys!]]></description>
             <content:encoded><![CDATA[<p>Hey, Guys!</p>
 <p>For the upcoming large UI update of GameVault, we're launching a brand new GameVault Early-Access Program, and we want <strong>YOU</strong> to be a part of it!</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="whats-the-early-access-program">What's the Early-Access Program?<a href="https://gamevau.lt/blog/2023/12/09/#whats-the-early-access-program" class="hash-link" aria-label="Direct link to What's the Early-Access Program?" title="Direct link to What's the Early-Access Program?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="whats-the-early-access-program">What's the Early-Access Program?<a href="https://gamevau.lt/blog/2023/12/09/#whats-the-early-access-program" class="hash-link" aria-label="Direct link to What's the Early-Access Program?" title="Direct link to What's the Early-Access Program?">​</a></h2>
 <p>Early-Access is your golden ticket to test-drive upcoming GameVault updates before anyone else. You'll be part of an exclusive group and get a sneak peek into the latest features, but here's the deal – it might not be as stable as our regular releases and you need to interact with us. Your feedback will help us fine-tune everything before the big release for everyone else.</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="how-to-join">How to Join<a href="https://gamevau.lt/blog/2023/12/09/#how-to-join" class="hash-link" aria-label="Direct link to How to Join" title="Direct link to How to Join">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="how-to-join">How to Join<a href="https://gamevau.lt/blog/2023/12/09/#how-to-join" class="hash-link" aria-label="Direct link to How to Join" title="Direct link to How to Join">​</a></h2>
 <p>📋<!-- --> Complete the <a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Application Form</a><br>
 <!-- -->📅<!-- --> The first early-access phase kicks off on December 17 and lasts for one week.</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="prerequisites">Prerequisites<a href="https://gamevau.lt/blog/2023/12/09/#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="prerequisites">Prerequisites<a href="https://gamevau.lt/blog/2023/12/09/#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
 <p>💬<!-- --> Active participation in the designated Discord channel.<br>
 <!-- -->🎮<!-- --> GameVault installed from the Microsoft Store with a Microsoft Account logged in. If not, grab it <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">here</a>.<br>
 <!-- -->🚀<!-- --> A GameVault Server running the <strong>phalcode/gamevault-backend<!-- -->:early-access</strong> image. (Only run this if you are accepted as a Tester as it could break things!)</p>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="important-note">Important Note<a href="https://gamevau.lt/blog/2023/12/09/#important-note" class="hash-link" aria-label="Direct link to Important Note" title="Direct link to Important Note">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="important-note">Important Note<a href="https://gamevau.lt/blog/2023/12/09/#important-note" class="hash-link" aria-label="Direct link to Important Note" title="Direct link to Important Note">​</a></h3>
 <ul>
 <li>There are only a limited number of slots in the Early-Access Program. Supporters and Trusted Members are prioritized.</li>
 <li>If you're accepted and later found not meeting the requirements, you might be removed from future testing and the next applicant on our list gets the opportunity.</li>
@@ -74,14 +74,14 @@
 <p>Here are some sneak peeks and mockups: (still work in progress):</p>
 <ol>
 <li>Library (Mockup)
-<img loading="lazy" alt="Filters" src="https://gamevau.lt/assets/images/filters-f2a63aa5f8026620c96a6af4d668e8de.png" width="1896" height="1080" class="img_iuiU">
-<img loading="lazy" alt="Empty States" src="https://gamevau.lt/assets/images/emptystates-cac04f51fc52e209e202e0611b7fc9ce.png" width="1896" height="1080" class="img_iuiU"></li>
+<img loading="lazy" alt="Filters" src="https://gamevau.lt/assets/images/filters-f2a63aa5f8026620c96a6af4d668e8de.png" width="1896" height="1080" class="img_kNHY">
+<img loading="lazy" alt="Empty States" src="https://gamevau.lt/assets/images/emptystates-cac04f51fc52e209e202e0611b7fc9ce.png" width="1896" height="1080" class="img_kNHY"></li>
 <li>Library (current implementation)
-<img loading="lazy" alt="Library" src="https://gamevau.lt/assets/images/library-23677b063b1eec718776e44519f449fd.png" width="960" height="520" class="img_iuiU"></li>
+<img loading="lazy" alt="Library" src="https://gamevau.lt/assets/images/library-23677b063b1eec718776e44519f449fd.png" width="960" height="520" class="img_kNHY"></li>
 <li>Game (Mockup)
-<img loading="lazy" alt="Game View" src="https://gamevau.lt/assets/images/game-1a2301146090a980e3af454aa57abb22.png" width="1896" height="1080" class="img_iuiU"></li>
+<img loading="lazy" alt="Game View" src="https://gamevau.lt/assets/images/game-1a2301146090a980e3af454aa57abb22.png" width="1896" height="1080" class="img_kNHY"></li>
 <li>Game Settings (Mockup)
-<img loading="lazy" alt="Game Settings" src="https://gamevau.lt/assets/images/settings-ec331d2e53857decc5abb85f44855896.png" width="1080" height="792" class="img_iuiU"></li>
+<img loading="lazy" alt="Game Settings" src="https://gamevau.lt/assets/images/settings-ec331d2e53857decc5abb85f44855896.png" width="1080" height="792" class="img_kNHY"></li>
 </ol>
 <p>Remember, these are teasers. Anything can look different once it ships. There's a lot of work left, and we're on it. To be technical here: Most of these modern controls require us to rewrite WPF Controls from the core. On the backend, we're not slacking either – tons of end-to-end tests are being written to ensure our app's reliability.</p>
 <p>Excited about the new UI or got something to say? Head over to <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> and spill the beans!</p>
@@ -141,16 +141,16 @@
             <content:encoded><![CDATA[<p>Hey everyone,</p>
 <p>We're excited to share some great news with you all! GameVault has reached a small milestone with over 600 official installations of our GameVault Client Application. What's even more amazing is that around 200 dedicated users, a third of these installations, have joined our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> community to connect, chat, and share their experiences.</p>
 <p>We want to express our immense gratitude for your incredible support, feedback, and love for GameVault. Your ongoing encouragement inspires us to push boundaries and enhance your gaming experience. We're thrilled to announce that an awesome update is being worked on right now - the highly anticipated release of GameVault's Installation Pipeline!</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="https://gamevau.lt/blog/2023/07/24/#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="https://gamevau.lt/blog/2023/07/24/#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4>
 <p>The Installation Pipeline is designed to revolutionize how you install and manage your games. It was suggested by members on our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord server</a>. We understand the challenges of navigating through different installation processes, especially for family members who may not be tech-savvy. With the Installation Pipeline, our goal is to simplify the entire process and make it user-friendly. Whether you're an experienced gamer or not, this update will make installing games easier for you.</p>
 <p>You can read the details <a href="https://github.com/Phalcode/gamevault-app/issues/18" target="_blank" rel="noopener noreferrer">here on the GitHub issue</a>.</p>
 <p>Stay tuned for its upcoming release, and to be among the first to try out this awesome feature, make sure to subscribe to the <code>@Updates</code> Role on our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord server</a> , if you haven't already. We'll ping you as soon as it's live!</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="join-us-on-lemmy">Join us on Lemmy<a href="https://gamevau.lt/blog/2023/07/24/#join-us-on-lemmy" class="hash-link" aria-label="Direct link to Join us on Lemmy" title="Direct link to Join us on Lemmy">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="join-us-on-lemmy">Join us on Lemmy<a href="https://gamevau.lt/blog/2023/07/24/#join-us-on-lemmy" class="hash-link" aria-label="Direct link to Join us on Lemmy" title="Direct link to Join us on Lemmy">​</a></h4>
 <p>To further connect with our amazing community, we're excited to announce the launch of our <a href="https://lemmy.world/c/phalcode" target="_blank" rel="noopener noreferrer">official Lemmy community</a>. From now on, we'll also regularly share new blog posts there, providing you with more ways to stay informed and engaged. Join the Lemmy forum and become part of the growing GameVault community!</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="share-gamevault-with-others">Share GameVault with Others<a href="https://gamevau.lt/blog/2023/07/24/#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="share-gamevault-with-others">Share GameVault with Others<a href="https://gamevau.lt/blog/2023/07/24/#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4>
 <p>As we celebrate this milestone and eagerly anticipate more exciting updates, we invite you to spread the word about GameVault among your friends, family, and gaming or self-hosting communities. Your personal recommendations and referrals have played a significant role in our journey so far, and we believe they'll continue to do so in the future.</p>
 <p>We want to express our heartfelt appreciation for the feature requests, discussions, and invaluable help on our GitHub. Your support and collaborative efforts help a lot.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="support-us">Support Us<a href="https://gamevau.lt/blog/2023/07/24/#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="support-us">Support Us<a href="https://gamevau.lt/blog/2023/07/24/#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4>
 <p>As we move forward, we kindly ask for your continued support. GameVault's success is currently solely built upon our incredible community, and your encouragement is what fuels us. If you love our app and believe in our vision, please consider supporting us in any way you can. It could even be something simple like a rating on the Microsoft Store. Your backing empowers us to keep our hard work going.</p>
 <p>We're eagerly looking forward to celebrating more achievements with all of you.</p>
 <p>Stay tuned, stay connected, and let's continue this journey together!</p>]]></content:encoded>
@@ -183,7 +183,7 @@
 <p>Just a heads up, there might be a surge of new users joining the <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> server due to us promoting Gamevault across all available platforms now.</p>
 <p>You're welcome to join in and spread the word about GameVault with your friends, family, social network, or colleagues!</p>
 <p><strong>Let's decipher the mystery behind the new logo:</strong>
-<img loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_iuiU"></p>
+<img loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_kNHY"></p>
 <ul>
 <li>The Box represents a Vault with a Keyhole, but it also symbolizes a game dice.</li>
 <li>The Keyhole represents a Keyhole, and simultaneously signifies a game piece.</li>
@@ -214,7 +214,7 @@
 <p>We're nearly finished, you might say.</p>
 <p>The only remaining task is the Client Application. We're actively working on it and currently testing the application on our developer edition. Soon, you'll be able to seamlessly update your client with the new name and appearance.</p>
 <p>In the meantime, our graphic designer has crafted a fresh logo for our new name, GameVault.</p>
-<p><img loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_iuiU"></p>
+<p><img loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_kNHY"></p>
 <p>To make good use of your time while the migrations are in progress, what do you speculate the new logo represents?</p>
 <p>Share your theories in gamevaults #chat channel on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">discord</a>! We'll reveal the answer and shoutout the winner(s) in the next blog post, once the migration is finalized!</p>
 <p>Until then ✌️</p>]]></content:encoded>
@@ -240,7 +240,7 @@
             <content:encoded><![CDATA[<p>Hey everyone,</p>
 <p>We are thrilled to announce that the poll for choosing a new name for our app is finally over. The process of transitioning to the new name will commence very soon, and we can't wait to share the exciting updates with you.</p>
 <p>But first, let's dive into the poll results and shed some light on the important facts without further delay:</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="summary">Summary<a href="https://gamevau.lt/blog/2023/07/15/#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="summary">Summary<a href="https://gamevau.lt/blog/2023/07/15/#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>In total, 71 people participated in the poll, providing us with valuable data to draw conclusions from. Here's a summary of the key findings:</p>
 <ul>
 <li>
@@ -263,26 +263,26 @@
 </ol>
 <p>As mentioned earlier, we conducted the poll without conducting market analysis beforehand. However, we recognized the significance of making an informed decision for the benefit of the community. Consequently, we proceeded to analyze each name after the poll to ensure the chosen name resonates with our vision.</p>
 <p>Allow us to share the summarized results of our market analysis:</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="market-analysis">Market Analysis<a href="https://gamevau.lt/blog/2023/07/15/#market-analysis" class="hash-link" aria-label="Direct link to Market Analysis" title="Direct link to Market Analysis">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="1-gamestash">1. GameStash<a href="https://gamevau.lt/blog/2023/07/15/#1-gamestash" class="hash-link" aria-label="Direct link to 1. GameStash" title="Direct link to 1. GameStash">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="market-analysis">Market Analysis<a href="https://gamevau.lt/blog/2023/07/15/#market-analysis" class="hash-link" aria-label="Direct link to Market Analysis" title="Direct link to Market Analysis">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="1-gamestash">1. GameStash<a href="https://gamevau.lt/blog/2023/07/15/#1-gamestash" class="hash-link" aria-label="Direct link to 1. GameStash" title="Direct link to 1. GameStash">​</a></h3>
 <p>Google Search Results: ~33,600<br>
 <!-- -->Possible Domains: gamestash.de</p>
 <ul>
 <li>There's already an app called <a href="https://gamestash.app/" target="_blank" rel="noopener noreferrer">GameStash</a> that offers similar features to ours.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="2-gamevault">2. GameVault<a href="https://gamevau.lt/blog/2023/07/15/#2-gamevault" class="hash-link" aria-label="Direct link to 2. GameVault" title="Direct link to 2. GameVault">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="2-gamevault">2. GameVault<a href="https://gamevau.lt/blog/2023/07/15/#2-gamevault" class="hash-link" aria-label="Direct link to 2. GameVault" title="Direct link to 2. GameVault">​</a></h3>
 <p>Google Search Results: ~800,000<br>
 <!-- -->Possible Domains: gamevau.lt, game-vault.de</p>
 <ul>
 <li>The term "GameVault" is associated with a popular online casino/gambling application called <a href="https://gamevault999.com/" target="_blank" rel="noopener noreferrer">GameVault999</a>.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="3-gameshelf">3. GameShelf<a href="https://gamevau.lt/blog/2023/07/15/#3-gameshelf" class="hash-link" aria-label="Direct link to 3. GameShelf" title="Direct link to 3. GameShelf">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="3-gameshelf">3. GameShelf<a href="https://gamevau.lt/blog/2023/07/15/#3-gameshelf" class="hash-link" aria-label="Direct link to 3. GameShelf" title="Direct link to 3. GameShelf">​</a></h3>
 <p>Google Search Results: ~560,000<br>
 <!-- -->Possible Domains: gameshelf.de</p>
 <ul>
 <li>The name "Gameshelf" is already used by two existing applications. One is a <a href="https://gameshelf.io/" target="_blank" rel="noopener noreferrer">Board-Game-Collection Viewer</a>, and the other is a <a href="https://gameshelf.dev/" target="_blank" rel="noopener noreferrer">Gaming Backlog</a> app.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="4-harbor">4. Harbor<a href="https://gamevau.lt/blog/2023/07/15/#4-harbor" class="hash-link" aria-label="Direct link to 4. Harbor" title="Direct link to 4. Harbor">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="4-harbor">4. Harbor<a href="https://gamevau.lt/blog/2023/07/15/#4-harbor" class="hash-link" aria-label="Direct link to 4. Harbor" title="Direct link to 4. Harbor">​</a></h3>
 <p>Google Search Results: ~393,000,000<br>
 <!-- -->Possible Domains: harborapp.de</p>
 <ul>
@@ -293,20 +293,20 @@
 <p>Additionally, there's a well-known app called <a href="https://goharbor.io/" target="_blank" rel="noopener noreferrer">Harbor on the Market</a> related to Docker/Kubernetes.</p>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_CX7D" id="5-gamehub">5. GameHub<a href="https://gamevau.lt/blog/2023/07/15/#5-gamehub" class="hash-link" aria-label="Direct link to 5. GameHub" title="Direct link to 5. GameHub">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_mNDW" id="5-gamehub">5. GameHub<a href="https://gamevau.lt/blog/2023/07/15/#5-gamehub" class="hash-link" aria-label="Direct link to 5. GameHub" title="Direct link to 5. GameHub">​</a></h3>
 <p>Google Search Results: ~5,690,000
 Possible Domains: gamehubapp.de</p>
 <ul>
 <li><a href="https://github.com/tkashkin/GameHub" target="_blank" rel="noopener noreferrer">GameHub</a> is a popular game library manager</li>
 <li>it also sounds like a popular adult site 😁</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="whats-next">What's Next?<a href="https://gamevau.lt/blog/2023/07/15/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="whats-next">What's Next?<a href="https://gamevau.lt/blog/2023/07/15/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
 <p>We understand your eagerness for a new name, and we are equally committed to distancing ourselves from the old one. Taking into account all the suggested names and feedback, we engaged in extensive internal brainstorming, free from outside influences.</p>
 <p>We sought a name that is descriptive, intuitive, and effectively conveys the purpose of our app. Additionally, we aimed for a name that is easily memorable and emphasizes the ownership and control of a self-hosted server, security, and exclusivity.</p>
 <p>Introducing our new name: <strong>GameVault</strong><br>
 <!-- -->Available soon under this domain: <a href="https://gamevau.lt/" target="_blank" rel="noopener noreferrer">gamevau.lt</a></p>
 <p>We have already secured the domain and registered the name wherever possible. The transition process will commence shortly. We are eager to hear your thoughts on the new name. Do you like it?</p>
-<h2 class="anchor anchorWithStickyNavbar_CX7D" id="special-thanks-️">Special Thanks ❤️<a href="https://gamevau.lt/blog/2023/07/15/#special-thanks-%EF%B8%8F" class="hash-link" aria-label="Direct link to Special Thanks ❤️" title="Direct link to Special Thanks ❤️">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_mNDW" id="special-thanks-️">Special Thanks ❤️<a href="https://gamevau.lt/blog/2023/07/15/#special-thanks-%EF%B8%8F" class="hash-link" aria-label="Direct link to Special Thanks ❤️" title="Direct link to Special Thanks ❤️">​</a></h2>
 <p>Well, as you all know, this was quite a journey to get here, and we wanted to give our special thanks to:</p>
 <ul>
 <li>
@@ -449,19 +449,19 @@ Possible Domains: gamehubapp.de</p>
             <content:encoded><![CDATA[<p>Hey everyone,</p>
 <p>What an eventful day it has been! We recently launched our app and shared it on <a href="https://www.reddit.com/r/selfhosted/comments/14pdu0m/introducing_crackpipe_your_decentralized" target="_blank" rel="noopener noreferrer">this Reddit post</a>, and it has sparked some controversies. We want to take this opportunity to address the feedback and allegations in an official statement.</p>
 <p>So let's go through the controversies:</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="regarding-the-name-crackpipe">Regarding the name Crackpipe<a href="https://gamevau.lt/blog/2023/07/03/#regarding-the-name-crackpipe" class="hash-link" aria-label="Direct link to Regarding the name Crackpipe" title="Direct link to Regarding the name Crackpipe">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="regarding-the-name-crackpipe">Regarding the name Crackpipe<a href="https://gamevau.lt/blog/2023/07/03/#regarding-the-name-crackpipe" class="hash-link" aria-label="Direct link to Regarding the name Crackpipe" title="Direct link to Regarding the name Crackpipe">​</a></h4>
 <p>We want to clarify that the name "Crackpipe" was initially meant as an inside joke between me and my friend, intended for a tool used by a limited audience. We just got used to it and went on, when deciding to release it to the public. We understand that some find the name inappropriate or uncomfortable, and we sincerely apologize for any distress caused. We are open to renaming the entire application to ensure it aligns better with our community's values. Your input is essential to us, so please <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">join our Discord server</a> and share your creative suggestions for a new name in the #new-name channel. Soon, we'll have a public poll on our blog where you can vote for your favorite name or the existing one.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="clarification-on-the-term-liberal">Clarification on the term "liberal"<a href="https://gamevau.lt/blog/2023/07/03/#clarification-on-the-term-liberal" class="hash-link" aria-label="Direct link to Clarification on the term &quot;liberal&quot;" title="Direct link to Clarification on the term &quot;liberal&quot;">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="clarification-on-the-term-liberal">Clarification on the term "liberal"<a href="https://gamevau.lt/blog/2023/07/03/#clarification-on-the-term-liberal" class="hash-link" aria-label="Direct link to Clarification on the term &quot;liberal&quot;" title="Direct link to Clarification on the term &quot;liberal&quot;">​</a></h4>
 <p>As non-native English speakers, we made an oversight in using the term "liberal," which we intended to mean "free" or "libre." We have already rectified this mistake.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="the-use-of-pepe-the-frog-as-a-profile-picture">The use of Pepe the Frog as a profile picture<a href="https://gamevau.lt/blog/2023/07/03/#the-use-of-pepe-the-frog-as-a-profile-picture" class="hash-link" aria-label="Direct link to The use of Pepe the Frog as a profile picture" title="Direct link to The use of Pepe the Frog as a profile picture">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="the-use-of-pepe-the-frog-as-a-profile-picture">The use of Pepe the Frog as a profile picture<a href="https://gamevau.lt/blog/2023/07/03/#the-use-of-pepe-the-frog-as-a-profile-picture" class="hash-link" aria-label="Direct link to The use of Pepe the Frog as a profile picture" title="Direct link to The use of Pepe the Frog as a profile picture">​</a></h4>
 <p>We apologize for not being aware of the misuse of the Pepe the Frog meme as a symbol of Nazis and white supremacism. That misuse is not a thing in europe. Originally, we only knew the frog as a twitch emote/meme and used it without any harmful intentions. In response to your feedback, we have changed the profile picture to a cute penguin.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="addressing-concerns-about-piracy">Addressing concerns about piracy<a href="https://gamevau.lt/blog/2023/07/03/#addressing-concerns-about-piracy" class="hash-link" aria-label="Direct link to Addressing concerns about piracy" title="Direct link to Addressing concerns about piracy">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="addressing-concerns-about-piracy">Addressing concerns about piracy<a href="https://gamevau.lt/blog/2023/07/03/#addressing-concerns-about-piracy" class="hash-link" aria-label="Direct link to Addressing concerns about piracy" title="Direct link to Addressing concerns about piracy">​</a></h4>
 <p>We'd like to emphasize that our app isn't intended for unlawful activities, which include piracy. When we refer to DRM-free games, we still imply games that are acquired legally. This encompasses legitimate sources like archive.org, GOG, or the Humble Trove. Our goal is to consolidate your games in one location, given that they are part of the RAWG Database.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="regarding-the-origins-of-the-application">Regarding the origins of the application<a href="https://gamevau.lt/blog/2023/07/03/#regarding-the-origins-of-the-application" class="hash-link" aria-label="Direct link to Regarding the origins of the application" title="Direct link to Regarding the origins of the application">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="regarding-the-origins-of-the-application">Regarding the origins of the application<a href="https://gamevau.lt/blog/2023/07/03/#regarding-the-origins-of-the-application" class="hash-link" aria-label="Direct link to Regarding the origins of the application" title="Direct link to Regarding the origins of the application">​</a></h4>
 <p>We assure you that this application was entirely developed by us, and any similarity to other projects is purely coincidental. We cleaned up our repositories to remove meaningless commits before going public, which may have caused confusion.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="on-the-marketing-strategy">On the marketing strategy<a href="https://gamevau.lt/blog/2023/07/03/#on-the-marketing-strategy" class="hash-link" aria-label="Direct link to On the marketing strategy" title="Direct link to On the marketing strategy">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="on-the-marketing-strategy">On the marketing strategy<a href="https://gamevau.lt/blog/2023/07/03/#on-the-marketing-strategy" class="hash-link" aria-label="Direct link to On the marketing strategy" title="Direct link to On the marketing strategy">​</a></h4>
 <p>We want to clarify that the controversy surrounding the app was not a planned marketing stunt. As programmers that developed this in spare time, we simply did not anticipate such a strong reaction to a free app.</p>
-<h4 class="anchor anchorWithStickyNavbar_CX7D" id="transparancy-regarding-financial-and-future-plans">Transparancy regarding financial and future plans<a href="https://gamevau.lt/blog/2023/07/03/#transparancy-regarding-financial-and-future-plans" class="hash-link" aria-label="Direct link to Transparancy regarding financial and future plans" title="Direct link to Transparancy regarding financial and future plans">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_mNDW" id="transparancy-regarding-financial-and-future-plans">Transparancy regarding financial and future plans<a href="https://gamevau.lt/blog/2023/07/03/#transparancy-regarding-financial-and-future-plans" class="hash-link" aria-label="Direct link to Transparancy regarding financial and future plans" title="Direct link to Transparancy regarding financial and future plans">​</a></h4>
 <p>Currently, we rely on your <a href="https://ko-fi.com/phalcode" target="_blank" rel="noopener noreferrer">financial support through Kofi</a>. Building an active and engaged user base is our primary focus before considering the addition of any paid features in the future. So for now just enjoy the functionalities.</p>
 <hr>
 <p>In conclusion, we appreciate all the feedback and kind words we have received. If you believe in the app's concept but are concerned about the current name, please feel free to suggest a new one and participate in the voting process on our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord server</a>.</p>
