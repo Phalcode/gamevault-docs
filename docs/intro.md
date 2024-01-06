@@ -4,21 +4,31 @@ sidebar_position: 1
 
 # Introduction
 
-## What is GameVault
+## What is GameVault?
 
 GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
 
-Think of it as your personal Steam for your DRM-free video game collection. You bring your own game files (installers, binaries, etc.) from wherever you have them, and the platform detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
+Think of it as your personal Steam or Plex server, but for your personal video game collection (and without streaming). It lets you and your friends enjoy your games from anywhere.
 
-You cannot purchase or stream games using this platform. The GameVault system has two main components: a self-hosted Backend Server and one or more App Clients for you and your friends.
+You put your game files (installers, binaries, etc.) from wherever you have them into a folder and the platform detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
 
-:::warning Legal Disclaimer
-GameVault manages DRM-free games and is solely a tool to address this need. We are not responsible for the content or files users store or share.
+GameVault consists of two components:
 
-When we say DRM-free games, we only mean games obtained legally. While GameVault _can_ theoretically be used with illegally obtained games, we do not endorse or support piracy.
+- A self-hosted backend server served with Docker
+- A client application to use this server
 
-Users must also be aware of and comply with copyright laws in their respective jurisdictions. We encourage responsible and legal use of GameVault. Unlawful use is strictly improper and unauthorized.
-:::
+### Who Can Enjoy GameVault?
+
+Whether you're into the classics or the cutting-edge, GameVault is the perfect companion for:
+
+🎮 **DRM-free Gamers:** Enjoy your games from anywhere.  
+🏠 **Self Hosters:** Keep your game collection on your own server.  
+📚 **Game Collectors:** Organize and cherish your growing library.  
+💾 **Data Hoarders:** Archive every gigabyte of gaming history.  
+👾 **Indie Gamers:** Keep track of your independent gems.  
+🕹️ **Retro Gamers:** Relive the golden era of gaming.  
+🛠️ **Game Developers:** Test and distribute your creations.  
+👪 **And their Friends & Family:** Share the joy of gaming with loved ones.
 
 ## Features
 
@@ -26,26 +36,26 @@ Let's take a look at all the main functions of GameVault:
 
 ### Client Features
 
-- 🔎 Browse your server's game collection
-- 📥 Securely download your games from your server
-- ⚙️ Automatically extract and install games
-- 🎮 Launch and play games on your PC
-- ⏱️ Track playtimes and progress (even when the server is offline)
-- 👥 Compare statistics and game progress with other users on the server
-- 🔒 Manage your users and games with a powerful Admin UI
+- 🔎 [Browse your server's game collection](./client-docs/gui#library-tab)
+- 📥 [Securely download your games from your server](./client-docs/how-to-use#downloading-games)
+- ⚙️ [Automatically extract and install games](./client-docs/how-to-use#1-extracting-the-game)
+- 🎮 [Launch and play the games on your PC](./client-docs/how-to-use#playing-a-game)
+- ⏱️ [Track playtimes and progress (even when the server is offline)](./client-docs/how-to-use#tracking-your-game-progress)
+- 👥 [Compare game progress with other users on the server](./client-docs/gui#community-tab)
+- 🔒 [Manage your users and games with a powerful Admin UI](./client-docs/gui#admin-tab)
 
 ### Server Features
 
-- ♻️ Automatically indexes games from the file system into a database
-- 📚 Enhances games with metadata like tags, genres, description and more using RAWG API
-- 📸 Automatically finds beautiful box art for your library
-- 👥 Multi-User Authentication
-- 🔒 Role-Based Access Control
-- ⏱️ Keeps track of your users' game progress and state
-- 🚨 Health Monitoring and Logging
-- 🔎 Full-Text Search, Filters, Sorting, Pagination
-- 🔌 Fully Documented API
-- ⚙️ Highly Configurable
+- ♻️ [Automatically indexes games from the file system into a database](./server-docs/indexing-and-metadata.md#game-indexing)
+- 📚 [Enhances games with metadata like tags, genres, description and more using RAWG API](./server-docs/indexing-and-metadata.md#integration-with-rawg)
+- 📸 [Automatically finds beautiful box art for your library](./server-docs/indexing-and-metadata.md#game-box-arts)
+- 👥 [Multi-User Authentication](./server-docs/user-management.md#user-management)
+- 🔒 [Role-Based Access Control](./server-docs/user-management.md#user-roles)
+- ⏱️ [Keeps track of your users' game progress and state](./client-docs/how-to-use#tracking-your-game-progress)
+- 🚨 [Health Monitoring and Logging](./advanced-usage/api-usage)
+- 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/api-usage)
+- 🔌 [Fully Documented API](./advanced-usage/api-usage)
+- ⚙️ [Highly Configurable](./server-docs/configuration.md)
 
 ## Support
 
@@ -70,3 +80,13 @@ This work is licensed under a
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+## Legal Disclaimer
+
+:::warning Legal Disclaimer
+GameVault manages DRM-free games and is solely a tool to address this need. We are not responsible for the content or files users store or share.
+
+When we say DRM-free games, we only mean games obtained legally. While GameVault _can_ theoretically be used with illegally obtained games, we do not endorse or support piracy.
+
+Users must be aware of and comply with copyright laws in their respective jurisdictions. We encourage responsible and legal use of GameVault. Unlawful use is strictly improper and unauthorized.
+:::

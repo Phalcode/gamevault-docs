@@ -11,66 +11,72 @@ import ImgGithub from "@site/static/img/features/github.png";
 
 const FeatureList = [
   {
-    title: "🎮 Run your own Gaming Platform and share it with Friends!",
+    title: "🎮 Browse Your Games",
     img: ImgLibrary,
     description: (
       <>
-        Keep your game collection organized and share them with your friends
-        using our user-friendly platform on your file server.
+        Browse through your servers beautifully organized library to download,
+        install and and play your collection of videogames of all kinds!
       </>
     ),
   },
   {
-    title: "🔒 Complete Control of Your Server, Games, and Access!",
+    title: "🫂 Build Your Community",
     img: ImgAuth,
     description: (
       <>
-        The platform allows you to control who can access your server and choose
-        who can download and play your games.
+        Share your platform with your friends and loved ones, so they can also
+        enjoy your library. Administrate your users and games.
       </>
     ),
   },
   {
-    title:
-      "🕹️ Keep in touch with your friends and check their gaming progress!",
+    title: "⏱️ Track Your Progress",
     img: ImgSocial,
     description: (
       <>
-        Using social features, you can keep in touch with friends on your
-        server, find out what they're playing and explore new games to try.
+        See how long you or your friends played a game, find out what they are
+        playing and keep track what you've already completed or aborted.
       </>
     ),
   },
   {
-    title: "📈 Enhance your Games with endless Metadata!",
+    title: "🔎 Automatic Metadata Enrichment",
     img: ImgEnrichments,
     description: (
       <>
-        Add juicy metadata to your games with our powerful integrations and
-        unlock the full potential of GameVault.
+        GameVault automatically enriches your game with all the juicy
+        information and pictures using the largest videogame database.
       </>
     ),
   },
   {
-    title: "🪟 Install easily from Microsoft Store",
+    title: "🪟 Easy To Install",
     img: ImgMicrosoftStore,
     description: (
       <>
-        There's no need to compile anything. Our client application is
-        officially available in the{" "}
+        There's no need to compile stuff. Our application is officially
+        available in the{" "}
         <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
           Microsoft Store
         </a>
-        .
+        .{" "}
+        <a href="/docs/server-docs/setup">
+          Setting up a Server using our Docker Image
+        </a>{" "}
+        is just as easy!
       </>
     ),
   },
   {
-    title: "👥 Join our community and help us with our project!",
+    title: "👥 Join The Movement",
     img: ImgGithub,
     description: (
       <>
-        Join our expanding community, <a href="/docs/contribute">contribute</a>{" "}
+        <a target="_blank" href="https://discord.gg/NEdNen2dSu">
+          Join our expanding community
+        </a>
+        , star us on GitHub, or even <a href="/docs/contribute">contribute</a>{" "}
         to our source-available project! Everybody can help!
       </>
     ),
