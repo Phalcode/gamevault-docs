@@ -78,9 +78,9 @@ If you prefer using [Heavyscript](https://github.com/Heavybullets8/heavy_script)
 
 Simple commands for heavyscript:
 
-stop: ```heavscript app -x gamevault-backend```
+stop: ```heavyscript app -x gamevault-backend```
 
-start: ```heavscript app -s gamevault-backend```
+start: ```heavyscript app -s gamevault-backend```
 
 Keep in mind that TrueNAS Scale does not support third-party operators. Consequently, relying on the stop button within the TrueNAS Scale GUI, often considered an IX (iXsystems) hack in the Kubernetes space, is not recommended. For a dependable and supported approach, opt for the replica settings, "stop-all" checkbox, or leverage Heavyscript.
 
