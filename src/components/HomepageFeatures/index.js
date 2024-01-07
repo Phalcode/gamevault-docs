@@ -21,7 +21,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "🫂 Build Your Community",
+    title: "👯 Build Your Community",
     img: ImgAuth,
     description: (
       <>
@@ -51,7 +51,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "🪟 Easy To Install",
+    title: "📦 Easy To Install",
     img: ImgMicrosoftStore,
     description: (
       <>
