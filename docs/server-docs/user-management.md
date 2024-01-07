@@ -18,13 +18,9 @@ To configure the initial admin user for the GameVault server, you can utilize Do
 
 For example:
 
-```plaintext
-SERVER_ADMIN_USERNAME=adminuser
+```ini
+SERVER_ADMIN_USERNAME=xX_NoobSl4yer_Xx
 ```
-
-:::note
-Replace `adminuser` with your preferred username.
-:::
 
 Once the admin user is configured and registered, you can proceed with user registration, activation, and role assignment.
 
@@ -32,11 +28,11 @@ Once the admin user is configured and registered, you can proceed with user regi
 
 Upon registration of the initial admin user, the GameVault server will automatically grant administrative permissions to the user. This ensures that the admin user has the necessary privileges to administrate the server.
 
+## Recovering Access to Admin User after Role Misconfiguration
+
 If the admin user was misconfigured to not have admin permissions or if the user already exists, the server will automatically grant admin permissions to that user upon startup. This ensures that the admin user has the correct permissions even if there are configuration errors or existing users.
 
-By automatically assigning admin permissions, GameVault simplifies the setup process and ensures that the admin user has the appropriate access levels from the start.
-
-## Recovering Access to Admin User
+## Recovering Access to Admin User after Password Loss
 
 In the event that the server owner gets locked out of the admin user account due to password loss or other reasons, the GameVault Server provides a way to recover access.
 
@@ -44,15 +40,11 @@ To regain access, set the `SERVER_ADMIN_PASSWORD` environment variable to the de
 
 For example:
 
-```plaintext
-SERVER_ADMIN_PASSWORD=mynewpassword
+```ini
+SERVER_ADMIN_PASSWORD=hunter2
 ```
 
-:::note
-Replace `mynewpassword` with your preferred password.
-:::
-
-Upon the next startup of the GameVault server, the admin user's password will be updated to the specified password, allowing the
+Upon the next startup of the GameVault server, the admin user's password will be updated to the specified password, allowing the user to regain access.
 
 ## User Registration
 
