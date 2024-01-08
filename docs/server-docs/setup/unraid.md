@@ -64,3 +64,20 @@ Your GameVault should now be available at `http://tower.local:8080/` or `HOSTNAM
 You have now successfully set up your GameVault Server using UNRAID.
 
 [Click here to continue.](setup.md#what-next)
+
+## Additional Info
+
+### Stopping the Server
+
+Navigate to "Docker" tab and left clck the GameVault app icon you have created.
+
+Click on "Stop".
+
+
+### Reading the Logs
+
+Navigate to "Docker" tab and left clck the GameVault app icon you have created.
+
+Click on "Logs".
+
+This should bring a pop-up window of the currently logs of the server.
