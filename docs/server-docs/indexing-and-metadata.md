@@ -6,7 +6,7 @@ sidebar_position: 7
 
 ## Game Indexing
 
-The server regularly scans the files directory (by default `/files`) to create an index of archived games. The indexing frequency is determined by the `GAMES_INDEX_INTERVAL_IN_MINUTES` environment variable, which has a default value of 5 minutes.
+The server watches the files directory (by default `/files`) and creates an index of all games, when changes occur. The indexing can also be triggered via API.
 
 The indexing algorithm follows these steps:
 

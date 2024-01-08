@@ -12,6 +12,8 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 ## Library Tab
 
+!["Library Tab"](/img/features/library.png)
+
 - Browse available and installed games.
 - Expand or collapse sections with expanders.
 - Launch installed games by clicking the play button on box art.
@@ -23,6 +25,8 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Utilize the search bar to find specific games.
 
 ## Game Page
+
+!["Game Page"](/img/features/game.png)
 
 - View comprehensive game details.
 - Set progress states (e.g., completed or aborted).
@@ -62,6 +66,8 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 ## Downloads Tab
 
+!["Downloads Tab"](/img/features/downloads.png)
+
 - Monitor running and completed downloads.
 - View download statistics and progress.
 - Abort downloads.
@@ -70,6 +76,8 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Open download folders and delete downloaded files.
 
 ## Community Tab
+
+!["Community Tab"](/img/features/community.png)
 
 - View all users on the GameVault Server.
 - Select users for detailed game progress information.
@@ -103,6 +111,8 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Select GameVault root path and clear image and offline caches.
 
 ## Admin Tab
+
+!["Admin Tab"](/img/features/admin.png)
 
 - Visible to admins only.
 - View, activate/deactivate, and edit user roles.

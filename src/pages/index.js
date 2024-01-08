@@ -10,7 +10,6 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-
     <header className={clsx("hero", styles.heroBanner)}>
       <noscript>
         <img
@@ -37,7 +36,7 @@ function HomepageHeader() {
             href="https://www.microsoft.com/store/apps/9PCKDV76GL75"
             target="_blank"
           >
-            Download
+            Download Client
           </a>
         </div>
 
@@ -74,7 +73,20 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
+        <section>
+          <h2 id="heroTitle" className="text--center">
+            Create your personal Gaming Platform
+          </h2>
+          <h3 id="heroSubtitle" className="text--center">
+            Do you have games on your server and need an app to download,
+            install, share, launch, and track them? Then you are in the right
+            place!
+          </h3>
+        </section>
         <HomepageFeatures />
+        <p className="text--center">
+          *depicted games are mockup placeholders.
+        </p>
       </main>
     </Layout>
   );

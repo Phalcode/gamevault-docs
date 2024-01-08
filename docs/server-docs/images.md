@@ -20,6 +20,12 @@ GameVault stores each image one-to-one, with no image recycling.
 
 In the past, GameVault used to recycle images to save space and reduce duplication. But we removed this feature because the process of removing repeated images became too complex, and it's very rare for the same image to be used multiple times on a server.
 
-## Image Cleanup
+## Image Garbage Collection
 
-GameVault removes images from the database and the filesystem when the linked item is deleted. Non-linked manually uploaded images won't get deleted automatically.
+GameVault regularly cleans up its images in the database and filesystem to keep things tidy. We call this process garbage collection.
+
+You can control how often the garbage colletion happens by changing the value of `IMAGE_GC_INTERVAL_IN_MINUTES`.
+
+During cleanup, GameVault first gets rid of all images in the database that aren't used. Afterwards, it deletes all image files in the images folder that don't match any database entries. So please don't put any files in the images folder that you don't want to be deleted.
+
+If you want to turn off this feature, you can use the `IMAGE_GC_DISABLED` setting.
