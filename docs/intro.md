@@ -30,6 +30,15 @@ Whether you're into the classics or the cutting-edge, GameVault is the perfect c
 🛠️ **Game Developers:** Test and distribute your creations.  
 👪 **And their Friends & Family:** Share the joy of gaming with loved ones.
 
+### What GameVault is not
+
+Listed below are some examples of what GameVault is not:
+
+- Game Pirating Application
+- Game Streaming Application (e.g. Geforce NOW, Sunshine)
+- Game Server Management Application (e.g. Pterodactyl)
+- Local Game Library / Library Merging Application (e.g Playnite, Heroic, Launchbox) - although you might just run the server on your local machine, then it basically is.
+
 ## Features
 
 Let's take a look at all the main functions of GameVault:
