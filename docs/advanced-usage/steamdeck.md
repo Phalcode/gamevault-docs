@@ -29,7 +29,7 @@ To start, you need the Application files. The simplest way to get them is explai
 10. Change the target of the Non-steam game to the `gamevault.exe`.
 11. Find the Compdata folder `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/`.
 
-   :::note
+   :::tip
    Easiest way to find this is to install and run protontricks. Mine is 3860686742
    :::
 
