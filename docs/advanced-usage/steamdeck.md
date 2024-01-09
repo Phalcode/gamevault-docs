@@ -1,6 +1,6 @@
 # Running the Client on Steamdeck
 
-This page serves as a community-driven guide to assist you in setting up the GameVault client on Linux.
+This page serves as a community-driven guide to assist you in setting up the GameVault client on SteamOS.
 
 :::warning
 Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**.
@@ -18,8 +18,6 @@ To start, you need the Application files. The simplest way to get them is explai
    :::warning
    Where you place the app is where it will install windows portable apps. Make sure you have enough space.
    :::
-
-## Steam Stuff
 
 5. Add `gamevault.exe` to Steam library as a non-steam game (This is important for the proton compdata appid... or so I've been told).
 6. Change game compatibility properties to use your preferred version of proton.
