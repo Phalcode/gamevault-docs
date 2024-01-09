@@ -31,7 +31,7 @@ To start, you need the Application files. The simplest way to get them is explai
    Easiest way to find this is to install and run protontricks. Mine is 3860686742
    :::
 
-12. Unzip fonts downloaded from archive.org and install to `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/pfx/drive_c/windows/Fonts`.
+12. Unzip fonts downloaded from archive.org and install to `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/pfx/drive_c/windows/Fonts`. (specifically Segoe UI)
 13. Run GameVault via Steam
 
 
