@@ -49,7 +49,11 @@ services:
 ```
 
 :::note
-Replace the the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course.
+Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course.
+:::
+
+:::warning
+Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
 
 ### Alternative Step 1: Running without a PostgreSQL Database
