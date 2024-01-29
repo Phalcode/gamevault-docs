@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import * as Swetrix from "swetrix";
 import styles from "./index.module.css";
+import Head from "@docusaurus/Head";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -15,7 +16,6 @@ function HomepageHeader() {
         <img
           src="https://api.swetrix.com/log/noscript?pid=K6k7j6GHClhh"
           alt=""
-          referrerpolicy="no-referrer-when-downgrade"
         />
       </noscript>
       <div className="container">
@@ -71,22 +71,26 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="the self-hosted gaming platform for drm-free games"
     >
+      <Head>
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+      </Head>
       <HomepageHeader />
       <main>
         <section>
+          <br />
           <h2 id="heroTitle" className="text--center">
             Create your personal Gaming Platform
           </h2>
           <h3 id="heroSubtitle" className="text--center">
             Do you have games on your server and need an app to download,
-            install, share, launch, and track them? Then you are in the right
-            place!
+            install, share, launch, and track them?
+          </h3>
+          <h3 id="heroSubtitle" className="text--center">
+            Then you are in the right place!
           </h3>
         </section>
         <HomepageFeatures />
-        <p className="text--center">
-          *depicted games are mockup placeholders.
-        </p>
+        <p className="text--center">*depicted games are mockup placeholders.</p>
       </main>
     </Layout>
   );
