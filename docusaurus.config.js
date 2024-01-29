@@ -77,9 +77,10 @@ const config = {
             label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/gamevault-plus", label: "GameVault+", position: "left" },
           {
-            href: "https://github.com/phalcode",
             label: "GitHub",
+            href: "https://github.com/phalcode",
             position: "right",
           },
           {
@@ -88,8 +89,8 @@ const config = {
             position: "right",
           },
           {
-            href: "https://ko-fi.com/phalcode",
-            label: "Buy us a Coffee",
+            label: "Support us",
+            href: "https://gamevau.lt/docs/intro#support",
             position: "right",
           },
         ],
