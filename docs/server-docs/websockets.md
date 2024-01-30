@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # WebSockets
 
 In Gamevault Backend Version 9.0.0, we introduced an exciting feature – WebSockets. These WebSockets provide an asynchronous and bidirectional gateway for interactive communication with clients. Our implementation is based on [Socket.io](https://socket.io/), which itself relies on the WebSocket protocol.

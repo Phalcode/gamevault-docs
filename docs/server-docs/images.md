@@ -22,6 +22,10 @@ In the past, GameVault used to recycle images to save space and reduce duplicati
 
 ## Image Garbage Collection
 
+:::danger Potential data loss
+Garbage collection **can result in data loss**, as it will **delete any files inside the images folder** without an association in the database. For example if you set up a new, empty database. It is advisable to regularly back up your images just to be safe. If you don't want to lose any data, you can disable garbage collection by setting the `IMAGE_GC_DISABLED` environment variable to `true`.
+:::
+
 GameVault regularly cleans up its images in the database and filesystem to keep things tidy. We call this process garbage collection.
 
 You can control how often the garbage colletion happens by changing the value of `IMAGE_GC_INTERVAL_IN_MINUTES`.

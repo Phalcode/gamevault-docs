@@ -92,6 +92,13 @@ This page describes the various configuration properties used in the application
 | `IMAGE_GC_DISABLED`                             | Whether or not image garbage collection is enabled.                                          | `true`                                                                  | `true`, `false`                  |
 | `IMAGE_GC_INTERVAL_IN_MINUTES`                  | The interval in minutes for image garbage collection.                                        | `60`                                                                    | Any number                       |
 
+## PLUGIN
+
+| Property         | Description                                                                                         | Default | Possible Values   |
+| ---------------- | --------------------------------------------------------------------------------------------------- | ------- | ----------------- |
+| `PLUGIN_ENABLED` | If set to `true`, the server will try to load and run plugins listed in the `PLUGIN_SOURCES` array. | `false` | `true`, `false`   |
+| `PLUGIN_SOURCES` | A list of paths for GameVault plugins to load, separated by commas.                                 | -       | Any list of paths |
+
 ## TESTING
 
 | Property                          | Description                                                                                                                           | Default | Possible Values |

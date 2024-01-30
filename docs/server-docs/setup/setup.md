@@ -7,7 +7,7 @@ id: toc
 
 There are multiple ways to set up a GameVault Server. You can choose one from below that suits you.
 
-If you have any trouble setting up a GameVault server dont give up! There are a lot of helpful people on our [discord](https://discord.gg/NEdNen2dSu) that can help you.
+If you have any trouble setting up a GameVault server don't give up! There are a lot of helpful people on our [discord](https://discord.gg/NEdNen2dSu) that can help you.
 
 ## Supported Methods
 
