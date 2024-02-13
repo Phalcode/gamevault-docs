@@ -68,11 +68,11 @@ This page describes the various configuration properties used in the application
 
 ## GAMES
 
-| Property                          | Description                                                                                    | Default                                            | Possible Values |
-| --------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
-| `GAMES_INDEX_INTERVAL_IN_MINUTES` | The index interval in minutes. Determines how often the server should index the list of games. | `5`                                                | Any number      |
-| `GAMES_SUPPORTED_FILE_FORMATS`    | Comma-Seperated list of supported file-types GameVault should detect.                          | [see here](structure.md#supported-archive-formats) | ".zip,.7z,.rar" |
-| `GAMES_SEARCH_RECURSIVE`          | If indexer should search for games in subfolders.                                              | true                                               | "true", "false  |
+| Property                          | Description                                                                                                                                                                                                                                                                                                                                                                                         | Default                                            | Possible Values |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | --------------- |
+| `GAMES_INDEX_INTERVAL_IN_MINUTES` | The index interval, measured in minutes, decides how frequently the server should check for changes in games in the /files directory. This used to be essential before we implemented the filewatcher to the server. Nowadays, it's optional for rare situations where the filewatcher might miss changes. If set to 0, it won't regularly trigger reindexing and solely depend on the filewatcher. | `60`                                               | Any number      |
+| `GAMES_SUPPORTED_FILE_FORMATS`    | Comma-Seperated list of supported file-types GameVault should detect.                                                                                                                                                                                                                                                                                                                               | [see here](structure.md#supported-archive-formats) | ".zip,.7z,.rar" |
+| `GAMES_SEARCH_RECURSIVE`          | If indexer should search for games in subfolders.                                                                                                                                                                                                                                                                                                                                                   | true                                               | "true", "false  |
 
 ## USERS
 
@@ -91,6 +91,13 @@ This page describes the various configuration properties used in the application
 | `IMAGE_SUPPORTED_IMAGE_FORMATS`                 | List of supported image formats (MIME Types) on this server, separated by commas.            | `image/bmp, image/jpeg, image/png, image/tiff, image/gif, image/x-icon` | List of `image/*` content types. |
 | `IMAGE_GC_DISABLED`                             | Whether or not image garbage collection is enabled.                                          | `true`                                                                  | `true`, `false`                  |
 | `IMAGE_GC_INTERVAL_IN_MINUTES`                  | The interval in minutes for image garbage collection.                                        | `60`                                                                    | Any number                       |
+
+## PLUGIN
+
+| Property         | Description                                                                                         | Default | Possible Values   |
+| ---------------- | --------------------------------------------------------------------------------------------------- | ------- | ----------------- |
+| `PLUGIN_ENABLED` | If set to `true`, the server will try to load and run plugins listed in the `PLUGIN_SOURCES` array. | `false` | `true`, `false`   |
+| `PLUGIN_SOURCES` | A list of paths for GameVault plugins to load, separated by commas.                                 | -       | Any list of paths |
 
 ## TESTING
 
