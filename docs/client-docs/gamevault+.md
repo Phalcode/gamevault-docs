@@ -8,24 +8,26 @@ GameVault+ offers a set of premium features that enhance the user experience bey
 
 ## Setting up GameVault+ in Your Client
 
-### Phalcode Login
+Setting up GameVault+ in your client is straightforward.
 
-- Users can register or log in using their Phalcode account through the settings in the GameVault+ Tab.
-- Account credentials are securely stored locally within the application.
-- Upon startup, the app attempts to log in using the stored credentials:
+### 1. Phalcode Account
+
+- Register or log in to your Phalcode account through the `GameVault+ Settings`.
+- Your credentials will be securely stored within the application for future use.
+- From now on upon start start of the application, it attempts to log in using the stored credentials:
   - If the credentials are valid, users are automatically logged in, and the app proceeds to fetch their licenses.
   - If the credentials are invalid, users are notified with an error message.
 
-### GameVault+ License
+### 2. GameVault+ License
 
-- Once logged in, the client attempts to retrieve the GameVault+ license:
-  - If a valid license is found, users receive a success message in the GameVault+ settings app, along with license details.
-  - If no license is found, users are notified of an error indicating an invalid, missing, or expired license.
-- Users can also manually request to check their licenses.
+- Once logged in, the client attempts to fetch the user's GameVault+ license:
+  - If a valid license is found, users receive a success message in the GameVault+ settings app, along with license details and a button to manage their subscription.
+  - If no license is found, users are notified with an error indicating an invalid, missing, or expired license.
+- Users can also manually request to check their licenses using the `Fetch Licenses` button in the `GameVault+ Settings`.
 
-### Offline Usage
+#### Offline Usage
 
-- When a valid license is found, an encrypted copy is stored locally within the application, allowing for offline use.
-- Users can access GameVault+ offline.
-- Offline licenses are re-verified upon each login, provided an internet connection is available.
-- If an offline license has expired, users are notified of the expiration error.
+- When a valid license is found, an encrypted copy of the license is stored within the application, allowing for offline use.
+- Users can access GameVault+ offline until their license expires.
+- Offline licenses get renewed upon each login, provided an internet connection is available.
+- If an offline license has expired, users are notified of the expiration and can no longer use GameVault+.
