@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Gamevault+ Documentation
+# GameVault+ Documentation
 
 GameVault+ offers a set of premium features that enhance the user experience beyond our core product offerings. These features are designed as optional add-ons for users who wish to support our development efforts. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
 

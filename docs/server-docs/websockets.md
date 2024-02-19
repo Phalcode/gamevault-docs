@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # WebSockets
 
-In Gamevault Backend Version 9.0.0, we introduced an exciting feature – WebSockets. These WebSockets provide an asynchronous and bidirectional gateway for interactive communication with clients. Our implementation is based on [Socket.io](https://socket.io/), which itself relies on the WebSocket protocol.
+In GameVault Backend Version 9.0.0, we introduced an exciting feature – WebSockets. These WebSockets provide an asynchronous and bidirectional gateway for interactive communication with clients. Our implementation is based on [Socket.io](https://socket.io/), which itself relies on the WebSocket protocol.
 
 WebSockets enable real-time communication between the server and clients. This means that not only can the server send data to clients when they ask for it, but the server can also initiate conversations with the clients.
 
@@ -14,7 +14,7 @@ The API is documented via AsyncAPI standard in `/api/docs/async`. However, pleas
 
 ## Activities
 
-Starting from Gamevault Backend Version 9.0.0, Gamevault allows clients to share their current activities on the server. These activities provide valuable information about what users are doing, making the platform more interactive. Activities can include:
+Starting from GameVault Backend Version 9.0.0, GameVault allows clients to share their current activities on the server. These activities provide valuable information about what users are doing, making the platform more interactive. Activities can include:
 
 - User 1 is online.
 - User 2 is offline.
