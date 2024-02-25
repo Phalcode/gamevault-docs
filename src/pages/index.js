@@ -12,9 +12,13 @@ import { useColorMode } from "@docusaurus/theme-common";
 function HomepageHeaderText() {
   const { colorMode } = useColorMode();
   if (colorMode === "dark") {
-    return <img src="/img/logo-text-white.svg" className="h-16 nozoom" alt="Logo" />;
+    return (
+      <img src="/img/logo-text-white.svg" className="h-16 nozoom" alt="Logo" />
+    );
   }
-  return <img src="/img/logo-text-black.svg" className="h-16 nozoom" alt="Logo" />;
+  return (
+    <img src="/img/logo-text-black.svg" className="h-16 nozoom" alt="Logo" />
+  );
 }
 
 function HomepageHeader() {
@@ -33,7 +37,8 @@ function HomepageHeader() {
           <HomepageHeaderText />
         </div>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+
+        <div className="grid sm:grid-cols-2 gap-4 lg:max-w-[50%] sm:mx-auto">
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
@@ -48,18 +53,22 @@ function HomepageHeader() {
           >
             Download Client
           </a>
-        </div>
-
-        <br />
-        <div className={styles.buttons}>
-          <a href="https://www.producthunt.com/posts/gamevault" target="_blank">
+          <a
+            className="inline-flex justify-center"
+            href="https://www.producthunt.com/posts/gamevault"
+            target="_blank"
+          >
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=400344&theme=neutral"
               alt="GameVault on ProductHunt"
               className="nozoom"
             />
           </a>
-          <a href="https://discord.gg/NEdNen2dSu" target="_blank">
+          <a
+            className="inline-flex justify-center"
+            href="https://discord.gg/NEdNen2dSu"
+            target="_blank"
+          >
             <img
               src="/img/discord.svg"
               alt="Join us on Discord"
