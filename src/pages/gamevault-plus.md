@@ -14,7 +14,7 @@ Welcome to **GameVault+**, the premium upgrade designed for enthusiasts seeking 
 
 As of now, we are offering the following features:
 
-- 📸 Uploading animated Profile Pictures
+- 📸 Uploading animated profile pictures
 
 ## Pricing
 
@@ -22,10 +22,15 @@ The GameVault+ subscription is priced affordably at **€ 4.99/month** or **€ 
 
 ## Get Started
 
+:::info Work in progress
+We are still preparing the GameVault+ product. Stay tuned!
+:::
+
+<!--
 1. [Sign up](https://phalco.de/account/signup) or [log in](https://phalco.de/account/login) to your Phalcode account
 2. [Subscribe to GameVault+](https://phalco.de/products/gamevault-plus)
 3. [Set up your GameVault Client](/docs/client-docs/gamevault-plus)
-4. **Enjoy the premium features**
+4. **Enjoy the premium features** -->
 
 ## Frequently Asked Questions
 

@@ -15,8 +15,8 @@ const FeatureList = [
     img: ImgLibrary,
     description: (
       <>
-        Browse through your servers beautifully organized library to download,
-        install and and play your collection of videogames of all kinds!
+        Browse your server's beautifully organized library to download, install
+        and play your collection of video games of all kinds!
       </>
     ),
   },
@@ -25,8 +25,8 @@ const FeatureList = [
     img: ImgAuth,
     description: (
       <>
-        Share your platform with your friends and loved ones, so they can also
-        enjoy your library. Administrate your users and games.
+        Share your platform with your friends and family so they can enjoy your
+        library, too. Administrate your users and games.
       </>
     ),
   },
@@ -35,8 +35,8 @@ const FeatureList = [
     img: ImgSocial,
     description: (
       <>
-        See how long you or your friends played a game, find out what they are
-        playing and keep track what you've already completed or aborted.
+        See how long you or your friends have been playing a game, find out what
+        they are and keep track of what you've already completed or abandoned.
       </>
     ),
   },
@@ -46,7 +46,7 @@ const FeatureList = [
     description: (
       <>
         GameVault automatically enriches your game with all the juicy
-        information and pictures using the largest videogame database.
+        information and and images from the largest video game database.
       </>
     ),
   },
@@ -55,14 +55,14 @@ const FeatureList = [
     img: ImgMicrosoftStore,
     description: (
       <>
-        There's no need to compile stuff. Our application is officially
+        There's no need to compile anything. Our application is officially
         available in the{" "}
         <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
           Microsoft Store
         </a>
         .{" "}
         <a href="/docs/server-docs/setup">
-          Setting up a Server using our Docker Image
+          Setting up a server using our Docker image
         </a>{" "}
         is just as easy!
       </>
@@ -74,10 +74,10 @@ const FeatureList = [
     description: (
       <>
         <a target="_blank" href="https://discord.gg/NEdNen2dSu">
-          Join our expanding community
-        </a>
+          Join our growing community
+        </a>{" "}
         , star us on GitHub, or even <a href="/docs/contribute">contribute</a>{" "}
-        to our source-available project! Everybody can help!
+        to our source-available project! Everyone can help!
       </>
     ),
   },
