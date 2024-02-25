@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 const { themes } = require("prism-react-renderer");
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
@@ -8,7 +9,7 @@ const darkTheme = themes.dracula;
 const config = {
   title: "GameVault",
   tagline: "the self-hosted gaming platform for drm-free games",
-  favicon: "img/logo-image.png",
+  favicon: "img/logo.png",
 
   // Set the production url of your site here
   url: "https://gamevau.lt/",
@@ -34,6 +35,7 @@ const config = {
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),
     require.resolve("@cmfcmf/docusaurus-search-local"),
+    tailwindPlugin,
   ],
   presets: [
     [
@@ -66,7 +68,7 @@ const config = {
       navbar: {
         logo: {
           alt: "GameVault",
-          src: "img/logo-image.png",
+          src: "img/logo.png",
         },
         title: "GameVault",
         items: [

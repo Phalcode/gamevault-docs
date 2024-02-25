@@ -66,7 +66,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 
 ### Forgot my Admin Password
 
-- Refer to [this](./server-docs/user-management.md#recovering-access-to-admin-user) for instructions on how to regain access to your admin account.
+- Refer to [this](./server-docs/user-management#recovering-access-to-admin-user-after-password-loss) for instructions on how to regain access to your admin account.
 
 ### GameVault Backend: SIGILL / Illegal Instruction (Core Dumped)
 
