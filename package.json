@@ -17,6 +17,7 @@
     "@cmfcmf/docusaurus-search-local": "^1.1.0",
     "@docusaurus/core": "3.1.1",
     "@docusaurus/preset-classic": "3.1.1",
+    "@docusaurus/theme-common": "^3.1.1",
     "@mdx-js/react": "^3.0.1",
     "clsx": "^2.1.0",
     "docusaurus-plugin-image-zoom": "^2.0.0",
@@ -27,7 +28,11 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.1.1",
-    "@docusaurus/types": "^3.1.1"
+    "@docusaurus/types": "^3.1.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "postcss-import": "^16.0.1",
+    "tailwindcss": "^3.4.1"
   },
   "browserslist": {
     "production": [

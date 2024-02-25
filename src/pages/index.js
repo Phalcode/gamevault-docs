@@ -7,6 +7,15 @@ import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import * as Swetrix from "swetrix";
 import styles from "./index.module.css";
 import Head from "@docusaurus/Head";
+import { useColorMode } from "@docusaurus/theme-common";
+
+function HomepageHeaderText() {
+  const { colorMode } = useColorMode();
+  if (colorMode === "dark") {
+    return <img src="/img/logo-text-white.svg" className="h-16 nozoom" alt="Logo" />;
+  }
+  return <img src="/img/logo-text-black.svg" className="h-16 nozoom" alt="Logo" />;
+}
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -19,9 +28,10 @@ function HomepageHeader() {
         />
       </noscript>
       <div className="container">
-        <h1 className="hero__title">
-          <img src="img/logo-text-and-image-sbs.png" alt="GameVault" />
-        </h1>
+        <div className="flex flex-col justify-center items-center text-7xl font-semibold gap-4">
+          <img src="/img/logo.png" className="h-48 nozoom" alt="Logo" />
+          <HomepageHeaderText />
+        </div>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link

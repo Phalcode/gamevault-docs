@@ -32,7 +32,7 @@ If the game files are already compressed in a format that GameVault can understa
 To make your game files compatible with GameVault, you need to archive them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
 
 :::tip single-file executables
-If the game you're about to add only consists of a single executable file such as `setup_game.exe` or `setup_game.sh`, you can choose to skip this stage and proceed with [naming it](#step-3-naming-the-archive). See [here](structure.md#single-executable) for more details.
+If the game you're about to add only consists of a single executable file such as `setup_game.exe` or `setup_game.sh`, you can choose to skip this stage and proceed with [naming it](#step-3-naming-the-archive). See [here](structure#single-file-executable) for more details.
 :::
 
 ### Method 1: The Fast Way
