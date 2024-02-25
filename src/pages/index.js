@@ -98,14 +98,14 @@ export default function Home() {
         <section>
           <br />
           <h2 id="heroTitle" className="text--center">
-            Create your personal Gaming Platform
+            Create your own gaming platform
           </h2>
           <h3 id="heroSubtitle" className="text--center">
-            Do you have games on your server and need an app to download,
-            install, share, launch, and track them?
+            Do you have games on your server and need an application to
+            download, install, share, launch and track them?
           </h3>
           <h3 id="heroSubtitle" className="text--center">
-            Then you are in the right place!
+            Then you have come to the right place!
           </h3>
         </section>
         <HomepageFeatures />
