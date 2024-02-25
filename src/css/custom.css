@@ -16,7 +16,10 @@
   --ifm-color-primary-light: #4740a1;
   --ifm-color-primary-lighter: #4b43a8;
   --ifm-color-primary-lightest: #5850b9;
-  --ifm-background-color: #e2e1ef;
+  --ifm-background-surface-color: #d9d7ea !important;
+  --ifm-navbar-background-color: #e2e1ef !important;
+  --ifm-background-color: #e2e1ef !important;
+  --ifm-footer-background-color: #d9d7ea !important;
   --ifm-code-font-size: 95%;
 }
 
@@ -29,5 +32,8 @@
   --ifm-color-primary-light: #b8b3e1;
   --ifm-color-primary-lighter: #c4c0e6;
   --ifm-color-primary-lightest: #e9e8f6;
-  --ifm-background-color: #11101e;
+  --ifm-background-surface-color: #171528 !important;
+  --ifm-navbar-background-color: #11101e !important;
+  --ifm-background-color: #11101e !important;
+  --ifm-footer-background-color: #171528 !important;
 }
