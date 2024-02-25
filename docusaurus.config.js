@@ -203,7 +203,7 @@ const config = {
       },
       prism: {
         theme: lightTheme,
-        darkTheme: darkTheme,
+        darkTheme,
         additionalLanguages: ["bash", "json"],
       },
       zoom: {
@@ -211,8 +211,8 @@ const config = {
           "img:not(nav img):not(footer img):not(.nozoom):not([alt~='ko-fi']):not([alt~='GameVault'])",
         config: {
           background: {
-            light: "rgb(255, 255, 255)",
-            dark: "rgb(50, 50, 50)",
+            light: "#e2e1ef",
+            dark: "#171528",
           },
         },
       },
