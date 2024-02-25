@@ -104,7 +104,6 @@ const config = {
           height: "30vh",
           href: "https://phalco.de",
         },
-        style: "dark",
         links: [
           {
             title: "Shortcuts",
