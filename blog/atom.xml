@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
-    <icon>https://gamevau.lt/img/logo-image.png</icon>
+    <icon>https://gamevau.lt/img/logo.png</icon>
     <entry>
         <title type="html"><![CDATA[Join the GameVault Early-Access Program Now!]]></title>
         <id>https://gamevau.lt/blog/2023/12/09/</id>
@@ -195,7 +195,7 @@
         <summary type="html"><![CDATA[Hey folks,]]></summary>
         <content type="html"><![CDATA[<p>Hey folks,</p>
 <p>Great news. We've successfully migrated our App name in its entirety and will resume advertising as soon as it's published on the Microsoft Store.</p>
-<p>Just a heads up, there might be a surge of new users joining the <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> server due to us promoting Gamevault across all available platforms now.</p>
+<p>Just a heads up, there might be a surge of new users joining the <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> server due to us promoting GameVault across all available platforms now.</p>
 <p>You're welcome to join in and spread the word about GameVault with your friends, family, social network, or colleagues!</p>
 <p><strong>Let's decipher the mystery behind the new logo:</strong>
 <img decoding="async" loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_nolZ"></p>
