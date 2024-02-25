@@ -18,7 +18,7 @@ As of now, we are offering the following features:
 
 ## Pricing
 
-The GameVault+ subscription is priced affordably at **€2.99/month** or **€29.99/year**.
+The GameVault+ subscription is priced affordably at **€ 4.99/month** or **€ 49.99/year**.
 
 ## Get Started
 
