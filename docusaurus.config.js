@@ -127,7 +127,7 @@ const config = {
             ],
           },
           {
-            title: "Source Control",
+            title: "Code",
             items: [
               {
                 label: "Roadmap",
@@ -140,7 +140,7 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Socials",
             items: [
               {
                 label: "Reddit",
@@ -160,20 +160,20 @@ const config = {
             title: "Support us",
             items: [
               {
-                label: "💙 GitHub Sponsors",
+                label: "GitHub Sponsors",
                 href: "https://github.com/sponsors/Phalcode",
               },
               {
                 href: "https://ko-fi.com/phalcode",
-                label: "❤️ Ko-Fi",
+                label: "Ko-Fi",
               },
               {
                 href: "https://liberapay.com/phalcode",
-                label: "💛 Liberapay",
+                label: "Liberapay",
               },
               {
                 href: "https://www.paypal.me/phalcode",
-                label: "🩵 PayPal",
+                label: "PayPal",
               },
             ],
           },
@@ -181,20 +181,16 @@ const config = {
             title: "Legals",
             items: [
               {
-                label: "Privacy Policy",
-                href: "https://phalco.de/privacy",
-              },
-              {
                 label: "Legal Notice",
                 href: "https://phalco.de/legal",
               },
               {
-                label: "Datenschutzerklärung",
-                href: "https://phalco.de/privacy-de",
+                label: "Privacy Policy",
+                href: "https://phalco.de/privacy",
               },
               {
-                label: "Impressum",
-                href: "https://phalco.de/legal-de",
+                label: "Terms of Service",
+                href: "https://phalco.de/tos",
               },
             ],
           },
