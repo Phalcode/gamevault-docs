@@ -42,10 +42,14 @@
 }
 
 img[alt="GameVault+ Banner"] {
-  height: 4em;
-  width: 4em;
+  height: 3.75rem;
 }
 
-.items-end {
+.banner {
+  display: flex;
+  gap: 0.5rem;
   align-items: end;
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  line-height: 1;
 }
