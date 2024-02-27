@@ -68,6 +68,12 @@ You can enjoy the benefits of GameVault+ on any GameVault Server you connect to.
 
 Your subscription isn't restricted to a specific number of devices at the moment.
 
+### Can GameVault+ be used offline?
+
+Initially, you'll need an internet connection to set up your GameVault+ license.
+
+However, once the setup is complete, GameVault+ can be accessed offline throughout your subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it only requires an internet connection once a year.
+
 ### How does GameVault+ ensure user privacy protection?
 
 At Phalcode, keeping user privacy safe is our very top priority. We use strong security measures, including encryption, to protect user data. We also follow GDPR rules to make sure we're following privacy laws.
