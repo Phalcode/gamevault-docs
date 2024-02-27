@@ -7,29 +7,30 @@ description: Upgrade your gaming experience with GameVault+, an affordable premi
     <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/> 
     <strong>GameVault+</strong>
 </div>
-> Elevate Your Gaming Experience with Premium Features
-
-## Introduction
-
-Welcome to **GameVault+**, the premium upgrade designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
-
-## Feature List
-
-As of now, we are offering the following features:
-
-- 📸 Uploading animated profile pictures
-
-## Pricing
-
-The GameVault+ subscription is priced affordably at **€ 4.99/month** or **€ 49.99/year**.
-
-## Get Started
+> Elevate Your GameVault Experience with Premium Features
 
 :::info Work in progress
 We are still preparing the GameVault+ product. Stay tuned!
 :::
 
+## Introduction
+
+Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this and our other projects alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
+
+## Feature List
+
+As of now, we are offering the following features:
+
+- 📸 Upload animated profile pictures
+- 🎨 Apply custom themes
+
+## Pricing
+
+The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.99/year**.
+
 <!--
+## Get Started
+
 1. [Sign up](https://phalco.de/account/signup) or [log in](https://phalco.de/account/login) to your Phalcode account
 2. [Subscribe to GameVault+](https://phalco.de/products/gamevault-plus)
 3. [Set up your GameVault Client](/docs/client-docs/gamevault-plus)
@@ -39,7 +40,7 @@ We are still preparing the GameVault+ product. Stay tuned!
 
 ### What is Phalcode?
 
-Phalcode is the small company behind GameVault. It is a software startup based in germany. You can find more information about us on our [website](https://phalco.de).
+Phalcode is the small startup company developing GameVault. We are based in germany. You can find more information about us on our [website](https://phalco.de).
 
 ### How do I manage billing and payments?
 
@@ -47,23 +48,35 @@ GameVault+ uses the Stripe billing system for your convenience. Easily handle yo
 
 ### What payment methods are accepted for GameVault+ subscriptions?
 
-All of our supported payment methods are listed on our checkout page.
+We offer several easy ways to pay for your GameVault+ subscription. You can use credit or debit cards, popular digital wallets, various bank redirects or even SEPA direct debit transfers. We want to make it convenient for you to choose how you pay.
 
-We accept various common payment methods including cards, popular digital wallets like Apple Pay and Google Pay, well-known options such as PayPal and Klarna, bank redirects like Giropay and iDEAL, and direct debit methods such as SEPA Direct Debit Scheme, ensuring you have flexibility in how you pay.
+:::note Important: Potential Delays
+Please be aware that if you use SOFORT or SEPA Direct Debit, there might be delays in confirming your payment. To get your GameVault+ subscription quickly, we recommend using a payment method that confirms faster.
+:::
 
 ### Are there going to be more features added to GameVault+?
 
-Expect updates with awesome new GameVault+ features and improvements down thre road. We are committed to enhancing the GameVault+ experience.
+Of course!, You are the people keeping our project alive after all.
+
+Expect updates with awesome new GameVault+ content and improvements down thre road. We are committed to enhancing the GameVault+ experience.
 
 ### Can GameVault+ be shared with multiple users?
 
-No, your GameVault+ subscription is for personal use only. Please refrain from sharing it with others.
+No, your GameVault+ subscription is designed for personal use only. Please avoid sharing it with anyone else.
 
-### How is user privacy protected with GameVault+?
+You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features offered by GameVault+ in their configurations.
 
-User privacy is our top priority. Robust security measures, including encryption, are in place to safeguard user data. Review our [privacy policy](https://phalco.de/privacy) for details on our commitment to protecting user information.
+Your subscription isn't restricted to a specific number of devices at the moment.
 
-### Will GameVault+ support more integrations in the future?
+### How does GameVault+ ensure user privacy protection?
+
+At Phalcode, keeping user privacy safe is our very top priority. We use strong security measures, including encryption, to protect user data. We also follow GDPR rules to make sure we're following privacy laws.
+
+Additionally, all billing and payment info is stored securely on the servers of our billing partner, Stripe, which meets PCI compliance standards. For more details on Stripe's security, you can check it out [here](https://docs.stripe.com/security).
+
+You can find all details in our [privacy policy](https://phalco.de/privacy).
+
+### Will GameVault+ support more integrations with other software in the future?
 
 We hope so. We're actively exploring partnerships and integrations with other gaming platforms and tools to provide a more interconnected gaming experience.
 
@@ -73,7 +86,8 @@ Certainly! We encourage user feedback and suggestions. While we may not implemen
 
 ### Are commercial licenses available for GameVault+?
 
-For commercial use, please [contact us directly](mailto:contact@phalco.de) to discuss an individual licensing agreement. Standard subscriptions are tailored for individual users, but we're happy to collaborate with businesses for customized solutions.
+There are, but for commercial use, please [contact us directly](mailto:contact@phalco.de) to discuss an individual licensing agreement.  
+Personal subscriptions are tailored for individual users, but we're happy to collaborate with businesses for customized solutions and volume licenses.
 
 ### What if i cant afford GameVault+?
 
