@@ -64,9 +64,13 @@ Either make sure this user has permissions to read/write to the folders you map 
 - Verify if [your file names are correct](./server-docs/structure.md)
 - Verify if you accidently marked your game as `(NC)` (No Cache Flag)
 
+### Lost my Admin Role
+
+- Refer to [this](./server-docs/user-management#admin-role-recovery) for instructions on how to regain admin privileges for your user.
+
 ### Forgot my Admin Password
 
-- Refer to [this](./server-docs/user-management#recovering-access-to-admin-user-after-password-loss) for instructions on how to regain access to your admin account.
+- Refer to [this](./server-docs/user-management#admin-password-recovery) for instructions on how to reset the password of your admin user.
 
 ### GameVault Backend: SIGILL / Illegal Instruction (Core Dumped)
 
@@ -78,8 +82,8 @@ Until then, we're constrained by our current circumstances. Sorry.
 
 ### Game Downloads are slow
 
-- Make sure the Clients Bandwidth Speed Limit is unset (0)
-- Make sure the Servers Bandwidth Speed Limit is unset (`SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS`)
+- Make sure the Clients Bandwidth Speed Limit is unset under `Settings -> Application`
+- Make sure the Servers Bandwidth Speed Limit is unset (`SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` environment variable unset or 0)
 - Restart your Client and Server
 - If your server is in your LAN, make sure you don't mistakenly access it from WAN
 - Check your middle-mans: Proxies, VPNs and older Network Hardware could all affect the download speeds.
