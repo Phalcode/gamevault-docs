@@ -4,7 +4,7 @@ description: Upgrade your gaming experience with GameVault+, an affordable premi
 ---
 
 <div class="banner" >
-    <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/> 
+    <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/>
     <strong>GameVault+</strong>
 </div>
 > Elevate Your GameVault Experience with Premium Features
@@ -21,30 +21,30 @@ Welcome to **GameVault+**, the premium upgrade subscription designed for enthusi
 
 As of now, we are offering the following features:
 
-- 📸 Upload animated profile pictures
-- 🎨 Apply custom themes
+- 📸 Uploading animated profile pictures
+- 🎨 Custom Themes
+- 💻 GameVault Client API (Interfaces for integrations like Playnite)
 
 ## Pricing
 
-The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.99/year**.
+The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.90/year**.
 
-<!--
 ## Get Started
 
-1. [Sign up](https://phalco.de/account/signup) or [log in](https://phalco.de/account/login) to your Phalcode account
-2. [Subscribe to GameVault+](https://phalco.de/products/gamevault-plus)
+1. [Sign up or sign in](https://phalco.de/account/login) to your Phalcode account
+2. [Subscribe to a GameVault+ Plan](https://phalco.de/products/gamevault-plus/checkout)
 3. [Set up your GameVault Client](/docs/client-docs/gamevault-plus)
-4. **Enjoy the premium features** -->
+4. **Enjoy premium features while supporting us 🥳💃**
 
 ## Frequently Asked Questions
 
 ### What is Phalcode?
 
-Phalcode is the small startup company developing GameVault. We are based in germany. You can find more information about us on our [website](https://phalco.de).
+Phalcode is the small startup company developing GameVault. We are just two friends developing software and based in germany. You can find more information about us on our [website](https://phalco.de).
 
 ### How do I manage billing and payments?
 
-GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [the Stripe Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
+GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [our Stripe Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
 
 ### What payment methods are accepted for GameVault+ subscriptions?
 

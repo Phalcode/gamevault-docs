@@ -79,7 +79,21 @@ const config = {
             label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/gamevault-plus", label: "GameVault+", position: "left" },
+          {
+            label: "GameVault+",
+            to: "/gamevault-plus",
+            position: "left",
+            items: [
+              {
+                to: "/gamevault-plus",
+                label: "About GameVault+",
+              },
+              {
+                to: "/gamevault-plus/theme-generator",
+                label: "Theme Generator",
+              },
+            ],
+          },
           {
             label: "GitHub",
             href: "https://github.com/phalcode",

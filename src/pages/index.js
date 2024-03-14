@@ -6,7 +6,6 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import * as Swetrix from "swetrix";
 import styles from "./index.module.css";
-import Head from "@docusaurus/Head";
 import { useColorMode } from "@docusaurus/theme-common";
 
 function HomepageHeaderText() {
@@ -90,9 +89,6 @@ export default function Home() {
       title={`${siteConfig.title}`}
       description="the self-hosted gaming platform for drm-free games"
     >
-      <Head>
-        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-      </Head>
       <HomepageHeader />
       <main>
         <section>
