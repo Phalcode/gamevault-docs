@@ -33,6 +33,18 @@ const config = {
     locales: ["en"],
   },
   plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        fromExtensions: ["html", "htm"], // /page.html -> /page
+        redirects: [
+          {
+            from: "/license",
+            to: "/docs/license-contribute",
+          },
+        ],
+      },
+    ],
     require.resolve("docusaurus-plugin-image-zoom"),
     require.resolve("@cmfcmf/docusaurus-search-local"),
     tailwindPlugin,
@@ -194,6 +206,10 @@ const config = {
           {
             title: "Legals",
             items: [
+              {
+                label: "License",
+                href: "/license",
+              },
               {
                 label: "Legal Notice",
                 href: "https://phalco.de/legal",
