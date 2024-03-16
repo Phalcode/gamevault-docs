@@ -104,7 +104,9 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 ### User
 
-- Login, logout, and register new users.
+- Log In to GameVault Backend Server.
+- Log Out from GameVault Backend Server.
+- Register a new user on the GameVault Backend Server.
 
 ### Data
 

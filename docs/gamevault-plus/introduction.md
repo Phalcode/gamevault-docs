@@ -1,5 +1,6 @@
 ---
-title: "GameVault+"
+title: "Introduction"
+sidebar_position: 1
 description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
 ---
 
@@ -9,13 +10,9 @@ description: Upgrade your gaming experience with GameVault+, an affordable premi
 </div>
 > Elevate Your GameVault Experience with Premium Features
 
-:::info Work in progress
-We are still preparing the GameVault+ product. Stay tuned!
-:::
-
 ## Introduction
 
-Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this and our other projects alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
+Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this project alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
 
 ## Feature List
 
@@ -31,9 +28,9 @@ The GameVault+ subscription is priced affordably at only **€ 4.99/month** or *
 
 ## Get Started
 
-1. [Sign up or sign in](https://phalco.de/account/login) to your Phalcode account
+1. [Sign up or sign in](https://phalco.de/account/signin) to your Phalcode account
 2. [Subscribe to a GameVault+ Plan](https://phalco.de/products/gamevault-plus/checkout)
-3. [Set up your GameVault Client](/docs/client-docs/gamevault-plus)
+3. [Set up your GameVault Client Application](/docs/gamevault-plus/setup)
 4. **Enjoy premium features while supporting us 🥳💃**
 
 ## Frequently Asked Questions
@@ -66,13 +63,13 @@ No, your GameVault+ subscription is designed for personal use only. Please avoid
 
 You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features offered by GameVault+ in their configurations.
 
-Your subscription isn't restricted to a specific number of devices at the moment.
+Your subscription isn't restricted to a specific number of active devices at the moment.
 
 ### Can GameVault+ be used offline?
 
-Initially, you'll need an internet connection to set up your GameVault+ license.
+Initially, you'll need an internet connection to download your GameVault+ license.
 
-However, once the setup is complete, GameVault+ can be accessed offline throughout your subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it only requires an internet connection once a year.
+Once that setup is complete, GameVault+ can be accessed offline throughout your current subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it technically only requires an internet connection once a year.
 
 ### How does GameVault+ ensure user privacy protection?
 

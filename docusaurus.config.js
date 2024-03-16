@@ -93,18 +93,8 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           {
             label: "GameVault+",
-            to: "/gamevault-plus",
+            to: "/docs/gamevault-plus/introduction",
             position: "left",
-            items: [
-              {
-                to: "/gamevault-plus",
-                label: "About GameVault+",
-              },
-              {
-                to: "/gamevault-plus/theme-generator",
-                label: "Theme Generator",
-              },
-            ],
           },
           {
             label: "GitHub",
