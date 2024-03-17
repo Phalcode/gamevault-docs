@@ -3,24 +3,18 @@ title: "Themes"
 sidebar_position: 3
 ---
 
-GameVault offers the option to apply different themes to your GameVault client application. With GameVault+, you gain access to a variety of additional themes, including custom themes, to personalize your experience.
+With [GameVault+](/gamevault-plus), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
 
-## Default Themes
+## Premium Themes
 
-### Free Themes
-
-- GameVault Theme Dark: The default GameVault theme, reflecting the 2024 GameVault rebrand with dark tones.
-- GameVault Theme Light: An alternative light version of the default GameVault theme, also based on the 2024 GameVault rebrand.
-- GameVault Theme Classic: This theme preserves the traditional application colors for users accustomed to the old design.
-
-### Premium Themes
+GameVault+ ships with the following premium themes by default:
 
 - Phalcode Theme Dark: A dark theme aligned with our Phalcode brand.
 - Phalcode Theme Light: A light theme aligned with our Phalcode brand.
 
-### Custom Themes
+## Custom Themes
 
-GameVault+ offers the flexibility to apply custom themes, allowing users to incorporate colors and images of their preference.
+GameVault+ also offers the flexibility to apply custom themes, allowing users to incorporate designs of their preference.
 
 A public repository of custom themes shared by our community can be found [here](https://github.com/Phalcode/gamevault-community-themes/).
 
@@ -33,16 +27,18 @@ To install a custom theme, follow these steps:
 
 ### Creating a Custom Theme
 
-Creating a custom theme is straightforward. You can either use our Theme Generator or create a new .xaml file based on our templates and save it in the `themes` folder.
+Creating a custom theme is straightforward. You can either use our Theme Generator or create a new .xaml file based on our template and save it in the `themes` folder.
 
 #### Theme Generator
 
-An easy-to-use Theme Generator is available [here](https://themes.gamevau.lt/).
+**Coming Soon!**
+
+<!-- An easy-to-use Theme Generator is available [here](https://themes.gamevau.lt/). -->
 
 #### Template File
 
-Just copy one of the existing templates from the [themes repository](https://github.com/Phalcode/gamevault-community-themes/), edit it using a text editor, and save it in the `themes` folder to try it out. Be aware that the hex codes are ARGB syntax and not RGB syntax.
+Just copy the latest template from the [community themes repository](https://github.com/Phalcode/gamevault-community-themes/), edit it using a text editor, and save it in the `themes` folder to try it out. Be aware that the hex codes are ARGB syntax and not RGB syntax.
 
 ### Sharing Custom Themes
 
-Share your custom themes with the community by creating a pull request to the [themes repository](https://github.com/Phalcode/gamevault-community-themes/).
+You can share your custom themes with the community by creating a pull request to the [community themes repository](https://github.com/Phalcode/gamevault-community-themes/).

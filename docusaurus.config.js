@@ -39,6 +39,10 @@ const config = {
         fromExtensions: ["html", "htm"], // /page.html -> /page
         redirects: [
           {
+            from: "/gamevault-plus",
+            to: "/docs/gamevault-plus/introduction",
+          },
+          {
             from: "/license",
             to: "/docs/license-contribute",
           },
@@ -93,7 +97,7 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           {
             label: "GameVault+",
-            to: "/docs/gamevault-plus/introduction",
+            to: "/gamevault-plus",
             position: "left",
           },
           {
