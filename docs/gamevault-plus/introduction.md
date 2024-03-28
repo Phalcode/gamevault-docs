@@ -32,12 +32,16 @@ The GameVault+ subscription is priced affordably at only **€ 4.99/month** or *
 
 ## Get Started
 
-<!-- TODO: REMOVE TEST URLS AFTER LAUNCH -->
+Coming soon!
 
-1. [Sign up or sign in](https://test.phalco.de/account/login) to your personal Phalcode account
-2. [Subscribe to a GameVault+ Plan](https://test.phalco.de/products/gamevault-plus/checkout)
+<!-- TODO: UNCOMMENT AFTER LAUNCH
+
+1. [Sign up or sign in](https://phalco.de/account/login) to your personal Phalcode account
+2. [Subscribe to a GameVault+ Plan](https://phalco.de/products/gamevault-plus/checkout)
 3. [Set up your GameVault Client Application](/docs/gamevault-plus/client-setup)
 4. **Enjoy premium features while supporting us 🥳💃**
+
+-->
 
 ## Questions and Answers
 
