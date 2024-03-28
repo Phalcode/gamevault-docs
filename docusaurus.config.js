@@ -97,7 +97,7 @@ const config = {
           { to: "/blog", label: "Blog", position: "left" },
           {
             label: "GameVault+",
-            to: "/gamevault-plus",
+            to: "/docs/gamevault-plus/introduction",
             position: "left",
           },
           {
@@ -202,7 +202,7 @@ const config = {
             items: [
               {
                 label: "License",
-                href: "/license",
+                href: "/docs/license-contribute",
               },
               {
                 label: "Legal Notice",

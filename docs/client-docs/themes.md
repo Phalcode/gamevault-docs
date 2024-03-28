@@ -2,7 +2,7 @@
 title: "Themes"
 ---
 
-GameVault offers the option to apply different themes to your GameVault client application. With [GameVault+](/gamevault-plus), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
+GameVault offers the option to apply different themes to your GameVault client application. With [GameVault+](pathname:///gamevault-plus), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
 
 ## Free Themes
 
@@ -12,8 +12,8 @@ GameVault offers the option to apply different themes to your GameVault client a
 
 ## Premium Themes
 
-[GameVault+](/gamevault-plus) comes with more themes you can choose from. A list of premium themes is available in the [GameVault+ Themes](/docs/gamevault-plus/themes) section of the documentation.
+[GameVault+](pathname:///gamevault-plus) comes with more themes you can choose from. A list of premium themes is available in the [GameVault+ Themes](/docs/gamevault-plus/themes) section of the documentation.
 
 ## Custom Themes
 
-Custom themes are only available for [GameVault+](/gamevault-plus) subscribers. See [GameVault+ Themes](/docs/gamevault-plus/themes) for more information.
+Custom themes are only available for [GameVault+](pathname:///gamevault-plus) subscribers. See [GameVault+ Themes](/docs/gamevault-plus/themes) for more information.

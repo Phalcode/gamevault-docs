@@ -3,7 +3,7 @@ title: "Themes"
 sidebar_position: 3
 ---
 
-With [GameVault+](/gamevault-plus), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
+With [GameVault+](pathname:///gamevault-plus), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
 
 ## Premium Themes
 
