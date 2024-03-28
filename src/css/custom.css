@@ -1,8 +1,4 @@
-/**
-* Any CSS included here will be global. The classic template
-* bundles Infima by default. Infima is a CSS framework designed to
-* work well for content-centric websites.
-*/
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -48,7 +44,7 @@ img[alt="GameVault+ Banner"] {
 .banner {
   display: flex;
   gap: 0.5rem;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 1rem;
   font-size: 3.75rem;
   line-height: 1;

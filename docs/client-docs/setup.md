@@ -100,7 +100,7 @@ Username: **demo**
 Password: **demodemo**  
 :::
 
-### Step 3: Login or Register
+### Step 3: Log In or Register
 
 In this step, you will need to log in to your GameVault account on the selected backend server. Choose one of the following options based on your situation:
 
@@ -111,7 +111,7 @@ If you already have a GameVault account on the selected server, follow these ste
 1. Select "Login" from the options.
 2. Enter your login credentials (username and password) in the provided fields.
 3. Ensure that the credentials are specific to the GameVault backend server you have chosen.
-4. Click "Login" to proceed.
+4. Click "Log in" to proceed.
 
 #### Option 2: Register
 

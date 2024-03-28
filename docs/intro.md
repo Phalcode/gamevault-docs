@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What is GameVault?
 
-GameVault ([formerly known as "Crackpipe"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
+GameVault is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
 
 Think of it as your personal Steam or Plex server, but for your personal video game collection (and without streaming). It lets you and your friends enjoy your games from anywhere.
 
@@ -61,10 +61,10 @@ Let's take a look at all the main functions of GameVault:
 - 👥 [Multi-User Authentication](./server-docs/user-management.md)
 - 🔒 [Role-Based Access Control](./server-docs/user-management#user-roles)
 - ⏱️ [Keeps track of your users' game progress and state](./client-docs/how-to-use#tracking-your-game-progress)
-- 🚨 [Health Monitoring and Logging](./advanced-usage/api-usage)
-- 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/api-usage)
-- 🔌 [Fully Documented API](./advanced-usage/api-usage)
-- ⚙️ [Highly Configurable](./server-docs/configuration.md)
+- 🚨 [Health Monitoring and Logging](./advanced-usage/rest-api)
+- 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/rest-api)
+- 🔌 [Fully Documented API](./advanced-usage/rest-api)
+- ⚙️ [Highly Configurable](./server-docs/configuration)
 
 ## Support
 
@@ -73,7 +73,7 @@ We're working hard in our free time to provide you, your friends, and families w
 - [Ko-Fi](https://ko-fi.com/phalcode)
 - [Liberapay](https://liberapay.com/Phalcode)
 - [GitHub Sponsors](https://github.com/sponsors/Phalcode)
-- [PayPal](https://www.paypal.me/phalcode)
+- [PayPal](https://paypal.me/phalcode)
 
 Tip: If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters"-Role and permanently stand out in our [Discord](https://discord.gg/NEdNen2dSu) members list. You'll be acknowledged as a generous and wonderful person. If you donate through a different platform and want to obtain the role, simply send us a message with your receipt as proof that you're truly a Supporter.
 

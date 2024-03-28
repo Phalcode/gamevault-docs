@@ -33,6 +33,22 @@ const config = {
     locales: ["en"],
   },
   plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        fromExtensions: ["html", "htm"], // /page.html -> /page
+        redirects: [
+          {
+            from: "/gamevault-plus",
+            to: "/docs/gamevault-plus/introduction",
+          },
+          {
+            from: "/license",
+            to: "/docs/license-contribute",
+          },
+        ],
+      },
+    ],
     require.resolve("docusaurus-plugin-image-zoom"),
     require.resolve("@cmfcmf/docusaurus-search-local"),
     tailwindPlugin,
@@ -79,7 +95,11 @@ const config = {
             label: "Documentation",
           },
           { to: "/blog", label: "Blog", position: "left" },
-          { to: "/gamevault-plus", label: "GameVault+", position: "left" },
+          {
+            label: "GameVault+",
+            to: "/docs/gamevault-plus/introduction",
+            position: "left",
+          },
           {
             label: "GitHub",
             href: "https://github.com/phalcode",
@@ -127,7 +147,7 @@ const config = {
             ],
           },
           {
-            title: "Code",
+            title: "Development",
             items: [
               {
                 label: "Roadmap",
@@ -180,6 +200,10 @@ const config = {
           {
             title: "Legals",
             items: [
+              {
+                label: "License",
+                href: "/docs/license-contribute",
+              },
               {
                 label: "Legal Notice",
                 href: "https://phalco.de/legal",

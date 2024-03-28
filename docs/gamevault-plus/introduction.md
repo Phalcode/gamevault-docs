@@ -1,50 +1,61 @@
 ---
-title: "GameVault+"
+title: "Introduction"
+sidebar_position: 1
 description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
 ---
 
 <div class="banner" >
-    <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/> 
+    <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/>
     <strong>GameVault+</strong>
 </div>
 > Elevate Your GameVault Experience with Premium Features
 
-:::info Work in progress
-We are still preparing the GameVault+ product. Stay tuned!
+:::warning Work in Progress!
+GameVault+ is currently **only available for early-access testers** (starting April 1st, 2024). See [blog post](/blog/2024/03/28) for more details.
 :::
 
 ## Introduction
 
-Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this and our other projects alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
+Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this project alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
 
 ## Feature List
 
 As of now, we are offering the following features:
 
-- 📸 Upload animated profile pictures
-- 🎨 Apply custom themes
+- 📸 Uploading animated profile pictures
+- 🎨 Custom Themes
+- 💻 GameVault Client API (Interfaces for integrations like Playnite)
 
 ## Pricing
 
-The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.99/year**.
+The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.90/year**.
 
-<!--
 ## Get Started
 
-1. [Sign up](https://phalco.de/account/signup) or [log in](https://phalco.de/account/login) to your Phalcode account
-2. [Subscribe to GameVault+](https://phalco.de/products/gamevault-plus)
-3. [Set up your GameVault Client](/docs/client-docs/gamevault-plus)
-4. **Enjoy the premium features** -->
+Coming soon!
 
-## Frequently Asked Questions
+<!-- TODO: UNCOMMENT AFTER LAUNCH
+
+1. [Sign up or sign in](https://phalco.de/account/login) to your personal Phalcode account
+2. [Subscribe to a GameVault+ Plan](https://phalco.de/products/gamevault-plus/checkout)
+3. [Set up your GameVault Client Application](/docs/gamevault-plus/client-setup)
+4. **Enjoy premium features while supporting us 🥳💃**
+
+-->
+
+## Questions and Answers
 
 ### What is Phalcode?
 
-Phalcode is the small startup company developing GameVault. We are based in germany. You can find more information about us on our [website](https://phalco.de).
+Phalcode is the small startup company developing GameVault. We are just two friends developing software and based in germany. You can find more information about us on our [website](https://phalco.de).
+
+### I have trouble with GameVault+ and I need support. How can I contact you?
+
+Contect the developers **directly** on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription.
 
 ### How do I manage billing and payments?
 
-GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [the Stripe Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
+GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [our Stripe Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
 
 ### What payment methods are accepted for GameVault+ subscriptions?
 
@@ -66,13 +77,13 @@ No, your GameVault+ subscription is designed for personal use only. Please avoid
 
 You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features offered by GameVault+ in their configurations.
 
-Your subscription isn't restricted to a specific number of devices at the moment.
+Your subscription isn't restricted to a specific number of active devices at the moment.
 
 ### Can GameVault+ be used offline?
 
-Initially, you'll need an internet connection to set up your GameVault+ license.
+Initially, you'll need an internet connection to download your GameVault+ license.
 
-However, once the setup is complete, GameVault+ can be accessed offline throughout your subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it only requires an internet connection once a year.
+Once that setup is complete, GameVault+ can be accessed offline throughout your current subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it technically only requires an internet connection once a year.
 
 ### How does GameVault+ ensure user privacy protection?
 
