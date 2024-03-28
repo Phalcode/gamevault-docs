@@ -111,7 +111,7 @@ If you already have a GameVault account on the selected server, follow these ste
 1. Select "Login" from the options.
 2. Enter your login credentials (username and password) in the provided fields.
 3. Ensure that the credentials are specific to the GameVault backend server you have chosen.
-4. Click "Sign in" to proceed.
+4. Click "Log in" to proceed.
 
 #### Option 2: Register
 

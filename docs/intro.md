@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## What is GameVault?
 
-GameVault ([formerly known as "GameVault"](https://gamevau.lt/blog/2023/07/15)) is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
+GameVault is an innovative gaming platform providing a self-hosted, [source-available](https://wikipedia.org/wiki/Source-available_software) alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored **on your file server** in an organized way.
 
 Think of it as your personal Steam or Plex server, but for your personal video game collection (and without streaming). It lets you and your friends enjoy your games from anywhere.
 

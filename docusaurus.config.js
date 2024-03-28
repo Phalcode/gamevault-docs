@@ -147,7 +147,7 @@ const config = {
             ],
           },
           {
-            title: "Code",
+            title: "Development",
             items: [
               {
                 label: "Roadmap",

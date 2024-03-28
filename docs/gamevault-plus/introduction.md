@@ -34,16 +34,20 @@ The GameVault+ subscription is priced affordably at only **€ 4.99/month** or *
 
 <!-- TODO: REMOVE TEST URLS AFTER LAUNCH -->
 
-1. [Sign up or sign in](https://test.phalco.de/account/login) to your Phalcode account
+1. [Sign up or sign in](https://test.phalco.de/account/login) to your personal Phalcode account
 2. [Subscribe to a GameVault+ Plan](https://test.phalco.de/products/gamevault-plus/checkout)
 3. [Set up your GameVault Client Application](/docs/gamevault-plus/client-setup)
 4. **Enjoy premium features while supporting us 🥳💃**
 
-## Frequently Asked Questions
+## Questions and Answers
 
 ### What is Phalcode?
 
 Phalcode is the small startup company developing GameVault. We are just two friends developing software and based in germany. You can find more information about us on our [website](https://phalco.de).
+
+### I have trouble with GameVault+ and I need support. How can I contact you?
+
+Contect the developers **directly** on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription.
 
 ### How do I manage billing and payments?
 

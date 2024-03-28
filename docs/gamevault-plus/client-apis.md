@@ -38,8 +38,8 @@ Explore the list of actions and parameters supported by the GameVault client API
 
   - Starts and if the main application or a specific game.
   - Parameters:
-    - `minimized=[true/false*]`: Run the application minimized to the tray.
     - `gameid=[id]`: Target a specific game to show.
+    - `minimized=[true/false*]`: Run the application minimized to the tray.
 
 - `install`
 
@@ -89,7 +89,7 @@ When sending a request via URI, an additional action called `query` is available
 
 Explore examples of using the GameVault client APIs via the command line:
 
-```bash
+```ps1
 # Launch GameVault
 gamevault.exe
 
@@ -125,7 +125,7 @@ gamevault.exe help start
 
 Discover examples of using the GameVault client APIs via URI:
 
-```plaintext
+```uri
 gamevault://show
 gamevault://show?minimized=true
 gamevault://install?gameid=3
@@ -138,7 +138,7 @@ gamevault://start?gameid=3&minimized=false
 
 Explore examples of querying the GameVault client application through URI:
 
-```plaintext
+```uri
 gamevault://query?query=exists&gameid=3
 gamevault://query?query=installed&gameid=3
 gamevault://query?query=downloaded&gameid=3
