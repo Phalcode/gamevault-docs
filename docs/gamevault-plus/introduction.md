@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+hide_title: true
 sidebar_position: 1
 description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
 ---
