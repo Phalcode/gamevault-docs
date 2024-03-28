@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[8800],{33913:a=>{a.exports=JSON.parse('{"label":"official statement","permalink":"/blog/tags/official-statement","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

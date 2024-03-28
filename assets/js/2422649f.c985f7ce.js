@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[7932],{15113:a=>{a.exports=JSON.parse('{"label":"Crackpipe","permalink":"/blog/tags/crackpipe","allTagsPath":"/blog/tags","count":3,"unlisted":false}')}}]);
