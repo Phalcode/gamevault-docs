@@ -18,7 +18,7 @@ Experienced users can also simply run this command in the PowerShell:
 
 ```ps
 winget install gamevault
-```  
+```
 
 This process should be straightforward and will only consume a few minutes of your time. After installing, feel free to continue at [Initial Configuration](#initial-configuration).
 
@@ -89,7 +89,7 @@ If you have your own self-hosted GameVault server, please enter its URL in the p
 
 #### Option 2: Using the Demo Server
 
-If you only want to try out GameVault, without setting up your own server, you can use the demo server. There are no real games on the demo server and the functionality is very limited. ToFollow the instructions below:
+If you only want to try out GameVault, without setting up your own server, you can use our demo server. There open-source videogames available. Keep in mind that you will have mostly read-only non-admin rights on that server. To use the demo server, follow the instructions below:
 
 1. Enter "demo.gamevau.lt" as the URL in the provided field.
 2. This will allow you to explore the features and functionality of GameVault.
