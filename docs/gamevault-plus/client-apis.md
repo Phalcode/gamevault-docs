@@ -43,23 +43,23 @@ Explore the list of actions and parameters supported by the GameVault client API
 
 - `install`
 
-  - Installs a specific game defined by `gameid`.
+  - Starts the download of a specific game defined by `gameid`.
   - Additional parameters:
-    - **`gameid=[id]`**: Target a specific game to install.
+    - **`gameid=[id]`: Target a specific game to install.**
     - `minimized=[true/false*]`: Run the application minimized to the tray.
 
 - `uninstall`
 
   - Uninstalls a specific game defined by `gameid`.
   - Additional parameters:
-    - **`gameid=[id]`**: Target a specific game to uninstall.
+    - **`gameid=[id]`: Target a specific game to uninstall.**
     - `minimized=[true/false*]`: Run the application minimized to the tray.
 
 - `start`
 
   - Starts a specific game defined by `gameid`.
   - Additional parameters:
-    - **`gameid=[id]`**: Target a specific game to start.
+    - **`gameid=[id]`: Target a specific game to start.**
     - `minimized=[true/false*]`: Run the application minimized to the tray.
     - `autoinstall=[true/false*]`: Whether to automatically install the game if not already installed.
 
