@@ -27,7 +27,7 @@ To install a custom theme, follow these steps:
 
 ### Creating a Custom Theme
 
-Creating a custom theme is straightforward. You can either use our Theme Generator or create a new .xaml file based on our template and save it in the `themes` folder.
+Creating a custom theme is straightforward. You can just create a new .xaml file based on our template and save it in the `themes` folder.
 <!--
 #### Theme Generator
 **Coming Soon!**
