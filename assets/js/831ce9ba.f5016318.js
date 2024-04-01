@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[5734],{42243:l=>{l.exports=JSON.parse('{"label":"April Fools","permalink":"/blog/tags/april-fools","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

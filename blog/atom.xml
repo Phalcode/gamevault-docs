@@ -2,11 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2024-03-28T00:00:00.000Z</updated>
+    <updated>2024-04-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[GameVault Client is now available on Windows Phone 7 based on Microsoft Silverlight!]]></title>
+        <id>https://gamevau.lt/blog/2024/04/01/2024-04-01/</id>
+        <link href="https://gamevau.lt/blog/2024/04/01/2024-04-01/"/>
+        <updated>2024-04-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey Everyone!]]></summary>
+        <content type="html"><![CDATA[<p>Hey Everyone!</p>
+<p>The moment you've been waiting for is finally here. We've been working hard on it for months and are thrilled to announce that GameVault Client Application is <strong>now available on Windows Phone 7</strong>, powered by <strong>Microsoft Silverlight</strong>!</p>
+<p><img decoding="async" loading="lazy" alt="Windows Phone" src="https://gamevau.lt/assets/images/winphone-b86bbc15f22660b02f20e840cded2b9c.png" width="655" height="1237" class="img_nolZ"></p>
+<p>The Current PC-Version of GameVault will be discontinued soon and will no longer be available to download from the Microsoft Store, as the technology is too new and not well supported yet. We needed a battle-tested framework to ensure compatibility, so we decided to switch to Windows Phone 7 and Silverlight. Also, the mobile platform just has massive market share, compared to PC.</p>
+<p>We understand the excitement and anticipation surrounding this release, and we're just as eager as you are to see how this integration will enhance your experience.</p>
+<p>With GameVault on your Windows Phone 7 device, you can carry your favorite games with you wherever you go. Whether you're battling fierce foes, exploring vast virtual worlds, or simply passing the time with a quick puzzle game, GameVault ensures that the thrill of gaming is always at your fingertips.</p>
+<p>Thanks to the seamless integration with Microsoft Silverlight, navigating through your game library has never been smoother or more intuitive. The Metro Live Tiles add a touch of elegance to the user interface, making it a joy to browse through your collection and discover new games.</p>
+<p>And the best part? This is just the beginning. Our team is already hard at work on further enhancements and features, including the highly anticipated Holodeck edition of GameVault aswell as the new integrated "Bird Feeding Timer" feature, that automatically warns you when your pets are about to starve.</p>
+<p>We're incredibly excited to embark on this journey with you and to continue pushing the boundaries of innovation. So what are you waiting for? Head over to the Windows Phone Store and migrate today to start your gaming adventure!</p>
+<p>Happy gaming... and April Fools!</p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <category label="April Fools" term="April Fools"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Announcing GameVault+ (coming soon)]]></title>
         <id>https://gamevau.lt/blog/2024/03/28/</id>
@@ -14,17 +36,19 @@
         <updated>2024-03-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey Everyone!]]></summary>
         <content type="html"><![CDATA[<p>Hey Everyone!</p>
-<p>It feels like it's been ages since we last caught up, but trust me, the silence from our end doesn't mean we've been slacking off. In fact, quite the opposite has been happening behind the scenes.</p>
-<p>When Philip and I first launched this application, it was born out of a simple need for a solution to a problem we thought was very particular and only for ourselves. We never imagined it would resonate with others or find its own place in the market. Frankly, we thought it might end up just another forgotten repository on GitHub, gathering virtual dust with no one paying it any mind.</p>
+<p>It feels like it's been ages since we last caught up regarding the development of <a href="https://gamevau.lt/" target="_blank" rel="noopener noreferrer">GameVault (the self-hostable platform for drm-free videogames)</a>, but trust me, the silence from our end doesn't mean we've been slacking off. In fact, quite the opposite has been happening behind the scenes.</p>
+<p>When my friend and I first launched this application, it was born out of a simple need for a solution to a problem we thought was very particular and only for ourselves. Having a steam-like platform for game files lying on my home server.</p>
+<p>We never imagined it would resonate with others or find its own place in the market. Frankly, we thought it might end up just another forgotten repository on GitHub, gathering virtual dust with no one paying it any mind.</p>
 <p>But boy, were we wrong. The response to our app was unexpectedly large and overwhelming. Thousands of people are using GameVault today, and it seems there's quite a demand out there for the exact product we've been building.</p>
-<p>Despite juggling multiple jobs, we've poured our hearts and souls into this project during our spare moments, striving to offer a self-hosted alternative to the gaming platforms out there. And while we've received some generous donations (<em>shoutout to our two loyal monthly donors btw – you know who you are, and we're endlessly grateful!</em>), it's clear that relying solely on sporadic tips isn't sustainable for the long term.</p>
-<p>So, it's time for a change – a big one. We're thrilled to announce the upcoming release of a new version of our client application, complete with an optional subscription model we're calling...</p>
-<a class="banner" href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank"><img src="https://gamevau.lt/img/gamevault-plus.png" alt="GameVault+ Banner"><strong>GameVault+</strong></a>
+<p>We’re a small indie team of two and despite juggling multiple jobs, we've poured our hearts and souls into this project during our spare times, striving to offer a self-hosted alternative to the gaming platforms out there. And while we've received some generous donations (<em>shoutout to our two loyal monthly donors btw – you know who you are, and we're endlessly grateful!</em>), it's clear that relying solely on sporadic tips isn't sustainable for the long term and we need financial support to maintain our services and justify our time investment towards our families.</p>
+<p>So, it's time for a slight change. We're thrilled to announce the upcoming release of a new version of our client application, complete with an <strong>optional</strong> subscription model we're calling...</p>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="gamevault"><a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+</a><a href="https://gamevau.lt/blog/2024/03/28/#gamevault" class="hash-link" aria-label="Direct link to gamevault" title="Direct link to gamevault">​</a></h2>
 <h2 class="anchor anchorWithStickyNavbar_yXGG" id="what-is-gamevault">What is GameVault+?<a href="https://gamevau.lt/blog/2024/03/28/#what-is-gamevault" class="hash-link" aria-label="Direct link to What is GameVault+?" title="Direct link to What is GameVault+?">​</a></h2>
 <p>First, to clear some of the confusion:</p>
-<p><strong>No, this is not some shady scammy "We're going enterprise" rugpull.</strong></p>
-<p><a href="https://github.com/Phalcode/gamevault-app/issues/151" target="_blank" rel="noopener noreferrer">It was long planned on our board and well discussed within our community</a>. Think of <a href="https://gamevau.lt/docs/gamevault-plus/introduction">GameVault+</a> as our way of saying "thank you" to our supporters. To be more specific, it's us giving back some exclusive perks that are not necessarily needed to use GameVault, to our supporters, while they help us keep the lights on here at Phalcode.</p>
-<p>With GameVault+, you'll gain access to premium nice-to-have features designed to enhance your GameVault experience, all for a small monthly fee of €5.</p>
+<p><strong>No, this is not some shady scammy "We're going enterprise" rugpull</strong>.
+The core of GameVaults upcoming features and the features you enjoyed until now will always remain free. Additionally the system is <a href="https://gamevau.lt/docs/gamevault-plus/introduction/#what-if-i-cant-afford-gamevault" target="_blank" rel="noopener noreferrer">designed to be easily bypassed if you can't or dont want to afford it.</a></p>
+<p><a href="https://github.com/Phalcode/gamevault-app/issues/151" target="_blank" rel="noopener noreferrer">It was long planned on our board and well discussed within our community</a>. Think of <a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+</a> as our way of saying "thank you" to our supporters and to motivate them to support us regularly. To be more specific, it's us giving back some goodie-features that are not necessarily needed to use GameVault back to our supporters, while they help us keep the lights on here at Phalcode.</p>
+<p>With GameVault+, you'll gain access to premium nice-to-have features designed to enhance your GameVault experience, all for a small monthly fee of €4,99 monthly or €49.90 anually.</p>
 <p>Currently, these features include:</p>
 <ul>
 <li>Uploading animated profile pictures</li>
@@ -32,14 +56,14 @@
 <li>Activation of the GameVault Client API (CLI, URI, and NamedPipe Interfaces Used for client integrations with 3rd party tools like Playnite)</li>
 </ul>
 <p>But there are more to come! We will be enhancing this offering with more features, whenever we see room for it, as GameVault+ subscribers are the ones, who keep this project alive.</p>
-<p>All details and a Q&amp;A are on the <a href="https://gamevau.lt/docs/gamevault-plus/introduction">GameVault+ page</a>.</p>
-<p><strong>We'll be rolling out this new product to our early access users first</strong> to get the product and the infrastructure around it tested, tweaking and refining it based on your feedback before making it available to everyone. It's an exciting new chapter for us, and we can't wait to have you along for the ride.</p>
+<p>All details and a Q&amp;A are on the <a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+ page</a>.</p>
+<p><strong>We'll be rolling out this new product today to our early access users first</strong> to get the product and the infrastructure around it tested, tweaking and refining it based on your feedback before making it available to everyone. It's an exciting new chapter for us, and we can't wait to have you along for the ride.</p>
 <h2 class="anchor anchorWithStickyNavbar_yXGG" id="so-whats-next">So what's next?<a href="https://gamevau.lt/blog/2024/03/28/#so-whats-next" class="hash-link" aria-label="Direct link to So what's next?" title="Direct link to So what's next?">​</a></h2>
 <p>We will polish the rough edges of GameVault+ and bring it to life in the next few weeks, hopefully. You will probably already see some documentation on this website for it. Keep in mind, this is all a work in progress, and we will announce the final release soon.</p>
 <p>After that, we will need to urgently find a solution to our heavy reliance on the <a href="https://discord.com/channels/1100920639667306496/1134496308846137404/1217726870959820861" target="_blank" rel="noopener noreferrer">degrading and unmaintained RAWG Database</a>. We are already in contact for potential partnerships with Video-Game Databases.</p>
 <p>Finally, we will need to do some refactoring of our client application's architecture.</p>
 <p>But stay tuned because once all of this is done, the Next Big Feature we'll be focusing on will be open for <strong>the community to decide</strong> in <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">our #polls channel on Discord</a>. So make sure to join "The Council" to get notified and vote on your most desired feature.</p>
-<p>See you on the other side!</p>]]></content>
+<p>Thank you all for supporting us and looking forward to seeing you all on our next updates!</p>]]></content>
         <author>
             <name>Alper Alkan</name>
             <uri>https://github.com/Alfagun74</uri>
