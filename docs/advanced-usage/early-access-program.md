@@ -50,7 +50,7 @@ To become part of the program, follow these simple steps:
 
 4. Start the App. If it asks if you want to update you have to decline it every time.
 
-5. Check the version in the settings. If it does not contain `EA`, you're back on the stable channel.
+5. Check the version in the settings. If it does not contain `EA` or `Early Access`, you're back on the stable channel.
 
 ### Where to report bugs and suggest/discuss changes?
 
