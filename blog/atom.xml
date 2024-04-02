@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[Hey Everyone!]]></summary>
         <content type="html"><![CDATA[<p>Hey Everyone!</p>
 <p>The moment you've been waiting for is finally here. We've been working hard on it for months and are thrilled to announce that GameVault Client Application is <strong>now available on Windows Phone 7</strong>, powered by <strong>Microsoft Silverlight</strong>!</p>
-<p><img decoding="async" loading="lazy" alt="Windows Phone" src="https://gamevau.lt/assets/images/winphone-b86bbc15f22660b02f20e840cded2b9c.png" width="655" height="1237" class="img_viVl"></p>
+<p><img decoding="async" loading="lazy" alt="Windows Phone" src="https://gamevau.lt/assets/images/winphone-b86bbc15f22660b02f20e840cded2b9c.png" width="655" height="1237" class="img_nolZ"></p>
 <p>The Current PC-Version of GameVault will be discontinued soon and will no longer be available to download from the Microsoft Store, as the technology is too new and not well supported yet. We needed a battle-tested framework to ensure compatibility, so we decided to switch to Windows Phone 7 and Silverlight. Also, the mobile platform just has massive market share, compared to PC.</p>
 <p>We understand the excitement and anticipation surrounding this release, and we're just as eager as you are to see how this integration will enhance your experience.</p>
 <p>With GameVault on your Windows Phone 7 device, you can carry your favorite games with you wherever you go. Whether you're battling fierce foes, exploring vast virtual worlds, or simply passing the time with a quick puzzle game, GameVault ensures that the thrill of gaming is always at your fingertips.</p>
@@ -42,8 +42,8 @@
 <p>But boy, were we wrong. The response to our app was unexpectedly large and overwhelming. Thousands of people are using GameVault today, and it seems there's quite a demand out there for the exact product we've been building.</p>
 <p>We’re a small indie team of two and despite juggling multiple jobs, we've poured our hearts and souls into this project during our spare times, striving to offer a self-hosted alternative to the gaming platforms out there. And while we've received some generous donations (<em>shoutout to our two loyal monthly donors btw – you know who you are, and we're endlessly grateful!</em>), it's clear that relying solely on sporadic tips isn't sustainable for the long term and we need financial support to maintain our services and justify our time investment towards our families.</p>
 <p>So, it's time for a slight change. We're thrilled to announce the upcoming release of a new version of our client application, complete with an <strong>optional</strong> subscription model we're calling...</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="gamevault"><a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+</a><a href="https://gamevau.lt/blog/2024/03/28/#gamevault" class="hash-link" aria-label="Direct link to gamevault" title="Direct link to gamevault">​</a></h2>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="what-is-gamevault">What is GameVault+?<a href="https://gamevau.lt/blog/2024/03/28/#what-is-gamevault" class="hash-link" aria-label="Direct link to What is GameVault+?" title="Direct link to What is GameVault+?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="gamevault"><a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+</a><a href="https://gamevau.lt/blog/2024/03/28/#gamevault" class="hash-link" aria-label="Direct link to gamevault" title="Direct link to gamevault">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="what-is-gamevault">What is GameVault+?<a href="https://gamevau.lt/blog/2024/03/28/#what-is-gamevault" class="hash-link" aria-label="Direct link to What is GameVault+?" title="Direct link to What is GameVault+?">​</a></h2>
 <p>First, to clear some of the confusion:</p>
 <p><strong>No, this is not some shady scammy "We're going enterprise" rugpull</strong>.
 The core of GameVaults upcoming features and the features you enjoyed until now will always remain free. Additionally the system is <a href="https://gamevau.lt/docs/gamevault-plus/introduction/#what-if-i-cant-afford-gamevault" target="_blank" rel="noopener noreferrer">designed to be easily bypassed if you can't or dont want to afford it.</a></p>
@@ -58,7 +58,7 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 <p>But there are more to come! We will be enhancing this offering with more features, whenever we see room for it, as GameVault+ subscribers are the ones, who keep this project alive.</p>
 <p>All details and a Q&amp;A are on the <a href="https://gamevau.lt/docs/gamevault-plus/introduction" target="_blank" rel="noopener noreferrer">GameVault+ page</a>.</p>
 <p><strong>We'll be rolling out this new product today to our early access users first</strong> to get the product and the infrastructure around it tested, tweaking and refining it based on your feedback before making it available to everyone. It's an exciting new chapter for us, and we can't wait to have you along for the ride.</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="so-whats-next">So what's next?<a href="https://gamevau.lt/blog/2024/03/28/#so-whats-next" class="hash-link" aria-label="Direct link to So what's next?" title="Direct link to So what's next?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="so-whats-next">So what's next?<a href="https://gamevau.lt/blog/2024/03/28/#so-whats-next" class="hash-link" aria-label="Direct link to So what's next?" title="Direct link to So what's next?">​</a></h2>
 <p>We will polish the rough edges of GameVault+ and bring it to life in the next few weeks, hopefully. You will probably already see some documentation on this website for it. Keep in mind, this is all a work in progress, and we will announce the final release soon.</p>
 <p>After that, we will need to urgently find a solution to our heavy reliance on the <a href="https://discord.com/channels/1100920639667306496/1134496308846137404/1217726870959820861" target="_blank" rel="noopener noreferrer">degrading and unmaintained RAWG Database</a>. We are already in contact for potential partnerships with Video-Game Databases.</p>
 <p>Finally, we will need to do some refactoring of our client application's architecture.</p>
@@ -85,16 +85,16 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
         <summary type="html"><![CDATA[Hey, Guys!]]></summary>
         <content type="html"><![CDATA[<p>Hey, Guys!</p>
 <p>For the upcoming large UI update of GameVault, we're launching a brand new GameVault Early-Access Program, and we want <strong>YOU</strong> to be a part of it!</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="whats-the-early-access-program">What's the Early-Access Program?<a href="https://gamevau.lt/blog/2023/12/09/#whats-the-early-access-program" class="hash-link" aria-label="Direct link to What's the Early-Access Program?" title="Direct link to What's the Early-Access Program?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="whats-the-early-access-program">What's the Early-Access Program?<a href="https://gamevau.lt/blog/2023/12/09/#whats-the-early-access-program" class="hash-link" aria-label="Direct link to What's the Early-Access Program?" title="Direct link to What's the Early-Access Program?">​</a></h2>
 <p>Early-Access is your golden ticket to test-drive upcoming GameVault updates before anyone else. You'll be part of an exclusive group and get a sneak peek into the latest features, but here's the deal – it might not be as stable as our regular releases and you need to interact with us. Your feedback will help us fine-tune everything before the big release for everyone else.</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="how-to-join">How to Join<a href="https://gamevau.lt/blog/2023/12/09/#how-to-join" class="hash-link" aria-label="Direct link to How to Join" title="Direct link to How to Join">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="how-to-join">How to Join<a href="https://gamevau.lt/blog/2023/12/09/#how-to-join" class="hash-link" aria-label="Direct link to How to Join" title="Direct link to How to Join">​</a></h2>
 <p>📋<!-- --> Complete the <a href="https://forms.gle/RQvEGfWeUFPBCUaG6" target="_blank" rel="noopener noreferrer">Application Form</a><br>
 <!-- -->📅<!-- --> The first early-access phase kicks off on December 17 and lasts for one week.</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="prerequisites">Prerequisites<a href="https://gamevau.lt/blog/2023/12/09/#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="prerequisites">Prerequisites<a href="https://gamevau.lt/blog/2023/12/09/#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites">​</a></h2>
 <p>💬<!-- --> Active participation in the designated Discord channel.<br>
 <!-- -->🎮<!-- --> GameVault installed from the Microsoft Store with a Microsoft Account logged in. If not, grab it <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">here</a>.<br>
 <!-- -->🚀<!-- --> A GameVault Server running the <strong>phalcode/gamevault-backend<!-- -->:early-access</strong> image. (Only run this if you are accepted as a Tester as it could break things!)</p>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="important-note">Important Note<a href="https://gamevau.lt/blog/2023/12/09/#important-note" class="hash-link" aria-label="Direct link to Important Note" title="Direct link to Important Note">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="important-note">Important Note<a href="https://gamevau.lt/blog/2023/12/09/#important-note" class="hash-link" aria-label="Direct link to Important Note" title="Direct link to Important Note">​</a></h3>
 <ul>
 <li>There are only a limited number of slots in the Early-Access Program. Supporters and Trusted Members are prioritized.</li>
 <li>If you're accepted and later found not meeting the requirements, you might be removed from future testing and the next applicant on our list gets the opportunity.</li>
@@ -147,14 +147,14 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 <p>Here are some sneak peeks and mockups: (still work in progress):</p>
 <ol>
 <li>Library (Mockup)
-<img decoding="async" loading="lazy" alt="Filters" src="https://gamevau.lt/assets/images/filters-f2a63aa5f8026620c96a6af4d668e8de.png" width="1896" height="1080" class="img_viVl">
-<img decoding="async" loading="lazy" alt="Empty States" src="https://gamevau.lt/assets/images/emptystates-cac04f51fc52e209e202e0611b7fc9ce.png" width="1896" height="1080" class="img_viVl"></li>
+<img decoding="async" loading="lazy" alt="Filters" src="https://gamevau.lt/assets/images/filters-f2a63aa5f8026620c96a6af4d668e8de.png" width="1896" height="1080" class="img_nolZ">
+<img decoding="async" loading="lazy" alt="Empty States" src="https://gamevau.lt/assets/images/emptystates-cac04f51fc52e209e202e0611b7fc9ce.png" width="1896" height="1080" class="img_nolZ"></li>
 <li>Library (current implementation)
-<img decoding="async" loading="lazy" alt="Library" src="https://gamevau.lt/assets/images/library-23677b063b1eec718776e44519f449fd.png" width="960" height="520" class="img_viVl"></li>
+<img decoding="async" loading="lazy" alt="Library" src="https://gamevau.lt/assets/images/library-23677b063b1eec718776e44519f449fd.png" width="960" height="520" class="img_nolZ"></li>
 <li>Game (Mockup)
-<img decoding="async" loading="lazy" alt="Game View" src="https://gamevau.lt/assets/images/game-1a2301146090a980e3af454aa57abb22.png" width="1896" height="1080" class="img_viVl"></li>
+<img decoding="async" loading="lazy" alt="Game View" src="https://gamevau.lt/assets/images/game-1a2301146090a980e3af454aa57abb22.png" width="1896" height="1080" class="img_nolZ"></li>
 <li>Game Settings (Mockup)
-<img decoding="async" loading="lazy" alt="Game Settings" src="https://gamevau.lt/assets/images/settings-ec331d2e53857decc5abb85f44855896.png" width="1080" height="792" class="img_viVl"></li>
+<img decoding="async" loading="lazy" alt="Game Settings" src="https://gamevau.lt/assets/images/settings-ec331d2e53857decc5abb85f44855896.png" width="1080" height="792" class="img_nolZ"></li>
 </ol>
 <p>Remember, these are teasers. Anything can look different once it ships. There's a lot of work left, and we're on it. To be technical here: Most of these modern controls require us to rewrite WPF Controls from the core. On the backend, we're not slacking either – tons of end-to-end tests are being written to ensure our app's reliability.</p>
 <p>Excited about the new UI or got something to say? Head over to <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> and spill the beans!</p>
@@ -222,16 +222,16 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
         <content type="html"><![CDATA[<p>Hey everyone,</p>
 <p>We're excited to share some great news with you all! GameVault has reached a small milestone with over 600 official installations of our GameVault Client Application. What's even more amazing is that around 200 dedicated users, a third of these installations, have joined our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> community to connect, chat, and share their experiences.</p>
 <p>We want to express our immense gratitude for your incredible support, feedback, and love for GameVault. Your ongoing encouragement inspires us to push boundaries and enhance your gaming experience. We're thrilled to announce that an awesome update is being worked on right now - the highly anticipated release of GameVault's Installation Pipeline!</p>
-<h4 class="anchor anchorWithStickyNavbar_mOoP" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="https://gamevau.lt/blog/2023/07/24/#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_yXGG" id="gamevaults-installation-pipeline">GameVault's Installation Pipeline<a href="https://gamevau.lt/blog/2023/07/24/#gamevaults-installation-pipeline" class="hash-link" aria-label="Direct link to GameVault's Installation Pipeline" title="Direct link to GameVault's Installation Pipeline">​</a></h4>
 <p>The Installation Pipeline is designed to revolutionize how you install and manage your games. It was suggested by members on our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord server</a>. We understand the challenges of navigating through different installation processes, especially for family members who may not be tech-savvy. With the Installation Pipeline, our goal is to simplify the entire process and make it user-friendly. Whether you're an experienced gamer or not, this update will make installing games easier for you.</p>
 <p>You can read the details <a href="https://github.com/Phalcode/gamevault-app/issues/18" target="_blank" rel="noopener noreferrer">here on the GitHub issue</a>.</p>
 <p>Stay tuned for its upcoming release, and to be among the first to try out this awesome feature, make sure to subscribe to the <code>@Updates</code> Role on our <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord server</a> , if you haven't already. We'll ping you as soon as it's live!</p>
-<h4 class="anchor anchorWithStickyNavbar_mOoP" id="join-us-on-lemmy">Join us on Lemmy<a href="https://gamevau.lt/blog/2023/07/24/#join-us-on-lemmy" class="hash-link" aria-label="Direct link to Join us on Lemmy" title="Direct link to Join us on Lemmy">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_yXGG" id="join-us-on-lemmy">Join us on Lemmy<a href="https://gamevau.lt/blog/2023/07/24/#join-us-on-lemmy" class="hash-link" aria-label="Direct link to Join us on Lemmy" title="Direct link to Join us on Lemmy">​</a></h4>
 <p>To further connect with our amazing community, we're excited to announce the launch of our <a href="https://lemmy.world/c/phalcode" target="_blank" rel="noopener noreferrer">official Lemmy community</a>. From now on, we'll also regularly share new blog posts there, providing you with more ways to stay informed and engaged. Join the Lemmy forum and become part of the growing GameVault community!</p>
-<h4 class="anchor anchorWithStickyNavbar_mOoP" id="share-gamevault-with-others">Share GameVault with Others<a href="https://gamevau.lt/blog/2023/07/24/#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_yXGG" id="share-gamevault-with-others">Share GameVault with Others<a href="https://gamevau.lt/blog/2023/07/24/#share-gamevault-with-others" class="hash-link" aria-label="Direct link to Share GameVault with Others" title="Direct link to Share GameVault with Others">​</a></h4>
 <p>As we celebrate this milestone and eagerly anticipate more exciting updates, we invite you to spread the word about GameVault among your friends, family, and gaming or self-hosting communities. Your personal recommendations and referrals have played a significant role in our journey so far, and we believe they'll continue to do so in the future.</p>
 <p>We want to express our heartfelt appreciation for the feature requests, discussions, and invaluable help on our GitHub. Your support and collaborative efforts help a lot.</p>
-<h4 class="anchor anchorWithStickyNavbar_mOoP" id="support-us">Support Us<a href="https://gamevau.lt/blog/2023/07/24/#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4>
+<h4 class="anchor anchorWithStickyNavbar_yXGG" id="support-us">Support Us<a href="https://gamevau.lt/blog/2023/07/24/#support-us" class="hash-link" aria-label="Direct link to Support Us" title="Direct link to Support Us">​</a></h4>
 <p>As we move forward, we kindly ask for your continued support. GameVault's success is currently solely built upon our incredible community, and your encouragement is what fuels us. If you love our app and believe in our vision, please consider supporting us in any way you can. It could even be something simple like a rating on the Microsoft Store. Your backing empowers us to keep our hard work going.</p>
 <p>We're eagerly looking forward to celebrating more achievements with all of you.</p>
 <p>Stay tuned, stay connected, and let's continue this journey together!</p>]]></content>
@@ -268,7 +268,7 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 <p>Just a heads up, there might be a surge of new users joining the <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">Discord</a> server due to us promoting GameVault across all available platforms now.</p>
 <p>You're welcome to join in and spread the word about GameVault with your friends, family, social network, or colleagues!</p>
 <p><strong>Let's decipher the mystery behind the new logo:</strong>
-<img decoding="async" loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_viVl"></p>
+<img decoding="async" loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_nolZ"></p>
 <ul>
 <li>The Box represents a Vault with a Keyhole, but it also symbolizes a game dice.</li>
 <li>The Keyhole represents a Keyhole, and simultaneously signifies a game piece.</li>
@@ -303,7 +303,7 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 <p>We're nearly finished, you might say.</p>
 <p>The only remaining task is the Client Application. We're actively working on it and currently testing the application on our developer edition. Soon, you'll be able to seamlessly update your client with the new name and appearance.</p>
 <p>In the meantime, our graphic designer has crafted a fresh logo for our new name, GameVault.</p>
-<p><img decoding="async" loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_viVl"></p>
+<p><img decoding="async" loading="lazy" alt="logo" src="https://gamevau.lt/assets/images/logo-text-and-image-sbs-6a7a4b169bd1cf62f643469e715ae759.png" width="1000" height="103" class="img_nolZ"></p>
 <p>To make good use of your time while the migrations are in progress, what do you speculate the new logo represents?</p>
 <p>Share your theories in gamevaults #chat channel on <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">discord</a>! We'll reveal the answer and shoutout the winner(s) in the next blog post, once the migration is finalized!</p>
 <p>Until then ✌️</p>]]></content>
@@ -333,7 +333,7 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
         <content type="html"><![CDATA[<p>Hey everyone,</p>
 <p>We are thrilled to announce that the poll for choosing a new name for our app is finally over. The process of transitioning to the new name will commence very soon, and we can't wait to share the exciting updates with you.</p>
 <p>But first, let's dive into the poll results and shed some light on the important facts without further delay:</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="summary">Summary<a href="https://gamevau.lt/blog/2023/07/15/#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="summary">Summary<a href="https://gamevau.lt/blog/2023/07/15/#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
 <p>In total, 71 people participated in the poll, providing us with valuable data to draw conclusions from. Here's a summary of the key findings:</p>
 <ul>
 <li>
@@ -356,26 +356,26 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 </ol>
 <p>As mentioned earlier, we conducted the poll without conducting market analysis beforehand. However, we recognized the significance of making an informed decision for the benefit of the community. Consequently, we proceeded to analyze each name after the poll to ensure the chosen name resonates with our vision.</p>
 <p>Allow us to share the summarized results of our market analysis:</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="market-analysis">Market Analysis<a href="https://gamevau.lt/blog/2023/07/15/#market-analysis" class="hash-link" aria-label="Direct link to Market Analysis" title="Direct link to Market Analysis">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="1-gamestash">1. GameStash<a href="https://gamevau.lt/blog/2023/07/15/#1-gamestash" class="hash-link" aria-label="Direct link to 1. GameStash" title="Direct link to 1. GameStash">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="market-analysis">Market Analysis<a href="https://gamevau.lt/blog/2023/07/15/#market-analysis" class="hash-link" aria-label="Direct link to Market Analysis" title="Direct link to Market Analysis">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="1-gamestash">1. GameStash<a href="https://gamevau.lt/blog/2023/07/15/#1-gamestash" class="hash-link" aria-label="Direct link to 1. GameStash" title="Direct link to 1. GameStash">​</a></h3>
 <p>Google Search Results: ~33,600<br>
 <!-- -->Possible Domains: gamestash.de</p>
 <ul>
 <li>There's already an app called <a href="https://gamestash.app/" target="_blank" rel="noopener noreferrer">GameStash</a> that offers similar features to ours.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="2-gamevault">2. GameVault<a href="https://gamevau.lt/blog/2023/07/15/#2-gamevault" class="hash-link" aria-label="Direct link to 2. GameVault" title="Direct link to 2. GameVault">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="2-gamevault">2. GameVault<a href="https://gamevau.lt/blog/2023/07/15/#2-gamevault" class="hash-link" aria-label="Direct link to 2. GameVault" title="Direct link to 2. GameVault">​</a></h3>
 <p>Google Search Results: ~800,000<br>
 <!-- -->Possible Domains: gamevau.lt, game-vault.de</p>
 <ul>
 <li>The term "GameVault" is associated with a popular online casino/gambling application called <a href="https://gamevault999.com/" target="_blank" rel="noopener noreferrer">GameVault999</a>.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="3-gameshelf">3. GameShelf<a href="https://gamevau.lt/blog/2023/07/15/#3-gameshelf" class="hash-link" aria-label="Direct link to 3. GameShelf" title="Direct link to 3. GameShelf">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="3-gameshelf">3. GameShelf<a href="https://gamevau.lt/blog/2023/07/15/#3-gameshelf" class="hash-link" aria-label="Direct link to 3. GameShelf" title="Direct link to 3. GameShelf">​</a></h3>
 <p>Google Search Results: ~560,000<br>
 <!-- -->Possible Domains: gameshelf.de</p>
 <ul>
 <li>The name "Gameshelf" is already used by two existing applications. One is a <a href="https://gameshelf.io/" target="_blank" rel="noopener noreferrer">Board-Game-Collection Viewer</a>, and the other is a <a href="https://gameshelf.dev/" target="_blank" rel="noopener noreferrer">Gaming Backlog</a> app.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="4-harbor">4. Harbor<a href="https://gamevau.lt/blog/2023/07/15/#4-harbor" class="hash-link" aria-label="Direct link to 4. Harbor" title="Direct link to 4. Harbor">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="4-harbor">4. Harbor<a href="https://gamevau.lt/blog/2023/07/15/#4-harbor" class="hash-link" aria-label="Direct link to 4. Harbor" title="Direct link to 4. Harbor">​</a></h3>
 <p>Google Search Results: ~393,000,000<br>
 <!-- -->Possible Domains: harborapp.de</p>
 <ul>
@@ -386,20 +386,20 @@ The core of GameVaults upcoming features and the features you enjoyed until now 
 <p>Additionally, there's a well-known app called <a href="https://goharbor.io/" target="_blank" rel="noopener noreferrer">Harbor on the Market</a> related to Docker/Kubernetes.</p>
 </li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_mOoP" id="5-gamehub">5. GameHub<a href="https://gamevau.lt/blog/2023/07/15/#5-gamehub" class="hash-link" aria-label="Direct link to 5. GameHub" title="Direct link to 5. GameHub">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_yXGG" id="5-gamehub">5. GameHub<a href="https://gamevau.lt/blog/2023/07/15/#5-gamehub" class="hash-link" aria-label="Direct link to 5. GameHub" title="Direct link to 5. GameHub">​</a></h3>
 <p>Google Search Results: ~5,690,000
 Possible Domains: gamehubapp.de</p>
 <ul>
 <li><a href="https://github.com/tkashkin/GameHub" target="_blank" rel="noopener noreferrer">GameHub</a> is a popular game library manager</li>
 <li>it also sounds like a popular adult site 😁</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="whats-next">What's Next?<a href="https://gamevau.lt/blog/2023/07/15/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="whats-next">What's Next?<a href="https://gamevau.lt/blog/2023/07/15/#whats-next" class="hash-link" aria-label="Direct link to What's Next?" title="Direct link to What's Next?">​</a></h2>
 <p>We understand your eagerness for a new name, and we are equally committed to distancing ourselves from the old one. Taking into account all the suggested names and feedback, we engaged in extensive internal brainstorming, free from outside influences.</p>
 <p>We sought a name that is descriptive, intuitive, and effectively conveys the purpose of our app. Additionally, we aimed for a name that is easily memorable and emphasizes the ownership and control of a self-hosted server, security, and exclusivity.</p>
 <p>Introducing our new name: <strong>GameVault</strong><br>
 <!-- -->Available soon under this domain: <a href="https://gamevau.lt/" target="_blank" rel="noopener noreferrer">gamevau.lt</a></p>
 <p>We have already secured the domain and registered the name wherever possible. The transition process will commence shortly. We are eager to hear your thoughts on the new name. Do you like it?</p>
-<h2 class="anchor anchorWithStickyNavbar_mOoP" id="special-thanks-️">Special Thanks ❤️<a href="https://gamevau.lt/blog/2023/07/15/#special-thanks-%EF%B8%8F" class="hash-link" aria-label="Direct link to Special Thanks ❤️" title="Direct link to Special Thanks ❤️">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_yXGG" id="special-thanks-️">Special Thanks ❤️<a href="https://gamevau.lt/blog/2023/07/15/#special-thanks-%EF%B8%8F" class="hash-link" aria-label="Direct link to Special Thanks ❤️" title="Direct link to Special Thanks ❤️">​</a></h2>
 <p>Well, as you all know, this was quite a journey to get here, and we wanted to give our special thanks to:</p>
 <ul>
 <li>
