@@ -29,7 +29,7 @@ gamevault-backend:
     restart: unless-stopped
     environment:
       [...]
-      - SERVER_LOG_FILES_ENABLED: true # <--- Set this to true
+      - SERVER_LOG_FILES_ENABLED: true # <--- Make sure this is not set to false. (Default was false before v11.0.1)
     volumes:
       [...]
       - /your/logs/folder:/logs # <--- Replace `/your/logs/folder` with the actual path to your log folder.
