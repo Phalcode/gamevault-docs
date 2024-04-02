@@ -30,7 +30,7 @@ To become part of the program, follow these simple steps:
 
 1. Wait for the early access phase to start.
 2. Start the app and accept early access update.
-3. Restart the App and check the version in the settings. If it contains `EA`, you're on the early-access channel.
+3. Restart the App and check the version in the settings. If it contains `EA` or `Early Access`, you're on the early-access channel.
 
 ### How to return to a stable version?
 
