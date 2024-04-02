@@ -8,9 +8,9 @@ Welcome to the GameVault Early Access Program! This exclusive opportunity allows
 
 To join the Early Access Program, please make sure to meet the following requirements:
 
-- Actively participate in the designated Discord channel.
+- Actively participate in the designated Discord channel and follow the pinned messages.
 - Have GameVault installed from the Microsoft Store and be logged in with your Microsoft Account. If you haven't installed it yet, you can get it [here](https://www.microsoft.com/store/apps/9PCKDV76GL75).
-- Run a GameVault Server with the **phalcode/gamevault-backend:early-access** image. (Only use this image if all users on your server are participating in the Early Access Program and have been accepted as testers, as it may cause issues!)
+- If required in the current phase: Run a GameVault Server with the **phalcode/gamevault-backend:early-access** image. (Only use this image if all users on your server are participating in the Early Access Program and have been accepted as testers, as it may cause issues!)
 
 ### How to Join
 
