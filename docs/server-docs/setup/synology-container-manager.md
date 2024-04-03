@@ -99,7 +99,7 @@ services:
 ```
 
 :::note
-Replace the variables, as well as the folder paths with what suits you, of course.
+Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
 
 ## Conclusion
