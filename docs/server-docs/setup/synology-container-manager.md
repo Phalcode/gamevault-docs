@@ -1,6 +1,6 @@
 ---
 title: "Using Synology Container Manager"
-sidebar_position: 2
+sidebar_position: 6
 ---
 
 Synology Container Manager is a software application developed by Synology Inc. for their network-attached storage (NAS) devices. It provides users with a graphical user interface for managing Docker containers, allowing them to deploy, manage, and monitor containerized applications on their Synology NAS.
