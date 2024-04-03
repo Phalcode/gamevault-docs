@@ -25,8 +25,6 @@ services:
       DB_HOST: db
       DB_USERNAME: gamevault
       DB_PASSWORD: YOURPASSWORDHERE
-      # The following line grants Admin Role to the account with this username upon registration.
-      SERVER_ADMIN_USERNAME: admin
       # Uncomment and insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
       # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
@@ -68,8 +66,6 @@ services:
     restart: unless-stopped
     environment:
       DB_SYSTEM: "SQLITE"
-      # The following line grants Admin Role to the account with this username upon registration.
-      SERVER_ADMIN_USERNAME: admin
       # Uncomment and insert your RAWG API Key here if you have one (https://gamevau.lt/docs/server-docs/indexing-and-metadata#rawg-api-key)
       # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
