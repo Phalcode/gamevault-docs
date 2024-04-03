@@ -27,14 +27,16 @@ We're looking for people who are excited to help out. Since we don't run a GameV
 
 **Congratulations! 🥳**
 
-You now should have a server up and running. To further set up and start using server, follow these steps:
+You now should have a server up and running. To further set up and start using server, you can follow these steps:
 
 1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](../configuration.md) for detailed instructions.
 
 2. **Add some games:** Prepare your game files in the required format for GameVault to identify and install them correctly. Read the [structure chapter](../structure.md) for important information. Once ready, proceed to [add your games](../adding-games.md).
 
-3. **Enhance your games with metadata:** Connect your server to RAWG, the world's largest video game database that GameVault utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](../indexing-and-metadata.md).
+3. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
 
-4. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
+4. **Enhance your games with metadata:** Connect your server to RAWG, the world's largest video game database that GameVault utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](../indexing-and-metadata.md).
+
+5. **(OPTIONAL) Make your server accessible outside your Local Area Network**: If you want to make the application accessible beyond your local network, for instance, for your friends or yourself to connect to it remotely, you'll need to configure an HTTPS reverse proxy and potentially make adjustments to firewall rules. We recommend utilizing [NGINX Proxy Manager](https://nginxproxymanager.com) for this purpose. Numerous guides are available on how to set up a reverse proxy for a Docker container, so we won't cover it in detail in this guide.
 
 Enjoy your new gaming experience with GameVault!

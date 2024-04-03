@@ -35,7 +35,7 @@ services:
     ports:
       - 8080:8080
   db:
-    image: postgres:15
+    image: postgres:16
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
@@ -90,7 +90,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 ## Conclusion
 
-You have now successfully set up your GameVault Server using Docker and Docker Compose.
+Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as http://192.168.0.15:8080.
 
 [Click here to continue.](setup.md#what-next)
 
