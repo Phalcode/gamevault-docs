@@ -15,6 +15,7 @@ If you have any trouble setting up a GameVault server don't give up! There are a
 - [Caprover](./caprover.md)
 - [TrueNAS Scale](./truenas-scale.md)
 - [UNRAID](./unraid.md)
+- [Synology Container Manager](./synology-container-manager.md)
 - [Native](./native.md)
 
 ### More Methods

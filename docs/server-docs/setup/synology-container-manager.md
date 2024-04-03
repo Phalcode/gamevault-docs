@@ -1,0 +1,127 @@
+---
+title: "Using Synology Container Manager"
+sidebar_position: 2
+---
+
+Synology Container Manager is a software application developed by Synology Inc. for their network-attached storage (NAS) devices. It provides users with a graphical user interface for managing Docker containers, allowing them to deploy, manage, and monitor containerized applications on their Synology NAS.
+
+In this guide, you will learn how to set up GameVault on such a system using Docker Compose.
+
+:::warning Not tested
+Unfortunately, none of our team members uses Synology or Container Manager, this guide was written blindly with inspirations from [Dr. Frankenstein's guide](https://drfrankenstein.co.uk/jellyseerr-in-container-manager-on-a-synology-nas/). GameVault lives from Contributions. If you use a Synology system and have tested this, kindly remove this warning from our documentation page. If you found anything important to add to this guide or are able to provide some screenshots, it would be awesome if you edit this page aswell.
+:::
+
+
+## Prerequisites
+
+- Access to a Synology NAS with [Container Manager](https://www.synology.com/dsm/packages/ContainerManager) installed. See supported devices [here](https://www.synology.com/dsm/packages/ContainerManager).
+
+## Step 1: Create Necessary Folders
+
+Begin by creating directories for the containers to utilize.  
+Open `File Station` and create the following folders:
+
+- `/docker/projects/gamevault-compose`
+- `/docker/gamevault`
+- `/docker/gamevault/files`
+- `/docker/gamevault/images`
+- `/docker/gamevault/database`
+
+## Step 2: Set Up a Project in Container Manager
+
+1. Open `Container Manager` from your Synology NAS.
+2. Click on 'Project' and then 'Create'
+3. Fill in the following details:
+   - Project Name: `gamevault`
+   - Path: `/docker/projects/gamevault-compose`
+   - Source: Select 'Create docker-compose.yml'
+
+## Step 3: Create Docker Compose File
+
+Copy and paste the following code into the editor:
+
+```yml
+version: "3.8"
+services:
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
+    restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_USERNAME: gamevault
+      DB_PASSWORD: YOURPASSWORDHERE
+      # Uncomment and insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
+      # RAWG_API_KEY: YOURAPIKEYHERE
+    volumes:
+      - /volume1/docker/gamevault/files:/files
+      - /volume1/docker/gamevault/images:/images
+    ports:
+      - 8080:8080/tcp
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gamevault
+      POSTGRES_PASSWORD: YOURPASSWORDHERE
+      POSTGRES_DB: gamevault
+    volumes:
+      - /volume1/docker/gamevault/database:/var/lib/postgresql/data
+```
+
+:::note
+Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
+:::
+
+:::warning
+Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
+:::
+
+### Alternative Step 13: Running without a PostgreSQL Database
+
+We don't recommend it, but you can run GameVault without a PostgreSQL Database too using the following configuration:
+
+```yaml
+version: "3.8"
+services:
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
+    restart: unless-stopped
+    environment:
+      DB_SYSTEM: "SQLITE"
+      # Uncomment and insert your RAWG API Key here if you have one (https://gamevau.lt/docs/server-docs/indexing-and-metadata#rawg-api-key)
+      # RAWG_API_KEY: YOURAPIKEYHERE
+    ports:
+      - 8080:8080/tcp #Change the left one if you want
+    volumes:
+      - /volume1/docker/gamevault/files:/files
+      - /volume1/docker/gamevault/images:/images
+      - /volume1/docker/gamevault/database:/db
+```
+
+:::note
+Replace the variables, as well as the folder paths with what suits you, of course.
+:::
+
+## Conclusion
+
+You've successfully set up GameVault Server using  Synology Container Manager. You should now be able to access the web interface via your NAS's IP address followed by port 8080. If you encounter any issues or have feedback, please let us know.
+
+## Additional Info
+
+### Stopping the Server
+
+To stop the GameVault Server, follow these steps:
+
+1. Navigate to `Container Manager` on your Synology NAS.
+2. Select the GameVault container from the list of running containers.
+3. Click on "Stop" to halt the container's operation.
+
+### Reading the Logs
+
+To view the logs for the GameVault Server, do the following:
+
+1. Navigate to `Container Manager` on your Synology NAS.
+2. Select the GameVault container from the list of containers.
+3. Click on "Details" to expand the container's information.
+4. Select the "Log" tab to view the container's logs in real-time.
+

@@ -18,8 +18,6 @@ Log into your Unraid dashboard and navigate to your apps section of the dashboar
 
 ![Step 1](/img/docs/setup/unraid/unraid1.png)
 
-
-
 ## Step 2: Install POSTGRES
 
 Using the default configuration making sure you add the following entries:
@@ -33,13 +31,9 @@ Make sure you remember the password and port you set we will use this in step 3
 
 ![Step 2](/img/docs/setup/unraid/unraid2.png)
 
-
-
 ## Step 3: Setting up your GameVault Backend server
 
 Search for `gamevault-backend` on the Unraid app store making sure to click the one without the SQLITE in the title. 
-
-
 
 Click install
 
