@@ -76,7 +76,7 @@ Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as
 Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
 
-### Alternative Step 13: Running without a PostgreSQL Database
+### Alternative Step 3: Running without a PostgreSQL Database
 
 We don't recommend it, but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
