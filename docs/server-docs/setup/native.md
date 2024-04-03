@@ -50,7 +50,6 @@ mkdirp gv-db gv-images gv-games`
 ```ini
 #/gamevault-backend/.env
 DB_SYSTEM=SQLITE
-SERVER_ADMIN_USERNAME=admin
 VOLUMES_SQLITEDB=/path/for/database/files
 VOLUMES_FILES=/path/for/gane/files
 VOLUMES_IMAGES=/path/for/image/files
