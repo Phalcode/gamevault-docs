@@ -149,9 +149,10 @@ GameVault utilizes a simple Google Image Search library to find suitable box art
 
 GameVault uses the following algorithm to find box arts:
 
-1. Searches for `"GAME-TITLE" inurl:steamgriddb.com`.
-2. If no results are found, searches for `"GAME-TITLE" game box art`.
-3. Selects the first available image that matches the target aspect ratio.
+1. Searches for `[GAME TITLE] site:steamgriddb.com -profile`.
+2. If no results are found, searches for `[GAME TITLE] site:www.pcgamingwiki.com`.
+3. If no results are found, searches for `[GAME TITLE] game box art`.
+4. Selects the first available image that matches the target aspect ratio 2:3.
 
 #### Rate Limiting and Cooldown
 
