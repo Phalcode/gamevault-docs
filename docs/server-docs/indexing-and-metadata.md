@@ -171,16 +171,5 @@ If you rather set your box-arts yourself and want to completely disable the Goog
 
 ### Image Storage
 
-#### Storing Box Arts
-
-To ensure availability, performance, and efficient compression, GameVault stores the found box arts on the filesystem under the images directory (by default `/images`).
-
+GameVault stores all images on the filesystem under the images directory (by default `/images`).
 For more information on GameVault's image management, refer to [this page](images.md).
-
-#### Customizing Storage Path
-
-The storage path for images can be customized by modifying the `VOLUMES_IMAGES` environment variable.
-
-```
-
-```
