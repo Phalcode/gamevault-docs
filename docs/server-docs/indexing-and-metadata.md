@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Game Indexing and Information Retrieval
+# Game Indexing and Metadata Enrichment
 
 ## Game Indexing
 
