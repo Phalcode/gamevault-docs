@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">Game Indexing and Metadata Enrichment | GameVault</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://gamevau.lt/docs/server-docs/indexing-and-metadata"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Game Indexing and Metadata Enrichment | GameVault"><meta data-rh="true" name="description" content="Game Indexing"><meta data-rh="true" property="og:description" content="Game Indexing"><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://gamevau.lt/docs/server-docs/indexing-and-metadata"><link data-rh="true" rel="alternate" href="https://gamevau.lt/docs/server-docs/indexing-and-metadata" hreflang="en"><link data-rh="true" rel="alternate" href="https://gamevau.lt/docs/server-docs/indexing-and-metadata" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="GameVault RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="GameVault Atom Feed"><link rel="stylesheet" href="/assets/css/styles.ab69c1d2.css">
-<script src="/assets/js/runtime~main.dc853382.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.2e4a2f2f.js" defer="defer"></script>
 <script src="/assets/js/main.a76c3848.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard" data-theme="light">
@@ -61,9 +61,10 @@
 <h4 class="anchor anchorWithStickyNavbar_yXGG" id="finding-box-arts">Finding Box Arts<a href="#finding-box-arts" class="hash-link" aria-label="Direct link to Finding Box Arts" title="Direct link to Finding Box Arts">​</a></h4>
 <p>GameVault uses the following algorithm to find box arts:</p>
 <ol>
-<li>Searches for <code>&quot;GAME-TITLE&quot; inurl:steamgriddb.com</code>.</li>
-<li>If no results are found, searches for <code>&quot;GAME-TITLE&quot; game box art</code>.</li>
-<li>Selects the first available image that matches the target aspect ratio.</li>
+<li>Searches for <code>[GAME TITLE] site:steamgriddb.com -profile</code>.</li>
+<li>If no results are found, searches for <code>[GAME TITLE] site:www.pcgamingwiki.com</code>.</li>
+<li>If no results are found, searches for <code>[GAME TITLE] game box art</code>.</li>
+<li>Selects the first available image that matches the target aspect ratio 2:3.</li>
 </ol>
 <h4 class="anchor anchorWithStickyNavbar_yXGG" id="rate-limiting-and-cooldown">Rate Limiting and Cooldown<a href="#rate-limiting-and-cooldown" class="hash-link" aria-label="Direct link to Rate Limiting and Cooldown" title="Direct link to Rate Limiting and Cooldown">​</a></h4>
 <p>When adding or updating a large number of games (more than 100), there might be rate limits imposed by Google on your IP address. In such cases, GameVault implements a cooldown mechanism to manage the rate limit.</p>
