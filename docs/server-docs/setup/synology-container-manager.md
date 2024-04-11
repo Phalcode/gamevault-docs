@@ -7,10 +7,9 @@ Synology Container Manager is a software application developed by Synology Inc. 
 
 In this guide, you will learn how to set up GameVault on such a system using Docker Compose.
 
-:::warning Not tested
-Unfortunately, none of our team members uses Synology or Container Manager, this guide was written blindly with inspirations from [Dr. Frankenstein's guide](https://drfrankenstein.co.uk/jellyseerr-in-container-manager-on-a-synology-nas/). GameVault lives from Contributions. If you use a Synology system and have tested this, kindly remove this warning from our documentation page. If you found anything important to add to this guide or are able to provide some screenshots, it would be awesome if you edit this page aswell.
+:::note Contribute to this page!
+Unfortunately, none of our team members uses Synology Hardware and this guide was written blindly. The GameVault Docs live from contributions. If you use a Synology system kindly contribute some screenshots to this page. Thanks!
 :::
-
 
 ## Prerequisites
 
