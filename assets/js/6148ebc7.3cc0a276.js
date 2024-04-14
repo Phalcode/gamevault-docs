@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3382],{22068:s=>{s.exports=JSON.parse('{"label":"partnerships","permalink":"/blog/tags/partnerships","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
