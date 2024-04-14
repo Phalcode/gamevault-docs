@@ -180,6 +180,10 @@ const config = {
             title: "Support us",
             items: [
               {
+                label: "Get GameVault+",
+                href: "/docs/gamevault-plus/introduction",
+              },
+              {
                 label: "GitHub Sponsors",
                 href: "https://github.com/sponsors/Phalcode",
               },
