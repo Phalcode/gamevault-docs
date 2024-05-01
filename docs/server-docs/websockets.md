@@ -4,6 +4,12 @@ sidebar_position: 8
 
 # WebSockets
 
+:::warning Work in progress
+
+GameVault doesn't fully use Websockets yet. Both the client and the server are still lacking a full implementation. Right now, it's just a basic version to begin with on the server. If you're interested in how we're doing with implementing Websockets, you can check out [this page on GitHub](https://github.com/Phalcode/gamevault-app/issues/205) to see our progress.
+
+:::
+
 In GameVault Backend Version 9.0.0, we introduced an exciting feature – WebSockets. These WebSockets provide an asynchronous and bidirectional gateway for interactive communication with clients. Our implementation is based on [Socket.io](https://socket.io/), which itself relies on the WebSocket protocol.
 
 WebSockets enable real-time communication between the server and clients. This means that not only can the server send data to clients when they ask for it, but the server can also initiate conversations with the clients.
@@ -29,4 +35,4 @@ For server owners who wish to disable activities, it's as simple as setting the 
 
 ## Security
 
-Each user is assigned a randomly generated Socket Secret that they can retrieve at ``/api/users/me``. This secret must be included in the headers (X-Socket-Secret) of every subsequent Socket.IO Handshake request to the server.
+Each user is assigned a randomly generated Socket Secret that they can retrieve at `/api/users/me`. This secret must be included in the headers (X-Socket-Secret) of every subsequent Socket.IO Handshake request to the server.
