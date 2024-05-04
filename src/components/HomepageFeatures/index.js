@@ -16,17 +16,6 @@ import ImgGithub from "@site/static/img/features/github.png";
 
 const FeatureList = [
   {
-    title: "🎮 Browse Your Games",
-    img: ImgLibrary,
-    video: VideoLibrary,
-    description: (
-      <>
-        Browse your server's beautifully organized library to download, install
-        and play your collection of video games of all kinds!
-      </>
-    ),
-  },
-  {
     title: "👯 Build Your Community",
     img: ImgAdmin,
     video: VideoAdmin,
@@ -34,6 +23,17 @@ const FeatureList = [
       <>
         Share your platform with your friends and family so they can enjoy your
         library, too. Administrate your users and games.
+      </>
+    ),
+  },
+  {
+    title: "🎮 Browse Your Games",
+    img: ImgLibrary,
+    video: VideoLibrary,
+    description: (
+      <>
+        Browse your server's beautifully organized library to download, install
+        and play your collection of video games of all kinds!
       </>
     ),
   },
