@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[301],{55352:a=>{a.exports=JSON.parse('{"label":"voting","permalink":"/blog/tags/voting","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

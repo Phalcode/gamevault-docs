@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[9789],{92552:s=>{s.exports=JSON.parse('{"label":"Selfhosted Podcast","permalink":"/blog/tags/selfhosted-podcast","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

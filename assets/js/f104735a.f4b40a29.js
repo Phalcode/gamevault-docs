@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[7288],{16493:s=>{s.exports=JSON.parse('{"label":"Tech Progress","permalink":"/blog/tags/tech-progress","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

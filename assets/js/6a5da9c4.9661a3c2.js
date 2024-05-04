@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[1085],{48504:a=>{a.exports=JSON.parse('{"label":"spreading the word","permalink":"/blog/tags/spreading-the-word","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

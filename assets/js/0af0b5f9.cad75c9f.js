@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[3117],{24968:a=>{a.exports=JSON.parse('{"label":"negative narratives","permalink":"/blog/tags/negative-narratives","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[6378],{45801:a=>{a.exports=JSON.parse('{"label":"GameStash","permalink":"/blog/tags/game-stash","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

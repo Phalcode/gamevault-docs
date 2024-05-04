@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkgamevault_docs=self.webpackChunkgamevault_docs||[]).push([[2081],{26991:e=>{e.exports=JSON.parse('{"label":"gaming experience","permalink":"/blog/tags/gaming-experience","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
