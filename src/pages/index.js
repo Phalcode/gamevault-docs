@@ -105,7 +105,9 @@ export default function Home() {
           </h3>
         </section>
         <HomepageFeatures />
-        <p className="text--center">*depicted games are mockup placeholders.</p>
+        <p className="text--center text-xs font-bolder tracking-tighter">
+          *all depicted games are placeholders and not real
+        </p>
       </main>
     </Layout>
   );

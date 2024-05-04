@@ -49,3 +49,7 @@ img[alt="GameVault+ Banner"] {
   font-size: 3.75rem;
   line-height: 1;
 }
+
+.zoomable {
+  @apply md:active:scale-[1.5] xl:active:scale-[2] 2xl:active:scale-[2.5] md:active:absolute md:active:mx-auto md:active:my-auto md:active:top-auto md:active:left-0 md:active:bottom-0 md:active:right-0 transition-transform duration-300;
+}

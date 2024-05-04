@@ -3,16 +3,22 @@ import clsx from "clsx";
 import styles from "./styles.module.css";
 
 import ImgLibrary from "@site/static/img/features/library.png";
-import ImgMicrosoftStore from "@site/static/img/features/microsoftstore.png";
-import ImgAuth from "@site/static/img/features/admin.png";
-import ImgSocial from "@site/static/img/features/community.png";
-import ImgEnrichments from "@site/static/img/features/game.png";
+import VideoLibrary from "@site/static/video/features/library.mp4";
+import ImgAdmin from "@site/static/img/features/admin.png";
+import VideoAdmin from "@site/static/video/features/admin.mp4";
+import ImgCommunity from "@site/static/img/features/community.png";
+import VideoCommunity from "@site/static/video/features/community.mp4";
+import ImgGame from "@site/static/img/features/game.png";
+import VideoGame from "@site/static/video/features/game.mp4";
+import ImgInstallation from "@site/static/img/features/installation.png";
+import VideoInstallation from "@site/static/video/features/installation.mp4";
 import ImgGithub from "@site/static/img/features/github.png";
 
 const FeatureList = [
   {
     title: "🎮 Browse Your Games",
     img: ImgLibrary,
+    video: VideoLibrary,
     description: (
       <>
         Browse your server's beautifully organized library to download, install
@@ -22,7 +28,8 @@ const FeatureList = [
   },
   {
     title: "👯 Build Your Community",
-    img: ImgAuth,
+    img: ImgAdmin,
+    video: VideoAdmin,
     description: (
       <>
         Share your platform with your friends and family so they can enjoy your
@@ -32,7 +39,8 @@ const FeatureList = [
   },
   {
     title: "⏱️ Track Your Progress",
-    img: ImgSocial,
+    img: ImgCommunity,
+    video: VideoCommunity,
     description: (
       <>
         See how long you or your friends have been playing a game, find out what
@@ -42,7 +50,8 @@ const FeatureList = [
   },
   {
     title: "🔎 Automatic Metadata Enrichment",
-    img: ImgEnrichments,
+    img: ImgGame,
+    video: VideoGame,
     description: (
       <>
         GameVault automatically enriches your game with all the juicy
@@ -51,21 +60,29 @@ const FeatureList = [
     ),
   },
   {
-    title: "📦 Easy To Install",
-    img: ImgMicrosoftStore,
+    title: "📦 Easy To Use",
+    img: ImgInstallation,
+    video: VideoInstallation,
     description: (
-      <>
-        There's no need to compile anything. Our application is officially
-        available in the{" "}
+      <div>
+        <a href="https://www.reddit.com/r/github/s/BhVD6gIscZ">
+          You don't give a fuck about the fucking code?
+        </a>
+        <br />
+        Our application is officially available in the{" "}
         <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
           Microsoft Store
         </a>
-        .{" "}
+        . Also, {""}
+        <a href="/docs/client-docs/how-to-use.md#2-installing-the-game">
+          installing games
+        </a>
+        {" and "}
         <a href="/docs/server-docs/setup">
-          Setting up a server using our Docker image
+          setting up a server using our Docker image
         </a>{" "}
-        is just as easy!
-      </>
+        and is just as easy!
+      </div>
     ),
   },
   {
@@ -83,11 +100,21 @@ const FeatureList = [
   },
 ];
 
-function Feature({ title, img, description }) {
+function Feature({ title, img, video, description }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <img alt={title} className="rounded-xl" src={img} />
+        {video ? (
+          <video
+            className="w-full max-w-screen-sm rounded-xl zoomable"
+            muted
+            autoPlay
+            loop
+            src={video}
+          />
+        ) : (
+          <img className="rounded-xl" alt={title} src={img} />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

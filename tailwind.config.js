@@ -2,10 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        md: "997px",
+      },
+    },
   },
   plugins: [],
   corePlugins: {
     preflight: false,
-  }
+  },
 };
