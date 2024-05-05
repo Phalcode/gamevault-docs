@@ -43,18 +43,23 @@ This page describes the various configuration properties used in the application
 | `VOLUMES_LOGS`     | Folder inside container used for logs.                                                                 | `/logs`   | Any valid folder path |
 | `VOLUMES_SQLITEDB` | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`) | `/db`     | Any valid folder path |
 
-## DB
+Sure, here's the filled-in table:
 
-| Property         | Description                                                                                    | Default      | Possible Values         |
-| ---------------- | ---------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
-| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                               | `POSTGRESQL` | `POSTGRESQL`, `SQLITE`  |
-| `DB_HOST`        | The host of the database (not needed for SQLITE).                                              | `localhost`  | Any valid host name     |
-| `DB_PORT`        | The port of the database (not needed for SQLITE).                                              | `5432`       | Any valid port number   |
-| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                         | `default`    | Any valid username      |
-| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                         | `default`    | Any valid password      |
-| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                     | `gamevault`  | Any valid database name |
-| `DB_SYNCHRONIZE` | Force synchronizes the database with the entities. ⚠️ CAUTION: This could break your database! | `false`      | `true`, `false`         |
-| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                   | `false`      | `true`, `false`         |
+| Property                             | Description                                                                                                                             | Default      | Possible Values                             |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------- |
+| `DB_SYSTEM`                          | The database system used (POSTGRESQL or SQLITE).                                                                                        | `POSTGRESQL` | `POSTGRESQL`, `SQLITE`                      |
+| `DB_HOST`                            | The host of the database (not needed for SQLITE).                                                                                       | `localhost`  | Any valid host name                         |
+| `DB_PORT`                            | The port of the database (not needed for SQLITE).                                                                                       | `5432`       | Any valid port number                       |
+| `DB_USERNAME`                        | The username for the database (not needed for SQLITE).                                                                                  | `default`    | Any valid username                          |
+| `DB_PASSWORD`                        | The password for the database (not needed for SQLITE).                                                                                  | `default`    | Any valid password                          |
+| `DB_DATABASE`                        | The database name (not needed for SQLITE).                                                                                              | `gamevault`  | Any valid database name                     |
+| `DB_SYNCHRONIZE`                     | Force synchronizes the database with the entities. ⚠️ CAUTION: This could break your database!                                          | `false`      | `true`, `false`                             |
+| `DB_DEBUG`                           | Log all SQL Statements sent to the database.                                                                                            | `false`      | `true`, `false`                             |
+| `DB_TLS_ENABLED`                     | Enable TLS encryption for the Database connection. (not needed for SQLITE).                                                             | `false`      | `true`, `false`                             |
+| `DB_TLS_REJECT_UNAUTHORIZED_ENABLED` | Whether or not to reject connections if the Database server's certificate is not signed by a trusted CA. (not needed for SQLITE).       | `false`      | `true`, `false`                             |
+| `DB_TLS_CA_CERTIFICATE_PATH`         | The file path to the root certificate authority (CA) certificate. If using Docker, you need to mount it there. (not needed for SQLITE). | -            | `/path/to/server-certificates/root.crt`     |
+| `DB_TLS_KEY_PATH`                    | The file path to the client's private key for TLS authentication. If using Docker, you need to mount it there. (not needed for SQLITE). | -            | `/path/to/client-key/database.key`          |
+| `DB_TLS_CERTIFICATE_PATH`            | The file path to the client's TLS certificate. If using Docker, you need to mount it there. (not needed for SQLITE).                    | -            | `/path/to/client-certificates/database.crt` |
 
 ## RAWG_API
 
