@@ -8,7 +8,7 @@
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo.png</icon>
     <entry>
-        <title type="html"><![CDATA[]]></title>
+        <title type="html"><![CDATA[Temporary Solution to RAWG Woes, IGDB Partnership, and Exciting New Features!]]></title>
         <id>https://gamevau.lt/blog/2024/05/07/</id>
         <link href="https://gamevau.lt/blog/2024/05/07/"/>
         <updated>2024-05-07T00:00:00.000Z</updated>
@@ -37,6 +37,26 @@
 <p>Finally, we want to thank all of you for making all of this possible. If you have not already done so, please consider upgrading to GameVault+ to flex with animated profile pictures on your server. We would really appreciate it. Bet you can't find the GameVault+ easter egg though... 😉</p>
 <p>With love,</p>
 <p>Phalcode</p>]]></content>
+        <author>
+            <name>alfagun74</name>
+        </author>
+        <category label="game" term="game"/>
+        <category label="metadata" term="metadata"/>
+        <category label="database" term="database"/>
+        <category label="videogame" term="videogame"/>
+        <category label="RAWG" term="RAWG"/>
+        <category label="IGDB" term="IGDB"/>
+        <category label="twitch.tv" term="twitch.tv"/>
+        <category label="API" term="API"/>
+        <category label="partnership" term="partnership"/>
+        <category label="community" term="community"/>
+        <category label="solution" term="solution"/>
+        <category label="Steam" term="Steam"/>
+        <category label="backend" term="backend"/>
+        <category label="update" term="update"/>
+        <category label="features" term="features"/>
+        <category label="GameVault" term="GameVault"/>
+        <category label="easter egg" term="easter egg"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[GameVault+ out now]]></title>

@@ -9,6 +9,7 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
+            <title><![CDATA[Temporary Solution to RAWG Woes, IGDB Partnership, and Exciting New Features!]]></title>
             <link>https://gamevau.lt/blog/2024/05/07/</link>
             <guid>https://gamevau.lt/blog/2024/05/07/</guid>
             <pubDate>Tue, 07 May 2024 00:00:00 GMT</pubDate>
@@ -37,6 +38,23 @@
 <p>Finally, we want to thank all of you for making all of this possible. If you have not already done so, please consider upgrading to GameVault+ to flex with animated profile pictures on your server. We would really appreciate it. Bet you can't find the GameVault+ easter egg though... 😉</p>
 <p>With love,</p>
 <p>Phalcode</p>]]></content:encoded>
+            <category>game</category>
+            <category>metadata</category>
+            <category>database</category>
+            <category>videogame</category>
+            <category>RAWG</category>
+            <category>IGDB</category>
+            <category>twitch.tv</category>
+            <category>API</category>
+            <category>partnership</category>
+            <category>community</category>
+            <category>solution</category>
+            <category>Steam</category>
+            <category>backend</category>
+            <category>update</category>
+            <category>features</category>
+            <category>GameVault</category>
+            <category>easter egg</category>
         </item>
         <item>
             <title><![CDATA[GameVault+ out now]]></title>
