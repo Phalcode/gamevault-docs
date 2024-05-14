@@ -106,9 +106,10 @@ function Feature({ title, img, video, description }) {
       <div className="text--center">
         {video ? (
           <video
-            className="w-full max-w-screen-sm rounded-xl zoomable"
+            className="w-full max-w-screen-sm rounded-xl"
             muted
             autoPlay
+            controls
             loop
             src={video}
           />
