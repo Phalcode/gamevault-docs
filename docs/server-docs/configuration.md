@@ -32,44 +32,29 @@ This page describes the various configuration properties used in the application
 | `SERVER_ADMIN_PASSWORD`                 | Only used for password recovery of existing users. Resets the password of the user with the username set in `SERVER_ADMIN_USERNAME` to this password on startup. ⚠️ CAUTION: This won't register a new account for you! | -                 | Any password (No Length Validation)                                                          |
 | `SERVER_API_DOCS_ENABLED`               | Enables the API Specification Documenation on `/api/docs`, `/api/docs-json` & `/api/docs/yaml`.                                                                                                                         | `false`           | `true`, `false`                                                                              |
 | `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s.                                                                                                                                                                 | - (Unlimited)     | Any Number                                                                                   |
-| `SERVER_DEMO_MODE_ENABLED`              | Enables the Demo Mode. Only used for our official demo server. You won't need this.                                                                                                                                     | `false`           | `true`, `false`                                                                              |
 
 ## VOLUMES
 
-| Property           | Description                                                                                            | Default   | Possible Values       |
-| ------------------ | ------------------------------------------------------------------------------------------------------ | --------- | --------------------- |
-| `VOLUMES_FILES`    | Folder inside container used for game files.                                                           | `/files`  | Any valid folder path |
-| `VOLUMES_IMAGES`   | Folder inside container used for images.                                                               | `/images` | Any valid folder path |
-| `VOLUMES_LOGS`     | Folder inside container used for logs.                                                                 | `/logs`   | Any valid folder path |
-| `VOLUMES_SQLITEDB` | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`) | `/db`     | Any valid folder path |
+| Property           | Description                                                                                            | Default    | Possible Values       |
+| ------------------ | ------------------------------------------------------------------------------------------------------ | ---------- | --------------------- |
+| `VOLUMES_FILES`    | Folder inside container used for game files.                                                           | `/files`   | Any valid folder path |
+| `VOLUMES_IMAGES`   | Folder inside container used for images.                                                               | `/images`  | Any valid folder path |
+| `VOLUMES_LOGS`     | Folder inside container used for logs.                                                                 | `/logs`    | Any valid folder path |
+| `VOLUMES_PLUGINS`  | Folder inside container used for plugins.                                                              | `/plugins` | Any valid folder path |
+| `VOLUMES_SQLITEDB` | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`) | `/db`      | Any valid folder path |
 
-Sure, here's the filled-in table:
+## DB
 
-| Property                             | Description                                                                                                                             | Default      | Possible Values                             |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------------------------------------------- |
-| `DB_SYSTEM`                          | The database system used (POSTGRESQL or SQLITE).                                                                                        | `POSTGRESQL` | `POSTGRESQL`, `SQLITE`                      |
-| `DB_HOST`                            | The host of the database (not needed for SQLITE).                                                                                       | `localhost`  | Any valid host name                         |
-| `DB_PORT`                            | The port of the database (not needed for SQLITE).                                                                                       | `5432`       | Any valid port number                       |
-| `DB_USERNAME`                        | The username for the database (not needed for SQLITE).                                                                                  | `default`    | Any valid username                          |
-| `DB_PASSWORD`                        | The password for the database (not needed for SQLITE).                                                                                  | `default`    | Any valid password                          |
-| `DB_DATABASE`                        | The database name (not needed for SQLITE).                                                                                              | `gamevault`  | Any valid database name                     |
-| `DB_SYNCHRONIZE`                     | Force synchronizes the database with the entities. ⚠️ CAUTION: This could break your database!                                          | `false`      | `true`, `false`                             |
-| `DB_DEBUG`                           | Log all SQL Statements sent to the database.                                                                                            | `false`      | `true`, `false`                             |
-| `DB_TLS_ENABLED`                     | Enable TLS encryption for the Database connection. (not needed for SQLITE).                                                             | `false`      | `true`, `false`                             |
-| `DB_TLS_REJECT_UNAUTHORIZED_ENABLED` | Whether or not to reject connections if the Database server's certificate is not signed by a trusted CA. (not needed for SQLITE).       | `false`      | `true`, `false`                             |
-| `DB_TLS_CA_CERTIFICATE_PATH`         | The file path to the root certificate authority (CA) certificate. If using Docker, you need to mount it there. (not needed for SQLITE). | -            | `/path/to/server-certificates/root.crt`     |
-| `DB_TLS_KEY_PATH`                    | The file path to the client's private key for TLS authentication. If using Docker, you need to mount it there. (not needed for SQLITE). | -            | `/path/to/client-key/database.key`          |
-| `DB_TLS_CERTIFICATE_PATH`            | The file path to the client's TLS certificate. If using Docker, you need to mount it there. (not needed for SQLITE).                    | -            | `/path/to/client-certificates/database.crt` |
-
-## RAWG_API
-
-| Property                      | Description                                                                                                                                                                                                                                                                                                                                                        | Default                   | Possible Values                                 |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- | ----------------------------------------------- |
-| `RAWG_API_URL`                | Base URL of the RAWG API.                                                                                                                                                                                                                                                                                                                                          | `https://api.rawg.io/api` | Any valid URL                                   |
-| `RAWG_API_KEY`                | API key for the RAWG API. Can be changed to a drop-in replacement like [https://rawg2steam.phalco.de/api](https://rawg2steam.phalco.de/api).                                                                                                                                                                                                                       | `""`                      | Any valid RAWG API key                          |
-| `RAWG_API_CACHE_DAYS`         | When to renew RAWG API cached data (in days).                                                                                                                                                                                                                                                                                                                      | `30`                      | Any positive integer                            |
-| `RAWG_API_INCLUDED_STORES`    | This is a default list of stores that the RAWG search algorithm will search games on. You can specify these stores as a comma-separated list. You can also enter 0 to search all. To find the RAWG Store IDs, refer to [this page](./indexing-and-metadata.md#rawg-stores). By default, we exclude itch.io (ID 9) to filter out a large number of bad asset flips. | `1,2,3,4,5,6,7,8,11`      | Any comma-separated string of RAWG Store IDs    |
-| `RAWG_API_INCLUDED_PLATFORMS` | This is a default list of platforms that the RAWG search algorithm will search games on. You can specify these platforms as a comma-separated list. You can also enter 0 to search all. To find the RAWG Platform IDs, refer to [this page](./indexing-and-metadata.md#rawg-platforms). By default, we search all platforms (ID 0).                                | `0`                       | Any comma-separated string of RAWG Platform IDs |
+| Property         | Description                                                                                    | Default      | Possible Values         |
+| ---------------- | ---------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
+| `DB_SYSTEM`      | The database system used (POSTGRESQL or SQLITE).                                               | `POSTGRESQL` | `POSTGRESQL`, `SQLITE`  |
+| `DB_HOST`        | The host of the database (not needed for SQLITE).                                              | `localhost`  | Any valid host name     |
+| `DB_PORT`        | The port of the database (not needed for SQLITE).                                              | `5432`       | Any valid port number   |
+| `DB_USERNAME`    | The username for the database (not needed for SQLITE).                                         | `default`    | Any valid username      |
+| `DB_PASSWORD`    | The password for the database (not needed for SQLITE).                                         | `default`    | Any valid password      |
+| `DB_DATABASE`    | The database name (not needed for SQLITE).                                                     | `gamevault`  | Any valid database name |
+| `DB_SYNCHRONIZE` | Force synchronizes the database with the entities. ⚠️ CAUTION: This could break your database! | `false`      | `true`, `false`         |
+| `DB_DEBUG`       | Log all SQL Statements sent to the database.                                                   | `false`      | `true`, `false`         |
 
 ## GAMES
 
@@ -88,22 +73,14 @@ Sure, here's the filled-in table:
 | `USERS_REQUIRE_FIRST_NAME` | Require First Name Field for new registrations. | `false` | `true`, `false` |
 | `USERS_REQUIRE_LAST_NAME`  | Require Last Name Field for new registrations.  | `false` | `true`, `false` |
 
-## IMAGE
+## MEDIA
 
-| Property                                        | Description                                                                                  | Default                                                                 | Possible Values                  |
-| ----------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------- |
-| `IMAGE_MAX_SIZE_IN_KB`                          | he maximum size for image uploads in kilobytes. Set it to 0 to disable image uploads.        | `10000` (10MB)                                                          | Any number                       |
-| `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` | The amount of time to wait when the server reaches the rate limit for the Google Images API. | `24`                                                                    | Any number                       |
-| `IMAGE_SUPPORTED_IMAGE_FORMATS`                 | List of supported image formats (MIME Types) on this server, separated by commas.            | `image/bmp, image/jpeg, image/png, image/tiff, image/gif, image/x-icon` | List of `image/*` content types. |
-| `IMAGE_GC_DISABLED`                             | Whether or not image garbage collection is enabled.                                          | `false`                                                                 | `true`, `false`                  |
-| `IMAGE_GC_INTERVAL_IN_MINUTES`                  | The interval in minutes for image garbage collection.                                        | `60`                                                                    | Any number                       |
-
-## PLUGIN
-
-| Property         | Description                                                                                         | Default | Possible Values |
-| ---------------- | --------------------------------------------------------------------------------------------------- | ------- | --------------- |
-| `PLUGIN_ENABLED` | If set to `true`, the server will try to load and run plugins listed in the `PLUGIN_SOURCES` array. | `false` | `true`, `false` |
-| `PLUGIN_SOURCES` | A list of URLS for GameVault plugins to load, separated by commas.                                  | -       | List of URLS    |
+| Property                       | Description                                                                           | Default                                                                                                                                                                                                                                                                          | Possible Values                     |
+| ------------------------------ | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| `MEDIA_MAX_SIZE_IN_KB`         | he maximum size for media uploads in kilobytes. Set it to 0 to disable media uploads. | `10000` (10MB)                                                                                                                                                                                                                                                                   | Any number                          |
+| `MEDIA_SUPPORTED_FORMATS`      | List of supported media formats (MIME Types) on this server, separated by commas.     | `audio/mpeg,audio/wav,audio/ogg,audio/aac,audio/flac,audio/x-ms-wma,audio/amr,audio/mp4,image/bmp,image/jpeg,image/png,image/tiff,image/gif,image/x-icon,video/mp4,video/x-msvideo,video/quicktime,video/x-ms-wmv,video/x-flv,video/x-matroska,video/webm,video/mpeg,video/3gpp` | Comma separated List of MIME types. |
+| `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)            | `false`                                                                                                                                                                                                                                                                          | `true`, `false`                     |
+| `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                                 | `60`                                                                                                                                                                                                                                                                             | Any number                          |
 
 ## TESTING
 
@@ -112,5 +89,3 @@ Sure, here's the filled-in table:
 | `TESTING_AUTHENTICATION_DISABLED` | If `true`, the API will accept any auth header. Useful for testing without authentication.                                            | `false` | `true`, `false` |
 | `TESTING_MOCK_FILES`              | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files.                | `false` | `true`, `false` |
 | `TESTING_IN_MEMORY_DB`            | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database. Only works with SQLITE. | `false` | `true`, `false` |
-| `TESTING_RAWG_API_DISABLED`       | If `true`, the server will not make any external API calls to RAWG. Useful for testing without depending on the API.                  | `false` | `true`, `false` |
-| `TESTING_GOOGLE_API_DISABLED`     | If `true`, the server will not make any external API calls to Google. Useful for testing without depending on the API.                | `false` | `true`, `false` |
