@@ -95,7 +95,7 @@ Sure, here's the filled-in table:
 | `IMAGE_MAX_SIZE_IN_KB`                          | he maximum size for image uploads in kilobytes. Set it to 0 to disable image uploads.        | `10000` (10MB)                                                          | Any number                       |
 | `IMAGE_GOOGLE_API_RATE_LIMIT_COOLDOWN_IN_HOURS` | The amount of time to wait when the server reaches the rate limit for the Google Images API. | `24`                                                                    | Any number                       |
 | `IMAGE_SUPPORTED_IMAGE_FORMATS`                 | List of supported image formats (MIME Types) on this server, separated by commas.            | `image/bmp, image/jpeg, image/png, image/tiff, image/gif, image/x-icon` | List of `image/*` content types. |
-| `IMAGE_GC_DISABLED`                             | Whether or not image garbage collection is enabled.                                          | `true`                                                                  | `true`, `false`                  |
+| `IMAGE_GC_DISABLED`                             | Whether or not image garbage collection is enabled.                                          | `false`                                                                 | `true`, `false`                  |
 | `IMAGE_GC_INTERVAL_IN_MINUTES`                  | The interval in minutes for image garbage collection.                                        | `60`                                                                    | Any number                       |
 
 ## PLUGIN
