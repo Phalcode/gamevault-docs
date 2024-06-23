@@ -63,14 +63,14 @@ You have now successfully set up your GameVault Server using UNRAID.
 
 ### Stopping the Server
 
-Navigate to "Docker" tab and left clck the GameVault app icon you have created.
+Navigate to "Docker" tab and left click the GameVault app icon you have created.
 
 Click on "Stop".
 
 
 ### Reading the Logs
 
-Navigate to "Docker" tab and left clck the GameVault app icon you have created.
+Navigate to "Docker" tab and left click the GameVault app icon you have created.
 
 Click on "Logs".
 
