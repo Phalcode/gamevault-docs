@@ -1,5 +1,15 @@
 # IGDB
 
+## Overview
+
+[The Internet Games Database (IGDB)](https://igdb.com) is one of the most popular databases for detailed video game information run by [twitch.tv](https://twitch.tv). By integrating IGDB with GameVault, users get accurate and up-to-date game data. We're pleased to partner with IGDB to provide the best game information to our users.
+
+## Setup
+
+1. [Register for an IGDB API Key by creating a Developer Application on dev.twitch.tv](https://api-docs.igdb.com/#account-creation)
+2. Go to your [developer dashboard](https://dev.twitch.tv/console/apps) and copy the Client ID and Client Secret of your app
+3. Put them in the `METADATA_IGDB_CLIENT_ID` and `METADATA_IGDB_CLIENT_SECRET` settings
+
 ## Configurations
 
 | Property                      | Description                            | Default | Possible Values    |
