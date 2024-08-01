@@ -58,7 +58,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 
 ### Lack of Metadata in Games
 
-- If you haven't set up RAWG yet, follow [these steps](./server-docs/indexing-and-metadata.md#rawg-api-key).
+- If you haven't set up a Metadata Provider yet, follow [these steps](./server-docs/indexing-and-metadata.md#rawg-api-key).
 - Check the RAWG-API Dashboard for any requests associated with your API Key.
 - Verify if [the RAWG API is disabled in your server configuration](./server-docs/configuration.md).
 - Verify if [your file names are correct](./server-docs/structure.md)

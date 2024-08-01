@@ -1,18 +1,18 @@
-import React from "react";
 import clsx from "clsx";
+import React from "react";
 import styles from "./styles.module.css";
 
-import ImgLibrary from "@site/static/img/features/library.png";
-import VideoLibrary from "@site/static/video/features/library.mp4";
 import ImgAdmin from "@site/static/img/features/admin.png";
-import VideoAdmin from "@site/static/video/features/admin.mp4";
 import ImgCommunity from "@site/static/img/features/community.png";
-import VideoCommunity from "@site/static/video/features/community.mp4";
 import ImgGame from "@site/static/img/features/game.png";
-import VideoGame from "@site/static/video/features/game.mp4";
-import ImgInstallation from "@site/static/img/features/installation.png";
-import VideoInstallation from "@site/static/video/features/installation.mp4";
 import ImgGithub from "@site/static/img/features/github.png";
+import ImgInstallation from "@site/static/img/features/installation.png";
+import ImgLibrary from "@site/static/img/features/library.png";
+import VideoAdmin from "@site/static/video/features/admin.mp4";
+import VideoCommunity from "@site/static/video/features/community.mp4";
+import VideoGame from "@site/static/video/features/game.mp4";
+import VideoInstallation from "@site/static/video/features/installation.mp4";
+import VideoLibrary from "@site/static/video/features/library.mp4";
 
 const FeatureList = [
   {
@@ -81,7 +81,7 @@ const FeatureList = [
         <a href="/docs/server-docs/setup">
           setting up a server using our Docker image
         </a>{" "}
-        and is just as easy!
+        is just as easy!
       </div>
     ),
   },

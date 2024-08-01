@@ -49,8 +49,6 @@ services:
       DB_HOST: db
       DB_USERNAME: gamevault
       DB_PASSWORD: YOURPASSWORDHERE
-      # Uncomment and insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
-      # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       - /volume1/docker/gamevault/files:/files
       - /volume1/docker/gamevault/images:/images
@@ -68,7 +66,7 @@ services:
 ```
 
 :::note
-Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
+Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
 
 :::warning
@@ -87,8 +85,6 @@ services:
     restart: unless-stopped
     environment:
       DB_SYSTEM: "SQLITE"
-      # Uncomment and insert your RAWG API Key here if you have one (https://gamevau.lt/docs/server-docs/indexing-and-metadata#rawg-api-key)
-      # RAWG_API_KEY: YOURAPIKEYHERE
     ports:
       - 8080:8080/tcp #Change the left one if you want
     volumes:
@@ -98,12 +94,12 @@ services:
 ```
 
 :::note
-Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
+Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
 
 ## Conclusion
 
-You've successfully set up GameVault Server using  Synology Container Manager. You should now be able to access the web interface via your NAS's IP address followed by port 8080. If you encounter any issues or have feedback, please let us know.
+You've successfully set up GameVault Server using Synology Container Manager. You should now be able to access the web interface via your NAS's IP address followed by port 8080. If you encounter any issues or have feedback, please let us know.
 
 ## Additional Info
 
@@ -123,4 +119,3 @@ To view the logs for the GameVault Server, do the following:
 2. Select the GameVault container from the list of containers.
 3. Click on "Details" to expand the container's information.
 4. Select the "Log" tab to view the container's logs in real-time.
-

@@ -25,8 +25,6 @@ services:
       DB_HOST: db
       DB_USERNAME: gamevault
       DB_PASSWORD: YOURPASSWORDHERE
-      # Uncomment and insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)
-      # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       # Mount the folder where your games are
       - /your/games/folder:/files
@@ -47,7 +45,7 @@ services:
 ```
 
 :::note
-Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
+Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
 
 :::warning
@@ -66,8 +64,6 @@ services:
     restart: unless-stopped
     environment:
       DB_SYSTEM: "SQLITE"
-      # Uncomment and insert your RAWG API Key here if you have one (https://gamevau.lt/docs/server-docs/indexing-and-metadata#rawg-api-key)
-      # RAWG_API_KEY: YOURAPIKEYHERE
     volumes:
       - /your/games/folder:/files
       - /your/images/folder:/images
@@ -77,7 +73,7 @@ services:
 ```
 
 :::note
-Replace the variables (`YOURPASSWORDHERE`, `YOURAPIKEYHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
+Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
 
 ## Step 2: Start the Service
@@ -92,7 +88,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 ## Conclusion
 
-Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as http://192.168.0.15:8080 for example.
+Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as ``http://192.168.0.15:8080`` for example.
 
 [Click here to continue.](setup.md#what-next)
 

@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/yamllint.json": "file:///home/alfagun74/git/Phalcode/gamevault-docs/docs/server-docs/metadata/metadata.yml",
+        "https://gitlab.com/fdroid/fdroiddata/-/raw/master/schemas/metadata.json": "file:///home/alfagun74/git/Phalcode/gamevault-docs/docs/server-docs/metadata/_category_.yml"
+    }
+}

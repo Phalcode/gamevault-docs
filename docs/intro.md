@@ -61,7 +61,7 @@ Let's take a look at all the main functions of GameVault:
 ### Server Features
 
 - ♻️ [Automatically indexes games from the file system into a database](./server-docs/indexing-and-metadata.md#game-indexing)
-- 📚 [Enhances games with metadata like tags, genres, description and more using RAWG API](./server-docs/indexing-and-metadata.md#integration-with-rawg)
+- 📚 [Enhances games with metadata like tags, genres, description and more using various APIs](./server-docs/indexing-and-metadata.md)
 - 📸 [Automatically finds beautiful box art for your library](./server-docs/indexing-and-metadata.md#game-box-arts)
 - 👥 [Multi-User Authentication](./server-docs/user-management.md)
 - 🔒 [Role-Based Access Control](./server-docs/user-management#user-roles)
@@ -70,6 +70,7 @@ Let's take a look at all the main functions of GameVault:
 - 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/rest-api)
 - 🔌 [Fully Documented API](./advanced-usage/rest-api)
 - ⚙️ [Highly Configurable](./server-docs/configuration)
+- ⚙️ [Modular Plugin Framework](./server-docs/plugins.md)
 
 ## Support
 
