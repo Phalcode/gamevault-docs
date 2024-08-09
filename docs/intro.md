@@ -60,9 +60,8 @@ Let's take a look at all the main functions of GameVault:
 
 ### Server Features
 
-- ♻️ [Automatically indexes games from the file system into a database](./server-docs/indexing-and-metadata.md#game-indexing)
-- 📚 [Enhances games with metadata like tags, genres, description and more using various APIs](./server-docs/indexing-and-metadata.md)
-- 📸 [Automatically finds beautiful box art for your library](./server-docs/indexing-and-metadata.md#game-box-arts)
+- ♻️ [Automatically indexes games from the file system into a database](./server-docs/indexing.md)
+- 📚 [Enhances games with metadata like tags, genres, description and more using various APIs](./server-docs/metadata-enrichment/metadata.md)
 - 👥 [Multi-User Authentication](./server-docs/user-management.md)
 - 🔒 [Role-Based Access Control](./server-docs/user-management#user-roles)
 - ⏱️ [Keeps track of your users' game progress and state](./client-docs/how-to-use#tracking-your-game-progress)

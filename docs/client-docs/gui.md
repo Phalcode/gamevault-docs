@@ -55,14 +55,14 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 - Settings affecting all users on the server (visible to editors or higher).
 
-#### Edit Images
+#### Edit Game Images
 
 - Set a different thumbnail/background image using URLs or uploads (editors only).
 
-#### RAWG Integration
+#### Edit Metadata
 
-- View and remap RAWG game data.
-- Refresh game data from RAWG.
+- View and remap game metadata.
+- Refresh game data from metadata providers.
 
 ## Downloads Tab
 
@@ -86,7 +86,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 ## User Settings
 
-### Edit Images
+### Edit User Images
 
 - Set avatar/background images using URLs or uploads.
 

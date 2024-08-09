@@ -1,37 +1,84 @@
 ---
 title: Enriching your Games with Metadata
+sidebar_position: 0.01
 ---
 
-Nobody wants to see blank placeholders in their library. We want those games enriched with some juicy metadata.
+Nobody wants to see blank placeholder games in their library. We want those games enriched with some juicy metadata.
 
-Since v13 GameVault supports a vast plugin framework that supports all kinds of metadata providers and even multiple ones at the same time in combination. In the following pages you will learn how to set up a metadata provider and get going. But first lets talk about the basics.
+GameVault supports a vast plugin framework that accommodates various metadata providers simultaneously. In the following sections, you'll learn how to set up a metadata provider and get started. But first, let's talk about the basics.
 
-## How Metadata Enrichment in GameVault works
+## How Metadata Enrichment in GameVault Works
 
-The GameVault Server brings a Metadate service, that allows various Metadata Provider Plugins to register onto. Each provider registers with a numerical priority value. the higher the priority the more important the metadata is treated.
+The GameVault Server includes a metadata service that allows various Metadata Provider Plugins to register. Each provider registers with a numerical priority value - the higher the priority, the more important the metadata is treated.
 
-When indexing the games, GameVault automatically tries to find metadata for the new Games and games with outdated metadata. It uses a standard interface search method that finds results on the metadata provider (often based on Game Title and release Year) and tries to find the best match of the list using a probability index that gets calculated using an NLP Levenshtein algorithm and the release-year-driftoff. the further away the title and release date is, the more unprobable is the match. For each Game File only one Game can me mapped per Metadata Provider. If multiple Providers were used gamevault applies the metadata by priority. so if provider A provides no data for tags, and provider B does does it will merge the data of Provider A with Provider Bs so most metadata fields are filled.
+When indexing the games, GameVault automatically seeks metadata for new games and games with outdated metadata. It uses a standard interface search method to find games on the metadata provider (often based on Game Title and Release Year) and determines the best match using a probability index calculated with an NLP Levenshtein algorithm and the release-year-drift. The further away the title and release date, the less probable the match. For each game file, only one game can be mapped per metadata provider.
+
+## Editing Metadata
+
+To edit metadata, you need to have the role of EDITOR or higher. Data provided by users are always treated with the highest priority. Only one user-provided metadata object per game is allowed and it is the same for all users. This can be used to fill in missing data manually or change it.
 
 ## Remapping a Game
 
 It is possible to search the registered Metadata Providers to find a better matching game and remap the current match to it.
 
-## Developing a new Metadata Provider
+## Unmapping a Game
 
-To build an integration for a new Metadata provider you need to write a GameVault Plugin. See [Plugins]() to see how that works.
+It is possible to unmap a game from a Metadata Provider, which will disconnect the mapped metadata from the game.
 
-Then you need to build a NestJS service that implements the abstract.metadata-provider.interface.ts and implement your own configuration variables.
+## How GameVault Merges Metadata
 
-You can then create a github repository, tag it with the tag `gamevault-backend-plugin` to make it findable. After that you can document your provider in this documentation with a notice that it is community maintained.
+GameVault always applies the metadata detached and by priority, by creating an "effective" metadata object. We call this process "merging". It works as follows:
 
-## What Providers are supported?
+Let's say we have a game: "Grand Theft Auto: San Andreas" with two Metadata Providers and a user-provided edit.
 
-Click on any of the entries below to get to their dedicated Page.
+| Provider | Priority | Title                         | Description                                        | Age Rating |
+| -------- | -------- | ----------------------------- | -------------------------------------------------- | ---------- |
+| STEAM    | 1        | Grand Theft Auto: San Andreas | All you had to do is to follow the damn train, CJ. | 18         |
+| IGDB     | 2        | Grand Theft Auto: San Andreas | I'll have two number 9s, a number 9 large...       |            |
+| USER     | ∞        | N/A                           | N/A                                                | 12         |
 
-### Built-In:
+GameVault begins creating the "effective" metadata object by starting with the lowest priority provider and working its way up. In our case, the lowest priority provider is Steam with a priority of 1.
 
-- IGDB (via Client-ID and Client Secret)
+So the generated metadata object initially looks like this:
 
-### Community Made:
+| Provider  | Title                         | Description                                        | Age Rating |
+| --------- | ----------------------------- | -------------------------------------------------- | ---------- |
+| GameVault | Grand Theft Auto: San Andreas | All you had to do is to follow the damn train, CJ. | 18         |
+
+Next, the IGDB provider is used. As you can see, it has a different description, but the age rating is missing. GameVault will overwrite the description with the more important one. However, the missing age rating will be ignored, as some data from a lower priority provider is always preferred over having no data in a field. So the merged metadata object now looks like:
+
+| Provider  | Title                         | Description                                  | Age Rating |
+| --------- | ----------------------------- | -------------------------------------------- | ---------- |
+| GameVault | Grand Theft Auto: San Andreas | I'll have two number 9s, a number 9 large... | 18         |
+
+Finally, we get to the user-provided metadata. This one is special because the user always has the highest priority. So it will always be used. In our case, we want to let our underage kid play some San Andreas, so we overwrote the age rating to 12. Again, missing fields will be ignored.
+
+So the merged metadata object now looks like:
+
+| Provider  | Title                         | Description                                  | Age Rating |
+| --------- | ----------------------------- | -------------------------------------------- | ---------- |
+| GameVault | Grand Theft Auto: San Andreas | I'll have two number 9s, a number 9 large... | 12         |
+
+This is the final result. The merge is done by the GameVault Server.
+
+The server will trigger a new merge whenever a relevant metadata object is changed (e.g., Edit Game Metadata, Recache, Remap, etc.).
+
+## Developing a New Metadata Provider
+
+To build a new integration for a metadata provider, you need to write a GameVault Plugin. See [Plugins](../plugins.md) to understand how that works.
+
+Then you need to build a NestJS service that implements the `abstract.metadata-provider.interface.ts` and implement your own configuration variables.
+
+Last but not least, you can then create a GitHub repository and tag it with the tag `gamevault-backend-plugin` to make it findable. After that, you can document your provider in this documentation with a notice that it is community maintained.
+
+## Supported Metadata Providers
+
+Click on any of the entries below to get to their dedicated page.
+
+### Built-In
+
+- [IGDB](./provider-igdb.md) (via Client-ID and Client Secret)
+
+### Community-Maintained
 
 - Not yet available. Be the first one!

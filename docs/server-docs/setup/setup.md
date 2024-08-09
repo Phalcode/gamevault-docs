@@ -36,7 +36,7 @@ You now should have a server up and running. To further set up and start using s
 
 3. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
 
-4. **Enhance your games with metadata:** Connect your server to RAWG, the world's largest video game database that GameVault utilizes for fetching game metadata. This will enrich your gaming experience. Learn how to establish the connection in the [indexing and metadata guide](../indexing-and-metadata.md).
+4. **Enhance your games with metadata:** Connect your server to a metadata source such as IGDB to enrich your games with metadata. Learn how to do this in the [metadata chapter](../metadata-enrichment/metadata.md).
 
 5. **(OPTIONAL) Make your server accessible outside your Local Area Network**: If you want to make the application accessible beyond your local network, for instance, for your friends or yourself to connect to it remotely, you'll need to configure an HTTPS reverse proxy and potentially make adjustments to firewall rules. We recommend utilizing [NGINX Proxy Manager](https://nginxproxymanager.com) for this purpose. Numerous guides are available on how to set up a reverse proxy for a Docker container, so we won't cover it in detail in this guide.
 

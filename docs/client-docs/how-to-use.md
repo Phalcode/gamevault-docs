@@ -111,7 +111,7 @@ If you have the `EDITOR` role or higher on your GameVault server, you can modify
 
 1. Open Game Settings by clicking on the Settings Icon either from the Top Right corner of the Box Art Image or from the Games Detail page.
 2. A popup will appear, where you can select/paste/drop an image or paste a URL for different box art or background image.
-3. Additionally, there will be a RAWG Integration tag with a search box for the RAWG database, allowing you to remap the game to the correct game.
+3. Additionally, there is an Edit Metadata Tab with a search box for each provider, allowing you to remap the game to the correct provider game.
 
 Please note that any changes made will affect all users on the server.
 

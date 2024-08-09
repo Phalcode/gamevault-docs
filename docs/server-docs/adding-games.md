@@ -95,7 +95,7 @@ If you wish to add the same game multiple times to your GameVault server for any
 
 By using this approach, the indexer will treat these two games as separate entities.
 
-In case the RAWG Matching feature does not work accurately for these games, you have the option to manually remap them in the client if you have the Role Editor or higher privileges.
+In case the Auto-Matching feature does not work accurately for these games, you have the option to manually remap them in the client if you have the Role Editor or higher privileges.
 
 **Here's a good example:**
 
