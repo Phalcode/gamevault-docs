@@ -28,8 +28,8 @@ services:
     volumes:
       # Mount the folder where your games are
       - /your/games/folder:/files
-      # Mount the folder where GameVault should store its images
-      - /your/images/folder:/images
+      # Mount the folder where GameVault should store its media
+      - /your/media/folder:/media
     ports:
       - 8080:8080/tcp
   db:
@@ -66,7 +66,7 @@ services:
       DB_SYSTEM: "SQLITE"
     volumes:
       - /your/games/folder:/files
-      - /your/images/folder:/images
+      - /your/media/folder:/media
       - /your/sqlite/database/folder:/db
     ports:
       - 8080:8080/tcp
@@ -88,7 +88,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 ## Conclusion
 
-Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as ``http://192.168.0.15:8080`` for example.
+Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as `http://192.168.0.15:8080` for example.
 
 [Click here to continue.](setup.md#what-next)
 

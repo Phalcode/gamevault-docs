@@ -25,7 +25,7 @@ I can't mention these in every single Section below, so before you try to solve 
 
 - Refer to [this](./client-docs/how-to-use.md#modifying-games) for instructions on how to remap your games.
 
-### Server fails to save images / create SQLITE Database / index games / throws a Permissions Denied / No Permission / EACCES error
+### Server fails to save media / create SQLITE Database / index games / throws a Permissions Denied / No Permission / EACCES error
 
 This is most probably a permissions issue due to the fact that gamevault runs as a non-root user (1000:1000) by default for security purposes.
 
@@ -49,12 +49,12 @@ Either make sure this user has permissions to read/write to the folders you map 
 - For installations, verify your correct root folder is set [in the settings](./client-docs/gui.md#data).
 - Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](./client-docs/gui.md#game-settings)).
 - Verify [your file names are correct](./server-docs/structure.md).
-- Check the Filesystem Permissions. See [here](#server-fails-to-save-images--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
+- Check the Filesystem Permissions. See [here](#server-fails-to-save-media--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
 
 ### Missing Box Arts
 
 - [Set up a Metadata Provider](./server-docs/metadata-enrichment/metadata.md) that provides box art for your games.
-- Clear image caches [in the settings.](./client-docs/gui.md#data)
+- Clear media caches [in the settings.](./client-docs/gui.md#data)
 
 ### Lack of Metadata in Games
 

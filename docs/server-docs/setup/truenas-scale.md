@@ -44,7 +44,7 @@ Set your `Admin User` and `Admin Password`.
 
 ![Step 4b](/img/docs/setup/scale/scale-configure-gamevault-app-install-3.png)
 
-:::note 
+:::note
 
 Leave the Logs and Images storage options as PVC.
 
@@ -52,13 +52,11 @@ Leave the Logs and Images storage options as PVC.
 
 Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise; please follow the [Dataset and Share Setup](https://truecharts.org/manual/SCALE/guides/dataset) guide.
 
-
 ![Step 4c](/img/docs/setup/scale/scale-configure-gamevault-app-install-3.png)
 
 Scroll down to **Documentation** and click install, wait a few minutes and the app should deploy!
 
 ![Installed](/img/docs/setup/scale/scale-configured-gamevault-app-installed.png)
-
 
 ## Conclusion
 

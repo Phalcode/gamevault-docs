@@ -23,7 +23,7 @@ Open `File Station` and create the following folders:
 - `/docker/projects/gamevault-compose`
 - `/docker/gamevault`
 - `/docker/gamevault/files`
-- `/docker/gamevault/images`
+- `/docker/gamevault/media`
 - `/docker/gamevault/database`
 
 ## Step 2: Set Up a Project in Container Manager
@@ -51,7 +51,7 @@ services:
       DB_PASSWORD: YOURPASSWORDHERE
     volumes:
       - /volume1/docker/gamevault/files:/files
-      - /volume1/docker/gamevault/images:/images
+      - /volume1/docker/gamevault/media:/media
     ports:
       - 8080:8080/tcp
   db:
@@ -89,7 +89,7 @@ services:
       - 8080:8080/tcp #Change the left one if you want
     volumes:
       - /volume1/docker/gamevault/files:/files
-      - /volume1/docker/gamevault/images:/images
+      - /volume1/docker/gamevault/media:/media
       - /volume1/docker/gamevault/database:/db
 ```
 

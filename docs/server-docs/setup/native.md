@@ -44,7 +44,7 @@ For example:
 
 ```bash
 cd ~
-mkdirp gv-db gv-images gv-games`
+mkdirp gv-db gv-media gv-games`
 ```
 
 ```ini
@@ -52,7 +52,7 @@ mkdirp gv-db gv-images gv-games`
 DB_SYSTEM=SQLITE
 VOLUMES_SQLITEDB=/path/for/database/files
 VOLUMES_FILES=/path/for/gane/files
-VOLUMES_IMAGES=/path/for/image/files
+VOLUMES_MEDIA=/path/for/media/files
 ```
 
 ### Step 4: Build and Start the Server
