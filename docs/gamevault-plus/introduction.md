@@ -42,7 +42,7 @@ Phalcode is the small startup company developing GameVault. We are just two frie
 
 ### I have trouble with GameVault+ and I need support. How can I contact you?
 
-Contect the developers **directly** on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription.
+Contact the developers **directly** on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription.
 
 ### How do I manage billing and payments?
 
