@@ -44,7 +44,7 @@ For example:
 
 ```bash
 cd ~
-mkdirp gv-db gv-media gv-games`
+mkdir -p gv-db gv-media gv-games`
 ```
 
 ```ini
