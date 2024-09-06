@@ -37,6 +37,7 @@ This page describes the various configuration properties used in the application
 
 | Property           | Description                                                                                            | Default    | Possible Values       |
 | ------------------ | ------------------------------------------------------------------------------------------------------ | ---------- | --------------------- |
+| `VOLUMES_CONFIG`   | Folder inside container used for configuring GameVault.                                                | `/config`  | Any valid folder path |
 | `VOLUMES_FILES`    | Folder inside container used for game files.                                                           | `/files`   | Any valid folder path |
 | `VOLUMES_MEDIA`    | Folder inside container used for media.                                                                | `/media`   | Any valid folder path |
 | `VOLUMES_LOGS`     | Folder inside container used for logs.                                                                 | `/logs`    | Any valid folder path |
@@ -99,13 +100,16 @@ Here are the descriptions for the metadata properties:
 
 ## METADATA
 
-| Property                      | Description                                                                                | Default | Possible Values    |
-| ----------------------------- | ------------------------------------------------------------------------------------------ | ------- | ------------------ |
-| `METADATA_TTL_IN_DAYS`        | The number of days metadata is considered fresh before requiring an update.                | `30`    | Any number of days |
-| `METADATA_IGDB_ENABLED`       | Enables or disables the built-in integration with IGDB for metadata retrieval.             | `true`  | `true`, `false`    |
-| `METADATA_IGDB_PRIORITY`      | The priority level for IGDB metadata sources when multiple metadata sources are available. | 1       | Any number         |
-| `METADATA_IGDB_CLIENT_ID`     | The client ID used for authenticating requests to the IGDB API.                            | -       | Your Client ID     |
-| `METADATA_IGDB_CLIENT_SECRET` | The client secret used for authenticating requests to the IGDB API.                        | -       | Your Client Secret |
+| Property                        | Description                                                                                                                                                   | Default | Possible Values    |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |
+| `METADATA_TTL_IN_DAYS`          | The number of days metadata is considered fresh before requiring an update.                                                                                   | `30`    | Any number of days |
+| `METADATA_IGDB_ENABLED`         | Enables or disables the built-in integration with IGDB for metadata retrieval.                                                                                | `true`  | `true`, `false`    |
+| `METADATA_IGDB_PRIORITY`        | The priority level for IGDB metadata sources when multiple metadata sources are available.                                                                    | 1       | Any number         |
+| `METADATA_IGDB_CLIENT_ID`       | The client ID used for authenticating requests to the IGDB API.                                                                                               | -       | Your Client ID     |
+| `METADATA_IGDB_CLIENT_SECRET`   | The client secret used for authenticating requests to the IGDB API.                                                                                           | -       | Your Client Secret |
+| `METADATA_IGDB_CLIENT_SECRET`   | The client secret used for authenticating requests to the IGDB API.                                                                                           | -       | Your Client Secret |
+| `METADATA_RAWG_LEGACY_ENABLED`  | Controls if existing and migrated RAWG Metadata will used when [merging metadata](./metadata-enrichment/metadata#how-gamevault-merges-metadata).              | `true`  | `true`, `false`    |
+| `METADATA_RAWG_LEGACY_PRIORITY` | Controls the priority level for migrated RAWG Metadata, that gets used when [merging metadata](./metadata-enrichment/metadata#how-gamevault-merges-metadata). | `-10`   | `true`, `false`    |
 
 ## TESTING
 

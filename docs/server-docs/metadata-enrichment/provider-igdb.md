@@ -47,7 +47,7 @@
 
 ### Age Rating
 
-The table below shows how age ratings from GameVault and IGDB are matched. Ratings like "Not Yet Rated" are ignored. A game can have ratings from multiple systems. The IGDB integration calculates the average of all ratings, rounds it, and then saves it to GameVault.
+The table below shows how age ratings from GameVault and IGDB are matched. Ratings like "Not Yet Rated" are ignored. A game can have ratings from multiple systems. The IGDB integration calculates **the average of all ratings**, rounds it, and then saves it to GameVault.
 
 | Age Rating System | Rating Name        | GameVault Minimum Age (Years) | IGDB Rating Enum Value |
 | ----------------- | ------------------ | ----------------------------- | ---------------------- |
