@@ -28,10 +28,12 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 !["Game Page"](/img/features/game.png)
 
-- View comprehensive game details.
+- View comprehensive game details including a Media Player for Trailers/Gameplays/Screenshots
+- Descriptions and Notes can also be displayed as Markdown.
 - Set progress states (e.g., completed or aborted).
-- Review personal progress and that of other users.
+- Review personal progress and that of other users
 - Add games to the download queue or launch installed games.
+- Bookmark the game or create a share link
 - Navigate back to the Library Tab using the back-arrow button or `ESC` key.
 
 ## Game Settings
@@ -57,12 +59,26 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 #### Edit Game Images
 
-- Set a different thumbnail/background image using URLs or uploads (editors only).
+- Set a different thumbnail/background image using URLs or uploads. Has also a button to simplify the search for box/background images
 
-#### Edit Metadata
+#### Metadata
 
-- View and remap game metadata.
-- Refresh game data from metadata providers.
+!["Metadata"](/img/features/gamesettings_metadata.png)
+- View available metadata providers.
+- Change metadata providers priority.
+- Unmap metadata providers. If unmaped the header text will be grayed out a bit and the action buttons are disabled.
+- Recache selected metadata provider.
+- Switch metadata from selectd metadata providers in the "Remap Game" section.
+
+#### Edit Game Details
+
+!["Edit Game Details"](/img/features/gamesettings_details.png)
+- Have full control of all the specific game details such as description, genres, tags etc including a preview of the current set data.
+- Click the relead icon beside a game detail to load the current values into the textbox.
+- Clear all user overwritten details by clicking the related button on the top right.
+:::note Format
+Multiple entries such as genres, tags etc. must be separated by a comma.
+:::
 
 ## Downloads Tab
 
@@ -99,18 +115,26 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 ### Application
 
-- Configure auto-load library, auto-extract downloaded games, and server URL.
-- Set download bandwidth limit and configure startup behavior.
+- Configure server URL and startup options.
+- Change curren client theme or open the theme folder to insert your own.
+
+### Installation
+
+- Configure the donwload bandwidth limit.
+- Set if you want to auto extract downloaded games and set a default password for encrypted archives.
+- Set if portable games should be auto installed and if the install files should be auto deleted.
 
 ### User
 
 - Log In to GameVault Backend Server.
 - Log Out from GameVault Backend Server.
 - Register a new user on the GameVault Backend Server.
+- Enter current User Settings
 
 ### Data
 
 - Select GameVault root path and clear image and offline caches.
+- Clear image/offline cache
 
 ## Admin Tab
 
@@ -121,3 +145,11 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Delete or restore users.
 - Open Community Tab profile by clicking on users' avatars.
 - Re-index games on the server.
+
+## News
+
+!["News"](/img/features/news.png)
+
+- At the bottom left of the screen is a button with which you can display the latest news from gamevault or the server's own news.
+- When new news are available the button will be marked with a red badged.
+- News can also be displayed as Markdown.
