@@ -10,7 +10,9 @@ With [GameVault+](/docs/gamevault-plus/introduction), you gain access to a varie
 GameVault+ ships with the following premium themes by default:
 
 - Phalcode Theme Dark: A dark theme aligned with our Phalcode brand.
+  ![Phalcode Theme Dark](/img/themes/phalcode_theme_dark.png)
 - Phalcode Theme Light: A light theme aligned with our Phalcode brand.
+  ![Phalcode Theme Light](/img/themes/phalcode_theme_light.png)
 
 ## Custom Themes
 
@@ -28,6 +30,7 @@ To install a custom theme, follow these steps:
 ### Creating a Custom Theme
 
 Creating a custom theme is straightforward. You can just create a new .xaml file based on our template and save it in the `themes` folder.
+
 <!--
 #### Theme Generator
 **Coming Soon!**

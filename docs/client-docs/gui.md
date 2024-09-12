@@ -10,7 +10,7 @@ This documentation provides a clear overview of the Graphical User Interface (GU
 
 The Setup Wizard is a sub-page that appears when the necessary settings for GameVault are not configured. It guides users through these settings with detailed explanations. Exiting the wizard is optional, as all settings can also be configured in the settings tab.
 
-## Library Tab
+## Library
 
 !["Library Tab"](/img/features/library.png)
 
@@ -24,7 +24,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Employ the Filter icon for server game filtering.
 - Utilize the search bar to find specific games.
 
-## Game Page
+## Game
 
 !["Game Page"](/img/features/game.png)
 
@@ -82,7 +82,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
   Multiple entries such as genres, tags etc. must be separated by a comma.
   :::
 
-## Downloads Tab
+## Downloads
 
 !["Downloads Tab"](/img/features/downloads.png)
 
@@ -93,7 +93,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Perform installations based on game types.
 - Open download folders and delete downloaded files.
 
-## Community Tab
+## Community
 
 !["Community Tab"](/img/features/community.png)
 
@@ -113,7 +113,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - View and update user details.
 - Update passwords with confirmation.
 
-## Settings Tab
+## Settings
 
 ### Application
 
@@ -138,7 +138,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Select GameVault root path and clear image and offline caches.
 - Clear image/offline cache
 
-## Admin Tab
+## Administration
 
 !["Admin Tab"](/img/features/admin.png)
 
