@@ -64,6 +64,7 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 #### Metadata
 
 !["Metadata"](/img/features/gamesettings_metadata.png)
+
 - View available metadata providers.
 - Change metadata providers priority.
 - Unmap metadata providers. If unmaped the header text will be grayed out a bit and the action buttons are disabled.
@@ -73,12 +74,13 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 #### Edit Game Details
 
 !["Edit Game Details"](/img/features/gamesettings_details.png)
+
 - Have full control of all the specific game details such as description, genres, tags etc including a preview of the current set data.
 - Click the relead icon beside a game detail to load the current values into the textbox.
 - Clear all user overwritten details by clicking the related button on the top right.
-:::note Format
-Multiple entries such as genres, tags etc. must be separated by a comma.
-:::
+  :::note Format
+  Multiple entries such as genres, tags etc. must be separated by a comma.
+  :::
 
 ## Downloads Tab
 
