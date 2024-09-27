@@ -6,12 +6,12 @@ GameVault offers the option to apply different themes to your GameVault client a
 
 ## Free Themes
 
-- GameVault Theme Dark: The default GameVault theme, reflecting the 2024 GameVault rebrand with dark tones.
-  ![GameVault Theme Dark](/img/themes/gamevault_theme_dark.png)
-- GameVault Theme Light: An alternative light version of the default GameVault theme, also based on the 2024 GameVault rebrand.
-  ![GameVault Theme Light](/img/themes/gamevault_theme_light.png)
-- GameVault Theme Classic: This theme preserves the traditional application colors for users accustomed to the old design.
-  ![GameVault Theme Classic](/img/themes/gamevault_theme_classic.png)
+- Default (Dark): The default GameVault theme, reflecting the 2024 GameVault rebrand with dark tones.
+  ![Default (Dark)](/img/themes/default_dark.png)
+- Default (Light): An alternative light version of the default GameVault theme, also based on the 2024 GameVault rebrand.
+  ![Default (Light)](/img/themes/default_light.png)
+- Classic (Dark): This theme preserves the traditional application colors for users accustomed to the old design.
+  ![Classic (Dark)](/img/themes/classic_dark.png)
 
 ## Premium Themes
 
