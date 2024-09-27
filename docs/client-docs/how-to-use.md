@@ -109,9 +109,11 @@ If you are unhappy with the Box Art or Background Image of a game on your server
 
 If you have the `EDITOR` role or higher on your GameVault server, you can modify games by following these steps:
 
-1. Open Game Settings by clicking on the Settings Icon either from the Top Right corner of the Box Art Image or from the Games Detail page.
-2. A popup will appear, where you can select/paste/drop an image or paste a URL for different box art or background image.
-3. Additionally, there is an Edit Metadata Tab with a search box for each provider, allowing you to remap the game to the correct provider game.
+Open the game settings by clicking on the settings icon, either in the top-right corner of the box art image or on the game's detail page. A popup will appear.
+
+- Under **Edit Images**, you can select/paste/drop an image or paste a URL for different box art or background image.
+- Under **Metadata**, you can remap/unmap incorrectly associated metadata for each provider.
+- Under **Edit Details**, you can manually overwrite the Metadata of the game.
 
 Please note that any changes made will affect all users on the server.
 
@@ -119,9 +121,10 @@ Please note that any changes made will affect all users on the server.
 
 If you want to change the data, profile picture, or background image of your User:
 
-1. Navigate to the Community Tab and select your Profile.
-2. Locate and click on the Settings Icon in the top right corner.
-3. A popup will appear, where you can edit your user's data or select/paste/drop an image or paste a URL for a different profile picture or background image.
+Click your User Icon on the top left corner, then locate and click on the Settings Icon in the top right corner, and a popup will appear.
+
+- Under **Edit Images**, you can select/paste/drop an image or paste a URL for different avatar or background image.
+- Under **Edit Details**, you can change the data of your user.
 
 If you have the `ADMIN` role or higher on your GameVault server, you can do the same for all other user profiles in the Admin Dashboard.
 
