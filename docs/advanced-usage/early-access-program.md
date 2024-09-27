@@ -1,4 +1,4 @@
-# GameVault Early Access Program
+# Early Access Program
 
 ## Welcome
 

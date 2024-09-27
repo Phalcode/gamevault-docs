@@ -6,7 +6,7 @@ This page serves as a community-driven guide to assist you in setting up the Gam
 Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**.
 :::
 
-## GameVault App Setup Guide
+## App Setup Guide
 
 To start, you need the Application files. The simplest way to get them is explained [here](../client-docs/setup.md#option-1-obtain-pre-built-artifacts-from-github).
 
@@ -33,10 +33,6 @@ To start, you need the Application files. The simplest way to get them is explai
 
 12. Unzip fonts downloaded from archive.org and install to `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/pfx/drive_c/windows/Fonts`. (specifically Segoe UI)
 13. Run GameVault via Steam
-
-
-
-
 
 ## Updating the Client
 

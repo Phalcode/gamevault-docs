@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# GameVault Data Management
+# Data Management
 
 This page gives you an overview of how GameVault stores and manages its data.
 
