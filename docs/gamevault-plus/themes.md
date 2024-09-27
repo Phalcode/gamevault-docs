@@ -9,11 +9,11 @@ With [GameVault+](/docs/gamevault-plus/introduction), you gain access to a varie
 
 GameVault+ ships with the following premium themes by default:
 
-- Phalcode (Dark): A dark theme aligned with our Phalcode brand.
+- **Phalcode (Dark)**: A dark theme aligned with our Phalcode brand.
   ![Phalcode (Dark)](/img/themes/phalcode_dark.png)
-- Phalcode (Light): A light theme aligned with our Phalcode brand.
+- **Phalcode (Light)**: A light theme aligned with our Phalcode brand.
   ![Phalcode (Light)](/img/themes/phalcode_light.png)
-- Halloween (Dark): A Halloween-themed ambiance to set the mood for horror games in autumn.
+- **Halloween (Dark)**: A Halloween-themed ambiance to set the mood for horror games in autumn.
   ![Halloween (Dark)](/img/themes/halloween_dark.png)
 
 ## Custom Themes
