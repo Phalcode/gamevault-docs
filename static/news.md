@@ -7,6 +7,7 @@
 - Youtube no longer provides muxed streams. Therefore, the video player in game view only has videos without sound for the time being. But we will fix the problem soon
 - Added Halloween Theme (GV+)
 - New setting 'Retain Sorting and Filter preferences after restart'
+- The Theme combobox in the settings now also shows the description and the author
 - Bugfix: Crash when user settings is clicked while user is not fully loaded
 - Bugfix: Hitbox on some buttons
 
