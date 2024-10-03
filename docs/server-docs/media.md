@@ -6,19 +6,47 @@ sidebar_position: 8
 
 This page outlines how media like images and videos are handled within the backend application.
 
+Here is the updated markdown table including the format names as a second column:
+
 ## Supported Formats
 
 ### Supported Image Formats
 
-`.bmp`, `.jpeg`, `.png`, `.tiff`, `.gif`, `.ico`
+| Format  | Name                        | MIME Type                  |
+| ------- | --------------------------- | -------------------------- |
+| `.bmp`  | Bitmap Image                | `image/bmp`                |
+| `.jpeg` | JPEG Image                  | `image/jpeg`               |
+| `.png`  | Portable Network Graphics   | `image/png`                |
+| `.tiff` | Tagged Image File Format    | `image/tiff`               |
+| `.gif`  | Graphics Interchange Format | `image/gif`                |
+| `.ico`  | Icon Format                 | `image/vnd.microsoft.icon` |
 
 ### Supported Audio Formats
 
-`.mp3`, `.wav`, `.ogg`, `.aac`, `.flac`, `.wma`, `.amr`, `.mp4`
+| Format  | Name                      | MIME Type        |
+| ------- | ------------------------- | ---------------- |
+| `.mp3`  | MPEG Audio                | `audio/mpeg`     |
+| `.wav`  | Waveform Audio            | `audio/wav`      |
+| `.ogg`  | Ogg Vorbis                | `audio/ogg`      |
+| `.aac`  | Advanced Audio Codec      | `audio/aac`      |
+| `.flac` | Free Lossless Audio Codec | `audio/flac`     |
+| `.wma`  | Windows Media Audio       | `audio/x-ms-wma` |
+| `.amr`  | Adaptive Multi-Rate       | `audio/amr`      |
+| `.mp4`  | MPEG-4 Audio              | `audio/mp4`      |
 
 ### Supported Video Formats
 
-`.mp4`, `.avi`, `.mov`, `.wmv`, `.flv`, `.mkv`, `.webm`, `.mpeg`, `.3gp`
+| Format  | Name                   | MIME Type          |
+| ------- | ---------------------- | ------------------ |
+| `.mp4`  | MPEG-4 Video           | `video/mp4`        |
+| `.avi`  | Audio Video Interleave | `video/x-msvideo`  |
+| `.mov`  | QuickTime              | `video/quicktime`  |
+| `.wmv`  | Windows Media Video    | `video/x-ms-wmv`   |
+| `.flv`  | Flash Video            | `video/x-flv`      |
+| `.mkv`  | Matroska Video         | `video/x-matroska` |
+| `.webm` | WebM Video             | `video/webm`       |
+| `.mpeg` | MPEG Video             | `video/mpeg`       |
+| `.3gp`  | 3GPP Multimedia File   | `video/3gpp`       |
 
 ## Media Persistence
 
