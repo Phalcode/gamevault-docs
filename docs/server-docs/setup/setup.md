@@ -34,7 +34,7 @@ You now should have a server up and running. To further set up and start using s
 
 2. **Add some games:** Prepare your game files in the required format for GameVault to identify and install them correctly. Read the [structure chapter](../structure.md) for important information. Once ready, proceed to [add your games](../adding-games.md).
 
-3. **Create an admin user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
+3. **Create your first user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
 
 4. **Enhance your games with metadata:** Connect your server to a metadata source such as IGDB to enrich your games with metadata. Learn how to do this in the [metadata chapter](../metadata-enrichment/metadata.md).
 

@@ -6,9 +6,19 @@
 
 ## Setup
 
-1. [Register for an IGDB API Key by creating a Developer Application on dev.twitch.tv](https://api-docs.igdb.com/#account-creation)
-2. Go to your [developer dashboard](https://dev.twitch.tv/console/apps) and copy the Client ID and Client Secret of your app
-3. Put them in the `METADATA_IGDB_CLIENT_ID` and `METADATA_IGDB_CLIENT_SECRET` settings
+1. Log in to your Twitch Account on [**dev.twitch.tv**](https://dev.twitch.tv/login)
+   - Create a new account if you don't have one already.
+2. Open the [**Twitch Developer dashboard**](https://dev.twitch.tv/console/apps).
+3. Click on [**Register your application**](https://dev.twitch.tv/console/apps/create)
+   ![Register your application](/img/docs/metadata/providers/igdb/setup-step-1.png)
+4. Fill out the form as shown in the image. Make sure to solve the CAPTCHA.
+   ![Fill in the details](/img/docs/metadata/providers/igdb/setup-step-2.png)
+5. Once your application is created, click on **Manage**.
+   ![Manage](/img/docs/metadata/providers/igdb/setup-step-3.png)
+6. Click on **New Secret**. Make sure to solve the CAPTCHA.
+   ![New Secret](/img/docs/metadata/providers/igdb/setup-step-4.png)
+7. Copy your **Client ID** and **Client Secret** and configure them in GameVaults `METADATA_IGDB_CLIENT_ID` and `METADATA_IGDB_CLIENT_SECRET` environment variables.
+8. **Done!** 🥳 Now just restart your server and it should do it's magic. If you have lots of games, it may take a while to fetch all metadata. You can check the progress in the server logs.
 
 ## Configurations
 
@@ -25,7 +35,7 @@
 
 | GameVault Field     | IGDB API Field(s)                      | Notes                                                                                                |
 | ------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `provider_slug`     | "igdb"                                 | hardcoded.                                                                                           |
+| `provider_slug`     | `igdb`                                 | hardcoded.                                                                                           |
 | `age_rating`        | `age_ratings`                          | See [here](#age-rating) for details.                                                                 |
 | `provider_data_id`  | `id`                                   |                                                                                                      |
 | `provider_data_url` | `url`                                  |                                                                                                      |

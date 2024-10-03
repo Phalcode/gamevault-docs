@@ -3,17 +3,17 @@ title: Enriching your Games with Metadata
 sidebar_position: 0.01
 ---
 
-Nobody wants to see blank placeholder games in their library. We want those games enriched with some **juicy metadata**.
+Research shows that nobody wants to see blank placeholder images and missing descriptions in their library. We want those games enriched with some **juicy metadata**.
 
-GameVault supports a **vast plugin framework** that accommodates various metadata providers simultaneously. In the following sections, you'll learn how to set up a metadata provider and get started.
+GameVault supports a **vast plugin framework** that supports connecting to various metadata providers simultaneously. In the following sections, you'll learn how to set up a metadata provider and get started.
 
 ## Setting Up a Metadata Provider
 
-Click on any of the entries below to get to their dedicated page.
+**Click on any of the entries below to get to their dedicated page.**
 
 ### Built-In Metadata Providers
 
-- [IGDB](./provider-igdb.md) (via Client-ID and Client Secret)
+- [**IGDB (via Client-ID and Client-Secret)**](./provider-igdb.md)
 
 ### Community-Maintained Metadata Providers
 
