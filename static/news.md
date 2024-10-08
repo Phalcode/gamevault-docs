@@ -1,14 +1,10 @@
 # GameVault News
 
-### Early Access Changes 1.12.0.2
+### Early Access Changes 1.12.0.3
 
-- The executable ignorelist is now editable in the settings tab
-- Added 'Sort Title' to game settings
-- Youtube no longer provides muxed streams. Therefore, the video player in game view only has videos without sound for the time being. But we will fix the problem soon
-- Added Halloween Theme (GV+)
-- New setting 'Retain Sorting and Filter preferences after restart'
-- The Theme combobox in the settings now also shows the description and the author
-- Bugfix: Crash when user settings is clicked while user is not fully loaded
-- Bugfix: Hitbox on some buttons
+- Fixed youtube video player
+- Added loading indicator to media slider
+- Community Tab remebers last progress sort by
+- Bug fix: Detect encrypted archives was stuck sometimes
 
 Thank you for the feedback and the awesome ideas. Keep up the good work 🔥
