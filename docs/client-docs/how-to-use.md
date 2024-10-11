@@ -113,7 +113,7 @@ Open the game settings by clicking on the settings icon, either in the top-right
 
 - Under **Edit Images**, you can select/paste/drop an image or paste a URL for different box art or background image.
 - Under **Metadata**, you can remap/unmap incorrectly associated metadata for each provider.
-- Under **Edit Details**, you can manually overwrite the Metadata of the game.
+- Under **Custom Metadata**, you can manually overwrite the Metadata of the game.
 
 Please note that any changes made will affect all users on the server.
 
