@@ -89,12 +89,12 @@ This page describes the various configuration properties used in the application
 
 ## MEDIA
 
-| Property                       | Description                                                                            | Default                                  | Possible Values                     |
-| ------------------------------ | -------------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
-| `MEDIA_MAX_SIZE_IN_KB`         | The maximum size for media uploads in kilobytes. Set it to 0 to disable media uploads. | `10000` (10MB)                           | Any number                          |
-| `MEDIA_SUPPORTED_FORMATS`      | List of supported media formats (MIME Types) on this server, separated by commas.      | [See here](./media.md#supported-formats) | Comma separated list of MIME Types. |
-| `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)             | `false`                                  | `true`, `false`                     |
-| `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                                  | `60`                                     | Any number                          |
+| Property                       | Description                                                                       | Default                                  | Possible Values                     |
+| ------------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
+| `MEDIA_MAX_SIZE`               | The maximum size for media uploads. Set it to 0 to disable media uploads.         | `10 mb`                                  | e.g. "10 mb", "5 gb", "300 kb"      |
+| `MEDIA_SUPPORTED_FORMATS`      | List of supported media formats (MIME Types) on this server, separated by commas. | [See here](./media.md#supported-formats) | Comma separated list of MIME Types. |
+| `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)        | `false`                                  | `true`, `false`                     |
+| `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                             | `60`                                     | Any number                          |
 
 Here are the descriptions for the metadata properties:
 
