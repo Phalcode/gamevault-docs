@@ -1,6 +1,6 @@
 # GameVault News
 
-### Early Access Changes 1.12.0.3
+### Early Access Changes 1.12.0.4
 
 - Downloads are safely paused, even if gamevault crashes or is forced to close
 - You can now specify relative paths for default launch/setup executable
