@@ -100,13 +100,14 @@ Here are the descriptions for the metadata properties:
 
 ## METADATA
 
-| Property                      | Description                                                                                | Default | Possible Values    |
-| ----------------------------- | ------------------------------------------------------------------------------------------ | ------- | ------------------ |
-| `METADATA_TTL_IN_DAYS`        | The number of days metadata is considered fresh before requiring an update.                | `30`    | Any number of days |
-| `METADATA_IGDB_ENABLED`       | Enables or disables the built-in integration with IGDB for metadata retrieval.             | `true`  | `true`, `false`    |
-| `METADATA_IGDB_PRIORITY`      | The priority level for IGDB metadata sources when multiple metadata sources are available. | 1       | Any number         |
-| `METADATA_IGDB_CLIENT_ID`     | The Client-ID used for authenticating requests to the IGDB API.                            | -       | Your Client ID     |
-| `METADATA_IGDB_CLIENT_SECRET` | The Client-Secret used for authenticating requests to the IGDB API.                        | -       | Your Client Secret |
+| Property                            | Description                                                                                                                                                            | Default | Possible Values    |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |
+| `METADATA_TTL_IN_DAYS`              | The number of days metadata is considered fresh before requiring an update.                                                                                            | `30`    | Any number of days |
+| `METADATA_IGDB_ENABLED`             | Enables or disables the built-in integration with IGDB for metadata retrieval.                                                                                         | `true`  | `true`, `false`    |
+| `METADATA_IGDB_PRIORITY`            | The priority level for IGDB metadata sources when multiple metadata sources are available.                                                                             | 1       | Any number         |
+| `METADATA_IGDB_REQUEST_INTERVAL_MS` | The interval, in milliseconds, to wait between consecutive requests to prevent exceeding rate limits. This delay will be applied **before** each call to the provider. | `500`   | Any number         |
+| `METADATA_IGDB_CLIENT_ID`           | The Client-ID used for authenticating requests to the IGDB API.                                                                                                        | -       | Your Client ID     |
+| `METADATA_IGDB_CLIENT_SECRET`       | The Client-Secret used for authenticating requests to the IGDB API.                                                                                                    | -       | Your Client Secret |
 
 ## TESTING
 
