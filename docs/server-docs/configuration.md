@@ -32,6 +32,7 @@ This page describes the various configuration properties used in the application
 | `SERVER_API_DOCS_ENABLED`               | Enables the API Documentation on `/api/docs`, `/api/docs-json` & `/api/docs/yaml`.                                                                                                                             | `false`           | `true`, `false`                                                                              |
 | `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s.                                                                                                                                                        | - (Unlimited)     | Any Number                                                                                   |
 | `SERVER_ONLINE_ACTIVITIES_DISABLED`     | Whether or not the server should listen to online activities like "ONLINE", "BUSY", "PLAYING" etc. If this is set to true, all users will always be shown as offline.                                          | `false`           | `true`, `false`                                                                              |
+| `SERVER_STACK_TRACE_LIMIT`              | Configures the maximum number of stack frames to display in error stack traces, with a higher value providing more detailed debugging information.                                                             | `10`              | Any Number                                                                                   |
 
 ## VOLUMES
 
