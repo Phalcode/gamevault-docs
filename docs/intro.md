@@ -56,14 +56,16 @@ Let's take a look at all the main functions of GameVault:
 - 🎮 [Launch and play the games on your PC](./client-docs/how-to-use#playing-a-game)
 - ⏱️ [Track playtimes and progress (even when the server is offline)](./client-docs/how-to-use#tracking-your-game-progress)
 - 👥 [Compare game progress with other users on the server](./client-docs/gui#community-tab)
+- ✏️ [Edit any game metadata](./client-docs/gui#metadata)
 - 🔒 [Manage your users and games with a powerful Admin UI](./client-docs/gui#admin-tab)
 
 ### Server Features
 
 - ♻️ [Automatically indexes games from the file system into a database](./server-docs/indexing.md)
-- 📚 [Enhances games with metadata like tags, genres, description and more using various APIs](./server-docs/metadata-enrichment/metadata.md)
-- 👥 [Multi-User Authentication](./server-docs/user-management.md)
-- 🔒 [Role-Based Access Control](./server-docs/user-management#user-roles)
+- 📚 [Automatically enriches games with metadata like box arts, tags, genres, description and more using various APIs](./server-docs/metadata-enrichment/metadata.md)
+- 👥 [Supports Multi-User Authentication](./server-docs/user-management.md)
+- 🔒 [Supports Role-Based Access Control](./server-docs/user-management#user-roles)
+- 👨‍👩‍👧‍👦 [Supports Parental Control Features](./server-docs/parental-control)
 - ⏱️ [Keeps track of your users' game progress and state](./client-docs/how-to-use#tracking-your-game-progress)
 - 🚨 [Health Monitoring and Logging](./advanced-usage/rest-api)
 - 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/rest-api)

@@ -71,9 +71,9 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 - Recache selected metadata provider.
 - Switch metadata from selectd metadata providers in the "Remap Game" section.
 
-#### Edit Game Details
+#### Custom Metadata
 
-!["Edit Game Details"](/img/features/gamesettings_details.png)
+!["Custom Metadata"](/img/features/gamesettings_custom_metadata.png)
 
 - Have full control of all the specific game details such as description, genres, tags etc including a preview of the current set data.
 - Click the relead icon beside a game detail to load the current values into the textbox.
