@@ -4,4 +4,8 @@ sidebar_position: 11
 
 # Server News
 
-The server news file is used for sharing important updates, announcements, or a message of the day with your GameVault Server users. This file supports the [Markdown](https://wikipedia.org/wiki/Markdown) format, making it easy to format and structure your content. You can edit the news file using any text editor or script. The file is located at `/config/news.md`.
+You now have the ability to share news and updates with your users by providing a `news.md` file. Use this file to link them to your game wishlist form, share important updates, or just say hello.
+
+This file supports [Markdown](https://wikipedia.org/wiki/Markdown) syntax, making it easy to format and structure your content. You can edit the `news.md` file using any text editor or script. It is located at `/config/news.md`.
+
+Once updated, users will receive a notification icon in their client, ensuring they see the latest news.
