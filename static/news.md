@@ -1,5 +1,3 @@
-# GameVault News
-
 Welcome to the new GameVault news section! Here, we’ll be sharing updates and important announcements—though on a bit of an irregular schedule.
 
 In the meantime, dive into the latest GameVault updates and enjoy all the new features we’ve rolled out! Don’t forget, we rely on your support to keep improving the app.
