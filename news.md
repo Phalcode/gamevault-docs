@@ -1,12 +1,9 @@
 # GameVault News
 
-### Early Access Changes 1.12.0.4
+Welcome to the new GameVault news section! Here, we’ll be sharing updates and important announcements—though on a bit of an irregular schedule.
 
-- Downloads are safely paused, even if gamevault crashes or is forced to close
-- You can now specify relative paths for default launch/setup executable
-- Bugfix: Game settings 'mapped game' card did not refresh directly after un/mapping
-- Bugfix: Removed unnecessary media call in the game settings
-- Bugfix: Some pictures were enlarged during upload
-- Bugfix: Rare deforming of disabled buttons
+In the meantime, dive into the latest GameVault updates and enjoy all the new features we’ve rolled out! Don’t forget, we rely on your support to keep improving the app.
 
-Thank you for the feedback and the awesome ideas. Keep up the good work 🔥
+If you’d like to help us continue developing GameVault and keep most of its features free, consider [subscribing to **GameVault+**](https://gamevau.lt/gamevault-plus) or making [a one-time donation](https://phalco.de/support-us). While **GameVault+** currently offers a limited set of premium features, your contribution helps ensure we can keep the app accessible to everyone.
+
+Thank you for being part of this journey with us—we hope you enjoy all the latest enhancements to GameVault!
