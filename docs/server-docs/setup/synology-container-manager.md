@@ -40,7 +40,6 @@ Open `File Station` and create the following folders:
 Copy and paste the following code into the editor:
 
 ```yml
-version: "3.8"
 services:
   gamevault-backend:
     image: phalcode/gamevault-backend:latest
@@ -78,7 +77,6 @@ Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If 
 We don't recommend it, but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
 ```yaml
-version: "3.8"
 services:
   gamevault-backend:
     image: phalcode/gamevault-backend:latest

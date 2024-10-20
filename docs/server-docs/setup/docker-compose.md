@@ -16,7 +16,6 @@ In this guide, you will learn how to set up GameVault using Docker and Docker Co
 Create a new file named `docker-compose.yml` in a directory of your choice and copy the following code:
 
 ```yaml
-version: "3.8"
 services:
   gamevault-backend:
     image: phalcode/gamevault-backend:latest
@@ -57,7 +56,6 @@ Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If 
 We don't recommend it, but you can run GameVault without a PostgreSQL Database too using the following configuration:
 
 ```yaml
-version: "3.8"
 services:
   gamevault-backend:
     image: phalcode/gamevault-backend:latest
