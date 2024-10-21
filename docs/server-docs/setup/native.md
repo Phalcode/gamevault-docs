@@ -53,6 +53,8 @@ DB_SYSTEM=SQLITE
 VOLUMES_SQLITEDB=/path/for/database/files
 VOLUMES_FILES=/path/for/gane/files
 VOLUMES_MEDIA=/path/for/media/files
+VOLUMES_LOGS=/path/for/log/files
+VOLUMES_PLUGINS=/path/for/plugin/files
 ```
 
 ### Step 4: Build and Start the Server
