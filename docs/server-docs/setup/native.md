@@ -44,7 +44,7 @@ For example:
 
 ```bash
 cd ~
-mkdir -p gv-db gv-media gv-games`
+mkdir -p gamevault-db gamevault-media gamevault-games gamevault-logs gamevault-plugins
 ```
 
 ```ini
