@@ -17,6 +17,7 @@
   --ifm-background-color: #e2e1ef !important;
   --ifm-footer-background-color: #d9d7ea !important;
   --ifm-font-color-base: #06050a;
+  --ifm-font-color-light: #292244;
   --ifm-font-color-base-inverse: #f6f5fa;
 }
 
@@ -34,11 +35,16 @@
   --ifm-background-color: #11101e !important;
   --ifm-footer-background-color: #171528 !important;
   --ifm-font-color-base: #f6f5fa;
+  --ifm-font-color-light: #b5b4b8;
   --ifm-font-color-base-inverse: #06050a;
 }
 
 img[alt="GameVault+ Banner"] {
   height: 3.75rem;
+}
+
+.dark-background {
+  background-color: var(--ifm-background-surface-color);
 }
 
 .banner {
