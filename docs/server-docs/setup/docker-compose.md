@@ -70,6 +70,36 @@ services:
       - 8080:8080/tcp
 ```
 
+### Alternative Step 1: On Windows
+
+We found out that the above yml file didn't work on Windows and here is what it takes to make it work on Windows : 
+- For paths, use backward slash and add the :z suffix at the end.
+- For the db volume, don't use a mounted folder. If you leave it blank, it will use a Docker volume instead.
+```yaml
+services:
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
+    restart: unless-stopped
+    environment:
+      DB_HOST: db
+      DB_USERNAME: gamevault
+      DB_PASSWORD: YOURPASSWORDHERE
+    volumes:
+      # Mount the folder where your games are
+      - c:\your_folder\Games:/files:z
+      # Mount the folder where GameVault should store its media
+      - c:\your_folder\Media:/media:z
+    ports:
+      - 8080:8080/tcp
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gamevault
+      POSTGRES_PASSWORD: YOURPASSWORDHERE
+      POSTGRES_DB: gamevault
+```
+
 :::note
 Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths with what suits you, of course. You can change the port on the left side of the colon aswell.
 :::
