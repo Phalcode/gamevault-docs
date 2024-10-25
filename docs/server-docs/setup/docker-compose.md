@@ -51,6 +51,16 @@ Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths 
 Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
 
+#### Things to consider when running on Docker for Windows
+The above yml file may not Windows and here is what it takes to make it work on Windows : 
+- For paths in your volues, use Windows-style paths (backward slash)
+    ```yaml
+    volumes:
+      # Mount the folder where your games are
+      - C:\Your\Games\Folder:/files
+    ```
+- For the Postgres volume, you might need to use a docker volume instead of a mounted folder, because [Postgres has issues running under Docker for Windows](https://github.com/docker-library/postgres/issues/116). 
+
 ### Alternative Step 1: Running without a PostgreSQL Database
 
 We don't recommend it, but you can run GameVault without a PostgreSQL Database too using the following configuration:
