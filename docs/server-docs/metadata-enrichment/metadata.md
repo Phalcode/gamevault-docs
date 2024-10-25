@@ -75,10 +75,6 @@ This is the final result. The merge is done by the GameVault Server.
 
 The server will trigger a new merge whenever a relevant metadata object is changed (e.g., Edit of Game Metadata, Recache, Remap, etc.).
 
-## Developing a New Metadata Provider
+## Developing a New Metadata Provider Plugin
 
-To build a new integration for a metadata provider, you need to write a GameVault Backend Plugin. [Click here](../plugins.md) to understand how that works.
-
-Then you will need to build a [NestJS service](https://docs.nestjs.com/providers#services) that implements the [abstract.metadata-provider.interface.ts](https://github.com/Phalcode/gamevault-backend/blob/master/src/modules/metadata/providers/abstract.metadata-provider.service.ts) and implement your own configuration environment variables if necessary. Make sure they fit in but do not conflict with any existing environment variables and are distinct enough. (For example, `PLUGIN_AUTHORNAME_PLUGINNAME_SETTING` like `PLUGIN_ALFAGUN74_IGDB_ENABLED`).
-
-Last but not least, you can then create a GitHub repository and tag it with the tag `gamevault-backend-plugin` to make it findable. After that, you can also add your provider in this documentation with a notice that it is community maintained.
+[Click here](../plugins.md) to learn how to develop your own metadata provider plugin.
