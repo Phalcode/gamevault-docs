@@ -17,7 +17,7 @@ GameVault supports a **vast plugin framework** that supports connecting to vario
 
 ### Community-Maintained Metadata Providers
 
-- **Not yet available**, but you can [build the first one!](#developing-a-new-metadata-provider)
+- **Not yet available**, but you can [build the first one!](#developing-a-new-metadata-provider-plugin)
 
 ## How Metadata Enrichment in GameVault Works
 
