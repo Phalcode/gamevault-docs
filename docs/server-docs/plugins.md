@@ -4,59 +4,52 @@ sidebar_position: 9
 
 # Plugins
 
-:::danger Things may break
-Please note that plugins are currently in very early stages and things may break using them. Always make backups.
+:::danger Plugins are experimental  
+Plugins are currently in the early stages of development. Things may break, so always make backups before using them.  
 :::
 
 ## Introduction
 
-GameVault is designed with a high degree of modularity and features a built-in plugin system. Users have the capability to integrate their own plugins into the server.
+GameVault is built with modularity in mind, featuring a plugin system that allows users to integrate custom functionality directly into the server. Whether you're looking to extend GameVault or customize its behavior, plugins provide the flexibility you need.
 
-## Using Plugins
+## Where to Find Plugins
 
-To use plugins, you need to put the folder containing the compiled plugin (.js files) into your GameVault Servers `/plugins` folder. When starting the server, GameVault will automatically detect your Plugins and inject them into the Application.
+You can browse a list of available GameVault plugins [here](https://github.com/topics/gamevault-backend-plugin). Be sure to check that the plugin is compatible with your specific version of the GameVault backend.
 
-## Finding Plugins
+## How to Install Plugins
 
-You can find plugins [here](https://github.com/topics/gamevault-backend-plugin). Make sure they are compatible with your GameVault Backend Version.
+To install a plugin, follow these steps:
 
-## Writing GameVault Plugins
+1. Place the folder containing your compiled plugin (`.js` files) into the `/plugins` directory of your GameVault server. Archives are currently not supported, so extract them first.
+2. When you start the server, GameVault will automatically detect and load the plugin.
 
-If you are a developer, writing GameVault Plugins is very easy.
+## How to Develop GameVault Plugins
 
-### Step by Step Guide of BUilding a plugin
+If you're a developer interested in creating plugins, you're in luck—it's simple to get started. Here’s a step-by-step guide:
 
-#### Step 1 Cloning the Backend repository
+### Step 1: Clone the Backend Repository
 
-First you need set up a running local instance of the gamevault-backend. You can find instructions on how to set that up [here](https://github.com/Phalcode/gamevault-backend/blob/master/INSTALL.md).
+First, set up a local instance of the GameVault backend. Follow the setup instructions available [here](https://github.com/Phalcode/gamevault-backend/blob/master/INSTALL.md).
 
-#### Step 2 UNderstanding the architecture
+### Step 2: Understand the Architecture
 
-GameVault Plugins just like the rest of GameVaults architecture, are NestJS Modules, and you will develop them as if they always were part of the GameVault Backend code. Make yourself familiar with [NestJS](https://docs.nestjs.com) and its architecture. For Plugins you will be especially using [Modules](https://docs.nestjs.com/modules), [Services](https://docs.nestjs.com/providers) and [Controllers](https://docs.nestjs.com/controllers). I recommend reading through the linked concepts, but if youre a pragmatic person, you can just go in cold turkey and look into example code [below.](#example-plugins)
+GameVault plugins are built as NestJS modules, just like the rest of the system. You’ll be working with [NestJS](https://docs.nestjs.com) components such as [Modules](https://docs.nestjs.com/modules), [Services](https://docs.nestjs.com/providers), and [Controllers](https://docs.nestjs.com/controllers).
 
-#### Step 3 Setting up a plugin
+To start, it's a good idea to read the official NestJS documentation, but if you prefer to jump in and learn by doing, you can reference the [example code below](#example-plugins).
 
-Lets say the name of plugin we want to write is `useless-plugin`.
+### Step 3: Set Up a Plugin
 
-Open up your cloned gamevault-backend repository and create a folder for your plugin under here: `gamevault-backend/.local/plugins/useless-plugin/`.
+Suppose we’re creating a plugin called `useless-plugin`.
 
-Then initialize a git repository inside that folder using `git init`.
+1. Navigate to the `gamevault-backend` directory in your cloned repository.
+2. Create a folder for your plugin: `gamevault-backend/.local/plugins/useless-plugin/`.
+3. Inside the plugin folder, initialize a git repository with `git init`.
+4. Create a new file for your module: `useless.plugin.module.ts`. This file will serve as the entry point for your plugin and should implement the `GameVaultPluginModule` interface (which can be imported from `src/globals.ts`).
 
-Build a `useless.plugin.module.ts` file. It will be our NestJS Module and the entrypoint for the entire plugin.
-
-:::tip Dont repeat repeat yourself
-If you're plugin is called useless-plugin, dont call the module useless-plugin.plugin.module, but useless.plugin.module.ts.
-:::
-
-The module needs to implement our GameVaultPluginModule interface, which can be imported from `src/globals.ts`.
-
-#### Step 4 Explain people what your plugin does
-
-Once you implement this interface your ide will scream to you, that you need to implment the properties of it. FIll in the details of your plugin here. Your plugin Module should now look something like this. You should also add a README and a LICENSE file into that folder to make it human readable and usable in GitHub later on.
+Here’s a basic example of how your module might look:
 
 ```ts
 import { Module } from "@nestjs/common";
-
 import {
   GameVaultPluginModule,
   GameVaultPluginModuleMetadataV1,
@@ -73,7 +66,7 @@ export default class UselessPluginModule implements GameVaultPluginModule {
     author: "Phalcode",
     version: "1.0.0",
     description:
-      "An useless example plugin. This plugin does nothing useful. It is just an example. It logs the count of users on the server every three seconds and provides two rest apis that show some samples.",
+      "An example plugin that does nothing useful. It logs the user count every three seconds and provides two REST APIs with sample data.",
     keywords: ["example", "api"],
     license: "UNLICENSE",
     website: "https://gamevau.lt",
@@ -81,42 +74,51 @@ export default class UselessPluginModule implements GameVaultPluginModule {
 }
 ```
 
-#### Step 5 Implement your Logic
+:::tip Avoid Redundancy  
+When naming files, avoid repeating words. For example, if your plugin is called `useless-plugin`, name the module file `useless.plugin.module.ts`, not `useless-plugin.plugin.module.ts`.  
+:::
 
-Now its time to get some work done, implment NEstjs services, controllers and whatever else you want. You can use any existing Gamevault modules. For instance in our example you can see we used the UsersService to count the users on our GameVault server. The possibilities are endless.
+### Step 4: Document Your Plugin
 
-##### Make your plugin configurable
+Once you've implemented the `GameVaultPluginModule` interface, make sure to provide details about your plugin in the metadata section. Be sure to add a `README.md` and `LICENSE` file to the plugin folder to make it clear and accessible when shared on GitHub.
 
-You can implement your own configuration environment variables if necessary. Make sure they fit in but do not conflict with any existing environment variables and are distinct enough. (For example, `PLUGIN_AUTHORNAME_PLUGINNAME_SETTING` like `PLUGIN_ALFAGUN74_IGDB_ENABLED`). You can read them using `process.env.PLUGIN_ALFAGUN74_IGDB_ENABLED` anywhere in the code.
+### Step 5: Implement Your Plugin's Logic
 
-#### Step 6 Test your plugin
+Now, develop your plugin by adding services, controllers, or any other NestJS components. You can use existing GameVault modules to extend functionality. For instance in our example you can see we used the `UsersService` to count the users on our GameVault server. The possibilities are limitless.
 
-You can run `pnpm start`, whenever you feel ready to test your plugin, your plugin should inject automatically and you should immediately see in the logs that things should be working.
+#### Adding Configuration Options
 
-you can debug your plugin using logs or by using the Toggle Auto Attach Feature of Visual Studio Code. To get some extra quality assurance you can also write and run unit tests by using jest. just add a .spec.ts file to your folder and run `pnpm test`, youll see the output in your console.
+If your plugin should support specific configuration for the end user, you can introduce custom environment variables. Make sure they are unique and do not conflict with existing variables. A good pattern is: `PLUGIN_AUTHORNAME_PLUGINNAME_SETTING` (e.g., `PLUGIN_PHALCODE_USELESS_ENABLED`).
 
-#### Step 7 Compiling your plugin
+You can access these variables in your code via `process.env.PLUGIN_AUTHORNAME_PLUGINNAME_SETTING`.
 
-Once you finished building and testing your plugin it is time to compile/transpile it. We need to do this, because you used typescript to write it, but the environment running GameVault only speaks Java script. To compile your plugin just run `pnpm build`. A folder called `dist` should appear in the root of the gamevault-backend project. Open it and you should see your compiled plugin under `dist/.local/plugins/useless-plugin`. if it contains a file ending with `.plugin.module.js` you are at the right spot.
+### Step 6: Test Your Plugin
 
-Zip that folder. it is the finished baked Plugin your users will be able to use on their servers.
+When you’re ready to test, run `pnpm start`. GameVault will automatically inject your plugin, and you should see relevant logs. You can debug using logs or Visual Studio Code’s "Toggle Auto Attach" feature. For extra quality assurance, you can write unit tests with Jest by adding a `.spec.ts` file and running `pnpm test`.
 
-#### Step 8 Releasing your plugin
+### Step 7: Compile Your Plugin
 
-Push the Git Repository you created in the first steps onto Github, then publish your zipped built plugin (folder containing js files) by uploading it to the Releases Page of your plugins github site manually. make sure to note what GameVault Version it was built on to guarantee compability.
+Once your plugin is working and tested, compile it by running `pnpm build`. This will generate a `dist` folder with your compiled plugin in the `dist/.local/plugins/useless-plugin` directory. Look for folder containing a `.plugin.module.js` file—this is your compiled plugin. Zip that folder—this is the final, compiled version of your plugin, ready for users to install and run on their servers.
 
-now simply Tag your github repository with the tag `gamevault-backend-plugin` to make it findable by users.
+### Step 8: Release Your Plugin
 
-Congratulations you have now successfully build your very own GameVault Backend Plugin. If your feature is awesome enough, contact us and we may add the module of your plugin as an official contribution into the main GameVault Product, as it is fully compatible. Similar to how the Piston mod made it to minecraft a decade ago. :)
+1. Bring your local Git repository to GitHub.
+2. Create a release on GitHub and upload the zipped plugin folder containing your plugin’s JavaScript files.
+3. Tag your repository with `gamevault-backend-plugin` to make it available for users to find.
 
-### Specifics to be aware of to develop a metadata provider plugin
+### Step 9: Get Featured
 
-There are special things to consider if you want your plugin to integrate into the existing metadata framework:
+If your plugin is particularly useful and you want it to be in the standard feature set, contact us! We might integrate it directly into the official GameVault-Backend product.
 
-- Create your plugin module as outlined in Step 3 of the guide above. Now you will need to build a [NestJS service](https://docs.nestjs.com/providers#services) that implements the [abstract.metadata-provider.interface.ts](https://github.com/Phalcode/gamevault-backend/blob/master/src/modules/metadata/providers/abstract.metadata-provider.service.ts). View the built-in metadata providers of GameVault for some inspiration.
+## Metadata Provider Plugin Specifics
 
-- After releasing your plugin, you can also add your provider to the list of metadata providers in this documentation along with a notice that it is community maintained.
+If your plugin should integrate with GameVault’s metadata framework, follow these additional steps:
 
-### Example Plugins
+- Create the plugin as outlined above.
+- Develop a NestJS service that implements the [`abstract.metadata-provider.interface.ts`](https://github.com/Phalcode/gamevault-backend/blob/master/src/modules/metadata/providers/abstract.metadata-provider.service.ts).
 
-Phalcode has a few example plugins [here](https://github.com/Phalcode/gamevault-backend-example-plugins) that you can use to learn how to build your own plugins.
+Once complete, you can feature your plugin [right here in the documentation](metadata-enrichment/metadata.md#community-maintained-metadata-providers).
+
+## Example Plugins
+
+You can check out some example plugins provided by Phalcode [here](https://github.com/Phalcode/gamevault-backend-example-plugins) to see how plugins are structured and developed.
