@@ -33,7 +33,6 @@ export function Button({ className, ...props }) {
   const variantClass = getVariantClass(props.variant, props.color);
 
   className = clsx(baseStyles[props.variant], variantClass, className);
-  console.log(className);
 
   return typeof props.href === "undefined" ? (
     <button className={className} {...props} />
