@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import Dropdown from "./DropdownButton";
@@ -14,9 +15,25 @@ export function Hero() {
     },
   ];
 
+  const [isSpinning, setIsSpinning] = useState(false);
+
+  const spindice = () => {
+    if (isSpinning) return;
+    setIsSpinning(!isSpinning);
+    setTimeout(() => setIsSpinning(false), 1000);
+  };
+
   return (
     <Container className="pb-16 pt-20 text-center">
-      <img src="/img/logo.png" className="h-48 nozoom" alt="Logo" />
+      <button onClick={spindice}>
+        <img
+          src="/img/logo.png"
+          className={`h-48 nozoom cursor-pointer ${
+            isSpinning ? "animate-spin" : ""
+          }`}
+          alt="Logo"
+        />
+      </button>
 
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight sm:text-7xl">
         Create{" "}
