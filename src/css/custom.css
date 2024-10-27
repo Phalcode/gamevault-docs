@@ -23,7 +23,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #9f99d6;
+  --ifm-color-primary: #5249b6;
   --ifm-color-primary-dark: #867fcb;
   --ifm-color-primary-darker: #7a72c6;
   --ifm-color-primary-darkest: #554ab6;
@@ -54,4 +54,16 @@ img[alt="GameVault+ Banner"] {
   margin-bottom: 1rem;
   font-size: 3.75rem;
   line-height: 1;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }

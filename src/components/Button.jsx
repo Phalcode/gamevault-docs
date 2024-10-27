@@ -1,5 +1,6 @@
 import Link from "@docusaurus/Link";
 import clsx from "clsx";
+import PropTypes from "prop-types";
 
 const baseStyles = {
   solid:
@@ -11,31 +12,28 @@ const baseStyles = {
 const variantStyles = {
   solid: {
     primary:
-      "bg-primary-default text-white hover:bg-primary-darker hover:text-text-inverse active:bg-primary-darkest active:text-text-inverse focus-visible:outline-primary-darkest",
-    white:
-      "bg-white text-slate-900 hover:bg-indigo-50 active:bg-indigo-200 active:text-slate-600 focus-visible:outline-white",
-  },
-  outline: {
-    slate:
-      "ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-indigo-600 focus-visible:ring-slate-300",
-    white:
-      "ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white",
+      "bg-primary-default text-white hover:text-white hover:bg-primary-darker active:bg-primary-darkest focus-visible:outline-primary-darkest",
   },
 };
+
+// Function to determine the appropriate variant class
+function getVariantClass(variant, color) {
+  if (variant === "outline") {
+    return variantStyles.outline?.[color];
+  } else if (variant === "solid") {
+    return variantStyles.solid?.[color];
+  }
+  return undefined;
+}
 
 export function Button({ className, ...props }) {
   props.variant ??= "solid";
   props.color ??= "primary";
 
-  className = clsx(
-    baseStyles[props.variant],
-    props.variant === "outline"
-      ? variantStyles.outline[props.color]
-      : props.variant === "solid"
-      ? variantStyles.solid[props.color]
-      : undefined,
-    className
-  );
+  const variantClass = getVariantClass(props.variant, props.color);
+
+  className = clsx(baseStyles[props.variant], variantClass, className);
+  console.log(className);
 
   return typeof props.href === "undefined" ? (
     <button className={className} {...props} />
@@ -43,3 +41,11 @@ export function Button({ className, ...props }) {
     <Link className={className} {...props} />
   );
 }
+
+// Prop validation
+Button.propTypes = {
+  href: PropTypes.string,
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(["solid", "outline"]),
+  color: PropTypes.oneOf(["primary"]),
+};

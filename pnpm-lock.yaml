@@ -60,6 +60,9 @@ importers:
       postcss-import:
         specifier: ^16.1.0
         version: 16.1.0(postcss@8.4.47)
+      prop-types:
+        specifier: ^15.8.1
+        version: 15.8.1
       tailwindcss:
         specifier: ^3.4.14
         version: 3.4.14
