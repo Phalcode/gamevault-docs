@@ -51,15 +51,18 @@ Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths 
 Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
 
-#### Things to consider when running on Docker for Windows
-The above yml file may not Windows and here is what it takes to make it work on Windows : 
-- For paths in your volues, use Windows-style paths (backward slash)
+### Tips for Running Docker on Windows
+
+The above ``docker-compose.yaml`` file might not work as expected with Docker for Windows. Here are some things to consider to make it compatible:
+
+- **Use Forward Slashes in Paths**: In your volumes, replace Windows-style backslashes (`\`) with forward slashes (`/`).
     ```yaml
     volumes:
-      # Mount the folder where your games are
-      - C:\Your\Games\Folder:/files
+      # Path to your games folder
+      - C:/Your/Games/Folder:/files
     ```
-- For the Postgres volume, you might need to use a docker volume instead of a mounted folder, because [Postgres has issues running under Docker for Windows](https://github.com/docker-library/postgres/issues/116). 
+
+- **PostgreSQL Database Volume**: For PostgreSQL, it’s often better to use a Docker volume instead of mounting a folder, due to compatibility issues of PostgreSQL with Windows Filesystems. To do this, leave out any volume definition in the database section of your YAML file. [Read more here](https://github.com/docker-library/postgres/issues/116).
 
 ### Alternative Step 1: Running without a PostgreSQL Database
 
