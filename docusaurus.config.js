@@ -115,15 +115,11 @@ const config = {
             title: "Shortcuts",
             items: [
               {
-                label: "Introduction",
-                to: "/docs/intro",
-              },
-              {
                 label: "Blog",
                 to: "/blog",
               },
               {
-                label: "Server Setup",
+                label: "Set Up a Server",
                 to: "/docs/server-docs/setup",
               },
               {
@@ -209,7 +205,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://phalco.de">Phalcode</a> - All Rights Reserved`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://phalco.de">Phalcode</a> - All Rights Reserved.`,
       },
       prism: {
         theme: lightTheme,
