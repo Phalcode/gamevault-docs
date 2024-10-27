@@ -1,9 +1,10 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Layout from "@theme/Layout";
 import React from "react";
 import * as Swetrix from "swetrix";
+import { Container } from "../components/Container";
 import { Faqs } from "../components/Faqs";
-import { PrimaryFeatures } from "../components/Features";
 import { Hero } from "../components/Hero";
 
 export default function Home() {
@@ -25,10 +26,13 @@ export default function Home() {
         <section className="bg-background-dark">
           <Hero />
         </section>
-        <PrimaryFeatures />
+        <br />
+        <Container>
+          <HomepageFeatures />
+        </Container>
         <Faqs />
         <p className="text--center text-xs font-bolder tracking-tighter">
-          * In case you're wondering, all depicted games on this website are
+          *In case you're wondering, all depicted games on this website are
           placeholders and not real
         </p>
       </main>

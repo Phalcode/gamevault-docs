@@ -4,8 +4,6 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-text-light: #f6f5fa;
-  --ifm-text-dark: #06050a;
   --ifm-font-size-base: 105%;
   --ifm-color-primary: #413a92;
   --ifm-color-primary-dark: #3a3483;
@@ -18,9 +16,9 @@
   --ifm-navbar-background-color: #e2e1ef !important;
   --ifm-background-color: #e2e1ef !important;
   --ifm-footer-background-color: #d9d7ea !important;
-  --ifm-font-color-base: var(--ifm-text-dark);
+  --ifm-font-color-base: #06050a;
   --ifm-font-color-light: #292244;
-  --ifm-font-color-base-inverse: var(--ifm-text-light);
+  --ifm-font-color-base-inverse: #f6f5fa;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -36,9 +34,9 @@
   --ifm-navbar-background-color: #11101e !important;
   --ifm-background-color: #11101e !important;
   --ifm-footer-background-color: #171528 !important;
-  --ifm-font-color-base: var(--ifm-text-light);
+  --ifm-font-color-base: #f6f5fa;
   --ifm-font-color-light: #b5b4b8;
-  --ifm-font-color-base-inverse: var(--ifm-text-dark);
+  --ifm-font-color-base-inverse: #06050a;
 }
 
 img[alt="GameVault+ Banner"] {
@@ -47,6 +45,15 @@ img[alt="GameVault+ Banner"] {
 
 .dark-background {
   background-color: var(--ifm-background-surface-color);
+}
+
+.banner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 button,
@@ -59,22 +66,4 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-}
-
-ul {
-  padding: 0;
-}
-
-[data-theme="light"] #features {
-  background-image: url("/static/img/landing/features_bg_light.svg");
-}
-
-[data-theme="dark"] #features {
-  background-image: url("/static/img/landing/features_bg_dark.svg");
-}
-
-#features {
-  background-position: top 8em left 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }

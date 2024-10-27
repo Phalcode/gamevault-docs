@@ -27,7 +27,7 @@ const Dropdown = ({ className, options, ...props }) => {
 
       {isOpen && (
         <div
-          className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-background-alt shadow-lg ring-1 ring-text-light"
+          className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-background-dark shadow-lg ring-1 ring-text-light"
           role="menu"
           aria-orientation="vertical"
         >
