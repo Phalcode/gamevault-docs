@@ -19,7 +19,7 @@ You can request more game types [here](https://github.com/Phalcode/gamevault-bac
 
 #### Setup (W_S)
 
-Windows Setup games require an installation process before play, initiated by setup-related files such as “setup.exe.”
+Windows Setup games require an installation process before play, initiated by setup-related files such as `setup.exe`.
 
 - **Detection**: Identified through the type tag override or by specific setup-related executables in the archive.
 - **File Patterns**:
@@ -29,7 +29,7 @@ Windows Setup games require an installation process before play, initiated by se
   - `setup-*.exe` (e.g., `setup-game.exe`)
   - `install.exe`
   - `unarc.exe`
-  - `.msi` files (excluding those with “redistributable”)
+  - `.msi` files (excluding those containing `redist`)
 
 - **Example Files in Archive**:
   - `data.bin`
@@ -58,8 +58,8 @@ Linux Portable games can be played immediately without additional setup.
 
 ### Undetected
 
-This is the default type if GameVault cannot automatically detect the game type. Users will need to manually install the game in the installation folder.
+This is the default type if GameVault cannot automatically detect the game type. Users will need to manually install the game into the installation folder.
 
-- **Example File Structure**:
+- **Example Files in Archive**:
   - `data/`
   - `run.c64`
