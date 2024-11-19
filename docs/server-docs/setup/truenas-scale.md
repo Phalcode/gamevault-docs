@@ -7,6 +7,8 @@ sidebar_position: 4
 
 Since the release of TrueNAS Scale version 24.10 (Electric Eel), Docker is now used to run apps on TrueNAS Scale. With the use of Docker Compose, setting up a GameVault Server on TrueNAS Scale is quick and easy!
 
+**If you are using an older version of TrueNAS Scale, please use the legacy documentation: [TrueNAS Scale - Legacy](https://gamevau.lt/docs/server-docs/setup/truenas-scale-legacy/)**
+
 ## Prerequisites
 
 - a running TrueNAS Scale Server (version 24.10 or newer)
