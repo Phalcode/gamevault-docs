@@ -7,13 +7,13 @@ sidebar_position: 4
 
 Since the release of TrueNAS Scale version 24.10 (Electric Eel), Docker is now used to run apps on TrueNAS Scale. With the use of Docker Compose, setting up a GameVault Server on TrueNAS Scale is quick and easy!
 
-**If you are using an older version of TrueNAS Scale, please use the legacy documentation: [TrueNAS Scale - Legacy](https://gamevau.lt/docs/server-docs/setup/truenas-scale-legacy/)**
+**If you are using an older version of TrueNAS Scale, please use the legacy documentation: [TrueNAS Scale - Legacy](truenas-scale-legacy.md)**
 
 ## Prerequisites
 
 - a running TrueNAS Scale Server (version 24.10 or newer)
 - an understanding of storage/users in TrueNAS Scale
-- a docker-compose.yml file that you have already configured by following the [Using Docker Compose](https://gamevau.lt/docs/server-docs/setup/docker-compose/) and [Configuration](https://gamevau.lt/docs/server-docs/configuration) pages.
+- a docker-compose.yml file that you have already configured by following the [Using Docker Compose](docker-compose.md) and [Configuration](/docs/server-docs/configuration.md) pages.
 
 ## Step 1: Log in to your TrueNAS Scale Dashboard
 
@@ -92,23 +92,23 @@ You are now ready to deploy GameVault!
 
 Go to **apps** -> **discover**
 
-![Scale-EE-Step-3](https://github.com/user-attachments/assets/b9b875d1-760c-4172-b860-25eea52685a7)
+![Scale-EE-Step-3](/img/docs/setup/scale/Scale-EE-Step-3.png)
 
 ## Step 4: Select "Install via YAML"
 
 Click the three dot icon next the the "Custom App" button:
 
-![Scale-EE-Step-4](https://github.com/user-attachments/assets/9d63c52c-e228-464c-914d-eb796cca569e)
+![Scale-EE-Step-4](/img/docs/setup/scale/Scale-EE-Step-4.png)
 
 Then, select the option to "Install via YAML":
 
-![Scale-EE-Step-4a](https://github.com/user-attachments/assets/9dbd4c4d-fb07-4afe-9f37-70e73a675c07)
+![Scale-EE-Step-4a](/img/docs/setup/scale/Scale-EE-Step4a.png)
 
 In the pop-out window, enter the name of the custom app: for this example we used "gamevault-backend"
 
 Then, paste the entire contents of your docker-compose.yml file into the "Custom Config" section:
 
-![Scale-EE-Step-4b](https://github.com/user-attachments/assets/27bde428-4451-4a56-b340-fd7ee50bef6e)
+![Scale-EE-Step-4b](/img/docs/setup/scale/Scale-EE-Step-4b.png)
 
 Make sure you have all your needed changes per the rest of the documentation, then click "Save".
 
@@ -127,11 +127,11 @@ You have now successfully set up your GameVault Server using TrueNAS Scale!
 
 To stop the GameVault server, navigate to the main **Apps** page, and check the box next to your running instance of gamevault:
 
-![Scale-EE-Stop1](https://github.com/user-attachments/assets/b4683bf5-f56c-4c49-8735-4783d8005039)
+![Scale-EE-Stop1](/img/docs/setup/scale/Scale-EE-Stop1.png)
 
 Then, click the drop-down menu for "Select action", and choose "Stop All Selected"
 
-![Scale-EE-Stop2](https://github.com/user-attachments/assets/2ee89d03-046d-4aef-9438-5949f78cf35e)
+![Scale-EE-Stop2](/img/docs/setup/scale/Scale-EE-Stop2.png)
 
 This will shutdown GameVault and the database.
 
@@ -141,15 +141,15 @@ Navigate to "Apps" and choose the GameVault-backend App you have created.
 
 Under the "Workloads" section, you will see two "Containers" running:
 
-![Scale-EE-logs1](https://github.com/user-attachments/assets/573ac116-411e-4c13-a93d-a1c85b6e6ec5)
+![Scale-EE-logs1](/img/docs/setup/scale/Scale-EE-logs1.png)
 
 Click the "veiw logs" icon next to either the database container (db) or the gamevault container (gamevault-backend) to open the logs:
 
-![Scale-EE-logs2](https://github.com/user-attachments/assets/5de00401-9c53-4c86-8c06-cf05cf17526f)
+![Scale-EE-logs2](/img/docs/setup/scale/Scale-EE-logs2.png)
 
 In the new window that opens, choose the number of previous log lines you would like to view (500 is normal), then click "Connect":
 
-![Scale-EE-logs3](https://github.com/user-attachments/assets/94f5c33f-0064-43c3-9e23-8a07d3dcce98)
+![Scale-EE-logs3](/img/docs/setup/scale/Scale-EE-logs3.png)
 
 You will see the previous number of log lines up to the number you entered, and all new log entries will appear as they are written!
 
