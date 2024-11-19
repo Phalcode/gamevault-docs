@@ -8,7 +8,7 @@ sidebar_position: 7
 Setting up a GameVault Server on TrueNAS Scale prior, to version 24.10, is just a click away by using our template from the [Truecharts Catalog](https://truecharts.org/manual/SCALE/guides/getting-started),
 a community based catalog for TrueNAS Scale.
 
-**If you are using TrueNAS Scale version 24.10, or newer, please use this documentation: [TrueNAS Scale](https://gamevau.lt/docs/server-docs/setup/truenas-scale/)**
+**If you are using TrueNAS Scale version 24.10, or newer, please use this documentation: [TrueNAS Scale](truenas-scale.md)**
 
 ## Prerequisites
 
