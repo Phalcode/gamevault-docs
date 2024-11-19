@@ -5,99 +5,156 @@ sidebar_position: 4
 
 [TrueNAS Scale](https://www.truenas.com/truenas-scale/) is an open-source, hyper-converged storage platform that combines the reliability of TrueNAS with the versatility of Linux, providing a unified solution for storage, virtualization, and containerization in a single, easy-to-manage system.
 
-Setting up a GameVault Server on TrueNAS Scale is just a click away by using our template from the [Truecharts Catalog](https://truecharts.org/manual/SCALE/guides/getting-started),
-a community based catalog for TrueNAS Scale.
+Since the release of TrueNAS Scale version 24.10 (Electric Eel), Docker is now used to run apps on TrueNAS Scale. With the use of Docker Compose, setting up a GameVault Server on TrueNAS Scale is quick and easy!
 
 ## Prerequisites
 
-- a running TrueNAS Scale Server!
-- add the TrueCharts[Catalog](https://truecharts.org/manual/SCALE/guides/getting-started)
-- Install the following [operators](https://truecharts.org/manual/FAQ#operators) from TrueCharts; **prometheus-operator** and **cloudnative-pg**.
+- a running TrueNAS Scale Server (version 24.10 or newer)
+- an understanding of storage/users in TrueNAS Scale
+- a docker-compose.yml file that you have already configured by following the [Using Docker Compose](https://gamevau.lt/docs/server-docs/setup/docker-compose/) and [Configuration](https://gamevau.lt/docs/server-docs/configuration) pages.
 
 ## Step 1: Log in to your TrueNAS Scale Dashboard
 
 ![Step 1](/img/docs/setup/scale/scale-login.png)
 
-## Step 2: Navigate to the catalog Page in TrueNas Scale
+## Step 2: Configure User/Storage for GameVault
 
-Go to **apps** -> **discover** -> **catalogs**.
+**Configuring User**
 
-![Step 2](/img/docs/setup/scale/scale-add-truecharts-catalog.png)
+By default, GameVault will try to run as user ID 1000 and group ID 1000. However, this will not normally work in TrueNAS Scale. Instead, you will need to specify which user/group ID GameVault should use. You can create a new user, or use an existing one!
 
-Validate that TrueCharts catalog was added to the server, if not refer back to the Prerequisites section.
+In your docker-compose.yml, file add the PUID and PGID variables to the gamevault-backend environment variables.
+For simplicity, we will use the "apps" user/group which is built-in to TrueNAS Scale and uses ID number 568 for both PUID and PGID.
+
+```plaintext
+PUID: 568
+PGID: 568
+```
+
+**Configuring Storage**
+
+GameVault expects three directories: 
+- a directory where your games are located - mounted to the /files directory internally
+- a directory for GameVault to store the database files - mounted to the /var/lib/postgresql/data directory internally
+- a database for GameVault to store its media - mounted to the /media directory internally
+  
+These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server. 
+If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories.
+
+## Step 2a: Setting your GameVault Admin user
+
+You can specify a username that will be given the Admin role upon registration in GameVault. Add the following variable to your docker-compose.yml file under the gamevault-backend environment variables. Set it to your desired GameVault username, and your account will be given the Admin role once you register!
+
+```plaintext
+SERVER_ADMIN_USERNAME: YourUsernameHere
+```
+
+Make sure to register your admin account using the same username!
+
+When finished, your docker-compose.yml file should look something like this:
+
+```yaml
+services:
+  gamevault-backend:
+    image: phalcode/gamevault-backend:latest
+    restart: unless-stopped
+    environment:
+      PUID: 568
+      PGID: 568
+      SERVER_ADMIN_USERNAME: YourUsernameHere
+      DB_HOST: db
+      DB_USERNAME: gamevault
+      DB_PASSWORD: YOURPASSWORDHERE
+    volumes:
+      # Mount the folder where your games are
+      - /mnt/yourgames:/files
+      # Mount the folder where GameVault should store its media
+      - /mnt/GameVault/media:/media
+    ports:
+      - 8080:8080/tcp
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gamevault
+      POSTGRES_PASSWORD: YOURPASSWORDHERE
+      POSTGRES_DB: gamevault
+    volumes:
+      # Mount the folder where your PostgreSQL database files should land
+      - /mnt/GameVault/database:/var/lib/postgresql/data
+```
+
+You are now ready to deploy GameVault!
 
 ## Step 3: Navigate to Apps and Disover Page
 
-Go to **apps** -> **discover** and search for **gamevault-backend**
+Go to **apps** -> **discover**
 
-![Step 3](/img/docs/setup/scale/scale-discover-gamevault-app-search.png)
+![Step 3](https://github.com/user-attachments/assets/b9b875d1-760c-4172-b860-25eea52685a7)
 
-## Step 4: Configure and Install gamevault-backend
+## Step 4: Select "Install via YAML"
 
-![Step 4](/img/docs/setup/scale/scale-discover-gamevault-app-install.png)
+Click the three dot icon next the the "Custom App" button:
 
-![Step 4a](/img/docs/setup/scale/scale-configure-gamevault-app-install-1.png)
+![Step 4](https://github.com/user-attachments/assets/9d63c52c-e228-464c-914d-eb796cca569e)
 
-Scroll down to **App Configuration**.
+Then, select the option to "Install via YAML":
 
-Set your `Admin User` and `Admin Password`.
+![Step 4a](https://github.com/user-attachments/assets/9dbd4c4d-fb07-4afe-9f37-70e73a675c07)
 
-![Step 4b](/img/docs/setup/scale/scale-configure-gamevault-app-install-3.png)
+In the pop-out window, enter the name of the custom app: for this example we used "gamevault-backend"
 
-:::note
+Then, paste the entire contents of your docker-compose.yml file into the "Custom Config" section:
 
-Leave the Logs and Images storage options as PVC.
+![Step 4b](https://github.com/user-attachments/assets/27bde428-4451-4a56-b340-fd7ee50bef6e)
 
-:::
+Make sure you have all your needed changes per the rest of the documentation, then click "Save".
 
-Games storage option can be safely set hostpath if not using using any shares or switch to NFS otherwise; please follow the [Dataset and Share Setup](https://truecharts.org/manual/SCALE/guides/dataset) guide.
-
-![Step 4c](/img/docs/setup/scale/scale-configure-gamevault-app-install-3.png)
-
-Scroll down to **Documentation** and click install, wait a few minutes and the app should deploy!
-
-![Installed](/img/docs/setup/scale/scale-configured-gamevault-app-installed.png)
+The system will automatically do all the setup and return you to the main **Apps** pages when complete!
 
 ## Conclusion
 
-You have now successfully set up your GameVault Server using TrueNAS Scale.
+You have now successfully set up your GameVault Server using TrueNAS Scale!
 
 [Click here to continue.](setup.md#what-next)
+
 
 ## Additional Info
 
 ### Stopping the Server
 
-To stop the server in TrueNAS Scale, you can click on the gamevault-backend app and then edit the app; set the replicas to 0 or use the ["stop-all"](https://truecharts.org/news/stop-all/) feature. When editing an application, checking the "stop-all" box and saving the changes accomplishes this. If you're working with applications based on CNPG (cloudnative-postgres), the same methods apply, ensuring a safe shutdown.
+To stop the GameVault server, navigate to the main **Apps** page, and check the box next to your running instance of gamevault:
 
-![stop-all](/img/docs/setup/scale/gamevault-stop-all.png)
+![stop1](https://github.com/user-attachments/assets/b4683bf5-f56c-4c49-8735-4783d8005039)
 
-If you prefer using [Heavyscript](https://github.com/Heavybullets8/heavy_script), a specialized script for TrueNAS Scale, it offers a secure way to stop apps, including those utilizing CNPG. By default, Heavyscript employs the ["stop-all"](https://truecharts.org/news/stop-all/) function to ensure a graceful shutdown.
+Then, click the drop-down menu for "Select action", and choose "Stop All Selected"
 
-Simple commands for heavyscript:
+![stop2](https://github.com/user-attachments/assets/2ee89d03-046d-4aef-9438-5949f78cf35e)
 
-stop: ```heavyscript app -x gamevault-backend```
-
-start: ```heavyscript app -s gamevault-backend```
-
-Keep in mind that TrueNAS Scale does not support third-party operators. Consequently, relying on the stop button within the TrueNAS Scale GUI, often considered an IX (iXsystems) hack in the Kubernetes space, is not recommended. For a dependable and supported approach, opt for the replica settings, "stop-all" checkbox, or leverage Heavyscript.
+This will shutdown GameVault and the database.
 
 ### Reading the Logs
 
 Navigate to "Apps" and choose the GameVault-backend App you have created.
 
-In workloads, select any of the white boxes with lines icon; thats the logs button.
+Under the "Workloads" section, you will see two "Containers" running:
 
-![gamevault-workloads-logs-1](/img/docs/setup/scale/gamevault-workloads-logs-1.png)
+![gamevault-workloads-logs-1](https://github.com/user-attachments/assets/573ac116-411e-4c13-a93d-a1c85b6e6ec5)
 
-You have to select the correct main pod and container
+Click the "veiw logs" icon next to either the database container (db) or the gamevault container (gamevault-backend) to open the logs:
 
-![gamevault-workloads-logs-2](/img/docs/setup/scale/gamevault-workloads-logs-2.png)
+![gamevault-workloads-logs-2](https://github.com/user-attachments/assets/5de00401-9c53-4c86-8c06-cf05cf17526f)
 
-Once you selected the main pod and container pod; you should see the logs for the app
+In the new window that opens, choose the number of previous log lines you would like to view (500 is normal), then click "Connect":
 
-![gamevault-workloads-logs-3](/img/docs/setup/scale/gamevault-workloads-logs-3.png)
+![gamevault-workloads-logs-3](https://github.com/user-attachments/assets/94f5c33f-0064-43c3-9e23-8a07d3dcce98)
 
-You can then download the logs, but you might have to reselect the correct pods again when downloading the logs.
+You will see the previous number of log lines up to the number you entered, and all new log entries will appear as they are written!
 
-![gamevault-workloads-logs-4](/img/docs/setup/scale/gamevault-workloads-logs-4.png)
+### Troubleshooting
+
+If you recieve any errors while trying to save your GameVault configuration, be sure that all indents/spacing is correct YAML syntax. 
+You can try a few things to ensure proper formatting:
+
+- Use a text editor that maintains indents properly, such as Notepad++
+- Copy the example docker-compose.yml file from above, paste it directly into the configuration window, and add your changes directly. This can help ensure consistent formatting.
