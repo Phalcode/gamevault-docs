@@ -35,12 +35,13 @@ PGID: 568
 
 **Configuring Storage**
 
-GameVault expects three directories: 
+GameVault expects three directories:
+
 - a directory where your games are located - mounted to the /files directory internally
 - a directory for GameVault to store the database files - mounted to the /var/lib/postgresql/data directory internally
 - a database for GameVault to store its media - mounted to the /media directory internally
   
-These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server. 
+These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server.
 If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories.
 
 ## Step 2a: Setting your GameVault Admin user
@@ -102,7 +103,7 @@ Click the three dot icon next the the "Custom App" button:
 
 Then, select the option to "Install via YAML":
 
-![Scale-EE-Step-4a](/img/docs/setup/scale/Scale-EE-Step4a.png)
+![Scale-EE-Step-4a](/img/docs/setup/scale/Scale-EE-Step-4a.png)
 
 In the pop-out window, enter the name of the custom app: for this example we used "gamevault-backend"
 
@@ -119,7 +120,6 @@ The system will automatically do all the setup and return you to the main **Apps
 You have now successfully set up your GameVault Server using TrueNAS Scale!
 
 [Click here to continue.](setup.md#what-next)
-
 
 ## Additional Info
 
@@ -155,7 +155,7 @@ You will see the previous number of log lines up to the number you entered, and 
 
 ### Troubleshooting
 
-If you recieve any errors while trying to save your GameVault configuration, be sure that all indents/spacing is correct YAML syntax. 
+If you recieve any errors while trying to save your GameVault configuration, be sure that all indents/spacing is correct YAML syntax.
 You can try a few things to ensure proper formatting:
 
 - Use a text editor that maintains indents properly, such as Notepad++
