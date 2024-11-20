@@ -1,6 +1,6 @@
 ---
 title: "Using TrueNAS Scale (prior v24.10)"
-sidebar_position: 7
+sidebar_position: 4.1
 ---
 
 [TrueNAS Scale](https://www.truenas.com/truenas-scale/) is an open-source, hyper-converged storage platform that combines the reliability of TrueNAS with the versatility of Linux, providing a unified solution for storage, virtualization, and containerization in a single, easy-to-manage system.
