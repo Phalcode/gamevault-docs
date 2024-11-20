@@ -1,5 +1,5 @@
 ---
-title: "Using TrueNAS Scale - Legacy"
+title: "Using TrueNAS Scale (prior v24.10)"
 sidebar_position: 7
 ---
 
