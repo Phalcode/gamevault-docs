@@ -14,9 +14,9 @@ If you have any trouble setting up a GameVault server don't give up! There are a
 - [Docker Compose](./docker-compose.md)
 - [Caprover](./caprover.md)
 - [TrueNAS Scale](./truenas-scale.md)
+- [TrueNAS Scale - (Using Truecharts)](./truenas-scale-legacy.md)
 - [UNRAID](./unraid.md)
 - [Synology Container Manager](./synology-container-manager.md)
-- [TrueNAS Scale - Legacy](./truenas-scale-legacy.md)
 - [Native](./native.md)
 
 ### More Methods
