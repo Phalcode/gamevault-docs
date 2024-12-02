@@ -16,7 +16,7 @@ Before starting, ensure that you have [installed Steam](https://store.steampower
 
 1. Fully shut down your Steam client using the **Exit Steam** button.
 2. Open the GameVault Application and click on the **Settings** tab.
-3. Navigate to **GameVault+** -> **Integrations** -> **Steam**.
+3. Navigate to **GameVault+** -> **Features** -> **Steam**.
 4. Toggle **Sync** to enable the integration.
 5. Restart Steam. Your installed games will now sync with your Steam Library.
 

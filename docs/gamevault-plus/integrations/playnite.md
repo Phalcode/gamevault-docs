@@ -8,7 +8,7 @@ title: "Playnite"
 
 ## Setup Guide
 
-### Prerequisite
+### Prerequisites
 
 Before starting, make sure you're [logged in to **GameVault+**](../client-setup.md) within your GameVault application.
 

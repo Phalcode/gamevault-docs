@@ -54,7 +54,7 @@ const features = [
         <a target="_blank" href="https://discord.gg/NEdNen2dSu">
           Join our growing community
         </a>{" "}
-        , star us on GitHub, or even <a href="/docs/contribute">contribute</a>{" "}
+        , star us on GitHub, or even <a href="/docs/license-contribute">contribute</a>{" "}
         to our source-available project! Everyone can help!
       </>
     ),
