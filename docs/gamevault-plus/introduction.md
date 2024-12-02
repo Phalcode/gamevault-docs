@@ -20,10 +20,10 @@ Welcome to **GameVault+**, the premium upgrade subscription designed for enthusi
 As of now, we are offering the following features:
 
 - 📸 Uploading animated profile pictures
-- 🎨 Custom Themes
-- 🤝 Playnite Integration
-- 🤝 Steam Integration
-- 💻 GameVault Client API (Advanced CLI / URI Interfaces)
+- 🎨 [Additional built-in and customizable Themes](./themes.md)
+- 🤝 [Playnite Integration](./integrations/playnite.md)
+- 🤝 [Steam Integration](./integrations/steam.md)
+- 💻 [GameVault Client APIs (Advanced Interfaces used for Integrations)](./client-apis.md)
 
 ## Pricing
 
