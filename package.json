@@ -15,10 +15,11 @@
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^1.2.0",
-    "@docusaurus/core": "3.6.2",
-    "@docusaurus/plugin-client-redirects": "^3.6.2",
-    "@docusaurus/preset-classic": "3.6.2",
-    "@docusaurus/theme-common": "^3.6.2",
+    "@docusaurus/core": "3.6.3",
+    "@docusaurus/plugin-client-redirects": "^3.6.3",
+    "@docusaurus/preset-classic": "3.6.3",
+    "@docusaurus/theme-common": "^3.6.3",
+    "@headlessui/react": "^2.2.0",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
     "docusaurus-plugin-image-zoom": "^2.0.0",
@@ -28,8 +29,8 @@
     "swetrix": "^3.5.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.6.2",
-    "@docusaurus/types": "^3.6.2",
+    "@docusaurus/module-type-aliases": "3.6.3",
+    "@docusaurus/types": "^3.6.3",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "postcss-import": "^16.1.0",

@@ -74,8 +74,8 @@ export function Faqs() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-text-light">
             If you can’t find what you’re looking for here, check out the{" "}
-            <Link href="https://gamevau.lt/docs/intro">Docs</Link> or contact us via{" "}
-            <Link href="https://discord.gg/NEdNen2dSu">Discord</Link>,{" "}
+            <Link href="https://gamevau.lt/docs/intro">Docs</Link> or contact us
+            via <Link href="https://discord.gg/NEdNen2dSu">Discord</Link>,{" "}
             <Link href="https://github.com/Phalcode/gamevault-app/discussions">
               GitHub
             </Link>
