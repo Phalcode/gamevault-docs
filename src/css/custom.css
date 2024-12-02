@@ -78,3 +78,17 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#features a {
+  text-decoration-line: underline;
+  color: var(--ifm-font-color-base-inverse)
+}
+
+.gamevault-plus-banner {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  font-size: 3.75rem;
+  line-height: 1;
+}

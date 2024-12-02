@@ -1,43 +1,63 @@
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import clsx from "clsx";
 import { Container } from "./Container";
 
-import ImgAdmin from "@site/static/img/features/admin.png";
 import ImgCommunity from "@site/static/img/features/community.png";
 import ImgGame from "@site/static/img/features/game.png";
-import ImgInstallation from "@site/static/img/features/installation.png";
+import ImgMetadata from "@site/static/img/features/gamesettings_custom_metadata.png";
 import ImgLibrary from "@site/static/img/features/library.png";
+import ImgStars from "@site/static/img/features/stars.png";
+import ImgStore from "@site/static/img/features/store.png";
 
 const features = [
   {
-    title: "Browse Your Games",
+    title: "Organize Your Game Library",
     description:
-      "Browse your server's beautifully organized library to download, install and play your collection of video games of all kinds!",
+      "Bring all your DRM-free games together in one place with a sleek library that makes browsing and playing games effortless.",
     image: ImgLibrary,
   },
   {
-    title: "Build Your Community",
+    title: "Share with Friends and Family",
     description:
-      "Share your platform with your friends and family so they can enjoy your library, too. Administrate your users and games.",
-    image: ImgInstallation,
+      "Open your library up for friends and family to enjoy. Manage users, share access, and enjoy a connected gaming experience.",
+    image: ImgCommunity,
   },
   {
     title: "Track Your Progress",
     description:
-      "See how long you or your friends have been playing a game, find out what they are and keep track of what you've already completed or abandoned.",
+      "Monitor your playtime and keep track of what you've finished or plan to revisit later.",
     image: ImgGame,
   },
   {
-    title: "Automatic Metadata Enrichment",
+    title: "Enrich Your Library Automatically",
     description:
-      "GameVault automatically enriches your game with all the juicy information and and images from the largest video game database.",
-    image: ImgAdmin,
+      "Say goodbye to blank covers and missing details! GameVault can automatically enrich metadata, art, and details from various sources.",
+    image: ImgMetadata,
   },
   {
-    title: "Easy To Use",
-    description:
-      "There’s no need to compile any code! The app is readily available in the Microsoft Store. Plus, installing games and setting up a server is equally straightforward!",
-    image: ImgCommunity,
+    title: "Set Up with Ease",
+    image: ImgStore,
+    description: (
+      <>
+        Install the GameVault Client directly from the{" "}
+        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
+          Microsoft Store
+        </a>{" "}
+        and <a href="/docs/server-docs/setup">set up a server</a> in just a few
+        clicks.
+      </>
+    ),
+  },
+  {
+    title: "Join The Movement",
+    image: ImgStars,
+    description: (
+      <>
+        <a target="_blank" href="https://discord.gg/NEdNen2dSu">
+          Join our growing community
+        </a>{" "}
+        , star us on GitHub, or even <a href="/docs/contribute">contribute</a>{" "}
+        to our source-available project! Everyone can help!
+      </>
+    ),
   },
 ];
 
@@ -48,66 +68,62 @@ export function PrimaryFeatures() {
       aria-label="Features for running your books"
       className="relative overflow-hidden py-16"
     >
-      <Container className="relative py-10">
+      <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-text-default sm:text-4xl md:text-5xl">
-            Lorem ipsum dolor sit amet.
-            temporibus.
+            A{" "}
+            <span className="relative whitespace-nowrap text-primary-darker">
+              <svg
+                version="1.1"
+                viewBox="0 0 800 400"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -top-8 left-0 w-[6em] stroke-primary-default opacity-30"
+              >
+                <path
+                  d="m48.879 228.7c16.592 7.1749 69.208 44.993 99.552 43.049 30.344-1.9432 50.673-53.363 82.511-54.709 31.839-1.3453 74.589 45.291 108.52 46.637 33.931 1.3453 62.481-36.771 95.067-38.565 32.586-1.7937 70.553 28.102 100.45 27.803 29.895-0.29895 65.77-24.664 78.924-29.596"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeWidth="15"
+                />
+              </svg>
+
+              <span className="relative">must have</span>
+            </span>{" "}
+            for selfhosting gamers
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-text-light">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            excepturi beatae odio ipsum corporis dolorum possimus architecto,
-            optio eum velit?
+          <p className="mt-6 text-xl">
+            GameVault isn't just a library — It's your personal gaming platform.
+            <br />
+            Built for gamers, by gamers, with everything you need to organize,
+            share, and enjoy your DRM-free videogame collection.
           </p>
         </div>
-        <TabGroup className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0">
-          {({ selectedIndex }) => (
-            <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <TabList className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
-                  {features.map((feature, featureIndex) => (
-                    <div
-                      key={feature.title}
-                      className={clsx(
-                        "text-white group relative rounded-xl p-4 m-4",
-                        selectedIndex === featureIndex
-                          ? "bg-black/80"
-                          : "bg-black/50 hover:bg-black/60"
-                      )}
-                    >
-                      <h3>
-                        <Tab>
-                          <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
-                          {feature.title}
-                        </Tab>
-                      </h3>
-                      <p>{feature.description}</p>
-                    </div>
-                  ))}
-                </TabList>
+        <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className={
+                "bg-primary-light rounded-xl p-0 shadow-lg transform transition-all hover:scale-105 h-80"
+              }
+            >
+              <div>
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className="mx-auto mb-4 w-full h-48 rounded-t-xl"
+                />
+                <div className="absolute bottom-0 w-full h-32 p-4 bg-primary-light rounded-b-xl">
+                  <h3 className="text-lg font-semibold text-text-inverse ita">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-text-inverse">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-              <TabPanels className="lg:col-span-7">
-                {features.map((feature) => (
-                  <TabPanel key={feature.title} unmount={false}>
-                    <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
-                      <p className="relative mx-auto max-w-2xl text-base text-text-default sm:text-center">
-                        {feature.description}
-                      </p>
-                    </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <img
-                        className="h-full nozoom"
-                        src={feature.image}
-                        alt={feature.title}
-                      />
-                    </div>
-                  </TabPanel>
-                ))}
-              </TabPanels>
-            </>
-          )}
-        </TabGroup>
+            </div>
+          ))}
+        </div>
       </Container>
     </section>
   );

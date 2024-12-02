@@ -5,7 +5,7 @@ sidebar_position: 1
 description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
 ---
 
-<div class="banner" >
+<div class="gamevault-plus-banner" >
     <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/>
     <strong>GameVault+</strong>
 </div>
@@ -21,7 +21,9 @@ As of now, we are offering the following features:
 
 - 📸 Uploading animated profile pictures
 - 🎨 Custom Themes
-- 💻 GameVault Client API (Interfaces for integrations like Playnite)
+- 🤝 Playnite Integration
+- 🤝 Steam Integration
+- 💻 GameVault Client API (Advanced CLI / URI Interfaces)
 
 ## Pricing
 
