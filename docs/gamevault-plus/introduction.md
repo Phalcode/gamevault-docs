@@ -62,7 +62,7 @@ Please be aware that if you use Bancontact, iDEAL, SOFORT or SEPA Direct Debit a
 
 Of course!, You are the people keeping our project alive after all.
 
-Expect updates with awesome new GameVault+ content and improvements down thre road. We are committed to enhancing the GameVault+ experience.
+Expect updates with awesome new GameVault+ content and improvements down the road. We are committed to enhancing the GameVault+ experience.
 
 ### Can GameVault+ be shared with multiple users?
 
