@@ -67,4 +67,4 @@ If you contributed to these docs, feel free to append your github username to th
 - @Ronald-Diemicke
 - @FletcherAU
 - @Toylerrr
-- @DissonanceTrip
+- @DissBee
