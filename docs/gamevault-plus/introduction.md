@@ -28,7 +28,13 @@ As of now, we are offering the following features:
 
 ## Pricing
 
-The GameVault+ subscription is priced affordably at only **€ 4.99/month** or **€ 49.90/year**.
+GameVault+ offers three affordable subscription options:
+
+1. **Flex Plan**: A personal subscription for just €4.99/month.
+
+2. **Smart Saver Plan**: A personal subscription at €49.90/year, offering great savings.
+
+3. **Family & Friends Plan**: For you and up to 5 others in your family or friend circle for only €8.99/month.
 
 ## Get Started
 
@@ -65,15 +71,24 @@ Of course!, You are the people keeping our project alive after all.
 
 Expect updates with awesome new GameVault+ content and improvements down the road. We are committed to enhancing the GameVault+ experience.
 
-### Can GameVault+ be shared with multiple users?
+### Can I share GameVault+ with others?
 
-No, your GameVault+ subscription is designed for personal use only. Please avoid sharing it with anyone else.
+Sharing depends on your subscription plan:
+
+- **Family & Friends Plan**: You can share GameVault+ with up to 5 other people in your family or friend circle using the **Manage Members** button on the [Phalcode Account Page](https://phalco.de/account).
+- **Flex Plan and Smart Saver Plan**: These are personal plans and cannot be shared. Sharing your Phalcode account is also not allowed.
+
+### How can I manage members of my Family & Friends subscription?
+
+To manage your Family & Friends subscription members, visit the [Phalcode Account Page](https://phalco.de/account). If your subscription is shareable, you'll find a **Manage Members** button. Click it to open a dialog where you can add up to five people to share your subscription. Changes to your subscription members should take effect in about 5 minutes.
+
+### Does GameVault+ support multiple GameVault Servers?
 
 You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features offered by GameVault+ in their configurations.
 
-### How many devices can I have in my GameVault+ subscription?
+### How many devices can I use with my GameVault+ subscription?
 
-Your subscription isn't restricted to a specific number of active devices at the moment.
+There is currently no limit on the number of devices you can use with your subscription. However, sharing your personal Phalcode account with others is not permitted.
 
 ### Can GameVault+ be used offline?
 
@@ -104,8 +119,14 @@ GameVault+ features are available from the official GameVault Client application
 ### Are commercial licenses available for GameVault+?
 
 There are, but for commercial use, please [contact us directly](mailto:contact@phalco.de) to discuss an individual licensing agreement.  
-Personal subscriptions are tailored for individual users, but we're happy to collaborate with businesses for customized solutions and volume licenses.
+Personal and Family & Friends subscriptions are tailored for individual users and private groups, but we're happy to collaborate with businesses for customized solutions and volume licenses.
 
-### What if i cant afford GameVault+?
+### What if I can't afford GameVault+ or don't want to purchase it?
 
-We totally understand that not everyone can afford GameVault+, and that's fine. From our perspective, you're free to _tinker_ your way around the paywall for your personal use. The source code is on [Github](https://github.com/Phalcode/gamevault-app). But **please** avoid pirated versions, as they may contain malware, and also **please** refrain from sharing your bypass-modifications.
+That's okay! We understand that not everyone can afford GameVault+. Developing and maintaining the service comes with costs, and while we aim to keep the core features free and accessible to all, some convenience features are behind a paywall to help cover these expenses.
+
+If you're unable to purchase it, you're welcome to explore ways to _work around_ the paywall for personal use. The source code is available on [GitHub](https://github.com/Phalcode/gamevault-app). However, **please avoid pirated versions**, as they may contain malware, and **do not share any bypass modifications**.
+
+### Why is there not lifetime license?
+
+Lifetime licenses might seem appealing, but they’re not practical for covering the ongoing costs of developing and maintaining GameVault. Maintaining servers, providing updates, and developing new features require continuous investment, which a one-time payment simply doesn’t support. GameVault+ exists to provide "thank you" features for continuous support, and a lifetime license would undermine that purpose entirely.
