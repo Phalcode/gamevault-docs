@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gamevau.lt/blog</id>
     <title>GameVault Blog</title>
-    <updated>2024-10-20T00:00:00.000Z</updated>
+    <updated>2024-12-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://gamevau.lt/blog"/>
     <subtitle>GameVault Blog</subtitle>
     <icon>https://gamevau.lt/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[GameVault+ Family & Friends Plan Launches with Exciting New Integrations!]]></title>
+        <id>https://gamevau.lt/blog/2024/12/22/</id>
+        <link href="https://gamevau.lt/blog/2024/12/22/"/>
+        <updated>2024-12-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone,]]></summary>
+        <content type="html"><![CDATA[<p>Hey everyone,</p>
+<p>We’ve got some incredible news to share! Your feedback on Reddit, Lemmy and <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">our Discord server</a> regarding our latest release has guided us as we work to make GameVault better for everyone. Today, we’re excited to introduce some major updates along with a special offer — just in time for the holidays!</p>
+<h3 class="anchor anchorWithStickyNavbar_y3g7" id="whats-new">What’s New?<a href="https://gamevau.lt/blog/2024/12/22/#whats-new" class="hash-link" aria-label="Direct link to What’s New?" title="Direct link to What’s New?">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_y3g7" id="1-a-fresh-look-for-our-website">1. <strong>A Fresh Look for our website</strong><a href="https://gamevau.lt/blog/2024/12/22/#1-a-fresh-look-for-our-website" class="hash-link" aria-label="Direct link to 1-a-fresh-look-for-our-website" title="Direct link to 1-a-fresh-look-for-our-website">​</a></h4>
+<p>Navigating our website is now easier than ever. You told us it felt confusing and didn’t explain GameVault or its use well. We’ve streamlined the design to make it simpler, more intuitive, and focused on showcasing everything GameVault has to offer.</p>
+<h4 class="anchor anchorWithStickyNavbar_y3g7" id="2-the-family--friends-plan">2. <strong>The Family &amp; Friends Plan</strong><a href="https://gamevau.lt/blog/2024/12/22/#2-the-family--friends-plan" class="hash-link" aria-label="Direct link to 2-the-family--friends-plan" title="Direct link to 2-the-family--friends-plan">​</a></h4>
+<p>We heard you: GameVault+ needed an affordable plan for families and groups. That’s why we’re introducing the <strong>Family &amp; Friends Plan</strong> - perfect for sharing the GameVault+ experience with up to six members, including yourself for just €8.99/month.</p>
+<h5 class="anchor anchorWithStickyNavbar_y3g7" id="special-offer">Special Offer<a href="https://gamevau.lt/blog/2024/12/22/#special-offer" class="hash-link" aria-label="Direct link to Special Offer" title="Direct link to Special Offer">​</a></h5>
+<p><strong>And because we’re in such a festive Christmas mood, we’ve decided to gift away the Family &amp; Friends Plan for one month!</strong> If you have a group and want to try GameVault+ out and see if it’s something you’ll enjoy, just use the code: <strong>WEAREFAMILY</strong> at checkout. <a href="https://phalco.de/products/gamevault-plus/checkout" target="_blank" rel="noopener noreferrer">Subscribe now here!</a>. The special offer is valid until the end of January.</p>
+<h3 class="anchor anchorWithStickyNavbar_y3g7" id="new-features-for-gamevault">New Features for GameVault+<a href="https://gamevau.lt/blog/2024/12/22/#new-features-for-gamevault" class="hash-link" aria-label="Direct link to New Features for GameVault+" title="Direct link to New Features for GameVault+">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_y3g7" id="steam-integration-"><strong>Steam Integration (+)</strong><a href="https://gamevau.lt/blog/2024/12/22/#steam-integration-" class="hash-link" aria-label="Direct link to steam-integration-" title="Direct link to steam-integration-">​</a></h4>
+<p>Keep your gaming library organized like never before! With our new Steam integration, you can easily sync all of your GameVault games to Steam as Non-Steam Game Shortcuts. This feature allows you to access and launch your GameVault games directly from Steam, keeping everything in one place without the hassle of managing multiple platforms. It’s perfect for users who prefer Steam’s interface and want a seamless experience with all their games, whether purchased on Steam or GameVault.</p>
+<h4 class="anchor anchorWithStickyNavbar_y3g7" id="discord-integration-"><strong>Discord Integration (+)</strong><a href="https://gamevau.lt/blog/2024/12/22/#discord-integration-" class="hash-link" aria-label="Direct link to discord-integration-" title="Direct link to discord-integration-">​</a></h4>
+<p>Show off what you're playing in real-time with Discord's Presence API! This integration lets you share your current game status with friends on Discord, so they can see exactly what you're up to.</p>
+<h4 class="anchor anchorWithStickyNavbar_y3g7" id="festive-update-"><strong>Festive Update (+)</strong><a href="https://gamevau.lt/blog/2024/12/22/#festive-update-" class="hash-link" aria-label="Direct link to festive-update-" title="Direct link to festive-update-">​</a></h4>
+<p>We have added a Christmas theme to bring some holiday cheer into the application.</p>
+<h3 class="anchor anchorWithStickyNavbar_y3g7" id="general-improvements">General Improvements<a href="https://gamevau.lt/blog/2024/12/22/#general-improvements" class="hash-link" aria-label="Direct link to General Improvements" title="Direct link to General Improvements">​</a></h3>
+<p>We’ve fixed several bugs and made key improvements for a better overall experience, including better offline handling, smoother downloads, and improved media features.</p>
+<h3 class="anchor anchorWithStickyNavbar_y3g7" id="about-the-microsoft-store">About the Microsoft Store<a href="https://gamevau.lt/blog/2024/12/22/#about-the-microsoft-store" class="hash-link" aria-label="Direct link to About the Microsoft Store" title="Direct link to About the Microsoft Store">​</a></h3>
+<p>A quick note: Due to new Microsoft verification requirements, updates are temporarily delayed on the Microsoft Store. However, the Family &amp; Friends Plan and all new updates are live everywhere else. Also older GameVault versions are fully compatible with the new family plan.</p>
+<hr>
+<p>This update was shaped by your feedback, and we’d love to hear your thoughts on it! Keep sharing your ideas with us—we're building something truly special together. While it's a niche product, it's one that we all needed.</p>
+<p><strong>Happy holidays from the Phalcode team!</strong></p>]]></content>
+        <author>
+            <name>Alper Alkan</name>
+            <uri>https://github.com/Alfagun74</uri>
+        </author>
+        <category label="GameVault" term="GameVault"/>
+        <category label="update" term="update"/>
+        <category label="Steam integration" term="Steam integration"/>
+        <category label="Discord integration" term="Discord integration"/>
+        <category label="Family & Friends Plan" term="Family & Friends Plan"/>
+        <category label="holidays" term="holidays"/>
+        <category label="Christmas theme" term="Christmas theme"/>
+        <category label="new features" term="new features"/>
+        <category label="bug fixes" term="bug fixes"/>
+        <category label="gaming" term="gaming"/>
+        <category label="community feedback" term="community feedback"/>
+        <category label="Phalcode" term="Phalcode"/>
+        <category label="GameVault+" term="GameVault+"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[An update so major, we could have built the product from scratch.]]></title>
         <id>https://gamevau.lt/blog/2024/10/20/</id>
