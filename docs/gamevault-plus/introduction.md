@@ -63,7 +63,7 @@ GameVault+ uses the Stripe billing system for your convenience. Easily handle yo
 We offer several easy ways to pay for your GameVault+ subscription. You can use credit or debit cards, popular digital wallets, various bank redirects or even SEPA direct debit transfers. We want to make it convenient for you to choose how you pay.
 
 :::note Important: Potential Delays
-Please be aware that if you use Bancontact, iDEAL, SOFORT or SEPA Direct Debit as your payment method, there might be delays in confirming your payment. To get your GameVault+ subscription quickly, we recommend using a payment method that confirms faster.
+Please be aware that if you use Multibanco, Bancontact, iDEAL, SOFORT or SEPA Direct Debit as your payment method, there might be delays in confirming your payment. To get your GameVault+ subscription quickly, we recommend using a payment method that confirms faster.
 :::
 
 ### Are there going to be more features added to GameVault+?
