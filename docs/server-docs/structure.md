@@ -71,3 +71,48 @@ Here are some other valid examples of game names that follow the naming conventi
 - `Stray (2022).7z`
 - `Captain of Industry (v0.4.12b) (EA) (2022).gz`
 - `Minecraft (2011).exe`
+
+## Mounting Multiple Game Volumes
+
+Modern games can be quite large, often requiring storage across multiple disks on the server side. GameVault, however, uses a single `/files` folder to access its games. How can you map multiple drives to your GameVault server while ensuring seamless operation?
+
+### Using Docker
+
+If you’re running GameVault in Docker, mounting additional volumes is straightforward. You can add extra volumes to the GameVault server configuration by pointing each mounted drive on the host side to a subfolder under `/files` on the container side. Here's an example:
+
+```yaml
+services:
+  gamevault-backend:
+    [...]
+    volumes:
+      - /mnt/disk1/games:/files
+      - /mnt/disk2/games:/files/disk2
+    [...]
+```
+
+In this setup:
+
+- `/mnt/disk1/games` is mounted as the main `/files` directory.
+- `/mnt/disk2/games` is mounted as a subfolder `/files/disk2`, allowing GameVault to access games stored on a second disk.
+
+### Running Natively
+
+For systems running GameVault natively without Docker, you can achieve similar results using symbolic links. These links enable the GameVault file watcher to locate games stored across different drives, all accessible within the designated `/files` folder.
+
+To create a symbolic link:
+
+1. Navigate to your configured `/files` directory:
+
+   ```bash
+   cd /files
+   ```
+
+2. Create a symbolic link for each additional drive:
+
+   ```bash
+   ln -s /mnt/disk2/games disk2
+   ```
+
+   This command creates a link named `disk2` within `/files` that points to `/mnt/disk2/games`.
+
+With this setup, GameVault will scan and recognize games stored across multiple drives, maintaining a unified structure under the `/files` folder.
