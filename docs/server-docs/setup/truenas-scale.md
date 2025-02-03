@@ -85,7 +85,15 @@ GameVault expects three directories:
 - a database for GameVault to store its media - mounted to the /media directory internally
   
 These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server.
-If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories.
+If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories. 
+
+For this example, the following directories have been made on TrueNAS Scale, and the "apps" user has read/write access:
+
+- Games directory: /Tank1/Games
+- database directory: /Tank1/GameVault/database
+- media directory: /Tank1/GameVault/media
+
+After these directories have been created, and you have ensured that your chosen TrueNAS user has read/write access to all three directories, you will need to update the docker-compose.yml file to specify these directories.
 
 An example of the finished config is available below under "Step 2a"
 
@@ -116,9 +124,9 @@ services:
       DB_PASSWORD: YOURPASSWORDHERE #This is not your admin user's password - this is the database password
     volumes:
       # Mount the folder where your games are
-      - /mnt/yourgames:/files
+      - /Tank1/Games:/files
       # Mount the folder where GameVault should store its media
-      - /mnt/GameVault/media:/media
+      - /Tank1/GameVault/media:/media
     ports:
       - 8080:8080/tcp
   db:
@@ -130,7 +138,7 @@ services:
       POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your PostgreSQL database files should land
-      - /mnt/GameVault/database:/var/lib/postgresql/data
+      - /Tank1/GameVault/database:/var/lib/postgresql/data
 ```
 
 You should change the `DB_PASSWORD` and `POSTGRES_PASSWORD` variables to be an actual password instead of "YOURPASSWORDHERE". 
