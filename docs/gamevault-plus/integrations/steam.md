@@ -23,5 +23,5 @@ Before starting, ensure that you have [installed Steam](https://store.steampower
 ## Important Notes
 
 - GameVault does not touch any of your existing game shortcuts. If any issues arise, such as lost or corrupted non-Steam game shortcuts, you can restore them using the **Restore Backup** button. This will revert your shortcuts to their original state before any changes were made by GameVault.
-- All GameVault games will display the GameVault logo as their mini-icon. This is a limitation of Steam's hardcoded behavior and cannot be customized.
 - The sync will always target the last logged in Steam account. If you have multiple Steam accounts, just log in to the one you want to use. Then repeat the setup process.
+- Steam usually requires a restart to sync the library, so make sure to restart Steam after you install or uninstall games to see the changes.

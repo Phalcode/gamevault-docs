@@ -15,6 +15,8 @@ GameVault+ ships with the following premium themes by default:
   ![Phalcode (Light)](/img/themes/phalcode_light.png)
 - **Halloween (Dark)**: A Halloween-themed ambiance to set the mood for horror games in autumn.
   ![Halloween (Dark)](/img/themes/halloween_dark.png)
+- **Christmas (Dark)**: Celebrate a cozy and festive Christmas with us. We ho-ho-hope you love it!
+  ![Christmas (Dark)](/img/themes/christmas_dark.png)
 
 ## Custom Themes
 
