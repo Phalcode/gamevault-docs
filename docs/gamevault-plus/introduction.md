@@ -20,10 +20,11 @@ Welcome to **GameVault+**, the premium upgrade subscription designed for enthusi
 As of now, we are offering the following features:
 
 - 📸 Animated profile pictures
-- 🎨 [Additional built-in and customizable Themes](./themes.md)
+- ☁️ [Cloud Saves](./cloud-saves.md)
 - 🎮 [Playnite Integration](./integrations/playnite.md)
 - 🚂 [Steam Integration](./integrations/steam.md)
 - 💬 [Discord Integration](./integrations/discord.md)
+- 🎨 [Additional built-in and customizable Themes](./themes.md)
 - 💻 [GameVault Client APIs (Advanced Interfaces used for Integrations)](./client-apis.md)
 
 ## Pricing
