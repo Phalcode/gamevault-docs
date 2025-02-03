@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "Cloud Save Management with GameVault+"
+title: "Cloud Saves"
 ---
 
 GameVault+ offers **secure, cross-device savefile synchronization** through your GameVault Server, ensuring your progress is always protected and readily available. Whether you’re switching computers, reinstalling a game, or taking a break, your most recent saves are automatically backed up and ready whenever you return.
