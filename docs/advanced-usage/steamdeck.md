@@ -11,7 +11,7 @@ Please note that running GameVault on Linux using this method is considered **un
 To start, you need the Application files. The simplest way to get them is explained [here](../client-docs/setup.md#option-1-obtain-pre-built-artifacts-from-github).
 
 1. Download the latest version of the GameVault app [here](https://github.com/Phalcode/gamevault-app/releases).
-2. Download .NET from [here](https://download.visualstudio.microsoft.com/download/pr/3136e217-e5b7-4899-9b7e-aa52ecb8b108/d74134edaa75e3300f8692660b9fb7b5/windowsdesktop-runtime-6.0.26-win-x64.exe).
+2. Download .NET from [here](https://download.visualstudio.microsoft.com/download/pr/fc8c9dea-8180-4dad-bf1b-5f229cf47477/c3f0536639ab40f1470b6bad5e1b95b8/windowsdesktop-runtime-8.0.13-win-x64.exe).
 3. Download fonts from [here](https://archive.org/details/windows-11-21h2-complete-font-collection).
 4. Unzip the GameVault application where you want the application to live.
 
@@ -19,7 +19,7 @@ To start, you need the Application files. The simplest way to get them is explai
    Where you place the app is where it will install windows portable apps. Make sure you have enough space.
    :::
 
-5. Add `gamevault.exe` to Steam library as a non-steam game (This is important for the proton compdata appid... or so I've been told).
+5. Add `gamevault.exe` to Steam library as a non-steam game.
 6. Change game compatibility properties to use your preferred version of proton.
 7. Change the target of the Non-steam game to the .NET installer.
 8. Run the game via Steam.
@@ -38,4 +38,10 @@ To start, you need the Application files. The simplest way to get them is explai
 
 :::warning
 Since there is currently no auto-update functionality available (as mentioned in [this link](../client-docs/updating-client.md#other-sources)), it is your responsibility to manually update your GameVault client. To update your client, you will need to repeat the procedure in this documentation.
+:::
+
+## Logging into Phalcode account
+
+:::warning
+The GameVault pop-up to authenticate your Phalcode account relies on WebView2, which is not natively supported on the Steam Deck. As of February 18 2025, there is no known method for installing the WebView2 dependency on the Steam Deck. Consequently, GameVault+ features are not available on the Steam Deck.
 :::
