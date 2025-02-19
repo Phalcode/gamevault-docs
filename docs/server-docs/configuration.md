@@ -104,8 +104,8 @@ This page describes the various configuration properties used in the application
 | Property              | Description                                                                                                                                     | Default | Possible Values                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------ |
 | `SAVEFILES_ENABLED`   | Enables or disables savefile uploads. You may need to set up a volume for savefiles for them to persist.                                        | `false` | `true`, `false`                |
-| `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `10 gb` | e.g. "10 mb", "5 gb", "300 kb" |
-| `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `100`   | Any number                     |
+| `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `1 gb`  | e.g. "10 mb", "5 gb", "300 kb" |
+| `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `10`    | Any number                     |
 
 ## METADATA
 
