@@ -156,7 +156,7 @@ Go to **apps** -> **discover**
 
 ## Step 4: Select "Install via YAML"
 
-Click the three-dot icon next the "Custom App" button:
+Click the three-dot icon next to the "Custom App" button:
 
 ![Scale-EE-Step-4](/img/docs/setup/scale/Scale-EE-Step-4.png)
 
