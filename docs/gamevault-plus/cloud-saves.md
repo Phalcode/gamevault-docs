@@ -22,9 +22,9 @@ That’s it for basic setup! Once these are in place, Cloud Saves are up and run
 
 ## How It Works
 
-GameVault integrates with [Ludusavi](https://github.com/mtkennerly/ludusavi), an open-source savefile manager that supports a wide variety of games. If a particular game supports cloud saves, you’ll see **“Cloud saves”** on its Game page, right above your personal progress summary.
+GameVault integrates with [Ludusavi](https://github.com/mtkennerly/ludusavi), an open-source savefile manager that supports a wide variety of games. If a particular game supports cloud saves, you’ll see **“Cloud saves”** on its Game page, right above your personal progress summary. The Indicator may take a second to load.
 
-:::warning DISCLAIMER: Reliability of the Indicator
+:::info Reliability of the Indicator
 The **"Cloud Saves" indicator** is **not** guaranteed to be **100% accurate** due to the nature of DRM-free games. It simply checks whether the game name **closely matches** an entry in the **[Ludusavi manifest](https://github.com/mtkennerly/ludusavi-manifest)**. You can see what game it matched to by hovering over the up- or download buttons. In some cases, even if it does match, your specific installation might not be supported. This is **just an indicator**, and **false positives or negatives** can occur. The only way to be sure is to **test it yourself**. As a rule of thumb, if a game is **popular and well-documented on [PCGamingWiki](https://www.pcgamingwiki.com/)** - and therefore in the [Ludusavi manifest](https://github.com/mtkennerly/ludusavi-manifest) - it is **more likely to be supported**.
 :::
 
@@ -40,15 +40,13 @@ Once you’ve played for at least a minute and then exit the game, GameVault aut
 
 With your savefiles stored in the cloud, you can install the same game on another device and immediately access the same save state. Just launch the game, and GameVault will seamlessly load your existing progress. Whether you’re on a second PC or coming back after a fresh install, your saves will always be there.
 
-:::warning Limitations of Ludusavi in Cross-Device Scenarios
+:::info Cross-Device Limitations of Ludusavi
 Ludusavi may not properly restore save files in certin cross-device cases:
 
 - Save files are stored within the **Game Installation Directory**, and your **Game Installation Directory differs** across your devices.
 - Save files are stored within the **Windows user profile**, and the **Windows username differs** across your devices.
 
-This is due to Ludusavi storing absolute paths instead of using dynamic placeholders (e.g., %USERPROFILE% or %INSTALLDIR%).
-
-[Learn more](https://github.com/mtkennerly/ludusavi/issues/464)  
+This is due to Ludusavi storing absolute paths instead of using dynamic placeholders (e.g., %USERPROFILE% or %INSTALLDIR%). [Learn more...](https://github.com/mtkennerly/ludusavi/issues/464)  
 :::
 
 ### Manual Sync
