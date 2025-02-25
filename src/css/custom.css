@@ -81,7 +81,7 @@ ul {
 
 #features a {
   text-decoration-line: underline;
-  color: var(--ifm-font-color-base-inverse)
+  color: var(--ifm-font-color-base-inverse);
 }
 
 .gamevault-plus-banner {
@@ -91,4 +91,8 @@ ul {
   margin-bottom: 1rem;
   font-size: 3.75rem;
   line-height: 1;
+}
+
+main li {
+  margin-left: 1.5em !important;
 }
