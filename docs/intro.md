@@ -27,7 +27,7 @@ Let's take a look at all the main functions of GameVault:
 ### Client Features
 
 - 🔎 [Browse your server's game collection](./client-docs/gui#library)
-- 📥 [Securely download your games from your server](./client-docs/how-to-use#downloading-games)
+- 📥 [Download your games from your server](./client-docs/how-to-use#downloading-games)
 - ⚙️ [Automatically extract and install games](./client-docs/how-to-use#1-extracting-the-game)
 - 🎮 [Launch and play the games on your PC](./client-docs/how-to-use#playing-a-game)
 - ⏱️ [Track playtimes and progress (even when the server is offline)](./client-docs/how-to-use#tracking-your-game-progress)
