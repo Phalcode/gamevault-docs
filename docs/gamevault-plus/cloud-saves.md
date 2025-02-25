@@ -40,7 +40,7 @@ Once you’ve played for at least a minute and then exit the game, GameVault aut
 
 With your savefiles stored in the cloud, you can install the same game on another device and immediately access the same save state. Just launch the game, and GameVault will seamlessly load your existing progress. Whether you’re on a second PC or coming back after a fresh install, your saves will always be there.
 
-:::warning **Potential Restore Issues**  
+:::warning Limitations of Ludusavi in Cross-Device Scenarios
 Ludusavi may not properly restore save files in certin cross-device cases:
 
 - Save files are stored within the **Game Installation Directory**, and your **Game Installation Directory differs** across your devices.
