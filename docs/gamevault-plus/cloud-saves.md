@@ -3,7 +3,7 @@ sidebar_position: 4
 title: "Cloud Saves"
 ---
 
-GameVault+ provides **secure, cross-device savefile synchronization**, making sure your progress stays protected and ready to go, no matter where or when you play. By using GameVault Server, your saves are backed up automatically, so you can switch computers or reinstall a game without losing any progress.
+GameVault+ provides **cross-device savefile synchronization**, making sure your progress stays protected and ready to go, no matter where or when you play. By using GameVault Server, your saves are backed up automatically, so you can switch computers or reinstall a game without losing any progress.
 
 ## Quick Setup
 
@@ -34,11 +34,22 @@ When you install a game through GameVault, your **latest savefile version** is a
 
 ### Play & Auto-Sync
 
-Once you’ve played for at least a minute and then exit the game, GameVault automatically checks for updated savefiles, compresses them, and securely uploads them to your GameVault Server. This process happens behind the scenes, so you don’t have to worry about manually backing up your progress.
+Once you’ve played for at least a minute and then exit the game, GameVault automatically checks for updated savefiles, compresses them, and uploads them to your GameVault Server. This process happens behind the scenes, so you don’t have to worry about manually backing up your progress.
 
 ### Cross-Device Sync
 
 With your savefiles stored in the cloud, you can install the same game on another device and immediately access the same save state. Just launch the game, and GameVault will seamlessly load your existing progress. Whether you’re on a second PC or coming back after a fresh install, your saves will always be there.
+
+:::warning **Potential Restore Issues**  
+Ludusavi may not properly restore save files in certin cross-device cases:
+
+- Save files are stored within the **Game Installation Directory**, and your **Game Installation Directory differs** across your devices.
+- Save files are stored within the **Windows user profile**, and the **Windows username differs** across your devices.
+
+This is due to Ludusavi storing absolute paths instead of using dynamic placeholders (e.g., %USERPROFILE% or %INSTALLDIR%).
+
+[Learn more](https://github.com/mtkennerly/ludusavi/issues/464)  
+:::
 
 ### Manual Sync
 
