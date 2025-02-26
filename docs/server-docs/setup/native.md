@@ -85,15 +85,17 @@ You can update the server by running
 
 ```bash
 git pull
+pnpm install
 ```
 
-inside of your gamevault-backend git repository. It will auto update to the latest version.
+inside of your gamevault-backend git repository. It will auto update to the latest version and install the latest dependencies.
 
 You can update to a specific version by using:
 
 ```bash
 git fetch --all --tags --prune
 git checkout tags/9.0.0
+pnpm install
 ```
 
 for example.
