@@ -1,13 +1,17 @@
-# **🎉 What's new? 🎮**
+📢 Please let us know what’s important to you!
 
-## Family & Friends Plan
+Hey, If you want to have a say in what we prioritize, you can help us out! 
+Check out our planned tickets on our board and give a 👍 to the topics that matter to you. 🙂
 
-Share GameVault+ with up to 6 members for €8.99/month. 🎁 Use code **WEAREFAMILY** for 1 free month!
+Vote here:
+🔗 [GitHub Board](https://phalco.de/products/gamevault-plus/checkout).
 
 ## New Integrations
 
-Sync games to Steam and show your status on Discord! (+)
+Cloud Saved (+)
+
+Advanced Community Theme Manager
 
 ---
 
-💡 [Try GameVault+ now!](https://phalco.de/products/gamevault-plus/checkout) Offer valid until January 31.
+💡 [Try GameVault+ now!](https://phalco.de/products/gamevault-plus/checkout)
