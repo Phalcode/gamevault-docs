@@ -53,14 +53,15 @@ Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If 
 
 ### Tips for Running Docker on Windows
 
-The above ``docker-compose.yaml`` file might not work as expected with Docker for Windows. Here are some things to consider to make it compatible:
+The above `docker-compose.yaml` file might not work as expected with Docker for Windows. Here are some things to consider to make it compatible:
 
 - **Use Forward Slashes in Paths**: In your volumes, replace Windows-style backslashes (`\`) with forward slashes (`/`).
-    ```yaml
-    volumes:
-      # Path to your games folder
-      - C:/Your/Games/Folder:/files
-    ```
+
+  ```yaml
+  volumes:
+    # Path to your games folder
+    - C:/Your/Games/Folder:/files
+  ```
 
 - **PostgreSQL Database Volume**: For PostgreSQL, it’s often better to use a Docker volume instead of mounting a folder, due to compatibility issues of PostgreSQL with Windows Filesystems. To do this, leave out any volume definition in the database section of your YAML file. [Read more here](https://github.com/docker-library/postgres/issues/116).
 
@@ -120,3 +121,21 @@ Open a terminal and run the following command:
 ```bash
 docker logs gamevault-backend
 ```
+
+### Updating the Server
+
+To update the GameVault server to the latest version, follow these steps:
+
+Open a terminal and pull the latest images for GameVault:
+
+```bash
+docker compose pull
+```
+
+Restart the containers with the updated images:
+
+```bash
+docker compose up -d --force-recreate
+```
+
+Your server should now be running the latest version of GameVault!
