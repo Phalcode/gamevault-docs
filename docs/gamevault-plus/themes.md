@@ -26,8 +26,13 @@ A public repository of custom themes shared by our community can be found [here]
 
 ### How to Install and Apply a Custom Theme
 
-To install a custom theme, follow these steps:
+#### Automatic Installation via [GameVault Community Themes Repository](https://github.com/Phalcode/gamevault-community-themes/)
 
+1. Open **GameVault** and navigate to **Settings → Application → Theme**.
+2. Click on the **Community Themes** dropdown menu to load available themes from the community repository.
+3. Select your preferred theme and click **"Install Theme"**.
+
+#### Manual Installation
 1. Place the theme .xaml file into your `themes` folder. Depending on your GameVault installation, the `themes` folder can be located at either `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\themes` or `%APPDATA%/GameVault/themes`.
 2. Open `GameVault Settings` and select your newly added theme under `Application` -> `Themes`.
 
