@@ -16,7 +16,7 @@ GameVault consists of two components:
 - A client application to use this server
 
 :::tip Try it out!
-If you don't have a server yet, but want to try it out, you can connect your GameVault Client to our demo server get a feel for how it works.  
+If you don't have a server yet, but want to try it out, you can connect your GameVault Client to our demo server to get a feel for how it works.  
 [Click here to learn more.](client-docs/setup#option-2-using-the-demo-server)
 :::
 
