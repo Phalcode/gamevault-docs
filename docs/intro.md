@@ -49,6 +49,10 @@ Let's take a look at all the main functions of GameVault:
 - ⚙️ [Highly Configurable](./server-docs/configuration)
 - ⚙️ [Modular Plugin Framework](./server-docs/plugins.md)
 
+### Premium Features
+
+- Visit our [GameVault+](./gamevault-plus/introduction.md) page to learn more about our premium features.
+
 ## Support
 
 We're working hard in our free time to provide you, your friends, and families with the best self-hosted gaming experience. It would mean a lot to us if you could support us developers by [getting GameVault+](./gamevault-plus/introduction.md).
