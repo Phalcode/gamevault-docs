@@ -30,13 +30,11 @@ Now we need to install all necessary node dependencies.
 pnpm install
 ```
 
-Your server files are now in the `dist/` folder.
-
 ### Step 3: Set up an .env File
 
-Create a .env file in the `dist/src/` directory and [configure your GameVault as desired](../configuration.md) or set them in your system/VM directly.
+Create a .env file in the cloned `gamevault-backend` directory and [configure your GameVault as desired](../configuration.md) or set them in your system/VM directly.
 
-Example with SQLITE:
+#### Example using SQLITE
 
 First create the necessary folders or just use existing ones in your config:
 
@@ -46,6 +44,8 @@ For example:
 cd ~
 mkdir -p gamevault-db gamevault-media gamevault-games gamevault-logs gamevault-plugins
 ```
+
+Then use them in your .env file:
 
 ```ini
 #/gamevault-backend/.env
