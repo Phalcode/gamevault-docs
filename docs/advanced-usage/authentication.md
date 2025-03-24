@@ -39,8 +39,8 @@ Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requir
 2. Create an OAuth2 client in your chosen identity provider.
 3. Add the Authorization URL and Token URL from your identity provider to the [Configuration](../server-docs/configuration.md#auth).
 4. Enter your client ID and client secret into the [Configuration](../server-docs/configuration.md#auth).
-5. Set the OAuth2 callback URL to your GameVault server URL appended with `/auth/oauth2/login` (e.g., `https://demo.gamevau.lt/api/auth/oauth2/login`).
-6. Test the authentication by accessing `/auth/oauth2/login` on your GameVault server. You will be redirected to your identity provider's login page. After logging in, you'll return to GameVault, and it will exchange the provided authorization code for an access token. It will automatically register the user using the data from your identity provider if they don't already exist. A successful response looks like this:
+5. Set the OAuth2 callback URL to your GameVault server URL appended with `/api/auth/oauth2/login` (e.g., `https://demo.gamevau.lt/api/auth/oauth2/login`).
+6. Test the authentication by accessing `/api/auth/oauth2/login` on your GameVault server. You will be redirected to your identity provider's login page. After logging in, you'll return to GameVault, and it will exchange the provided authorization code for an access token. It will automatically register the user using the data from your identity provider if they don't already exist. A successful response looks like this:
 
    ```json
    {
