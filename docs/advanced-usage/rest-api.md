@@ -20,4 +20,4 @@ You can also download the OpenAPI Specification in different formats using `exam
 
 ## Authentication
 
-Almost all requests to the API require basic-auth authentication. You will need to include it in the Authentication header of each request.
+Click [here](authentication.md) to learn how to authenticate your API requests.
