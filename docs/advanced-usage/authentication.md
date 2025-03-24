@@ -17,7 +17,7 @@ Authorization: Bearer <your_token>
 You can generate a Bearer token using one of the `login` endpoints:
 
 - **Basic Authentication:** If Basic Authentication is enabled, authenticate via `POST /api/auth/basic/login` with your username and password.
-- **OAuth2 Authentication:** If [OAuth2 authentication](#setting-up-oauth2-authentication) is enabled, authenticate via `GET /api/auth/oauth2/login` through your configured identity provider.
+- **OAuth2 Authentication:** If [OAuth2 authentication](#setting-up-oauth2-authentication-single-sign-on) is enabled, authenticate via `GET /api/auth/oauth2/login` through your configured identity provider.
 
 Generated access tokens are valid for **1 hour**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server-docs/configuration.md) page.
 
