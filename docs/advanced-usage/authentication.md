@@ -19,15 +19,15 @@ You can generate a Bearer token using one of the `login` endpoints:
 - **Basic Authentication:** If Basic Authentication is enabled, authenticate via `POST /api/auth/basic/login` with your username and password.
 - **OAuth2 Authentication:** If [OAuth2 authentication](#setting-up-oauth2-authentication-single-sign-on) is enabled, authenticate via `GET /api/auth/oauth2/login` through your configured identity provider.
 
-Generated access tokens are valid for **1 hour**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server-docs/configuration.md) page.
+Generated access tokens are valid for **5 minutes**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server-docs/configuration.md) page.
 
 ### Refreshing Tokens
 
-When your access token expires, request a new one using your refresh token via the endpoint `POST /api/auth/refresh`.
+When your access token expires, request a new token pair using your refresh token by calling the `POST /api/auth/refresh` endpoint with your refresh token. Your current refresh token will be invalid after this call so make sure to always use the token received from the response for future token refreshes.
 
 ### Revoking Tokens
 
-You can revoke a token using the `POST /api/auth/revoke`. This will effectively log out the user by removing the token from the database and invalidating it.
+You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your refresh token. This will effectively log out the user, by blocking future token refreshes.
 
 ## Setting Up OAuth2 Authentication (Single Sign-On)
 

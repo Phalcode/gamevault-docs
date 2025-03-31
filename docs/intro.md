@@ -27,33 +27,39 @@ Let's take a look at all the main functions of GameVault:
 ### Client Features
 
 - 🔎 [Browse your server's game collection](./client-docs/gui#library)
-- 📥 [Download your games from your server](./client-docs/how-to-use#downloading-games)
-- ⚙️ [Automatically extract and install games](./client-docs/how-to-use#1-extracting-the-game)
-- 🎮 [Launch and play the games on your PC](./client-docs/how-to-use#playing-a-game)
-- ⏱️ [Track playtimes and progress (even when the server is offline)](./client-docs/how-to-use#tracking-your-game-progress)
-- 👥 [Compare game progress with other users on the server](./client-docs/gui#community)
-- ✏️ [Edit any game metadata](./client-docs/gui#metadata)
-- 🔒 [Manage your users and games with a powerful Admin UI](./client-docs/gui#administration)
+- 📥 [Download games from your server](./client-docs/how-to-use#downloading-games)
+- ⚙️ [Automatic game extraction and installation](./client-docs/how-to-use#1-extracting-the-game)
+- 🎮 [Launch and play games on your Computer](./client-docs/how-to-use#playing-a-game)
+- ⏱️ [Track playtime and progress (works offline)](./client-docs/how-to-use#tracking-your-game-progress)
+- 👥 [Compare game progress with other users](./client-docs/gui#community)
+- ✏️ [Edit game metadata](./client-docs/gui#metadata)
+- 🔒 [Manage users and games through Admin UI](./client-docs/gui#administration)
+- 🎥 [Built-in media player for trailers and gameplay videos](./client-docs/gui#game)
+- 🎨 [Themes](./client-docs/gui#application)
 
 ### Server Features
 
-- ♻️ [Automatic indexer to sync games from the file system into the database](./server-docs/indexing.md)
-- 📚 [Automatic enrichment of games with metadata, box arts, tags, genres, description and more using various APIs](./server-docs/metadata-enrichment/metadata.md)
-- 👥 [Multi-User Authentication](./server-docs/user-management.md)
-- 🔒 [Role-Based Access Control](./server-docs/user-management#user-roles)
-- 👨‍👩‍👧‍👦 [Parental Control Features](./server-docs/parental-control)
-- ⏱️ [Game Progress and Statistics Tracking](./client-docs/how-to-use#tracking-your-game-progress)
-- 🚨 [Health Monitoring and Logging](./advanced-usage/rest-api)
-- 🔎 [Full-Text Search, Filters, Sorting, Pagination](./advanced-usage/rest-api)
-- 🔌 [Fully Documented API](./advanced-usage/rest-api)
-- ⚙️ [Highly Configurable](./server-docs/configuration)
-- ⚙️ [Modular Plugin Framework](./server-docs/plugins.md)
+- 🔄 [Automatic game indexing from file system](./server-docs/indexing.md)
+- 🤖 [Intelligent game type detection](./server-docs/game-types.md)
+- 📚 [Automatic metadata enrichment from various video game databases](./server-docs/metadata-enrichment/metadata.md)
+- 👥 [Multi-user authentication system](./server-docs/user-management.md)
+- 🔒 [Role-based access control](./server-docs/user-management#user-roles)
+- 👨‍👩‍👧‍👦 [Parental control features](./server-docs/parental-control)
+- ⏱️ [Game progress tracking system](./client-docs/how-to-use#tracking-your-game-progress)
+- 🚨 [Built-in health monitoring and logging](./advanced-usage/rest-api)
+- 🔎 [Advanced search, filtering, and sorting](./advanced-usage/rest-api)
+- 🔌 [Comprehensive API documentation](./advanced-usage/rest-api)
+- ⚙️ [Highly configurable server settings](./server-docs/configuration)
+- 🔌 [Extensible plugin framework](./server-docs/plugins.md)
+- 🔄 [WebSocket support for real-time updates](./server-docs/websockets.md)
+- 💾 [Database backup and restoration](./server-docs/configuration)
+- 🔐 [OAuth2 authentication support](./advanced-usage/authentication#setting-up-oauth2-authentication-single-sign-on)
 
 ### Premium Features
 
 - Visit our [GameVault+](./gamevault-plus/introduction.md) page to learn more about our premium features.
 
-## Support
+## Support Us
 
 We're working hard in our free time to provide you, your friends, and families with the best self-hosted gaming experience. It would mean a lot to us if you could support us developers by [getting GameVault+](./gamevault-plus/introduction.md).
 
