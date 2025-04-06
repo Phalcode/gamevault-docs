@@ -5,13 +5,3 @@ Check out our planned tickets on our board and give a 👍 to the topics that ma
 
 Vote here:
 🔗 [GitHub Board](https://phalco.de/products/gamevault-plus/checkout).
-
-## New Integrations
-
-Cloud Saved (+)
-
-Advanced Community Theme Manager
-
----
-
-💡 [Try GameVault+ now!](https://phalco.de/products/gamevault-plus/checkout)
