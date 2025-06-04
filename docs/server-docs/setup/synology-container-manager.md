@@ -54,7 +54,7 @@ services:
     ports:
       - 8080:8080/tcp
   db:
-    image: postgres:16
+    image: postgres:17
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
