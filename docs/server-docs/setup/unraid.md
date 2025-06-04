@@ -14,9 +14,7 @@ You can easily set up a GameVault Server by using one of our templates from the 
 
 ## Step 1: Setting up the Database
 
-Log into your Unraid dashboard and navigate to your apps section of the dashboard and search for the offical `postgresql15` Community Application by `postgres`
-
-![Step 1](/img/docs/setup/unraid/unraid1.png)
+Log into your Unraid dashboard and navigate to your apps section of the dashboard and search for the offical `postgresql17` Community Application.
 
 ## Step 2: Install POSTGRES
 
