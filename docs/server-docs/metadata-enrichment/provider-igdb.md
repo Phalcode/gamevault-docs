@@ -33,27 +33,28 @@
 
 ### Fields
 
-| GameVault Field     | IGDB API Field(s)                      | Notes                                                                                                |
-| ------------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `provider_slug`     | `igdb`                                 | hardcoded.                                                                                           |
-| `age_rating`        | `age_ratings`                          | See [here](#age-rating) for details.                                                                 |
-| `provider_data_id`  | `id`                                   |                                                                                                      |
-| `provider_data_url` | `url`                                  |                                                                                                      |
-| `title`             | `name`                                 |                                                                                                      |
-| `release_date`      | `first_release_date`                   |                                                                                                      |
-| `description`       | `game.summary` and/or `game.storyline` | If both are available, both get used, else any available will be mapped                              |
-| `rating`            | `total_rating`                         |                                                                                                      |
-| `early_access`      | `status`                               | True if the Game is either in status `alpha`, `beta` or `early_access`                               |
-| `developers`        | `involved_companies`                   | Filtered by `involved_company.developer === true`                                                    |
-| `publishers`        | `involved_companies`                   | Filtered by `involved_company.publisher === true`                                                    |
-| `genres`            | `genres`                               |                                                                                                      |
-| `tags`              | `keywords` and `themes`                |                                                                                                      |
-| `cover`             | `cover`                                | Using the highest possible cover resolution via `t_cover_big_2x`                                     |
-| `background`        | `artworks[0]` or `screenshots[0]`      | Only first artwork/screenshot is mapped. Using the highest possible 16:9 resolution via `t_1080p_2x` |
-| `url_websites`      | `websites.url`                         |                                                                                                      |
-| `url_screenshots`   | `screenshots` and `artworks`           | Using the highest possible 16:9 resolution via `t_1080p_2x`                                          |
-| `url_trailers`      | `videos`                               | Only when video title includes the words "trailer", "teaser" or "intro"                              |
-| `url_gameplays`     | `videos`                               | Only when video title includes the words "gameplay"                                                  |
+| GameVault Field        | IGDB API Field(s) or Hardcoded Value (\*) | Notes                                                                                                |
+| ---------------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `provider_slug`        | `igdb` \*                                 | Hardcoded.                                                                                           |
+| `installer_parameters` | `/DIR="%INSTALLDIR%" /SILENT` \*          | Hardcoded for convenience. Makes Inno Setup installers run silent and with a predefined directory.   |
+| `age_rating`           | `age_ratings`                             | See [here](#age-rating) for details.                                                                 |
+| `provider_data_id`     | `id`                                      |                                                                                                      |
+| `provider_data_url`    | `url`                                     |                                                                                                      |
+| `title`                | `name`                                    |                                                                                                      |
+| `release_date`         | `first_release_date`                      |                                                                                                      |
+| `description`          | `game.summary` and/or `game.storyline`    | If both are available, both get used, else any available will be mapped                              |
+| `rating`               | `total_rating`                            |                                                                                                      |
+| `early_access`         | `status`                                  | True if the Game is either in status `alpha`, `beta` or `early_access`                               |
+| `developers`           | `involved_companies`                      | Filtered by `involved_company.developer === true`                                                    |
+| `publishers`           | `involved_companies`                      | Filtered by `involved_company.publisher === true`                                                    |
+| `genres`               | `genres`                                  |                                                                                                      |
+| `tags`                 | `keywords` and `themes`                   |                                                                                                      |
+| `cover`                | `cover`                                   | Using the highest possible cover resolution via `t_cover_big_2x`                                     |
+| `background`           | `artworks[0]` or `screenshots[0]`         | Only first artwork/screenshot is mapped. Using the highest possible 16:9 resolution via `t_1080p_2x` |
+| `url_websites`         | `websites.url`                            |                                                                                                      |
+| `url_screenshots`      | `screenshots` and `artworks`              | Using the highest possible 16:9 resolution via `t_1080p_2x`                                          |
+| `url_trailers`         | `videos`                                  | Only when video title includes the words "trailer", "teaser" or "intro"                              |
+| `url_gameplays`        | `videos`                                  | Only when video title includes the words "gameplay"                                                  |
 
 ### Age Rating
 
