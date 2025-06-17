@@ -6,9 +6,9 @@ sidebar_position: 4
 
 The GameVault Backend Server offers a fully documented REST API for use to everyone. With the API, you can build your own GameVault clients or 3rd party integrations and manage your libraries automatically.
 
-## Register a Bot User
+## Registering a Bot User
 
-To use the GameVault API, it is recommended to register a separate user with the username prefix `gvbot_` (e.g. `gvbot_image_downloader`). The bot user will not appear in the public user list. This user will be used to authenticate your API requests. You can do this by using the Register Form in the settings tab of the GameVault App.
+To use the GameVault API in automations, it is recommended to register a separate user with the username prefix `gvbot_` (e.g. `gvbot_image_downloader`). The bot user will not appear in the public user list. This user will be used to authenticate your API requests. You can do this by using the Register Form in the settings tab of the GameVault App.
 
 ## OpenAPI Specification
 

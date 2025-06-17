@@ -11,8 +11,14 @@ Although we strongly discourage it, if none of the alternative installation meth
 
 - [Node.js](https://nodejs.org/) must be installed on your system (check the required version [here](https://github.com/Phalcode/gamevault-backend/blob/master/Dockerfile#L1)).
 - [PostgreSQL](https://www.postgresql.org/) database (or configure SQLITE later on).
-- Install necessary packages: [`p7zip-full`](https://packages.debian.org/en/sid/p7zip-full) and [`p7zip-rar`](https://packages.debian.org/en/sid/p7zip-rar) (non-free-repository) (or their equivalents in your distribution).
 - Install the [parallel node package manager](https://pnpm.io/): `npm i -g pnpm`.
+- Install the necessary packages according to your operating system:
+  - On **Debian** and derivatives (e.g. Ubuntu, Linux Mint), install [`p7zip-full`](https://packages.debian.org/en/sid/p7zip-full) and [`p7zip-rar`](https://packages.debian.org/en/sid/p7zip-rar) (from the non-free repository).
+  - On **Arch Linux** and derivatives (e.g. Manjaro), install `p7zip`.
+  - On **Fedora**, **RHEL**, and **CentOS**, install `p7zip` and `p7zip-plugins`.
+  - On **openSUSE**, install `p7zip-full`.
+  - On **macOS**, install `p7zip` via [Homebrew](https://brew.sh/).
+  - On **Windows**, install [7-Zip](https://www.7-zip.org/) and make sure the `7z` binary is added to your system’s `PATH` environment variable.
 
 ### Step 1: Clone the Source Code
 
