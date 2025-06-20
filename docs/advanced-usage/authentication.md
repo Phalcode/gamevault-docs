@@ -33,6 +33,8 @@ You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your
 
 Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requires an identity provider (e.g. Google, Authelia, Keycloak, Microsoft, Discord, etc.).
 
+Currently only one identity provider is supportet at a time.
+
 ### Steps
 
 1. Enable OAuth2 authentication in your [configuration](../server-docs/configuration.md#auth).
@@ -51,6 +53,31 @@ Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requir
    ```
 
 7. Authentication is now complete. Use the provided access token for authenticated requests to the GameVault API.
+
+### Examples
+
+You can find working example configurations for popular identity providers below to get an idea of how to set them up.
+
+#### Google
+
+```env
+AUTH_OAUTH2_CLIENT_ID=XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.apps.googleusercontent.com
+AUTH_OAUTH2_CLIENT_SECRET=XXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXX
+AUTH_OAUTH2_AUTH_URL=https://accounts.google.com/o/oauth2/v2/auth
+AUTH_OAUTH2_TOKEN_URL=https://oauth2.googleapis.com/token
+AUTH_OAUTH2_USERINFO_URL=https://www.googleapis.com/oauth2/v3/userinfo
+```
+
+#### Discord
+
+```env
+AUTH_OAUTH2_CLIENT_ID=XXXXXXXXXXXXXXXXXXXXXXXX
+AUTH_OAUTH2_CLIENT_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+AUTH_OAUTH2_AUTH_URL=https://discord.com/oauth2/authorize
+AUTH_OAUTH2_TOKEN_URL=https://discord.com/api/oauth2/token
+AUTH_OAUTH2_SCOPES=openid,email,identify
+AUTH_OAUTH2_USERINFO_URL=https://discord.com/api/users/@me
+```
 
 ### Debugging OAuth2 Authentication
 
