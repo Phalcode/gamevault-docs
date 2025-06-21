@@ -33,9 +33,7 @@ You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your
 
 Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requires an identity provider (e.g. Google, Authelia, Keycloak, Microsoft, Discord, etc.).
 
-Currently only one identity provider is supportet at a time.
-
-### Steps
+### Step by Step Guide
 
 1. Enable OAuth2 authentication in your [configuration](../server-docs/configuration.md#auth).
 2. Create an OAuth2 client in your chosen identity provider.
