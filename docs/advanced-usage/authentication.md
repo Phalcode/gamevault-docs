@@ -1,23 +1,19 @@
 # Authentication
 
-:::warning WORK IN PROGRESS
-This documentation is still being written and the features are under development. Please check back later for updates.
-:::
-
 ## How to Authenticate Your API Requests
 
-Most API requests require authentication using a JSON Web Token (JWT). Include this token in the `Authorization` header of each request in the following format:
+Most API requests require authentication using a JSON Web Token (JWT). You will need to include this token in the `Authorization` header of each request in the following format:
 
 ```http
 Authorization: Bearer <your_token>
 ```
 
-### Generating Tokens
+### Generating Tokens (Logging in)
 
 You can generate a Bearer token using one of the `login` endpoints:
 
-- **Basic Authentication:** If Basic Authentication is enabled, authenticate via `POST /api/auth/basic/login` with your username and password.
-- **OAuth2 Authentication:** If [OAuth2 authentication](#setting-up-oauth2-authentication-single-sign-on) is enabled, authenticate via `GET /api/auth/oauth2/login` through your configured identity provider.
+- **Basic Authentication:** If Basic Authentication is enabled on your server, authenticate via `POST /api/auth/basic/login` with your username and password.
+- **OAuth2 Single Sign-On Authentication:** If [OAuth2 Single Sign-On authentication](#setting-up-oauth2-authentication-single-sign-on) is enabled on your server, authenticate via `GET /api/auth/oauth2/login` through your configured identity provider.
 
 Generated access tokens are valid for **5 minutes**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server-docs/configuration.md) page.
 
@@ -25,7 +21,7 @@ Generated access tokens are valid for **5 minutes**, and refresh tokens for **30
 
 When your access token expires, request a new token pair using your refresh token by calling the `POST /api/auth/refresh` endpoint with your refresh token. Your current refresh token will be invalid after this call so make sure to always use the token received from the response for future token refreshes.
 
-### Revoking Tokens
+### Revoking Tokens (Logging Out)
 
 You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your refresh token. This will effectively log out the user, by blocking future token refreshes.
 
@@ -58,5 +54,5 @@ Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requir
 
 ### Limitations
 
-- Without plugins, only one OAuth2 Identity Provider can be used at a time.
-- The OAuth2 implementation is RFC-compliant but basic (requires `openid`, `profile`, `email`). Compatibility may vary depending on the identity provider. If you encounter issues using a popular identity provider, please report them on [GitHub](https://github.com/Phalcode/gamevault-backend/issues). Include details about your identity provider and debug logs in the issue.
+- By default and without plugins, only one OAuth2 Identity Provider can be used at a time.
+- The OAuth2 implementation is RFC-compliant but basic (requires `openid`, `profile`, `email` scopes). Compatibility may vary depending on the identity provider. If you encounter issues using a popular identity provider, please report them on [GitHub](https://github.com/Phalcode/gamevault-backend/issues). Include details about your identity provider and debug logs in the issue.
