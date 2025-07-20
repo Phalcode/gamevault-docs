@@ -6,8 +6,8 @@ This documentation is still being written and the features are under development
 
 GameVault supports two primary authentication methods:
 
-1. **Bearer Token (JWT)** – for users logging in interactively. (The GameVault Client uses this method.)
-2. **API-Key** – for machine-to-machine and automated use cases.
+1. **Bearer Token (JWT)** - for users logging in interactively. (The GameVault Client uses this method.)
+2. **API-Key** - for machine-to-machine and automated use cases.
 
 This page shows you how to authenticate API requests using one of these methods.
 
