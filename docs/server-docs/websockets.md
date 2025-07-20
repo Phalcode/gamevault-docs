@@ -35,4 +35,4 @@ For server owners who wish to disable activities, it's as simple as setting the 
 
 ## Security
 
-Each user is assigned a randomly generated Socket Secret that they can retrieve at `/api/users/me`. This secret must be included in the headers (X-Socket-Secret) of every subsequent Socket.IO Handshake request to the server.
+Each user is assigned a randomly generated API-Key, which they can retrieve at `/api/users/me`. This api-key must be included in the headers (X-Api-Key) of every subsequent Socket.IO Handshake request to the server.
