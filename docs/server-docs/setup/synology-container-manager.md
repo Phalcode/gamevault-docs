@@ -26,6 +26,8 @@ Open `File Station` and create the following folders:
 - `/docker/gamevault/media`
 - `/docker/gamevault/database`
 
+![Step 1](/img/docs/setup/setup/synology/step1.png)
+
 ## Step 2: Set Up a Project in Container Manager
 
 1. Open `Container Manager` from your Synology NAS.
@@ -71,6 +73,8 @@ Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths 
 :::warning
 Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
+
+![Step 3](/img/docs/setup/setup/synology/step3.png)
 
 ### Alternative Step 3: Running without a PostgreSQL Database
 
