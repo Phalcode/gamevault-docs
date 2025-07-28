@@ -22,6 +22,12 @@ Let's say you have a very outdated version of the game `Minecraft (EA) (v1.8b) (
 
 If you want to keep multiple versions of the same game, refer to the documentation on [adding the same game multiple times](adding-games.md#adding-the-same-game-multiple-times).
 
+### Visual indicator in the client
+
+Since version 1.17.0.0, the client can show the user if another version of the installed game is available.
+
+![update available indicator](/img/docs/updating-games/update-available-indicator.png)
+
 ## Changing or Moving a Game
 
 Changing or moving a game is also a breeze. As long as the **path** or **the combination of title and release year** of the moved or renamed file matches the old file, GameVault's indexer will recognize it as an update. The same game entity will be updated with the new file's information, while preserving any progress associated with the game.

@@ -61,19 +61,79 @@ To run GameVault on Linux utilizing Wine, follow this community-driven method. V
 
 ## Initial Configuration
 
-Once you have installed and launched GameVault, you need to do some initial configuration to get it up and running properly.
+Once you have installed and launched GameVault, the first thing you come across is the login window.
 
-### Step 1: Select the Root Folder
+![profiles](/img/docs/setup-client/login-window-profiles.png)
 
-In this step, you will choose the location where all your downloaded and installed games will be stored. This folder will act as the central location for your game library. We recommend you to have a read on the ["How to Use" Chapter](how-to-use.md) to understand how the root folder works.
+Here you can see your current created profiles. You must first create one in order to proceed.
 
-To select the root folder, follow the instructions below:
+:::note Info
+If you do not yet have your own profile, the demo user will automatically be created as your profile. This will be removed as soon as you have created at least one profile of your own.
+:::
 
-1. Click the "Select Root Path" button.
-2. Navigate to the desired location on your computer.
-3. Choose a folder with sufficient storage space to store your game collection.
-4. Once you have selected the folder, click "Next" to proceed.
-5. GameVault will automatically generate a Subfolder called `GameVault` in your selected Folder with some initial data.
+### Method 1: Sign In with a existing User Account
+
+Click on "New Profile" -> "Sign In".
+
+![signin](/img/docs/setup-client/login-window-signin.png)
+
+First enter your Server Url. Then the Username and Password. If you want to sign in with SSO, then check the box "Sign in using your Identity Provider" at the bottom.
+
+See more details about [Server Input validation](setup.md#server-input-validation) (If you have grayed out input boxes and don't know why)
+
+See more details about [SSO Login](setup.md#sso-login) if you want to login with a identity provider (or dont know why fields are grayed out after checking the "Sign in using your Identity Provider" box)
+
+If you press the "Save" button a new profile will be created and you will be send back to the profile overview.
+
+If you press the "Save and Login" button gamevault will create the profile and directly tries to launch this new profile.
+
+### Method 2: Sign Up creting a new User Account
+
+Click on "New Profile" -> "Sign Up".
+
+![signup](/img/docs/setup-client/login-window-signup.png)
+
+First enter your Server Url. Then the rest of the fields.
+
+See more details about [Server Input validation](setup.md#server-input-validation) (If you have grayed out input boxes and don't know why)
+
+See more details about [SSO Login](setup.md#sso-login) if you want to login with a identity provider (or dont know why fields are grayed out after checking the "Sign in using your Identity Provider" box)
+
+What happens after clicking the "Save and Sign Up" button depends on how the server is configured.
+
+**1.** After signing up, the new user is immediately activated. Then you will be logged in.
+
+**2.** The new user must first be activated by an administrator on the server.
+Then this ui will be displayed.
+
+![pendingactivation](/img/docs/setup-client/login-window-pending-activation.png)
+
+Here you can either go back to the profile selection or wait until an admin activates you on the server. If that happens, you will be logged in immediately.
+
+### Server Input validation
+
+Both Sign In and Sign Up have built-in input validation when entering the server URL. The client checks whether the server is accessible or not. In addition, certain fields such as email can be configured as mandatory on the server. Or SSO can be enforced. All these server-side configurations are then displayed as input validation.
+
+If you have entered a valid gamevault server address, this is indicated by a green check mark. If the URL cannot be reached or there are other problems, this is indicated by a red error symbol. When you hover over it with the mouse, you can also get more information about the error.
+
+### SSO Login
+
+When logging in with SSO, instead of using a username and password, you are authenticated via the identity provider configured on the server. This could be Google, Microsoft, or GitHub, for example. When you log in for the first time, or after your session has expired, a webview popup opens that redirects you to the authentication page of the respective identity provider.
+
+After checking the "Sign in using your Identity Provider" in the sign in or sign up dialogs, all fields except Server Url will be grayed out. Thats because gamevault will get all these information out of the identity provider authentication.
+
+
+### Step 1: Select the Root Folders
+
+In this step, you will choose one or more locations where your downloaded and installed games will be stored. These folders will serve as the base directories for your game library. We recommend reading the  ["How to Use" Chapter](how-to-use.md) to better understand how root folders are managed.
+
+To select your root folders, follow these steps:
+
+1. Click the "Select Root Paths" button.
+2. Navigate to one or more desired locations on your computer.
+3. Choose folders with sufficient storage space for your game collection.
+4. Once you have selected all desired folders, click "Next" to proceed.
+5. GameVault will automatically create a subfolder called `GameVault` in each selected folder and initialize it with the required data.
 
 ### Step 2: Entering the Selfhosted Backend Server URL
 
