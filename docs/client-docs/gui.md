@@ -6,9 +6,9 @@ sidebar_position: 98
 
 This documentation provides a clear overview of the Graphical User Interface (GUI) for GameVault. The GUI encompasses various tabs, each offering distinct functionalities.
 
-## Setup Wizard
+## Login Window
 
-The Setup Wizard is a sub-page that appears when the necessary settings for GameVault are not configured. It guides users through these settings with detailed explanations. Exiting the wizard is optional, as all settings can also be configured in the settings tab.
+See more [here](setup.md#initial-configuration)
 
 ## Library
 
@@ -112,31 +112,39 @@ The Setup Wizard is a sub-page that appears when the necessary settings for Game
 
 - View and update user details.
 - Update passwords with confirmation.
+- Copy API key of your own user.
 
 ## Settings
 
 ### Application
 
-- Configure server URL and startup options.
+- Launch GameVault on Computer Startup
+- Minimize GameVault to System Tray on Startup
+- Auto-Load Library from Server on Startup
 - Change curren client theme or open the theme folder to insert your own.
+- Download and Install a Theme from the Community Themes.
+- Retain Sorting and Filter preferences after restart.
 
 ### Installation
 
 - Configure the donwload bandwidth limit.
 - Set if you want to auto extract downloaded games and set a default password for encrypted archives.
+- Set default extraction password for encrypted archives.
+- Mount ISO files automatically.
 - Set if portable games should be auto installed and if the install files should be auto deleted.
 
 ### User
 
-- Log In to GameVault Backend Server.
-- Log Out from GameVault Backend Server.
-- Register a new user on the GameVault Backend Server.
-- Enter current User Settings
+- Edit User
+- Change Profile (Goes back to profile selection)
+- Logout from this Device (Removes refresh token from local config)
+- Logout from All Devices (Revokes refresh token server side)
 
 ### Data
 
-- Select GameVault root path and clear image and offline caches.
-- Clear image/offline cache
+- Select GameVault root directories.
+- Clear image/offline cache.
+- Ignored Executables List.
 
 ## Administration
 
