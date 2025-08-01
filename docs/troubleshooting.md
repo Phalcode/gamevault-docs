@@ -6,6 +6,8 @@ sidebar_position: 99
 
 Below, we will gradually list some common issues and corresponding solutions to help you maximize the potential of your app. If you can't find a solution to your problem here, feel free to open a ticket on our Github board or seek assistance via [Discord](https://discord.gg/NEdNen2dSu). Alternatively, you may also directly [email our company address](mailto:contact@phalco.de) if the issue is confidential.
 
+Please also attach a log file. We recommend you to read: [How to Collect Logs](./troubleshooting.md#how-to-collect-logs).
+
 ## All-Rounder Solutions that Fix Most Problems
 
 I can't mention these in every single Section below, so before you try to solve anything, try these:
@@ -75,19 +77,19 @@ Either make sure this user has permissions to read/write to the folders you map 
 - If your server is in your LAN, make sure you don't mistakenly access it from WAN
 - Check your middle-mans: Proxies, VPNs and older Network Hardware could all affect the download speeds.
 
-## How to Report an Issue
+## How to Collect Logs
 
 To help us resolve your issue quickly and accurately, please include as much detail as possible, especially:
 
 - A **complete log file** (from server start to when the issue occurs).
 - Set the environment variable `SERVER_LOG_LEVEL` to `debug` before collecting the logs.
 
-:::warn Full logs needed
+:::warning Full logs needed
 Please do not trim or shorten log files. It just makes it harder for us to understand what went wrong. We know they get big, but we know how to read them.
 You can redact sensitive details by replacing them with the word `**REDACTED**` before you send them if you want to, but the server tries to automatically redact sensitive data, so they should be gernerally safe to share.
 :::
 
-## How to Collect Logs
+### Unsure how to gather logs?
 
 If you're not sure how to gather logs, or your system makes it unclear you can use GameVault's Built-in Logging feature:
 
