@@ -53,13 +53,13 @@ GameVault+ offers three affordable subscription options:
 
 Phalcode is the small startup company developing GameVault. We are just two friends developing software and based in germany. You can find more information about us on our [website](https://phalco.de).
 
-### I have trouble with GameVault+ and I need support. How can I contact you?
+### I have trouble with my subscription and I need support. How can I contact you?
 
-Contact the developers **directly** on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription.
+Please contact the developers **directly** either on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription or billing details.
 
 ### How do I manage billing and payments?
 
-GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [our Stripe Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
+GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [our Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
 
 ### What payment methods are accepted for GameVault+ subscriptions?
 
@@ -71,7 +71,7 @@ Please be aware that if you use Multibanco, Bancontact, iDEAL, SOFORT or SEPA Di
 
 ### Are there going to be more features added to GameVault+?
 
-Of course!, You are the people keeping our project alive after all.
+Of course! You are the people keeping our project alive after all.
 
 Expect updates with awesome new GameVault+ content and improvements down the road. We are committed to enhancing the GameVault+ experience.
 
@@ -88,7 +88,7 @@ To manage your Family & Friends subscription members, visit the [Phalcode Accoun
 
 ### Does GameVault+ support multiple GameVault Servers?
 
-You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features offered by GameVault+ in their configurations.
+You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features (like uploading save files) offered by GameVault+ in their configurations.
 
 ### How many devices can I use with my GameVault+ subscription?
 
@@ -120,17 +120,16 @@ Certainly! We encourage user feedback and suggestions. While we may not implemen
 
 GameVault+ features are available from the official GameVault Client application version 1.9.0.0 and above. It does not matter if you got it from the Microsoft Store or used an alternative installation option.
 
-### Are commercial licenses available for GameVault+?
+### Are bulk/commercial licenses available for GameVault+?
 
-There are, but for commercial use, please [contact us directly](mailto:contact@phalco.de) to discuss an individual licensing agreement.  
-Personal and Family & Friends subscriptions are tailored for individual users and private groups, but we're happy to collaborate with businesses for customized solutions and volume licenses.
+There are, but for commercial/bulk use, please either on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de) to discuss an individual licensing agreement. Personal and Family & Friends subscriptions are tailored for individual users and private groups, but we're happy to collaborate with businesses and organizations for customized solutions and volume licenses.
 
 ### What if I can't afford GameVault+ or don't want to purchase it?
 
 That's okay! We understand that not everyone can afford GameVault+. Developing and maintaining the service comes with costs, and while we aim to keep the core features free and accessible to all, some convenience features are behind a paywall to help cover these expenses.
 
-If you're unable to purchase it, you're welcome to explore ways to _work around_ the paywall for personal use. The source code is available on [GitHub](https://github.com/Phalcode/gamevault-app). However, **please avoid pirated versions**, as they may contain malware, and **do not share any bypass modifications**.
+If you're unable to purchase it, you're welcome to explore ways to _work around_ the paywall for personal use. The source code is available on [GitHub](https://github.com/Phalcode/gamevault-app). However, **please avoid pirated versions**, as they may contain malware, and **please do not share any bypass modifications**.
 
-### Why is there not lifetime license?
+### Why is there nolifetime license?
 
 Lifetime licenses might seem appealing, but they’re not practical for covering the ongoing costs of developing and maintaining GameVault. Maintaining servers, providing updates, and developing new features require continuous investment, which a one-time payment simply doesn’t support. GameVault+ exists to provide "thank you" features for continuous support, and a lifetime license would undermine that purpose entirely.
