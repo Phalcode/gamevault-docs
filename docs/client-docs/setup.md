@@ -66,14 +66,18 @@ Once you have installed and launched GameVault, the first thing you will see is 
 ![profiles](/img/docs/setup-client/login-window-profiles.png)
 
 Here you can view your currently created profiles. You must create at least one to proceed.
+:::tip Multiple Profiles
+GameVault supports the use of [multiple profiles on the same client](../gamevault-plus/multi-profile.md). This allows you to log in with different user accounts on different servers using a single device. However, this feature is only available with a [GameVault+ subscription](../gamevault-plus/introduction.md).
+:::
 
-:::note Info
-If you do not yet have your own profile, a demo user will automatically be created for you. This will be removed as soon as you create at least one profile of your own.
+:::info Demo User
+If you do not have any profiles or a running GameVault Server, a demo profile will appear in the list. You can use this profile to test the client. This profile will be removed as soon as you create at least one profile of your own.
 
 To manually add the demo user profile:
-Server URL: **demo.gamevau.lt**
-Username: **demo**
-Password: **demodemo**
+
+Server URL: **demo.gamevau.lt**  
+Username: **demo**  
+Password: **demodemo**  
 :::
 
 ### Method 1: Sign In with an Existing User Account

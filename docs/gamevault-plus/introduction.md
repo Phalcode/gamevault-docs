@@ -1,6 +1,7 @@
 ---
 title: "Introduction"
 hide_title: true
+image: "/img/gamevault-plus.png"
 sidebar_position: 1
 description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
 ---
@@ -9,11 +10,12 @@ description: Upgrade your gaming experience with GameVault+, an affordable premi
     <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/>
     <strong>GameVault+</strong>
 </div>
-> Elevate Your GameVault Experience with Premium Features
 
 ## Introduction
 
 Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this project alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
+
+### [Subscribe to GameVault+ Here](https://phalco.de/products/gamevault-plus/checkout)
 
 ## Feature List
 
@@ -26,6 +28,7 @@ As of now, we are offering the following features:
 - 💬 [Discord Integration](./integrations/discord.md)
 - 🎨 [Additional built-in and customizable Themes](./themes.md)
 - 💻 [GameVault Client APIs (Advanced Interfaces used for Integrations)](./client-apis.md)
+- 👯 [Multi-Profile Usage](./multi-profile.md)
 
 ## Pricing
 
