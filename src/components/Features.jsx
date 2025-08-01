@@ -54,8 +54,9 @@ const features = [
         <a target="_blank" href="https://discord.gg/NEdNen2dSu">
           Join our growing community
         </a>{" "}
-        , star us on GitHub, or even <a href="/docs/license-contribute">contribute</a>{" "}
-        to our source-available project! Everyone can help!
+        , star us on GitHub, or even{" "}
+        <a href="/docs/license-contribute">contribute</a> to our
+        source-available project! Everyone can help!
       </>
     ),
   },
@@ -92,7 +93,7 @@ export function PrimaryFeatures() {
             for selfhosting gamers
           </h2>
           <p className="mt-6 text-xl">
-            GameVault isn't just a library — It's your personal gaming platform.
+            GameVault isn't just a library, It's your personal gaming platform.
             <br />
             Built for gamers, by gamers, with everything you need to organize,
             share, and enjoy your DRM-free videogame collection.

@@ -25,7 +25,7 @@ To install a plugin, follow these steps:
 
 ## How to Develop GameVault Plugins
 
-If you're a developer interested in creating plugins, you're in luck—it's simple to get started. Here’s a step-by-step guide:
+If you're a developer interested in creating plugins, you're in luck, it's simple to get started. Here’s a step-by-step guide:
 
 ### Step 1: Clone the Backend Repository
 
@@ -98,7 +98,7 @@ When you’re ready to test, run `pnpm start`. GameVault will automatically inje
 
 ### Step 7: Compile Your Plugin
 
-Once your plugin is working and tested, compile it by running `pnpm build`. This will generate a `dist` folder with your compiled plugin in the `dist/.local/plugins/useless-plugin` directory. Look for folder containing a `.plugin.module.js` file—this is your compiled plugin. Zip that folder—this is the final, compiled version of your plugin, ready for users to install and run on their servers.
+Once your plugin is working and tested, compile it by running `pnpm build`. This will generate a `dist` folder with your compiled plugin in the `dist/.local/plugins/useless-plugin` directory. Look for folder containing a `.plugin.module.js` file, this is your compiled plugin. Zip that folder, this is the final, compiled version of your plugin, ready for users to install and run on their servers.
 
 ### Step 8: Release Your Plugin
 

@@ -30,7 +30,7 @@ The **"Cloud Saves" indicator** is **not** guaranteed to be **100% accurate** du
 
 ### Automatic Savefile Download
 
-When you install a game through GameVault, your **latest savefile version** is automatically downloaded and placed in your new installation. There’s no need for manual copying — you can jump right back in where you left off.
+When you install a game through GameVault, your **latest savefile version** is automatically downloaded and placed in your new installation. There’s no need for manual copying, you can jump right back in where you left off.
 
 ### Play & Auto-Sync
 
@@ -53,4 +53,4 @@ This is due to Ludusavi storing absolute paths instead of using dynamic placehol
 
 Sometimes you may need to sync savefiles manually, such as when you’ve been offline and only just reconnected to the internet. You can upload your savefiles by using the **Upload Savefiles** button on the Game Page.
 
-You can also download savefiles manually if needed — for instance, if you accidentally deleted your local saves. In such cases, you can retrieve them using the **Download Savefiles** button on the Game Page.
+You can also download savefiles manually if needed, for instance, if you accidentally deleted your local saves. In such cases, you can retrieve them using the **Download Savefiles** button on the Game Page.

@@ -121,7 +121,7 @@ A valid GameVault server address will be marked with a green check mark. If the 
 
 ### SSO Login
 
-When using SSO, you authenticate via the identity provider configured on the server—such as Google, Microsoft, or GitHub—instead of using a username and password. On your first login or after session expiration, a webview popup opens to redirect you to the provider’s authentication page.
+When using SSO, you authenticate via the identity provider configured on the server, such as Google, Microsoft, or GitHub, instead of using a username and password. On your first login or after session expiration, a webview popup opens to redirect you to the provider’s authentication page.
 
 After checking "Sign in using your Identity Provider" in the Sign In or Sign Up dialogs, all fields except the server URL will be grayed out. This is because GameVault retrieves all necessary information from the identity provider.
 

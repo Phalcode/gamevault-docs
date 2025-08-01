@@ -59,7 +59,7 @@ You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your
 
 ## API-Key Authentication (Machine-to-Machine)
 
-GameVault also supports API-key-based authentication. This is perfect for bots, automation, and service-to-service calls—no need for login sessions.
+GameVault also supports API-key-based authentication. This is perfect for bots, automation, and service-to-service calls, no need for login sessions.
 
 ### Enabling API Key Support
 
