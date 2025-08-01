@@ -15,7 +15,7 @@
             <pubDate>Sun, 22 Dec 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Hey everyone,]]></description>
             <content:encoded><![CDATA[<p>Hey everyone,</p>
-<p>We’ve got some incredible news to share! Your feedback on Reddit, Lemmy and <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">our Discord server</a> regarding our latest release has guided us as we work to make GameVault better for everyone. Today, we’re excited to introduce some major updates along with a special offer — just in time for the holidays! </p>
+<p>We’ve got some incredible news to share! Your feedback on Reddit, Lemmy and <a href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noopener noreferrer">our Discord server</a> regarding our latest release has guided us as we work to make GameVault better for everyone. Today, we’re excited to introduce some major updates along with a special offer, just in time for the holidays! </p>
 <h3 class="anchor anchorWithStickyNavbar_C7Mi" id="whats-new">What’s New?<a href="https://gamevau.lt/blog/2024/12/22/#whats-new" class="hash-link" aria-label="Direct link to What’s New?" title="Direct link to What’s New?">​</a></h3>
 <h4 class="anchor anchorWithStickyNavbar_C7Mi" id="1-a-fresh-look-for-our-website">1. <strong>A Fresh Look for our website</strong><a href="https://gamevau.lt/blog/2024/12/22/#1-a-fresh-look-for-our-website" class="hash-link" aria-label="Direct link to 1-a-fresh-look-for-our-website" title="Direct link to 1-a-fresh-look-for-our-website">​</a></h4>
 <p>Navigating our website is now easier than ever. You told us it felt confusing and didn’t explain GameVault or its use well. We’ve streamlined the design to make it simpler, more intuitive, and focused on showcasing everything GameVault has to offer.</p>
@@ -35,7 +35,7 @@
 <h3 class="anchor anchorWithStickyNavbar_C7Mi" id="about-the-microsoft-store">About the Microsoft Store<a href="https://gamevau.lt/blog/2024/12/22/#about-the-microsoft-store" class="hash-link" aria-label="Direct link to About the Microsoft Store" title="Direct link to About the Microsoft Store">​</a></h3>
 <p>A quick note: Due to new Microsoft verification requirements, updates are temporarily delayed on the Microsoft Store. However, the Family &amp; Friends Plan and all new updates are live everywhere else. Also older GameVault versions are fully compatible with the new family plan.</p>
 <hr>
-<p>This update was shaped by your feedback, and we’d love to hear your thoughts on it! Keep sharing your ideas with us—we're building something truly special together. While it's a niche product, it's one that we all needed.</p>
+<p>This update was shaped by your feedback, and we’d love to hear your thoughts on it! Keep sharing your ideas with us,we're building something truly special together. While it's a niche product, it's one that we all needed.</p>
 <p><strong>Happy holidays from the Phalcode team!</strong></p>]]></content:encoded>
             <category>GameVault</category>
             <category>update</category>
@@ -58,11 +58,11 @@
             <pubDate>Sun, 20 Oct 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Hello, GameVault Community!]]></description>
             <content:encoded><![CDATA[<p><strong>Hello, GameVault Community!</strong></p>
-<p>After six months of hard work, we’re beyond excited to unveil our biggest update yet: <strong>GameVault Client v1.12</strong> and <strong>GameVault Server v13</strong>! This release is so massive, it feels like we could’ve built the product from scratch—there’s that much new ground covered. </p>
+<p>After six months of hard work, we’re beyond excited to unveil our biggest update yet: <strong>GameVault Client v1.12</strong> and <strong>GameVault Server v13</strong>! This release is so massive, it feels like we could’ve built the product from scratch, there’s that much new ground covered. </p>
 <h3 class="anchor anchorWithStickyNavbar_C7Mi" id="whats-new">What’s New?<a href="https://gamevau.lt/blog/2024/10/20/#whats-new" class="hash-link" aria-label="Direct link to What’s New?" title="Direct link to What’s New?">​</a></h3>
 <p>We’ve introduced some game-changing improvements. First and foremost, we’ve moved away from unreliable third-party tools like RAWG and Google Image Scrapers for fetching video game metadata. Instead of just swapping one provider for another and making us dependant again, we’ve built something much better: a brand-new <strong>plugin system</strong> on the backend, complete with an official partnership with <strong>IGDB/Twitch</strong>.</p>
-<p>The new plugin framework is incredibly flexible, allowing users to write their own metadata provider plugins. It supports an unlimited number of providers, prioritizes data effectively, and even fills in any gaps intelligently. And the cherry on top? Users now have full control over metadata—if you want to tweak or edit a piece of info, you can do so without changing the source data. Your custom edits are saved separately, giving you full freedom.</p>
-<p>We’ve been rigorously testing this system for 2-3 months, running an early access phase for about a month. While we’ve optimized it as much as possible, we ask for your patience if any bugs pop up—mastillke sure to back up before migrating!</p>
+<p>The new plugin framework is incredibly flexible, allowing users to write their own metadata provider plugins. It supports an unlimited number of providers, prioritizes data effectively, and even fills in any gaps intelligently. And the cherry on top? Users now have full control over metadata, if you want to tweak or edit a piece of info, you can do so without changing the source data. Your custom edits are saved separately, giving you full freedom.</p>
+<p>We’ve been rigorously testing this system for 2-3 months, running an early access phase for about a month. While we’ve optimized it as much as possible, we ask for your patience if any bugs pop up, mastillke sure to back up before migrating!</p>
 <h3 class="anchor anchorWithStickyNavbar_C7Mi" id="major-new-features">Major New Features<a href="https://gamevau.lt/blog/2024/10/20/#major-new-features" class="hash-link" aria-label="Direct link to Major New Features" title="Direct link to Major New Features">​</a></h3>
 <p>Here’s a quick rundown of some other incredible additions in this update:</p>
 <ul>
