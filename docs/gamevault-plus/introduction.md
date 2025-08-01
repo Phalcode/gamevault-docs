@@ -130,6 +130,6 @@ That's okay! We understand that not everyone can afford GameVault+. Developing a
 
 If you're unable to purchase it, you're welcome to explore ways to _work around_ the paywall for personal use. The source code is available on [GitHub](https://github.com/Phalcode/gamevault-app). However, **please avoid pirated versions**, as they may contain malware, and **please do not share any bypass modifications**.
 
-### Why is there nolifetime license?
+### Why is there no lifetime license?
 
 Lifetime licenses might seem appealing, but they’re not practical for covering the ongoing costs of developing and maintaining GameVault. Maintaining servers, providing updates, and developing new features require continuous investment, which a one-time payment simply doesn’t support. GameVault+ exists to provide "thank you" features for continuous support, and a lifetime license would undermine that purpose entirely.
