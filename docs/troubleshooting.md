@@ -79,12 +79,9 @@ Either make sure this user has permissions to read/write to the folders you map 
 
 ## How to Collect Logs
 
-To help us resolve your issue quickly and accurately, please include as much detail as possible, especially:
+To help us resolve your issue quickly and accurately, please set the server environment variable `SERVER_LOG_LEVEL` to `debug` **before** collecting the logs, and include a **complete log file** (from server start to when the issue occurs).
 
-- A **complete log file** (from server start to when the issue occurs).
-- Set the environment variable `SERVER_LOG_LEVEL` to `debug` before collecting the logs.
-
-:::warning Full logs needed
+:::info full logs needed
 Please do not trim or shorten log files. It just makes it harder for us to understand what went wrong. We know they get big, but we know how to read them.
 You can redact sensitive details by replacing them with the word `**REDACTED**` before you send them if you want to, but the server tries to automatically redact sensitive data, so they should be gernerally safe to share.
 :::
