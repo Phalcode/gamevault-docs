@@ -1,9 +1,5 @@
 # Authentication
 
-:::warning WORK IN PROGRESS
-This documentation is still being written and the features are under development. Please check back later for updates.
-:::
-
 GameVault supports two primary authentication methods:
 
 1. **Bearer Token (JWT)** - for users logging in interactively. (The GameVault Client uses this method.)
