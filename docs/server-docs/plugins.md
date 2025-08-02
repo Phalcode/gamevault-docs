@@ -4,8 +4,8 @@ sidebar_position: 9
 
 # Plugins
 
-:::danger Plugins are experimental  
-Plugins are currently in the early stages of development. Things may break, so always make backups before using them.  
+:::danger Plugins are dangerous  
+Plugins are dangerous. Things may break, so always make backups before using them.  
 :::
 
 ## Introduction
