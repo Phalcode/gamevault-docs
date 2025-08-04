@@ -4,10 +4,55 @@
         <title>GameVault Blog</title>
         <link>https://gamevau.lt/blog</link>
         <description>GameVault Blog</description>
-        <lastBuildDate>Sun, 22 Dec 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Aug 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[The Identity Update]]></title>
+            <link>https://gamevau.lt/blog/2025/08/04/2025-08-04/</link>
+            <guid>https://gamevau.lt/blog/2025/08/04/2025-08-04/</guid>
+            <pubDate>Mon, 04 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Long time no see!]]></description>
+            <content:encoded><![CDATA[<p>Long time no see!</p>
+<p>It’s time to update GameVault, and we’re thrilled to announce a major new release: <strong>The Identity Update</strong>, and it’s a big one.</p>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="why-this-update-matters">Why This Update Matters<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#why-this-update-matters" class="hash-link" aria-label="Direct link to Why This Update Matters" title="Direct link to Why This Update Matters">​</a></h4>
+<p>Until now, GameVault relied on Basic Auth and supported only one user per device. This simple setup worked well when the platform was just a side project for two friends.</p>
+<p>But GameVault has grown, with thousands of users, multiple configurations, and rising expectations. This update lays the groundwork for secure, scalable identity management and multi-user support. With this release, we’re introducing several key features:</p>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="-modern-authentication--sso-support">🔐 Modern Authentication &amp; SSO Support<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#-modern-authentication--sso-support" class="hash-link" aria-label="Direct link to 🔐 Modern Authentication &amp; SSO Support" title="Direct link to 🔐 Modern Authentication &amp; SSO Support">​</a></h4>
+<p>SSO support has been <a href="https://github.com/Phalcode/gamevault-backend/issues/6" target="_blank" rel="noopener noreferrer">one of the oldest and most requested features on our issue tracker</a>. Completely reworking the authentication system took over five months of development and testing. But now it’s done, a major milestone.</p>
+<p>GameVault now uses OAuth 2.0 and OpenID Connect for authentication. This enables secure, modern login flows while keeping flexibility: traditional username and password logins still work but are now based on token authentication with session access and refresh tokens instead of basic auth.</p>
+<p>Want to use an identity provider? GameVault integrates seamlessly with providers like Keycloak, Authentik, Authelia, Google, Microsoft, Discord, or virtually any RFC-compliant OAuth 2.0 or OIDC service.</p>
+<p>This overhaul not only boosts security and user experience but also opens the door for future features like web-based clients.</p>
+<p><img decoding="async" loading="lazy" alt="New Login Window" src="https://gamevau.lt/assets/images/1-35328e60706f1e37ca57d1758c4ee45d.png" width="722" height="502" class="img_keWe"></p>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="-multi-profile-support-gamevault">👥 Multi-Profile Support (<a href="https://gamevau.lt/gamevault-plus" target="_blank" rel="noopener noreferrer">GameVault+</a>)<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#-multi-profile-support-gamevault" class="hash-link" aria-label="Direct link to -multi-profile-support-gamevault" title="Direct link to -multi-profile-support-gamevault">​</a></h4>
+<p>Need multiple users or connections to different servers on the same machine? GameVault+ now offers fully separate user profiles, each with its own server connection, game library, save data, preferences, and more. Whether sharing a PC with family or housemates or just keeping things organized, profiles ensure everyone’s games and progress stay completely separate.</p>
+<p><img decoding="async" loading="lazy" alt="New Profile Window" src="https://gamevau.lt/assets/images/2-a206ae13e0064fa06dd418a1228e9d78.png" width="722" height="502" class="img_keWe"></p>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="-installing-games-across-multiple-drives">💾 Installing Games Across Multiple Drives<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#-installing-games-across-multiple-drives" class="hash-link" aria-label="Direct link to 💾 Installing Games Across Multiple Drives" title="Direct link to 💾 Installing Games Across Multiple Drives">​</a></h4>
+<p>Long overdue: GameVault now supports multiple root install directories, letting you decide where each game is installed. Whether you’re splitting your library across SSDs and HDDs or just organizing your collection, GameVault handles paths and indexing automatically.</p>
+<p><img decoding="async" loading="lazy" alt="New Storage Selector" src="https://gamevau.lt/assets/images/3-1870db9542c8d76c50c201ec1df6d8d6.png" width="649" height="466" class="img_keWe"></p>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="update-your-client-and-server">Update Your Client and Server<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#update-your-client-and-server" class="hash-link" aria-label="Direct link to Update Your Client and Server" title="Direct link to Update Your Client and Server">​</a></h4>
+<p>Because of these major changes, older clients and servers are no longer compatible with the new infrastructure. Please update:</p>
+<ul>
+<li><strong>Client:</strong> Update via <a href="https://apps.microsoft.com/store/detail/gamevault/9PCKDV76GL75" target="_blank" rel="noopener noreferrer">Microsoft Store</a> or <a href="https://github.com/Phalcode/gamevault-app/releases" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+<li><strong>Server:</strong> Update via <a href="https://hub.docker.com/r/phalcode/gamevault-backend" target="_blank" rel="noopener noreferrer">Docker</a> or <a href="https://github.com/Phalcode/gamevault-backend" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_C7Mi" id="thank-you">Thank You<a href="https://gamevau.lt/blog/2025/08/04/2025-08-04/#thank-you" class="hash-link" aria-label="Direct link to Thank You" title="Direct link to Thank You">​</a></h4>
+<p>Reaching this many users and GameVault+ subscribers is something we never imagined when we started. Thank you for trying, testing, using, and most of all, supporting GameVault.</p>
+<p>We still love spending our free time on this project, and as long as you keep us going, we won’t stop.</p>
+<p>Thank you, from the bottom of our hearts,</p>
+<p><em>The Phalcode Team</em></p>]]></content:encoded>
+            <category>authentication</category>
+            <category>identity management</category>
+            <category>oauth2</category>
+            <category>openid connect</category>
+            <category>sso</category>
+            <category>multi-profile</category>
+            <category>game installation</category>
+            <category>software update</category>
+            <category>security</category>
+            <category>gamevault</category>
+        </item>
         <item>
             <title><![CDATA[GameVault+ Family & Friends Plan Launches with Exciting New Integrations!]]></title>
             <link>https://gamevau.lt/blog/2024/12/22/</link>
