@@ -84,6 +84,7 @@ When sending a request via URI, an additional action called `query` is available
 - `getappversion`: Get the version of the application.
 - `getserverurl`: Get the URL that we're currently configured to point to.
 - `isloggedin`: Returns if the user is currently logged in (True/False).
+- `getallgames`: Returns a JSON string as Base64 with all games available on the server that the current GameVault client profile is connected to.
 
 ## Command-line Examples
 
