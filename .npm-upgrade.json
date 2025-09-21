@@ -1,0 +1,8 @@
+{
+  "ignore": {
+    "tailwindcss": {
+      "versions": ">3",
+      "reason": "Needs Special Care i don't have time for right now"
+    }
+  }
+}
