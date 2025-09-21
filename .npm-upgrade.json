@@ -2,7 +2,15 @@
   "ignore": {
     "tailwindcss": {
       "versions": ">3",
-      "reason": "Needs Special Care i don't have time for right now"
+      "reason": "needs special care i don't have time for right now"
+    },
+    "react": {
+      "versions": ">18",
+      "reason": "https://github.com/cmfcmf/docusaurus-search-local/issues/205"
+    },
+    "react-dom": {
+      "versions": ">18",
+      "reason": "https://github.com/cmfcmf/docusaurus-search-local/issues/205"
     }
   }
 }
