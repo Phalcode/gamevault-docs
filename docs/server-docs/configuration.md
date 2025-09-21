@@ -31,10 +31,16 @@ This page describes the various configuration properties used in the application
 | `SERVER_ADMIN_USERNAME`                 | Used for role recovery of existing users. The server grants Admin Role to an existing User with this username on register or startup. **⚠️ This won't register a new account!**                                | -             | Any username                                                                                 |
 | `SERVER_ADMIN_PASSWORD`                 | Used for password recovery of existing users. Resets the password of the existing user with the username set in `SERVER_ADMIN_USERNAME` to this password on startup. **⚠️ This won't register a new account!** | -             | Any password (No Length Validation)                                                          |
 | `SERVER_API_DOCS_ENABLED`               | Enables the API Documentation on `/api/docs`, `/api/docs-json` & `/api/docs/yaml`.                                                                                                                             | `false`       | `true`, `false`                                                                              |
-| `SERVER_WEB_UI_ENABLED`           | Whether or not the web ui should be used.                                                                                                         | `true`        | `true`, `false`                                                                              |
 | `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` | Maximum bandwidth for downloads on this server in KB/s.                                                                                                                                                        | - (Unlimited) | Any Number                                                                                   |
 | `SERVER_ONLINE_ACTIVITIES_DISABLED`     | Whether or not the server should listen to online activities like "ONLINE", "BUSY", "PLAYING" etc. If this is set to true, all users will always be shown as offline.                                          | `false`       | `true`, `false`                                                                              |
 | `SERVER_STACK_TRACE_LIMIT`              | Configures the maximum number of stack frames to display in error stack traces, with a higher value providing more detailed debugging information.                                                             | `10`          | Any Number                                                                                   |
+
+## WEB UI
+
+| Property         | Description                                                  | Default | Possible Values |
+| ---------------- | ------------------------------------------------------------ | ------- | --------------- |
+| `WEB_UI_ENABLED` | Whether or not the web ui should be used.                    | `true`  | `true`, `false` |
+| `WEB_UI_VERSION` | You can force a specific web ui version using this property. | -       | `e.g. 16.0.0`   |
 
 ## VOLUMES
 
@@ -144,3 +150,4 @@ This page describes the various configuration properties used in the application
 | `TESTING_MOCK_FILES`              | If `true`, the server will mock all files or ignore filesystem functionalities. Useful for testing without real files.                | `false` | `true`, `false` |
 | `TESTING_IN_MEMORY_DB`            | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database. Only works with SQLITE. | `false` | `true`, `false` |
 | `TESTING_MOCK_PROVIDERS`          | If `true`, the server will create two mock providers. (-9999 and 9999 Priority) Useful for testing metadata-merges.                   | `false` | `true`, `false` |
+| `TESTING_WEB_UI_UNSTABLE`         | If `true`, the server will download and use the unstable pre-release of the Web UI on every startup. Useful for testing the web UI.   | `false` | `true`, `false` |
