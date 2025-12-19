@@ -8,7 +8,7 @@ const darkTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "GameVault",
-  tagline: "the self-hosted gaming platform for drm-free games",
+  tagline: "Your Games. Your Server. Your Rules.",
   favicon: "img/logo.png",
   url: "https://gamevau.lt/",
   baseUrl: "/",
@@ -71,6 +71,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      image: "img/features/library.png",
+      metadata: [
+        {
+          name: "keywords",
+          content: "gaming, self-hosted, drm-free, game library, gamevault, homelab",
+        },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
       navbar: {
         logo: {
           alt: "GameVault",

@@ -12,8 +12,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="the self-hosted gaming platform for drm-free games"
+      title="The Ultimate Self-Hosted Gaming Platform"
+      description="Host your own DRM-free game library, track your stats, and share the experience with friends. It's like having your own personal Steam, but you're the one in control."
     >
       <noscript>
         <img
