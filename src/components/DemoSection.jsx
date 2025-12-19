@@ -51,7 +51,7 @@ export function DemoSection() {
 
             <div className="relative group">
               {/* Clean Tech Credential Box */}
-              <div className="rounded-2xl border border-white/10 p-6 font-mono text-sm shadow-2xl backdrop-blur-sm relative overflow-hidden">
+              <div className="rounded-2xl border border-white/10 p-6 font-mono text-sm shadow-2xl backdrop-blur-sm relative overflow-hidden ring-1 ring-primary-default">
                 {/* Subtle Tech Grid Overlay */}
                 <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:8px_8px]" />
 

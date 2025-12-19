@@ -82,7 +82,7 @@ export function PrimaryFeatures() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-background-dark/50 shadow-2xl ring-1 ring-text-default/10 transition-all duration-500 hover:ring-primary-default/50 hover:-translate-y-2 backdrop-blur-sm"
+              className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-background-dark/50 shadow-2xl ring-1 ring-primary-default transition-all duration-500 hover:ring-primary-default hover:-translate-y-2 backdrop-blur-sm"
             >
               <div className="relative h-64">
                 <img

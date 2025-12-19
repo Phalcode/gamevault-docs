@@ -95,7 +95,7 @@ export function Faqs() {
               {column.map((faq, faqIndex) => (
                 <div
                   key={faqIndex}
-                  className="rounded-xl bg-background-dark p-8 ring-1 ring-text-default/10 shadow-sm transition-all duration-300 hover:bg-background-dark/80"
+                  className="rounded-xl bg-background-dark p-8 ring-1 ring-primary-default shadow-sm transition-all duration-300 hover:bg-background-dark/80"
                 >
                   <h3 className="text-lg font-bold leading-7 text-text-default">
                     {faq.question}
