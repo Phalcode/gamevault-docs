@@ -46,7 +46,7 @@ const features = [
     ),
   },
   {
-    title: "Open & Community Driven",
+    title: "Community Driven",
     image: ImgStars,
     description: (
       <>

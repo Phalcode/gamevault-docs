@@ -23,11 +23,6 @@ const faqs = [
       answer:
         "GameVault is source-available. The code is transparent and open for personal modification, allowing you to customize the experience while protecting the project's future.",
     },
-    {
-      question: "Is this related to gambling apps?",
-      answer:
-        "No. GameVault is a gaming utility. We have no affiliation with gambling platforms that may share a similar name. We are dedicated solely to game library management.",
-    },
   ],
   [
     {
@@ -36,14 +31,9 @@ const faqs = [
         "Currently, we offer a native Windows client and a responsive Web UI. Linux and Mac users can access their library via the Web UI or through community-maintained compatibility layers.",
     },
     {
-      question: "Can I use GameVault on my Steam Deck?",
-      answer:
-        "Absolutely! You can access your entire library through the Web UI directly on your Steam Deck. It's a perfect way to manage your collection, track your stats, and download games while on the go.",
-    },
-    {
       question: "Does GameVault support game streaming?",
       answer:
-        "No. GameVault focuses on library management and high-speed file distribution. It provides a high-end interface to browse and download your games, but the games themselves run locally on your hardware for the best performance.",
+        "No. GameVault focuses on library management and file distribution. It provides an interface to browse and download your games, but the games themselves run locally on your hardware for the best performance.",
     },
     {
       question: "What is your stance on piracy?",
@@ -51,9 +41,9 @@ const faqs = [
         "GameVault is built for the management of legally owned DRM-free content. We do not endorse or support piracy. We believe in digital ownership and supporting the developers who make the games we love.",
     },
     {
-      question: "Can I play my games offline?",
+      question: "Is this related to gambling apps?",
       answer:
-        "Of course. Once a game is downloaded to your device, it's yours to play forever, with or without an internet connection. No forced logins, no 'online-only' requirements.",
+        "No. GameVault is a gaming utility. We have no affiliation with gambling platforms that may share a similar name. We are dedicated solely to game library management.",
     },
   ],
 ];
