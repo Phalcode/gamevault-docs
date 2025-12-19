@@ -11,7 +11,7 @@ const features = [
   {
     title: "Your Personal Game Cloud",
     description:
-      "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab, giving you total ownership of your gaming legacy.",
+      "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab. Access your library via our native client or directly through the built-in WebUI.",
     image: ImgLibrary,
   },
   {

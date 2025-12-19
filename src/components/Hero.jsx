@@ -1,4 +1,5 @@
 import ImgLibrary from "@site/static/img/features/library.png";
+import Link from "@docusaurus/Link";
 import React from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
@@ -19,7 +20,7 @@ export function Hero() {
   return (
     <div className="relative isolate overflow-hidden bg-background-default">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
       {/* Background Glows */}
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -29,9 +30,26 @@ export function Hero() {
       <Container className="pb-16 pt-10 lg:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div className="lg:col-span-7 text-center lg:text-left">
+              <div className="mb-8 flex justify-center lg:justify-start">
+                <a
+                  href="#demo"
+                  className="group relative inline-flex items-center gap-x-2 rounded-full bg-primary-default/10 px-4 py-1.5 text-sm font-medium leading-6 text-primary-light ring-1 ring-inset ring-primary-default/20 hover:ring-primary-default/40 transition-all duration-300 !no-underline"
+                >
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-default opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-default"></span>
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    Explore the Live Demo
+                    <svg className="h-3 w-3 transition-transform group-hover:translate-y-0.5 translate-y-[0.5px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
               <h1 className="font-display text-5xl font-black tracking-tight text-text-default sm:text-8xl leading-[0.9] uppercase">
                 Your Games.<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-default via-primary-light to-primary-default drop-shadow-sm">
+                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary-default via-primary-light to-primary-default drop-shadow-sm pr-2">
                   Your Server.
                 </span><br />
                 Your Rules.

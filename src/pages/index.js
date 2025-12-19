@@ -2,6 +2,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import React from "react";
 import * as Swetrix from "swetrix";
+import { DemoSection } from "../components/DemoSection";
 import { Faqs } from "../components/Faqs";
 import { PrimaryFeatures } from "../components/Features";
 import { Hero } from "../components/Hero";
@@ -26,6 +27,7 @@ export default function Home() {
           <Hero />
         </section>
         <PrimaryFeatures />
+        <DemoSection />
         <Faqs />
         <div className="bg-background-dark py-6">
           <p className="text-center text-xs text-text-light opacity-50">
