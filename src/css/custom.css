@@ -65,34 +65,26 @@ ul {
   padding: 0;
 }
 
-[data-theme="light"] #features {
-  background-image: url("/static/img/landing/features_bg_light.svg");
-}
-
-[data-theme="dark"] #features {
-  background-image: url("/static/img/landing/features_bg_dark.svg");
-}
-
-#features {
-  background-position: top 8em left 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#features a {
-  text-decoration-line: underline;
-  color: var(--ifm-font-color-base-inverse);
-}
-
-.gamevault-plus-banner {
-  display: flex;
-  gap: 0.5rem;
-  align-items: flex-end;
-  margin-bottom: 1rem;
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 main li {
   margin-left: 1.5em !important;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(-12deg) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-10deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0px) rotate(-12deg) scale(1);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.zoomable {
+  cursor: zoom-in !important;
 }

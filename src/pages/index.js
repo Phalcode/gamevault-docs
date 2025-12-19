@@ -27,10 +27,12 @@ export default function Home() {
         </section>
         <PrimaryFeatures />
         <Faqs />
-        <p className="text--center text-xs font-bolder tracking-tighter">
-          * In case you're wondering, all depicted games on this website are
-          placeholders and not real
-        </p>
+        <div className="bg-background-dark py-6">
+          <p className="text-center text-xs text-text-light opacity-50">
+            * In case you're wondering, all depicted games on this website are
+            placeholders and not real
+          </p>
+        </div>
       </main>
     </Layout>
   );

@@ -15,7 +15,11 @@ const config = {
   organizationName: "Phalcode",
   projectName: "gamevault-docs",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -37,9 +41,9 @@ const config = {
         ],
       },
     ],
-    require.resolve("docusaurus-plugin-image-zoom"),
     require.resolve("@cmfcmf/docusaurus-search-local"),
     tailwindPlugin,
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
   presets: [
     [
@@ -213,8 +217,7 @@ const config = {
         additionalLanguages: ["bash", "json"],
       },
       zoom: {
-        selector:
-          ".zoomable,img:not(nav img):not(footer img):not(.nozoom):not([alt~='ko-fi']):not([alt~='GameVault'])",
+        selector: ".zoomable, [data-zoomable]",
         config: {
           background: {
             light: "#e2e1ef",

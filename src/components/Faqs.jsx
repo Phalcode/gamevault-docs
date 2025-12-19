@@ -4,55 +4,56 @@ import { Container } from "./Container";
 const faqs = [
   [
     {
-      question: "Does GameVault combine my gaming platforms in one place?",
+      question: "Is GameVault a multi-platform launcher?",
       answer:
-        "No, GameVault is not for combining games from different platforms into one app. Rather, it's for managing your own gaming platform with your own game files hosted on your server.",
+        "No. Unlike tools that aggregate existing stores, GameVault is a self-hosted ecosystem. It allows you to host, manage, and distribute your own DRM-free game files from your own private server.",
+    },
+    {
+      question: "Does it support Steam or Epic Games?",
+      answer:
+        "GameVault is built specifically for DRM-free content (like that from GOG or Humble Bundle). Most major storefronts use proprietary DRM which is incompatible with independent hosting and distribution.",
+    },
+    {
+      question: "Is GameVault free to use?",
+      answer:
+        "Yes, the core GameVault ecosystem is and will always be free. We offer GameVault+ as an optional premium subscription for users who want advanced features and wish to support the ongoing development of the platform.",
     },
     {
       question: "Is GameVault open-source?",
       answer:
-        "No, GameVault is source-available, meaning the code is open for you to explore and modify for personal use. However, you may not use it for commercial purposes.",
+        "GameVault is source-available. The code is transparent and open for personal modification, allowing you to customize the experience while protecting the project's future.",
     },
     {
-      question: "Is GameVault a tool for piracy?",
+      question: "Is this related to gambling apps?",
       answer:
-        "No, it isn't. GameVault is designed to manage legally obtained DRM-free games. While it can technically be used with illegally obtained games, we do not endorse or support piracy. We encourage users to comply with copyright laws. Unlawful use is strictly improper and unauthorized.",
-    },
-  ],
-  [
-    {
-      question:
-        "Does GameVault work with games from Steam, Epic Games, Microsoft, etc.?",
-      answer:
-        "Usually not. GameVault is made for games you own and only works with DRM-free games, either pure game files or installers. Most platforms use DRM, but there are exceptions like GOG and Humble Bundle that don’t.",
-    },
-    {
-      question: "Is there a native client for Mac or Linux?",
-      answer:
-        "No, apart from emulation or community-maintained clients, there is currently no native Linux or Mac GameVault client application.",
-    },
-    {
-      question: "Does GameVault have anything to do with gambling?",
-      answer:
-        "No, absolutely not. There's just a gambling app with a similar name on the market. If you're struggling with gambling addiction, please seek help.",
+        "No. GameVault is a gaming utility. We have no affiliation with gambling platforms that may share a similar name. We are dedicated solely to game library management.",
     },
   ],
   [
     {
-      question: "Does GameVault stream games?",
+      question: "Are there native Mac or Linux clients?",
       answer:
-        "No, GameVault has nothing to do with streaming. It's simply an app to organize and browse your game library in a Steam-like experience and share it with your community.",
+        "Currently, we offer a native Windows client and a responsive Web UI. Linux and Mac users can access their library via the Web UI or through community-maintained compatibility layers.",
     },
     {
-      question: "Does GameVault cost any money?",
+      question: "Can I use GameVault on my Steam Deck?",
       answer:
-        "No, the core features of GameVault are and will always be free. However, we do offer a paid GameVault+ subscription for some additional extra features, which you can subscribe to if you'd like to continuously support our work.",
+        "Absolutely! You can access your entire library through the Web UI directly on your Steam Deck. It's a perfect way to manage your collection, track your stats, and download games while on the go.",
     },
-
     {
-      question: "What was the former name of GameVault?",
+      question: "Does GameVault support game streaming?",
       answer:
-        "The first rule of GameVault is: you do not talk about the former name of GameVault.",
+        "No. GameVault focuses on library management and high-speed file distribution. It provides a high-end interface to browse and download your games, but the games themselves run locally on your hardware for the best performance.",
+    },
+    {
+      question: "What is your stance on piracy?",
+      answer:
+        "GameVault is built for the management of legally owned DRM-free content. We do not endorse or support piracy. We believe in digital ownership and supporting the developers who make the games we love.",
+    },
+    {
+      question: "Can I play my games offline?",
+      answer:
+        "Of course. Once a game is downloaded to your device, it's yours to play forever, with or without an internet connection. No forced logins, no 'online-only' requirements.",
     },
   ],
 ];
@@ -62,42 +63,61 @@ export function Faqs() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="relative overflow-hidden py-16"
+      className="relative overflow-hidden py-24 sm:py-32 bg-background-default"
     >
       <Container className="relative">
-        <div className="mx-auto lg:mx-0">
+        <div className="mx-auto max-w-2xl text-center">
           <h2
             id="faq-title"
-            className="font-display text-3xl tracking-tight sm:text-4xl"
+            className="font-display text-4xl font-bold tracking-tight text-text-default sm:text-5xl"
           >
-            Frequently asked questions
+            Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-text-light">
-            If you can’t find what you’re looking for here, check out the{" "}
-            <Link href="https://gamevau.lt/docs/intro">Docs</Link> or contact us
-            via <Link href="https://discord.gg/NEdNen2dSu">Discord</Link>,{" "}
-            <Link href="https://github.com/Phalcode/gamevault-app/discussions">
+          <p className="mt-6 text-lg leading-8 text-text-light">
+            Can’t find what you’re looking for? Reach out via{" "}
+            <Link
+              href="https://discord.gg/NEdNen2dSu"
+              className="text-primary-default underline underline-offset-4 hover:text-primary-light"
+            >
+              Discord
+            </Link>
+            ,{" "}
+            <Link
+              href="https://github.com/Phalcode/gamevault-app/discussions"
+              className="text-primary-default underline underline-offset-4 hover:text-primary-light"
+            >
               GitHub
             </Link>
-            , or <Link href="mailto:contact@phalco.de">Email</Link>
+            , or{" "}
+            <Link
+              href="mailto:contact@phalco.de"
+              className="text-primary-default underline underline-offset-4 hover:text-primary-light"
+            >
+              Email
+            </Link>
+            .
           </p>
         </div>
-        <ul className="list-none mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
+
+        <div className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:max-w-none lg:grid-cols-2 lg:gap-8">
           {faqs.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul className="list-none flex flex-col gap-y-8">
-                {column.map((faq, faqIndex) => (
-                  <li key={faqIndex}>
-                    <h3 className="font-display text-lg leading-7">
-                      {faq.question}
-                    </h3>
-                    <p className="mt-4 text-sm text-text-light">{faq.answer}</p>
-                  </li>
-                ))}
-              </ul>
-            </li>
+            <div key={columnIndex} className="flex flex-col gap-6 lg:gap-8">
+              {column.map((faq, faqIndex) => (
+                <div
+                  key={faqIndex}
+                  className="rounded-xl bg-background-dark p-8 ring-1 ring-text-default/10 shadow-sm transition-all duration-300 hover:bg-background-dark/80"
+                >
+                  <h3 className="text-lg font-bold leading-7 text-text-default">
+                    {faq.question}
+                  </h3>
+                  <p className="mt-4 text-base leading-7 text-text-light">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
           ))}
-        </ul>
+        </div>
       </Container>
     </section>
   );

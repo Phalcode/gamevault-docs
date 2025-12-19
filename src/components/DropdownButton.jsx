@@ -22,22 +22,22 @@ const Dropdown = ({ className, options, ...props }) => {
   }, []);
 
   return (
-    <span ref={dropdownRef} className="relative inline-block text-left">
+    <span ref={dropdownRef} className="relative block w-full text-left">
       <Button className={className + " w-full"} {...props} onClick={toggleMenu} />
 
       {isOpen && (
         <div
-          className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-background-alt shadow-lg ring-1 ring-text-light"
+          className="absolute right-0 z-20 mt-2 w-full origin-top-right rounded-xl bg-background-dark shadow-2xl ring-1 ring-text-default/10 backdrop-blur-xl"
           role="menu"
           aria-orientation="vertical"
         >
-          <div className="py-1" role="none">
+          <div className="py-2" role="none">
             {options.map((option) => (
               <Link
                 key={option.label}
                 href={option.link}
                 target="_blank"
-                className="font-bold hover:no-underline block px-4 py-2 text-sm hover:bg-background-default text-text-default"
+                className="font-bold hover:no-underline block px-6 py-3 text-base hover:bg-background-default/50 text-text-default transition-colors"
                 aria-label={option.label}
               >
                 {option.label}

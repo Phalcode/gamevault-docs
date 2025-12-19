@@ -9,54 +9,52 @@ import ImgStore from "@site/static/img/features/store.png";
 
 const features = [
   {
-    title: "Organize Your Game Library",
+    title: "Your Personal Game Cloud",
     description:
-      "Bring all your DRM-free games together in one place with a sleek library that makes browsing and playing games effortless.",
+      "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab, giving you total ownership of your gaming legacy.",
     image: ImgLibrary,
   },
   {
-    title: "Share with Friends and Family",
+    title: "Multi-User & Social",
     description:
-      "Open your library up for friends and family to enjoy. Manage users, share access, and enjoy a connected gaming experience.",
+      "Turn your server into a private gaming center. Share access with friends and family, manage user accounts, and build your own gaming community with ease and full control.",
     image: ImgCommunity,
   },
   {
-    title: "Track Your Progress",
+    title: "Playtime & Progress Tracking",
     description:
-      "Monitor your playtime and keep track of what you've finished or plan to revisit later.",
+      "Keep track of your gaming journey with detailed playtime statistics. Monitor your progress, manage your backlog, and see what your community is playing in real-time.",
     image: ImgGame,
   },
   {
-    title: "Enrich Your Library Automatically",
+    title: "Automatic Metadata Enrichment",
     description:
-      "Say goodbye to blank covers and missing details! GameVault can automatically enrich metadata, art, and details from various sources.",
+      "No more manual editing. GameVault automatically fetches high-quality cover art, descriptions, and metadata to keep your collection looking stunning and professional.",
     image: ImgMetadata,
   },
   {
-    title: "Set Up with Ease",
+    title: "Easy Installation",
     image: ImgStore,
     description: (
       <>
-        Install the GameVault Client directly from the{" "}
-        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75">
+        Built for self-hosters. Install the client from the{" "}
+        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" className="text-primary-default hover:underline">
           Microsoft Store
         </a>{" "}
-        and <a href="/docs/server-docs/setup">set up a server</a> in just a few
-        clicks.
+        and deploy your server in minutes with our <a href="/docs/server-docs/setup" className="text-primary-default hover:underline">easy setup guide</a> for any environment.
       </>
     ),
   },
   {
-    title: "Join The Movement",
+    title: "Open & Community Driven",
     image: ImgStars,
     description: (
       <>
-        <a target="_blank" href="https://discord.gg/NEdNen2dSu">
-          Join our growing community
+        Built by gamers, for gamers.{" "}
+        <a target="_blank" href="https://discord.gg/NEdNen2dSu" className="text-primary-default hover:underline">
+          Join our Discord
         </a>{" "}
-        , star us on GitHub, or even{" "}
-        <a href="/docs/license-contribute">contribute</a> to our
-        source-available project! Everyone can help!
+        to help shape the future of the project, or explore the source code on GitHub to contribute.
       </>
     ),
   },
@@ -67,60 +65,41 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden py-16"
+      className="relative overflow-hidden py-20 sm:py-32 bg-background-default"
     >
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-text-default sm:text-4xl md:text-5xl">
-            A{" "}
-            <span className="relative whitespace-nowrap text-primary-darker">
-              <svg
-                version="1.1"
-                viewBox="0 0 800 400"
-                xmlns="http://www.w3.org/2000/svg"
-                className="absolute -top-8 left-0 w-[6em] stroke-primary-default opacity-30"
-              >
-                <path
-                  d="m48.879 228.7c16.592 7.1749 69.208 44.993 99.552 43.049 30.344-1.9432 50.673-53.363 82.511-54.709 31.839-1.3453 74.589 45.291 108.52 46.637 33.931 1.3453 62.481-36.771 95.067-38.565 32.586-1.7937 70.553 28.102 100.45 27.803 29.895-0.29895 65.77-24.664 78.924-29.596"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeWidth="15"
-                />
-              </svg>
-
-              <span className="relative">must have</span>
-            </span>{" "}
-            for selfhosting gamers
+            Take back control of your{" "}
+            <span className="text-primary-default">gaming collection</span>
           </h2>
-          <p className="mt-6 text-xl">
-            GameVault isn't just a library, It's your personal gaming platform.
-            <br />
-            Built for gamers, by gamers, with everything you need to organize,
-            share, and enjoy your DRM-free videogame collection.
+          <p className="mt-6 text-lg tracking-tight text-text-light">
+            GameVault is the ultimate ecosystem for the modern self-hoster.
+            Built for performance, reliability, and total ownership of your digital library.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={
-                "bg-primary-light rounded-xl p-0 shadow-lg transform transition-all hover:scale-105 h-80"
-              }
+              className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-background-dark/50 shadow-2xl ring-1 ring-text-default/10 transition-all duration-500 hover:ring-primary-default/50 hover:-translate-y-2 backdrop-blur-sm"
             >
-              <div>
+              <div className="relative h-64">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="mx-auto mb-4 w-full h-48 rounded-t-xl"
+                  data-zoomable
+                  className="zoomable cursor-zoom-in h-full w-full object-cover object-center rounded-t-3xl"
                 />
-                <div className="absolute bottom-0 w-full h-32 p-4 bg-primary-light rounded-b-xl">
-                  <h3 className="text-lg font-semibold text-text-inverse ita">
-                    {feature.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-text-inverse">
-                    {feature.description}
-                  </p>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background-default/80 via-transparent to-transparent opacity-60 pointer-events-none" />
+              </div>
+              <div className="flex flex-1 flex-col p-8">
+                <h3 className="text-2xl font-bold tracking-tight text-text-default">
+                  {feature.title}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-text-light">
+                  {feature.description}
+                </p>
               </div>
             </div>
           ))}
