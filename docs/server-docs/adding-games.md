@@ -119,4 +119,8 @@ Will result in a single game that gets overwritten!
 
 Once you have named the archive, place it into the folder on your host system that is mounted to GameVault's files folder (by default `/files`). Once the archive is in place, GameVault will automatically index the game, enrich it with metadata, and save it in your database.
 
+:::tip Uploading via API
+Starting with version v16.3.0, administrators can also upload game files directly through the `POST /api/games` endpoint. The server must have **write permissions** on the files volume (`VOLUMES_FILES`) for this to work.
+:::
+
 Congratulations! You have successfully added a game to your GameVault server. Repeat the process for any additional games you want to add.

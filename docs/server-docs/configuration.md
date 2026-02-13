@@ -48,15 +48,15 @@ This page describes the various configuration properties used in the application
 
 ## VOLUMES
 
-| Property            | Description                                                                                            | Default      | Possible Values       |
-| ------------------- | ------------------------------------------------------------------------------------------------------ | ------------ | --------------------- |
-| `VOLUMES_CONFIG`    | Folder inside container used for configuring GameVault.                                                | `/config`    | Any valid folder path |
-| `VOLUMES_FILES`     | Folder inside container used for game files.                                                           | `/files`     | Any valid folder path |
-| `VOLUMES_MEDIA`     | Folder inside container used for media.                                                                | `/media`     | Any valid folder path |
-| `VOLUMES_SAVEFILES` | Folder inside container used for savefile uploads.                                                     | `/savefiles` | Any valid folder path |
-| `VOLUMES_LOGS`      | Folder inside container used for logs.                                                                 | `/logs`      | Any valid folder path |
-| `VOLUMES_SQLITEDB`  | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`) | `/db`        | Any valid folder path |
-| `VOLUMES_PLUGINS`   | Folder inside container used for plugins.                                                              | `/plugins`   | Any valid folder path |
+| Property            | Description                                                                                                                                     | Default      | Possible Values       |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------- |
+| `VOLUMES_CONFIG`    | Folder inside container used for configuring GameVault.                                                                                         | `/config`    | Any valid folder path |
+| `VOLUMES_FILES`     | Folder inside container used for game files. The server needs **write permissions** on this folder for the upload and delete game APIs to work. | `/files`     | Any valid folder path |
+| `VOLUMES_MEDIA`     | Folder inside container used for media.                                                                                                         | `/media`     | Any valid folder path |
+| `VOLUMES_SAVEFILES` | Folder inside container used for savefile uploads.                                                                                              | `/savefiles` | Any valid folder path |
+| `VOLUMES_LOGS`      | Folder inside container used for logs.                                                                                                          | `/logs`      | Any valid folder path |
+| `VOLUMES_SQLITEDB`  | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`)                                          | `/db`        | Any valid folder path |
+| `VOLUMES_PLUGINS`   | Folder inside container used for plugins.                                                                                                       | `/plugins`   | Any valid folder path |
 
 ## DB
 
