@@ -4,18 +4,14 @@ on:
   push:
     branches:
       - master
-      - develop
-  pull_request:
-    branches:
-      - master
 
 concurrency:
-  group: deploy-docs-${{ github.ref }}
+  group: deploy-docs
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build site
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,25 +30,6 @@ jobs:
 
       - name: Build website
         run: pnpm run build
-
-      - name: Upload build artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site-build
-          path: ./build
-          retention-days: 1
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: site-build
-          path: ./build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
