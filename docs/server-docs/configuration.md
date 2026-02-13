@@ -14,7 +14,7 @@ All configuration properties of your GameVault server are passed as environment 
 
 This page describes the various configuration properties used in the application. These properties can be configured in the environment variables or in a `.env` file.
 
-## SERVER
+### SERVER
 
 | Property                                | Description                                                                                                                                                                                                    | Default       | Possible Values                                                                              |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
@@ -39,14 +39,14 @@ This page describes the various configuration properties used in the application
 | `SERVER_HTTPS_CERT_PATH`                | The file path to the TLS certificate used for HTTPS.                                                                                                                                                           | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CA_CERT_PATH`             | The file path to the CA certificate used for HTTPS (e.g. for client certificate verification).                                                                                                                 | -             | Any valid file path                                                                          |
 
-## WEB UI
+### WEB UI
 
 | Property         | Description                                                  | Default | Possible Values |
 | ---------------- | ------------------------------------------------------------ | ------- | --------------- |
 | `WEB_UI_ENABLED` | Whether or not the web ui should be used.                    | `true`  | `true`, `false` |
 | `WEB_UI_VERSION` | You can force a specific web ui version using this property. | -       | `e.g. 16.0.0`   |
 
-## VOLUMES
+### VOLUMES
 
 | Property            | Description                                                                                                                                     | Default      | Possible Values       |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------- |
@@ -58,7 +58,7 @@ This page describes the various configuration properties used in the application
 | `VOLUMES_SQLITEDB`  | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`)                                          | `/db`        | Any valid folder path |
 | `VOLUMES_PLUGINS`   | Folder inside container used for plugins.                                                                                                       | `/plugins`   | Any valid folder path |
 
-## DB
+### DB
 
 | Property                             | Description                                                                                        | Default      | Possible Values         |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
@@ -76,7 +76,7 @@ This page describes the various configuration properties used in the application
 | `DB_TLS_CERTIFICATE_PATH`            | The file path to the TLS certificate used for authenticating the database server.                  | -            | Any file path           |
 | `DB_TLS_CA_CERTIFICATE_PATH`         | The file path to the CA certificate used for verifying client certificates in TLS connections.     | -            | Any file path           |
 
-## USERS
+### USERS
 
 | Property                   | Description                                                                                                                     | Default | Possible Values |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |
@@ -85,14 +85,14 @@ This page describes the various configuration properties used in the application
 | `USERS_REQUIRE_LAST_NAME`  | Require **Last Name** for new registrations.                                                                                    | `false` | `true`, `false` |
 | `USERS_REQUIRE_BIRTH_DATE` | Require **Birth Date** for new registrations. (**Automatically set to `true` when `PARENTAL_AGE_RESTRICTION_ENABLED` is true**) | `false` | `true`, `false` |
 
-## PARENTAL
+### PARENTAL
 
 | Property                           | Description                                                                                 | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------- | ------- | --------------- |
 | `PARENTAL_AGE_RESTRICTION_ENABLED` | Determines whether age-based parental restrictions are enforced.                            | `false` | `true`, `false` |
 | `PARENTAL_AGE_OF_MAJORITY`         | The age at which an individual is legally recognized as an adult for parental restrictions. | `18`    | Any number      |
 
-## GAMES
+### GAMES
 
 | Property                                         | Description                                                                                                                                                                                                                                                                                                                                                                                           | Default                                                             | Possible Values                |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------ |
@@ -105,7 +105,7 @@ This page describes the various configuration properties used in the application
 | `GAMES_WINDOWS_SETUP_DEFAULT_INSTALL_PARAMETERS` | Default command-line parameters used for Windows application setup files. These are used to attempt a silent installation.                                                                                                                                                                                                                                                                            | `/D="%INSTALLDIR%" /S /DIR="%INSTALLDIR%" /SILENT /COMPONENTS=text` | Any string                     |
 | `GAMES_MAX_UPLOAD_SIZE`                          | The maximum file size allowed for game uploads via the API. Set it to 0 to disable game uploads.                                                                                                                                                                                                                                                                                                      | `50 gb`                                                             | e.g. "50 gb", "100 gb", "1 tb" |
 
-## MEDIA
+### MEDIA
 
 | Property                       | Description                                                                       | Default                                  | Possible Values                     |
 | ------------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
@@ -114,7 +114,7 @@ This page describes the various configuration properties used in the application
 | `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)        | `false`                                  | `true`, `false`                     |
 | `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                             | `60`                                     | Any number                          |
 
-## SAVEFILES
+### SAVEFILES
 
 | Property              | Description                                                                                                                                     | Default | Possible Values                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------ |
@@ -122,7 +122,7 @@ This page describes the various configuration properties used in the application
 | `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `1 gb`  | e.g. "10 mb", "5 gb", "300 kb" |
 | `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `10`    | Any number                     |
 
-## METADATA
+### METADATA
 
 | Property                            | Description                                                                                                                                                            | Default | Possible Values    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |
@@ -133,7 +133,7 @@ This page describes the various configuration properties used in the application
 | `METADATA_IGDB_CLIENT_ID`           | The Client-ID used for authenticating requests to the IGDB API.                                                                                                        | -       | Your Client ID     |
 | `METADATA_IGDB_CLIENT_SECRET`       | The Client-Secret used for authenticating requests to the IGDB API.                                                                                                    | -       | Your Client Secret |
 
-## AUTH
+### AUTH
 
 | Property                        | Description                                                                                                                                                                                                       | Default                               | Possible Values                                                             |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------- |
@@ -151,7 +151,7 @@ This page describes the various configuration properties used in the application
 | `AUTH_OAUTH2_CLIENT_ID`         | The OAuth2 client ID.                                                                                                                                                                                             | -                                     | Any string                                                                  |
 | `AUTH_OAUTH2_CLIENT_SECRET`     | The OAuth2 client secret.                                                                                                                                                                                         | -                                     | Any string                                                                  |
 
-## TESTING
+### TESTING
 
 | Property                           | Description                                                                                                                           | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |
@@ -160,3 +160,26 @@ This page describes the various configuration properties used in the application
 | `TESTING_IN_MEMORY_DB`             | If `true`, the server will use an in-memory database. Useful for testing without creating an actual database. Only works with SQLITE. | `false` | `true`, `false` |
 | `TESTING_MOCK_PROVIDERS`           | If `true`, the server will create two mock providers. (-9999 and 9999 Priority) Useful for testing metadata-merges.                   | `false` | `true`, `false` |
 | `TESTING_LOG_HTTP_TRAFFIC_ENABLED` | If `true`, the server will log all incoming and outgoing HTTP traffic. (Except Healthchecks)                                          | `false` | `true`, `false` |
+
+## Docker Secrets Support
+
+GameVault supports [Docker Secrets](https://docs.docker.com/compose/how-tos/use-secrets/) for **all** environment variables. Instead of passing a value directly as an environment variable, you can append `_FILE` to the variable name and set it to the path of a file containing the value.
+
+For example, instead of:
+
+```yaml
+environment:
+  DB_PASSWORD: my-secret-password
+```
+
+You can use:
+
+```yaml
+secrets:
+  db_password:
+    file: ./secrets/db_password.txt
+environment:
+  DB_PASSWORD_FILE: /run/secrets/db_password
+```
+
+The server will read the file contents and use them as the value for the variable. If both the variable and its `_FILE` variant are set, the `_FILE` variant takes priority.
