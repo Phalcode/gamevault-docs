@@ -61,7 +61,7 @@ Windows software applications or utilities that are not games but need to be man
 
 Linux Portable games can be played immediately without additional setup.
 
-- **Detection**: Determined by the type tag override or by the presence of `.sh` files, with no `.exe` or `.msi` files.
+- **Detection**: Determined by the type tag override or by the presence of `.sh` or `.appimage` files, with no `.exe` or `.msi` files.
 - **Example Files in Archive**:
   - `Butcher_Data/`
   - `Butcher.sh`

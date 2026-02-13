@@ -14,8 +14,9 @@ GameVault supports a parental control feature that **hides** games and game prog
 :::warning Things to keep in mind
 
 - If you **enable** parental control, **do not forget** to set the **birth date** for **existing** users.
-- Children **must not** be of **role** `ADMIN`, because they would be able to alter their birth date.
+- Children **must not** be of **role** `ADMIN`, because users with **ADMIN** role can **always see all games**, regardless of age rating.
 - The age rating value for games is set by the **metadata providers you use**. It is in your responsibility to check how the providers determine the age rating.
+- **Games without an age rating** will be **visible to everyone**. If you use parental control, make sure to apply an age rating to your games if you want to restrict access.
 - If you use multiple metadata providers, the provider with the **highest priority** will be used to determine the age rating. **User-set** age ratings will **always override** the metadata providers setting. You can check the actively applied minimum age on the game page in your client.
 
 :::

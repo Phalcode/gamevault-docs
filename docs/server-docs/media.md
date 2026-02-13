@@ -14,12 +14,12 @@ Here is the updated markdown table including the format names as a second column
 
 | Format  | Name                        | MIME Type                  |
 | ------- | --------------------------- | -------------------------- |
-| `.bmp`  | Bitmap Image                | `image/bmp`                |
-| `.jpeg` | JPEG Image                  | `image/jpeg`               |
-| `.png`  | Portable Network Graphics   | `image/png`                |
-| `.tiff` | Tagged Image File Format    | `image/tiff`               |
-| `.gif`  | Graphics Interchange Format | `image/gif`                |
-| `.ico`  | Icon Format                 | `image/vnd.microsoft.icon` |
+| `.bmp`  | Bitmap Image                | `image/bmp`      |
+| `.jpeg` | JPEG Image                  | `image/jpeg`     |
+| `.png`  | Portable Network Graphics   | `image/png`      |
+| `.tiff` | Tagged Image File Format    | `image/tiff`     |
+| `.gif`  | Graphics Interchange Format | `image/gif`      |
+| `.ico`  | Icon Format                 | `image/x-icon`   |
 
 ### Supported Audio Formats
 

@@ -18,7 +18,7 @@ GameVault supports all file formats 7zip 23.01 (2023-06-20) does:
 We recommend [archiving games](#supported-archive-formats) to save storage and bandwidth. However, if the game is just a single file executable, like `setup_game.exe` or `setup_game.sh`, you can import it into GameVault without archiving. Just be sure to rename it as described below for compatibility with GameVault (e.g. `Minecraft (v1.12) (2011).exe`). By default, GameVault autodetects the [game type](game-types.md) of single-file executables as a setup-type game. In rare cases, games can be single portable executables without additional setup. If that's the case, make sure to mark the games as "Portable" using the type override.
 
 Supported Executables:  
-`.exe` `.sh`
+`.exe` `.sh` `.appimage`
 
 :::note Downloading single-file executables
 Single-file executables are packed into a `.tar` file (no compression) and cached in the server's `/tmp` folder on-the-fly when users download them, to make them compatible with the GameVault Client. The cached files are reused until deleted by a Server Restart.
