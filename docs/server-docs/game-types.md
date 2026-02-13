@@ -45,6 +45,16 @@ Portable Windows games can be played immediately without requiring a setup.
   - `Butcher_Data/`
   - `Butcher.exe`
 
+#### Software (W_SW)
+
+Windows software applications or utilities that are not games but need to be managed in GameVault (like launchers, tools, or emulators).
+
+- **Detection**: Manually set through the type tag override `(W_SW)` in the filename.
+- **Example Use Cases**:
+  - Game launchers (Steam, GOG Galaxy, etc.)
+  - Emulators
+  - Game-related utilities and tools
+
 ### Linux
 
 #### Portable (L_P)
@@ -55,6 +65,16 @@ Linux Portable games can be played immediately without additional setup.
 - **Example Files in Archive**:
   - `Butcher_Data/`
   - `Butcher.sh`
+
+#### Software (L_SW)
+
+Linux software applications or utilities that are not games but need to be managed in GameVault (like launchers, tools, or emulators).
+
+- **Detection**: Manually set through the type tag override `(L_SW)` in the filename.
+- **Example Use Cases**:
+  - Game launchers (Steam, Lutris, etc.)
+  - Emulators
+  - Game-related utilities and tools
 
 ### Undetected
 
