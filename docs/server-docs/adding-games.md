@@ -32,7 +32,7 @@ If the game files are already compressed in a format that GameVault can understa
 To make your game files compatible with GameVault, you need to archive them. We recommend using [7Zip](https://www.7-zip.org/) for this. There are different approaches to this.
 
 :::tip single-file executables
-If the game you're about to add only consists of a single executable file such as `setup_game.exe` or `setup_game.sh`, you can choose to skip this stage and proceed with [naming it](#step-3-naming-the-archive). See [here](structure#single-file-executable) for more details.
+If the game you're about to add only consists of a single executable file such as `setup_game.exe` or `setup_game.sh`, you can choose to skip this stage and proceed with [naming it](#step-3-naming-the-archive). See [here](structure.md#single-file-executable) for more details.
 :::
 
 ### Method 1: The Fast Way
@@ -89,30 +89,32 @@ In our fictitious example we have a copy of Crawl Version 1.0.1 released in 2014
 Crawl (v1.0.1) (2014).7z
 ```
 
-### Adding the same game multiple times
+### Keeping multiple versions of the same game
 
-If you wish to add the same game multiple times to your GameVault server for any specific reason, it is important to ensure that you rename it slightly differently. This is to prevent the indexer from detecting it as a duplicate entry. We recommend using square brackets `[]` as your personal discriminator for these games. Avoid using regular parentheses `()` as they will be removed by the title extraction regex. It also does not matter if the files are in the same sub-folder or in different ones.
+GameVault supports multiple downloadable versions per game.
 
-By using this approach, the indexer will treat these two games as separate entities.
+If you add files that resolve to the same game identity (same title and release-year bucket), GameVault keeps them as versions of one game instead of creating separate game entries.
 
-In case the Auto-Matching feature does not work accurately for these games, you have the option to manually remap them in the client if you have the Role Editor or higher privileges.
+**Example (same game, multiple versions):**
 
-**Here's a good example:**
-
-- Game 1: `Minecraft [Tekkit Modpack] (v1.7.10) (2011).zip`
-- Game 2: `Minecraft [Hexxit Modpack] (v1.13.2) (2011).zip`
+- `Minecraft (v1.7.10) (2011).zip`
+- `Minecraft (v1.13.2) (2011).zip`
 
 :::info
-Will result in two seperate games
+Will result in one game with multiple downloadable versions.
 :::
 
-**And here's a bad example:**
+### Keeping separate entries on purpose
 
-- Game 1: `Minecraft (v1.7.10) (2011).zip`
-- Game 2: `Minecraft (v1.13.2) (2011).zip`
+If you intentionally want multiple entries with similar base titles (e.g. different modpacks), make the titles distinct using square brackets `[]`.
 
-:::danger
-Will result in a single game that gets overwritten!
+**Example (separate game entries):**
+
+- `Minecraft [Tekkit Modpack] (v1.7.10) (2011).zip`
+- `Minecraft [Hexxit Modpack] (v1.13.2) (2011).zip`
+
+:::info
+Will result in two separate games.
 :::
 
 ## Step 4: Deploy 🥳

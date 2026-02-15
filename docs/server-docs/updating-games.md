@@ -6,21 +6,25 @@ sidebar_position: 5
 
 ## Applying an Update to a Game
 
-To update a game, simply delete the existing game file and replace it with a new one in the files directory (by default `/files`).
+To update a game, place a new game file in the files directory (by default `/files`).
 
-You can freely modify the early access and version flags of your game. As long as the **path** or **the combination of title and release year** of the new file matches the old file, GameVault's indexer will recognize it as an update. The same game entity will be restored if needed and updated with the new file's information, while preserving any progress associated with the game.
+You can freely modify the early access and version flags of your game file. As long as the file maps to the same game identity (typically same title and release-year bucket), GameVault's indexer will recognize it as an update and keep it as another downloadable version for that game. Progress remains attached to the same game entity.
 
 ### Example
 
-Let's say you have a very outdated version of the game `Minecraft (EA) (v1.8b) (2011).zip` and you want to update it to the newest version, such as `Minecraft (v1.20.1) (2011).7z`:
+Let's say you have an outdated version of `Minecraft (EA) (v1.8b) (2011).zip` and you add `Minecraft (v1.20.1) (2011).7z`:
 
-1. Delete `Minecraft (EA) (v1.8b) (2011).zip`.
+1. Insert `Minecraft (v1.20.1) (2011).7z`.
 
-2. Insert `Minecraft (v1.20.1) (2011).7z`.
+2. Wait for the automatic indexing process to detect and register the changes.
 
-3. Wait for the automatic indexing process to detect and register the changes.
+3. Optionally remove the old file later if you don't want to keep multiple versions.
 
-If you want to keep multiple versions of the same game, refer to the documentation on [adding the same game multiple times](adding-games.md#adding-the-same-game-multiple-times).
+If you intentionally want separate game entries (instead of multiple versions of one game), refer to [keeping separate entries on purpose](adding-games.md#keeping-separate-entries-on-purpose).
+
+## Downloading a specific version
+
+The API supports version-aware downloads and version listinge. If `version` is omitted from the download endpoint, the server uses its default version selection.
 
 ### Visual indicator in the client
 
