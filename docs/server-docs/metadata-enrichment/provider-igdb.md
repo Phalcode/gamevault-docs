@@ -36,7 +36,7 @@
 | GameVault Field        | IGDB API Field(s) or Hardcoded Value (\*)             | Notes                                                                                                         |
 | ---------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `provider_slug`        | `igdb` \*                                             | Hardcoded.                                                                                                    |
-| `installer_parameters` | `/D="%INSTALLDIR%" /S /DIR="%INSTALLDIR%" /SILENT /COMPONENTS=text` \* | Hardcoded for convenience. Makes Inno Setup and NSIS installers run silently and with a predefined directory. |
+| `installer_parameters` | `GAMES_WINDOWS_SETUP_DEFAULT_INSTALL_PARAMETERS` (fallback value) \* | Default command-line parameters for detected Windows setup files (e.g., Inno Setup/NSIS silent install). |
 | `age_rating`           | `age_ratings`                                         | [See here](#age-rating) for details.                                                                          |
 | `provider_data_id`     | `id`                                                  |                                                                                                               |
 | `provider_data_url`    | `url`                                                 |                                                                                                               |
@@ -44,6 +44,7 @@
 | `release_date`         | `first_release_date`                                  |                                                                                                               |
 | `description`          | `game.summary` and/or `game.storyline`                | If both are available, both get used, else any available will be mapped                                       |
 | `rating`               | `total_rating`                                        |                                                                                                               |
+| `average_playtime`     | `game_time_to_beats.normally`                         | Time To Beat is mapped from IGDB and converted from seconds to minutes.                                       |
 | `early_access`         | `status`                                              | True if the Game is either in status `alpha`, `beta` or `early_access`                                        |
 | `developers`           | `involved_companies`                                  | Filtered by `involved_company.developer === true`                                                             |
 | `publishers`           | `involved_companies`                                  | Filtered by `involved_company.publisher === true`                                                             |

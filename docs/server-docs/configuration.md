@@ -8,13 +8,111 @@ sidebar_position: 2
 Check out [configuration.ts](https://github.com/Phalcode/gamevault-backend/blob/master/src/configuration.ts) for all possible environment variables in case we forgot to update this page.
 :::
 
-All configuration properties of your GameVault server are passed as environment variables or via a .env file. The following tables describe the available properties, their default values, explanations, and possible values.
+## Three Ways to Configure GameVault
 
-## Configuration Properties
+### 1. Environment Variables (Most Common)
 
-This page describes the various configuration properties used in the application. These properties can be configured in the environment variables or in a `.env` file.
+Set variables directly via Docker Compose, `.env` files, or shell:
 
-### SERVER
+```yaml
+# Docker Compose example
+environment:
+  SERVER_PORT: 8080
+  DB_HOST: postgres
+  DB_PASSWORD: mypassword
+```
+
+```bash
+# .env file example
+SERVER_PORT=8080
+DB_HOST=postgres
+DB_PASSWORD=mypassword
+```
+
+### 2. Docker Secrets (`_FILE` method) — For Sensitive Values
+
+Store secrets in files and reference them. Ideal for passwords, API keys, and tokens:
+
+```yaml
+# docker-compose.yml
+secrets:
+  db_password:
+    file: ./secrets/db_password.txt
+environment:
+  DB_PASSWORD_FILE: /run/secrets/db_password
+```
+
+GameVault reads the file at runtime, keeping secrets out of logs and configs.
+
+### 3. YAML Configuration Files — For Complex Setups
+
+Create `config.yaml` or `config.yml` in your config volume (`VOLUMES_CONFIG`) for organized, readable configuration:
+
+```yaml
+# config.yaml (case-insensitive, supports nested or flat syntax)
+server:
+  port: 8080
+  log_level: info
+db:
+  system: POSTGRESQL
+  host: postgres
+  port: 5432
+```
+
+Or use flat naming:
+
+```yaml
+SERVER_PORT: 8080
+SERVER_LOG_LEVEL: info
+DB_SYSTEM: POSTGRESQL
+DB_HOST: postgres
+```
+
+## Which Method Should I Use?
+
+| Scenario | Method | Example |
+|----------|--------|----------|
+| Simple setup, few variables | Environment Variables | Docker Compose `environment:` block |
+| Passwords and secrets | Docker Secrets (`_FILE`) | `DB_PASSWORD_FILE: /run/secrets/db_password` |
+| Complex setup, many variables | YAML | Create `config.yaml` in `/config` volume |
+| Mixing all three | See **Precedence** below | Secrets override env, env overrides YAML |
+
+## Configuration Precedence (Priority Order)
+
+When a setting exists in multiple places, GameVault uses values in this order (highest → lowest):
+
+1. **`VARIABLE_FILE`** (Docker Secrets file content) — *Always wins*
+2. **`VARIABLE`** (environment variable) — *Overrides YAML*
+3. **YAML file** (`config.yaml` / `config.yml`) — *Overrides defaults*
+4. **Built-in default** — *Used if nothing else is set*
+
+### Real-World Example
+
+If you set the same value in all three places:
+
+```yaml
+# .env file or docker-compose environment:
+DB_PASSWORD=env-password
+
+# config.yaml:
+db:
+  password: yaml-password
+
+# Docker secret:
+DB_PASSWORD_FILE: /run/secrets/db_password  (contains "secret-password")
+```
+
+**GameVault will use:** `secret-password` (from `_FILE`, highest priority)
+
+If you remove the `_FILE`, it uses the **environment** value: `env-password`
+
+If you remove the environment variable too, it uses **YAML**: `yaml-password`
+
+## All Configuration Options
+
+Below are all available configuration variables, organized by category.
+
+### SERVER — Core Server Settings
 
 | Property                                | Description                                                                                                                                                                                                    | Default       | Possible Values                                                                              |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
@@ -39,18 +137,18 @@ This page describes the various configuration properties used in the application
 | `SERVER_HTTPS_CERT_PATH`                | The file path to the TLS certificate used for HTTPS.                                                                                                                                                           | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CA_CERT_PATH`             | The file path to the CA certificate used for HTTPS (e.g. for client certificate verification).                                                                                                                 | -             | Any valid file path                                                                          |
 
-### WEB UI
+### WEB UI — Web Interface Settings
 
 | Property         | Description                                                  | Default | Possible Values |
 | ---------------- | ------------------------------------------------------------ | ------- | --------------- |
 | `WEB_UI_ENABLED` | Whether or not the web ui should be used.                    | `true`  | `true`, `false` |
 | `WEB_UI_VERSION` | You can force a specific web ui version using this property. | -       | `e.g. 16.0.0`   |
 
-### VOLUMES
+### VOLUMES — Storage Folder Paths
 
 | Property            | Description                                                                                                                                     | Default      | Possible Values       |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------- |
-| `VOLUMES_CONFIG`    | Folder inside container used for configuring GameVault.                                                                                         | `/config`    | Any valid folder path |
+| `VOLUMES_CONFIG`    | Folder used for configuring GameVault (for example `news.md`, `config.yaml`, and `config.yml`). Relative paths are supported, but absolute paths are recommended. | `/config`    | Any valid folder path |
 | `VOLUMES_FILES`     | Folder inside container used for game files. The server needs **write permissions** on this folder for the upload and delete game APIs to work. | `/files`     | Any valid folder path |
 | `VOLUMES_MEDIA`     | Folder inside container used for media.                                                                                                         | `/media`     | Any valid folder path |
 | `VOLUMES_SAVEFILES` | Folder inside container used for savefile uploads.                                                                                              | `/savefiles` | Any valid folder path |
@@ -58,7 +156,7 @@ This page describes the various configuration properties used in the application
 | `VOLUMES_SQLITEDB`  | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`)                                          | `/db`        | Any valid folder path |
 | `VOLUMES_PLUGINS`   | Folder inside container used for plugins.                                                                                                       | `/plugins`   | Any valid folder path |
 
-### DB
+### DB — Database Configuration
 
 | Property                             | Description                                                                                        | Default      | Possible Values         |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
@@ -76,7 +174,7 @@ This page describes the various configuration properties used in the application
 | `DB_TLS_CERTIFICATE_PATH`            | The file path to the TLS certificate used for authenticating the database server.                  | -            | Any file path           |
 | `DB_TLS_CA_CERTIFICATE_PATH`         | The file path to the CA certificate used for verifying client certificates in TLS connections.     | -            | Any file path           |
 
-### USERS
+### USERS — User Registration & Requirements
 
 | Property                   | Description                                                                                                                     | Default | Possible Values |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |
@@ -85,14 +183,14 @@ This page describes the various configuration properties used in the application
 | `USERS_REQUIRE_LAST_NAME`  | Require **Last Name** for new registrations.                                                                                    | `false` | `true`, `false` |
 | `USERS_REQUIRE_BIRTH_DATE` | Require **Birth Date** for new registrations. (**Automatically set to `true` when `PARENTAL_AGE_RESTRICTION_ENABLED` is true**) | `false` | `true`, `false` |
 
-### PARENTAL
+### PARENTAL — Parental Control & Age Restrictions
 
 | Property                           | Description                                                                                 | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------- | ------- | --------------- |
 | `PARENTAL_AGE_RESTRICTION_ENABLED` | Determines whether age-based parental restrictions are enforced.                            | `false` | `true`, `false` |
 | `PARENTAL_AGE_OF_MAJORITY`         | The age at which an individual is legally recognized as an adult for parental restrictions. | `18`    | Any number      |
 
-### GAMES
+### GAMES — Game Library & Upload Settings
 
 | Property                                         | Description                                                                                                                                                                                                                                                                                                                                                                                           | Default                                                             | Possible Values                |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------ |
@@ -105,7 +203,7 @@ This page describes the various configuration properties used in the application
 | `GAMES_WINDOWS_SETUP_DEFAULT_INSTALL_PARAMETERS` | Default command-line parameters used for Windows application setup files. These are used to attempt a silent installation.                                                                                                                                                                                                                                                                            | `/D="%INSTALLDIR%" /S /DIR="%INSTALLDIR%" /SILENT /COMPONENTS=text` | Any string                     |
 | `GAMES_MAX_UPLOAD_SIZE`                          | The maximum file size allowed for game uploads via the API. Set it to 0 to disable game uploads.                                                                                                                                                                                                                                                                                                      | `50 gb`                                                             | e.g. "50 gb", "100 gb", "1 tb" |
 
-### MEDIA
+### MEDIA — Image & Media Upload Settings
 
 | Property                       | Description                                                                       | Default                                  | Possible Values                     |
 | ------------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
@@ -114,7 +212,7 @@ This page describes the various configuration properties used in the application
 | `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)        | `false`                                  | `true`, `false`                     |
 | `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                             | `60`                                     | Any number                          |
 
-### SAVEFILES
+### SAVEFILES — Game Save File Management
 
 | Property              | Description                                                                                                                                     | Default | Possible Values                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------ |
@@ -122,7 +220,7 @@ This page describes the various configuration properties used in the application
 | `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `1 gb`  | e.g. "10 mb", "5 gb", "300 kb" |
 | `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `10`    | Any number                     |
 
-### METADATA
+### METADATA — Game Information Providers
 
 | Property                            | Description                                                                                                                                                            | Default | Possible Values    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |
@@ -133,7 +231,7 @@ This page describes the various configuration properties used in the application
 | `METADATA_IGDB_CLIENT_ID`           | The Client-ID used for authenticating requests to the IGDB API.                                                                                                        | -       | Your Client ID     |
 | `METADATA_IGDB_CLIENT_SECRET`       | The Client-Secret used for authenticating requests to the IGDB API.                                                                                                    | -       | Your Client Secret |
 
-### AUTH
+### AUTH — Authentication & Login Methods
 
 | Property                        | Description                                                                                                                                                                                                       | Default                               | Possible Values                                                             |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------- |
@@ -151,7 +249,7 @@ This page describes the various configuration properties used in the application
 | `AUTH_OAUTH2_CLIENT_ID`         | The OAuth2 client ID.                                                                                                                                                                                             | -                                     | Any string                                                                  |
 | `AUTH_OAUTH2_CLIENT_SECRET`     | The OAuth2 client secret.                                                                                                                                                                                         | -                                     | Any string                                                                  |
 
-### TESTING
+### TESTING — Development & Testing Options
 
 | Property                           | Description                                                                                                                           | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |
@@ -161,25 +259,11 @@ This page describes the various configuration properties used in the application
 | `TESTING_MOCK_PROVIDERS`           | If `true`, the server will create two mock providers. (-9999 and 9999 Priority) Useful for testing metadata-merges.                   | `false` | `true`, `false` |
 | `TESTING_LOG_HTTP_TRAFFIC_ENABLED` | If `true`, the server will log all incoming and outgoing HTTP traffic. (Except Healthchecks)                                          | `false` | `true`, `false` |
 
-## Docker Secrets Support
+---
 
-GameVault supports [Docker Secrets](https://docs.docker.com/compose/how-tos/use-secrets/) for **all** environment variables. Instead of passing a value directly as an environment variable, you can append `_FILE` to the variable name and set it to the path of a file containing the value.
+## Tips & Troubleshooting
 
-For example, instead of:
-
-```yaml
-environment:
-  DB_PASSWORD: my-secret-password
-```
-
-You can use:
-
-```yaml
-secrets:
-  db_password:
-    file: ./secrets/db_password.txt
-environment:
-  DB_PASSWORD_FILE: /run/secrets/db_password
-```
-
-The server will read the file contents and use them as the value for the variable. If both the variable and its `_FILE` variant are set, the `_FILE` variant takes priority.
+- **Confused about precedence?** See the real-world example under [Configuration Precedence](#configuration-precedence-priority-order) above.
+- **Using relative paths?** Relative paths in `VOLUMES_CONFIG` work but absolute paths are recommended for clarity.
+- **YAML not being read?** Ensure the file is named exactly `config.yaml` or `config.yml` and is in your `VOLUMES_CONFIG` folder.
+- **Secrets not working?** Make sure the file path in `VARIABLE_FILE` exists and contains the secret value (with no extra whitespace).
