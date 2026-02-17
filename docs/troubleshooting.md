@@ -59,7 +59,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 - [Set up a Metadata Provider](./server-docs/metadata-enrichment/metadata.md) that provides metadata for your games.
 - Verify if [your Metadata Provider is disabled in your server configuration](./server-docs/configuration.md).
 - Verify if [your file names are correct](./server-docs/structure.md)
-- Verify if you accidently marked your game as `(NC)` (No Cache Flag)
+- Verify if you accidently marked your game as `(NC)` (No Cache Flag). If you have multiple game versions, `(NC)` on **any version file** suppresses provider metadata updates for the whole game.
 
 ### Lost my Admin Role
 
@@ -95,7 +95,6 @@ If you're not sure how to gather logs, or your system makes it unclear you can u
    Set the environment variable `SERVER_LOG_FILES_ENABLED` to `true`
 
 2. **Set the log folder:**
-
    - If you're using Docker:  
      Bind a local folder to `/logs` using the docker volumes feature.
 
