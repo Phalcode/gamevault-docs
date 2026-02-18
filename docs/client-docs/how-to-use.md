@@ -59,7 +59,7 @@ The server automatically tries to determine the game's type based on the content
 
 For portable games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the `Install` button. GameVault will automatically move all the extracted game content to your game's installation directory. This should happen instantly.
 
-Once the installation is complete, your game is ready to be played in the library. If necessary, select the appropriate executable file to launch in the Game Settings tab and click `Play`.
+Once the installation is complete, your game is ready to be played.
 
 :::note No Game Executable
 If you don't see a game executable here but instead see a setup executable, the game's type has incorrectly been set to a portable type on the server. Contact your server administrators to manually override that game's type to a setup type. Then, manually move the files inside your game's installation folder back into the game's download folder. Run the installer and manually select the now-empty game's installation folder as its destination.
