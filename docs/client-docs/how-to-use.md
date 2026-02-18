@@ -41,7 +41,7 @@ GameVault games are [always served in some kind of archive format](../server-doc
 
 After the download is complete, locate the `Extract` button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory. A progress bar shows the extraction progress and estimated remaining time. Larger or extremely compressed games may take longer to extract.
 
-If there are extraction errors, you can retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you encounter repeated extraction errors for the same game, try to extract the game manually or contact your GameVault server administrators to check the integrity of those games.
+If there are extraction errors, you can retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you encounter repeated extraction errors for the same game, try to extract the game manually or contact your GameVault server administrators to check the integrity of those files.
 
 ### 2. Installing the Game
 
@@ -67,18 +67,20 @@ If you don't see a game executable here but instead see a setup executable, the 
 
 #### Installing Setup Games
 
-For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup.exe file and press the `Install` button.
+For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup executable and press the `Install` button.
 
 :::note No Setup Executable
-If you don't see a setup executable here but instead see the game's executable, it may have incorrectly been set to a setup type on the server. Contact your server administrators to manually override that game's type to a portable type. Then, manually move the files inside the game downloads `Extracted/` folder to the game's corresponding installation folder, and you should be ready to play.
+If you don't see a setup executable here but instead see the game's executable, it may have incorrectly been set to a setup type on the server. Contact your server administrators to manually override that game's type to a portable type. Then, manually move the files inside the game's download `Extracted/` folder to the game's corresponding installation folder, and you should be ready to play.
 :::
 
-During the external setup process **it is crucial to set the destination folder for your game files to your game's Installation folder** (e.g., `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`). This is where the final game files and executable should be located. If you don't set the destination, GameVault will have no idea where to look for your game files, and the game won't be playable. If you missed setting the destination folder or set it wrongly, uninstall the game from your system and retry this step.
+GameVault tries to automate setup installers as much as possible. It estimates the best installer parameters to run setups silently/invisibly and preconfigure the target installation directory. This works very well for many installers. For installers that cannot be fully automated, you may still need to confirm or manually set the installation path.
 
-Once the installation is complete, your game is ready to be played. Just select the appropriate .exe file to launch in the Installations tab and click `Play`.
+If you need to manually set the installation path, **it is crucial to set the destination folder for your game files to your game's Installation folder** (e.g., `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`). This is where the final game files and executable should be located. If you don't set the destination, GameVault will have no idea where to look for your game files, and the game won't be playable via GameVault. If you set it incorrectly, uninstall the game from your system and retry this step.
 
-:::info Why does GameVault not fully automate the setup procedure?
-Different external installers and setups work very differently, making it nearly impossible to fully automate every type. However, all installers have one thing in common: the ability to choose the installation path for the game. GameVault guides you through the process, but you still need to manually select the installation path and click through the installer.
+Once the installation is complete, your game is ready to be played.
+
+:::info How automated are setup installations in GameVault?
+GameVault can automate a large part of many setup installations by estimating installer arguments and target paths. This includes silent/invisible installs where supported. But because installer technologies differ, full automation is still not possible for every case. When an installer cannot be fully automated, you still need to manually select the installation path and click through the installer.
 :::
 
 #### Clearing Remains
@@ -87,7 +89,7 @@ Once you have fully confirmed that a game works, you are free to delete the game
 
 ## Playing a Game
 
-Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" tab. If GameVault didn't correctly predict the correct executable to launch automatically, you can change it in the game's settings and click the `Play` button to start the game.
+Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" section. If GameVault didn't correctly predict the correct executable to launch automatically, you can change it in the game's settings and click the `Play` button to start the game.
 
 ## Tracking Your Game Progress
 
@@ -100,7 +102,7 @@ The progress entry includes the completion state, which can be modified through 
 You have the ability to change the progress state or delete it using the community tab. Certain states also change automatically, such as transitioning from UNPLAYED to PLAYING when the game is launched.
 
 :::warning
-Please note that this Progress does not include your savegames. GameVault does not (yet 😉) have the capability to synchronize or store your savegames. Therefore, it is advisable to create backups of your savegames before uninstalling any games.
+Progress tracking does not include savegames. While GameVault [supports savegame synchronization and storage](../gamevault-plus/cloud-saves.md), this functionality is exclusive to the [GameVault+](../gamevault-plus/introduction.md) premium subscription and operates independently from progress tracking.
 :::
 
 ## Modifying Games
