@@ -32,7 +32,7 @@ services:
     ports:
       - 8080:8080/tcp
   db:
-    image: postgres:17
+    image: postgres:18
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
@@ -40,7 +40,7 @@ services:
       POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your PostgreSQL database files should land
-      - /your/database/folder:/var/lib/postgresql/data
+      - /your/database/folder:/var/lib/postgresql
 ```
 
 :::note
