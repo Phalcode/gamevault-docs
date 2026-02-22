@@ -40,7 +40,7 @@ services:
     ports:
       - 8080:8080/tcp
   db:
-    image: postgres:17
+    image: postgres:18
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
@@ -48,7 +48,7 @@ services:
       POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your PostgreSQL database files should land
-      - /your/database/folder:/var/lib/postgresql/data
+      - /your/database/folder:/var/lib/postgresql
 
 ```
 
@@ -81,7 +81,7 @@ An example of the finished config is available below under "Step 2a".
 GameVault expects three directories:
 
 - a directory where your games are located - mounted to the /files directory internally
-- a directory for GameVault to store the database files - mounted to the /var/lib/postgresql/data directory internally
+- a directory for GameVault to store the database files - mounted to the /var/lib/postgresql directory internally
 - a database for GameVault to store its media - mounted to the /media directory internally
   
 These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server.
@@ -130,7 +130,7 @@ services:
     ports:
       - 8080:8080/tcp
   db:
-    image: postgres:17
+    image: postgres:18
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
@@ -138,7 +138,7 @@ services:
       POSTGRES_DB: gamevault
     volumes:
       # Mount the folder where your PostgreSQL database files should land
-      - /Tank1/GameVault/database:/var/lib/postgresql/data
+      - /Tank1/GameVault/database:/var/lib/postgresql
 ```
 
 You should change the `DB_PASSWORD` and `POSTGRES_PASSWORD` variables to be an actual password instead of "YOURPASSWORDHERE". 

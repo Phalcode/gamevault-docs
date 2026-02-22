@@ -56,14 +56,14 @@ services:
     ports:
       - 8080:8080/tcp
   db:
-    image: postgres:17
+    image: postgres:18
     restart: unless-stopped
     environment:
       POSTGRES_USER: gamevault
       POSTGRES_PASSWORD: YOURPASSWORDHERE
       POSTGRES_DB: gamevault
     volumes:
-      - /volume1/docker/gamevault/database:/var/lib/postgresql/data
+      - /volume1/docker/gamevault/database:/var/lib/postgresql
 ```
 
 :::note
