@@ -26,13 +26,16 @@ Delete `v1.1.0` as well → game is soft-deleted on next indexing.
 
 ## Deleting a Game via API
 
-Since version 16.3.0, admins can delete game files via API.
+Admins can delete game files via API. With multi-version support, deletion is version-specific.
 
 Behavior:
 
-- `DELETE /api/games/:game_id?version=v1.0.0` deletes one specific version.
-- `DELETE /api/games/:game_id` deletes all version files of that game.
-- If no files remain, the game is soft-deleted.
+- `GET /api/games/:game_id` returns the available version entries in `versions[]`.
+- `DELETE /api/game/:game_id/versions/:version_id` deletes exactly one version file from disk.
+- If other version files remain, the game stays visible and another version may become the default download.
+- If no files remain, the game is soft-deleted on the next indexing or integrity-check cycle.
+
+There is currently no bulk API endpoint that deletes all versions of a game in one call. To fully remove a game through the API, delete each version individually or remove the files from `/files`.
 
 Only **Admin** users can call this endpoint, and the server needs write access to `VOLUMES_FILES`.
 
