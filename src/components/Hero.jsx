@@ -42,7 +42,7 @@ export function Hero() {
             <div className="mb-8 flex justify-center lg:justify-start">
               <a
                 href="#demo"
-                className="group relative inline-flex items-center gap-x-2 rounded-full bg-primary-default/10 px-4 py-1.5 text-sm font-medium leading-6 text-primary-light transition-all duration-300 !no-underline"
+                 className="group relative inline-flex items-center gap-x-2 rounded-full bg-primary-default/10 px-4 py-1.5 text-sm font-medium leading-6 text-primary-light transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-darkest focus-visible:outline-offset-2 !no-underline"
               >
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-default opacity-75"></span>
@@ -128,7 +128,7 @@ export function Hero() {
           <div className="rounded-2xl bg-background-dark/50 p-2 lg:rounded-3xl lg:p-4 backdrop-blur-sm">
             <div className="relative rounded-xl shadow-2xl group">
               <img
-                src={ImgLibrary}
+                src={ImgLibrary} loading="lazy"
                 alt="GameVault Library Screenshot"
                 data-zoomable
                 className="zoomable cursor-zoom-in w-full rounded-xl bg-background-default shadow-2xl"

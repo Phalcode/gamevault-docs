@@ -16,13 +16,14 @@ export default function Home() {
       title="The Ultimate Self-Hosted Gaming Platform"
       description="Host your own DRM-free game library, track your stats, and share the experience with friends. It's like having your own personal Steam, but you're the one in control."
     >
+      <a href="#main-content" className="sr-only focus:not-sr-only">Skip to main content</a>
       <noscript>
         <img
           src="https://api.swetrix.com/log/noscript?pid=K6k7j6GHClhh"
           alt=""
         />
       </noscript>
-      <main>
+        <main id="main-content">
         <section className="bg-background-dark">
           <Hero />
         </section>
