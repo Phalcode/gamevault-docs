@@ -2,7 +2,7 @@
 title: "Playnite"
 ---
 
-**GameVault+** integrates seamlessly with **[Playnite](https://playnite.link)** using our [**Playnite Library Extension**](https://playnite.link/addons.html#GameVault_fab8be77-18ab-4e6c-ad3d-89097b492d74). Enjoy the convenience of browsing, launching, and installing your games directly from Playnite, just as you're used to!
+GameVault+ integrates with [Playnite](https://playnite.link) through the [Playnite Library Extension](https://playnite.link/addons.html#GameVault_fab8be77-18ab-4e6c-ad3d-89097b492d74). It lets you browse, launch, and install GameVault titles from Playnite.
 
 ![GameVault+ Playnite Integration Showcase](/img/plus/integrations/playnite/showcase.png)
 
@@ -10,7 +10,7 @@ title: "Playnite"
 
 ### Prerequisites
 
-Before starting, make sure you're [logged in to **GameVault+**](../client-setup.md) within your GameVault application.
+Before you start, make sure you are [logged in to GameVault+](../client-setup.md) in the GameVault client.
 
 ### **Download the Extension**
 
@@ -27,5 +27,5 @@ You can also download the extension from our [GitHub Releases](https://github.co
 
 ### **Communication with the Client**
 
-As of client version 1.17.1 and extension version 1.2, all communication occurs exclusively via the Client API or the gamevault:// protocol.
-This eliminates the need for a separate login, as the game list is retrieved directly from the server associated with the currently logged-in GameVault Client profile.
+As of client version 1.17.1 and extension version 1.2, all communication goes through the Client API or the `gamevault://` protocol.
+You do not need a separate Playnite login. The extension reads the game list from the server linked to the currently logged-in GameVault client profile.

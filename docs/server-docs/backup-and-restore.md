@@ -5,31 +5,31 @@ sidebar_position: 7.5
 # Database Backup & Restoration
 
 :::warning Experimental
-The Backup and Restoration Mechanisms in GameVault are currently experimental and should **not** be your primary backup solution. Always maintain your database backups independently and only consider using this as a last resort. In summary, we recommend avoiding this entire process whenever possible, as it can potentially be quite fragile and prone to issues. But i guess something is better than nothing...
+GameVault's backup and restore features are experimental and should not be your primary backup solution. Keep independent database backups and use this feature only as a last resort. The workflow is fragile enough that you should avoid relying on it unless you have no better option.
 :::
 
 :::note Security Measurements  
-For security resons any database operation outlined below must be additionally authenticated using your database password.  
+For security reasons, every database operation described below requires your database password.  
 :::
 
 ## Backup
 
-GameVault offers a user-friendly backup system for both supported database systems, Postgres and SQLite. You can trigger and download backups either through the GameVault Client or directly via the [API](../advanced-usage/rest-api) for automation purposes. Each backup is a complete database snapshot, and it's essential to handle these files with care, as they are unencrypted. You can create as many backups as needed.
+GameVault can create backups for both supported database systems: Postgres and SQLite. You can trigger and download backups through the GameVault client or through the [API](../advanced-usage/rest-api) for automation. Each backup is a full database snapshot and is stored unencrypted, so handle the files accordingly.
 
 For SQLite, the GameVault Backup simply duplicates the database file.
 
-For Postgres, it utilizes pgdump to create a comprehensive database dump.
+For Postgres, it uses `pg_dump` to create a database dump.
 
 ## Restoration
 
-Restoring a backup is a straightforward process.
+Restoring a backup is simple, but risky.
 
-You can trigger the restoration and upload backups using the GameVault Client or via the [API](../advanced-usage/rest-api) for automated procedures. However, before you proceed, there are some critical points to consider:
+You can upload a backup and start the restore from the GameVault client or through the [API](../advanced-usage/rest-api). Before you proceed, keep these points in mind:
 
-1. We strongly discourage restoring a backup on a different server version. If you must do it, consider downgrading your GameVault server to a lower version, ideally the version of your backup, as higher versions are more likely to cause compatibility issues. If you have no alternative, make sure to back up your current data again before proceeding.
+1. Avoid restoring a backup on a different server version. If you must do it, downgrade the GameVault server to the version that created the backup if possible. Higher versions are more likely to hit compatibility issues. Before you continue, create another backup of the current data.
 
-2. **Never, under any circumstances**, attempt to restore a backup from a different database technology (e.g., SQLite to Postgres or vice versa). This will result in a catastrophic failure.
+2. Never restore a backup from a different database technology such as SQLite to Postgres or the other way around. It will fail.
 
-3. Always monitor the server logs while restoring a backup. If you notice anything unusual or different than a harmless warning, make a copy and store the file located at /tmp/gamevault-pre-restore.db on your container/server. This file serves as a backup created just before restoring the uploaded backup. In case of a major failure, GameVault may also perform this pre-restore backup restoration automatically. If you encounter difficulties, attempt to restore from this file. If this doesn't resolve the issue, you may need to explore manual restoration or consider other backup options.
+3. Watch the server logs during the restore. If you see anything beyond a harmless warning, copy the file at `/tmp/gamevault-pre-restore.db` from the container or server. GameVault creates it immediately before restoring the uploaded backup. In a major failure, GameVault may try to restore this pre-restore backup automatically. If recovery still fails, you will need to restore manually or use another backup.
 
-4. The Restoration is not incremental. It hard-deletes everything and hard-restores everything.
+4. Restoration is not incremental. It deletes the existing data set and replaces it with the uploaded backup.

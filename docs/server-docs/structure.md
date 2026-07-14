@@ -76,7 +76,7 @@ Here are some other valid examples of game names that follow the naming conventi
 
 ## Mounting Multiple Game Volumes
 
-Modern games can be quite large, often requiring storage across multiple disks on the server side. GameVault, however, uses a single `/files` folder to access its games. How can you map multiple drives to your GameVault server while ensuring seamless operation?
+Modern games are often large enough to span multiple disks. GameVault still reads them through a single `/files` folder. This section shows how to map multiple drives into that structure.
 
 ### Using Docker
 

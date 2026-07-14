@@ -3,31 +3,31 @@ sidebar_position: 4
 title: "Client APIs"
 ---
 
-The GameVault Client APIs offer interfaces for external use of the GameVault client application for subscribers of GameVault+. Whether you're interacting via the command line, URI, or NamedPipe, you have access to various functionalities provided by the GameVault Client Application. This can be useful for third-party developers who want to integrate with the GameVault ecosystem. (e.g. Playnite Extension)
+The GameVault Client APIs expose parts of the GameVault client application to GameVault+ subscribers. You can interact with the client through the command line, the `gamevault://` URI scheme, or a named pipe. These interfaces are mainly intended for third-party integrations such as the Playnite extension.
 
-This guide provides comprehensive information on utilizing various interfaces offered by the GameVault client application for third-party developers. Whether you're building extensions or integrating with the GameVault ecosystem, this documentation will guide you through the available APIs and their specifications.
+This page explains the available APIs, their actions, and their parameters.
 
 ## Available APIs
 
 ### CLI
 
-The Command Line Interface (CLI) provides a straightforward way to interact with the GameVault client application directly from the command line. It supports various actions and parameters for seamless integration into your workflows.
+Use the Command Line Interface (CLI) to interact with the GameVault client directly from a terminal.
 
 ### URI
 
-The Uniform Resource Identifier (URI) handler allows for communication with the GameVault client application through custom URI schemes. By leveraging URI endpoints, you can trigger actions and pass parameters conveniently.
+Use the URI handler to trigger client actions through the custom `gamevault://` scheme.
 
 ### NamedPipe
 
-The NamedPipe interface facilitates communication between processes on the same machine. Through NamedPipe, you can send messages to and receive responses from the GameVault client application, enabling real-time interaction.
+Use the named pipe to exchange messages with the GameVault client from another process on the same machine.
 
 ## Usage
 
-The following sections detail how to use each API provided by the GameVault client application.
+The following sections show how to use each API.
 
 ## Available Actions & Parameters
 
-Explore the list of actions and parameters supported by the GameVault client APIs. (Bold parameters are required, Asterisks indicate default values )
+The list below shows the supported actions and parameters. Bold parameters are required. An asterisk marks the default value.
 
 - `<none>`
 
@@ -72,9 +72,9 @@ Explore the list of actions and parameters supported by the GameVault client API
 
 ## URI "Query" Action
 
-The URI "query" action allows you to retrieve information from the client-side app. It is not a replacement for server-side backend interaction but serves as a means to obtain simple information.
+The URI `query` action returns simple information from the client application. It does not replace server-side API access.
 
-When sending a request via URI, an additional action called `query` is available, which lets you get information from the client-side app. This is **not** a replacement for the server-side backend and is just a way to get simple information. The specific value to query is provided in the `query` parameter, with the following options available:
+Set the `query` parameter to one of the following values:
 
 - `exists`: Check if the provided `gameid`-parameter exists locally or on the configured server (True/False).
 - `installed`: Check if the provided `gameid`-parameter is installed (True/False).
@@ -88,7 +88,7 @@ When sending a request via URI, an additional action called `query` is available
 
 ## Command-line Examples
 
-Explore examples of using the GameVault client APIs via the command line:
+Examples:
 
 ```ps1
 # Launch GameVault
@@ -124,7 +124,7 @@ gamevault.exe help start
 
 ## URI Examples
 
-Discover examples of using the GameVault client APIs via URI:
+URI examples:
 
 ```uri
 gamevault://show
@@ -137,7 +137,7 @@ gamevault://start?gameid=3&minimized=false
 
 ## Query Examples
 
-Explore examples of querying the GameVault client application through URI:
+Query examples:
 
 ```uri
 gamevault://query?query=exists&gameid=3
@@ -152,7 +152,7 @@ gamevault://query?query=isloggedin
 
 ## C# Code Example
 
-For developers working with C#, here's an example of interacting with the GameVault app through the NamedPipe:
+The following C# example sends a message through the named pipe:
 
 ```csharp
 using System;
