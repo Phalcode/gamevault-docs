@@ -42,6 +42,7 @@ export function DemoSection() {
                 <Button
                   href="https://demo.gamevau.lt"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto px-12 py-4 text-xl shadow-xl transition-all hover:scale-105 active:scale-95 hover:shadow-primary-default/30"
                 >
                   Launch Demo
@@ -76,13 +77,14 @@ export function DemoSection() {
                         <code className="text-primary-light text-lg font-bold px-2">
                           demo
                         </code>
-                        <span
-                          className={`text-[10px] uppercase tracking-widest transition-all ${
-                            copiedField === "user"
-                              ? "text-primary-default opacity-100"
-                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
-                          }`}
-                        >
+                         <span
+                           className={`text-[10px] uppercase tracking-widest transition-all ${
+                             copiedField === "user"
+                               ? "text-primary-default opacity-100"
+                               : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                           }`}
+                           aria-live="polite"
+                         >
                           {copiedField === "user" ? "Copied!" : "Copy"}
                         </span>
                       </div>
@@ -102,13 +104,14 @@ export function DemoSection() {
                         <code className="text-primary-light text-lg font-bold px-2">
                           demodemo
                         </code>
-                        <span
-                          className={`text-[10px] uppercase tracking-widest transition-all ${
-                            copiedField === "pass"
-                              ? "text-primary-default opacity-100"
-                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
-                          }`}
-                        >
+                         <span
+                           className={`text-[10px] uppercase tracking-widest transition-all ${
+                             copiedField === "pass"
+                               ? "text-primary-default opacity-100"
+                               : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                           }`}
+                           aria-live="polite"
+                         >
                           {copiedField === "pass" ? "Copied!" : "Copy"}
                         </span>
                       </div>

@@ -84,6 +84,11 @@ main li {
 .animate-float {
   animation: float 8s ease-in-out infinite;
 }
+@media (prefers-reduced-motion: reduce) {
+  .animate-float {
+    animation: none;
+  }
+}
 
 .zoomable {
   cursor: zoom-in !important;

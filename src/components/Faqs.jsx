@@ -66,14 +66,14 @@ export function Faqs() {
           <p className="mt-6 text-lg leading-8 text-text-light">
             Can’t find what you’re looking for? Reach out via{" "}
             <Link
-              href="https://discord.gg/NEdNen2dSu"
+              href="https://discord.gg/NEdNen2dSu" rel="noopener noreferrer"
               className="text-primary-default underline underline-offset-4 hover:text-primary-light"
             >
               Discord
             </Link>
             ,{" "}
             <Link
-              href="https://github.com/Phalcode/gamevault-app/discussions"
+              href="https://github.com/Phalcode/gamevault-app/discussions" rel="noopener noreferrer"
               className="text-primary-default underline underline-offset-4 hover:text-primary-light"
             >
               GitHub
