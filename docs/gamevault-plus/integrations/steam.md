@@ -2,7 +2,7 @@
 title: "Steam"
 ---
 
-**GameVault+** offers seamless integration with **[Steam](https://steampowered.com)** through the **Steam Sync Integration**. When enabled, all your installed games are automatically synced to your Steam Library and appear as Non-Steam Games. Launching these games via Steam will route them through GameVault, ensuring all your custom launch options are preserved.
+GameVault+ integrates with [Steam](https://steampowered.com) through Steam Sync. When enabled, your installed games are added to your Steam library as Non-Steam Games. Starting them from Steam launches them through GameVault and keeps your configured launch options.
 
 ![Steam Integration Showcase](/img/plus/integrations/steam/showcase.png)
 
@@ -10,7 +10,7 @@ title: "Steam"
 
 ### Prerequisites
 
-Before starting, ensure that you have [installed Steam](https://store.steampowered.com/about/), are logged into your Steam account, and are [logged in to **GameVault+**](../client-setup.md) within your GameVault application.
+Before you start, make sure Steam is [installed](https://store.steampowered.com/about/), you are logged into your Steam account, and you are [logged in to GameVault+](../client-setup.md) in the GameVault client.
 
 ### **Step 1: Enable Steam Sync**
 
@@ -18,7 +18,7 @@ Before starting, ensure that you have [installed Steam](https://store.steampower
 2. Open the GameVault Application and click on the **Settings** tab.
 3. Navigate to **GameVault+** -> **Features** -> **Steam**.
 4. Toggle **Sync** to enable the integration.
-5. Restart Steam. Your installed games will now sync with your Steam Library.
+5. Restart Steam. Your installed games will then sync to your Steam library.
 
 ## Important Notes
 

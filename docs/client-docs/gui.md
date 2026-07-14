@@ -28,7 +28,7 @@ See more [here](setup.md#initial-configuration)
 
 !["Game Page"](/img/features/game.png)
 
-- View comprehensive game details including a Media Player for Trailers/Gameplays/Screenshots
+- View game details, including a media player for trailers, gameplay videos, and screenshots
 - Descriptions and Notes can also be displayed as Markdown.
 - Set progress states (e.g., completed or aborted).
 - Review personal progress and that of other users

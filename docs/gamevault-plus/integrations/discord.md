@@ -2,7 +2,7 @@
 title: "Discord"
 ---
 
-**GameVault+** offers seamless integration with **[Discord](https://discord.com)** through **Discord Rich Presence**. When enabled, the games you're currently playing are automatically displayed to your friends and servers on Discord.
+GameVault+ integrates with [Discord](https://discord.com) through Discord Rich Presence. When enabled, Discord shows the game you are currently playing.
 
 ![Discord Integration Showcase](/img/plus/integrations/discord/showcase.png)
 
@@ -10,7 +10,7 @@ title: "Discord"
 
 ### Prerequisites
 
-Before proceeding, ensure the following:
+Before you start:
 
 - You have [Discord app installed](https://discord.com) and are logged into your account.
 - You are [logged in to **GameVault+**](../client-setup.md) within the GameVault application.
@@ -20,7 +20,7 @@ Before proceeding, ensure the following:
 1. Open the GameVault application and go to the **Settings** tab.
 2. Navigate to **GameVault+** > **Features** > **Discord**.
 3. Toggle **Sync** to activate the integration.
-4. Your play status will now sync with Discord.
+4. Your play status now syncs with Discord.
 
 ### Important Notes
 

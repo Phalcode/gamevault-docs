@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Setting up a GameVault Client
 
-If you want to use GameVault to download and install games on your computer, you need to follow these steps.
+Follow this guide to install GameVault on your computer and connect it to a server.
 
 ## Installation
 
@@ -20,14 +20,14 @@ Experienced users can also simply run this command in PowerShell:
 winget install gamevault
 ```
 
-This process should be straightforward and will only take a few minutes. After installing, proceed to [Initial Configuration](#initial-configuration).
+After installation, continue with [Initial Configuration](#initial-configuration).
 
 ### Alternative Installation Options
 
-If, for some reason, you prefer not to use the Microsoft Store or are using a different platform, there are several other methods available to install the GameVault Client Application.
+If you do not want to use the Microsoft Store, or you are on another platform, use one of the alternatives below.
 
 :::warning
-Please not that any other method than installing it from the Microsoft Store is **less supported** and **unrecommended** and should only be used as a last resort. Also be aware [that you will be responsible for managing updates manually!](updating-client.md#other-sources)
+Please note that every option outside the Microsoft Store is less supported and should be treated as a fallback. You will also need to [manage updates manually](updating-client.md#other-sources).
 :::
 
 #### Option 1: Obtain Pre-Built Artifacts from GitHub
@@ -115,7 +115,7 @@ What happens after clicking "Save and Sign Up" depends on the server configurati
 
 ![pendingactivation](/img/docs/setup-client/login-window-pending-activation.png)
 
-You can either return to the profile selection or wait until an admin activates your account. Once activated, you will be logged in automatically.
+You can return to the profile selection or wait for an admin to activate your account. Once that happens, the client logs you in automatically.
 
 ### Server Input Validation
 
@@ -158,10 +158,8 @@ Click "Add" and select your desired path in the file dialog. Repeat to add multi
 GameVault will automatically create a subfolder named `GameVault` in each selected directory and initialize it with the required data.
 :::
 
-## Conclusion
+## Next Step
 
-Congratulations! You have successfully installed and configured GameVault. You are now ready to explore and enjoy the features and functionality of the app.
+Your client is now ready to use.
 
-If you have further questions or need help, refer to the remaining chapters of this documentation or contact our support team.
-
-We especially recommend reading the ["How to Use" chapter](how-to-use.md) to better understand how GameVault works.
+For day-to-day usage, read the ["How to Use" chapter](how-to-use.md).

@@ -51,7 +51,7 @@ This command uses the following options:
 
 ### Method 2: The Hardcore Way
 
-To achieve the smallest possible archive size, use the maximum settings of 7zip. The resulting archive may or may not be much smaller than before, but it will definitely be as small as possible. However, this process could take a long time, depending on your hardware, and is very resource-intensive.
+Use the maximum 7-Zip settings if you want the smallest archive size. Depending on the game and your hardware, the result may be only slightly smaller, and the compression step can take a long time.
 
 ```bash
 7z a -mx=9 -mfb=64 -md=32m -ms=on game.7z /path/to/game/folder/Crawl/*

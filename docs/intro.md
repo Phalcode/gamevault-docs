@@ -6,9 +6,9 @@ sidebar_position: 1
 
 ## What is GameVault?
 
-GameVault is a selfhostable [source-available](https://wikipedia.org/wiki/Source-available_software) gaming platform for DRM-free videogames. It offers a Steam-like browsing and playing experience for you and your community to enjoy the game files stored **on your file server** in an organized way.
+GameVault is a selfhostable [source-available](https://wikipedia.org/wiki/Source-available_software) gaming platform for DRM-free videogames. It gives you and your community a Steam-like way to browse and play the game files stored on your file server.
 
-You simply put your game files (installers, binaries, etc.) - from wherever you have them, into a folder and the server detects them, enriches them with metadata and offers a user-friendly interface to easily organize, download, install, and play your games. It even tracks your playtimes and progress.
+Add your game files such as installers and portable builds to a folder. The server detects them, enriches them with metadata, and exposes them through a client where users can organize, download, install, and launch games. It also tracks playtime and progress.
 
 GameVault consists of two components:
 
@@ -24,8 +24,6 @@ If you don't have a server yet, but want to try it out, you can use our demo ser
 :::
 
 ## Features
-
-Let's take a look at all the main functions of GameVault:
 
 ### Client Features
 
@@ -51,7 +49,7 @@ Let's take a look at all the main functions of GameVault:
 - ⏱️ [Game progress tracking system](./client-docs/how-to-use#tracking-your-game-progress)
 - 🚨 [Built-in health monitoring and logging](./advanced-usage/rest-api)
 - 🔎 [Advanced search, filtering, and sorting](./advanced-usage/rest-api)
-- 🔌 [Comprehensive API documentation](./advanced-usage/rest-api)
+- 🔌 [API documentation](./advanced-usage/rest-api)
 - ⚙️ [Highly configurable server settings](./server-docs/configuration)
 - 🔌 [Extensible plugin framework](./server-docs/plugins.md)
 - 🔄 [WebSocket support for real-time updates](./server-docs/websockets.md)
@@ -64,7 +62,7 @@ Let's take a look at all the main functions of GameVault:
 
 ## Support Us
 
-We're working hard in our free time to provide you, your friends, and families with the best self-hosted gaming experience. It would mean a lot to us if you could support us developers by [getting GameVault+](./gamevault-plus/introduction.md).
+We build GameVault in our free time. If you want to support continued development, [get GameVault+](./gamevault-plus/introduction.md).
 
 Alternatively you can support us by donating us some spare dollars on any of these platforms:
 
@@ -74,7 +72,7 @@ Alternatively you can support us by donating us some spare dollars on any of the
 - [PayPal](https://paypal.me/phalcode)
 
 :::tip Tip for donators
-If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters"-Role and permanently stand out in our [Discord](https://discord.gg/NEdNen2dSu) members list. If you donate through a different platform and want to obtain the role, simply send us a message with your receipt as proof.
+If you connect your [Discord](https://discord.gg/NEdNen2dSu) account to Ko-Fi, you'll automatically receive the "@Supporters" role in our [Discord](https://discord.gg/NEdNen2dSu). If you donate through another platform and want the role, send us your receipt as proof.
 :::
 
 ## License
@@ -94,7 +92,7 @@ GameVault is not open-source software. [Click here to learn why.](/blog/2023/07/
 ## Legal Disclaimer
 
 :::warning Legal Disclaimer
-GameVault manages DRM-free games and is solely a tool to address this need. We are not responsible for the content or files users store or share.
+GameVault manages DRM-free games. We are not responsible for the content or files users store or share.
 
 When we say DRM-free games, we only mean games obtained legally. While GameVault _can_ theoretically be used with illegally obtained games, we do not endorse or support piracy.
 
