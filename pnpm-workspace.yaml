@@ -1,5 +1,5 @@
 allowBuilds:
-  core-js: set this to true or false
-  core-js-pure: set this to true or false
+  core-js: true
+  core-js-pure: true
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
