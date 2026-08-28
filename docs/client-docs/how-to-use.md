@@ -31,6 +31,14 @@ As stated above, GameVault generates two folders to store the game files and use
 
 Your downloaded game archive will be saved in `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`. The `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
 
+## Selecting a Game Version
+
+If a game has [multiple versions](../server-docs/adding-games.md#keeping-multiple-versions-of-the-same-game) on the server, you can choose which one to download. Open the game's details page or click the download button on its card and pick the desired version from the version list. The server ranks the versions and marks the highest-ranked one as the default; the version list shows each entry, so you can always download another version later.
+
+:::note Legacy client
+The legacy Windows client always downloads the server-selected latest version and does not offer a version picker.
+:::
+
 To start playing a game you've downloaded, follow these steps to install it. This process makes it easier for you.
 
 Game installation has two main parts:

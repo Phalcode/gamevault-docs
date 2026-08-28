@@ -73,6 +73,16 @@ Note the `url_` prefix.
 
 GameVault stores each media resource referenced in the database as one-to-one, with no media reuse. So it's normal to see duplicates.
 
+## HTTP Caching
+
+Media files are immutable: their unique id never changes. Starting with `v17.0.0`, the media endpoint (`/api/media/:id`) therefore serves files with long-lived HTTP caching, so clients can reuse covers and artwork without re-downloading them:
+
+- Responses include `Cache-Control: public, max-age=31536000, immutable`.
+- `ETag` and `Last-Modified` headers are set based on the file on disk.
+- Conditional requests (`If-None-Match` / `If-Modified-Since`) are answered with `304 Not Modified`.
+
+This is fully transparent for API consumers and requires no configuration.
+
 ## Media Garbage Collection
 
 :::danger Potential data loss
