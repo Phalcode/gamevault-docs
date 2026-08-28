@@ -163,3 +163,8 @@ See more [here](setup.md#initial-configuration)
 - At the bottom left of the screen is a button with which you can display the latest news from gamevault or the server's own news.
 - When new news are available the button will be marked with a red badged.
 - News can also be displayed as Markdown.
+- Administrators can edit the server's news with the built-in News Editor (Markdown supported). Changes are saved to the server's `news.md` file.
+
+## Gamepad
+
+Starting with `v17.0.0`, the client supports **gamepad navigation**. Connect a gamepad and use the D-pad or left stick to move the focus between UI elements: the **A** button confirms/activates the focused element and the **B** button goes back. A visible focus ring shows the currently selected element while navigating with a gamepad.

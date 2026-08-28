@@ -23,3 +23,7 @@ volumes:
 ## Managing News via API
 
 Starting with `v16.3.0`, administrators can update server news directly via API. Only users with the **Admin** role can update news. The server must be able to write to your config volume (`VOLUMES_CONFIG`).
+
+## Editing News in the Client
+
+Starting with `v17.0.0`, the GameVault client includes a built-in **News Editor** for administrators. Open the News dialog (newspaper icon in the sidebar) and switch to the **Server News** tab: admins see an **Edit** button that opens a Markdown editor with a preview. Changes are saved back to the server's `news.md` file via the API, so you no longer need to edit the file manually. Only users with the **Admin** role can edit server news.

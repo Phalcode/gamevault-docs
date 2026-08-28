@@ -95,6 +95,8 @@ GameVault supports multiple downloadable versions per game.
 
 If you add files that resolve to the same game identity (same title and release-year bucket), GameVault keeps them as versions of one game instead of creating separate game entries.
 
+Files without a release-year tag are grouped into a shared no-year bucket first, so multiple untagged files with the same title are also merged into versions of one game instead of creating separate entries. If you want same-title files to stay separate, make the titles distinct using square brackets `[]` (see below).
+
 **Example (same game, multiple versions):**
 
 - `Minecraft (v1.7.10) (2011).zip`

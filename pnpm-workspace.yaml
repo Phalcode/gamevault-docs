@@ -1,5 +1,7 @@
 allowBuilds:
   core-js: true
   core-js-pure: true
+minimumReleaseAgeExclude:
+  - swetrix@4.6.0
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
