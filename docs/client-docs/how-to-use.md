@@ -6,15 +6,26 @@ sidebar_position: 2
 
 ## File & Folder Structure
 
+All downloaded and installed game files are stored inside a root folder that you choose in the client settings (Downloads → Download locations).
+
+### Cross-Platform Client
+
+The modern client organizes each game and version separately:
+
+- `<Root>/GameVault/<Title>/Versions/<Version>/Download/`: the downloaded archive
+- `<Root>/GameVault/<Title>/Versions/<Version>/Extraction/`: the extracted files
+- `<Root>/GameVault/<Title>/Versions/<Version>/Installation/`: the installed game
+
+### Legacy Windows App
+
+The legacy Windows client uses a flatter layout:
+
+- `D:/GameVault/Downloads/`: where your downloads are saved. For each downloaded game, GameVault generates a new folder in this directory.
+- `D:/GameVault/Installations/`: where your installed games belong. For each downloaded game, GameVault generates a new folder in this directory.
+
 :::note Example
 Let's say you installed GameVault freshly and configured your Root folder path to `D:/` because your D Drive is larger.
 :::
-
-GameVault will now generate its folder structure. When everything is done, your file system will look like this:
-
-- `D:/GameVault/` - Root Folder
-  - `D:/GameVault/Downloads/` - This folder is where your downloads will be saved. For each downloaded game, GameVault generates a new folder in this directory.
-  - `D:/GameVault/Installations/` - This folder is where your installed games belong. For each downloaded game, GameVault generates a new folder in this directory.
 
 ## Downloading Games
 
@@ -24,12 +35,12 @@ Let's say you found the game `Assassin's Creed Unity (Game ID: 74)` in the Libra
 Only download games from servers you fully trust! There's a potential risk of malware. If your antivirus alerts during the following process, abort any download and installation of the game, fully delete the downloaded data, and warn your server admins to address the malware promptly.
 :::
 
-As stated above, GameVault generates two folders to store the game files and uses the game ID in the name to identify them:
+GameVault uses the game's name (and, in the cross-platform client, its version) to identify the folders:
 
-- `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`
-- `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`
+- **Cross-platform client:** `<Root>/GameVault/Assassin's Creed Unity/Versions/<Version>/Download/` (plus `Extraction/` and `Installation/`)
+- **Legacy Windows app:** `<Root>/GameVault/Downloads/(74) Assassin's Creed Unity/` and `<Root>/GameVault/Installations/(74) Assassin's Creed Unity/`
 
-Your downloaded game archive will be saved in `<GameVault Root>/GameVault/Downloads/(74) Assassin's Creed Unity/`. The `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/` folder should be empty for now.
+Your downloaded game archive is saved in the download folder. The installation folder should be empty until you install the game.
 
 ## Selecting a Game Version
 
@@ -101,7 +112,7 @@ Launching a game on GameVault is simple. Once your game is installed and ready t
 
 ## Tracking Your Game Progress
 
-Once GameVault is launched, it automatically activates a time-tracking daemon. This diligent daemon continuously monitors your game progress, specifically your playtime, and promptly sends this information to the server whenever any .exe file (except those on the ignore-list) is running within a folder located in your Installations directory `<GameVault Root>/Installations/*`. Even if you play without an internet connection, your playtime will still be tracked and updated on the server as soon as you regain connectivity.
+Once GameVault is launched, it automatically activates playtime tracking. Both desktop clients continuously monitor your playtime and send this information to the server whenever a game executable (except those on the ignore list) is running from your game installation folders. Even if you play without an internet connection, your playtime is still tracked and synced to the server as soon as you regain connectivity.
 
 In our context, the term "Progress" refers to a user's activity of playing a game. Each user can have a single progress entry per game.
 

@@ -25,9 +25,13 @@
 | Property                      | Description                            | Default | Possible Values    |
 | ----------------------------- | -------------------------------------- | ------- | ------------------ |
 | `METADATA_IGDB_ENABLED`       | Enables / Disables the Provider        | `true`  | `true`, `false`    |
-| `METADATA_IGDB_PRIORITY`      | Priority of the Provider               | `50`    | Any Integer        |
+| `METADATA_IGDB_PRIORITY`      | Priority of the Provider               | `10`    | Any Integer        |
 | `METADATA_IGDB_CLIENT_ID`     | Your developer.twitch.tv Client ID     | -       | Your Client-ID     |
 | `METADATA_IGDB_CLIENT_SECRET` | Your developer.twitch.tv Client Secret | -       | Your Client-Secret |
+
+:::note
+The IGDB provider is automatically disabled if `METADATA_IGDB_CLIENT_ID` or `METADATA_IGDB_CLIENT_SECRET` are not set.
+:::
 
 ## Mappings
 

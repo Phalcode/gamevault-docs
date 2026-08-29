@@ -41,7 +41,7 @@ gamevault-backend:
 Failed authentication attempts will appear in the log files in the following format:
 
 ```bash
-info:    ┏ [17/Aug/2023:20:25:47 +0000] Username @ Address - GET /api/v1/users/me -> 401 - 28.231 ms - 112 - 'GameVault/1.3.0'
+info:    ┏ [17/Aug/2023:20:25:47 +0000] Username @ Address - GET /api/users/me -> 401 - 28.231 ms - 112 - 'GameVault/1.3.0'
 ```
 
 ### 3. Create a Fail2Ban Filter

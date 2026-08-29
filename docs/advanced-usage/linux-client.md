@@ -2,6 +2,10 @@
 
 This page serves as a community-driven guide to assist you in setting up the GameVault client on Linux.
 
+:::tip Native Linux client
+The [cross-platform client](../client-docs/setup.md#gamevault-desktop-cross-platform) (still in **early access**) ships native Linux packages (`.deb` and `.AppImage`) and no longer requires Wine. The guide below is only relevant if you want to run the **legacy Windows app**.
+:::
+
 :::warning
 Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**. It should only be utilized as a last resort when no other options are available.
 :::

@@ -6,8 +6,6 @@ sidebar_position: 8
 
 This page outlines how media like images and videos are handled within the backend application.
 
-Here is the updated markdown table including the format names as a second column:
-
 ## Supported Formats
 
 ### Supported Image Formats

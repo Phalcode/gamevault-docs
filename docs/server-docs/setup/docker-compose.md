@@ -51,6 +51,10 @@ Replace the variables (`YOURPASSWORDHERE`, `etc.`), as well as the folder paths 
 Password (YOURPASSWORDHERE) can't be empty! else the database will not work. If you don't want a password, consider running without a PostgreSQL Database (Not recommended)
 :::
 
+:::note
+GameVault works with any recent PostgreSQL version (16 and above). This guide uses `postgres:18`, which is the recommended version.
+:::
+
 ### Tips for Running Docker on Windows
 
 The above `docker-compose.yaml` file might not work as expected with Docker for Windows. Here are some things to consider to make it compatible:
@@ -100,7 +104,7 @@ This will start the GameVault server and PostgreSQL server in the background. Th
 
 ## Conclusion
 
-Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as `http://192.168.0.15:8080` for example.
+Congratulations! Your GameVault Server has been successfully set up using Docker and Docker Compose. You can now access it using your server's IP address followed by the designated port, such as `http://192.168.0.15:8080` for example. That address also serves the built-in Web UI, which you can open directly in your browser, or you can connect with one of the [GameVault clients](../../client-docs/setup.md).
 
 [Click here to continue.](setup.md#what-next)
 

@@ -1,22 +1,20 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # WebSockets
 
 :::warning Work in progress
 
-GameVault doesn't fully use Websockets yet. Both the client and the server are still lacking a full implementation. Right now, it's just a basic version to begin with on the server. If you're interested in how we're doing with implementing Websockets, you can check out [this page on GitHub](https://github.com/Phalcode/gamevault-app/issues/205) to see our progress.
+GameVault's WebSocket support is still in an early state. It is implemented on the server, but **no client uses it yet**. If you're interested in how we're doing with implementing WebSockets, you can check out [this page on GitHub](https://github.com/Phalcode/gamevault-app/issues/205) to see our progress.
 
 :::
 
 GameVault Backend 9.0.0 introduced WebSockets. The implementation uses [Socket.io](https://socket.io/), which in turn relies on the WebSocket protocol.
 
-WebSockets enable real-time communication between the server and clients. Clients can request data, and the server can also push updates on its own.
+WebSockets enable real-time communication between the server and clients. Clients can send data to the server, and the server can also push updates on its own.
 
-To use this feature, make sure WebSocket support is enabled on your machine, network, or reverse proxy.
-
-The API is documented via AsyncAPI standard in `/api/docs/async`. However, please note that, at the time of writing, this documentation may not run on Docker due to a bug. If you encounter this issue, you can refer to the source code for manual implementation.
+The WebSocket server runs on the same HTTP(S) port as the REST API (`SERVER_PORT`, or `SERVER_HTTPS_PORT` when HTTPS is enabled) using the default Socket.IO path `/socket.io`. No separate port or additional configuration is required. If you use a reverse proxy, make sure WebSocket upgrade requests are forwarded.
 
 ## Activities
 
@@ -29,10 +27,19 @@ Starting with GameVault Backend 9.0.0, clients can share their current activity 
 
 Once a client reports an activity, the server forwards it to other users. If a client does not report activity, the server shows that user as offline.
 
+### Events
+
+| Direction      | Event            | Payload                          |
+| -------------- | ---------------- | -------------------------------- |
+| Client to Server | `set-activity`  | The activity to broadcast        |
+| Client to Server | `get-activities` | Request all current activities   |
+| Server to Client | `activity`      | A single user's updated activity |
+| Server to Client | `activities`    | All users' current activities    |
+
 ### Disabling Activities
 
-If you want to disable activities, set `SERVER_ONLINE_ACTIVITIES_DISABLED` to `true`. Depending on the client implementation, this may cause every user to appear offline all the time.
+If you want to disable activities, set `SERVER_ONLINE_ACTIVITIES_DISABLED` to `true`. This causes all users to appear offline.
 
 ## Security
 
-Each user is assigned a randomly generated API-Key, which they can retrieve at `/api/users/me`. This api-key must be included in the headers (X-Api-Key) of every subsequent Socket.IO Handshake request to the server.
+Each user is assigned a randomly generated API-Key, which they can retrieve at `/api/users/me`. This API key must be included in the `X-Api-Key` header of every Socket.IO handshake request to the server.

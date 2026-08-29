@@ -8,7 +8,38 @@ Follow this guide to install GameVault on your computer and connect it to a serv
 
 ## Installation
 
-### Recommended Installation Option
+GameVault is available as two desktop clients:
+
+- **GameVault (legacy Windows app)**: the original Windows client, distributed through the Microsoft Store. It is still supported.
+- **GameVault Desktop (cross-platform) (early access)**: the modern client, available for **Windows, Linux, and macOS** soon.
+
+The Web UI itself can also be used directly in your browser; see [Web UI](#web-ui).
+
+### GameVault Desktop (Cross-Platform)
+
+:::warning Early Access
+The cross-platform client is still in **early access**. It is available for **Windows, Linux, and macOS**, but you may run into bugs and missing features. If you need the most reliable experience, use the [legacy Windows app](#legacy-windows-app) for now.
+:::
+
+:::note Platform support
+We mainly test the cross-platform client on **Linux and Windows**. macOS builds are provided, but less thoroughly tested, so you may run into more issues on the Mac.
+:::
+
+Download the installer for your platform from the [GitHub releases page](https://github.com/Phalcode/gamevault-frontend/releases):
+
+- **Windows**: the `*-setup.exe` (NSIS) installer
+- **Linux**: the `.deb` package or the `.AppImage`
+- **macOS**: the `.dmg`
+
+The cross-platform client keeps itself up to date through a built-in updater; see [Updating the Client](updating-client.md#cross-platform-client).
+
+### Web UI
+
+If you don't want to install anything, open the Web UI directly in your browser at your server's address (e.g. `http://192.168.0.15:8080`). The Web UI is served by the server itself and offers the same interface as the cross-platform client. Keep in mind that a browser-only session cannot launch or install games on your computer: the full download manager is only available in the desktop clients.
+
+### Legacy Windows App
+
+#### Recommended Installation Option
 
 **Requirement:** Windows 10/11 operating system with Microsoft Store installed
 
@@ -22,7 +53,7 @@ winget install gamevault
 
 After installation, continue with [Initial Configuration](#initial-configuration).
 
-### Alternative Installation Options
+#### Alternative Installation Options
 
 If you do not want to use the Microsoft Store, or you are on another platform, use one of the alternatives below.
 
@@ -30,7 +61,7 @@ If you do not want to use the Microsoft Store, or you are on another platform, u
 Please note that every option outside the Microsoft Store is less supported and should be treated as a fallback. You will also need to [manage updates manually](updating-client.md#other-sources).
 :::
 
-#### Option 1: Obtain Pre-Built Artifacts from GitHub
+##### Option 1: Obtain Pre-Built Artifacts from GitHub
 
 Access the latest pre-built artifact [here](https://github.com/Phalcode/gamevault-app/releases/latest).
 
@@ -38,11 +69,15 @@ Access the latest pre-built artifact [here](https://github.com/Phalcode/gamevaul
 Your antivirus software or Windows Smartscreen may attempt to prevent you from running our pre-built application because it is a suspicious-looking binary compiled by an unfamiliar source. This is due to the lack of a code signing certificate for budget reasons. You can safely disregard this warning and proceed to run the app by selecting `More Details` and then choosing `Run Anyway`.
 :::
 
-#### Option 2: Linux Installation
+##### Option 2: Linux Installation
 
 To run GameVault on Linux using Wine, [follow this community-driven method](../advanced-usage/linux-client.md).
 
-#### Option 3: Self-Compiling on Windows
+:::tip Native Linux client
+If you are on Linux, you no longer need Wine: the [cross-platform client](#gamevault-desktop-cross-platform) ships native `.deb` and `.AppImage` packages.
+:::
+
+##### Option 3: Self-Compiling on Windows
 
 1. Install Visual Studio IDE (2022 recommended).
 2. Install the ".NET Desktop Development" workload and ensure that .NET 8.0 is installed.
@@ -52,7 +87,7 @@ To run GameVault on Linux using Wine, [follow this community-driven method](../a
 6. Build > Build gamevault.
 7. Use the output files.
 
-#### Option 4: Extracting from the .appxbundle
+##### Option 4: Extracting from the .appxbundle
 
 1. Go to [https://store.rg-adguard.net](https://store.rg-adguard.net).
 2. Paste `https://www.microsoft.com/store/apps/9PCKDV76GL75` into the search box.
@@ -60,6 +95,8 @@ To run GameVault on Linux using Wine, [follow this community-driven method](../a
 4. Extract the `.appxbundle`, followed by the `ReleasePackage_[VERSION]_x64.appx` file.
 
 ## Initial Configuration
+
+The configuration below applies to both the cross-platform client and the legacy Windows app.
 
 Once you have installed and launched GameVault, the first thing you will see is the login window.
 

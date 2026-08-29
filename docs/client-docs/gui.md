@@ -116,35 +116,55 @@ See more [here](setup.md#initial-configuration)
 
 ## Settings
 
-### Application
+Settings are organized into categories and opened from the sidebar (gear icon).
 
-- Launch GameVault on Computer Startup
-- Minimize GameVault to System Tray on Startup
-- Auto-Load Library from Server on Startup
-- Change curren client theme or open the theme folder to insert your own.
-- Download and Install a Theme from the Community Themes.
-- Retain Sorting and Filter preferences after restart.
+### Downloads
 
-### Installation
+Everything about storing and downloading your games:
 
-- Configure the donwload bandwidth limit.
-- Set if you want to auto extract downloaded games and set a default password for encrypted archives.
-- Set default extraction password for encrypted archives.
-- Mount ISO files automatically.
-- Set if portable games should be auto installed and if the install files should be auto deleted.
+- Configure the download bandwidth limit.
+- Select the download and installation root folders.
+- Set if you want to auto-extract downloaded games and set a default password for encrypted archives.
+- Set if portable games should be auto-installed and if the install files should be auto-deleted.
 
-### User
+### Library
 
-- Edit User
-- Change Profile (Goes back to profile selection)
-- Logout from this Device (Removes refresh token from local config)
-- Logout from All Devices (Revokes refresh token server side)
+- Settings that shape your game library (e.g. retain sorting and filter preferences after restart).
 
-### Data
+### Privacy & Analytics
 
-- Select GameVault root directories.
-- Clear image/offline cache.
-- Ignored Executables List.
+- Decide what information GameVault shares with the outside (analytics and error reporting).
+
+### Appearance
+
+- Change the client theme (dark/light).
+- Adjust the UI zoom level.
+
+### Sound
+
+- Control volume and sound effects in GameVault.
+
+### Startup (Desktop Only)
+
+- Launch GameVault on computer startup.
+- Minimize GameVault to the system tray when closing the window. The app keeps running in the background so playtime tracking continues.
+
+### Ignore List
+
+- View and edit the list of executables GameVault should skip (used by the playtime tracker).
+
+### Developer Tools
+
+- Hidden utilities for development and testing. Unlock them by tapping the version number 5 times.
+
+### About
+
+- Show the application version, the update channel, and the automatic update status (desktop clients).
+- Browse the third-party open-source licenses.
+
+:::note Legacy Windows App
+The legacy Windows app organizes its settings into the tabs **Application**, **Installation**, **User**, and **Data** (root directories, image/offline cache, ignored executables, ISO mounting, and theme installation).
+:::
 
 ## Administration
 

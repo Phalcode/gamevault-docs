@@ -29,7 +29,7 @@ DB_HOST=postgres
 DB_PASSWORD=mypassword
 ```
 
-### 2. Docker Secrets (`_FILE` method) — For Sensitive Values
+### 2. Docker Secrets (`_FILE` method): For Sensitive Values
 
 Store secrets in files and reference them. Ideal for passwords, API keys, and tokens:
 
@@ -44,7 +44,7 @@ environment:
 
 GameVault reads the file at runtime, keeping secrets out of logs and configs.
 
-### 3. YAML Configuration Files — For Complex Setups
+### 3. YAML Configuration Files: For Complex Setups
 
 Create `config.yaml` or `config.yml` in your config volume (`VOLUMES_CONFIG`) for organized, readable configuration:
 
@@ -81,10 +81,10 @@ DB_HOST: postgres
 
 When a setting exists in multiple places, GameVault uses values in this order (highest → lowest):
 
-1. **`VARIABLE_FILE`** (Docker Secrets file content) — _Always wins_
-2. **`VARIABLE`** (environment variable) — _Overrides YAML_
-3. **YAML file** (`config.yaml` / `config.yml`) — _Overrides defaults_
-4. **Built-in default** — _Used if nothing else is set_
+1. **`VARIABLE_FILE`** (Docker Secrets file content): _Always wins_
+2. **`VARIABLE`** (environment variable): _Overrides YAML_
+3. **YAML file** (`config.yaml` / `config.yml`): _Overrides defaults_
+4. **Built-in default**: _Used if nothing else is set_
 
 ### Real-World Example
 
@@ -112,7 +112,7 @@ If you remove the environment variable too, it uses **YAML**: `yaml-password`
 
 Below are all available configuration variables, organized by category.
 
-### SERVER — Core Server Settings
+### SERVER: Core Server Settings
 
 | Property                                | Description                                                                                                                                                                                                    | Default       | Possible Values                                                                              |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
@@ -137,14 +137,7 @@ Below are all available configuration variables, organized by category.
 | `SERVER_HTTPS_CERT_PATH`                | The file path to the TLS certificate used for HTTPS.                                                                                                                                                           | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CA_CERT_PATH`             | The file path to the CA certificate used for HTTPS (e.g. for client certificate verification).                                                                                                                 | -             | Any valid file path                                                                          |
 
-### WEB UI — Web Interface Settings
-
-| Property         | Description                                                  | Default | Possible Values |
-| ---------------- | ------------------------------------------------------------ | ------- | --------------- |
-| `WEB_UI_ENABLED` | Whether or not the web ui should be used.                    | `true`  | `true`, `false` |
-| `WEB_UI_VERSION` | You can force a specific web ui version using this property. | -       | `e.g. 16.0.0`   |
-
-### VOLUMES — Storage Folder Paths
+### VOLUMES: Storage Folder Paths {#volumes}
 
 | Property            | Description                                                                                                                                                       | Default      | Possible Values       |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------------- |
@@ -156,7 +149,7 @@ Below are all available configuration variables, organized by category.
 | `VOLUMES_SQLITEDB`  | Folder inside container used for `SQLITE` database. (Not needed if `DB_SYSTEM` is set to `POSTGRESQL`)                                                            | `/db`        | Any valid folder path |
 | `VOLUMES_PLUGINS`   | Folder inside container used for plugins.                                                                                                                         | `/plugins`   | Any valid folder path |
 
-### DB — Database Configuration
+### DB: Database Configuration
 
 | Property                             | Description                                                                                        | Default      | Possible Values         |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
@@ -174,7 +167,7 @@ Below are all available configuration variables, organized by category.
 | `DB_TLS_CERTIFICATE_PATH`            | The file path to the TLS certificate used for authenticating the database server.                  | -            | Any file path           |
 | `DB_TLS_CA_CERTIFICATE_PATH`         | The file path to the CA certificate used for verifying client certificates in TLS connections.     | -            | Any file path           |
 
-### USERS — User Registration & Requirements
+### USERS: User Registration & Requirements
 
 | Property                   | Description                                                                                                                     | Default | Possible Values |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |
@@ -183,14 +176,14 @@ Below are all available configuration variables, organized by category.
 | `USERS_REQUIRE_LAST_NAME`  | Require **Last Name** for new registrations.                                                                                    | `false` | `true`, `false` |
 | `USERS_REQUIRE_BIRTH_DATE` | Require **Birth Date** for new registrations. (**Automatically set to `true` when `PARENTAL_AGE_RESTRICTION_ENABLED` is true**) | `false` | `true`, `false` |
 
-### PARENTAL — Parental Control & Age Restrictions
+### PARENTAL: Parental Control & Age Restrictions
 
 | Property                           | Description                                                                                 | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------- | ------- | --------------- |
 | `PARENTAL_AGE_RESTRICTION_ENABLED` | Determines whether age-based parental restrictions are enforced.                            | `false` | `true`, `false` |
 | `PARENTAL_AGE_OF_MAJORITY`         | The age at which an individual is legally recognized as an adult for parental restrictions. | `18`    | Any number      |
 
-### GAMES — Game Library & Upload Settings
+### GAMES: Game Library & Upload Settings
 
 | Property                                         | Description                                                                                                                                                                                                                                                                                                                                                                                           | Default                                                             | Possible Values                           |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
@@ -203,9 +196,9 @@ Below are all available configuration variables, organized by category.
 | `GAMES_INDEX_CONCURRENCY`                        | The number of concurrent indexing tasks.                                                                                                                                                                                                                                                                                                                                                              | `1`                                                                 | Any number                                |
 | `GAMES_DEFAULT_ARCHIVE_PASSWORD`                 | A default password for archives. Useful if you always use the same password for your games and want Game Type Detection to work with the encrypted files. Without this, game type detection on encrypted archives depends on the file extension and whether the headers are encrypted.                                                                                                                | `Anything`                                                          | Any string                                |
 | `GAMES_WINDOWS_SETUP_DEFAULT_INSTALL_PARAMETERS` | Default command-line parameters used for Windows application setup files. These are used to attempt a silent installation.                                                                                                                                                                                                                                                                            | `/D="%INSTALLDIR%" /S /DIR="%INSTALLDIR%" /SILENT /COMPONENTS=text` | Any string                                |
-| `GAMES_MAX_UPLOAD_SIZE`                          | The maximum file size allowed for game uploads via the API. Set it to 0 to disable game uploads.                                                                                                                                                                                                                                                                                                      | `50 gb`                                                             | e.g. "50 gb", "100 gb", "1 tb"            |
+| `GAMES_MAX_UPLOAD_SIZE`                          | The maximum file size allowed for game uploads via the API. Set it to 0 to disable game uploads.                                                                                                                                                                                                                                                                                                      | `100 gb`                                                            | e.g. "50 gb", "100 gb", "1 tb"            |
 
-### MEDIA — Image & Media Upload Settings
+### MEDIA: Image & Media Upload Settings
 
 | Property                       | Description                                                                       | Default                                  | Possible Values                     |
 | ------------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
@@ -214,7 +207,7 @@ Below are all available configuration variables, organized by category.
 | `MEDIA_GC_DISABLED`            | Whether or not media garbage collection is enabled. (Deletes unused media)        | `false`                                  | `true`, `false`                     |
 | `MEDIA_GC_INTERVAL_IN_MINUTES` | The interval in minutes for media garbage collection.                             | `60`                                     | Any number                          |
 
-### SAVEFILES — Game Save File Management
+### SAVEFILES: Game Save File Management {#savefiles}
 
 | Property              | Description                                                                                                                                     | Default | Possible Values                |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------ |
@@ -222,7 +215,7 @@ Below are all available configuration variables, organized by category.
 | `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `1 gb`  | e.g. "10 mb", "5 gb", "300 kb" |
 | `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `10`    | Any number                     |
 
-### METADATA — Game Information Providers
+### METADATA: Game Information Providers
 
 | Property                            | Description                                                                                                                                                            | Default | Possible Values    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |
@@ -233,7 +226,7 @@ Below are all available configuration variables, organized by category.
 | `METADATA_IGDB_CLIENT_ID`           | The Client-ID used for authenticating requests to the IGDB API.                                                                                                        | -       | Your Client ID     |
 | `METADATA_IGDB_CLIENT_SECRET`       | The Client-Secret used for authenticating requests to the IGDB API.                                                                                                    | -       | Your Client Secret |
 
-### AUTH — Authentication & Login Methods
+### AUTH: Authentication & Login Methods {#auth}
 
 | Property                        | Description                                                                                                                                                                                                       | Default                               | Possible Values                                                             |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------- |
@@ -251,7 +244,7 @@ Below are all available configuration variables, organized by category.
 | `AUTH_OAUTH2_CLIENT_ID`         | The OAuth2 client ID.                                                                                                                                                                                             | -                                     | Any string                                                                  |
 | `AUTH_OAUTH2_CLIENT_SECRET`     | The OAuth2 client secret.                                                                                                                                                                                         | -                                     | Any string                                                                  |
 
-### TESTING — Development & Testing Options
+### TESTING: Development & Testing Options
 
 | Property                           | Description                                                                                                                           | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- | --------------- |

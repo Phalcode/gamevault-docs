@@ -11,7 +11,62 @@ The volume mapped to the `/files` directory must contain your games. These games
 
 GameVault supports all file formats 7zip 23.01 (2023-06-20) does:
 
-`.7z` `.xz` `.bz2` `.gz` `.tar` `.zip` `.wim` `.ar` `.arj` `.cab` `.chm` `.cpio` `.cramfs` `.dmg` `.ext` `.fat` `.gpt` `.hfs` `.ihex` `.iso` `.lzh` `.lzma` `.mbr` `.msi` `.nsis` `.ntfs` `.qcow2` `.rar` `.rpm` `.squashfs` `.udf` `.uefi` `.vdi` `.vhd` `.vmdk` `.wim` `.xar` `.z`
+`.7z` `.xz` `.bz2` `.gz` `.tar` `.zip` `.wim` `.ar` `.arj` `.cab` `.chm` `.cpio` `.cramfs` `.dmg` `.ext` `.fat` `.gpt` `.hfs` `.ihex` `.iso` `.lzh` `.lzma` `.mbr` `.msi` `.nsis` `.ntfs` `.qcow2` `.rar` `.rpm` `.squashfs` `.udf` `.uefi` `.vdi` `.vhd` `.vmdk` `.xar` `.z`
+
+:::note Server vs. Client
+The list above is what the **server** detects and indexes. Extraction happens on the **client** after downloading a game, and the two clients do not support the same set of archive formats. See [Client Extraction Support](#client-extraction-support).
+:::
+
+### Client Extraction Support
+
+The **legacy Windows app** bundles the 7-Zip command-line program and can extract every format listed above.
+
+The **cross-platform client** ships a built-in extractor with its own set of codecs. It currently cannot open most of the rarer archive formats; for those, only the legacy Windows app works:
+
+| Format               | Legacy Windows app (7-Zip) | Cross-platform client (built-in extractor) |
+| -------------------- | :------------------------: | :----------------------------------------: |
+| `.7z`                |             ✅             |                     ✅                     |
+| `.zip`               |             ✅             |                     ✅                     |
+| `.rar`               |             ✅             |                     ✅                     |
+| `.iso`               |             ✅             |                     ✅                     |
+| `.tar`               |             ✅             |                     ✅                     |
+| `.tar.gz` / `.tgz`   |             ✅             |                     ✅                     |
+| `.tar.bz2` / `.tbz2` |             ✅             |                     ✅                     |
+| `.tar.xz` / `.txz`   |             ✅             |                     ✅                     |
+| `.gz`                |             ✅             |                     ✅                     |
+| `.bz2`               |             ✅             |                     ✅                     |
+| `.xz`                |             ✅             |                     ✅                     |
+| `.wim`               |             ✅             |                     ❌                     |
+| `.ar`                |             ✅             |                     ❌                     |
+| `.arj`               |             ✅             |                     ❌                     |
+| `.cab`               |             ✅             |                     ❌                     |
+| `.chm`               |             ✅             |                     ❌                     |
+| `.cpio`              |             ✅             |                     ❌                     |
+| `.cramfs`            |             ✅             |                     ❌                     |
+| `.dmg`               |             ✅             |                     ❌                     |
+| `.ext`               |             ✅             |                     ❌                     |
+| `.fat`               |             ✅             |                     ❌                     |
+| `.gpt`               |             ✅             |                     ❌                     |
+| `.hfs`               |             ✅             |                     ❌                     |
+| `.ihex`              |             ✅             |                     ❌                     |
+| `.lzh`               |             ✅             |                     ❌                     |
+| `.lzma`              |             ✅             |                     ❌                     |
+| `.mbr`               |             ✅             |                     ❌                     |
+| `.msi`               |             ✅             |                     ❌                     |
+| `.nsis`              |             ✅             |                     ❌                     |
+| `.ntfs`              |             ✅             |                     ❌                     |
+| `.qcow2`             |             ✅             |                     ❌                     |
+| `.rpm`               |             ✅             |                     ❌                     |
+| `.squashfs`          |             ✅             |                     ❌                     |
+| `.udf`               |             ✅             |                     ❌                     |
+| `.uefi`              |             ✅             |                     ❌                     |
+| `.vdi`               |             ✅             |                     ❌                     |
+| `.vhd`               |             ✅             |                     ❌                     |
+| `.vmdk`              |             ✅             |                     ❌                     |
+| `.xar`               |             ✅             |                     ❌                     |
+| `.z`                 |             ✅             |                     ❌                     |
+
+Single-file executables (`setup_game.exe`, `.sh`, `.AppImage`) are downloaded as `.tar` and extracted by both clients; there is no difference there.
 
 ### Single File Executable
 

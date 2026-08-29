@@ -20,6 +20,10 @@ For SQLite, the GameVault Backup simply duplicates the database file.
 
 For Postgres, it uses `pg_dump` to create a database dump.
 
+:::tip Automating via the API
+The backup endpoints are `GET /api/admin/database/backup` and `POST /api/admin/database/restore` (multipart upload). Both require the `X-Database-Password` header with your database password.
+:::
+
 ## Restoration
 
 Restoring a backup is simple, but risky.

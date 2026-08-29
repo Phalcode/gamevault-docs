@@ -2,6 +2,10 @@
 
 This page serves as a community-driven guide to assist you in setting up the GameVault client on SteamOS.
 
+:::tip Native Linux client
+The [cross-platform client](../client-docs/setup.md#gamevault-desktop-cross-platform) (still in **early access**) ships a `.AppImage` for Linux and also supports gamepad navigation. The guide below is for the **legacy Windows app** running through Proton.
+:::
+
 :::warning
 Please note that running GameVault on Linux using this method is considered **unsupported** and **unrecommended**.
 :::
@@ -27,9 +31,9 @@ To start, you need the Application files. The simplest way to get them is explai
 10. Change the target of the Non-steam game to the `gamevault.exe`.
 11. Find the Compdata folder `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/`.
 
-   :::tip
-   Easiest way to find this is to install and run protontricks in the discover store. Mine is 3860686742
-   :::
+:::tip
+Easiest way to find this is to install and run protontricks in the discover store. Mine is 3860686742
+:::
 
 12. Unzip fonts downloaded from archive.org and install to `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/pfx/drive_c/windows/Fonts`. (specifically Segoe UI)
 13. Run GameVault via Steam

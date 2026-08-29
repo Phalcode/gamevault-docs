@@ -44,7 +44,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 - Clear the Searchbox
 - Clear all active Filters
 - Press F5 to trigger a new search
-- For installations, verify your correct root folder is set [in the settings](./client-docs/gui.md#data).
+- For installations, verify your correct root folder is set [in the settings](./client-docs/gui.md#settings).
 - Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](./client-docs/gui.md#game-settings)).
 - Verify [your file names are correct](./server-docs/structure.md).
 - Check the Filesystem Permissions. See [here](#server-fails-to-save-media--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
@@ -52,7 +52,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 ### Missing Box Arts
 
 - [Set up a Metadata Provider](./server-docs/metadata-enrichment/metadata.md) that provides box art for your games.
-- Clear media caches [in the settings.](./client-docs/gui.md#data)
+- Clear media caches [in the settings.](./client-docs/gui.md#settings)
 
 ### Lack of Metadata in Games
 

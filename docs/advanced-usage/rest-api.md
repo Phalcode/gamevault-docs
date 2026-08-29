@@ -12,7 +12,7 @@ To use the GameVault API in automations, it is recommended to register a separat
 
 ## OpenAPI Specification
 
-You can check out the API specification at `/api/docs` after making sure the server environment variable `SERVER_API_DOCS_ENABLED` is set to `true`. There is also a hosted version of the latest API Documentation available at [demo.gamevau.lt/api/docs](https://demo.gamevau.lt/api/docs).
+You can check out the API specification at `/api/docs`. It is served by the built-in Web UI, which is enabled by default and can be toggled with `WEB_UI_ENABLED`. There is also a hosted version of the latest API Documentation available at [demo.gamevau.lt/api/docs](https://demo.gamevau.lt/api/docs).
 
 The API documentation provides a complete guide on how to use the API, including authentication, endpoints, and parameters.
 

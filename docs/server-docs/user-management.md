@@ -18,7 +18,7 @@ The first registered user on a server is automatically activated and granted adm
 
 ## Admin Role Recovery
 
-If you lost your admin permissions due to misconfiguration, you can fix this by using the `SERVER_ADMIN_USERNAME` environment variable. Simply set this variable to the username of the user you wish to elevate to admin role. Upon server startup, GameVault will automatically grant admin permissions to the specified username provided in this configuration variable.
+If you lost your admin permissions due to misconfiguration, you can fix this by using the `SERVER_ADMIN_USERNAME` environment variable. Simply set this variable to the username of the user you wish to elevate to the admin role. Upon server startup, GameVault will automatically grant admin permissions to the specified username and activate the account. Note that this variable only promotes an **existing** user; it never creates a new account.
 
 ## Admin Password Recovery
 
@@ -26,6 +26,10 @@ In the event that the server owner gets locked out of the admin user account due
 
 First, set the `SERVER_ADMIN_USERNAME` environment variable to the username of the admin user you wish to reset the password for.
 Then, set the `SERVER_ADMIN_PASSWORD` environment variable to the desired password for the admin user.
+
+:::tip
+Both variables are only applied at server startup, and the user must already exist on the server. They are a **recovery mechanism**, not an account creation mechanism.
+:::
 
 For example:
 
@@ -61,9 +65,9 @@ GameVault implements the following roles:
 
 | Role            | Description                                                                                                        | Level |
 | --------------- | ------------------------------------------------------------------------------------------------------------------ | ----- |
-| Guest           | This role allows users to view most content within the application.                                                | 1     |
-| Users (Default) | This role includes permissions such as downloading games, creating progresses, and editing the user's own profile. | 2     |
-| Editors         | Editors have the ability to edit and remap games within the application.                                           | 3     |
-| Admins          | Admins possess full control over user management and can edit user profiles.                                       | 4     |
+| Guest           | This role allows users to view most content within the application.                                                | 0     |
+| Users (Default) | This role includes permissions such as downloading games, creating progresses, and editing the user's own profile. | 1     |
+| Editors         | Editors have the ability to edit and remap games within the application.                                           | 2     |
+| Admins          | Admins possess full control over user management and can edit user profiles.                                       | 3     |
 
 By assigning appropriate roles to users, you can ensure that they have the necessary access and privileges based on their responsibilities.

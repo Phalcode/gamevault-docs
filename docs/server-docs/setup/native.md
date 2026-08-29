@@ -100,8 +100,8 @@ You can update to a specific version by using:
 
 ```bash
 git fetch --all --tags --prune
-git checkout tags/9.0.0
+git checkout tags/17.0.0
 pnpm install
 ```
 
-for example.
+(Replace `17.0.0` with the version tag you want, e.g. from the [releases page](https://github.com/Phalcode/gamevault-backend/releases).)

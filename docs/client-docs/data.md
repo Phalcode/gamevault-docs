@@ -6,7 +6,22 @@ sidebar_position: 4
 
 This page gives you an overview of how GameVault stores and manages its data.
 
-When you install the app from the Microsoft Store, all the data it saves (except for the GameVault Root Folder for your Downloads and Installations) can be found under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\`. Alternatively, if you did not install the app from the Microsoft Store, you can find the data under: `%APPDATA%/GameVault`.
+The **legacy Windows app** stores its data at:
+
+- `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` when installed from the Microsoft Store
+- `%APPDATA%\GameVault` otherwise
+
+The **cross-platform client** stores its data in the platform's standard application-data directory under `com.phalcode.gamevault`:
+
+- **Windows**: `%APPDATA%\com.phalcode.gamevault`
+- **Linux**: `~/.local/share/com.phalcode.gamevault` (data) and `~/.config/com.phalcode.gamevault` (configuration)
+- **macOS**: `~/Library/Application Support/com.phalcode.gamevault`
+
+Its settings live in `gamevault-settings.json` inside that directory, and cached media (covers, background images) is kept in the webview's local storage/IndexedDB.
+
+:::note
+The paths in the sections below apply to the **legacy Windows app**.
+:::
 
 :::warning Don't modify unless you know what you're doing
 Please be aware that manually altering this data may lead to unwanted issues in GameVault.

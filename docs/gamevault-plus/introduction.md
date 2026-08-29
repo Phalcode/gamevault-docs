@@ -15,6 +15,10 @@ description: Upgrade your gaming experience with GameVault+, an affordable premi
 
 Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this project alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
 
+:::note Cross-platform client
+GameVault+ is currently available in the **legacy Windows app**. Support for the **cross-platform client** is coming soon
+:::
+
 ### [Subscribe to GameVault+ Here](https://phalco.de/products/gamevault-plus/checkout)
 
 ## Feature List

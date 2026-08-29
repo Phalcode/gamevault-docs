@@ -13,7 +13,10 @@ Add your game files such as installers and portable builds to a folder. The serv
 GameVault consists of two components:
 
 - A self-hosted backend server served with Docker
-- A client application to use this server
+- A client application to use this server. You can pick from: 
+    - the **Web UI** you can open directly in your browser
+    - the **cross-platform desktop client** (Windows, Linux, macOS, **early access**)
+    - the **legacy Windows app**
 
 :::tip Try it out!
 If you don't have a server yet, but want to try it out, you can use our demo server to get a feel for how it is:
@@ -36,7 +39,7 @@ If you don't have a server yet, but want to try it out, you can use our demo ser
 - ✏️ [Edit game metadata](./client-docs/gui#metadata)
 - 🔒 [Manage users and games through Admin UI](./client-docs/gui#administration)
 - 🎥 [Built-in media player for trailers and gameplay videos](./client-docs/gui#game)
-- 🎨 [Themes](./client-docs/gui#application)
+- 🎨 [Themes](./client-docs/themes.md)
 
 ### Server Features
 
@@ -53,7 +56,7 @@ If you don't have a server yet, but want to try it out, you can use our demo ser
 - ⚙️ [Highly configurable server settings](./server-docs/configuration)
 - 🔌 [Extensible plugin framework](./server-docs/plugins.md)
 - 🔄 [WebSocket support for real-time updates](./server-docs/websockets.md)
-- 💾 [Database backup and restoration](./server-docs/configuration)
+- 💾 [Database backup and restoration](./server-docs/backup-and-restore.md)
 - 🔐 [OAuth2 authentication support](./advanced-usage/authentication#setting-up-oauth2-authentication-single-sign-on)
 
 ### Premium Features

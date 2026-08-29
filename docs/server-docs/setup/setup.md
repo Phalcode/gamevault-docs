@@ -31,6 +31,10 @@ We're looking for people who are excited to help out. Since we don't run a GameV
 
 You now should have a server up and running. To further set up and start using server, you can follow these steps:
 
+:::tip Built-in Web UI
+Once your server is running, you can use it right away in your browser at `http://<server-ip>:8080`. The Web UI is served by the server itself and can be disabled with `WEB_UI_ENABLED`. For a desktop experience, install one of the [GameVault clients](../../client-docs/setup.md).
+:::
+
 1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](../configuration.md) for detailed instructions.
 
 2. **Add some games:** Prepare your game files in the required format for GameVault to identify and install them correctly. Read the [structure chapter](../structure.md) for important information. Once ready, proceed to [add your games](../adding-games.md).
