@@ -39,43 +39,54 @@ To start, it's a good idea to read the official NestJS documentation, but if you
 
 ### Step 3: Set Up a Plugin
 
-Suppose we’re creating a plugin called `useless-plugin`.
+Suppose we’re creating a plugin called `release-radar`.
 
 1. Navigate to the `gamevault-backend` directory in your cloned repository.
-2. Create a folder for your plugin: `gamevault-backend/.local/plugins/useless-plugin/`.
+2. Create a folder for your plugin: `gamevault-backend/.local/plugins/release-radar/`.
 3. Inside the plugin folder, initialize a git repository with `git init`.
-4. Create a new file for your module: `useless.plugin.module.ts`. This file will serve as the entry point for your plugin and should implement the `GameVaultPluginModule` interface (which can be imported from `src/globals.ts`).
+4. Create a new file for your module: `release-radar.plugin.module.ts`. This file will serve as the entry point for your plugin and should implement the `GameVaultPluginModule` interface (which can be imported from `src/globals.ts`).
 
 Here’s a basic example of how your module might look:
 
 ```ts
 import { Module } from "@nestjs/common";
 import {
-  GameVaultPluginModule,
-  GameVaultPluginModuleMetadataV1,
-} from "../../../src/globals";
+  type GameVaultPluginModule,
+  type GameVaultPluginModuleMetadataV1,
+} from "../../../src/globals.js";
 
 @Module({
   imports: [],
   controllers: [],
   providers: [],
 })
-export default class UselessPluginModule implements GameVaultPluginModule {
+export default class ReleaseRadarPluginModule
+  implements GameVaultPluginModule
+{
   metadata: GameVaultPluginModuleMetadataV1 = {
-    name: "Useless Plugin",
+    name: "Release Radar",
     author: "Phalcode",
     version: "1.0.0",
     description:
-      "An example plugin that does nothing useful. It logs the user count every three seconds and provides two REST APIs with sample data.",
-    keywords: ["example", "api"],
-    license: "UNLICENSE",
+      "An example plugin that publishes the most recently added games into the server news.",
+    keywords: ["example", "news", "releases"],
+    license: "MIT",
     website: "https://gamevau.lt",
   };
 }
 ```
 
+:::info ESM requirements (GameVault v17.0.1+)  
+The backend is now ESM (NodeNext). Plugins must:  
+- use explicit `.js` extensions on every relative import (e.g. `../../../src/globals.js`),  
+- use `import type` for type-only imports (e.g. `GameVaultPluginModule`),  
+- `export default` the module class (no CommonJS `module.exports` / `__esModule` interop),  
+- **not** bundle their own copy of `@nestjs/*` or `reflect-metadata` — rely on the backend's `node_modules`,  
+- be compiled together with the backend via `pnpm build` (Node LTS), producing a `*.plugin.module.js` entry.  
+:::
+
 :::tip Avoid Redundancy  
-When naming files, avoid repeating words. For example, if your plugin is called `useless-plugin`, name the module file `useless.plugin.module.ts`, not `useless-plugin.plugin.module.ts`.  
+When naming files, avoid repeating words. For example, if your plugin is called `release-radar`, name the module file `release-radar.plugin.module.ts`, not `release-radar-plugin.plugin.module.ts`.  
 :::
 
 ### Step 4: Document Your Plugin
@@ -84,21 +95,21 @@ Once you've implemented the `GameVaultPluginModule` interface, make sure to prov
 
 ### Step 5: Implement Your Plugin's Logic
 
-Now, develop your plugin by adding services, controllers, or any other NestJS components. You can use existing GameVault modules to extend functionality. For instance in our example you can see we used the `UsersService` to count the users on our GameVault server. The possibilities are limitless.
+Now, develop your plugin by adding services, controllers, or any other NestJS components. You can use existing GameVault modules to extend functionality. For instance, the [Release Radar example](#example-plugins) reuses `GamesModule` to read the library and writes a news section. To expose an endpoint publicly, decorate a `@Controller()` and its routes with `@SkipGuards()`.
 
 #### Adding Configuration Options
 
-If your plugin should support specific configuration for the end user, you can introduce custom environment variables. Make sure they are unique and do not conflict with existing variables. A good pattern is: `PLUGIN_AUTHORNAME_PLUGINNAME_SETTING` (e.g., `PLUGIN_PHALCODE_USELESS_ENABLED`).
+If your plugin should support specific configuration for the end user, you can introduce custom environment variables. Make sure they are unique and do not conflict with existing variables. A good pattern is: `PLUGIN_AUTHORNAME_PLUGINNAME_SETTING` (e.g., `PLUGIN_PHALCODE_RELEASE_RADAR_ENABLED`).
 
 You can access these variables in your code via `process.env.PLUGIN_AUTHORNAME_PLUGINNAME_SETTING`.
 
 ### Step 6: Test Your Plugin
 
-When you’re ready to test, run `pnpm start`. GameVault will automatically inject your plugin, and you should see relevant logs. You can debug using logs or Visual Studio Code’s "Toggle Auto Attach" feature. For extra quality assurance, you can write unit tests with Jest by adding a `.spec.ts` file and running `pnpm test`.
+When you’re ready to test, run `pnpm start`. GameVault will automatically inject your plugin, and you should see relevant logs. You can debug using logs or Visual Studio Code’s "Toggle Auto Attach" feature. For extra quality assurance, you can write unit tests with Vitest by adding a `.spec.ts` file and running `pnpm test`.
 
 ### Step 7: Compile Your Plugin
 
-Once your plugin is working and tested, compile it by running `pnpm build`. This will generate a `dist` folder with your compiled plugin in the `dist/.local/plugins/useless-plugin` directory. Look for folder containing a `.plugin.module.js` file, this is your compiled plugin. Zip that folder, this is the final, compiled version of your plugin, ready for users to install and run on their servers.
+Once your plugin is working and tested, compile it by running `pnpm build` (Node LTS). This will generate a `dist` folder with your compiled **ESM** plugin in the `dist/.local/plugins/release-radar` directory. Look for the folder containing a `.plugin.module.js` file — this is your compiled plugin. Zip that folder, this is the final, compiled version of your plugin, ready for users to install and run on their servers.
 
 ### Step 8: Release Your Plugin
 
@@ -121,4 +132,4 @@ Once complete, you can feature your plugin [right here in the documentation](met
 
 ## Example Plugins
 
-You can check out some example plugins provided by Phalcode [here](https://github.com/Phalcode/gamevault-backend-example-plugins) to see how plugins are structured and developed.
+You can check out some example plugins provided by Phalcode [here](https://github.com/Phalcode/gamevault-backend-example-plugins) to see how plugins are structured and developed. The recommended reference is the [Release Radar](https://github.com/Phalcode/gamevault-backend-example-plugins/tree/main/v1/release-radar) example — a useful plugin that publishes the most recently added games into the server news.
