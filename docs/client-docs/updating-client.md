@@ -33,7 +33,7 @@ Be sure to [join our Discord community](https://discord.gg/NEdNen2dSu) and watch
 The cross-platform client supports three update channels:
 
 - **stable**: the latest stable release (default). Built from the `master` branch.
-- **early-access**: pre-release builds published from the `early-access` branch.
+- **early-access**: pre-release builds published from the `ea` branch.
 - **unstable**: builds published from the `develop` branch.
 
 The desktop client defaults to the channel its build was created for. Early Access and Unstable channels are only offered in the channel picker while Developer Tools are unlocked.
