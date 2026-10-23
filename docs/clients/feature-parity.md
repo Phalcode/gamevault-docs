@@ -13,8 +13,9 @@ a tracking issue in the
 [gamevault-frontend repository](https://github.com/Phalcode/gamevault-frontend/issues).
 
 The Web UI is not a third client. It is GameVault 2 in the browser, so it shares
-every row below except the local capabilities (download, install, launch, file
-system access). See [Web UI](gamevault-2/web-ui.md).
+every row below except the local automation: download queue, extraction and
+installation, launching, playtime tracking and file system access. See
+[Web UI](gamevault-2/web-ui.md).
 
 ## Legend
 

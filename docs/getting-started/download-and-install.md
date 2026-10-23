@@ -29,7 +29,8 @@ The desktop client updates itself. See [Updating the client](../clients/gamevaul
 
 Nothing to install. Open your server's address in a browser, for example
 `http://192.168.0.15:8080`. The Web UI is GameVault 2 in your browser: the same
-interface and library, without downloading, installing or launching games. See
+interface and library, and you can download game files directly. Automatic
+installation, launching and playtime tracking need the desktop app. See
 [Web UI](../clients/gamevault-2/web-ui.md).
 
 ## Legacy Windows app

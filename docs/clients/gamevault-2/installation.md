@@ -14,8 +14,8 @@ depend on GameVault+ features, keep using the
 Download the installer for your platform from the [download page](/download) or
 from [GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).
 
-If you only want to browse your library, you do not need an installer: open your
-server's address in a browser and use the [Web UI](web-ui.md).
+If you only want to browse or download games, you do not need an installer: open
+your server's address in a browser and use the [Web UI](web-ui.md).
 
 ## Windows
 

@@ -30,7 +30,7 @@ We're looking for people who are excited to help out. Since we don't run a GameV
 Congratulations! 🥳 You should now have a server up and running. To further set up and start using the server, follow these steps:
 
 :::tip Built-in Web UI
-Once your server is running, you can use it right away in your browser at `http://<server-ip>:8080`. The Web UI is GameVault 2 in the browser and can be disabled with `WEB_UI_ENABLED`. For downloads and launching, install [GameVault 2](../../clients/gamevault-2/installation.md) or the [legacy client](../../clients/legacy-windows/overview.md).
+Once your server is running, you can use it right away in your browser at `http://<server-ip>:8080`. The Web UI is GameVault 2 in the browser and can be disabled with `WEB_UI_ENABLED`. You can download game files there; for automatic installation, launching and playtime tracking, install [GameVault 2](../../clients/gamevault-2/installation.md) or the [legacy client](../../clients/legacy-windows/overview.md).
 :::
 
 1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](../configuration.md) for detailed instructions.

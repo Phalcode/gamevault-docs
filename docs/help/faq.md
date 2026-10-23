@@ -24,7 +24,8 @@ instance.
 - **GameVault 2** for Windows, Linux and macOS. It is the actively developed
   client and the only one with native Linux support. In a browser, the
   [Web UI](../clients/gamevault-2/web-ui.md) gives you the same interface
-  without installing anything; it cannot download, install or launch games.
+  without installing anything; it can download game files, but automatic
+  installation, launching and playtime tracking need the desktop app.
 - **Legacy Windows app** if you need a GameVault+ feature or the Microsoft Store
   distribution.
 
@@ -50,11 +51,12 @@ Yes, through GameVault 2. Linux packages are `.AppImage` and `.deb`, macOS gets
 an Apple Silicon `.dmg`. Running the legacy Windows client on Linux through Wine
 is possible but unsupported.
 
-## Can I launch games from the browser?
+## Can I download or launch games from the browser?
 
-No. Browsers cannot start local processes or write to your disk. The Web UI is
-for browsing, metadata, community and administration; use a desktop client to
-download and play.
+Not directly. The Web UI can download game files in the browser and hand a
+download off to an installed GameVault 2 client. A browser cannot start local
+processes, so automatic extraction, installation, launching and playtime
+tracking require the [desktop app](../clients/gamevault-2/installation.md).
 
 ## Is GameVault free?
 

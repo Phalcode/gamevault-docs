@@ -73,8 +73,8 @@ export function Hero() {
             </h1>
             <p className="mt-8 text-lg sm:text-xl leading-8 text-text-light max-w-2xl mx-auto lg:mx-0">
               The self-hosted Steam alternative for DRM-free games. Run the
-              server on your NAS, mini PC or VPS and play on Windows, Linux,
-              macOS or in the browser.
+              server on your NAS, mini PC or VPS and access it from Windows,
+              Linux, macOS or the browser.
             </p>
             <ul
               aria-label="GameVault at a glance"

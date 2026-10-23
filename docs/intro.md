@@ -19,7 +19,8 @@ GameVault has two parts:
   - [GameVault 2](./clients/gamevault-2/installation.md), the actively developed
     client for Windows, Linux and macOS (public beta). It is web-first: the
     [Web UI](./clients/gamevault-2/web-ui.md) is the same client in your browser,
-    minus local downloads and launching.
+    with direct downloads but without automatic installation, launching and
+    playtime tracking.
   - The [legacy Windows app](./clients/legacy-windows/overview.md), the original
     client with full GameVault+ support.
 
