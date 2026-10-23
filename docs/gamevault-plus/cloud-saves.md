@@ -10,13 +10,13 @@ GameVault+ supports cross-device savefile synchronization. Your GameVault server
 1. **Enable Cloud Saves**
 
    - In your GameVault Server settings, set `SAVEFILES_ENABLED` to `true`.  
-     [See how →](/docs/server-docs/configuration.md#savefiles)
+     [See how →](/docs/server/configuration.md#savefiles)
 
    - In your GameVault Client settings -> GameVault+ -> Features -> Cloud Saves, enable the feature for your client.
 
 2. **Configure a Storage Volume**
    - Make sure your server has a **persistent volume** to hold savefiles.  
-     [Learn more →](/docs/server-docs/configuration.md#volumes)
+     [Learn more →](/docs/server/configuration.md#volumes)
 
 Once these settings are in place, Cloud Saves are ready to use.
 

@@ -1,0 +1,6 @@
+position: 3
+label: GameVault Server
+link:
+  type: generated-index
+  title: GameVault Server
+  description: Deploy and operate the self-hosted GameVault server with Docker, metadata providers and plugins.

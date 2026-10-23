@@ -3,20 +3,8 @@ import Link from "@docusaurus/Link";
 import React from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
-import Dropdown from "./DropdownButton";
 
 export function Hero() {
-  const dropdownOptions = [
-    {
-      label: "Microsoft Store",
-      link: "https://www.microsoft.com/store/apps/9PCKDV76GL75",
-    },
-    {
-      label: "GitHub",
-      link: "https://github.com/Phalcode/gamevault-app/releases",
-    },
-  ];
-
   return (
     <div className="relative isolate overflow-hidden bg-background-default">
       {/* Background Grid Pattern */}
@@ -66,7 +54,7 @@ export function Hero() {
                 </span>
               </a>
             </div>
-            <h1 className="font-display text-5xl font-black tracking-tight text-text-default sm:text-8xl leading-[0.9] uppercase">
+            <h1 className="font-display text-4xl font-black tracking-tight text-text-default sm:text-6xl lg:text-7xl leading-[1.02]">
               Your Games.
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-default via-primary-light to-primary-default drop-shadow-sm">
@@ -81,34 +69,25 @@ export function Hero() {
               friends. It's like having your own personal Steam, but you're the
               one in control.
             </p>
-            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <p className="mt-4 text-sm font-medium text-primary-light">
+              GameVault 2 is available for Windows, Linux and macOS as a public
+              beta.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Button
-                href="/docs/intro"
+                href="/download"
                 className="w-full sm:w-56 py-4 text-lg shadow-xl transition-all hover:scale-105 active:scale-95 hover:shadow-primary-default/20"
               >
-                Get Started
+                Download
               </Button>
               <div className="w-full sm:w-56">
-                <Dropdown
-                  options={dropdownOptions}
-                  className="py-4 text-lg shadow-xl transition-all hover:scale-105 active:scale-95 hover:shadow-primary-default/20"
+                <Button
+                  href="/docs/intro"
+                  variant="outline"
+                  className="w-full py-4 text-lg ring-primary-default/50 text-text-default shadow-xl transition-all hover:scale-105 hover:ring-primary-default active:scale-95"
                 >
-                  <span className="flex items-center justify-center gap-2">
-                    Download
-                    <svg
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </span>
-                </Dropdown>
+                  Explore the docs
+                </Button>
               </div>
             </div>
           </div>

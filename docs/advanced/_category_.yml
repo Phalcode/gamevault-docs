@@ -1,0 +1,6 @@
+position: 7
+label: Advanced
+link:
+  type: generated-index
+  title: Advanced
+  description: REST API, authentication, WebSockets and community tooling for power users.

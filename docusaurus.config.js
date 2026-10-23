@@ -36,9 +36,78 @@ const config = {
           },
           {
             from: "/license",
-            to: "/docs/license-contribute",
+            to: "/docs/help/license-contribute",
+          },
+          {
+            from: "/docs/client-docs/setup",
+            to: "/docs/getting-started/connect-to-server",
+          },
+          {
+            from: "/docs/client-docs/gui",
+            to: "/docs/clients/legacy-windows/gui",
+          },
+          {
+            from: "/docs/client-docs/how-to-use",
+            to: "/docs/clients/gamevault-2/using",
+          },
+          {
+            from: "/docs/client-docs/data",
+            to: "/docs/clients/legacy-windows/data",
+          },
+          {
+            from: "/docs/client-docs/themes",
+            to: "/docs/clients/legacy-windows/themes",
+          },
+          {
+            from: "/docs/client-docs/updating-client",
+            to: "/docs/clients/gamevault-2/updating",
+          },
+          {
+            from: "/docs/advanced-usage/early-access-program",
+            to: "/docs/help/beta-program",
+          },
+          {
+            from: "/docs/advanced-usage/linux-client",
+            to: "/docs/clients/legacy-windows/linux-wine",
+          },
+          {
+            from: "/docs/advanced-usage/steamdeck",
+            to: "/docs/clients/legacy-windows/steamdeck",
+          },
+          {
+            from: "/docs/advanced-usage/failt2ban",
+            to: "/docs/advanced/fail2ban",
+          },
+          {
+            from: "/docs/server-docs/websockets",
+            to: "/docs/advanced/websockets",
+          },
+          {
+            from: "/docs/server-docs/setup/truenas-scale-legacy",
+            to: "/docs/server/setup/truenas-scale",
+          },
+          {
+            from: "/docs/troubleshooting",
+            to: "/docs/help/troubleshooting",
+          },
+          {
+            from: "/docs/license-contribute",
+            to: "/docs/help/license-contribute",
           },
         ],
+        createRedirects(existingPath) {
+          if (existingPath.startsWith("/docs/server/")) {
+            return [
+              existingPath.replace("/docs/server/", "/docs/server-docs/"),
+            ];
+          }
+          if (existingPath.startsWith("/docs/advanced/")) {
+            return [
+              existingPath.replace("/docs/advanced/", "/docs/advanced-usage/"),
+            ];
+          }
+          return undefined;
+        },
       },
     ],
     require.resolve("@cmfcmf/docusaurus-search-local"),
@@ -93,6 +162,7 @@ const config = {
             position: "left",
             label: "Documentation",
           },
+          { to: "/download", label: "Download", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           {
             label: "GameVault+",
@@ -111,7 +181,7 @@ const config = {
           },
           {
             label: "Support us",
-            href: "https://gamevau.lt/docs/intro#support",
+            href: "https://gamevau.lt/docs/intro#support-us",
             position: "right",
           },
         ],
@@ -120,7 +190,7 @@ const config = {
         logo: {
           src: "img/phalcode_bright.png",
           srcDark: "img/phalcode_dark.png",
-          height: "30vh",
+          height: "32px",
           href: "https://phalco.de",
         },
         links: [
@@ -133,11 +203,15 @@ const config = {
               },
               {
                 label: "Set Up a Server",
-                to: "/docs/server-docs/setup",
+                to: "/docs/server/setup",
               },
               {
                 label: "Troubleshooting",
-                to: "/docs/troubleshooting",
+                to: "/docs/help/troubleshooting",
+              },
+              {
+                label: "Download",
+                to: "/download",
               },
             ],
           },
@@ -201,7 +275,7 @@ const config = {
             items: [
               {
                 label: "License",
-                href: "/docs/license-contribute",
+                href: "/docs/help/license-contribute",
               },
               {
                 label: "Legal Notice",

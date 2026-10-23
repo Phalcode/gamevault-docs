@@ -1,0 +1,23 @@
+---
+sidebar_position: 6
+---
+
+# Updating the Legacy Windows Client
+
+## Microsoft Store
+
+The Store build updates itself. On launch, GameVault checks for a new version
+and prompts you to install it. After the update, the app closes and you start it
+again.
+
+## Manual installations
+
+If you compiled the app, extracted it from the `.appxbundle`, or downloaded the
+binaries from GitHub, you are responsible for updates. Install a newer build
+over the old one.
+
+## Update channels
+
+The legacy client follows the Microsoft Store release and does not have a
+built-in channel picker. Pre-release server and client builds are described in
+[Beta Program and Update Channels](../../help/beta-program.md).

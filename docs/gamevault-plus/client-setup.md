@@ -3,6 +3,11 @@ sidebar_position: 2
 title: "Client Setup"
 ---
 
+:::note Legacy Windows app
+GameVault+ is currently available in the legacy Windows app only. Support for
+GameVault 2 is planned; the steps on this page describe the legacy client.
+:::
+
 Setting up your GameVault+ License within your GameVault Client Application is simple and easy.
 
 ## Linking Your Phalcode Account

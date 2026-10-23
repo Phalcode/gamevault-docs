@@ -37,16 +37,13 @@ const features = [
     image: ImgStore,
     description: (
       <>
-        Built for self-hosters. Install the client from the{" "}
-        <a
-          href="https://www.microsoft.com/store/apps/9PCKDV76GL75"
-          className="text-primary-default hover:underline"
-        >
-          Microsoft Store
+        Built for self-hosters.{" "}
+        <a href="/download" className="text-primary-default hover:underline">
+          Download the client
         </a>{" "}
-        and deploy your server in minutes with our{" "}
+        for Windows, Linux or macOS, and deploy your server in minutes with our{" "}
         <a
-          href="/docs/server-docs/setup"
+          href="/docs/server/setup"
           className="text-primary-default hover:underline"
         >
           easy setup guide

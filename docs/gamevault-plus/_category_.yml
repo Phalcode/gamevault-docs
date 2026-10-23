@@ -1,2 +1,6 @@
-position: 4
+position: 6
 label: GameVault+
+link:
+  type: generated-index
+  title: GameVault+
+  description: The optional subscription that supports development and unlocks extra features.
