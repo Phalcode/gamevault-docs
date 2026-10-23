@@ -15,6 +15,8 @@ library and use the same account.
 | Install and launch games | Yes                   | No                          | Yes                           |
 | Status                   | Public beta           | Stable                      | Feature-complete, maintenance |
 
+The [feature comparison](../clients/feature-parity.md) covers every difference in detail.
+
 ## GameVault 2 (recommended)
 
 GameVault 2 is the new cross-platform desktop client. It manages versions per

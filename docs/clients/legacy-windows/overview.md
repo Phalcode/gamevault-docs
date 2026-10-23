@@ -13,6 +13,9 @@ GameVault 1 is not deprecated. It still works and it remains the only client
 with full [GameVault+](../../gamevault-plus/introduction.md) support.
 :::
 
+See the [feature comparison](../feature-parity.md) for a detailed comparison
+with GameVault 2, including what is still missing there.
+
 ## When to use it
 
 - You depend on GameVault+ features such as cloud saves, multi-profile, themes

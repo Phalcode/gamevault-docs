@@ -29,7 +29,8 @@ instance.
   distribution.
 
 See [Choose your client](../getting-started/choose-your-client.md) for a
-comparison.
+comparison, or the [feature comparison](../clients/feature-parity.md) for the
+detailed matrix.
 
 ## Is GameVault 2 ready for daily use?
 
@@ -65,7 +66,9 @@ funds development.
 ## Is GameVault+ available in GameVault 2?
 
 Not yet. Cloud saves, multi-profile, themes and the integrations currently
-require the legacy Windows app. Support for GameVault 2 is planned.
+require the legacy Windows app. Support for GameVault 2 is planned. The
+[feature comparison](../clients/feature-parity.md#gamevault) lists every feature
+and its tracking issue.
 
 ## How do I update?
 

@@ -41,6 +41,9 @@ GameVault+ is currently available in the legacy Windows app only. Cloud saves,
 multi-profile, themes and the integrations are still missing from GameVault 2.
 If you depend on them, keep using the legacy client until they arrive.
 
+The [feature comparison](../clients/feature-parity.md#gamevault) lists every
+GameVault+ feature with its tracking issue.
+
 ## Reporting problems
 
 Bugs in GameVault 2 belong in the

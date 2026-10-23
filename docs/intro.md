@@ -22,6 +22,9 @@ GameVault has two parts:
   - The [legacy Windows app](./clients/legacy-windows/overview.md), the original
     client with full GameVault+ support.
 
+Not sure which one fits? The [feature comparison](./clients/feature-parity.md)
+lists what each client supports.
+
 :::tip Try it out
 You do not need a server to look around. Use our demo instance:
 
