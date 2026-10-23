@@ -61,6 +61,11 @@ export default function Home() {
         <GameVaultPlus />
         <Faqs />
         <FinalCta />
+        <div className="bg-background-dark pb-8">
+          <p className="px-6 text-center text-xs text-text-light/60">
+            All depicted games on this website are placeholders and not real.
+          </p>
+        </div>
       </main>
     </Layout>
   );

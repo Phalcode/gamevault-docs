@@ -124,9 +124,6 @@ export function DemoSection() {
             </div>
           </div>
         </div>
-        <p className="mt-12 text-center text-xs text-text-light/60">
-          All depicted games on this website are placeholders and not real.
-        </p>
       </Container>
     </section>
   );
