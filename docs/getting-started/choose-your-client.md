@@ -4,47 +4,42 @@ sidebar_position: 1
 
 # Choose Your Client
 
-GameVault has three ways to access a server. They all connect to the same
-library and use the same account.
+GameVault has two clients. Both connect to the same server and the same account.
 
-|                          | GameVault 2           | Web UI                      | Legacy Windows app            |
-| ------------------------ | --------------------- | --------------------------- | ----------------------------- |
-| Platforms                | Windows, Linux, macOS | Any modern browser          | Windows 10/11                 |
-| Installation             | Desktop app           | None, served by your server | Microsoft Store or manual     |
-| Download manager         | Yes                   | No                          | Yes                           |
-| Install and launch games | Yes                   | No                          | Yes                           |
-| Status                   | Public beta           | Stable                      | Feature-complete, maintenance |
+|                                    | GameVault 2                                 | Legacy Windows app (GameVault 1) |
+| ---------------------------------- | ------------------------------------------- | -------------------------------- |
+| Platforms                          | Windows, Linux, macOS, plus a browser build | Windows 10/11                    |
+| Installation                       | Desktop app, or nothing for the Web UI      | Microsoft Store or manual        |
+| Download, install and launch games | Desktop app only                            | Yes                              |
+| Status                             | Public beta                                 | Feature-complete, maintenance    |
+| GameVault+                         | Planned                                     | Available                        |
 
-The [feature comparison](../clients/feature-parity.md) covers every difference in detail.
+The [feature comparison](../clients/feature-parity.md) covers every difference in
+detail.
 
 ## GameVault 2 (recommended)
 
-GameVault 2 is the new cross-platform desktop client. It manages versions per
+GameVault 2 is the actively developed client. It manages multiple versions per
 game, installs and launches titles, and brings first-class Linux support with
 AppImage, `.deb`, umu-launcher and per-game Wine/Proton prefixes.
 
-It is in public beta. The legacy Windows app is still available if you depend
-on a feature that GameVault 2 does not have yet.
+GameVault 2 is web-first: the desktop app runs the same interface that your
+server serves as the [Web UI](../clients/gamevault-2/web-ui.md). The browser
+build shares the library, game pages, settings, community and admin views, and
+only leaves out what a browser cannot do: downloading, installing, launching
+and local file access.
 
-[Install GameVault 2](../clients/gamevault-2/installation.md)
+- [Install the desktop app](../clients/gamevault-2/installation.md)
+- [Open the Web UI in your browser](../clients/gamevault-2/web-ui.md)
 
-## Web UI
+It is in public beta. The legacy Windows app is still available if you depend on
+a feature that GameVault 2 does not have yet.
 
-The Web UI is served by GameVault Server itself. Open your server's address in
-a browser and you get the same library, browsing and administration interface
-without installing anything.
-
-A browser cannot download, install or launch games on your computer, so the Web
-UI is best for browsing, managing users or checking on your server from another
-device.
-
-[Learn about the Web UI](../web-ui/overview.md)
-
-## Legacy Windows app
+## Legacy Windows app (GameVault 1)
 
 The original Windows client. It is feature-complete and only receives
 maintenance updates, but it is the only client with full GameVault+ support
-today and it can be installed from the Microsoft Store.
+today.
 
 [Learn about the legacy client](../clients/legacy-windows/overview.md)
 

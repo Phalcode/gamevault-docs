@@ -22,9 +22,9 @@ instance.
 ## Which client should I use?
 
 - **GameVault 2** for Windows, Linux and macOS. It is the actively developed
-  client and the only one with native Linux support.
-- **Web UI** for browsing and administration from a browser. It cannot download,
-  install or launch games.
+  client and the only one with native Linux support. In a browser, the
+  [Web UI](../clients/gamevault-2/web-ui.md) gives you the same interface
+  without installing anything; it cannot download, install or launch games.
 - **Legacy Windows app** if you need a GameVault+ feature or the Microsoft Store
   distribution.
 

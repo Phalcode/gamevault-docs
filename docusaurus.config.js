@@ -63,6 +63,14 @@ const config = {
             to: "/docs/clients/gamevault-2/updating",
           },
           {
+            from: "/docs/web-ui/overview",
+            to: "/docs/clients/gamevault-2/web-ui",
+          },
+          {
+            from: "/docs/web-ui",
+            to: "/docs/clients/gamevault-2/web-ui",
+          },
+          {
             from: "/docs/advanced-usage/early-access-program",
             to: "/docs/help/beta-program",
           },
@@ -140,7 +148,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/features/library.png",
+      image: "img/og-gamevault.png",
       metadata: [
         {
           name: "keywords",

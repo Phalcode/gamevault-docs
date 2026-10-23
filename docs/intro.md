@@ -15,10 +15,11 @@ install and launch them.
 GameVault has two parts:
 
 - **GameVault Server** — the self-hosted backend, usually run with Docker.
-- **A client** — pick what fits your setup:
-  - [GameVault 2](./clients/gamevault-2/installation.md), the cross-platform
-    desktop app for Windows, Linux and macOS (public beta).
-  - The [Web UI](./web-ui/overview.md), served by the server for browser access.
+- **A client** — two clients exist:
+  - [GameVault 2](./clients/gamevault-2/installation.md), the actively developed
+    client for Windows, Linux and macOS (public beta). It is web-first: the
+    [Web UI](./clients/gamevault-2/web-ui.md) is the same client in your browser,
+    minus local downloads and launching.
   - The [legacy Windows app](./clients/legacy-windows/overview.md), the original
     client with full GameVault+ support.
 

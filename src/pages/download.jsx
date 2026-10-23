@@ -103,8 +103,9 @@ export default function Download() {
             Bring your own server and play your DRM-free library anywhere.
           </p>
           <p className="mt-4 text-sm text-text-light">
-            Prefer the browser? Open your server's address to use the{" "}
-            <a href="/docs/web-ui/overview">Web UI</a> — nothing to install.
+            Prefer the browser? The{" "}
+            <a href="/docs/clients/gamevault-2/web-ui">Web UI</a> is GameVault 2
+            in your browser, with nothing to install.
           </p>
         </section>
 

@@ -23,6 +23,27 @@ const faqs = [
       answer:
         "GameVault is source-available. The code is transparent and open for personal modification, allowing you to customize the experience while protecting the project's future.",
     },
+    {
+      question: "Do I need a NAS or a dedicated server?",
+      answer:
+        "Any machine that runs Docker works: a NAS, mini PC, home server or VPS. You mainly need disk space for the game files; the server itself is lightweight.",
+    },
+    {
+      question: "What does GameVault cost?",
+      answer: (
+        <>
+          The server and clients are free. GameVault+ is optional and starts at
+          €4.99 per month;{" "}
+          <a
+            href="/docs/gamevault-plus/introduction"
+            className="text-primary-default hover:underline"
+          >
+            see what it includes
+          </a>
+          .
+        </>
+      ),
+    },
   ],
   [
     {
@@ -44,6 +65,26 @@ const faqs = [
       question: "Is this related to gambling apps?",
       answer:
         "No. GameVault is a gaming utility. We have no affiliation with gambling platforms that may share a similar name. We are dedicated solely to game library management.",
+    },
+    {
+      question: "Can my friends play on my server?",
+      answer:
+        "Yes. Create users, assign roles and enable parental control if needed. For access outside your network, expose the server through a reverse proxy or a VPN.",
+    },
+    {
+      question: "What is still missing in GameVault 2?",
+      answer: (
+        <>
+          GameVault+ is not available in GameVault 2 yet. The{" "}
+          <a
+            href="/docs/clients/feature-parity"
+            className="text-primary-default hover:underline"
+          >
+            feature comparison
+          </a>{" "}
+          lists every gap and its tracking issue.
+        </>
+      ),
     },
   ],
 ];

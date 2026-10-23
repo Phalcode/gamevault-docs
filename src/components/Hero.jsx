@@ -1,8 +1,16 @@
 import ImgLibrary from "@site/static/img/features/library.png";
 import Link from "@docusaurus/Link";
 import React from "react";
+import * as Swetrix from "swetrix";
 import { Button } from "./Button";
 import { Container } from "./Container";
+
+const proofPoints = [
+  "Free",
+  "No account",
+  "Docker in 5 minutes",
+  "Windows · Linux · macOS · Web",
+];
 
 export function Hero() {
   return (
@@ -64,18 +72,36 @@ export function Hero() {
               Your Rules.
             </h1>
             <p className="mt-8 text-lg sm:text-xl leading-8 text-text-light max-w-2xl mx-auto lg:mx-0">
-              The self-hosted gaming platform for your DRM-free collection. Host
-              your own library, track your stats, and share the experience with
-              friends. It's like having your own personal Steam, but you're the
-              one in control.
+              The self-hosted Steam alternative for DRM-free games. Run the
+              server on your NAS, mini PC or VPS and play on Windows, Linux,
+              macOS or in the browser.
             </p>
+            <ul
+              aria-label="GameVault at a glance"
+              className="mt-5 flex flex-wrap list-none justify-center gap-2 lg:justify-start"
+            >
+              {proofPoints.map((point) => (
+                <li
+                  key={point}
+                  className="rounded-full bg-primary-default/10 px-3 py-1 text-xs font-medium text-primary-light ring-1 ring-primary-default/20"
+                >
+                  {point}
+                </li>
+              ))}
+            </ul>
             <p className="mt-4 text-sm font-medium text-primary-light">
               GameVault 2 is available for Windows, Linux and macOS as a public
-              beta.
+              beta, plus the Web UI in your browser.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
               <Button
                 href="/download"
+                onClick={() =>
+                  Swetrix.track({
+                    ev: "download_click",
+                    meta: { location: "hero" },
+                  })
+                }
                 className="w-full sm:w-56 py-4 text-lg shadow-xl transition-all hover:scale-105 active:scale-95 hover:shadow-primary-default/20"
               >
                 Download
