@@ -34,8 +34,8 @@ logs, the built-in updater with channels, Streamer/OPSEC mode, tray integration
 and gamepad navigation.
 
 **The legacy client is ahead on:** GameVault+ (cloud saves, profiles, themes,
-integrations), offline progress sync, per-game launch overrides, desktop
-shortcuts, a random game picker and custom themes.
+integrations), offline progress sync, desktop shortcuts, a random game picker
+and custom themes.
 
 If you depend on a GameVault+ feature, stay on the legacy client until the
 corresponding issue is closed. Everything else can move to GameVault 2.
@@ -74,7 +74,7 @@ corresponding issue is closed. Everything else can move to GameVault 2.
 | Multiple versions and version picker             | ✅          | ❌                 | Legacy always downloads the server default                      |
 | Edit images (editor role)                        | ✅          | ✅                 |                                                                 |
 | Metadata remap and custom metadata (editor role) | ✅          | ✅                 |                                                                 |
-| Per-game executable and launch overrides         | ❌          | ✅                 | [#56](https://github.com/Phalcode/gamevault-frontend/issues/56) |
+| Per-game executable and launch overrides         | ✅          | ✅                 | Edited in the game settings; applies server-wide                |
 | Desktop shortcuts                                | ❌          | ✅                 | [#55](https://github.com/Phalcode/gamevault-frontend/issues/55) |
 | Uninstall and disk usage                         | ✅          | ✅                 |                                                                 |
 
@@ -149,7 +149,6 @@ GameVault+ is currently only available in the legacy Windows app.
 - [#53](https://github.com/Phalcode/gamevault-frontend/issues/53) Client APIs
 - [#54](https://github.com/Phalcode/gamevault-frontend/issues/54) Offline playtime and progress sync
 - [#55](https://github.com/Phalcode/gamevault-frontend/issues/55) Desktop shortcuts
-- [#56](https://github.com/Phalcode/gamevault-frontend/issues/56) Per-game launch overrides
 - [#57](https://github.com/Phalcode/gamevault-frontend/issues/57) Random game picker
 
 This page is updated when one of these issues ships. If something is wrong or
