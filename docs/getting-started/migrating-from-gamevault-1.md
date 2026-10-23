@@ -32,8 +32,8 @@ once after installing.
 4. Once everything works, uninstall GameVault 1 and remove its old
    `Downloads` and `Installations` folders to free up space.
 
-If disk space is tight, migrate one game at a time and delete the GameVault 1
-installation after the new one is verified.
+If disk space is tight, migrate one game at a time and remove the installation
+created by GameVault 1 once the new one is verified.
 
 ## GameVault+ features
 

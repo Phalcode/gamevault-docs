@@ -88,7 +88,7 @@ export default function Download() {
   return (
     <Layout
       title="Download GameVault"
-      description="Download the GameVault 2 desktop client for Windows, Linux and macOS, or use the Web UI in your browser."
+      description="Download GameVault 2 for Windows, Linux and macOS, or use the Web UI in your browser."
     >
       <main className="bg-background-default">
         <section className="mx-auto max-w-5xl px-6 pt-16 pb-10 text-center">
@@ -99,8 +99,8 @@ export default function Download() {
             Download GameVault
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-text-light">
-            The GameVault 2 desktop app for Windows, Linux and macOS. Bring your
-            own server and play your DRM-free library anywhere.
+            GameVault 2 for Windows, Linux and macOS. Bring your own server and
+            play your DRM-free library anywhere.
           </p>
           <p className="mt-4 text-sm text-text-light">
             Prefer the browser? The{" "}
