@@ -118,6 +118,12 @@ export default function Download() {
           ))}
         </section>
 
+        <p className="mx-auto max-w-3xl px-6 pb-10 text-center text-sm text-text-light">
+          Early Access is open to everyone. Switch the update channel in the
+          client, no application needed.{" "}
+          <a href="/docs/help/beta-program">How to switch channels</a>.
+        </p>
+
         <section className="mx-auto max-w-5xl px-6 pb-10">
           <h2 className="text-2xl font-semibold text-text-default">
             After installation

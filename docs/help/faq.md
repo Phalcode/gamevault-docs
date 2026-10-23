@@ -72,6 +72,13 @@ require GameVault 1. Support for GameVault 2 is planned. The
 [feature comparison](../clients/feature-parity.md#gamevault) lists every feature
 and its tracking issue.
 
+## How do I get Early Access builds?
+
+Early Access is open to everyone, with no application or signup. Unlock
+**Developer Tools** in **Settings → About** (click the version number five
+times), then set the update channel to **Early Access** under **Settings → About
+→ Updates**. See [Beta Program and Update Channels](beta-program.md).
+
 ## How do I update?
 
 GameVault 2 updates itself through its built-in updater. GameVault 1

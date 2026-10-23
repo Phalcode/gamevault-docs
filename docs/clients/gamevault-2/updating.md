@@ -15,8 +15,10 @@ The update downloads in the background and installs on restart.
 - **early-access** — pre-release builds from the `ea` branch.
 - **unstable** — builds from the `develop` branch.
 
-A build defaults to the channel it was created for. Early Access and Unstable
-are only selectable after unlocking **Developer Tools**; see
+A build defaults to the channel it was created for. Early Access is open to
+everyone: unlock **Developer Tools** in **Settings → About** by clicking the
+version number five times, then pick the channel under **Settings → About →
+Updates**. No application or signup is needed. See
 [Beta Program and Update Channels](../../help/beta-program.md).
 
 ## Manual installations
