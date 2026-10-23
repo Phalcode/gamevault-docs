@@ -6,7 +6,7 @@ sidebar_position: 5
 GameVault offers the option to apply different themes to your GameVault client application. With [GameVault+](../../gamevault-plus/introduction.md), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
 
 :::note
-This page covers the legacy Windows app. GameVault 2 currently ships light and dark themes only.
+This page covers GameVault 1. GameVault 2 currently ships light and dark themes only.
 :::
 
 ## Free Themes

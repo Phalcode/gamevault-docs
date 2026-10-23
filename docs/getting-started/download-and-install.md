@@ -33,11 +33,11 @@ interface and library, and you can download game files directly. Automatic
 installation, launching and playtime tracking need the desktop app. See
 [Web UI](../clients/gamevault-2/web-ui.md).
 
-## Legacy Windows app
+## GameVault 1
 
-The original Windows client is still available from the Microsoft Store and as
-a manual download. See
-[legacy client installation](../clients/legacy-windows/installation.md).
+GameVault 1 is still available from the Microsoft Store and as a manual
+download. See
+[GameVault 1 installation](../clients/gamevault-1/installation.md).
 
 ## Unsigned builds
 

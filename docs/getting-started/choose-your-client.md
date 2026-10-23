@@ -6,14 +6,14 @@ sidebar_position: 1
 
 GameVault has two clients. Both connect to the same server and the same account.
 
-|                                     | GameVault 2                                 | Legacy Windows app (GameVault 1) |
-| ----------------------------------- | ------------------------------------------- | -------------------------------- |
-| Platforms                           | Windows, Linux, macOS, plus a browser build | Windows 10/11                    |
-| Installation                        | Desktop app, or nothing for the Web UI      | Microsoft Store or manual        |
-| Download game files                 | Browser download or desktop app             | Yes                              |
-| Automatic install, launch, tracking | Desktop app only                            | Yes                              |
-| Status                              | Public beta                                 | Feature-complete, maintenance    |
-| GameVault+                          | Planned                                     | Available                        |
+|                                     | GameVault 2                                 | GameVault 1                   |
+| ----------------------------------- | ------------------------------------------- | ----------------------------- |
+| Platforms                           | Windows, Linux, macOS, plus a browser build | Windows 10/11                 |
+| Installation                        | Desktop app, or nothing for the Web UI      | Microsoft Store or manual     |
+| Download game files                 | Browser download or desktop app             | Yes                           |
+| Automatic install, launch, tracking | Desktop app only                            | Yes                           |
+| Status                              | Public beta                                 | Feature-complete, maintenance |
+| GameVault+                          | Planned                                     | Available                     |
 
 The [feature comparison](../clients/feature-parity.md) covers every difference in
 detail.
@@ -34,16 +34,16 @@ and playtime tracking.
 - [Install the desktop app](../clients/gamevault-2/installation.md)
 - [Open the Web UI in your browser](../clients/gamevault-2/web-ui.md)
 
-It is in public beta. The legacy Windows app is still available if you depend on
+It is in public beta. GameVault 1 is still available if you depend on
 a feature that GameVault 2 does not have yet.
 
-## Legacy Windows app (GameVault 1)
+## GameVault 1
 
-The original Windows client. It is feature-complete and only receives
-maintenance updates, but it is the only client with full GameVault+ support
-today.
+GameVault 1 is the original Windows client. It is feature-complete and only
+receives maintenance updates, but it is the only client with full GameVault+
+support today.
 
-[Learn about the legacy client](../clients/legacy-windows/overview.md)
+[Learn about GameVault 1](../clients/gamevault-1/overview.md)
 
 ## Still need a server?
 

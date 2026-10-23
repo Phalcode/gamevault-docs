@@ -1,6 +1,5 @@
-label: GameVault 2 (Cross-Platform)
+label: GameVault 2
 position: 2
 link:
-  type: generated-index
-  title: GameVault 2
-  description: The cross-platform desktop app and the Web UI in your browser. Currently in public beta.
+  type: doc
+  id: clients/gamevault-2/installation

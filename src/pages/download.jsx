@@ -99,8 +99,8 @@ export default function Download() {
             Download GameVault
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-text-light">
-            The cross-platform desktop client for Windows, Linux and macOS.
-            Bring your own server and play your DRM-free library anywhere.
+            The GameVault 2 desktop app for Windows, Linux and macOS. Bring your
+            own server and play your DRM-free library anywhere.
           </p>
           <p className="mt-4 text-sm text-text-light">
             Prefer the browser? The{" "}
@@ -147,7 +147,7 @@ export default function Download() {
 
         <section className="mx-auto max-w-5xl px-6 pb-10">
           <h2 className="text-2xl font-semibold text-text-default">
-            GameVault 2 or the legacy client?
+            GameVault 2 or GameVault 1?
           </h2>
           <div className="mt-6 overflow-x-auto rounded-2xl ring-1 ring-primary-default/30">
             <table className="table w-full min-w-[640px] text-left text-sm">
@@ -155,9 +155,7 @@ export default function Download() {
                 <tr>
                   <th className="px-4 py-3 font-semibold">Feature</th>
                   <th className="px-4 py-3 font-semibold">GameVault 2</th>
-                  <th className="px-4 py-3 font-semibold">
-                    Legacy Windows app
-                  </th>
+                  <th className="px-4 py-3 font-semibold">GameVault 1</th>
                 </tr>
               </thead>
               <tbody className="text-text-light">
@@ -191,7 +189,7 @@ export default function Download() {
           </div>
           <p className="mt-4 text-sm text-text-light">
             GameVault 2 uses a different installation format. Games installed
-            with the legacy client have to be downloaded again. See{" "}
+            with GameVault 1 have to be downloaded again. See{" "}
             <a href="/docs/getting-started/migrating-from-gamevault-1">
               Migrating from GameVault 1
             </a>{" "}
@@ -202,14 +200,13 @@ export default function Download() {
 
         <section className="mx-auto max-w-5xl px-6 pb-14">
           <h2 className="text-2xl font-semibold text-text-default">
-            Legacy Windows app
+            GameVault 1
           </h2>
           <p className="mt-3 max-w-3xl text-text-light">
-            The original Windows client is still available and remains the only
-            client with full GameVault+ support. Install it from the Microsoft
-            Store, or read the{" "}
-            <a href="/docs/clients/legacy-windows/installation">
-              legacy installation guide
+            GameVault 1 is still available and remains the only client with full
+            GameVault+ support. Install it from the Microsoft Store, or read the{" "}
+            <a href="/docs/clients/gamevault-1/installation">
+              GameVault 1 installation guide
             </a>
             .
           </p>
@@ -218,11 +215,11 @@ export default function Download() {
               Open Microsoft Store
             </Button>
             <Button
-              href="/docs/clients/legacy-windows/overview"
+              href="/docs/clients/gamevault-1/overview"
               variant="outline"
               className="ring-primary-default/60 text-text-default hover:ring-primary-default"
             >
-              Legacy documentation
+              GameVault 1 documentation
             </Button>
           </div>
         </section>

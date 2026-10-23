@@ -49,7 +49,7 @@ const faqs = [
     {
       question: "Are there native Mac or Linux clients?",
       answer:
-        "Yes. GameVault 2 is a cross-platform desktop client for Windows, Linux and macOS, currently in public beta. The original Windows client is still available for GameVault+ users, and the Web UI works in any browser.",
+        "Yes. GameVault 2 is the desktop client for Windows, Linux and macOS, currently in public beta. GameVault 1 is still available for GameVault+ users, and the Web UI works in any browser.",
     },
     {
       question: "Does GameVault support game streaming?",

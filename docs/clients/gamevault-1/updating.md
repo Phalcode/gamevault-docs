@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Updating the Legacy Windows Client
+# Updating GameVault 1
 
 ## Microsoft Store
 
@@ -18,6 +18,6 @@ over the old one.
 
 ## Update channels
 
-The legacy client follows the Microsoft Store release and does not have a
+GameVault 1 follows the Microsoft Store release and does not have a
 built-in channel picker. Pre-release server and client builds are described in
 [Beta Program and Update Channels](../../help/beta-program.md).

@@ -26,7 +26,7 @@ instance.
   [Web UI](../clients/gamevault-2/web-ui.md) gives you the same interface
   without installing anything; it can download game files, but automatic
   installation, launching and playtime tracking need the desktop app.
-- **Legacy Windows app** if you need a GameVault+ feature or the Microsoft Store
+- GameVault 1 if you need a GameVault+ feature or the Microsoft Store
   distribution.
 
 See [Choose your client](../getting-started/choose-your-client.md) for a
@@ -39,7 +39,7 @@ It is in public beta. The core loop (browse, download, install, launch) works,
 but some features are missing and bugs are expected. GameVault 1 remains
 available and feature-complete.
 
-## Can I keep games installed with the legacy client?
+## Can I keep games installed with GameVault 1?
 
 No. GameVault 2 uses a different installation layout, so games have to be
 downloaded and installed again. Your server data, account and playtime are
@@ -48,7 +48,7 @@ unaffected. See [Migrating from GameVault 1](../getting-started/migrating-from-g
 ## Does GameVault run on Linux and macOS?
 
 Yes, through GameVault 2. Linux packages are `.AppImage` and `.deb`, macOS gets
-an Apple Silicon `.dmg`. Running the legacy Windows client on Linux through Wine
+an Apple Silicon `.dmg`. Running GameVault 1 on Linux through Wine
 is possible but unsupported.
 
 ## Can I download or launch games from the browser?
@@ -68,16 +68,16 @@ funds development.
 ## Is GameVault+ available in GameVault 2?
 
 Not yet. Cloud saves, multi-profile, themes and the integrations currently
-require the legacy Windows app. Support for GameVault 2 is planned. The
+require GameVault 1. Support for GameVault 2 is planned. The
 [feature comparison](../clients/feature-parity.md#gamevault) lists every feature
 and its tracking issue.
 
 ## How do I update?
 
-GameVault 2 updates itself through its built-in updater. The legacy client
+GameVault 2 updates itself through its built-in updater. GameVault 1
 updates through the Microsoft Store, or manually if you installed it elsewhere.
 See [GameVault 2 updates](../clients/gamevault-2/updating.md) and
-[legacy updates](../clients/legacy-windows/updating.md).
+[GameVault 1 updates](../clients/gamevault-1/updating.md).
 
 ## How do I hide my user name in screenshots?
 

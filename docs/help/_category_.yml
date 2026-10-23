@@ -1,6 +1,5 @@
 label: Help
 position: 8
 link:
-  type: generated-index
-  title: Help
-  description: Troubleshooting, frequently asked questions, beta channels, licensing and contributing.
+  type: doc
+  id: help/faq

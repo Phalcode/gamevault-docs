@@ -9,9 +9,9 @@ channels if you want to test changes earlier.
 
 ## The old Early Access Program
 
-The Early Access Program for the Microsoft Store app has ended. The
-cross-platform client replaced it: GameVault 2 is available to everyone as a
-public beta. The old `early-access` page now points here.
+The Early Access Program for the Microsoft Store app has ended. GameVault 2
+replaced it: the client is available to everyone as a public beta. The old
+`early-access` page now points here.
 
 ## Client update channels
 

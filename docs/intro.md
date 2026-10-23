@@ -21,7 +21,7 @@ GameVault has two parts:
     [Web UI](./clients/gamevault-2/web-ui.md) is the same client in your browser,
     with direct downloads but without automatic installation, launching and
     playtime tracking.
-  - The [legacy Windows app](./clients/legacy-windows/overview.md), the original
+  - The [GameVault 1](./clients/gamevault-1/overview.md), the original
     client with full GameVault+ support.
 
 Not sure which one fits? The [feature comparison](./clients/feature-parity.md)
@@ -41,7 +41,7 @@ You do not need a server to look around. Use our demo instance:
 2. [Download and install](./getting-started/download-and-install.md) it, or
    [set up a server](./server/setup/setup.md) first.
 3. [Connect the client to your server](./getting-started/connect-to-server.md).
-4. Coming from the old client? Read
+4. Coming from GameVault 1? Read
    [Migrating from GameVault 1](./getting-started/migrating-from-gamevault-1.md).
 
 ## Features
@@ -79,7 +79,7 @@ You do not need a server to look around. Use our demo instance:
 
 [GameVault+](./gamevault-plus/introduction.md) is an optional subscription with
 cloud saves, multiple profiles, extra themes and integrations. It currently
-requires the legacy Windows app.
+requires GameVault 1.
 
 ## Support Us
 

@@ -2,12 +2,12 @@
 sidebar_position: 7
 ---
 
-# Running the Legacy Client on Linux
+# Running GameVault 1 on Linux
 
-This page serves as a community-driven guide to assist you in setting up the legacy GameVault client on Linux.
+This page serves as a community-driven guide to assist you in setting up GameVault 1 on Linux.
 
 :::tip Native Linux client
-The [cross-platform client](../gamevault-2/linux.md) is in **public beta** and ships native Linux packages (`.deb` and `.AppImage`), so it no longer requires Wine. The guide below is only relevant if you want to run the **legacy Windows app**.
+[GameVault 2](../gamevault-2/linux.md) is in **public beta** and ships native Linux packages (`.deb` and `.AppImage`), so it no longer requires Wine. The guide below is only relevant if you want to run GameVault 1.
 :::
 
 :::warning

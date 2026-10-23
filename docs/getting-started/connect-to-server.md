@@ -5,7 +5,7 @@ sidebar_position: 3
 # Connect to a Server
 
 This page explains how to add a GameVault server to the desktop client. The
-same login window exists in GameVault 2 and the legacy Windows app.
+same login window exists in GameVault 2 and GameVault 1.
 
 ## First start
 
@@ -19,7 +19,7 @@ you use more than one server.
 
 :::tip Multiple profiles
 Multiple profiles on one device are a [GameVault+](../gamevault-plus/introduction.md)
-feature in the legacy Windows app. GameVault 2 currently supports one active
+feature in GameVault 1. GameVault 2 currently supports one active
 profile per installation.
 :::
 

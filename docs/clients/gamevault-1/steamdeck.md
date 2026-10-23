@@ -2,12 +2,12 @@
 sidebar_position: 8
 ---
 
-# Running the Legacy Client on Steam Deck
+# Running GameVault 1 on Steam Deck
 
-This page serves as a community-driven guide to assist you in setting up the legacy GameVault client on SteamOS.
+This page serves as a community-driven guide to assist you in setting up GameVault 1 on SteamOS.
 
 :::tip Native Linux client
-The [cross-platform client](../gamevault-2/linux.md#steam-deck) is in **public beta** and ships a Linux AppImage with gamepad navigation. The guide below is for the **legacy Windows app** running through Proton.
+[GameVault 2](../gamevault-2/linux.md#steam-deck) is in **public beta** and ships a Linux AppImage with gamepad navigation. The guide below is for GameVault 1 running through Proton.
 :::
 
 :::warning

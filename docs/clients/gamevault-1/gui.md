@@ -162,8 +162,8 @@ Everything about storing and downloading your games:
 - Show the application version, the update channel, and the automatic update status (desktop clients).
 - Browse the third-party open-source licenses.
 
-:::note Legacy Windows App
-The legacy Windows app organizes its settings into the tabs **Application**, **Installation**, **User**, and **Data** (root directories, image/offline cache, ignored executables, ISO mounting, and theme installation).
+:::note GameVault 1
+GameVault 1 organizes its settings into the tabs **Application**, **Installation**, **User**, and **Data** (root directories, image/offline cache, ignored executables, ISO mounting, and theme installation).
 :::
 
 ## Administration

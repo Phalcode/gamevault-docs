@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Installing the Legacy Windows Client
+# Installing GameVault 1
 
 **Requirement:** Windows 10 or 11 with Microsoft Store installed.
 
@@ -36,7 +36,7 @@ without a code-signing certificate. Choose **More Details → Run Anyway**.
 
 ### Linux via Wine
 
-There is no native legacy build for Linux. The community guide for Wine and
+There is no native GameVault 1 build for Linux. The community guide for Wine and
 Bottles is [here](linux-wine.md). Native Linux support exists in
 [GameVault 2](../gamevault-2/linux.md).
 

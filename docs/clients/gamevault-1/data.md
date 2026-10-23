@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Data Management
 
-This page gives you an overview of how the legacy Windows client stores and manages its data.
+This page gives you an overview of how GameVault 1 stores and manages its data.
 
-The **legacy Windows app** stores its data at:
+The **GameVault 1** stores its data at:
 
 - `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` when installed from the Microsoft Store
 - `%APPDATA%\GameVault` otherwise

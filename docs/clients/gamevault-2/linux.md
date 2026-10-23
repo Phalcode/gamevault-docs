@@ -62,8 +62,8 @@ works in Gaming Mode.
 Games started by GameVault inherit Steam's environment when GameVault itself was
 started through Steam, so overlays and controller mappings keep working.
 
-## Legacy client
+## GameVault 1
 
 Running the old Windows client on Linux with Wine or Bottles is documented
 separately under
-[legacy Linux setup](../legacy-windows/linux-wine.md).
+[GameVault 1 Linux setup](../gamevault-1/linux-wine.md).

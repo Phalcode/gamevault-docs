@@ -59,8 +59,8 @@ export function GameVaultPlus() {
               </a>
             </div>
             <p className="mt-4 text-sm text-text-light">
-              GameVault+ currently requires the legacy Windows app. Support for
-              GameVault 2 is planned.
+              GameVault+ currently requires GameVault 1. Support for GameVault 2
+              is planned.
             </p>
           </div>
           <ul className="grid list-none gap-4 sm:grid-cols-2 lg:col-span-7">

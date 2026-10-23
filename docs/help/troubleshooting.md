@@ -44,15 +44,15 @@ Either make sure this user has permissions to read/write to the folders you map 
 - Clear the Searchbox
 - Clear all active Filters
 - Press F5 to trigger a new search
-- For installations, verify your correct root folder is set [in the settings](../clients/legacy-windows/gui.md#settings).
-- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](../clients/legacy-windows/gui.md#game-settings)).
+- For installations, verify your correct root folder is set [in the settings](../clients/gamevault-1/gui.md#settings).
+- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](../clients/gamevault-1/gui.md#game-settings)).
 - Verify [your file names are correct](../server/structure.md).
 - Check the Filesystem Permissions. See [here](#server-fails-to-save-media--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
 
 ### Missing Box Arts
 
 - [Set up a Metadata Provider](../server/metadata-enrichment/metadata.md) that provides box art for your games.
-- Clear media caches [in the settings.](../clients/legacy-windows/gui.md#settings)
+- Clear media caches [in the settings.](../clients/gamevault-1/gui.md#settings)
 
 ### Lack of Metadata in Games
 

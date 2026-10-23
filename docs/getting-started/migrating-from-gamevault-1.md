@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # Migrating from GameVault 1
 
-GameVault 2 (codename RockWhistle) is a new client, not an update of the legacy
-Windows app. Your server, account and library stay the same; the client on your
-computer changes.
+GameVault 2 (codename RockWhistle) is a new client, not an update of GameVault 1.
+Your server, account and library stay the same; the client on your computer
+changes.
 
 ## What carries over
 
@@ -17,7 +17,7 @@ computer changes.
 ## What does not carry over
 
 GameVault 2 uses a different layout for game installations. Games installed
-with the legacy client cannot be reused, so they have to be downloaded and
+with GameVault 1 cannot be reused, so they have to be downloaded and
 installed again in GameVault 2.
 
 Local client settings (download folders, window state, themes) are not
@@ -26,20 +26,20 @@ once after installing.
 
 ## Recommended migration
 
-1. Keep the legacy Windows app installed for now.
+1. Keep GameVault 1 installed for now.
 2. Install GameVault 2 next to it. Both clients can use the same server.
 3. Download and install the games you actively play in GameVault 2.
-4. Once everything works, uninstall the legacy app and remove its old
+4. Once everything works, uninstall GameVault 1 and remove its old
    `Downloads` and `Installations` folders to free up space.
 
-If disk space is tight, migrate one game at a time and delete the legacy
+If disk space is tight, migrate one game at a time and delete the GameVault 1
 installation after the new one is verified.
 
 ## GameVault+ features
 
-GameVault+ is currently available in the legacy Windows app only. Cloud saves,
+GameVault+ is currently available in GameVault 1 only. Cloud saves,
 multi-profile, themes and the integrations are still missing from GameVault 2.
-If you depend on them, keep using the legacy client until they arrive.
+If you depend on them, keep using GameVault 1 until they arrive.
 
 The [feature comparison](../clients/feature-parity.md#gamevault) lists every
 GameVault+ feature with its tracking issue.

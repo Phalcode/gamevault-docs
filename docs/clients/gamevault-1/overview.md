@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Legacy Windows Client
+# GameVault 1
 
-The legacy Windows client (GameVault 1) is the original .NET desktop app. It is
+GameVault 1 is the original .NET desktop app for Windows. It is
 feature-complete and receives maintenance fixes only. New features go into
 [GameVault 2](../gamevault-2/installation.md).
 
@@ -25,7 +25,7 @@ with GameVault 2, including what is still missing there.
 
 ## When to use GameVault 2 instead
 
-- You are on Linux or macOS. The legacy client is Windows-only; running it
+- You are on Linux or macOS. GameVault 1 is Windows-only; running it
   through Wine or Proton is unsupported.
 - You want multiple versions of a game, native Linux launching with
   umu-launcher, or per-game Wine/Proton prefixes.

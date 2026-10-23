@@ -19,52 +19,52 @@ The list above is what the **server** detects and indexes. Extraction happens on
 
 ### Client Extraction Support
 
-The **legacy Windows app** bundles the 7-Zip command-line program and can extract every format listed above.
+The **GameVault 1** bundles the 7-Zip command-line program and can extract every format listed above.
 
-The **cross-platform client** ships a built-in extractor with its own set of codecs. It currently cannot open most of the rarer archive formats; for those, only the legacy Windows app works:
+**GameVault 2** ships a built-in extractor with its own set of codecs. It currently cannot open most of the rarer archive formats; for those, only GameVault 1 works:
 
-| Format               | Legacy Windows app (7-Zip) | Cross-platform client (built-in extractor) |
-| -------------------- | :------------------------: | :----------------------------------------: |
-| `.7z`                |             ✅             |                     ✅                     |
-| `.zip`               |             ✅             |                     ✅                     |
-| `.rar`               |             ✅             |                     ✅                     |
-| `.iso`               |             ✅             |                     ✅                     |
-| `.tar`               |             ✅             |                     ✅                     |
-| `.tar.gz` / `.tgz`   |             ✅             |                     ✅                     |
-| `.tar.bz2` / `.tbz2` |             ✅             |                     ✅                     |
-| `.tar.xz` / `.txz`   |             ✅             |                     ✅                     |
-| `.gz`                |             ✅             |                     ✅                     |
-| `.bz2`               |             ✅             |                     ✅                     |
-| `.xz`                |             ✅             |                     ✅                     |
-| `.wim`               |             ✅             |                     ❌                     |
-| `.ar`                |             ✅             |                     ❌                     |
-| `.arj`               |             ✅             |                     ❌                     |
-| `.cab`               |             ✅             |                     ❌                     |
-| `.chm`               |             ✅             |                     ❌                     |
-| `.cpio`              |             ✅             |                     ❌                     |
-| `.cramfs`            |             ✅             |                     ❌                     |
-| `.dmg`               |             ✅             |                     ❌                     |
-| `.ext`               |             ✅             |                     ❌                     |
-| `.fat`               |             ✅             |                     ❌                     |
-| `.gpt`               |             ✅             |                     ❌                     |
-| `.hfs`               |             ✅             |                     ❌                     |
-| `.ihex`              |             ✅             |                     ❌                     |
-| `.lzh`               |             ✅             |                     ❌                     |
-| `.lzma`              |             ✅             |                     ❌                     |
-| `.mbr`               |             ✅             |                     ❌                     |
-| `.msi`               |             ✅             |                     ❌                     |
-| `.nsis`              |             ✅             |                     ❌                     |
-| `.ntfs`              |             ✅             |                     ❌                     |
-| `.qcow2`             |             ✅             |                     ❌                     |
-| `.rpm`               |             ✅             |                     ❌                     |
-| `.squashfs`          |             ✅             |                     ❌                     |
-| `.udf`               |             ✅             |                     ❌                     |
-| `.uefi`              |             ✅             |                     ❌                     |
-| `.vdi`               |             ✅             |                     ❌                     |
-| `.vhd`               |             ✅             |                     ❌                     |
-| `.vmdk`              |             ✅             |                     ❌                     |
-| `.xar`               |             ✅             |                     ❌                     |
-| `.z`                 |             ✅             |                     ❌                     |
+| Format               | GameVault 1 (7-Zip) | GameVault 2 (built-in extractor) |
+| -------------------- | :-----------------: | :------------------------------: |
+| `.7z`                |         ✅          |                ✅                |
+| `.zip`               |         ✅          |                ✅                |
+| `.rar`               |         ✅          |                ✅                |
+| `.iso`               |         ✅          |                ✅                |
+| `.tar`               |         ✅          |                ✅                |
+| `.tar.gz` / `.tgz`   |         ✅          |                ✅                |
+| `.tar.bz2` / `.tbz2` |         ✅          |                ✅                |
+| `.tar.xz` / `.txz`   |         ✅          |                ✅                |
+| `.gz`                |         ✅          |                ✅                |
+| `.bz2`               |         ✅          |                ✅                |
+| `.xz`                |         ✅          |                ✅                |
+| `.wim`               |         ✅          |                ❌                |
+| `.ar`                |         ✅          |                ❌                |
+| `.arj`               |         ✅          |                ❌                |
+| `.cab`               |         ✅          |                ❌                |
+| `.chm`               |         ✅          |                ❌                |
+| `.cpio`              |         ✅          |                ❌                |
+| `.cramfs`            |         ✅          |                ❌                |
+| `.dmg`               |         ✅          |                ❌                |
+| `.ext`               |         ✅          |                ❌                |
+| `.fat`               |         ✅          |                ❌                |
+| `.gpt`               |         ✅          |                ❌                |
+| `.hfs`               |         ✅          |                ❌                |
+| `.ihex`              |         ✅          |                ❌                |
+| `.lzh`               |         ✅          |                ❌                |
+| `.lzma`              |         ✅          |                ❌                |
+| `.mbr`               |         ✅          |                ❌                |
+| `.msi`               |         ✅          |                ❌                |
+| `.nsis`              |         ✅          |                ❌                |
+| `.ntfs`              |         ✅          |                ❌                |
+| `.qcow2`             |         ✅          |                ❌                |
+| `.rpm`               |         ✅          |                ❌                |
+| `.squashfs`          |         ✅          |                ❌                |
+| `.udf`               |         ✅          |                ❌                |
+| `.uefi`              |         ✅          |                ❌                |
+| `.vdi`               |         ✅          |                ❌                |
+| `.vhd`               |         ✅          |                ❌                |
+| `.vmdk`              |         ✅          |                ❌                |
+| `.xar`               |         ✅          |                ❌                |
+| `.z`                 |         ✅          |                ❌                |
 
 Single-file executables (`setup_game.exe`, `.sh`, `.AppImage`) are downloaded as `.tar` and extracted by both clients; there is no difference there.
 

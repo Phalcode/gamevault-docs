@@ -44,7 +44,7 @@ const config = {
           },
           {
             from: "/docs/client-docs/gui",
-            to: "/docs/clients/legacy-windows/gui",
+            to: "/docs/clients/gamevault-1/gui",
           },
           {
             from: "/docs/client-docs/how-to-use",
@@ -52,15 +52,19 @@ const config = {
           },
           {
             from: "/docs/client-docs/data",
-            to: "/docs/clients/legacy-windows/data",
+            to: "/docs/clients/gamevault-1/data",
           },
           {
             from: "/docs/client-docs/themes",
-            to: "/docs/clients/legacy-windows/themes",
+            to: "/docs/clients/gamevault-1/themes",
           },
           {
             from: "/docs/client-docs/updating-client",
             to: "/docs/clients/gamevault-2/updating",
+          },
+          {
+            from: "/docs/clients/legacy-windows",
+            to: "/docs/clients/gamevault-1/overview",
           },
           {
             from: "/docs/web-ui/overview",
@@ -76,11 +80,11 @@ const config = {
           },
           {
             from: "/docs/advanced-usage/linux-client",
-            to: "/docs/clients/legacy-windows/linux-wine",
+            to: "/docs/clients/gamevault-1/linux-wine",
           },
           {
             from: "/docs/advanced-usage/steamdeck",
-            to: "/docs/clients/legacy-windows/steamdeck",
+            to: "/docs/clients/gamevault-1/steamdeck",
           },
           {
             from: "/docs/advanced-usage/failt2ban",
@@ -104,6 +108,14 @@ const config = {
           },
         ],
         createRedirects(existingPath) {
+          if (existingPath.startsWith("/docs/clients/gamevault-1/")) {
+            return [
+              existingPath.replace(
+                "/docs/clients/gamevault-1/",
+                "/docs/clients/legacy-windows/",
+              ),
+            ];
+          }
           if (existingPath.startsWith("/docs/server/")) {
             return [
               existingPath.replace("/docs/server/", "/docs/server-docs/"),

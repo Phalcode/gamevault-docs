@@ -37,5 +37,5 @@ the settings dump under **Settings → Developer Tools** first if you want to
 keep a record.
 :::
 
-The legacy Windows client uses different paths; see
-[legacy data locations](../legacy-windows/data.md).
+GameVault 1 uses different paths; see
+[GameVault 1 data locations](../gamevault-1/data.md).
