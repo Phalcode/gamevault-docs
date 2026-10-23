@@ -57,30 +57,30 @@ export function DemoSection() {
 
                 <div className="flex items-center gap-2 mb-6 border-b border-white/5 pb-4 relative z-10">
                   <div className="w-2 h-2 rounded-full bg-primary-default animate-pulse" />
-                  <div className="text-[10px] text-text-light/40 uppercase tracking-widest">
+                  <div className="text-xs text-text-light/70 uppercase tracking-widest">
                     Access_Credentials
                   </div>
                 </div>
 
                 <div className="space-y-6 relative z-10">
                   <div>
-                    <div className="text-[10px] text-primary-default/60 uppercase mb-2 tracking-tighter">
+                    <div className="text-xs text-primary-default/80 uppercase mb-2 tracking-tighter">
                       // Identity
                     </div>
                     <button
                       onClick={() => copyToClipboard("demo", "user")}
                       className="w-full flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/5 hover:border-primary-default/40 hover:bg-white/10 transition-all group/item"
                     >
-                      <span className="text-text-light/50">Username</span>
+                      <span className="text-text-light/80">Username</span>
                       <div className="flex items-center gap-3">
                         <code className="text-primary-light text-lg font-bold px-2">
                           demo
                         </code>
                         <span
-                          className={`text-[10px] uppercase tracking-widest transition-all ${
+                          className={`text-xs uppercase tracking-widest transition-all ${
                             copiedField === "user"
                               ? "text-primary-default opacity-100"
-                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                              : "text-text-light/60 opacity-0 group-hover/item:opacity-100"
                           }`}
                           aria-live="polite"
                         >
@@ -91,23 +91,23 @@ export function DemoSection() {
                   </div>
 
                   <div>
-                    <div className="text-[10px] text-primary-default/60 uppercase mb-2 tracking-tighter">
+                    <div className="text-xs text-primary-default/80 uppercase mb-2 tracking-tighter">
                       // Security_Key
                     </div>
                     <button
                       onClick={() => copyToClipboard("demodemo", "pass")}
                       className="w-full flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/5 hover:border-primary-default/40 hover:bg-white/10 transition-all group/item"
                     >
-                      <span className="text-text-light/50">Password</span>
+                      <span className="text-text-light/80">Password</span>
                       <div className="flex items-center gap-3">
                         <code className="text-primary-light text-lg font-bold px-2">
                           demodemo
                         </code>
                         <span
-                          className={`text-[10px] uppercase tracking-widest transition-all ${
+                          className={`text-xs uppercase tracking-widest transition-all ${
                             copiedField === "pass"
                               ? "text-primary-default opacity-100"
-                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                              : "text-text-light/60 opacity-0 group-hover/item:opacity-100"
                           }`}
                           aria-live="polite"
                         >

@@ -11,7 +11,7 @@ const features = [
   {
     title: "Your Personal Game Cloud",
     description:
-      "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab. Access your library via our native client or directly through the built-in WebUI.",
+      "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab. Access your library with GameVault 2 on Windows, Linux and macOS, or through the built-in Web UI.",
     image: ImgLibrary,
   },
   {
@@ -76,7 +76,7 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
+      aria-label="GameVault features"
       className="relative overflow-hidden py-20 sm:py-32 bg-background-default"
     >
       <Container className="relative">

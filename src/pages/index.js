@@ -6,6 +6,7 @@ import { DemoSection } from "../components/DemoSection";
 import { Faqs } from "../components/Faqs";
 import { PrimaryFeatures } from "../components/Features";
 import { Hero } from "../components/Hero";
+import { HowItWorks } from "../components/HowItWorks";
 
 export default function Home() {
   Swetrix.init("K6k7j6GHClhh");
@@ -29,6 +30,7 @@ export default function Home() {
         <section className="bg-background-dark">
           <Hero />
         </section>
+        <HowItWorks />
         <PrimaryFeatures />
         <DemoSection />
         <Faqs />
