@@ -1,7 +1,7 @@
 ---
 name: 📖 Documentation Improvement
 about: Do you have an idea to improve our Documentation?
-labels: ["📖 docs","🔧 feature"]
+labels: ["📖 docs", "🔧 feature"]
 ---
 
 **Description**

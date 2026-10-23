@@ -33,6 +33,7 @@ A public repository of custom themes shared by our community can be found [here]
 3. Select your preferred theme and click **"Install Theme"**.
 
 #### Manual Installation
+
 1. Place the theme .xaml file into your `themes` folder. Depending on your GameVault installation, the `themes` folder can be located at either `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\themes` or `%APPDATA%/GameVault/themes`.
 2. Open `GameVault Settings` and select your newly added theme under `Application` -> `Themes`.
 

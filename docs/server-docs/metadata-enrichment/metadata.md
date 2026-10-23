@@ -16,6 +16,7 @@ GameVault supports a **vast plugin framework** that supports connecting to vario
 - [**IGDB (via Client-ID and Client-Secret)**](./provider-igdb.md)
 
 ### Community-Maintained Metadata Providers
+
 - [**VNDB** by AlmostEasyGoing](https://github.com/AlmostEasyGoing/Gamevault-VNDB-Plugin)
 - [More to come... Click here to add your plugin!](#developing-a-new-metadata-provider-plugin)
 

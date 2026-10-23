@@ -147,8 +147,8 @@ See more details about [SSO Login](setup.md#sso-login) if you want to log in usi
 
 What happens after clicking "Save and Sign Up" depends on the server configuration:
 
-    - A: The new user is activated immediately upon signing up, and you will be logged in.
-    - B: The new user must first be activated by an administrator. In that case, the following UI is shown:
+- A: The new user is activated immediately upon signing up, and you will be logged in.
+- B: The new user must first be activated by an administrator. In that case, the following UI is shown:
 
 ![pendingactivation](/img/docs/setup-client/login-window-pending-activation.png)
 

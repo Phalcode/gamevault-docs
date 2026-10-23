@@ -1,1 +1,8 @@
+# Docusaurus renders page and post titles as h1, so content often starts at h3.
+MD001: false
+# Prose lines are intentionally long; wrapping is handled by the editor.
+MD013: false
+# Inline HTML is used deliberately (badges, screenshots, video embeds).
 MD033: false
+# "Read more here" links are being replaced during the docs restructure.
+MD059: false

@@ -75,7 +75,7 @@ If you are not happy with either method, you can use the preselected options of 
 
 ## Step 3: Naming the Archive
 
-Before naming the archive, take a moment to research the game you're about to add. Ask yourself questions or use a search engine to answer  the following questions:
+Before naming the archive, take a moment to research the game you're about to add. Ask yourself questions or use a search engine to answer the following questions:
 
 - "What version is the game?"
 - "What year was the game released?"

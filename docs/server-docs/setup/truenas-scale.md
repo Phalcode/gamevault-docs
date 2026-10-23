@@ -49,7 +49,6 @@ services:
     volumes:
       # Mount the folder where your PostgreSQL database files should land
       - /your/database/folder:/var/lib/postgresql
-
 ```
 
 You should also take a moment to read the [Configuration](/docs/server-docs/configuration.md) page, as it contains additional options that can be configured if desired. This guide will cover only the options that are needed for a basic setup, but you may want to add more for your particular needs.
@@ -60,7 +59,7 @@ You should also take a moment to read the [Configuration](/docs/server-docs/conf
 
 ## Step 2: Configure User/Storage for GameVault
 
-**Configuring User**
+### Configuring User
 
 By default, GameVault will try to run as user ID 1000 and group ID 1000. However, this will not normally work in TrueNAS Scale. Instead, you will need to specify which user/group ID GameVault should use. You can create a new user, or use an existing one!
 
@@ -74,18 +73,16 @@ PGID: 568
 
 An example of the finished config is available below under "Step 2a".
 
-
-
-**Configuring Storage**
+### Configuring Storage
 
 GameVault expects three directories:
 
 - a directory where your games are located - mounted to the /files directory internally
 - a directory for GameVault to store the database files - mounted to the /var/lib/postgresql directory internally
 - a database for GameVault to store its media - mounted to the /media directory internally
-  
+
 These directories will need to be created before you can deploy GameVault on your TrueNAS Scale server.
-If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories. 
+If you have not yet done so, create the needed directories before continuing, and ensure your chosen user has read/write access to all three of the directories.
 
 For this example, the following directories have been made on TrueNAS Scale, and the "apps" user has read/write access:
 
@@ -96,7 +93,6 @@ For this example, the following directories have been made on TrueNAS Scale, and
 After these directories have been created, and you have ensured that your chosen TrueNAS user has read/write access to all three directories, you will need to update the docker-compose.yml file to specify these directories.
 
 An example of the finished config is available below under "Step 2a"
-
 
 ## Step 2a: Setting your GameVault Admin user
 
@@ -141,10 +137,9 @@ services:
       - /Tank1/GameVault/database:/var/lib/postgresql
 ```
 
-You should change the `DB_PASSWORD` and `POSTGRES_PASSWORD` variables to be an actual password instead of "YOURPASSWORDHERE". 
+You should change the `DB_PASSWORD` and `POSTGRES_PASSWORD` variables to be an actual password instead of "YOURPASSWORDHERE".
 
 You can set this to anything you want, but they both need to be the same password or it will not work.
-
 
 You are now ready to deploy GameVault!
 
@@ -188,7 +183,7 @@ Example: `http://192.168.0.240:8080`
 
 ### Registering Your Admin User
 
-Once you have the server running, you will need to download/install the GameVault client. It will walk you through the setup process. 
+Once you have the server running, you will need to download/install the GameVault client. It will walk you through the setup process.
 
 Here are a few things to keep in mind during this setup process:
 
@@ -198,7 +193,7 @@ Here are a few things to keep in mind during this setup process:
 - If you are running other apps, be sure they are not also using port 8080 - this will cause a conflict.
   - You can check this by looking at each of your running apps - used ports will show under the "Ports" section of the "Workloads" window.
   - If there is a conflict, you will need to change the conflicting app, or GameVault, to use a different port.
-- Be sure to register your admin user before you try to login. Use the same username you specified in the config file. 
+- Be sure to register your admin user before you try to login. Use the same username you specified in the config file.
 
 ### Stopping the Server
 

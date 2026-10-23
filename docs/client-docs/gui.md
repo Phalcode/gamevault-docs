@@ -118,7 +118,7 @@ See more [here](setup.md#initial-configuration)
 
 Settings are organized into categories and opened from the sidebar (gear icon).
 
-### Downloads
+### Download Settings
 
 Everything about storing and downloading your games:
 
@@ -127,7 +127,7 @@ Everything about storing and downloading your games:
 - Set if you want to auto-extract downloaded games and set a default password for encrypted archives.
 - Set if portable games should be auto-installed and if the install files should be auto-deleted.
 
-### Library
+### Library Settings
 
 - Settings that shape your game library (e.g. retain sorting and filter preferences after restart).
 

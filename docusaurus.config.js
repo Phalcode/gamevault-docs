@@ -75,7 +75,8 @@ const config = {
       metadata: [
         {
           name: "keywords",
-          content: "gaming, self-hosted, drm-free, game library, gamevault, homelab",
+          content:
+            "gaming, self-hosted, drm-free, game library, gamevault, homelab",
         },
         { name: "twitter:card", content: "summary_large_image" },
       ],

@@ -17,7 +17,6 @@ After the new file is indexed:
 - the game gains another entry in `versions[]`
 - the server may switch the default downloadable version automatically
 
-
 ### Example
 
 Let's say you have an outdated version of `Minecraft (EA) (v1.8b) (2011).zip` and you add `Minecraft (v1.20.1) (2011).7z`:

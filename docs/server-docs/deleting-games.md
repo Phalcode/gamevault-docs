@@ -23,7 +23,6 @@ Example:
 Delete only `v1.0.0` → game stays.
 Delete `v1.1.0` as well → game is soft-deleted on next indexing.
 
-
 ## Deleting a Game via API
 
 Admins can delete game files via API. With multi-version support, deletion is version-specific.

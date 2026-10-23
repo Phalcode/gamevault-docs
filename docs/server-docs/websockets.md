@@ -29,12 +29,12 @@ Once a client reports an activity, the server forwards it to other users. If a c
 
 ### Events
 
-| Direction      | Event            | Payload                          |
-| -------------- | ---------------- | -------------------------------- |
-| Client to Server | `set-activity`  | The activity to broadcast        |
+| Direction        | Event            | Payload                          |
+| ---------------- | ---------------- | -------------------------------- |
+| Client to Server | `set-activity`   | The activity to broadcast        |
 | Client to Server | `get-activities` | Request all current activities   |
-| Server to Client | `activity`      | A single user's updated activity |
-| Server to Client | `activities`    | All users' current activities    |
+| Server to Client | `activity`       | A single user's updated activity |
+| Server to Client | `activities`     | All users' current activities    |
 
 ### Disabling Activities
 

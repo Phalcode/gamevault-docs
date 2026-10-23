@@ -30,13 +30,12 @@ To start, you need the Application files. The simplest way to get them is explai
 9. Install .NET.
 10. Change the target of the Non-steam game to the `gamevault.exe`.
 11. Find the Compdata folder `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/`.
-
-:::tip
-Easiest way to find this is to install and run protontricks in the discover store. Mine is 3860686742
-:::
-
 12. Unzip fonts downloaded from archive.org and install to `/home/deck/.local/share/steam/steamapps/compatdata/GAMEAPPIDNUMBER/pfx/drive_c/windows/Fonts`. (specifically Segoe UI)
 13. Run GameVault via Steam
+
+:::tip
+Easiest way to find the Compdata folder is to install and run protontricks from the Discover store. Mine is 3860686742.
+:::
 
 ## Updating the Client
 

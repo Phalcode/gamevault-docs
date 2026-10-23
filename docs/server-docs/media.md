@@ -10,14 +10,14 @@ This page outlines how media like images and videos are handled within the backe
 
 ### Supported Image Formats
 
-| Format  | Name                        | MIME Type                  |
-| ------- | --------------------------- | -------------------------- |
-| `.bmp`  | Bitmap Image                | `image/bmp`      |
-| `.jpeg` | JPEG Image                  | `image/jpeg`     |
-| `.png`  | Portable Network Graphics   | `image/png`      |
-| `.tiff` | Tagged Image File Format    | `image/tiff`     |
-| `.gif`  | Graphics Interchange Format | `image/gif`      |
-| `.ico`  | Icon Format                 | `image/x-icon`   |
+| Format  | Name                        | MIME Type      |
+| ------- | --------------------------- | -------------- |
+| `.bmp`  | Bitmap Image                | `image/bmp`    |
+| `.jpeg` | JPEG Image                  | `image/jpeg`   |
+| `.png`  | Portable Network Graphics   | `image/png`    |
+| `.tiff` | Tagged Image File Format    | `image/tiff`   |
+| `.gif`  | Graphics Interchange Format | `image/gif`    |
+| `.ico`  | Icon Format                 | `image/x-icon` |
 
 ### Supported Audio Formats
 

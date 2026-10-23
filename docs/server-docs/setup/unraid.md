@@ -25,13 +25,14 @@ POSTGRES_USER: gamevault
 POSTGRES_PASSWORD: RANDOMPASSWORD
 POSTGRES_DB: gamevault
 ```
+
 Make sure you remember the password and port you set we will use this in step 3
 
 ![Step 2](/img/docs/setup/unraid/unraid2.png)
 
 ## Step 3: Setting up your GameVault Backend server
 
-Search for `gamevault-backend` on the Unraid app store making sure to click the one without the SQLITE in the title. 
+Search for `gamevault-backend` on the Unraid app store making sure to click the one without the SQLITE in the title.
 
 Click install
 
@@ -41,13 +42,11 @@ Click install
 
 We don't recommend it but you can run GameVault without a PostgreSQL Database too by instead using the `GameVault-Backend-SQLITE` template by `phalcode` in Step 2.
 
-
 ## Step 4: Configure install
 
-Using the password and port fill out the information that is required and click apply at the bottom. 
+Using the password and port fill out the information that is required and click apply at the bottom.
 
 ![Step 4](/img/docs/setup/unraid/unraid4.png)
-
 
 Your GameVault should now be available at `http://tower.local:8080/` or `HOSTNAME:PORT` if you changed your hostname or port.
 
@@ -64,7 +63,6 @@ You have now successfully set up your GameVault Server using UNRAID.
 Navigate to "Docker" tab and left click the GameVault app icon you have created.
 
 Click on "Stop".
-
 
 ### Reading the Logs
 

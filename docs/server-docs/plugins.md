@@ -60,9 +60,7 @@ import {
   controllers: [],
   providers: [],
 })
-export default class ReleaseRadarPluginModule
-  implements GameVaultPluginModule
-{
+export default class ReleaseRadarPluginModule implements GameVaultPluginModule {
   metadata: GameVaultPluginModuleMetadataV1 = {
     name: "Release Radar",
     author: "Phalcode",
@@ -77,13 +75,14 @@ export default class ReleaseRadarPluginModule
 ```
 
 :::info ESM requirements (GameVault v17.0.1+)  
-The backend is now ESM (NodeNext). Plugins must:  
-- use explicit `.js` extensions on every relative import (e.g. `../../../src/globals.js`),  
-- use `import type` for type-only imports (e.g. `GameVaultPluginModule`),  
-- `export default` the module class (no CommonJS `module.exports` / `__esModule` interop),  
-- **not** bundle their own copy of `@nestjs/*` or `reflect-metadata` — rely on the backend's `node_modules`,  
+The backend is now ESM (NodeNext). Plugins must:
+
+- use explicit `.js` extensions on every relative import (e.g. `../../../src/globals.js`),
+- use `import type` for type-only imports (e.g. `GameVaultPluginModule`),
+- `export default` the module class (no CommonJS `module.exports` / `__esModule` interop),
+- **not** bundle their own copy of `@nestjs/*` or `reflect-metadata` — rely on the backend's `node_modules`,
 - be compiled together with the backend via `pnpm build` (Node LTS), producing a `*.plugin.module.js` entry.  
-:::
+  :::
 
 :::tip Avoid Redundancy  
 When naming files, avoid repeating words. For example, if your plugin is called `release-radar`, name the module file `release-radar.plugin.module.ts`, not `release-radar-plugin.plugin.module.ts`.  

@@ -44,18 +44,18 @@ const Dropdown = ({ className, options, ...props }) => {
 
   return (
     <span ref={dropdownRef} className="relative block w-full text-left">
-              <Button
-          className={className + " w-full"}
-          {...props}
-          onClick={toggleMenu}
-          aria-haspopup="true"
-          aria-expanded={isOpen}
-          aria-controls="dropdown-menu"
-        />
+      <Button
+        className={className + " w-full"}
+        {...props}
+        onClick={toggleMenu}
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+        aria-controls="dropdown-menu"
+      />
 
       {isOpen && (
         <div
-          className="absolute right-0 z-20 mt-2 w-full origin-top-right rounded-xl bg-background-dark shadow-2xl ring-1 ring-pri backdrop-blur-xl"
+          className="absolute right-0 z-20 mt-2 w-full origin-top-right rounded-xl bg-background-dark shadow-2xl ring-1 ring-primary-default backdrop-blur-xl"
           id="dropdown-menu"
           role="menu"
           aria-orientation="vertical"
@@ -65,11 +65,14 @@ const Dropdown = ({ className, options, ...props }) => {
               <Link
                 key={option.label}
                 href={option.link}
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-bold hover:no-underline block px-6 py-3 text-base hover:bg-background-default/50 text-text-default transition-colors"
                 aria-label={option.label}
                 role="menuitem"
-                ref={el => menuItemRefs.current[idx] = el}
+                ref={(el) => {
+                  menuItemRefs.current[idx] = el;
+                }}
               >
                 {option.label}
               </Link>
@@ -87,7 +90,7 @@ Dropdown.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       link: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 

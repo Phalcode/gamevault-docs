@@ -38,10 +38,20 @@ const features = [
     description: (
       <>
         Built for self-hosters. Install the client from the{" "}
-        <a href="https://www.microsoft.com/store/apps/9PCKDV76GL75" className="text-primary-default hover:underline">
+        <a
+          href="https://www.microsoft.com/store/apps/9PCKDV76GL75"
+          className="text-primary-default hover:underline"
+        >
           Microsoft Store
         </a>{" "}
-        and deploy your server in minutes with our <a href="/docs/server-docs/setup" className="text-primary-default hover:underline">easy setup guide</a> for any environment.
+        and deploy your server in minutes with our{" "}
+        <a
+          href="/docs/server-docs/setup"
+          className="text-primary-default hover:underline"
+        >
+          easy setup guide
+        </a>{" "}
+        for any environment.
       </>
     ),
   },
@@ -51,10 +61,15 @@ const features = [
     description: (
       <>
         Built by gamers, for gamers.{" "}
-        <a target="_blank" href="https://discord.gg/NEdNen2dSu" className="text-primary-default hover:underline">
+        <a
+          target="_blank"
+          href="https://discord.gg/NEdNen2dSu"
+          className="text-primary-default hover:underline"
+        >
           Join our Discord
         </a>{" "}
-        to help shape the future of the project, or explore the source code on GitHub to contribute.
+        to help shape the future of the project, or explore the source code on
+        GitHub to contribute.
       </>
     ),
   },
@@ -75,7 +90,8 @@ export function PrimaryFeatures() {
           </h2>
           <p className="mt-6 text-lg tracking-tight text-text-light">
             GameVault is the ultimate ecosystem for the modern self-hoster.
-            Built for performance, reliability, and total ownership of your digital library.
+            Built for performance, reliability, and total ownership of your
+            digital library.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 lg:grid-cols-3">

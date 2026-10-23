@@ -1,6 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css";
+
+/* Scan the pages and content that carry Tailwind classes. */
+@source "../../src";
+@source "../../docs";
+@source "../../blog";
+
+/*
+ * Theme configuration. Colors are mapped onto Infima custom properties so
+ * Tailwind utilities follow the light/dark theme automatically.
+ */
+@theme {
+  --breakpoint-md: 997px;
+
+  --color-text-default: var(--ifm-font-color-base);
+  --color-text-light: var(--ifm-font-color-light);
+  --color-text-inverse: var(--ifm-font-color-base-inverse);
+
+  --color-primary: var(--ifm-color-primary);
+  --color-primary-default: var(--ifm-color-primary);
+  --color-primary-lightest: var(--ifm-color-primary-lightest);
+  --color-primary-lighter: var(--ifm-color-primary-lighter);
+  --color-primary-light: var(--ifm-color-primary-light);
+  --color-primary-dark: var(--ifm-color-primary-dark);
+  --color-primary-darker: var(--ifm-color-primary-darker);
+  --color-primary-darkest: var(--ifm-color-primary-darkest);
+
+  --color-background-default: var(--ifm-background-color);
+  --color-background-dark: var(--ifm-background-surface-color);
+}
 
 /* You can override the default Infima variables here. */
 :root {

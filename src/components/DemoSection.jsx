@@ -26,7 +26,6 @@ export function DemoSection() {
         <div className="mx-auto max-w-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              
               <h2 className="font-display text-4xl font-black tracking-tight text-text-default sm:text-5xl uppercase">
                 Ready to{" "}
                 <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary-default to-primary-light pr-2">
@@ -77,14 +76,14 @@ export function DemoSection() {
                         <code className="text-primary-light text-lg font-bold px-2">
                           demo
                         </code>
-                         <span
-                           className={`text-[10px] uppercase tracking-widest transition-all ${
-                             copiedField === "user"
-                               ? "text-primary-default opacity-100"
-                               : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
-                           }`}
-                           aria-live="polite"
-                         >
+                        <span
+                          className={`text-[10px] uppercase tracking-widest transition-all ${
+                            copiedField === "user"
+                              ? "text-primary-default opacity-100"
+                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                          }`}
+                          aria-live="polite"
+                        >
                           {copiedField === "user" ? "Copied!" : "Copy"}
                         </span>
                       </div>
@@ -104,14 +103,14 @@ export function DemoSection() {
                         <code className="text-primary-light text-lg font-bold px-2">
                           demodemo
                         </code>
-                         <span
-                           className={`text-[10px] uppercase tracking-widest transition-all ${
-                             copiedField === "pass"
-                               ? "text-primary-default opacity-100"
-                               : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
-                           }`}
-                           aria-live="polite"
-                         >
+                        <span
+                          className={`text-[10px] uppercase tracking-widest transition-all ${
+                            copiedField === "pass"
+                              ? "text-primary-default opacity-100"
+                              : "text-text-light/20 opacity-0 group-hover/item:opacity-100"
+                          }`}
+                          aria-live="polite"
+                        >
                           {copiedField === "pass" ? "Copied!" : "Copy"}
                         </span>
                       </div>

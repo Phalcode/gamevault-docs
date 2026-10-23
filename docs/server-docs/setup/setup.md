@@ -27,9 +27,7 @@ We're looking for people who are excited to help out. Since we don't run a GameV
 
 ## What Next?
 
-**Congratulations! 🥳**
-
-You now should have a server up and running. To further set up and start using server, you can follow these steps:
+Congratulations! 🥳 You should now have a server up and running. To further set up and start using the server, follow these steps:
 
 :::tip Built-in Web UI
 Once your server is running, you can use it right away in your browser at `http://<server-ip>:8080`. The Web UI is served by the server itself and can be disabled with `WEB_UI_ENABLED`. For a desktop experience, install one of the [GameVault clients](../../client-docs/setup.md).

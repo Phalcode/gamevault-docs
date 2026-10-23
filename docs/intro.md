@@ -13,15 +13,15 @@ Add your game files such as installers and portable builds to a folder. The serv
 GameVault consists of two components:
 
 - A self-hosted backend server served with Docker
-- A client application to use this server. You can pick from: 
-    - the **Web UI** you can open directly in your browser
-    - the **cross-platform desktop client** (Windows, Linux, macOS, **early access**)
-    - the **legacy Windows app**
+- A client application to use this server. You can pick from:
+  - the **Web UI** you can open directly in your browser
+  - the **cross-platform desktop client** (Windows, Linux, macOS, **early access**)
+  - the **legacy Windows app**
 
 :::tip Try it out!
 If you don't have a server yet, but want to try it out, you can use our demo server to get a feel for how it is:
-  
-**URL**: https://demo.gamevau.lt  
+
+**URL**: [demo.gamevau.lt](https://demo.gamevau.lt)  
 **Username**: demo  
 **Password**: demodemo
 :::
