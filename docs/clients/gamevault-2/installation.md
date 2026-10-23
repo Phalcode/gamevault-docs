@@ -7,7 +7,8 @@ sidebar_position: 1
 :::warning Public beta
 GameVault 2 is in public beta. Crashes and missing features are possible. If you
 depend on GameVault+ features, keep using the
-[legacy Windows app](../legacy-windows/overview.md) for now.
+[legacy Windows app](../legacy-windows/overview.md) for now. The
+[feature comparison](../feature-parity.md) shows exactly what is still missing.
 :::
 
 Download the installer for your platform from the [download page](/download) or

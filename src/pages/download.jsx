@@ -117,40 +117,39 @@ export default function Download() {
           ))}
         </section>
 
-        <section className="mx-auto max-w-5xl px-6 pb-16">
+        <section className="mx-auto max-w-5xl px-6 pb-10">
           <h2 className="text-2xl font-semibold text-text-default">
             After installation
           </h2>
-          <ol className="mt-4 space-y-3 text-text-light">
-            <li>
-              1. Start GameVault and add your server. See{" "}
+          <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-text-light">
+            <li className="!ml-0">
+              Start GameVault and add your server. See{" "}
               <a href="/docs/getting-started/connect-to-server">
                 Connect to a server
               </a>
               .
             </li>
-            <li>
-              2. Pick download and installation folders under Settings →
-              Downloads.
+            <li className="!ml-0">
+              Pick download and installation folders under Settings → Downloads.
             </li>
-            <li>
-              3. Download a game and install it. Details are in{" "}
+            <li className="!ml-0">
+              Download a game and install it. Details are in{" "}
               <a href="/docs/clients/gamevault-2/using">Using GameVault</a>.
             </li>
-            <li>
-              4. Running into problems? Check{" "}
+            <li className="!ml-0">
+              Running into problems? Check{" "}
               <a href="/docs/help/troubleshooting">Troubleshooting</a> or the{" "}
               <a href={RELEASES}>release notes</a>.
             </li>
           </ol>
         </section>
 
-        <section className="mx-auto max-w-5xl px-6 pb-16">
+        <section className="mx-auto max-w-5xl px-6 pb-10">
           <h2 className="text-2xl font-semibold text-text-default">
             GameVault 2 or the legacy client?
           </h2>
           <div className="mt-6 overflow-x-auto rounded-2xl ring-1 ring-primary-default/30">
-            <table className="w-full min-w-[640px] text-left text-sm">
+            <table className="table w-full min-w-[640px] text-left text-sm">
               <thead className="bg-background-dark/60 text-text-default">
                 <tr>
                   <th className="px-4 py-3 font-semibold">Feature</th>
@@ -194,12 +193,13 @@ export default function Download() {
             with the legacy client have to be downloaded again. See{" "}
             <a href="/docs/getting-started/migrating-from-gamevault-1">
               Migrating from GameVault 1
-            </a>
-            .
+            </a>{" "}
+            and the full{" "}
+            <a href="/docs/clients/feature-parity">feature comparison</a>.
           </p>
         </section>
 
-        <section className="mx-auto max-w-5xl px-6 pb-20">
+        <section className="mx-auto max-w-5xl px-6 pb-14">
           <h2 className="text-2xl font-semibold text-text-default">
             Legacy Windows app
           </h2>
