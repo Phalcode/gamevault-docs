@@ -76,7 +76,11 @@ const config = {
           },
           {
             from: "/docs/advanced-usage/early-access-program",
-            to: "/docs/help/beta-program",
+            to: "/docs/help/early-access",
+          },
+          {
+            from: "/docs/help/beta-program",
+            to: "/docs/help/early-access",
           },
           {
             from: "/docs/advanced-usage/linux-client",

@@ -77,7 +77,7 @@ and its tracking issue.
 Early Access is open to everyone, with no application or signup. Unlock
 **Developer Tools** in **Settings → About** (click the version number five
 times), then set the update channel to **Early Access** under **Settings → About
-→ Updates**. See [Beta Program and Update Channels](beta-program.md).
+→ Updates**. See [Early Access and Update Channels](early-access.md).
 
 ## How do I update?
 
@@ -99,4 +99,4 @@ Enable **Streamer / OPSEC Mode** under
 - Docs: [gamevault-docs](https://github.com/Phalcode/gamevault-docs/issues)
 
 For setup problems, check [Troubleshooting](troubleshooting.md) and
-[Beta Program and Update Channels](beta-program.md) first.
+[Early Access and Update Channels](early-access.md) first.

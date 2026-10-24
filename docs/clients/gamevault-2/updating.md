@@ -19,7 +19,7 @@ A build defaults to the channel it was created for. Early Access is open to
 everyone: unlock **Developer Tools** in **Settings → About** by clicking the
 version number five times, then pick the channel under **Settings → About →
 Updates**. No application or signup is needed. See
-[Beta Program and Update Channels](../../help/beta-program.md).
+[Early Access and Update Channels](../../help/early-access.md).
 
 ## Manual installations
 
