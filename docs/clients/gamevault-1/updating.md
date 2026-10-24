@@ -20,4 +20,4 @@ over the old one.
 
 GameVault 1 follows the Microsoft Store release and does not have a
 built-in channel picker. Pre-release server and client builds are described in
-[Early Access and Update Channels](../../help/early-access.md).
+[Early Access and Update Channels](../../early-access.md).

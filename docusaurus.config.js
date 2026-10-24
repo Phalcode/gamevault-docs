@@ -36,7 +36,7 @@ const config = {
           },
           {
             from: "/license",
-            to: "/docs/help/license-contribute",
+            to: "/docs/license-contribute",
           },
           {
             from: "/docs/client-docs/setup",
@@ -76,11 +76,11 @@ const config = {
           },
           {
             from: "/docs/advanced-usage/early-access-program",
-            to: "/docs/help/early-access",
+            to: "/docs/early-access",
           },
           {
-            from: "/docs/help/beta-program",
-            to: "/docs/help/early-access",
+            from: "/docs/beta-program",
+            to: "/docs/early-access",
           },
           {
             from: "/docs/advanced-usage/linux-client",
@@ -103,12 +103,28 @@ const config = {
             to: "/docs/server/setup/truenas-scale",
           },
           {
-            from: "/docs/troubleshooting",
-            to: "/docs/help/troubleshooting",
+            from: "/docs/help",
+            to: "/docs/faq",
           },
           {
-            from: "/docs/license-contribute",
-            to: "/docs/help/license-contribute",
+            from: "/docs/help/troubleshooting",
+            to: "/docs/troubleshooting",
+          },
+          {
+            from: "/docs/help/faq",
+            to: "/docs/faq",
+          },
+          {
+            from: "/docs/help/early-access",
+            to: "/docs/early-access",
+          },
+          {
+            from: "/docs/help/license-contribute",
+            to: "/docs/license-contribute",
+          },
+          {
+            from: "/docs/help/beta-program",
+            to: "/docs/early-access",
           },
         ],
         createRedirects(existingPath) {
@@ -231,7 +247,7 @@ const config = {
               },
               {
                 label: "Troubleshooting",
-                to: "/docs/help/troubleshooting",
+                to: "/docs/troubleshooting",
               },
               {
                 label: "Download",
@@ -299,7 +315,7 @@ const config = {
             items: [
               {
                 label: "License",
-                href: "/docs/help/license-contribute",
+                href: "/docs/license-contribute",
               },
               {
                 label: "Legal Notice",

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 8
 ---
 
 # Troubleshooting
@@ -15,13 +15,13 @@ I can't mention these in every single Section below, so before you try to solve 
 - Check if the server is running healthy and is reachable from your client.
 - Restart GameVault Client and Server.
 - Examine Client and Server Logs for error details. (Set `SERVER_LOG_LEVEL` to `debug`)
-- Check [Server for any issues with Configuration](../server/configuration.md).
+- Check [Server for any issues with Configuration](server/configuration.md).
 
 ## Common Problems and Solutions
 
 ### Incorrect Game Mapping
 
-- Refer to [this](../clients/gamevault-2/using.md#modifying-games) for instructions on how to remap your games.
+- Refer to [this](clients/gamevault-2/using.md#modifying-games) for instructions on how to remap your games.
 
 ### Server fails to save media / create SQLITE Database / index games / throws a Permissions Denied / No Permission / EACCES error
 
@@ -32,7 +32,7 @@ Either make sure this user has permissions to read/write to the folders you map 
 ### Unable to Connect to Server / 500 Internal Server Error
 
 - Ensure that you use the correct protocol (http or https) in the connection string, particularly if your server doesn't support SSL.
-- If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](../server/configuration.md) for more information.
+- If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](server/configuration.md) for more information.
 
 ### Initial Admin User is not working
 
@@ -40,34 +40,34 @@ Either make sure this user has permissions to read/write to the folders you map 
 
 ### Games Not Appearing in the Installations / Servers List
 
-- [Add Games to your server](../server/adding-games.md)
+- [Add Games to your server](server/adding-games.md)
 - Clear the Searchbox
 - Clear all active Filters
 - Press F5 to trigger a new search
-- For installations, verify your correct root folder is set [in the settings](../clients/gamevault-1/gui.md#settings).
-- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](../clients/gamevault-1/gui.md#game-settings)).
-- Verify [your file names are correct](../server/structure.md).
+- For installations, verify your correct root folder is set [in the settings](clients/gamevault-1/gui.md#settings).
+- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](clients/gamevault-1/gui.md#game-settings)).
+- Verify [your file names are correct](server/structure.md).
 - Check the Filesystem Permissions. See [here](#server-fails-to-save-media--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
 
 ### Missing Box Arts
 
-- [Set up a Metadata Provider](../server/metadata-enrichment/metadata.md) that provides box art for your games.
-- Clear media caches [in the settings.](../clients/gamevault-1/gui.md#settings)
+- [Set up a Metadata Provider](server/metadata-enrichment/metadata.md) that provides box art for your games.
+- Clear media caches [in the settings.](clients/gamevault-1/gui.md#settings)
 
 ### Lack of Metadata in Games
 
-- [Set up a Metadata Provider](../server/metadata-enrichment/metadata.md) that provides metadata for your games.
-- Verify if [your Metadata Provider is disabled in your server configuration](../server/configuration.md).
-- Verify if [your file names are correct](../server/structure.md)
+- [Set up a Metadata Provider](server/metadata-enrichment/metadata.md) that provides metadata for your games.
+- Verify if [your Metadata Provider is disabled in your server configuration](server/configuration.md).
+- Verify if [your file names are correct](server/structure.md)
 - Verify if you accidently marked your game as `(NC)` (No Cache Flag). If you have multiple game versions, `(NC)` on **any version file** suppresses provider metadata updates for the whole game.
 
 ### Lost my Admin Role
 
-- Refer to [this](../server/user-management#admin-role-recovery) for instructions on how to regain admin privileges for your user.
+- Refer to [this](server/user-management#admin-role-recovery) for instructions on how to regain admin privileges for your user.
 
 ### Forgot my Admin Password
 
-- Refer to [this](../server/user-management#admin-password-recovery) for instructions on how to reset the password of your admin user.
+- Refer to [this](server/user-management#admin-password-recovery) for instructions on how to reset the password of your admin user.
 
 ### Game Downloads are slow
 

@@ -91,4 +91,4 @@ behind a proxy that expects custom headers.
 ## Next steps
 
 - [Using GameVault 2](../clients/gamevault-2/using.md)
-- [Troubleshooting](../help/troubleshooting.md)
+- [Troubleshooting](../troubleshooting.md)
