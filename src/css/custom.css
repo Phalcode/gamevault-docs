@@ -563,13 +563,63 @@ blockquote {
   --aa-search-input-height: 40px;
   --aa-input-border-color-rgb: 141, 132, 255;
   --aa-primary-color-rgb: 141, 132, 255;
+  width: 15rem;
+  max-width: 100%;
+  height: 2.5rem;
 }
 
 .dsla-search-field {
+  width: 100%;
+  height: 2.5rem;
   border-radius: 999px !important;
   border: 1px solid var(--color-gv-line) !important;
   background: var(--color-gv-panel-soft) !important;
   color: var(--color-gv-text) !important;
+  transition:
+    border-color 180ms var(--ease-out),
+    background-color 180ms var(--ease-out);
+}
+
+.dsla-search-field:focus-within {
+  border-color: var(--color-gv-line-strong) !important;
+  background: var(--color-gv-panel-strong) !important;
+}
+
+.dsla-search-field .aa-Autocomplete,
+.dsla-search-field .aa-DetachedSearchButton {
+  width: 100%;
+  height: 100%;
+}
+
+.dsla-search-field .aa-DetachedSearchButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.85rem;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--color-gv-muted) !important;
+  font-size: 0.82rem;
+  font-weight: 500;
+  box-shadow: none !important;
+}
+
+.dsla-search-field .aa-DetachedSearchButton:hover {
+  color: var(--color-gv-text) !important;
+}
+
+.dsla-search-field .aa-DetachedSearchButtonIcon {
+  color: inherit;
+}
+
+.dsla-search-field .aa-DetachedSearchButtonPlaceholder {
+  color: inherit;
+}
+
+.dsla-search-field .aa-DetachedSearchButton:focus-visible {
+  outline: 2px solid var(--color-gv-accent-cool);
+  outline-offset: -2px;
 }
 
 .aa-Panel {
@@ -618,19 +668,36 @@ blockquote {
 /* ---------------------------------------------------------------- */
 .theme-doc-sidebar-container {
   border-right: none !important;
-  padding: 1rem 0 1rem 1rem;
+  flex-shrink: 0;
+  padding: 0;
   background: transparent;
 }
 
-.theme-doc-sidebar-container .menu {
-  position: sticky;
-  top: calc(var(--ifm-navbar-height) + 1rem);
-  max-height: calc(100vh - var(--ifm-navbar-height) - 2rem);
-  margin: 0;
-  padding: 1rem 0.65rem;
-  overflow-y: auto;
-  border-radius: 1.75rem;
+.theme-doc-sidebar-container > div > div {
+  width: 100%;
+}
+
+.gv-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.gv-sidebar--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gv-sidebar-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: calc(100vh - var(--ifm-navbar-height) - 2rem);
+  margin: 0 1rem 1rem;
   border: 1px solid var(--color-gv-line);
+  border-radius: 1.75rem;
   background: linear-gradient(
     180deg,
     color-mix(in srgb, var(--color-gv-shell) 94%, white) 0%,
@@ -638,6 +705,38 @@ blockquote {
   );
   box-shadow: var(--shadow-shell);
   backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.gv-sidebar-header {
+  display: flex;
+  align-items: center;
+  flex: none;
+  padding: 0.85rem 1rem 0.7rem;
+  border-bottom: 1px solid var(--color-gv-line);
+}
+
+.gv-sidebar-heading {
+  color: var(--color-gv-text);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.theme-doc-sidebar-container .gv-sidebar-nav {
+  position: static;
+  flex: 1 1 auto;
+  width: 100%;
+  max-height: none;
+  min-height: 0;
+  margin: 0;
+  padding: 0.5rem 0.65rem 1rem;
+  overflow-y: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
   scrollbar-width: thin;
 }
 
@@ -646,18 +745,18 @@ blockquote {
 }
 
 .menu__list .menu__list {
-  margin-left: 0.15rem;
+  margin-left: 0;
   padding-left: 0.55rem;
-  border-left: 1px solid var(--color-gv-line);
 }
 
 .menu__link {
-  padding: 0.52rem 0.7rem;
-  border-radius: 0.85rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.75rem;
   color: var(--color-gv-muted);
-  font-size: 0.875rem;
+  font-size: 0.86rem;
   font-weight: 500;
   letter-spacing: -0.01em;
+  line-height: 1.35;
   transition:
     color 160ms var(--ease-out),
     background-color 160ms var(--ease-out);
@@ -670,14 +769,14 @@ blockquote {
 
 .menu__link--active:not(.menu__link--sublist),
 .menu__link--active:hover {
-  color: var(--color-gv-text);
-  background: var(--color-gv-panel-soft);
+  color: var(--color-gv-accent-cool);
+  background: color-mix(in srgb, var(--color-gv-accent) 12%, transparent);
   font-weight: 600;
-  box-shadow: inset 3px 0 0 var(--color-gv-accent);
 }
 
 .menu__list-item-collapsible {
-  border-radius: 0.85rem;
+  border-radius: 0.75rem;
+  margin-top: 0.2rem;
 }
 
 .menu__list-item-collapsible:hover {
@@ -686,26 +785,13 @@ blockquote {
 
 .menu__caret::before,
 .menu__link--sublist-caret::after {
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
 .menu__list-item > .menu__list-item-collapsible > .menu__link {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-gv-muted);
-}
-
-.theme-doc-sidebar-container
-  .menu__list
-  > .menu__list-item:first-child
-  > .menu__link,
-.theme-doc-sidebar-container
-  .menu__list
-  > .menu__list-item:first-child
-  > .menu__list-item-collapsible
-  > .menu__link {
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--color-gv-text);
 }
 
@@ -787,10 +873,9 @@ blockquote {
   display: block;
   margin: 0 0 0.65rem 0.7rem;
   color: var(--color-gv-muted);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .table-of-contents__link {
@@ -898,15 +983,6 @@ blockquote {
   background: var(--color-gv-panel-strong);
   color: var(--color-gv-text);
   box-shadow: var(--shadow-card);
-}
-
-/* Sidebar collapse control */
-.theme-doc-sidebar-container button[class*="collapseSidebarButton"] {
-  right: 0.75rem;
-  border: 1px solid var(--color-gv-line);
-  border-radius: 999px;
-  background: var(--color-gv-panel-strong);
-  color: var(--color-gv-muted);
 }
 
 /* ---------------------------------------------------------------- */
@@ -1484,6 +1560,10 @@ summary {
     width: 8rem;
   }
 
+  .dsla-search-wrapper {
+    width: 9rem;
+  }
+
   .navbar-sidebar {
     width: 100%;
     max-width: 100%;
@@ -1499,7 +1579,9 @@ summary {
 
   .theme-doc-sidebar-container .menu {
     position: static;
+    width: 100%;
     max-height: none;
+    margin: 0;
     border-radius: 0;
     border: 0;
     box-shadow: none;

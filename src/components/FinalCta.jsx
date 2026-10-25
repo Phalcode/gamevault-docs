@@ -24,8 +24,7 @@ export function FinalCta() {
               Ready to host your own library?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-gv-muted">
-              Free, self-hosted and no account required. Bring your game files
-              and your own hardware.
+              Free and self-hosted. Bring your game files and your own hardware.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button

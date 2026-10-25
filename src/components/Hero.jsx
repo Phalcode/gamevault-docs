@@ -8,7 +8,6 @@ import { Container } from "./Container";
 
 const proofPoints = [
   "Free & self-hosted",
-  "No account required",
   "Docker in 5 minutes",
   "Windows · Linux · macOS · Web",
 ];
@@ -126,18 +125,14 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="relative hidden items-center justify-center lg:col-span-5 lg:flex">
-            <div
-              aria-hidden="true"
-              className="absolute inset-6 rounded-full bg-[radial-gradient(circle_at_center,rgba(100,89,223,0.35),transparent_68%)] blur-2xl"
+          {/* Desktop Logo */}
+          <div className="hidden lg:flex lg:col-span-5 justify-center items-center relative">
+            <div className="absolute inset-0 bg-primary-default/10 blur-[100px] rounded-full" />
+            <img
+              src="/img/logo.png"
+              className="max-h-[24rem] w-full object-contain animate-float drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] nozoom relative z-10"
+              alt="GameVault Logo"
             />
-            <div className="relative flex h-[22rem] w-full items-center justify-center rounded-[2rem] border border-gv-line bg-gv-panel-soft/60 backdrop-blur-xl">
-              <img
-                src="/img/logo.svg"
-                className="animate-float relative z-10 w-64 drop-shadow-[0_35px_45px_rgba(4,4,12,0.5)]"
-                alt="GameVault logo"
-              />
-            </div>
           </div>
         </div>
 
