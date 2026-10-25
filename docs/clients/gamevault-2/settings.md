@@ -1,4 +1,5 @@
 ---
+description: "Reference for every GameVault 2 setting: downloads, appearance, updates and privacy."
 sidebar_position: 3
 ---
 

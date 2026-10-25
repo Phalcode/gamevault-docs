@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "./Container";
+import { SectionHeading } from "./SectionHeading";
 
 const steps = [
   {
@@ -29,40 +30,48 @@ export function HowItWorks() {
   return (
     <section
       aria-labelledby="how-it-works-title"
-      className="relative overflow-hidden bg-background-default py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-24"
     >
       <Container className="relative">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2
-            id="how-it-works-title"
-            className="font-display text-3xl tracking-tight text-text-default sm:text-4xl"
-          >
-            Server, games, play
-          </h2>
-          <p className="mt-4 text-lg text-text-light">
-            Three steps from a folder of installers to a private game library.
-          </p>
-        </div>
-        <ol className="mt-12 grid gap-6 sm:grid-cols-3">
-          {steps.map((step) => (
+        <SectionHeading
+          id="how-it-works-title"
+          eyebrow="How it works"
+          title="Server, games, play"
+          description="Three steps from a folder of installers to a private game library."
+        />
+
+        <ol className="mt-12 grid list-none gap-5 p-0 sm:grid-cols-3">
+          {steps.map((step, index) => (
             <li
               key={step.number}
-              className="flex flex-col rounded-2xl bg-background-dark/50 p-6 ring-1 ring-primary-default/30"
+              className="surface-panel gv-hover-lift group relative flex flex-col rounded-[1.5rem] p-6"
             >
-              <span className="text-sm font-semibold text-primary-default">
-                {step.number}
-              </span>
-              <h3 className="mt-3 text-xl font-semibold text-text-default">
+              {index < steps.length - 1 ? (
+                <span
+                  aria-hidden="true"
+                  className="absolute -right-4 top-12 hidden h-px w-5 bg-gradient-to-r from-gv-line-strong to-transparent sm:block"
+                />
+              ) : null}
+              <div className="flex items-center justify-between">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gv-line-strong bg-gv-accent/10 font-mono text-sm font-bold text-gv-accent-cool">
+                  {step.number}
+                </span>
+                <span className="text-[0.68rem] font-bold uppercase tracking-[0.16em] text-gv-muted">
+                  Step {index + 1}
+                </span>
+              </div>
+              <h3 className="mt-5 text-xl font-semibold tracking-[-0.02em] text-gv-text">
                 {step.title}
               </h3>
-              <p className="mt-3 flex-1 text-base text-text-light">
+              <p className="mt-2.5 flex-1 text-[0.95rem] leading-7 text-gv-muted">
                 {step.body}
               </p>
               <a
                 href={step.href}
-                className="mt-5 text-sm font-semibold text-primary-default hover:underline"
+                className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-gv-accent-cool no-underline transition-colors hover:text-gv-accent-strong"
               >
                 {step.linkLabel}
+                <span aria-hidden="true">→</span>
               </a>
             </li>
           ))}

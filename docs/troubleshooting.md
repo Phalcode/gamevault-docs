@@ -1,104 +1,114 @@
 ---
+sidebar_label: Troubleshooting
+description: Fix the most common GameVault Server and client problems, and learn how to collect logs for a support request.
 sidebar_position: 8
 ---
 
 # Troubleshooting
 
-Below, we will gradually list some common issues and corresponding solutions to help you maximize the potential of your app. If you can't find a solution to your problem here, feel free to open a ticket on our Github board or seek assistance via [Discord](https://discord.gg/NEdNen2dSu). Alternatively, you may also directly [email our company address](mailto:contact@phalco.de) if the issue is confidential.
+Start with the checklist below. If the problem persists, collect a complete log
+file and ask for help on [Discord](https://discord.gg/NEdNen2dSu) or in the
+[GitHub issue tracker](https://github.com/Phalcode/gamevault-frontend/issues).
 
-Please also attach a log file. We recommend you to read: [How to Collect Logs](./troubleshooting.md#how-to-collect-logs).
+## Before you ask for help
 
-## All-Rounder Solutions that Fix Most Problems
+1. Check that the server is running and reachable from the client.
+2. Restart the client and the server.
+3. Set `SERVER_LOG_LEVEL` to `debug` and read the logs.
+4. Verify your [configuration](server/configuration.md), volumes and
+   permissions.
+5. Reproduce the problem once and note the exact time.
 
-I can't mention these in every single Section below, so before you try to solve anything, try these:
+Include the GameVault version, the client platform, the server image tag and a
+complete log file. Never paste secrets; replace them with `**REDACTED**`.
 
-- Check if the server is running healthy and is reachable from your client.
-- Restart GameVault Client and Server.
-- Examine Client and Server Logs for error details. (Set `SERVER_LOG_LEVEL` to `debug`)
-- Check [Server for any issues with Configuration](server/configuration.md).
+## The client cannot connect
 
-## Common Problems and Solutions
+- Use the correct protocol. A server without TLS needs `http://`, not `https://`.
+- Confirm the port. The default is `8080`; a reverse proxy may expose `443`.
+- If the server is behind a proxy, verify that the proxy forwards WebSocket
+  upgrades and does not buffer large downloads.
+- A `500` response usually points to a server-side problem. Check the server
+  logs before changing client settings.
 
-### Incorrect Game Mapping
+## The first admin account does not work
 
-- Refer to [this](clients/gamevault-2/using.md#modifying-games) for instructions on how to remap your games.
+Register the first user after the server starts. The first registered account is
+activated automatically and receives the admin role. If you already created
+users, see [admin role recovery](server/user-management.md#admin-role-recovery)
+and [admin password recovery](server/user-management.md#admin-password-recovery).
 
-### Server fails to save media / create SQLITE Database / index games / throws a Permissions Denied / No Permission / EACCES error
+## Permissions denied / EACCES
 
-This is most probably a permissions issue due to the fact that gamevault runs as a non-root user (1000:1000) by default for security purposes.
+GameVault runs as a non-root user (`1000:1000` by default). The container user
+must be able to read and write every mapped volume:
 
-Either make sure this user has permissions to read/write to the folders you map in as volumes, or run GameVault with a user that has the permissions to do so. You can do this by using the `PUID` & `PGID` environment variables.
+- game files (`VOLUMES_FILES`)
+- media (`VOLUMES_MEDIA`)
+- save files (`VOLUMES_SAVEFILES`)
+- logs (`VOLUMES_LOGS`)
+- the SQLite database (`VOLUMES_SQLITEDB`)
 
-### Unable to Connect to Server / 500 Internal Server Error
+Either grant the correct permissions on the host or set `PUID` and `PGID` to a
+user that owns the folders. Do not run the container as root.
 
-- Ensure that you use the correct protocol (http or https) in the connection string, particularly if your server doesn't support SSL.
-- If you have disabled authentication in your server configuration, make sure to include the authentication header for user-specific requests. [See here](server/configuration.md) for more information.
+Symptoms include failing media saves, an empty or unwritable SQLite database,
+indexing errors and `EACCES` messages.
 
-### Initial Admin User is not working
+## Games do not appear
 
-- You need to register the first user. It is automatically activated and granted admin permissions.
+- [Add the games](server/adding-games.md) and wait for indexing to finish.
+- Clear the search box and every active filter, then refresh.
+- Check the [file and folder structure](server/structure.md).
+- Verify the game is supported in [game types](server/game-types.md).
+- For GameVault 1 installations, verify the root folder in
+  [Settings](clients/gamevault-1/gui.md#settings) and compare the server game ID
+  with the installation folder. See the
+  [GameVault 1 settings](clients/gamevault-1/gui.md#game-settings).
 
-### Games Not Appearing in the Installations / Servers List
+## Missing box art or metadata
 
-- [Add Games to your server](server/adding-games.md)
-- Clear the Searchbox
-- Clear all active Filters
-- Press F5 to trigger a new search
-- For installations, verify your correct root folder is set [in the settings](clients/gamevault-1/gui.md#settings).
-- Verify your server's game id does not differ from the one in your installation folder (The game's server id can be found in the lower left corner of [the game's settings](clients/gamevault-1/gui.md#game-settings)).
-- Verify [your file names are correct](server/structure.md).
-- Check the Filesystem Permissions. See [here](#server-fails-to-save-media--create-sqlite-database--index-games--throws-a-permissions-denied--no-permission--eacces-error)
+- Configure a [metadata provider](server/metadata-enrichment/metadata.md).
+- Check that the provider is enabled in the
+  [server configuration](server/configuration.md).
+- Verify the [file names](server/structure.md); ambiguous names cannot be
+  matched reliably.
+- A `(NC)` flag on **any** version file disables provider updates for the whole
+  game. Remove the flag and trigger a refresh.
+- Clear the media cache in the client and reload the library.
 
-### Missing Box Arts
+## Incorrect game mapping
 
-- [Set up a Metadata Provider](server/metadata-enrichment/metadata.md) that provides box art for your games.
-- Clear media caches [in the settings.](clients/gamevault-1/gui.md#settings)
+Remap the game in the client:
+[GameVault 2](clients/gamevault-2/using.md#modifying-games) or
+[GameVault 1](clients/gamevault-1/gui.md#game-settings).
 
-### Lack of Metadata in Games
+## Slow downloads
 
-- [Set up a Metadata Provider](server/metadata-enrichment/metadata.md) that provides metadata for your games.
-- Verify if [your Metadata Provider is disabled in your server configuration](server/configuration.md).
-- Verify if [your file names are correct](server/structure.md)
-- Verify if you accidently marked your game as `(NC)` (No Cache Flag). If you have multiple game versions, `(NC)` on **any version file** suppresses provider metadata updates for the whole game.
+- Remove the client bandwidth limit under **Settings → Application**.
+- Remove the server limit: unset `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` or set
+  it to `0`.
+- Make sure the client is using the LAN address, not the public address.
+- Check proxies, VPNs and older network hardware between client and server.
+- Restart both sides after changing limits.
 
-### Lost my Admin Role
+## How to collect logs
 
-- Refer to [this](server/user-management#admin-role-recovery) for instructions on how to regain admin privileges for your user.
+1. Set `SERVER_LOG_LEVEL=debug` in the server environment.
+2. Set `SERVER_LOG_FILES_ENABLED=true`.
+3. Map a host folder to `/logs` (Docker) or set `VOLUMES_LOGS` (native).
+4. Reproduce the problem.
+5. Send the complete log file from server start to the error. Do not trim it.
 
-### Forgot my Admin Password
-
-- Refer to [this](server/user-management#admin-password-recovery) for instructions on how to reset the password of your admin user.
-
-### Game Downloads are slow
-
-- Make sure the Clients Bandwidth Speed Limit is unset under `Settings -> Application`
-- Make sure the Servers Bandwidth Speed Limit is unset (`SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` environment variable unset or 0)
-- Restart your Client and Server
-- If your server is in your LAN, make sure you don't mistakenly access it from WAN
-- Check your middle-mans: Proxies, VPNs and older Network Hardware could all affect the download speeds.
-
-## How to Collect Logs
-
-To help us resolve your issue quickly and accurately, please set the server environment variable `SERVER_LOG_LEVEL` to `debug` **before** collecting the logs, and include a **complete log file** (from server start to when the issue occurs).
-
-:::info full logs needed
-Please do not trim or shorten log files. It just makes it harder for us to understand what went wrong. We know they get big, but we know how to read them.
-You can redact sensitive details by replacing them with the word `**REDACTED**` before you send them if you want to, but the server tries to automatically redact sensitive data, so they should be gernerally safe to share.
+:::info Complete logs are required
+Trimmed logs hide the cause. Redact secrets with `**REDACTED**`; the server
+redacts most sensitive values automatically.
 :::
 
-### Unsure how to gather logs?
+## Still stuck?
 
-If you're not sure how to gather logs, or your system makes it unclear you can use GameVault's Built-in Logging feature:
-
-1. **Enable logging:**
-
-   Set the environment variable `SERVER_LOG_FILES_ENABLED` to `true`
-
-2. **Set the log folder:**
-   - If you're using Docker:  
-     Bind a local folder to `/logs` using the docker volumes feature.
-
-   - If you're running natively:  
-     Make sure the `VOLUMES_LOGS` path is set to a local folder in your configuration.
-
-After this setup, logs will be saved automatically to the specified location.
+- [Discord](https://discord.gg/NEdNen2dSu) for quick questions.
+- [Client issues](https://github.com/Phalcode/gamevault-frontend/issues)
+- [Server issues](https://github.com/Phalcode/gamevault-backend/issues)
+- [Documentation issues](https://github.com/Phalcode/gamevault-docs/issues)
+- [contact@phalco.de](mailto:contact@phalco.de) for confidential reports.

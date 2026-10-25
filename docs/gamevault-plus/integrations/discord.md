@@ -1,5 +1,6 @@
 ---
-title: "Discord"
+title: Discord
+description: Show the game you are playing in Discord with GameVault+ Rich Presence.
 ---
 
 GameVault+ integrates with [Discord](https://discord.com) through Discord Rich Presence. When enabled, Discord shows the game you are currently playing.

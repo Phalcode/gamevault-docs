@@ -1,4 +1,5 @@
 ---
+description: Restrict game visibility and playtime for child accounts with age ratings and limits.
 sidebar_position: 10
 ---
 

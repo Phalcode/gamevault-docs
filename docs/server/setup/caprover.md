@@ -1,5 +1,6 @@
 ---
-title: "Using CapRover"
+title: CapRover
+description: Deploy GameVault Server on CapRover with a persistent volume and PostgreSQL.
 sidebar_position: 3
 ---
 

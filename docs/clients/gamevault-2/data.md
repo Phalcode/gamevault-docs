@@ -1,4 +1,5 @@
 ---
+description: Where GameVault 2 stores downloads, installations, logs, settings and cache files.
 sidebar_position: 8
 ---
 

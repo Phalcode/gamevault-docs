@@ -1,9 +1,9 @@
 ---
-title: "Introduction"
+title: Introduction
 hide_title: true
 image: "/img/gamevault-plus.png"
 sidebar_position: 1
-description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
+description: What GameVault+ includes, which client supports it and how the subscription funds development.
 ---
 
 <div class="gamevault-plus-banner" >
@@ -118,7 +118,7 @@ We hope so. We're actively exploring partnerships and integrations with other ga
 
 ### Can users suggest or vote on new features for GameVault+?
 
-Certainly! We encourage user feedback and suggestions. While we may not implement every idea, we value community input in shaping the future of GameVault+. Share your ideas through our feedback channels, primarily on [Github](https://github.com/Phalcode/gamevault-app/issues) and [Discord](https://discord.gg/NEdNen2dSu).
+Certainly! We encourage user feedback and suggestions. While we may not implement every idea, we value community input in shaping the future of GameVault+. Share your ideas through our feedback channels, primarily on [GitHub](https://github.com/Phalcode/gamevault-app/issues) and [Discord](https://discord.gg/NEdNen2dSu).
 
 ### Which Client Application versions are supported?
 

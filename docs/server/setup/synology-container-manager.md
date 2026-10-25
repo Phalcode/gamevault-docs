@@ -1,5 +1,6 @@
 ---
-title: "Using Synology Container Manager"
+title: Synology Container Manager
+description: Install GameVault Server with Synology Container Manager and persistent folders.
 sidebar_position: 6
 ---
 

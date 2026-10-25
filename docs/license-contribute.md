@@ -1,12 +1,14 @@
 ---
+sidebar_label: License & contribution
+description: How GameVault is licensed, what source-available means, and how to contribute or publish adaptations.
 sidebar_position: 11
 ---
 
-# Licensing and Contributions
+# Licensing and contributions
 
 ## License
 
-GameVault is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) with the exception of the some components, like extensions and plugins.
+GameVault is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/), with the exception of some components such as extensions and plugins.
 
 This means you are free to use, adapt, and share the work as long as you give appropriate credit, do not use it for commercial purposes, and distribute any derivative works under the same license.
 
@@ -26,7 +28,7 @@ Besides rating GameVault on the Microsoft Store or recommending it to a friend, 
 
 As we constantly strive to enhance GameVault's performance and features, your assistance is crucial. If you're a developer, please consider opening a pull request on our GitHub repository to contribute directly to the codebase. Alternatively, if you encounter any issues or have suggestions, feel free to create an issue and provide detailed feedback. Your expertise and insights will greatly support our ongoing development efforts.
 
-Before contributing any code, please read and accept the terms outlined in the CONTRIBUTING.md file of each project you want to contribute to. These terms include recognizing Phalcode as the owner of your contribution and transferring all rights and responsibilities to us. This ensures everything is legally clear and simple for everyone involved. This also means we can monetize your contribution, so that we can keep this project alive.
+Before contributing any code, read and accept the terms in the `CONTRIBUTING.md` file of the project you want to contribute to. These terms include recognizing Phalcode as the owner of your contribution and transferring all rights and responsibilities to us. This keeps everything legally clear and allows us to monetize contributions so that the project stays alive.
 
 ## Publishing Adaptations of GameVault
 
@@ -46,19 +48,19 @@ Here you can find an incomplete list of community-driven forks of our Projects. 
 
 ### gamevault-app
 
-| Github Repository | Downloads | Description |
+| GitHub Repository | Downloads | Description |
 | ----------------- | --------- | ----------- |
 | -                 | -         | -           |
 
 ### gamevault-backend
 
-| Github Repository | Container Image | Description |
+| GitHub Repository | Container Image | Description |
 | ----------------- | --------------- | ----------- |
 | -                 | -               | -           |
 
-## Contributors to this Documentation
+## Contributors to this documentation
 
-If you contributed to these docs, feel free to append your github username to the list below.
+If you contributed to these docs, feel free to append your GitHub username to the list below.
 
 - @Alfagun74
 - @Yelo420

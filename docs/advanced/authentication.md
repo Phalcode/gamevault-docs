@@ -1,3 +1,7 @@
+---
+description: Authenticate against the GameVault API with JWTs, API keys or OAuth2 single sign-on.
+---
+
 # Authentication
 
 GameVault supports two primary authentication methods:

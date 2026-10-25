@@ -1,8 +1,10 @@
 ---
+sidebar_label: Early Access
+description: Switch update channels for GameVault 2 and the server, and test pre-release builds without an application.
 sidebar_position: 10
 ---
 
-# Early Access and Update Channels
+# Early Access and update channels
 
 Early Access is open to everyone. There is no application, no form and no
 invite. Switch the update channel in the client and you are in.

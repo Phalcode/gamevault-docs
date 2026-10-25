@@ -1,4 +1,5 @@
 ---
+description: Manage covers, screenshots, videos and other media assets served by GameVault Server.
 sidebar_position: 8
 ---
 

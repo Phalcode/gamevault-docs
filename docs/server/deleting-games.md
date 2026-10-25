@@ -1,4 +1,5 @@
 ---
+description: Remove games safely from GameVault Server without leaving broken library entries.
 sidebar_position: 5.5
 ---
 

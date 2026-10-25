@@ -1,4 +1,5 @@
 ---
+description: Run the legacy GameVault 1 client on a Steam Deck with Proton and Wine.
 sidebar_position: 8
 ---
 

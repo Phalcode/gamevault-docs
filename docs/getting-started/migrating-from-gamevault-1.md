@@ -1,4 +1,6 @@
 ---
+sidebar_label: Migrating from GameVault 1
+description: What carries over from GameVault 1 to GameVault 2, what does not, and how to migrate without losing your library.
 sidebar_position: 4
 ---
 

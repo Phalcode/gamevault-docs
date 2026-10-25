@@ -1,4 +1,5 @@
 ---
+description: Update GameVault 1 through the Microsoft Store or by installing the latest build.
 sidebar_position: 6
 ---
 

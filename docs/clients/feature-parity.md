@@ -1,4 +1,5 @@
 ---
+description: Compare every GameVault 2 and GameVault 1 feature, including GameVault+ support and known gaps.
 sidebar_position: 1
 ---
 

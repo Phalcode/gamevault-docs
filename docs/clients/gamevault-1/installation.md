@@ -1,4 +1,5 @@
 ---
+description: Install GameVault 1 from the Microsoft Store or with the manual installer.
 sidebar_position: 2
 ---
 

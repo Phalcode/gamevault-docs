@@ -1,5 +1,6 @@
 ---
-title: "Themes"
+title: Themes
+description: Install and switch GameVault+ themes in GameVault 1, including custom theme support.
 sidebar_position: 3
 ---
 

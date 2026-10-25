@@ -1,4 +1,5 @@
 ---
+description: Browse, download, install and launch games in GameVault 2, and edit metadata.
 sidebar_position: 2
 ---
 

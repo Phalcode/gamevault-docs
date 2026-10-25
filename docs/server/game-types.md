@@ -1,4 +1,5 @@
 ---
+description: How GameVault detects archives, installers and portable builds, and which formats are supported.
 sidebar_position: 2.5
 ---
 

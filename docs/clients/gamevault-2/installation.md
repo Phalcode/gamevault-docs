@@ -1,4 +1,5 @@
 ---
+description: Install GameVault 2 on Windows, Linux or macOS and connect it to your server.
 sidebar_position: 1
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: Call the GameVault REST API with a token and explore the generated OpenAPI specification.
 sidebar_position: 4
 ---
 

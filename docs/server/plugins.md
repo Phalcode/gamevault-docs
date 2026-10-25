@@ -1,4 +1,5 @@
 ---
+description: Install and manage GameVault Server plugins for metadata providers and integrations.
 sidebar_position: 9
 ---
 

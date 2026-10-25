@@ -1,4 +1,5 @@
 ---
+description: "GameVault 2 on Linux: AppImage, .deb, umu-launcher, Proton prefixes and Steam Deck notes."
 sidebar_position: 5
 ---
 

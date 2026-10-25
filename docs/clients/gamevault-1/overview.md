@@ -1,4 +1,5 @@
 ---
+description: GameVault 1 is the original Windows client and the only client with full GameVault+ support.
 sidebar_position: 1
 ---
 

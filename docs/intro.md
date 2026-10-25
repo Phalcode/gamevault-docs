@@ -1,6 +1,7 @@
 ---
-sidebar_position: 1
 sidebar_label: Introduction
+description: GameVault is a self-hosted platform for DRM-free games with a server, desktop clients and a browser UI.
+sidebar_position: 1
 ---
 
 # Introduction
@@ -37,12 +38,14 @@ You do not need a server to look around. Use our demo instance:
 
 ## Getting started
 
-1. [Choose your client](./getting-started/choose-your-client.md).
-2. [Download and install](./getting-started/download-and-install.md) it, or
-   [set up a server](./server/setup/setup.md) first.
-3. [Connect the client to your server](./getting-started/connect-to-server.md).
-4. Coming from GameVault 1? Read
-   [Migrating from GameVault 1](./getting-started/migrating-from-gamevault-1.md).
+| I want to…                     | Start here                                                                    |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| Try GameVault without a server | [Open the demo](https://demo.gamevau.lt)                                      |
+| Pick a client                  | [Choose your client](./getting-started/choose-your-client.md)                 |
+| Run my own server              | [Set up a GameVault Server](./server/setup/setup.md)                          |
+| Install GameVault 2            | [Download and install](./getting-started/download-and-install.md)             |
+| Connect a client               | [Connect to your server](./getting-started/connect-to-server.md)              |
+| Move from GameVault 1          | [Migrating from GameVault 1](./getting-started/migrating-from-gamevault-1.md) |
 
 ## Features
 
@@ -81,7 +84,7 @@ You do not need a server to look around. Use our demo instance:
 cloud saves, multiple profiles, extra themes and integrations. It currently
 requires GameVault 1.
 
-## Support Us
+## Support us
 
 GameVault is built in our free time. The best way to support development is
 [GameVault+](./gamevault-plus/introduction.md). Donations are welcome too:
@@ -111,7 +114,7 @@ GameVault is not open-source software. [Read why.](/blog/2023/07/13)
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-## Legal Disclaimer
+## Legal notice
 
 :::warning Legal Disclaimer
 GameVault manages DRM-free games. We are not responsible for the content or

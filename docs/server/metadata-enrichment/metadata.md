@@ -1,5 +1,6 @@
 ---
-title: Enriching your Games with Metadata
+title: Enriching your games with metadata
+description: Configure metadata providers such as IGDB to add covers, descriptions and release data.
 sidebar_position: 0.01
 ---
 

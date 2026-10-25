@@ -1,4 +1,5 @@
 ---
+description: "Use GameVault 2 in a browser: sign in, browse the library and download game files."
 sidebar_position: 9
 ---
 

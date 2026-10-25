@@ -26,53 +26,65 @@ export function GameVaultPlus() {
     <section
       id="gamevault-plus"
       aria-labelledby="gamevault-plus-title"
-      className="bg-background-default py-16 sm:py-24"
+      className="relative overflow-hidden py-16 sm:py-24"
     >
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#cfa344]/40 to-transparent"
+      />
       <Container className="relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary-default">
-              Optional subscription
-            </p>
+            <p className="eyebrow text-gv-gold">Optional subscription</p>
             <h2
               id="gamevault-plus-title"
-              className="mt-3 font-display text-3xl tracking-tight text-text-default sm:text-4xl"
+              className="mt-3 text-3xl font-bold tracking-[-0.04em] text-gv-text sm:text-4xl"
             >
-              Support development with GameVault+
+              Support development with{" "}
+              <span className="text-gv-gold">GameVault+</span>
             </h2>
-            <p className="mt-4 text-lg text-text-light">
+            <p className="mt-4 text-lg leading-8 text-gv-muted">
               GameVault is free. GameVault+ is the optional subscription that
               funds development and adds a few extras. From €4.99 per month.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3">
               <Button
                 href="/docs/gamevault-plus/introduction"
+                color="gold"
                 className="shadow-lg"
               >
                 Explore GameVault+
               </Button>
               <a
                 href="/docs/clients/feature-parity#gamevault"
-                className="text-sm font-semibold text-primary-default hover:underline"
+                className="text-sm font-semibold text-gv-accent-cool no-underline hover:text-gv-accent-strong"
               >
                 What is still missing in GameVault 2?
               </a>
             </div>
-            <p className="mt-4 text-sm text-text-light">
+            <p className="mt-4 text-sm text-gv-muted">
               GameVault+ currently requires GameVault 1. Support for GameVault 2
               is planned.
             </p>
           </div>
-          <ul className="grid list-none gap-4 sm:grid-cols-2 lg:col-span-7">
+          <ul className="grid list-none gap-4 p-0 sm:grid-cols-2 lg:col-span-7">
             {benefits.map((benefit) => (
               <li
                 key={benefit.title}
-                className="rounded-2xl bg-background-dark/50 p-5 ring-1 ring-primary-default/25"
+                className="surface-panel gv-hover-lift rounded-[1.25rem] p-5"
               >
-                <h3 className="text-base font-semibold text-text-default">
-                  {benefit.title}
-                </h3>
-                <p className="mt-2 text-sm text-text-light">{benefit.body}</p>
+                <div className="flex items-center gap-2">
+                  <span
+                    aria-hidden="true"
+                    className="h-1.5 w-1.5 rounded-full bg-gv-gold"
+                  />
+                  <h3 className="text-base font-semibold text-gv-text">
+                    {benefit.title}
+                  </h3>
+                </div>
+                <p className="mt-2 text-sm leading-6 text-gv-muted">
+                  {benefit.body}
+                </p>
               </li>
             ))}
           </ul>

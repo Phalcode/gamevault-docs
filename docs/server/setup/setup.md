@@ -1,46 +1,57 @@
 ---
+sidebar_label: Overview
+description: "Choose a supported way to install GameVault Server: Docker Compose, CapRover, TrueNAS, Unraid, Synology or native."
 sidebar_position: 1
 id: toc
 ---
 
-# Setting up a GameVault Server
+# Server setup
 
-There are multiple ways to set up a GameVault Server. You can choose one from below that suits you.
+GameVault Server runs on any machine with Docker, or natively on Linux. Pick
+the guide that matches your host. Every method uses the same image and the
+same configuration variables.
 
-If you have any trouble setting up a GameVault server don't give up! There are a lot of helpful people on our [discord](https://discord.gg/NEdNen2dSu) that can help you.
-
-## Supported Methods
-
-- [Docker Compose](./docker-compose.md)
-- [Caprover](./caprover.md)
-- [TrueNAS Scale](truenas-scale.md)
-- [TrueNAS Scale (since v24.10)](./truenas-scale.md)
-- [UNRAID](./unraid.md)
-- [Synology Container Manager](./synology-container-manager.md)
-- [Native](./native.md)
-
-### More Methods
-
-We want to add more setup options to our lineup! Each system has its own way of doing things, and it can take some time and experience to set up new options just right.
-
-We're looking for people who are excited to help out. Since we don't run a GameVault Server on every system, we need your help to add new setup options! If you're interested in joining and setting up options for any system, we'd love to have you contribute to this documentation [on Github](https://github.com/Phalcode/gamevault-docs). Together, we can make our platform easier for everyone to use.
-
-## What Next?
-
-Congratulations! 🥳 You should now have a server up and running. To further set up and start using the server, follow these steps:
-
-:::tip Built-in Web UI
-Once your server is running, you can use it right away in your browser at `http://<server-ip>:8080`. The Web UI is GameVault 2 in the browser and can be disabled with `WEB_UI_ENABLED`. You can download game files there; for automatic installation, launching and playtime tracking, install [GameVault 2](../../clients/gamevault-2/installation.md) or the [GameVault 1](../../clients/gamevault-1/overview.md).
+:::note Before you start
+You need a host with at least 2 GB of RAM, a folder for game files and a
+database. PostgreSQL is recommended for larger libraries; SQLite works for
+small setups.
 :::
 
-1. **Configure your server:** Customize the server settings to meet your specific needs. Refer to the [configuration guide](../configuration.md) for detailed instructions.
+## Supported methods
 
-2. **Add some games:** Prepare your game files in the required format for GameVault to identify and install them correctly. Read the [structure chapter](../structure.md) for important information. Once ready, proceed to [add your games](../adding-games.md).
+| Host                         | Guide                                                         | Notes                                    |
+| ---------------------------- | ------------------------------------------------------------- | ---------------------------------------- |
+| Docker Compose               | [Docker Compose](./docker-compose.md)                         | Recommended for most Linux hosts and VPS |
+| CapRover                     | [CapRover](./caprover.md)                                     | Managed Docker host with a web UI        |
+| TrueNAS SCALE 24.10 or newer | [TrueNAS SCALE](./truenas-scale.md)                           | Uses the Docker-compatible app system    |
+| Unraid                       | [Unraid](./unraid.md)                                         | Community Applications template          |
+| Synology Container Manager   | [Synology Container Manager](./synology-container-manager.md) | DSM 7.2 or newer                         |
+| Linux without Docker         | [Native installation](./native.md)                            | Node.js and PostgreSQL or SQLite         |
 
-3. **Create your first user:** Set up an admin user account to gain full administrative access to the application. Refer to the [user management guide](../user-management.md) for instructions on setting up the first user.
+If you have trouble, ask on [Discord](https://discord.gg/NEdNen2dSu). Include
+your host, the method you used and the server logs.
 
-4. **Enhance your games with metadata:** Connect your server to a metadata source such as IGDB to enrich your games with metadata. Learn how to do this in the [metadata chapter](../metadata-enrichment/metadata.md).
+## Add more setup guides
 
-5. **(OPTIONAL) Make your server accessible outside your Local Area Network**: If you want to make the application accessible beyond your local network, for instance, for your friends or yourself to connect to it remotely, you'll need to configure an HTTPS reverse proxy and potentially make adjustments to firewall rules. We recommend utilizing [NGINX Proxy Manager](https://nginxproxymanager.com) for this purpose. Numerous guides are available on how to set up a reverse proxy for a Docker container, so we won't cover it in detail in this guide.
+GameVault runs on more systems than we can test. If you set it up on a NAS or
+a platform that is missing here, a documentation pull request is welcome:
+[gamevault-docs](https://github.com/Phalcode/gamevault-docs).
 
-Enjoy your new gaming experience with GameVault!
+## What next?
+
+Once the server is running, open `http://<server-ip>:8080` in a browser. The
+Web UI is GameVault 2 and needs no installation. Disable it with
+`WEB_UI_ENABLED=false` if you only want to serve the API.
+
+1. **Configure the server.** Review the
+   [configuration reference](../configuration.md).
+2. **Add games.** Prepare the
+   [file and folder structure](../structure.md), then
+   [add your games](../adding-games.md).
+3. **Create the first user.** The first registered account is activated
+   automatically and receives the admin role. See
+   [user management](../user-management.md).
+4. **Add metadata.** Connect a provider such as
+   [IGDB](../metadata-enrichment/provider-igdb.md).
+5. **Expose the server.** For access outside your LAN, use an HTTPS reverse
+   proxy and review [Fail2Ban](../../advanced/fail2ban.md).

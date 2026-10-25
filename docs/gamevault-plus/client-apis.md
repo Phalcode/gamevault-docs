@@ -1,6 +1,7 @@
 ---
+title: Client APIs
+description: How GameVault+ client APIs extend the desktop client and which endpoints are available.
 sidebar_position: 4
-title: "Client APIs"
 ---
 
 The GameVault Client APIs expose parts of the GameVault client application to GameVault+ subscribers. You can interact with the client through the command line, the `gamevault://` URI scheme, or a named pipe. These interfaces are mainly intended for third-party integrations such as the Playnite extension.

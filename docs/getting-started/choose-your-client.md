@@ -1,8 +1,10 @@
 ---
+sidebar_label: Choose your client
+description: Compare GameVault 2, GameVault 1 and the Web UI, and pick the right client for your setup.
 sidebar_position: 1
 ---
 
-# Choose Your Client
+# Choose your client
 
 GameVault has two clients. Both connect to the same server and the same account.
 

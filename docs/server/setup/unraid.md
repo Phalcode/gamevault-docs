@@ -1,5 +1,6 @@
 ---
-title: "Using UNRAID"
+title: Unraid
+description: Install GameVault Server on Unraid with the Community Applications template.
 sidebar_position: 5
 ---
 

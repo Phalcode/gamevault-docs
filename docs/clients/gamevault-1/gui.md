@@ -1,4 +1,5 @@
 ---
+description: Tour the GameVault 1 interface, game settings and configuration windows.
 sidebar_position: 3
 ---
 

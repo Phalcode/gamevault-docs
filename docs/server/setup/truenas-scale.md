@@ -1,5 +1,6 @@
 ---
-title: "Using TrueNAS Scale (since v24.10)"
+title: TrueNAS SCALE
+description: Deploy GameVault Server on TrueNAS SCALE 24.10 or newer with persistent storage.
 sidebar_position: 4.2
 ---
 

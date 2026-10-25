@@ -1,5 +1,6 @@
 ---
-title: "Playnite"
+title: Playnite
+description: Browse, install and launch GameVault titles from Playnite with the GameVault extension.
 ---
 
 GameVault+ integrates with [Playnite](https://playnite.link) through the [Playnite Library Extension](https://playnite.link/addons.html#GameVault_fab8be77-18ab-4e6c-ad3d-89097b492d74). It lets you browse, launch, and install GameVault titles from Playnite.

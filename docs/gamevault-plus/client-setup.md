@@ -1,6 +1,7 @@
 ---
+title: Client setup
+description: Activate GameVault+ in the GameVault 1 client and sign in with your subscription.
 sidebar_position: 2
-title: "Client Setup"
 ---
 
 :::note GameVault 1

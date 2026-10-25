@@ -1,4 +1,8 @@
-# Provider: IGDB
+---
+description: Connect GameVault Server to IGDB and fetch covers, descriptions and release metadata.
+---
+
+# IGDB
 
 ## Overview
 

@@ -1,5 +1,6 @@
 ---
-title: "Using Docker Compose"
+title: Docker Compose
+description: Run GameVault Server with Docker Compose, PostgreSQL and persistent volumes.
 sidebar_position: 2
 ---
 

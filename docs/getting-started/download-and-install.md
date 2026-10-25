@@ -1,8 +1,10 @@
 ---
+sidebar_label: Download and install
+description: Download GameVault 2 for Windows, Linux or macOS, or open the Web UI in your browser.
 sidebar_position: 2
 ---
 
-# Download and Install
+# Download and install
 
 All desktop builds are published on our [download page](/download) and on
 [GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).

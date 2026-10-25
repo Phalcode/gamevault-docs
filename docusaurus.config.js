@@ -2,19 +2,51 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 import tailwindPlugin from "./plugins/tailwind-plugin.cjs";
 const { themes } = require("prism-react-renderer");
-const lightTheme = themes.github;
-const darkTheme = themes.dracula;
+const lightTheme = themes.oneLight;
+const darkTheme = themes.oneDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "GameVault",
   tagline: "Your Games. Your Server. Your Rules.",
-  favicon: "img/logo.png",
+  favicon: "img/logo.svg",
   url: "https://gamevau.lt/",
   baseUrl: "/",
   organizationName: "Phalcode",
   projectName: "gamevault-docs",
   onBrokenLinks: "throw",
+  stylesheets: [
+    {
+      href: "https://rsms.me/inter/inter.css",
+      type: "text/css",
+    },
+  ],
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://rsms.me",
+        crossorigin: "anonymous",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "theme-color",
+        content: "#11101e",
+        media: "(prefers-color-scheme: dark)",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "theme-color",
+        content: "#e2e1ef",
+        media: "(prefers-color-scheme: light)",
+      },
+    },
+  ],
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: "throw",
@@ -152,7 +184,6 @@ const config = {
     ],
     require.resolve("@cmfcmf/docusaurus-search-local"),
     tailwindPlugin,
-    require.resolve("docusaurus-plugin-image-zoom"),
   ],
   presets: [
     [
@@ -181,6 +212,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: "img/og-gamevault.png",
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
+      },
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 3,
+      },
       metadata: [
         {
           name: "keywords",
@@ -192,7 +238,8 @@ const config = {
       navbar: {
         logo: {
           alt: "GameVault",
-          src: "img/logo.png",
+          src: "img/logo.svg",
+          srcDark: "img/logo.svg",
         },
         title: "GameVault",
         items: [
@@ -210,19 +257,22 @@ const config = {
             position: "left",
           },
           {
-            label: "GitHub",
-            href: "https://github.com/phalcode",
+            type: "html",
             position: "right",
+            value:
+              '<a class="gv-nav-icon" href="https://github.com/phalcode" target="_blank" rel="noreferrer" aria-label="GameVault on GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.4-3.9-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.3 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6a11.5 11.5 0 0 0 7.9-10.9A11.5 11.5 0 0 0 12 .5Z"/></svg></a>',
           },
           {
-            label: "Discord",
-            href: "https://discord.gg/NEdNen2dSu",
+            type: "html",
             position: "right",
+            value:
+              '<a class="gv-nav-icon" href="https://discord.gg/NEdNen2dSu" target="_blank" rel="noreferrer" aria-label="GameVault on Discord"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.2a18.3 18.3 0 0 0-5.5 0L8.6 3a19.8 19.8 0 0 0-4.9 1.4C.6 9.1-.3 13.7.2 18.2a19.9 19.9 0 0 0 6 3l1.2-1.9a12.6 12.6 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4a12.6 12.6 0 0 1-2 1l1.2 1.9a19.9 19.9 0 0 0 6-3c.6-5.2-.9-9.8-3.5-13.8ZM8 15.3c-1.2 0-2.1-1.1-2.1-2.4S6.8 10.5 8 10.5s2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Zm8 0c-1.2 0-2.1-1.1-2.1-2.4s.9-2.4 2.1-2.4 2.1 1.1 2.1 2.4-.9 2.4-2.1 2.4Z"/></svg></a>',
           },
           {
             label: "Support us",
             href: "https://gamevau.lt/docs/intro#support-us",
             position: "right",
+            className: "gv-nav-pill",
           },
         ],
       },
@@ -337,16 +387,7 @@ const config = {
       prism: {
         theme: lightTheme,
         darkTheme,
-        additionalLanguages: ["bash", "json"],
-      },
-      zoom: {
-        selector: ".zoomable, [data-zoomable]",
-        config: {
-          background: {
-            light: "#e2e1ef",
-            dark: "#171528",
-          },
-        },
+        additionalLanguages: ["bash", "json", "yaml", "docker", "ini"],
       },
     }),
 };

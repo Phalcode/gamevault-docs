@@ -1,4 +1,5 @@
 ---
+description: Hide usernames, email addresses and server names in GameVault 2 screenshots and streams.
 sidebar_position: 7
 ---
 

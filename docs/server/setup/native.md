@@ -1,5 +1,6 @@
 ---
-title: "Using Native Approach"
+title: Native installation
+description: Run GameVault Server without Docker on Linux with Node.js and PostgreSQL or SQLite.
 sidebar_position: 99
 ---
 

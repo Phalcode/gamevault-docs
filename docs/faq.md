@@ -1,8 +1,10 @@
 ---
+sidebar_label: FAQ
+description: Answers about hosting, clients, GameVault+, updates, Early Access and supported platforms.
 sidebar_position: 9
 ---
 
-# Frequently Asked Questions
+# Frequently asked questions
 
 ## Do I need my own server?
 
@@ -47,9 +49,9 @@ unaffected. See [Migrating from GameVault 1](getting-started/migrating-from-game
 
 ## Does GameVault run on Linux and macOS?
 
-Yes, through GameVault 2. Linux packages are `.AppImage` and `.deb`, macOS gets
-an Apple Silicon `.dmg`. Running GameVault 1 on Linux through Wine
-is possible but unsupported.
+Yes, through GameVault 2. Linux packages are `.AppImage` and `.deb`; macOS gets
+an Apple Silicon `.dmg`. Running GameVault 1 on Linux through Wine is possible
+but unsupported.
 
 ## Can I download or launch games from the browser?
 

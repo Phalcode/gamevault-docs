@@ -1,4 +1,5 @@
 ---
+description: Replace game files, add new versions and keep existing metadata and playtime intact.
 sidebar_position: 5
 ---
 

@@ -1,126 +1,115 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 import { Container } from "./Container";
+import { SectionHeading } from "./SectionHeading";
 
 export function DemoSection() {
   const [copiedField, setCopiedField] = useState(null);
 
   const copyToClipboard = (text, field) => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard?.writeText(text);
     setCopiedField(field);
     setTimeout(() => setCopiedField(null), 2000);
   };
 
   return (
-    <section
-      id="demo"
-      className="relative overflow-hidden py-24 sm:py-32 bg-background-dark"
-    >
-      {/* Techy Background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:32px_32px]" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary-default/30 to-transparent" />
-      </div>
+    <section id="demo" className="relative overflow-hidden py-20 sm:py-28">
+      <div
+        aria-hidden="true"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gv-accent/40 to-transparent"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute left-1/2 top-8 -z-10 h-72 w-[46rem] max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(100,89,223,0.18),transparent_70%)] blur-3xl"
+      />
 
       <Container className="relative">
-        <div className="mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-center lg:text-left">
-              <h2 className="font-display text-4xl font-black tracking-tight text-text-default sm:text-5xl uppercase">
-                Ready to{" "}
-                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary-default to-primary-light pr-2">
-                  Explore?
-                </span>
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-text-light opacity-80">
-                Experience GameVault firsthand in our public demo. No
-                installation required. Use the credentials provided to log in
-                and explore all the features GameVault has to offer.
-              </p>
-              <div className="mt-10">
-                <Button
-                  href="https://demo.gamevau.lt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-12 py-4 text-xl shadow-xl transition-all hover:scale-105 active:scale-95 hover:shadow-primary-default/30"
-                >
-                  Launch Demo
-                </Button>
-              </div>
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+          <div className="text-center lg:text-left">
+            <SectionHeading
+              align="left"
+              eyebrow="Live demo"
+              title={
+                <>
+                  Ready to <span className="gv-gradient-text">explore?</span>
+                </>
+              }
+              description="Experience GameVault firsthand in our public demo. No installation required. Use the credentials to log in and explore the library, metadata, community and admin views."
+              className="mx-auto lg:mx-0"
+            />
+            <div className="mt-8">
+              <Button
+                href="https://demo.gamevau.lt"
+                target="_blank"
+                rel="noopener noreferrer"
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                Launch the demo
+                <span aria-hidden="true">↗</span>
+              </Button>
             </div>
+          </div>
 
-            <div className="relative group">
-              {/* Clean Tech Credential Box */}
-              <div className="rounded-2xl border border-white/10 p-6 font-mono text-sm shadow-2xl backdrop-blur-sm relative overflow-hidden ring-1 ring-primary-default">
-                {/* Subtle Tech Grid Overlay */}
-                <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:8px_8px]" />
-
-                <div className="flex items-center gap-2 mb-6 border-b border-white/5 pb-4 relative z-10">
-                  <div className="w-2 h-2 rounded-full bg-primary-default animate-pulse" />
-                  <div className="text-xs text-text-light/70 uppercase tracking-widest">
-                    Access_Credentials
-                  </div>
+          <div className="relative">
+            <div className="surface-panel overflow-hidden rounded-[1.5rem] font-mono text-sm shadow-[var(--shadow-shell)]">
+              <div className="flex items-center gap-3 border-b border-gv-line px-4 py-3">
+                <div className="flex gap-1.5" aria-hidden="true">
+                  <span className="h-2.5 w-2.5 rounded-full bg-gv-danger/70" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-gv-warning/70" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-gv-success/70" />
                 </div>
-
-                <div className="space-y-6 relative z-10">
-                  <div>
-                    <div className="text-xs text-primary-default/80 uppercase mb-2 tracking-tighter">
-                      // Identity
-                    </div>
-                    <button
-                      onClick={() => copyToClipboard("demo", "user")}
-                      className="w-full flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/5 hover:border-primary-default/40 hover:bg-white/10 transition-all group/item"
-                    >
-                      <span className="text-text-light/80">Username</span>
-                      <div className="flex items-center gap-3">
-                        <code className="text-primary-light text-lg font-bold px-2">
-                          demo
-                        </code>
-                        <span
-                          className={`text-xs uppercase tracking-widest transition-all ${
-                            copiedField === "user"
-                              ? "text-primary-default opacity-100"
-                              : "text-text-light/60 opacity-0 group-hover/item:opacity-100"
-                          }`}
-                          aria-live="polite"
-                        >
-                          {copiedField === "user" ? "Copied!" : "Copy"}
-                        </span>
-                      </div>
-                    </button>
-                  </div>
-
-                  <div>
-                    <div className="text-xs text-primary-default/80 uppercase mb-2 tracking-tighter">
-                      // Security_Key
-                    </div>
-                    <button
-                      onClick={() => copyToClipboard("demodemo", "pass")}
-                      className="w-full flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/5 hover:border-primary-default/40 hover:bg-white/10 transition-all group/item"
-                    >
-                      <span className="text-text-light/80">Password</span>
-                      <div className="flex items-center gap-3">
-                        <code className="text-primary-light text-lg font-bold px-2">
-                          demodemo
-                        </code>
-                        <span
-                          className={`text-xs uppercase tracking-widest transition-all ${
-                            copiedField === "pass"
-                              ? "text-primary-default opacity-100"
-                              : "text-text-light/60 opacity-0 group-hover/item:opacity-100"
-                          }`}
-                          aria-live="polite"
-                        >
-                          {copiedField === "pass" ? "Copied!" : "Copy"}
-                        </span>
-                      </div>
-                    </button>
-                  </div>
-                </div>
+                <span className="text-[0.68rem] font-bold uppercase tracking-[0.16em] text-gv-muted">
+                  demo credentials
+                </span>
               </div>
 
-              {/* Subtle Glow */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-default/20 to-primary-light/20 blur opacity-30 -z-10 rounded-2xl group-hover:opacity-50 transition-opacity" />
+              <div className="space-y-4 p-5">
+                <div>
+                  <p className="mb-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-gv-muted">
+                    Username
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => copyToClipboard("demo", "user")}
+                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-gv-line bg-gv-panel-strong px-3.5 py-3 text-left transition-colors hover:border-gv-line-strong hover:bg-gv-panel-soft"
+                  >
+                    <code className="text-base font-bold text-gv-accent-cool">
+                      demo
+                    </code>
+                    <span className="text-[0.62rem] font-bold uppercase tracking-[0.14em] text-gv-muted">
+                      {copiedField === "user" ? "Copied!" : "Copy"}
+                    </span>
+                  </button>
+                </div>
+
+                <div>
+                  <p className="mb-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-gv-muted">
+                    Password
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => copyToClipboard("demodemo", "pass")}
+                    className="flex w-full items-center justify-between gap-3 rounded-xl border border-gv-line bg-gv-panel-strong px-3.5 py-3 text-left transition-colors hover:border-gv-line-strong hover:bg-gv-panel-soft"
+                  >
+                    <code className="text-base font-bold text-gv-accent-cool">
+                      demodemo
+                    </code>
+                    <span className="text-[0.62rem] font-bold uppercase tracking-[0.14em] text-gv-muted">
+                      {copiedField === "pass" ? "Copied!" : "Copy"}
+                    </span>
+                  </button>
+                </div>
+
+                <p
+                  className="min-h-4 text-[0.7rem] text-gv-muted"
+                  aria-live="polite"
+                >
+                  {copiedField
+                    ? `Copied ${copiedField === "user" ? "username" : "password"} to the clipboard.`
+                    : "Click a value to copy it."}
+                </p>
+              </div>
             </div>
           </div>
         </div>

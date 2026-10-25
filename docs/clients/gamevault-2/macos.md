@@ -1,4 +1,5 @@
 ---
+description: Install GameVault 2 on Apple Silicon macOS and handle Gatekeeper on first launch.
 sidebar_position: 6
 ---
 

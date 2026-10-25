@@ -1,5 +1,6 @@
 ---
 title: Configuring Fail2Ban for GameVault
+description: Protect the GameVault Server login endpoint from brute-force attempts with Fail2Ban.
 sidebar_position: 5
 ---
 
@@ -105,4 +106,4 @@ sudo fail2ban-client status gamevault
 
 By following these steps, you can enhance the security of your GameVault application by utilizing Fail2Ban to block IP addresses attempting unauthorized access. Remember to fine-tune the settings to suit your specific requirements. Keep in mind that the 401 response will be triggered for each unauthenticated request, which can occur frequently and become bothersome, so you may want to increase the `maxretry` value slightly.
 
-Credit goes to [this StackOverflow answer](https://stackoverflow.com/a/69575369/14570696) and [this Github issue](https://github.com/Phalcode/gamevault-backend/issues/175) for inspiring this guide.
+Credit goes to [this StackOverflow answer](https://stackoverflow.com/a/69575369/14570696) and [this GitHub issue](https://github.com/Phalcode/gamevault-backend/issues/175) for inspiring this guide.

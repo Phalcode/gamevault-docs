@@ -1,18 +1,25 @@
 ---
+description: Every GameVault Server environment variable, YAML option, default value and precedence rule.
 sidebar_position: 2
 ---
 
 # Configuration
 
-:::tip
-Check out [configuration.ts](https://github.com/Phalcode/gamevault-backend/blob/master/src/configuration.ts) for all possible environment variables in case we forgot to update this page.
+GameVault Server reads configuration from environment variables, Docker
+secrets (`_FILE` variables) and an optional YAML file. Every setting has a
+built-in default, so a minimal Docker Compose file is enough to start.
+
+:::tip Source of truth
+The complete, always-current list lives in
+[`configuration.ts`](https://github.com/Phalcode/gamevault-backend/blob/master/src/configuration.ts).
+This page documents the same keys with defaults and examples.
 :::
 
-## Three Ways to Configure GameVault
+## Three ways to configure GameVault
 
-### 1. Environment Variables (Most Common)
+### 1. Environment variables
 
-Set variables directly via Docker Compose, `.env` files, or shell:
+Set variables directly through Docker Compose, an `.env` file or your shell:
 
 ```yaml
 # Docker Compose example
@@ -29,7 +36,7 @@ DB_HOST=postgres
 DB_PASSWORD=mypassword
 ```
 
-### 2. Docker Secrets (`_FILE` method): For Sensitive Values
+### 2. Docker secrets (`_FILE`)
 
 Store secrets in files and reference them. Ideal for passwords, API keys, and tokens:
 
@@ -44,7 +51,7 @@ environment:
 
 GameVault reads the file at runtime, keeping secrets out of logs and configs.
 
-### 3. YAML Configuration Files: For Complex Setups
+### 3. YAML configuration files
 
 Create `config.yaml` or `config.yml` in your config volume (`VOLUMES_CONFIG`) for organized, readable configuration:
 
@@ -68,7 +75,7 @@ DB_SYSTEM: POSTGRESQL
 DB_HOST: postgres
 ```
 
-## Which Method Should I Use?
+## Which method should I use?
 
 | Scenario                      | Method                   | Example                                      |
 | ----------------------------- | ------------------------ | -------------------------------------------- |
@@ -77,7 +84,7 @@ DB_HOST: postgres
 | Complex setup, many variables | YAML                     | Create `config.yaml` in `/config` volume     |
 | Mixing all three              | See **Precedence** below | Secrets override env, env overrides YAML     |
 
-## Configuration Precedence (Priority Order)
+## Configuration precedence
 
 When a setting exists in multiple places, GameVault uses values in this order (highest → lowest):
 
@@ -86,7 +93,7 @@ When a setting exists in multiple places, GameVault uses values in this order (h
 3. **YAML file** (`config.yaml` / `config.yml`): _Overrides defaults_
 4. **Built-in default**: _Used if nothing else is set_
 
-### Real-World Example
+### Real-world example
 
 If you set the same value in all three places:
 
@@ -108,7 +115,7 @@ If you remove the `_FILE`, it uses the **environment** value: `env-password`
 
 If you remove the environment variable too, it uses **YAML**: `yaml-password`
 
-## All Configuration Options
+## All configuration options
 
 Below are all available configuration variables, organized by category.
 
@@ -116,8 +123,8 @@ Below are all available configuration variables, organized by category.
 
 | Property                                | Description                                                                                                                                                                                                    | Default       | Possible Values                                                                              |
 | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
-| `PUID`                                  | The User-Identifer that should be used.                                                                                                                                                                        | `1000`        | Any user id (number)                                                                         |
-| `PGID`                                  | The Group-Identifer that should be used.                                                                                                                                                                       | `1000`        | Any group id (number)                                                                        |
+| `PUID`                                  | The user identifier that should be used.                                                                                                                                                                       | `1000`        | Any user id (number)                                                                         |
+| `PGID`                                  | The group identifier that should be used.                                                                                                                                                                      | `1000`        | Any group id (number)                                                                        |
 | `SERVER_PORT`                           | The port the server should use. (Only relevant if the server is run without docker on bare metal.)                                                                                                             | `8080`        | Any non-reserved free port (1024 to 49151)                                                   |
 | `SERVER_LOG_LEVEL`                      | The log level of the server.                                                                                                                                                                                   | `info`        | `debug`, `info`, `warn`, `error`, `fatal`, `off`                                             |
 | `SERVER_DEMO_MODE_ENABLED`              | Whether the server runs in demo mode (for demonstration or limited-feature scenarios).                                                                                                                         | `false`       | `true`, `false`                                                                              |
@@ -136,6 +143,16 @@ Below are all available configuration variables, organized by category.
 | `SERVER_HTTPS_KEY_PATH`                 | The file path to the private key used for HTTPS.                                                                                                                                                               | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CERT_PATH`                | The file path to the TLS certificate used for HTTPS.                                                                                                                                                           | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CA_CERT_PATH`             | The file path to the CA certificate used for HTTPS (e.g. for client certificate verification).                                                                                                                 | -             | Any valid file path                                                                          |
+
+### WEB_UI: Built-in web client
+
+The server ships GameVault 2 as a browser UI on the same port as the API. It
+can download game files but cannot install or launch them locally.
+
+| Property         | Description                                                                        | Default | Possible Values        |
+| ---------------- | ---------------------------------------------------------------------------------- | ------- | ---------------------- |
+| `WEB_UI_ENABLED` | Serve the Web UI. Aliases: `SERVER_WEB_UI_ENABLED`, `SERVER_LANDING_PAGE_ENABLED`. | `true`  | `true`, `false`        |
+| `WEB_UI_VERSION` | Pin a specific Web UI build instead of the bundled version.                        | -       | A released version tag |
 
 ### VOLUMES: Storage Folder Paths {#volumes}
 
@@ -256,9 +273,9 @@ Below are all available configuration variables, organized by category.
 
 ---
 
-## Tips & Troubleshooting
+## Tips and troubleshooting
 
-- **Confused about precedence?** See the real-world example under [Configuration Precedence](#configuration-precedence-priority-order) above.
+- **Confused about precedence?** See the real-world example under [Configuration precedence](#configuration-precedence) above.
 - **Using relative paths?** Relative paths in `VOLUMES_CONFIG` work but absolute paths are recommended for clarity.
 - **YAML not being read?** Ensure the file is named exactly `config.yaml` or `config.yml` and is in your `VOLUMES_CONFIG` folder.
 - **Secrets not working?** Make sure the file path in `VARIABLE_FILE` exists and contains the secret value (with no extra whitespace).

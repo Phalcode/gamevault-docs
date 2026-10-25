@@ -1,8 +1,10 @@
 ---
+sidebar_label: Connect to a server
+description: Add a GameVault server to the desktop client, sign in, create an account or use SSO.
 sidebar_position: 3
 ---
 
-# Connect to a Server
+# Connect to a server
 
 This page explains how to add a GameVault server to the desktop client. The
 same login window exists in GameVault 2 and GameVault 1.
@@ -11,7 +13,7 @@ same login window exists in GameVault 2 and GameVault 1.
 
 The first window you see is the profile selection.
 
-![profiles](/img/docs/setup-client/login-window-profiles.png)
+![Profile selection with an empty profile list](/img/docs/setup-client/login-window-profiles.png "Profile selection on first start")
 
 Create at least one profile to continue. A profile stores the server address,
 the account and the session for one server, so you can keep several profiles if
@@ -37,7 +39,7 @@ The demo profile disappears once you create a profile of your own.
 
 Choose **New Profile → Sign In**.
 
-![signin](/img/docs/setup-client/login-window-signin.png)
+![Sign-in form with server URL, username and password](/img/docs/setup-client/login-window-signin.png "Signing in with an existing account")
 
 Enter the server URL, your username and password. Check **Sign in using your
 Identity Provider** if the server uses SSO.
@@ -49,7 +51,7 @@ in immediately.
 
 Choose **New Profile → Sign Up**.
 
-![signup](/img/docs/setup-client/login-window-signup.png)
+![Sign-up form for a new server account](/img/docs/setup-client/login-window-signup.png "Creating a new account")
 
 Enter the server URL and fill out the remaining fields. Depending on the server
 configuration, the new user is either activated immediately or has to be
@@ -59,7 +61,7 @@ approved by an administrator:
 - **Manual activation:** the client shows a pending screen until an admin
   activates the account, then signs you in automatically.
 
-![pending activation](/img/docs/setup-client/login-window-pending-activation.png)
+![Pending activation screen after creating an account](/img/docs/setup-client/login-window-pending-activation.png "Waiting for administrator approval")
 
 ## Server input validation
 
@@ -86,7 +88,7 @@ Open the gear icon in the login window to add request headers. Each header is
 sent with every request the client makes, which helps when your server sits
 behind a proxy that expects custom headers.
 
-![login settings](/img/docs/setup-client/login-window-settings.png)
+![Login window settings for additional request headers](/img/docs/setup-client/login-window-settings.png "Request headers for reverse proxies")
 
 ## Next steps
 

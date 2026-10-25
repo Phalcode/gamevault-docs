@@ -1,4 +1,5 @@
 ---
+description: Run the legacy GameVault 1 Windows client on Linux with Wine and Bottles.
 sidebar_position: 7
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: Update GameVault 2 through the built-in updater and switch between stable and Early Access.
 sidebar_position: 4
 ---
 

@@ -1,4 +1,5 @@
 ---
+description: Where GameVault 1 stores installations, downloads, logs and settings.
 sidebar_position: 4
 ---
 

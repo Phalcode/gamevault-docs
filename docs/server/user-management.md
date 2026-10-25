@@ -1,4 +1,5 @@
 ---
+description: Create users, assign roles, activate accounts and recover admin access.
 sidebar_position: 6
 ---
 
