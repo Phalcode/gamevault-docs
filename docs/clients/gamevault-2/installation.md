@@ -1,69 +1,43 @@
 ---
-description: Install GameVault 2 on Windows, Linux or macOS and connect it to your server.
-sidebar_position: 1
+description: Install GameVault 2 on Windows 10 and 11 and connect it to your server.
+sidebar_position: 2
 ---
 
-# Installing GameVault 2
+# Installing on Windows
 
-:::warning Public beta
-GameVault 2 is in public beta. Crashes and missing features are possible. If you
-depend on GameVault+ features, keep using the
-[GameVault 1](../gamevault-1/overview.md) for now. The
-[feature comparison](../feature-parity.md) shows exactly what is still missing.
-:::
+import FirstStart from "./_first-start.md";
 
-Download the installer for your platform from the [download page](/download) or
-from [GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).
+GameVault 2 ships a `*-setup.exe` installer for Windows 10 and 11. It is in
+public beta: crashes and missing features are expected, see the
+[overview](overview.md) for the status. Download it from the
+[download page](/download) or from
+[GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).
 
-If you only want to browse or download games, you do not need an installer: open
-your server's address in a browser and use the [Web UI](web-ui.md).
+## Requirements
 
-## Windows
+- Windows 10 or 11.
+- Free disk space for the download and installation folders.
 
-Run the `*-setup.exe` installer. Windows SmartScreen may warn you because the
-binary is not code-signed. Choose **More info → Run anyway**.
+## Installation
 
-After installation, start GameVault from the Start menu. See
-[Connect to a server](../../getting-started/connect-to-server.md) for the first
-login.
+1. Run the `*-setup.exe` installer.
+2. If SmartScreen blocks the start, choose **More info → Run anyway**. The
+   binary is not code-signed.
+3. Start GameVault from the Start menu.
 
-## Linux
+<FirstStart />
 
-Two packages are available:
+## Verify
 
-- **AppImage** for most distributions. Make it executable and run it:
+The library shows your server's games after login, and a downloaded game appears
+in the downloads tab with a progress bar. If the library stays empty, work
+through [Troubleshooting](../../troubleshooting.md#the-client-cannot-connect).
 
-  ```bash
-  chmod +x GameVault-*.AppImage
-  ./GameVault-*.AppImage
-  ```
+![GameVault 2 library after the first login, with no installed games yet](/img/screenshots/2026-10-26/Library/Library_NoGamesInstalled.webp "A fresh install shows the server games and an empty installed section")
 
-- **`.deb`** for Debian, Ubuntu and derivatives:
+## Next steps
 
-  ```bash
-  sudo apt install ./GameVault-*.deb
-  ```
-
-AppImages need FUSE. On distributions without `libfuse2` (for example Ubuntu
-22.04+), install it or run the AppImage with `--appimage-extract-and-run`.
-
-More Linux details, including umu-launcher and Steam Deck, are on the
-[Linux page](linux.md).
-
-## macOS
-
-Open the `.dmg` and drag GameVault into **Applications**. The build targets
-Apple Silicon. Gatekeeper may block the first start because the app is not
-notarized; see [macOS](macos.md) for the workaround.
-
-## First start
-
-1. Pick a download and installation folder in **Settings → Downloads**.
-2. Add your server in the login window.
-3. Download a game from the library and install it.
-
-## Updates
-
-GameVault 2 updates itself. The channel and update status are shown under
-**Settings → About → Updates**. Manual installs can be updated by installing a
-newer package over the old one; see [Updating](updating.md).
+- [Usage](using.md)
+- [Settings](settings.md)
+- [Data locations](data.md)
+- [Updating](updating.md)

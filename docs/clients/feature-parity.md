@@ -3,20 +3,16 @@ description: Compare every GameVault 2 and GameVault 1 feature, including GameVa
 sidebar_position: 1
 ---
 
-# Feature Comparison: GameVault 2 vs GameVault 1
+# Feature comparison
 
 GameVault 2 (codename RockWhistle) is a rewrite, not an update of GameVault 1.
-Most of the daily work is covered, but GameVault+ is still missing entirely and a
-few local features have not been ported yet.
-
-This page reflects the state as of October 2026. Every missing feature links to
-a tracking issue in the
+This page is the single source of truth for what each client can do. Every
+missing feature links to the issue that tracks it in the
 [gamevault-frontend repository](https://github.com/Phalcode/gamevault-frontend/issues).
 
-The Web UI is not a third client. It is GameVault 2 in the browser, so it shares
-every row below except the local automation: download queue, extraction and
-installation, launching, playtime tracking and file system access. See
-[Web UI](gamevault-2/web-ui.md).
+The Web UI shares every row with GameVault 2 except local automation: download
+queue, extraction, installation, launching, playtime tracking and file system
+access. See [Web UI](gamevault-2/web-ui.md).
 
 ## Legend
 
@@ -25,7 +21,7 @@ installation, launching, playtime tracking and file system access. See
 | ✅     | Available                                         |
 | ⚠️     | Partial, different behaviour, or platform limited |
 | ❌     | Missing                                           |
-| —      | Not applicable                                    |
+| n/a    | Not applicable                                    |
 
 ## Summary
 
@@ -38,20 +34,21 @@ and gamepad navigation.
 integrations), offline progress sync, desktop shortcuts, a random game picker
 and custom themes.
 
-If you depend on a GameVault+ feature, stay on GameVault 1 until the
-corresponding issue is closed. Everything else can move to GameVault 2.
+If you depend on a GameVault+ feature, stay on
+[GameVault 1](gamevault-1/overview.md) until the corresponding issue is closed.
+Everything else can move to [GameVault 2](gamevault-2/overview.md).
 
 ## Platforms and distribution
 
-| Feature              | GameVault 2                         | GameVault 1              | Notes                                                                   |
-| -------------------- | ----------------------------------- | ------------------------ | ----------------------------------------------------------------------- |
-| Windows 10/11        | ✅                                  | ✅                       | GameVault 2 ships an NSIS installer                                     |
-| Linux                | ✅                                  | ❌                       | GameVault 2: AppImage and `.deb`; GameVault 1 only via unsupported Wine |
-| macOS                | ⚠️                                  | ❌                       | GameVault 2 targets Apple Silicon and is less tested                    |
-| Gamepad / Steam Deck | ✅                                  | ⚠️                       | GameVault 2 has gamepad navigation; GameVault 1 runs through Proton     |
-| Distribution         | GitHub Releases                     | Microsoft Store + manual |                                                                         |
-| Update channels      | ✅ stable / early-access / unstable | ❌                       | GameVault 1 updates through the Store                                   |
-| Built-in updater     | ✅                                  | ⚠️                       | Store builds update via the Store; manual builds do not                 |
+| Feature              | GameVault 2                         | GameVault 1              | Notes                                                         |
+| -------------------- | ----------------------------------- | ------------------------ | ------------------------------------------------------------- |
+| Windows 10/11        | ✅                                  | ✅                       | GameVault 2 ships an NSIS installer                           |
+| Linux                | ✅                                  | ❌                       | GameVault 2: AppImage and `.deb`; GameVault 1 is Windows-only |
+| macOS                | ⚠️                                  | ❌                       | GameVault 2 targets Apple Silicon and is less tested          |
+| Gamepad / Steam Deck | ✅                                  | ❌                       | GameVault 1 is Windows-only                                   |
+| Distribution         | GitHub Releases                     | Microsoft Store + manual |                                                               |
+| Update channels      | ✅ stable / early-access / unstable | ❌                       | GameVault 1 updates through the Store                         |
+| Built-in updater     | ✅                                  | ⚠️                       | Store builds update via the Store; manual builds do not       |
 
 ## Library and browsing
 
@@ -75,19 +72,19 @@ corresponding issue is closed. Everything else can move to GameVault 2.
 | Multiple versions and version picker             | ✅          | ❌          | GameVault 1 always downloads the server default                 |
 | Edit images (editor role)                        | ✅          | ✅          |                                                                 |
 | Metadata remap and custom metadata (editor role) | ✅          | ✅          |                                                                 |
-| Per-game executable and launch overrides         | ✅          | ✅          | Edited in the game settings; applies server-wide                |
+| Per-game executable and launch overrides         | ✅          | ✅          | Applies server-wide                                             |
 | Desktop shortcuts                                | ❌          | ✅          | [#55](https://github.com/Phalcode/gamevault-frontend/issues/55) |
 | Uninstall and disk usage                         | ✅          | ✅          |                                                                 |
 
 ## Downloads and installation
 
-| Feature                               | GameVault 2 | GameVault 1 | Notes                                                  |
-| ------------------------------------- | ----------- | ----------- | ------------------------------------------------------ |
-| Download queue                        | ✅          | ✅          |                                                        |
-| Extraction and automatic installation | ✅          | ✅          |                                                        |
-| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step       |
-| Choose download and install folders   | ✅          | ✅          |                                                        |
-| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated per game |
+| Feature                               | GameVault 2 | GameVault 1 | Notes                                            |
+| ------------------------------------- | ----------- | ----------- | ------------------------------------------------ |
+| Download queue                        | ✅          | ✅          |                                                  |
+| Extraction and automatic installation | ✅          | ✅          |                                                  |
+| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step |
+| Choose download and install folders   | ✅          | ✅          |                                                  |
+| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated    |
 
 ## Launching and operating systems
 
@@ -120,12 +117,14 @@ corresponding issue is closed. Everything else can move to GameVault 2.
 | Ignore list                         | ✅          | ✅          |                                                                                     |
 | Clear image cache                   | ✅          | ✅          |                                                                                     |
 | Crash logs                          | ⚠️          | ✅          | GameVault 2 has launch logs and diagnostic logging                                  |
-| Embedded browser settings           | —           | ✅          | GameVault 2 uses the system WebView instead of an embedded browser                  |
+| Embedded browser settings           | n/a         | ✅          | GameVault 2 uses the system WebView instead of an embedded browser                  |
 | Zoom, volume, hardware acceleration | ✅          | ✅          |                                                                                     |
 
 ## GameVault+
 
-GameVault+ is currently only available in GameVault 1.
+GameVault+ is currently available in GameVault 1 only. The
+[GameVault+ documentation](../gamevault-plus/introduction.md) describes the
+features themselves.
 
 | Feature                            | GameVault 2 | GameVault 1 | Notes                                                                                                           |
 | ---------------------------------- | ----------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
@@ -138,26 +137,14 @@ GameVault+ is currently only available in GameVault 1.
 | Playnite integration               | ❌          | ✅          | [#52](https://github.com/Phalcode/gamevault-frontend/issues/52)                                                 |
 | Client APIs (CLI, URI, named pipe) | ⚠️          | ✅          | GameVault 2 handles `gamevault://install` only, [#53](https://github.com/Phalcode/gamevault-frontend/issues/53) |
 
-## Open parity issues
+## Keeping this page current
 
-- [#46](https://github.com/Phalcode/gamevault-frontend/issues/46) GameVault+ account sign-in and license activation
-- [#47](https://github.com/Phalcode/gamevault-frontend/issues/47) Cloud saves
-- [#48](https://github.com/Phalcode/gamevault-frontend/issues/48) Multiple profiles per installation
-- [#49](https://github.com/Phalcode/gamevault-frontend/issues/49) Custom and premium themes
-- [#50](https://github.com/Phalcode/gamevault-frontend/issues/50) Steam integration
-- [#51](https://github.com/Phalcode/gamevault-frontend/issues/51) Discord Rich Presence
-- [#52](https://github.com/Phalcode/gamevault-frontend/issues/52) Playnite integration
-- [#53](https://github.com/Phalcode/gamevault-frontend/issues/53) Client APIs
-- [#54](https://github.com/Phalcode/gamevault-frontend/issues/54) Offline playtime and progress sync
-- [#55](https://github.com/Phalcode/gamevault-frontend/issues/55) Desktop shortcuts
-- [#57](https://github.com/Phalcode/gamevault-frontend/issues/57) Random game picker
-
-This page is updated when one of these issues ships. If something is wrong or
+The page is updated when one of the tracking issues ships. If a row is wrong or
 missing, open an issue in the
 [documentation repository](https://github.com/Phalcode/gamevault-docs/issues).
 
 ## Next steps
 
-- [GameVault 2 documentation](gamevault-2/installation.md)
-- [GameVault 1 documentation](gamevault-1/overview.md)
+- [GameVault 2 overview](gamevault-2/overview.md)
+- [GameVault 1 overview](gamevault-1/overview.md)
 - [Migrating from GameVault 1](../getting-started/migrating-from-gamevault-1.md)

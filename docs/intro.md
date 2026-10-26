@@ -15,18 +15,16 @@ install and launch them.
 
 GameVault has two parts:
 
-- **GameVault Server** — the self-hosted backend, usually run with Docker.
-- **A client** — two clients exist:
-  - [GameVault 2](./clients/gamevault-2/installation.md), the actively developed
-    client for Windows, Linux and macOS (public beta). It is web-first: the
-    [Web UI](./clients/gamevault-2/web-ui.md) is the same client in your browser,
-    with direct downloads but without automatic installation, launching and
-    playtime tracking.
-  - The [GameVault 1](./clients/gamevault-1/overview.md), the original
-    client with full GameVault+ support.
+- **GameVault Server**: the self-hosted backend, usually run with Docker.
+- **A client**: two clients exist:
+  - [GameVault 2](./clients/gamevault-2/overview.md), the actively developed
+    client for Windows, Linux and macOS, plus the same interface in your browser
+    as the [Web UI](./clients/gamevault-2/web-ui.md).
+  - [GameVault 1](./clients/gamevault-1/overview.md), the original client with
+    full GameVault+ support.
 
-Not sure which one fits? The [feature comparison](./clients/feature-parity.md)
-lists what each client supports.
+Not sure which one fits? [Choose your client](./getting-started/choose-your-client.md)
+or read the [feature comparison](./clients/feature-parity.md).
 
 :::tip Try it out
 You do not need a server to look around. Use our demo instance:

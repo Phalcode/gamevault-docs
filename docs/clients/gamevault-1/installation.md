@@ -3,11 +3,20 @@ description: Install GameVault 1 from the Microsoft Store or with the manual ins
 sidebar_position: 2
 ---
 
-# Installing GameVault 1
+# Installing on Windows
 
-**Requirement:** Windows 10 or 11 with Microsoft Store installed.
+GameVault 1 requires Windows 10 or 11. It cannot be installed on Linux or macOS;
+use [GameVault 2](../gamevault-2/overview.md) there.
 
-## Microsoft Store (recommended)
+## Requirements
+
+- Windows 10 or 11. GameVault 1 cannot be installed on Linux or macOS; use
+  [GameVault 2](../gamevault-2/overview.md) there.
+- The Microsoft Store for the recommended installation.
+
+## Installation
+
+### Microsoft Store (recommended)
 
 Install GameVault from the
 [official Microsoft Store](https://www.microsoft.com/store/apps/9PCKDV76GL75).
@@ -18,12 +27,7 @@ Experienced users can also run:
 winget install gamevault
 ```
 
-Continue with [Connect to a server](../../getting-started/connect-to-server.md).
-
-## Alternative installations
-
-Every option outside the Microsoft Store is less supported and needs manual
-updates. See [Updating](updating.md).
+The Store build updates itself; see [Updating](updating.md).
 
 ### Pre-built artifacts from GitHub
 
@@ -32,19 +36,13 @@ Download the latest build from
 
 :::note Antivirus and SmartScreen
 Antivirus software or SmartScreen may block the binary because it is compiled
-without a code-signing certificate. Choose **More Details → Run Anyway**.
+without a code-signing certificate. Choose **More details → Run anyway**.
 :::
-
-### Linux via Wine
-
-There is no native GameVault 1 build for Linux. The community guide for Wine and
-Bottles is [here](linux-wine.md). Native Linux support exists in
-[GameVault 2](../gamevault-2/linux.md).
 
 ### Compile from source
 
-1. Install Visual Studio (2022 recommended) with the **.NET Desktop
-   Development** workload and .NET 8.0.
+1. Install Visual Studio (2022 recommended) with the **.NET desktop
+   development** workload and .NET 8.0.
 2. Clone the [gamevault-app](https://github.com/Phalcode/gamevault-app)
    repository.
 3. Open the solution, choose **Release** and build the `gamevault` project.
@@ -57,3 +55,19 @@ Bottles is [here](linux-wine.md). Native Linux support exists in
    field.
 3. Download the current `.appxbundle`.
 4. Extract it, then extract `ReleasePackage_[VERSION]_x64.appx`.
+
+:::note Manual updates
+Everything outside the Microsoft Store is less supported and has to be updated
+by hand; see [Updating](updating.md).
+:::
+
+## Verify
+
+After the first start, the profile selection opens; continue with
+[Connect to a server](../../getting-started/connect-to-server.md).
+
+## Next steps
+
+- [Usage](using.md)
+- [Settings](settings.md)
+- [Data locations](data.md)

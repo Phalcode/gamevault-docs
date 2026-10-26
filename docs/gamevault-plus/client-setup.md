@@ -9,14 +9,14 @@ GameVault+ is currently available in GameVault 1 only. Support for
 GameVault 2 is planned; the steps on this page describe GameVault 1.
 :::
 
-Setting up your GameVault+ License within your GameVault Client Application is simple and easy.
+Activate GameVault+ on the client in two steps.
 
 ## Linking Your Phalcode Account
 
 1. Open the GameVault Client Application and go to the `Settings` tab. Then, click on the `GameVault+` button.
 2. Click the `Log In` button and enter your credentials to sign in.
 
-Your credentials will be securely stored within the application for future use.
+The client stores the credentials for later starts.
 
 From now on, each time you start the application, it will automatically attempt to log in using the stored credentials and retrieve your licenses. If the credentials are no longer valid, you will be prompted to log in again.
 

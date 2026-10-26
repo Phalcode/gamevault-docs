@@ -4,54 +4,55 @@ description: Install and switch GameVault+ themes in GameVault 1, including cust
 sidebar_position: 3
 ---
 
-With [GameVault+](/docs/gamevault-plus/introduction), you gain access to a variety of additional themes and also the ability to apply custom themes, to personalize your experience.
+GameVault+ adds premium themes and lets you install custom ones.
 
-## Premium Themes
+## Premium themes
 
-GameVault+ ships with the following premium themes by default:
+GameVault+ ships with these themes:
 
-- **Phalcode (Dark)**: A dark theme aligned with our Phalcode brand.
+- **Phalcode (Dark)**: dark theme in the Phalcode colours.
   ![Phalcode (Dark)](/img/themes/phalcode_dark.png)
-- **Phalcode (Light)**: A light theme aligned with our Phalcode brand.
+- **Phalcode (Light)**: light theme in the Phalcode colours.
   ![Phalcode (Light)](/img/themes/phalcode_light.png)
-- **Halloween (Dark)**: A Halloween-themed ambiance to set the mood for horror games in autumn.
+- **Halloween (Dark)**: orange and black, for autumn horror games.
   ![Halloween (Dark)](/img/themes/halloween_dark.png)
-- **Christmas (Dark)**: Celebrate a cozy and festive Christmas with us. We ho-ho-hope you love it!
+- **Christmas (Dark)**: dark red and green.
   ![Christmas (Dark)](/img/themes/christmas_dark.png)
 
-## Custom Themes
+## Custom themes
 
-GameVault+ also offers the flexibility to apply custom themes, allowing users to incorporate designs of their preference.
+Custom themes let you install your own design.
 
-A public repository of custom themes shared by our community can be found [here](https://github.com/Phalcode/gamevault-community-themes/).
+Community themes live in
+[Phalcode/gamevault-community-themes](https://github.com/Phalcode/gamevault-community-themes/).
 
-### How to Install and Apply a Custom Theme
+### How to install and apply a custom theme
 
-#### Automatic Installation via [GameVault Community Themes Repository](https://github.com/Phalcode/gamevault-community-themes/)
+#### Automatic installation from the [community themes repository](https://github.com/Phalcode/gamevault-community-themes/)
 
 1. Open **GameVault** and navigate to **Settings → Application → Theme**.
 2. Click on the **Community Themes** dropdown menu to load available themes from the community repository.
 3. Select your preferred theme and click **"Install Theme"**.
 
-#### Manual Installation
+#### Manual installation
 
 1. Place the theme .xaml file into your `themes` folder. Depending on your GameVault installation, the `themes` folder can be located at either `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\themes` or `%APPDATA%/GameVault/themes`.
 2. Open `GameVault Settings` and select your newly added theme under `Application` -> `Themes`.
 
-### Creating a Custom Theme
+### Creating a custom theme
 
 Creating a custom theme is straightforward. You can just create a new .xaml file based on our template and save it in the `themes` folder.
 
 <!--
-#### Theme Generator
+#### Theme generator
 **Coming Soon!**
  An easy-to-use Theme Generator is available [here](https://themes.gamevau.lt/).
 -->
 
-#### Template File
+#### Template file
 
 Just copy the latest template from the [community themes repository](https://github.com/Phalcode/gamevault-community-themes/), edit it using a text editor, and save it in the `themes` folder to try it out. Be aware that the hex codes are ARGB syntax and not RGB syntax.
 
-### Sharing Custom Themes
+### Sharing custom themes
 
 You can share your custom themes with the community by creating a pull request to the [community themes repository](https://github.com/Phalcode/gamevault-community-themes/).

@@ -3,30 +3,36 @@ description: Create users, assign roles, activate accounts and recover admin acc
 sidebar_position: 6
 ---
 
-# User Management
+# User management
 
-This documentation provides instructions on user management for the GameVault server. User management involves configuring the initial admin user, enabling/disabling user registration, managing user activation, and assigning roles. These features are crucial for controlling user access, maintaining security, and administering the server effectively.
+This page covers the first admin account, user registration, account activation
+and roles.
 
-## Admin User
+## Admin user
 
-### Initial Setup
+### Initial setup
 
 :::warning
-GameVault does not register the first admin account for you. You will need to do that yourself.
+GameVault does not create the first admin account. Register it yourself with the
+GameVault client.
 :::
 
-The first registered user on a server is automatically activated and granted admin permissions. You can register it using the GameVault Client Application.
+The first account registered on a server is activated automatically and gets the
+admin role.
 
-## Admin Role Recovery
+## Admin role recovery
 
-If you lost your admin permissions due to misconfiguration, you can fix this by using the `SERVER_ADMIN_USERNAME` environment variable. Simply set this variable to the username of the user you wish to elevate to the admin role. Upon server startup, GameVault will automatically grant admin permissions to the specified username and activate the account. Note that this variable only promotes an **existing** user; it never creates a new account.
+Lost admin access after a misconfiguration? Set `SERVER_ADMIN_USERNAME` to the
+username that should get the admin role. On the next server start GameVault
+grants that user admin permissions and activates the account. The variable only
+promotes an **existing** user; it never creates an account.
 
-## Admin Password Recovery
+## Admin password recovery
 
-In the event that the server owner gets locked out of the admin user account due to password loss or other reasons, the GameVault Server provides an easy way to recover access.
+If the admin password is lost, the server can reset it at startup.
 
-First, set the `SERVER_ADMIN_USERNAME` environment variable to the username of the admin user you wish to reset the password for.
-Then, set the `SERVER_ADMIN_PASSWORD` environment variable to the desired password for the admin user.
+First, set the `SERVER_ADMIN_USERNAME` environment variable to the username whose
+password should be reset. Then set `SERVER_ADMIN_PASSWORD` to the new password.
 
 :::tip
 Both variables are only applied at server startup, and the user must already exist on the server. They are a **recovery mechanism**, not an account creation mechanism.
@@ -39,36 +45,40 @@ SERVER_ADMIN_USERNAME=gamevaultfan1
 SERVER_ADMIN_PASSWORD=hunter2
 ```
 
-Upon the next startup of the GameVault server, the admin user's password will be updated to the specified password, allowing the user to regain access.
+On the next server start the password is replaced with the one you set.
 
-## User Registration
+## User registration
 
-You have the option to enable or disable new user registration. When tighter control is needed, you can opt to disable public registration.
+Public registration can be turned off, for example when the server should stay
+private.
 
-Simply set the `SERVER_REGISTRATION_DISABLED` environment variable to `true` to easily deactivate the public user registration API in GameVault. This prevents new users from creating accounts and accessing the application.
+Set `SERVER_REGISTRATION_DISABLED` to `true` to disable the public registration
+API. New users can then no longer create accounts. Administrators can still
+create users while public registration is closed.
 
-However, even when public registration is closed, authenticated administrators retain the ability to register new users.
+## User activation
 
-## User Activation
+By default an administrator has to activate a new account before it can use the
+server.
 
-The activation process is a crucial step to authorize and activate new user accounts. By default, newly registered users are required to be activated by an administrator before they can fully utilize the application.
+Unactivated users are treated as unauthenticated and cannot access most APIs.
+That is fewer rights than the guest role has. Admins skip the activation check
+and activate new users in the admin panel.
 
-Unactivated users have limited rights, even less than the rights of a guest role user. They are treated as unauthenticated and can not access most APIs.
-Admins are exempt from activation checks. They can activate new users through the admin panel within the GameVault application.
+Set `SERVER_ACCOUNT_ACTIVATION_DISABLED` to `true` to remove the step. New
+accounts are then active as soon as they register.
 
-However, if you wish to bypass the mandatory activation step and allow new users to immediately gain full access to GameVault, you can disable the activation process. Simply set the `SERVER_ACCOUNT_ACTIVATION_DISABLED` environment variable to `true`. This activates users automatically upon registration, removes the activation requirement and grants immediate access to new users.
+## User roles
 
-## User Roles
-
-Roles play a crucial role in ensuring the security and proper functioning of the GameVault server. They determine the permissions and access levels granted to users within the application.
+Every user has exactly one role, and the role decides what they may do.
 
 GameVault implements the following roles:
 
-| Role            | Description                                                                                                        | Level |
-| --------------- | ------------------------------------------------------------------------------------------------------------------ | ----- |
-| Guest           | This role allows users to view most content within the application.                                                | 0     |
-| Users (Default) | This role includes permissions such as downloading games, creating progresses, and editing the user's own profile. | 1     |
-| Editors         | Editors have the ability to edit and remap games within the application.                                           | 2     |
-| Admins          | Admins possess full control over user management and can edit user profiles.                                       | 3     |
+| Role            | Description                                                             | Level |
+| --------------- | ----------------------------------------------------------------------- | ----- |
+| Guest           | Can view most content.                                                  | 0     |
+| Users (Default) | Can download games, create progress entries and edit their own profile. | 1     |
+| Editors         | Can edit and remap games.                                               | 2     |
+| Admins          | Full control over users and profiles.                                   | 3     |
 
-By assigning appropriate roles to users, you can ensure that they have the necessary access and privileges based on their responsibilities.
+Give each user the lowest role that lets them do their job.

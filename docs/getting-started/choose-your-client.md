@@ -1,58 +1,53 @@
 ---
 sidebar_label: Choose your client
-description: Compare GameVault 2, GameVault 1 and the Web UI, and pick the right client for your setup.
+description: Decide between GameVault 2, GameVault 1 and the Web UI, then jump to the right guide.
 sidebar_position: 1
 ---
 
 # Choose your client
 
-GameVault has two clients. Both connect to the same server and the same account.
+GameVault has two clients. Both connect to the same server with the same
+account, so you can switch at any time without losing your library.
 
-|                                     | GameVault 2                                 | GameVault 1                   |
-| ----------------------------------- | ------------------------------------------- | ----------------------------- |
-| Platforms                           | Windows, Linux, macOS, plus a browser build | Windows 10/11                 |
-| Installation                        | Desktop app, or nothing for the Web UI      | Microsoft Store or manual     |
-| Download game files                 | Browser download or desktop app             | Yes                           |
-| Automatic install, launch, tracking | Desktop app only                            | Yes                           |
-| Status                              | Public beta                                 | Feature-complete, maintenance |
-| GameVault+                          | Planned                                     | Available                     |
+|                 | GameVault 2                                 | GameVault 1                   |
+| --------------- | ------------------------------------------- | ----------------------------- |
+| Platforms       | Windows, Linux, macOS, plus a browser build | Windows 10/11                 |
+| Status          | Public beta                                 | Feature-complete, maintenance |
+| GameVault+      | Planned                                     | Available                     |
+| Recommended for | Most users, and everyone on Linux or macOS  | GameVault+ subscribers        |
 
-The [feature comparison](../clients/feature-parity.md) covers every difference in
-detail.
+The [feature comparison](../clients/feature-parity.md) lists every difference in
+detail, including the tracking issue for each missing feature.
 
 ## GameVault 2 (recommended)
 
 GameVault 2 is the actively developed client. It manages multiple versions per
-game, installs and launches titles, and brings first-class Linux support with
-AppImage, `.deb`, umu-launcher and per-game Wine/Proton prefixes.
+game, installs and launches titles, and brings first-class Linux support.
 
 GameVault 2 is web-first: the desktop app runs the same interface that your
-server serves as the [Web UI](../clients/gamevault-2/web-ui.md). The browser
-build shares the library, game pages, settings, community and admin views, and
-can download game files or hand a download off to an installed desktop client.
-What it leaves out is the local automation: extraction, installation, launching
-and playtime tracking.
+server serves as the [Web UI](../clients/gamevault-2/web-ui.md). That means you
+can browse your library in a browser without installing anything, while
+installation, launching and playtime tracking need the desktop app.
 
-- [Install the desktop app](../clients/gamevault-2/installation.md)
-- [Open the Web UI in your browser](../clients/gamevault-2/web-ui.md)
+1. Read the [GameVault 2 overview](../clients/gamevault-2/overview.md).
+2. [Install the desktop app](../clients/gamevault-2/installation.md) or open the
+   [Web UI](../clients/gamevault-2/web-ui.md).
 
-It is in public beta. GameVault 1 is still available if you depend on
-a feature that GameVault 2 does not have yet.
+GameVault 1 stays available if you depend on a feature that GameVault 2 does not
+have yet.
 
 ## GameVault 1
 
-GameVault 1 is the original Windows client. It is feature-complete and only
-receives maintenance updates, but it is the only client with full GameVault+
-support today.
+GameVault 1 is the original Windows client. It is feature-complete, receives
+maintenance updates only, and is the only client with full GameVault+ support
+today.
 
-[Learn about GameVault 1](../clients/gamevault-1/overview.md)
+Read the [GameVault 1 overview](../clients/gamevault-1/overview.md) before you
+install it.
 
-## Still need a server?
+## Next steps
 
-A client is only half of the setup. If you do not have a GameVault server yet,
-start with the [server setup guide](../server/setup/setup.md) or try the demo
-server:
-
-**URL**: [demo.gamevau.lt](https://demo.gamevau.lt)  
-**Username**: demo  
-**Password**: demodemo
+- No server yet? Start with the
+  [server setup guide](../server/setup/setup.md) or try the demo server
+  described in [Connect to a server](connect-to-server.md).
+- Server ready? [Connect a client](connect-to-server.md).

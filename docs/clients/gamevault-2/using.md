@@ -1,155 +1,216 @@
 ---
 description: Browse, download, install and launch games in GameVault 2, and edit metadata.
-sidebar_position: 2
+sidebar_position: 6
 ---
 
-# Using GameVault 2
+# Usage
 
-## File & Folder Structure
+GameVault 2 is used in a short loop: open the library, download a game, install
+it, press play. This page walks through that loop and the screens around it.
+Where the files end up is described under [data locations](data.md).
 
-All downloaded and installed game files are stored inside a root folder that you choose in the client settings (Downloads → Download locations).
+## Library and game page
 
-### GameVault 2
+The library shows every game your server offers and the ones you already have
+installed. Use the search, filter and sort controls above the grid; bookmarks
+collect the games you keep coming back to.
 
-The modern client organizes each game and version separately:
+![GameVault 2 library with three installed games above the server games](/img/screenshots/2026-10-26/Library/Library_GamesInstalled.webp "Installed games are listed above the server library")
 
-- `<Root>/GameVault/<Title>/Versions/<Version>/Download/`: the downloaded archive
-- `<Root>/GameVault/<Title>/Versions/<Version>/Extraction/`: the extracted files
-- `<Root>/GameVault/<Title>/Versions/<Version>/Installation/`: the installed game
+The game page adds the media player for trailers and screenshots, the full
+description, the progress of every user, and buttons to download or launch the
+game.
 
-### GameVault 1
+![Game page with trailer player, playtime statistics and metadata sidebar](/img/screenshots/2026-10-26/Game/GameView.webp "The game page brings media player, progress and metadata together")
 
-GameVault 1 uses a flatter layout:
+## Choosing a version
 
-- `D:/GameVault/Downloads/`: where your downloads are saved. For each downloaded game, GameVault generates a new folder in this directory.
-- `D:/GameVault/Installations/`: where your installed games belong. For each downloaded game, GameVault generates a new folder in this directory.
+If a game has
+[multiple versions](../../server/adding-games.md#keeping-multiple-versions-of-the-same-game)
+on the server, the download button opens a version picker. The server ranks the
+versions and marks the highest one as the default, but you can pick any entry
+and download another version later.
 
-:::note Example
-Let's say you installed GameVault freshly and configured your Root folder path to `D:/` because your D Drive is larger.
-:::
+![Version picker listing two versions with game type, early-access flag and size](/img/screenshots/2026-10-26/Download/DownloadGameVersionPicker.webp "Pick a version before the download starts")
 
-## Downloading Games
-
-Let's say you found the game `Assassin's Creed Unity (Game ID: 74)` in the Library tab and chose to download it.
-
-:::warning
-Only download games from servers you fully trust! There's a potential risk of malware. If your antivirus alerts during the following process, abort any download and installation of the game, fully delete the downloaded data, and warn your server admins to address the malware promptly.
-:::
-
-GameVault uses the game's name (and, in GameVault 2, its version) to identify the folders:
-
-- **GameVault 2:** `<Root>/GameVault/Assassin's Creed Unity/Versions/<Version>/Download/` (plus `Extraction/` and `Installation/`)
-- **GameVault 1:** `<Root>/GameVault/Downloads/(74) Assassin's Creed Unity/` and `<Root>/GameVault/Installations/(74) Assassin's Creed Unity/`
-
-Your downloaded game archive is saved in the download folder. The installation folder should be empty until you install the game.
-
-## Selecting a Game Version
-
-If a game has [multiple versions](../../server/adding-games.md#keeping-multiple-versions-of-the-same-game) on the server, you can choose which one to download. Open the game's details page or click the download button on its card and pick the desired version from the version list. The server ranks the versions and marks the highest-ranked one as the default; the version list shows each entry, so you can always download another version later.
-
-:::note GameVault 1
-GameVault 1 always downloads the server-selected latest version and does not offer a version picker.
-:::
-
-To start playing a game you've downloaded, follow these steps to install it. This process makes it easier for you.
-
-Game installation has two main parts:
-
-### 1. Extracting the Game
-
-GameVault games are [always served in some kind of archive format](../../server/structure.md). So you will need to extract them.
-
-After the download is complete, locate the `Extract` button. Clicking it will extract the game into a subfolder called `Extracted` within the game's Download Directory. A progress bar shows the extraction progress and estimated remaining time. Larger or extremely compressed games may take longer to extract.
-
-If there are extraction errors, you can retry the extraction unless you deleted the game archive. Error details are displayed in the user interface. If you encounter repeated extraction errors for the same game, try to extract the game manually or contact your GameVault server administrators to check the integrity of those files.
-
-### 2. Installing the Game
-
-There are different types of GameVault games. [You can find more information about them here](../../server/game-types.md).
-
-For now, we will focus on the general concept of Portable and Setup Games.
-
-Portable games are ready to play out of the box, while Setup games require additional setup before playing.
-
-:::note What determines the game type?
-The server automatically tries to determine the game's type based on the content, but errors can occur. Administrators can manually overwrite the detected game type by including a [type override in the file name](../../server/structure.md).
-:::
-
-#### Installing Portable Games
-
-For portable games, GameVault provides a very simple installation process. You don't need to select an executable file. Just press the `Install` button. GameVault will automatically move all the extracted game content to your game's installation directory. This should happen instantly.
-
-Once the installation is complete, your game is ready to be played.
-
-:::note No Game Executable
-If you don't see a game executable here but instead see a setup executable, the game's type has incorrectly been set to a portable type on the server. Contact your server administrators to manually override that game's type to a setup type. Then, manually move the files inside your game's installation folder back into the game's download folder. Run the installer and manually select the now-empty game's installation folder as its destination.
-:::
-
-#### Installing Setup Games
-
-For games that require installation, GameVault will provide a dropdown menu to launch a setup executable file. Select the appropriate setup executable and press the `Install` button.
-
-:::note No Setup Executable
-If you don't see a setup executable here but instead see the game's executable, it may have incorrectly been set to a setup type on the server. Contact your server administrators to manually override that game's type to a portable type. Then, manually move the files inside the game's download `Extracted/` folder to the game's corresponding installation folder, and you should be ready to play.
-:::
-
-GameVault tries to automate setup installers as much as possible. It estimates the best installer parameters to run setups silently/invisibly and preconfigure the target installation directory. This works very well for many installers. For installers that cannot be fully automated, you may still need to confirm or manually set the installation path.
-
-If you need to manually set the installation path, **it is crucial to set the destination folder for your game files to your game's Installation folder** (e.g., `<GameVault Root>/GameVault/Installations/(74) Assassin's Creed Unity/`). This is where the final game files and executable should be located. If you don't set the destination, GameVault will have no idea where to look for your game files, and the game won't be playable via GameVault. If you set it incorrectly, uninstall the game from your system and retry this step.
-
-Once the installation is complete, your game is ready to be played.
-
-:::info How automated are setup installations in GameVault?
-GameVault can automate a large part of many setup installations by estimating installer arguments and target paths. This includes silent/invisible installs where supported. But because installer technologies differ, full automation is still not possible for every case. When an installer cannot be fully automated, you still need to manually select the installation path and click through the installer.
-:::
-
-#### Clearing Remains
-
-Once you have fully confirmed that a game works, you are free to delete the game's corresponding Download using the trash icon in the downloads tab.
-
-## Playing a Game
-
-Launching a game on GameVault is simple. Once your game is installed and ready to go, it will appear in the "Installed Games" section. If GameVault didn't correctly predict the correct executable to launch automatically, you can change it in the game's settings and click the `Play` button to start the game.
-
-## Tracking Your Game Progress
-
-Once GameVault is launched, it automatically activates playtime tracking. Both desktop clients continuously monitor your playtime and send this information to the server whenever a game executable (except those on the ignore list) is running from your game installation folders. Even if you play without an internet connection, your playtime is still tracked and synced to the server as soon as you regain connectivity.
-
-In our context, the term "Progress" refers to a user's activity of playing a game. Each user can have a single progress entry per game.
-
-The progress entry includes the completion state, which can be modified through the community tab, as well as the tracked playtime and some other additional information.
-
-You have the ability to change the progress state or delete it using the community tab. Certain states also change automatically, such as transitioning from UNPLAYED to PLAYING when the game is launched.
+## Downloading a game
 
 :::warning
-Progress tracking does not include savegames. While GameVault [supports savegame synchronization and storage](../../gamevault-plus/cloud-saves.md), this functionality is exclusive to the [GameVault+](../../gamevault-plus/introduction.md) premium subscription and operates independently from progress tracking.
+Only download games from servers you trust. If your antivirus alerts during a
+download or installation, stop, delete the downloaded files, and tell the
+server admins.
 :::
 
-## Modifying Games
+Pressing the download button adds the game to the download queue. The queue
+shows progress, speed and the remaining time, and lets you abort a download.
+The archive is written to the download folder of that game and version; see
+[data locations](data.md#games-and-downloads).
 
-If you are unhappy with the Box Art or Background Image of a game on your server or if there are incorrect Metadata associated with a game, there is a straightforward solution.
+![Downloads tab with one installed game and one download at 56 percent](/img/screenshots/2026-10-26/Download/DownloadProgress.webp)
 
-If you have the `EDITOR` role or higher on your GameVault server, you can modify games by following these steps:
+## Extracting
 
-Open the game settings by clicking on the settings icon, either in the top-right corner of the box art image or on the game's detail page. A popup will appear.
+GameVault serves games as archives, so a download has to be extracted before it
+can be installed. Press **Extract** after the download finishes. The progress
+bar shows the extraction progress and an estimate; large or heavily compressed
+games take longer.
 
-- Under **Edit Images**, you can select/paste/drop an image or paste a URL for different box art or background image.
-- Under **Metadata**, you can remap/unmap incorrectly associated metadata for each provider.
-- Under **Custom Metadata**, you can manually overwrite the Metadata of the game.
+If extraction fails, the client shows the error and offers a retry. Retrying
+needs the archive, so do not delete it first. Repeated failures usually mean a
+damaged upload: extract the archive manually to check, or ask your server admins
+to verify the files.
 
-Please note that any changes made will affect all users on the server.
+## Installing
 
-## Modifying Users
+There are two relevant [game types](../../server/game-types.md) here, portable
+games and setup installers. The server detects the type from the files;
+admins can override it with a
+[type in the file name](../../server/structure.md).
 
-If you want to change the data, profile picture, or background image of your User:
+### Portable games
 
-Click your User Icon on the top left corner, then locate and click on the Settings Icon in the top right corner, and a popup will appear.
+Portable games are ready to run. Press **Install** and GameVault moves the
+extracted files into the installation folder.
 
-- Under **Edit Images**, you can select/paste/drop an image or paste a URL for different avatar or background image.
-- Under **Edit Details**, you can change the data of your user.
+### Setup games
 
-If you have the `ADMIN` role or higher on your GameVault server, you can do the same for all other user profiles in the Admin Dashboard.
+Setup games need their installer to run. Pick the setup executable from the
+dropdown and press **Install**.
 
-## Exiting or Relaunching the App
+![Setup game installation panel with the installer dropdown and the destination path](/img/screenshots/2026-10-26/Download/InstallSetupGame.webp "GameVault shows the destination folder to select in the installer")
 
-In order to maintain playtime tracking functionality, simply closing the launcher using the X-Button does not terminate the GameVault process. Instead, it minimizes the app to the system Tray. Therefore, if you truly wish to exit the application, be sure to right-click and select "Exit" from the context menu. The same principle applies when restarting the app. Only one GameVault window can be active at a time, so initiating another GameVault merely brings the minimized app to the forefront without actually restarting it.
+GameVault tries to automate the installer: it estimates silent-install
+parameters and preconfigures the target folder. Installers that refuse silent
+installs still need you to click through them. When the installer asks for a
+destination, **select the installation folder of that game** (shown in the game
+settings). If the game ends up somewhere else, GameVault cannot find its
+executable afterwards; uninstall it and repeat the step.
+
+### When the detected type is wrong
+
+- **Portable game shows a setup executable:** the game is marked as setup on the
+  server. Ask your admins to fix the type. To play now, move the files from the
+  installation folder back into the download folder, run the installer manually
+  and point it at the installation folder.
+- **Setup game shows the game executable:** the game is marked as portable on
+  the server. Ask your admins to fix the type, then move the contents of the
+  download folder's `Extraction` subfolder into the installation folder.
+
+### Removing the download
+
+Once a game runs, delete its download with the trash icon in the downloads tab.
+The installation stays usable.
+
+## Launching a game
+
+Installed games appear in the **Installed games** section. Press **Play** to
+start one. If GameVault picked the wrong executable, change it in the game
+settings; launch output and errors go to the
+[launch log](settings.md#games).
+
+On Linux, games run through umu-launcher; see
+[Linux specifics](linux.md#running-windows-games).
+
+## Game settings
+
+The gear icon on the box art or on the game page opens the game settings. Three
+tabs change things on your computer:
+
+- **Installation**: installation folder, uninstall and disk usage.
+- **Game files**: the files on the server. Only admins can delete them.
+- **Launch options**: executable, launch parameters, run as administrator.
+
+![Installation tab with the install path, uninstall button and disk usage ring](/img/screenshots/2026-10-26/Game/Settings/Installation.webp "Installation tab: path, uninstall and disk usage")
+
+![Launch options tab with executable picker, parameters field and administrator toggle](/img/screenshots/2026-10-26/Game/Settings/Launchoptions.webp)
+
+![Game files tab listing the server file with its size, type and delete button](/img/screenshots/2026-10-26/Game/Settings/GameFiles.webp)
+
+## Playtime and progress
+
+Playtime tracking starts with the client. While a game executable runs from an
+installation folder, the client counts the time and reports it to the server.
+Executables on the [ignore list](settings.md#games) are skipped. Progress
+recorded while the server is unreachable is synced once the connection is back.
+
+A progress entry is one user's activity for one game: playtime, completion
+state and some derived data. Change or delete the state in the community view;
+some states also change on their own, for example to **Playing** when you launch
+the game.
+
+![User profile with tracked, playing, finished and bookmark counters](/img/screenshots/2026-10-26/Community/UserTop.webp "Tracked, playing, finished and bookmarked games at the top of a profile")
+
+:::note
+Progress tracking does not include save games. Save game synchronisation is a
+[GameVault+](../../gamevault-plus/cloud-saves.md) feature and works separately
+from progress.
+:::
+
+## Community
+
+The community tab lists every member with their tracked, current, finished and
+saved counts, plus the games they played recently. Open a member to see the full
+progress list and their bookmarks.
+
+![Community tab showing six members with progress counters and recently played games](/img/screenshots/2026-10-26/Community/Main.webp)
+
+![Profile page with the full progress list and the bookmarked shelf](/img/screenshots/2026-10-26/Community/UserBottom.webp)
+
+## Editing games
+
+Members with the `EDITOR` role or higher can change how a game is presented.
+Open the game settings from the gear icon on the box art or on the game page.
+
+- **Edit images**: replace box art or background by upload, drag and drop or
+  URL.
+- **Metadata**: remap or unmap metadata per provider and re-fetch a provider.
+- **Custom metadata**: overwrite single fields such as description, genres or
+  tags. Multiple entries in one field are comma-separated.
+
+Changes affect every user on the server.
+
+![Edit images tab with cover and background pickers](/img/screenshots/2026-10-26/Game/Settings/EditImages.webp)
+
+![Metadata tab with provider priority, recache and unmap actions](/img/screenshots/2026-10-26/Game/Settings/Metadata.webp)
+
+![Custom metadata tab with fields for title, description and age rating](/img/screenshots/2026-10-26/Game/Settings/CustomMetadata.webp)
+
+## Editing users
+
+Open your avatar in the top left corner and the gear icon in the panel that
+opens. **Edit images** changes avatar and background, **Edit details** changes
+your account data.
+
+![User settings, images tab with avatar and background](/img/screenshots/2026-10-26/Administration/UserSettings_Images.webp)
+
+Members with the `ADMIN` role can do the same for other users in the
+administration dashboard.
+
+## Administration
+
+The administration page is visible to admins. It shows the server address,
+version and user count, holds **Backup & restore database**, **Reindex games**
+and **Update & restart Web UI**, and lists every user with their role and
+activation state.
+
+![Administration page with server information, server actions and the user list](/img/screenshots/2026-10-26/Administration/Main.webp)
+
+## Gamepad navigation
+
+GameVault 2 supports gamepad navigation, which is what you want on a Steam Deck
+or a couch setup. The D-pad or left stick moves the focus ring, **A** activates
+the focused element and **B** goes back. The same navigation works in the Web UI
+when the browser exposes the Gamepad API.
+
+## Minimising and exiting
+
+Closing the window does not quit the client: it keeps running in the tray so
+playtime tracking continues. To quit, right-click the tray icon and choose
+**Exit**. Starting GameVault again while it runs in the tray only brings the
+existing window back.
+
+## Next steps
+
+- [Settings](settings.md)
+- [Data locations](data.md)
+- [Troubleshooting](../../troubleshooting.md)

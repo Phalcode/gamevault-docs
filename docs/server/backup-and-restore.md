@@ -17,7 +17,7 @@ For security reasons, every database operation described below requires your dat
 
 GameVault can create backups for both supported database systems: Postgres and SQLite. You can trigger and download backups through the GameVault client or through the [API](../advanced/rest-api) for automation. Each backup is a full database snapshot and is stored unencrypted, so handle the files accordingly.
 
-For SQLite, the GameVault Backup simply duplicates the database file.
+For SQLite it copies the database file.
 
 For Postgres, it uses `pg_dump` to create a database dump.
 
@@ -27,9 +27,10 @@ The backup endpoints are `GET /api/admin/database/backup` and `POST /api/admin/d
 
 ## Restoration
 
-Restoring a backup is simple, but risky.
+Restoring a backup overwrites the current database.
 
-You can upload a backup and start the restore from the GameVault client or through the [API](../advanced/rest-api). Before you proceed, keep these points in mind:
+You can upload a backup and start the restore from the GameVault client or
+through the [API](../advanced/rest-api). Before you restore:
 
 1. Avoid restoring a backup on a different server version. If you must do it, downgrade the GameVault server to the version that created the backup if possible. Higher versions are more likely to hit compatibility issues. Before you continue, create another backup of the current data.
 

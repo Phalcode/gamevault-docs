@@ -12,6 +12,12 @@ the documentation consistent with the product and the website.
 - Do not promise features that are not shipped. Mark planned behaviour as
   planned and link to the tracking issue when one exists.
 
+## Punctuation
+
+Do not use em dashes. Replace them with a colon in definition lists, a comma in
+prose, or start a new sentence. `pnpm build` and `pnpm lint` fail on em dashes
+through `scripts/check-em-dash.mjs`.
+
 ## Terminology
 
 | Use                  | Avoid                                  |

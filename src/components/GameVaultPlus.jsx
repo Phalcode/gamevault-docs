@@ -73,15 +73,13 @@ export function GameVaultPlus() {
                 key={benefit.title}
                 className="surface-panel gv-hover-lift rounded-[1.25rem] p-5"
               >
-                <div className="flex items-center gap-2">
+                <h3 className="flex items-center gap-2 text-base font-semibold text-gv-text">
                   <span
                     aria-hidden="true"
-                    className="h-1.5 w-1.5 rounded-full bg-gv-gold"
+                    className="h-1.5 w-1.5 flex-none rounded-full bg-gv-gold"
                   />
-                  <h3 className="text-base font-semibold text-gv-text">
-                    {benefit.title}
-                  </h3>
-                </div>
+                  {benefit.title}
+                </h3>
                 <p className="mt-2 text-sm leading-6 text-gv-muted">
                   {benefit.body}
                 </p>

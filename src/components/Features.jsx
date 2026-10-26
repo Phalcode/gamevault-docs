@@ -2,12 +2,12 @@ import { Container } from "./Container";
 import { SectionHeading } from "./SectionHeading";
 import { ZoomableImage } from "./ZoomableImage";
 
-import ImgCommunity from "@site/static/img/features/community.png";
-import ImgGame from "@site/static/img/features/game.png";
-import ImgMetadata from "@site/static/img/features/gamesettings_custom_metadata.png";
-import ImgLibrary from "@site/static/img/features/library.png";
+import ImgCommunity from "@site/static/img/features/gv2-community.webp";
+import ImgGame from "@site/static/img/features/gv2-game.webp";
+import ImgMetadata from "@site/static/img/features/gv2-metadata.webp";
+import ImgLibrary from "@site/static/img/features/gv2-library.webp";
 import ImgStars from "@site/static/img/features/stars.png";
-import ImgStore from "@site/static/img/features/store.png";
+import ImgStore from "@site/static/img/features/gv2-install.webp";
 
 const features = [
   {
@@ -15,6 +15,8 @@ const features = [
     description:
       "Host your entire DRM-free collection on your own hardware. Experience a stunning interface that brings the convenience of Steam to your homelab. Access your library with GameVault 2 on Windows, Linux and macOS, or through the built-in Web UI.",
     image: ImgLibrary,
+    imageAlt:
+      "GameVault 2 library with installed games above the server library",
     tag: "Library",
   },
   {
@@ -22,6 +24,7 @@ const features = [
     description:
       "Turn your server into a private gaming center. Share access with friends and family, manage user accounts, and build your own gaming community with ease and full control.",
     image: ImgCommunity,
+    imageAlt: "Community tab listing members with progress counters",
     tag: "Community",
   },
   {
@@ -29,6 +32,7 @@ const features = [
     description:
       "Keep track of your gaming journey with detailed playtime statistics. Monitor your progress, manage your backlog, and see what your community is playing in real-time.",
     image: ImgGame,
+    imageAlt: "Game page with playtime statistics and the progress state",
     tag: "Tracking",
   },
   {
@@ -36,11 +40,13 @@ const features = [
     description:
       "No more manual editing. GameVault automatically fetches high-quality cover art, descriptions, and metadata to keep your collection looking stunning and professional.",
     image: ImgMetadata,
+    imageAlt: "Game settings metadata tab with provider priority and remap",
     tag: "Metadata",
   },
   {
     title: "Easy Installation",
     image: ImgStore,
+    imageAlt: "Downloads tab with the setup installer and destination folder",
     tag: "Setup",
     description: (
       <>
@@ -109,7 +115,7 @@ export function PrimaryFeatures() {
               <div className="relative h-56 overflow-hidden">
                 <ZoomableImage
                   src={feature.image}
-                  alt={feature.title}
+                  alt={feature.imageAlt ?? feature.title}
                   className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                 />
                 <div

@@ -23,7 +23,7 @@ GameVault supports a **vast plugin framework** that supports connecting to vario
 
 ## How Metadata Enrichment in GameVault Works
 
-The GameVault Server includes a metadata service that allows various Metadata Provider Plugins to register. Each provider registers with a numerical priority value - the higher the priority, the more important the metadata is treated.
+The GameVault Server includes a metadata service that allows various Metadata Provider Plugins to register. Each provider registers with a numerical priority value. The higher the priority, the more important the metadata is treated.
 
 After [indexing the games](../indexing), GameVault automatically searches for relevant metadata. It uses a standard interface search method to find games on the metadata provider (often based on Game Title and Release Year) and determines the best match using a probability index calculated with an NLP Levenshtein algorithm and the release-year-offset. The further away the title and release date, the less probable the match. For each game file, only one game can be mapped per metadata provider.
 
@@ -59,7 +59,10 @@ So the generated metadata object initially looks like this:
 | --------- | ----------------------------- | -------------------------------------------------- | ---------- |
 | GameVault | Grand Theft Auto: San Andreas | All you had to do is to follow the damn train, CJ. | 18         |
 
-Next, the IGDB provider is used. As you can see, it has a different description, but the age rating is missing. GameVault will overwrite the description with the more important one. However, the missing age rating will be ignored, as some data from a lower priority provider is always preferred over having no data in a field. So the merged metadata object now looks like:
+Next, the IGDB provider is used. It has a different description and no age
+rating. GameVault overwrites the description with the higher-priority one. The
+missing age rating is ignored, because data from a lower-priority provider beats
+an empty field. The merged metadata object now looks like:
 
 | Provider  | Title                         | Description                                  | Age Rating |
 | --------- | ----------------------------- | -------------------------------------------- | ---------- |

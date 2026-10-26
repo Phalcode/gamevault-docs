@@ -1,72 +1,63 @@
 ---
-description: Where GameVault 1 stores installations, downloads, logs and settings.
-sidebar_position: 4
+description: Where GameVault 1 stores games, caches, settings, logs and themes.
+sidebar_position: 6
 ---
 
-# Data Management
+# Data locations
 
-This page gives you an overview of how GameVault 1 stores and manages its data.
+GameVault 1 keeps executable data in a folder that depends on how you installed
+it. Game files live in the root directories you configure in the client.
 
-The **GameVault 1** stores its data at:
+## Application data
 
-- `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` when installed from the Microsoft Store
-- `%APPDATA%\GameVault` otherwise
+| Installation         | Base folder                                                                                               |
+| -------------------- | --------------------------------------------------------------------------------------------------------- |
+| Microsoft Store      | `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\` |
+| Manual (GitHub, exe) | `%APPDATA%\GameVault\`                                                                                    |
 
-GameVault 2 keeps its data elsewhere; see
-[GameVault 2 data locations](../gamevault-2/data.md).
+Every path below is relative to that base folder.
 
-:::warning Don't modify unless you know what you're doing
-Please be aware that manually altering this data may lead to unwanted issues in GameVault.
+| Path               | Contents                                                                        |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `config/user`      | All settings for the profile. Sensitive values are encrypted.                   |
+| `config/web`       | Embedded browser data used for the GameVault+ login. Deleting it logs you out.  |
+| `cache/images`     | Cached images, named `<ParentID>.<ImageID>` so changed images are re-fetched.   |
+| `cache/prgs`       | Progress recorded while offline, synced when the server is reachable again.     |
+| `cache/local`      | Metadata of downloaded games, written once so details work offline.             |
+| `cache/ignorelist` | Executables the playtime tracker skips, such as `setup.exe` or `uninstall.exe`. |
+| `errorlog`         | Crash logs for support requests.                                                |
+| `themes`           | Imported custom themes. See [Themes](themes.md).                                |
+
+On every launch the client downsizes the cached images to your screen size,
+which keeps loading fast and the cache small.
+
+:::warning
+Changing these files by hand can break the client. Edit the ignore list in
+**Settings → Data** instead of opening the file.
 :::
 
-## Image Cache
+## Games and downloads
 
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\cache\images` or `%APPDATA%\GameVault\cache\images`
+GameVault 1 uses a flat layout: one folder per game, named
+`(<Game ID>)<Game Title>`. The root directories come from **Settings → Data**;
+GameVault creates a `GameVault` subfolder in each of them.
 
-GameVault caches all loaded images locally for faster retrieval. They're kept in a specific subfolder with a format like "ParentID.ImageID," where the ParentID could represent the Game ID or User ID. This unique ImageID allows GameVault to detect when an image becomes outdated (e.g., when another user modifies a game's box art). When you request that image again, the cache is immediately updated.
+| Path                                             | Contents                                  |
+| ------------------------------------------------ | ----------------------------------------- |
+| `<Root>\GameVault\Downloads\(74)Game Title\`     | the downloaded archive and its extraction |
+| `<Root>\GameVault\Installations\(74)Game Title\` | the installed game and its executable     |
 
-### Image Cache Optimization
+With `D:\` as root, a game with ID 74 lands in
+`D:\GameVault\Downloads\(74)Game Title\`. The installation folder stays empty
+until you install the game.
 
-When you launch the GameVault Client, it performs an image optimization process. This process efficiently adjusts all cached images to match your screen size, leading to faster loading times and reduced storage usage.
+## GameVault 2
 
-## Offline Cache (Progresses)
+GameVault 2 uses different directories and keeps title and version apart; see
+[GameVault 2 data locations](../gamevault-2/data.md).
 
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\cache\prgs` or `%APPDATA%\GameVault\cache\prgs`
+## Next steps
 
-Even when your application or your GameVault Server is offline, as long as the GameVault Client is running in the background, it continues to track your playtime. This data is sent to the server the next time you or the server is online.
-
-## Offline Cache (Game Metadata)
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\cache\local` or `%APPDATA%\GameVault\cache\local`
-
-After downloading a game, GameVault stores the game's metadata locally **once**. This allows you to see all game details even when your application or the server is offline. There is currently no way to refresh the cached metadata of a game.
-
-## Settings
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\config\user` or `%APPDATA%\GameVault\config\user`
-
-All GameVault settings are stored and retrieved in a user file. Sensitive data is encrypted for security.
-
-## Embedded Browser Settings
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\config\web` or `%APPDATA%\GameVault\config\web`
-
-GameVault's embedded browser settings are stored in the web folder. The embedded browser is used for the GameVault+ login functionality. You can delete this folder if you wish to clear all browser data. This will also log you out of your Phalcode account.
-
-## Ignore List
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\cache\ignorelist` or `%APPDATA%\GameVault\cache\ignorelist`
-
-The Ignore List includes commonly encountered false positives of sidecar-executables, such as `setup.exe`, `UnityCrashHandler.exe` or `uninstall.exe`. This list is retrieved from the server if not already present. It's used by the playtime tracker for instance to avoid counting `setup.exe` as playtime. Furthermore, these executables are hidden in the selection list within the installation tab, ensuring that only game-related executables are shown. You can also edit the Ignore List locally by opening the "ignorelist" file and adding your own entries to be excluded.
-
-## Crash Logs
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\errorlog` or `%APPDATA%\GameVault\errorlog`
-
-The Crash Logs are generated when an unhandled error occurs in GameVault. They can be used to debug issues or to provide support.
-
-## Themes
-
-> Located under: `%USERPROFILE%\AppData\Local\Packages\Phalcode.174950BD81C41_dymsgn3qpfjxc\LocalCache\Roaming\GameVault\themes` or `%APPDATA%\GameVault\themes`
-
-Here you can import your custom themes. To learn more about custom themes, refer to [Custom Themes Guide](../../gamevault-plus/themes.md#custom-themes).
+- [Settings](settings.md)
+- [Themes](themes.md)
+- [Updating](updating.md)

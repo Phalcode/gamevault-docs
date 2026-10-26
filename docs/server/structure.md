@@ -86,7 +86,7 @@ The name of each game file must follow this format:
 
 `Title (Version) (EarlyAccess) (GameType) (NoCache) (ReleaseYear).zip`
 
-Note that the parentheses must be included, and the naming convention is **case sensitive**.
+The parentheses are part of the name, and the convention is **case sensitive**.
 
 Here's an explanation of each part of the naming convention:
 

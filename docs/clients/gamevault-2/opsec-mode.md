@@ -3,11 +3,11 @@ description: Hide usernames, email addresses and server names in GameVault 2 scr
 sidebar_position: 7
 ---
 
-# Streamer / OPSEC Mode
+# Streamer / OPSEC mode
 
-OPSEC mode hides identifying information in the interface so you can take
-screenshots, record videos or stream GameVault without exposing yourself or
-your server.
+OPSEC mode hides identifying information in the GameVault 2 interface so you can
+take screenshots, record videos or stream without exposing yourself or your
+server.
 
 ## What it hides
 
@@ -23,6 +23,8 @@ game files are untouched, and nothing is sent anywhere.
 
 Open **Settings → Appearance** and enable **Streamer / OPSEC Mode**. The change
 applies immediately and persists across restarts.
+
+![Appearance settings with the Streamer / OPSEC mode toggle](/img/screenshots/2026-10-26/Settings/Appearance.webp)
 
 You can also toggle it from anywhere in the app with
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> on Windows and Linux, or

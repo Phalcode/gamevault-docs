@@ -9,9 +9,6 @@ sidebar_position: 10
 Early Access is open to everyone. There is no application, no form and no
 invite. Switch the update channel in the client and you are in.
 
-"Public beta" only describes the first GameVault 2 release. The program itself
-is Early Access, and it stays open permanently.
-
 ## Switching to Early Access
 
 1. Open **Settings → About**.

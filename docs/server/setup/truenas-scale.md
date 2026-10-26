@@ -22,9 +22,11 @@ current app-based setup.
 
 ### Docker-Compose.yml - what do I need to do?
 
-In current versions of TrueNAS Scale, you can create a custom app by providing a docker-compose.yml configuration. You do this entirely within TrueNAS Scale; No additional programs are needed. However, it can be beneficial to configure everything in a text editor first, and then copy/paste it into TrueNAS during the actual App creation process. This allows you to more easily make the necessary changes as well as save a copy of your config outside of TrueNAS. Once everything is prepared, you simply copy the config into TrueNAS Scale and it does the rest! This is explained later on in the documentation.
+TrueNAS Scale creates custom apps from a `docker-compose.yml`, so you need no
+other tools. Write the compose file in a text editor first: you can then keep a
+copy outside TrueNAS and paste the finished file into the app form.
 
-To start, open up a text editor - anything will do, but Notepad++ is an excellent choice as it maintains proper indentation/spacing.
+To start, open a text editor. Any editor works; Notepad++ keeps indentation intact.
 
 Next, copy this example into your text editor. You will make changes to this later on.
 
@@ -190,7 +192,7 @@ Example: `http://192.168.0.240:8080`
 
 Once you have the server running, you will need to download/install the GameVault client. It will walk you through the setup process.
 
-Here are a few things to keep in mind during this setup process:
+During setup:
 
 - The server URL should start with "http://" and end with the required port number "8080"
   - Example: `http://192.168.0.240:8080`

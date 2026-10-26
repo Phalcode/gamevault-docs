@@ -62,9 +62,11 @@ indexing errors and `EACCES` messages.
 - Check the [file and folder structure](server/structure.md).
 - Verify the game is supported in [game types](server/game-types.md).
 - For GameVault 1 installations, verify the root folder in
-  [Settings](clients/gamevault-1/gui.md#settings) and compare the server game ID
-  with the installation folder. See the
-  [GameVault 1 settings](clients/gamevault-1/gui.md#game-settings).
+  [Settings](clients/gamevault-1/settings.md#data) and compare the server game ID
+  with the installation folder. See
+  [GameVault 1 data locations](clients/gamevault-1/data.md#games-and-downloads).
+
+![GameVault 2 library with an empty installed section and two active filter chips](/img/screenshots/2026-10-26/Library/Library_NoGamesInstalled_Filtered.webp "Active filters stay in place until you clear them")
 
 ## Missing box art or metadata
 
@@ -80,12 +82,13 @@ indexing errors and `EACCES` messages.
 ## Incorrect game mapping
 
 Remap the game in the client:
-[GameVault 2](clients/gamevault-2/using.md#modifying-games) or
-[GameVault 1](clients/gamevault-1/gui.md#game-settings).
+[GameVault 2](clients/gamevault-2/using.md#editing-games) or
+[GameVault 1](clients/gamevault-1/using.md#game-settings).
 
 ## Slow downloads
 
-- Remove the client bandwidth limit under **Settings → Application**.
+- Remove the client bandwidth limit under **Settings → Downloads** in GameVault
+  2 or **Settings → Installation** in GameVault 1.
 - Remove the server limit: unset `SERVER_MAX_DOWNLOAD_BANDWIDTH_IN_KBPS` or set
   it to `0`.
 - Make sure the client is using the LAN address, not the public address.

@@ -1,14 +1,25 @@
 ---
-description: "GameVault 2 on Linux: AppImage, .deb, umu-launcher, Proton prefixes and Steam Deck notes."
-sidebar_position: 5
+description: "Install GameVault 2 on Linux with the AppImage or the .deb package."
+sidebar_position: 3
 ---
 
-# GameVault 2 on Linux
+# Installing on Linux
 
-GameVault 2 is the first client with native Linux support. No Wine setup is
-needed to run the client itself.
+import FirstStart from "./_first-start.md";
 
-## Packages
+GameVault 2 ships a `.deb` package and an AppImage for Linux; the client itself
+does not need Wine. It is in public beta: crashes and missing features are
+expected, see the [overview](overview.md) for the status. Download it from the
+[download page](/download) or from
+[GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).
+
+## Requirements
+
+- A 64-bit Linux distribution.
+- FUSE for the AppImage; Debian, Ubuntu or a derivative for the `.deb` package.
+- Free disk space for the download and installation folders.
+
+## Installation
 
 ### AppImage
 
@@ -20,35 +31,42 @@ chmod +x GameVault-*.AppImage
 ```
 
 If FUSE is missing (common on Ubuntu 22.04 and newer), install `libfuse2` or
-start the AppImage with `--appimage-extract-and-run`.
-
-Optional desktop integration tools such as AppImageLauncher can add a menu
-entry and handle updates.
+start the AppImage with `--appimage-extract-and-run`. Tools such as
+AppImageLauncher can add a menu entry and handle updates.
 
 ### Debian package
 
-On Debian, Ubuntu and derivatives:
+1. Install the package:
 
-```bash
-sudo apt install ./GameVault-*.deb
-```
+   ```bash
+   sudo apt install ./GameVault-*.deb
+   ```
+
+2. Start GameVault from your application menu.
 
 The package pulls in the required WebKitGTK and GTK libraries.
 
+<FirstStart />
+
+## Verify
+
+**Settings → About** shows the version and update channel. If a game does not
+start, check the [launch log](settings.md#games) before changing prefix
+settings.
+
 ## Running Windows games
 
-GameVault 2 uses [umu-launcher](https://github.com/Open-Wine-Components/umu-launcher)
-to run Windows games. umu manages the Proton/Wine runtime and the per-game
-prefix.
+GameVault 2 launches Windows games through
+[umu-launcher](https://github.com/Open-Wine-Components/umu-launcher), which
+manages the Proton/Wine runtime and the per-game prefix.
 
-- Each game gets an isolated prefix under the folder configured in
+- Each game gets an isolated prefix under the folder set in
   **Settings → Games → Wine/Proton Prefix Directory**.
-- Server admins can preconfigure umu metadata for a game: `umu_game_id`
+- Server admins can preconfigure the umu metadata per game: `umu_game_id`
   (`GAMEID`), `umu_store` (`STORE`) and `umu_proton_path` (`PROTONPATH`). The
   client inherits these values from the game metadata.
-- Launch output and errors are written to the launch log. Enable
-  **Settings → Games → Launch logs** to open the log window automatically and
-  to browse earlier launches.
+- Launch output and errors go to the launch log. Enable
+  **Settings → Games → Launch logs** to open it automatically.
 
 ## Steam Deck
 
@@ -63,8 +81,9 @@ works in Gaming Mode.
 Games started by GameVault inherit Steam's environment when GameVault itself was
 started through Steam, so overlays and controller mappings keep working.
 
-## GameVault 1
+## Next steps
 
-Running the old Windows client on Linux with Wine or Bottles is documented
-separately under
-[GameVault 1 Linux setup](../gamevault-1/linux-wine.md).
+- [Usage](using.md)
+- [Settings](settings.md)
+- [Data locations](data.md)
+- [Updating](updating.md)

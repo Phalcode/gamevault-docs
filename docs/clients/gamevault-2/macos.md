@@ -1,40 +1,47 @@
 ---
 description: Install GameVault 2 on Apple Silicon macOS and handle Gatekeeper on first launch.
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-# GameVault 2 on macOS
+# Installing on macOS
 
-GameVault 2 ships as a `.dmg` for Apple Silicon Macs. The macOS build receives
-less testing than Windows and Linux, so bugs are more likely here. Please report
-them in the [issue tracker](https://github.com/Phalcode/gamevault-frontend/issues).
+import FirstStart from "./_first-start.md";
 
-## Installation
+GameVault 2 ships a `.dmg` for Apple Silicon Macs. It is in public beta: crashes
+and missing features are expected, see the [overview](overview.md) for the
+status. Download it from the [download page](/download) or from
+[GitHub Releases](https://github.com/Phalcode/gamevault-frontend/releases).
 
-1. Download the `.dmg` from the [download page](/download).
-2. Open it and drag GameVault into **Applications**.
-3. Start GameVault from Launchpad or Finder.
-
-## Gatekeeper
-
-The build is not notarized, so macOS blocks the first start with a message that
-the app cannot be verified. To allow it:
-
-- Right-click (or Control-click) the app, choose **Open**, then confirm, or
-- open **System Settings → Privacy & Security** and click **Open Anyway** for
-  GameVault.
-
-You only need to do this once per installation.
+:::note
+The macOS build receives less testing than Windows and Linux. Report problems in
+the [issue tracker](https://github.com/Phalcode/gamevault-frontend/issues).
+:::
 
 ## Requirements
 
 - macOS on Apple Silicon (arm64). Intel Macs are not supported by the published
   build.
-- Enough free disk space for your download and installation folders.
+- Free disk space for the download and installation folders.
 
-## Updates
+## Installation
 
-The client updates itself through the built-in updater. See
-[Updating](updating.md). If you installed the app manually and the updater is
-unavailable, install a newer `.dmg` over the existing app; your settings and
-library stay in place.
+1. Open the `.dmg` and drag GameVault into **Applications**.
+2. Start GameVault from Launchpad or Finder.
+3. macOS blocks the first start because the build is not notarized. Allow it
+   with **Open** from the right-click menu, or with **System Settings →
+   Privacy & Security → Open anyway**. You only need to do this once.
+
+<FirstStart />
+
+## Verify
+
+GameVault opens the profile selection, and the library loads after you sign in.
+If nothing loads, work through
+[Troubleshooting](../../troubleshooting.md#the-client-cannot-connect).
+
+## Next steps
+
+- [Usage](using.md)
+- [Settings](settings.md)
+- [Data locations](data.md)
+- [Updating](updating.md)

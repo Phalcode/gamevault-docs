@@ -23,8 +23,9 @@ with GameVault 1 cannot be reused, so they have to be downloaded and
 installed again in GameVault 2.
 
 Local client settings (download folders, window state, themes) are not
-imported either. Look through the [settings reference](../clients/gamevault-2/settings.md)
-once after installing.
+imported either. Look through the
+[GameVault 2 settings reference](../clients/gamevault-2/settings.md) once after
+installing.
 
 ## Recommended migration
 
@@ -41,9 +42,8 @@ created by GameVault 1 once the new one is verified.
 
 GameVault+ is currently available in GameVault 1 only. Cloud saves,
 multi-profile, themes and the integrations are still missing from GameVault 2.
-If you depend on them, keep using GameVault 1 until they arrive.
-
-The [feature comparison](../clients/feature-parity.md#gamevault) lists every
+If you depend on them, keep using GameVault 1 until they arrive; the
+[feature comparison](../clients/feature-parity.md#gamevault) lists every
 GameVault+ feature with its tracking issue.
 
 ## Reporting problems

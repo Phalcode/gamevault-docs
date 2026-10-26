@@ -23,17 +23,10 @@ instance.
 
 ## Which client should I use?
 
-- **GameVault 2** for Windows, Linux and macOS. It is the actively developed
-  client and the only one with native Linux support. In a browser, the
-  [Web UI](clients/gamevault-2/web-ui.md) gives you the same interface
-  without installing anything; it can download game files, but automatic
-  installation, launching and playtime tracking need the desktop app.
-- GameVault 1 if you need a GameVault+ feature or the Microsoft Store
-  distribution.
-
-See [Choose your client](getting-started/choose-your-client.md) for a
-comparison, or the [feature comparison](clients/feature-parity.md) for the
-detailed matrix.
+[GameVault 2](clients/gamevault-2/overview.md) for Windows, Linux and macOS, or
+[GameVault 1](clients/gamevault-1/overview.md) if you need a GameVault+ feature
+or the Microsoft Store distribution. The
+[feature comparison](clients/feature-parity.md) has the full matrix.
 
 ## Is GameVault 2 ready for daily use?
 
@@ -49,16 +42,15 @@ unaffected. See [Migrating from GameVault 1](getting-started/migrating-from-game
 
 ## Does GameVault run on Linux and macOS?
 
-Yes, through GameVault 2. Linux packages are `.AppImage` and `.deb`; macOS gets
-an Apple Silicon `.dmg`. Running GameVault 1 on Linux through Wine is possible
-but unsupported.
+Yes, with GameVault 2. Linux packages are `.AppImage` and `.deb`; macOS gets an
+Apple Silicon `.dmg`. GameVault 1 is Windows-only.
 
 ## Can I download or launch games from the browser?
 
-Not directly. The Web UI can download game files in the browser and hand a
-download off to an installed GameVault 2 client. A browser cannot start local
-processes, so automatic extraction, installation, launching and playtime
-tracking require the [desktop app](clients/gamevault-2/installation.md).
+The Web UI can download game files in the browser and hand a download off to an
+installed GameVault 2 client. A browser cannot start local processes, so
+automatic extraction, installation, launching and playtime tracking require the
+[desktop app](clients/gamevault-2/installation.md).
 
 ## Is GameVault free?
 
@@ -69,17 +61,15 @@ funds development.
 
 ## Is GameVault+ available in GameVault 2?
 
-Not yet. Cloud saves, multi-profile, themes and the integrations currently
-require GameVault 1. Support for GameVault 2 is planned. The
+Not yet; it requires GameVault 1. The
 [feature comparison](clients/feature-parity.md#gamevault) lists every feature
-and its tracking issue.
+with its tracking issue.
 
 ## How do I get Early Access builds?
 
-Early Access is open to everyone, with no application or signup. Unlock
-**Developer Tools** in **Settings → About** (click the version number five
-times), then set the update channel to **Early Access** under **Settings → About
-→ Updates**. See [Early Access and Update Channels](early-access.md).
+Early Access is open to everyone, with no application or signup. The steps and
+channels are described in
+[Early Access and update channels](early-access.md).
 
 ## How do I update?
 
@@ -90,7 +80,7 @@ See [GameVault 2 updates](clients/gamevault-2/updating.md) and
 
 ## How do I hide my user name in screenshots?
 
-Enable **Streamer / OPSEC Mode** under
+Enable **Streamer / OPSEC mode** under
 [Settings → Appearance](clients/gamevault-2/opsec-mode.md), or press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd>.
 

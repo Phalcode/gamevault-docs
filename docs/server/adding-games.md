@@ -12,7 +12,8 @@ If you wish to add games to your server but are struggling with unorganized file
 
 Please read the [File and Folder Structure](structure.md) chapter first.
 
-Adding games to your server is a manual process that demands effort and expertise. However, it is worth the effort. To execute the task accurately, follow the steps outlined below for each game. With practice, you will become more proficient and adept at performing these steps with ease.
+Adding games is manual work: prepare each game as described below, then let the
+server index it.
 
 ## Step 1: Preparing
 

@@ -76,7 +76,11 @@ const config = {
           },
           {
             from: "/docs/client-docs/gui",
-            to: "/docs/clients/gamevault-1/gui",
+            to: "/docs/clients/gamevault-1/using",
+          },
+          {
+            from: "/docs/clients/gamevault-1/gui",
+            to: "/docs/clients/gamevault-1/using",
           },
           {
             from: "/docs/client-docs/how-to-use",
@@ -116,11 +120,27 @@ const config = {
           },
           {
             from: "/docs/advanced-usage/linux-client",
-            to: "/docs/clients/gamevault-1/linux-wine",
+            to: "/docs/clients/gamevault-2/linux",
           },
           {
             from: "/docs/advanced-usage/steamdeck",
-            to: "/docs/clients/gamevault-1/steamdeck",
+            to: "/docs/clients/gamevault-2/linux",
+          },
+          {
+            from: "/docs/clients/gamevault-1/linux-wine",
+            to: "/docs/clients/gamevault-2/linux",
+          },
+          {
+            from: "/docs/clients/legacy-windows/linux-wine",
+            to: "/docs/clients/gamevault-2/linux",
+          },
+          {
+            from: "/docs/clients/gamevault-1/steamdeck",
+            to: "/docs/clients/gamevault-2/linux",
+          },
+          {
+            from: "/docs/clients/legacy-windows/steamdeck",
+            to: "/docs/clients/gamevault-2/linux",
           },
           {
             from: "/docs/advanced-usage/failt2ban",

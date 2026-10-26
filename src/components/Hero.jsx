@@ -1,4 +1,4 @@
-import ImgLibrary from "@site/static/img/features/library.png";
+import ImgLibrary from "@site/static/img/features/gv2-library.webp";
 import Link from "@docusaurus/Link";
 import React from "react";
 import * as Swetrix from "swetrix";
@@ -139,7 +139,7 @@ export function Hero() {
         <div className="mt-16 sm:mt-20">
           <AppWindow
             src={ImgLibrary}
-            alt="GameVault 2 library view"
+            alt="GameVault 2 library with three installed games above the server library"
             title="gamevault.local · Library"
             caption="GameVault 2"
             className="mx-auto max-w-6xl"

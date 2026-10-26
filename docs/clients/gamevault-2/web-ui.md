@@ -1,18 +1,14 @@
 ---
 description: "Use GameVault 2 in a browser: sign in, browse the library and download game files."
-sidebar_position: 9
+sidebar_position: 5
 ---
 
 # Web UI
 
-The Web UI is GameVault 2 running in your browser. It is not a separate client:
-the server serves the same interface as the desktop app, so library, game pages,
-settings, community and administration look and behave the same.
-
-GameVault 2 is built web-first. The desktop app wraps that interface and adds what
-a browser cannot do automatically.
-
-## Desktop app and Web UI
+The Web UI is GameVault 2 running in your browser. The server serves the same
+interface as the desktop app, so the library, game pages, settings, community
+and administration pages look and behave the same. What a browser cannot do is
+local automation: extraction, installation, launching and playtime tracking.
 
 | Capability                             | Desktop app       | Web UI                       |
 | -------------------------------------- | ----------------- | ---------------------------- |
@@ -25,16 +21,13 @@ a browser cannot do automatically.
 | Playtime tracking while playing        | ✅                | ❌                           |
 | Extract and install games              | ✅ automatic      | ❌ manual                    |
 | Launch games                           | ✅                | ❌                           |
-| Hand off a download to the desktop app | —                 | ✅ via `gamevault://install` |
+| Hand off a download to the desktop app | n/a               | ✅ via `gamevault://install` |
 | Local folders, shortcuts, tray         | ✅                | ❌                           |
 | Updater                                | ✅ built-in       | ⚠️ via the server admin page |
 
-The Web UI is the right choice for browsing your library from another device,
-checking what your community is playing, or doing administrative work without
-installing anything. You can also download game files directly in the browser,
-or hand a download off to an installed GameVault 2 client.
-
-Automatic extraction, installation, launching and playtime tracking need the
+The Web UI fits browsing your library from another device, checking what your
+community is playing, or doing administrative work without installing anything.
+If you need installation or playtime tracking, use the
 [desktop app](installation.md).
 
 ## Opening the Web UI
@@ -45,7 +38,7 @@ Enter your server's address in a browser, for example
 ## Availability and configuration
 
 The Web UI is included in GameVault Server 16 and later. It is enabled by
-default and can be controlled with these environment variables:
+default and can be controlled with two environment variables:
 
 | Variable         | Default   | Purpose                                                            |
 | ---------------- | --------- | ------------------------------------------------------------------ |
@@ -58,6 +51,12 @@ accepted. See [configuration](../../server/configuration.md) for the full list.
 ## Updating the Web UI
 
 The Web UI has no updater of its own. Server admins update and restart it from
-the administration page with **Update & Restart Web UI**; the server then fetches
-the newest compatible release. `WEB_UI_VERSION` pins a specific version when you
-do not want the automatic choice.
+the administration page with **Update & Restart Web UI**; the server then
+fetches the newest compatible release. `WEB_UI_VERSION` pins a specific version
+when you do not want the automatic choice.
+
+## Next steps
+
+- [Install the desktop app](installation.md) for installation and playtime
+  tracking
+- [Settings](settings.md)
