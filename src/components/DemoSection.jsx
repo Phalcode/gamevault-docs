@@ -16,7 +16,7 @@ export function DemoSection() {
     <section id="demo" className="relative overflow-hidden py-20 sm:py-28">
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gv-accent/40 to-transparent"
+        className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-gv-accent/40 to-transparent"
       />
       <div
         aria-hidden="true"
@@ -52,7 +52,7 @@ export function DemoSection() {
           </div>
 
           <div className="relative">
-            <div className="surface-panel overflow-hidden rounded-[1.5rem] font-mono text-sm shadow-[var(--shadow-shell)]">
+            <div className="surface-panel overflow-hidden rounded-3xl font-mono text-sm shadow-(--shadow-shell)">
               <div className="flex items-center gap-3 border-b border-gv-line px-4 py-3">
                 <div className="flex gap-1.5" aria-hidden="true">
                   <span className="h-2.5 w-2.5 rounded-full bg-gv-danger/70" />

@@ -17,11 +17,11 @@ export function Hero() {
     <div className="relative isolate overflow-hidden">
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(141,132,255,0.075)_1px,transparent_1px),linear-gradient(to_bottom,rgba(141,132,255,0.075)_1px,transparent_1px)] bg-[size:56px_56px] [mask-image:radial-gradient(ellipse_70%_55%_at_50%_0%,#000_55%,transparent_100%)]"
+        className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(141,132,255,0.075)_1px,transparent_1px),linear-gradient(to_bottom,rgba(141,132,255,0.075)_1px,transparent_1px)] bg-size-[56px_56px] mask-[radial-gradient(ellipse_70%_55%_at_50%_0%,#000_55%,transparent_100%)]"
       />
       <div
         aria-hidden="true"
-        className="absolute left-1/2 top-[-22rem] -z-10 h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(100,89,223,0.32),transparent_65%)] blur-3xl"
+        className="absolute left-1/2 -top-88 -z-10 h-152 w-152 -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(100,89,223,0.32),transparent_65%)] blur-3xl"
       />
 
       <Container className="pb-16 pt-14 lg:pt-24">
@@ -56,7 +56,7 @@ export function Hero() {
               </Link>
             </div>
 
-            <h1 className="text-4xl font-black leading-[1.03] tracking-[-0.05em] text-gv-text sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-black leading-[1.03] tracking-tighter text-gv-text sm:text-6xl lg:text-7xl">
               Your Games.
               <br />
               <span className="gv-gradient-text">Your Server.</span>
@@ -130,7 +130,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-primary-default/10 blur-[100px] rounded-full" />
             <img
               src="/img/logo.png"
-              className="max-h-[24rem] w-full object-contain animate-float drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] nozoom relative z-10"
+              className="max-h-96 w-full object-contain animate-float drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] nozoom relative z-10"
               alt="GameVault Logo"
             />
           </div>

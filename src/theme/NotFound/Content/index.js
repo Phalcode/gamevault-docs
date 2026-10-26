@@ -8,11 +8,11 @@ export default function NotFoundContent({ className = undefined }) {
       <div className="relative overflow-hidden py-20 sm:py-28">
         <div
           aria-hidden="true"
-          className="absolute left-1/2 top-[-10rem] -z-10 h-72 w-[36rem] max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(100,89,223,0.24),transparent_70%)] blur-3xl"
+          className="absolute left-1/2 -top-40 -z-10 h-72 w-xl max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(100,89,223,0.24),transparent_70%)] blur-3xl"
         />
         <div className="mx-auto max-w-2xl px-6 text-center">
           <p className="eyebrow justify-center">404</p>
-          <h1 className="mt-4 text-4xl font-black tracking-[-0.05em] text-gv-text sm:text-6xl">
+          <h1 className="mt-4 text-4xl font-black tracking-tighter text-gv-text sm:text-6xl">
             This page took a{" "}
             <span className="gv-gradient-text">wrong turn.</span>
           </h1>

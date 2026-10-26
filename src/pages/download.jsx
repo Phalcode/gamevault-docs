@@ -56,7 +56,7 @@ const platforms = [
 
 function PlatformCard({ platform }) {
   return (
-    <article className="surface-panel gv-hover-lift flex h-full flex-col rounded-[1.5rem] p-6">
+    <article className="surface-panel gv-hover-lift flex h-full flex-col rounded-3xl p-6">
       <div className="flex items-center gap-3">
         <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-gv-line-strong bg-gv-accent/10 text-gv-accent-cool">
           <PlatformIcon platform={platform.id} />
@@ -109,11 +109,11 @@ export default function Download() {
         <section className="relative overflow-hidden pb-12 pt-16 sm:pt-20">
           <div
             aria-hidden="true"
-            className="absolute left-1/2 top-[-18rem] -z-10 h-[32rem] w-[36rem] max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(100,89,223,0.22),transparent_70%)] blur-3xl"
+            className="absolute left-1/2 -top-72 -z-10 h-128 w-xl max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(100,89,223,0.22),transparent_70%)] blur-3xl"
           />
           <Container className="text-center">
             <p className="eyebrow justify-center">GameVault 2 · Public beta</p>
-            <h1 className="mt-4 text-4xl font-black tracking-[-0.05em] text-gv-text sm:text-6xl">
+            <h1 className="mt-4 text-4xl font-black tracking-tighter text-gv-text sm:text-6xl">
               Download <span className="gv-gradient-text">GameVault</span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gv-muted">
@@ -156,7 +156,7 @@ export default function Download() {
         </Container>
 
         <Container className="pb-14">
-          <div className="surface-panel rounded-[1.5rem] p-6 sm:p-8">
+          <div className="surface-panel rounded-3xl p-6 sm:p-8">
             <h2 className="text-2xl font-semibold tracking-[-0.03em] text-gv-text">
               After installation
             </h2>
@@ -204,7 +204,7 @@ export default function Download() {
             GameVault 2 or GameVault 1?
           </h2>
           <div className="mt-5 overflow-x-auto rounded-[1.25rem] border border-gv-line bg-gv-panel-soft">
-            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+            <table className="w-full min-w-160 border-collapse text-left text-sm">
               <thead>
                 <tr className="bg-gv-panel-strong">
                   <th className="px-4 py-3 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-gv-muted">
@@ -261,7 +261,7 @@ export default function Download() {
         </Container>
 
         <Container className="pb-16">
-          <div className="surface-panel rounded-[1.5rem] p-6 sm:p-8">
+          <div className="surface-panel rounded-3xl p-6 sm:p-8">
             <h2 className="text-2xl font-semibold tracking-[-0.03em] text-gv-text">
               GameVault 1
             </h2>

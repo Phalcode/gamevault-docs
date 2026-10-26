@@ -179,6 +179,7 @@ const config = {
             to: "/docs/early-access",
           },
         ],
+        /** @type {(existingPath: string) => string[] | undefined} */
         createRedirects(existingPath) {
           if (existingPath.startsWith("/docs/clients/gamevault-1/")) {
             return [

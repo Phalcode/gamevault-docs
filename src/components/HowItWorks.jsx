@@ -44,12 +44,12 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <li
               key={step.number}
-              className="surface-panel gv-hover-lift group relative flex flex-col rounded-[1.5rem] p-6"
+              className="surface-panel gv-hover-lift group relative flex flex-col rounded-3xl p-6"
             >
               {index < steps.length - 1 ? (
                 <span
                   aria-hidden="true"
-                  className="absolute -right-4 top-12 hidden h-px w-5 bg-gradient-to-r from-gv-line-strong to-transparent sm:block"
+                  className="absolute -right-4 top-12 hidden h-px w-5 bg-linear-to-r from-gv-line-strong to-transparent sm:block"
                 />
               ) : null}
               <div className="flex items-center justify-between">

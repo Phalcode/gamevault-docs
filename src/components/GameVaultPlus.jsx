@@ -30,7 +30,7 @@ export function GameVaultPlus() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#cfa344]/40 to-transparent"
+        className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-[#cfa344]/40 to-transparent"
       />
       <Container className="relative">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-center">

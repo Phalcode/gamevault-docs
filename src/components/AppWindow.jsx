@@ -13,7 +13,7 @@ export function AppWindow({
   return (
     <div
       className={clsx(
-        "surface-panel gv-hover-lift overflow-hidden rounded-[1.5rem]",
+        "surface-panel gv-hover-lift overflow-hidden rounded-3xl",
         className,
       )}
     >
@@ -37,7 +37,7 @@ export function AppWindow({
           src={src}
           alt={alt}
           className={clsx(
-            "w-full rounded-xl border border-gv-line bg-gv-panel-strong shadow-[var(--shadow-card)]",
+            "w-full rounded-xl border border-gv-line bg-gv-panel-strong shadow-(--shadow-card)",
             imageClassName,
           )}
         />

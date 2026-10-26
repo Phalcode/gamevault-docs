@@ -110,7 +110,7 @@ export function PrimaryFeatures() {
           {features.map((feature) => (
             <article
               key={feature.title}
-              className="surface-panel gv-hover-lift group relative flex h-full flex-col overflow-hidden rounded-[1.5rem]"
+              className="surface-panel gv-hover-lift group relative flex h-full flex-col overflow-hidden rounded-3xl"
             >
               <div className="relative h-56 overflow-hidden">
                 <ZoomableImage
@@ -120,7 +120,7 @@ export function PrimaryFeatures() {
                 />
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gv-panel via-transparent to-transparent"
+                  className="pointer-events-none absolute inset-0 bg-linear-to-t from-gv-panel via-transparent to-transparent"
                 />
                 <span className="absolute left-4 top-4 rounded-full border border-gv-line bg-gv-panel-soft/80 px-2.5 py-1 text-[0.62rem] font-bold uppercase tracking-[0.14em] text-gv-muted backdrop-blur-xl">
                   {feature.tag}

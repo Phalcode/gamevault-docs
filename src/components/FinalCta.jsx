@@ -13,10 +13,10 @@ export function FinalCta() {
   return (
     <section className="py-16 sm:py-24">
       <Container>
-        <div className="relative overflow-hidden rounded-[2rem] border border-gv-line-strong bg-[linear-gradient(135deg,rgba(100,89,223,0.22),rgba(35,34,48,0.4)_45%,rgba(77,189,255,0.12))] px-6 py-14 text-center shadow-[var(--shadow-shell)] backdrop-blur-xl sm:px-12">
+        <div className="relative overflow-hidden rounded-4xl border border-gv-line-strong bg-[linear-gradient(135deg,rgba(100,89,223,0.22),rgba(35,34,48,0.4)_45%,rgba(77,189,255,0.12))] px-6 py-14 text-center shadow-(--shadow-shell) backdrop-blur-xl sm:px-12">
           <div
             aria-hidden="true"
-            className="absolute left-1/2 top-[-8rem] h-64 w-[32rem] max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(141,132,255,0.35),transparent_70%)] blur-3xl"
+            className="absolute left-1/2 -top-32 h-64 w-lg max-w-full -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(141,132,255,0.35),transparent_70%)] blur-3xl"
           />
           <div className="relative">
             <p className="eyebrow justify-center">Get started</p>
