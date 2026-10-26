@@ -16,11 +16,11 @@ only.
 ## Free themes
 
 - **Default (Dark)**: the default theme from the 2024 GameVault rebrand.
-  ![Default (Dark)](/img/themes/default_dark.png)
+  ![Default (Dark)](/img/themes/default_dark.webp)
 - **Default (Light)**: the light variant of the same rebrand.
-  ![Default (Light)](/img/themes/default_light.png)
+  ![Default (Light)](/img/themes/default_light.webp)
 - **Classic (Dark)**: keeps the colours of the pre-2024 design.
-  ![Classic (Dark)](/img/themes/classic_dark.png)
+  ![Classic (Dark)](/img/themes/classic_dark.webp)
 
 ## Community themes
 

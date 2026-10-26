@@ -11,13 +11,13 @@ GameVault+ adds premium themes and lets you install custom ones.
 GameVault+ ships with these themes:
 
 - **Phalcode (Dark)**: dark theme in the Phalcode colours.
-  ![Phalcode (Dark)](/img/themes/phalcode_dark.png)
+  ![Phalcode (Dark)](/img/themes/phalcode_dark.webp)
 - **Phalcode (Light)**: light theme in the Phalcode colours.
-  ![Phalcode (Light)](/img/themes/phalcode_light.png)
+  ![Phalcode (Light)](/img/themes/phalcode_light.webp)
 - **Halloween (Dark)**: orange and black, for autumn horror games.
-  ![Halloween (Dark)](/img/themes/halloween_dark.png)
+  ![Halloween (Dark)](/img/themes/halloween_dark.webp)
 - **Christmas (Dark)**: dark red and green.
-  ![Christmas (Dark)](/img/themes/christmas_dark.png)
+  ![Christmas (Dark)](/img/themes/christmas_dark.webp)
 
 ## Custom themes
 

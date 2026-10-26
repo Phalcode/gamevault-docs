@@ -13,7 +13,7 @@ same login window exists in GameVault 2 and GameVault 1.
 
 The first window you see is the profile selection.
 
-![Profile selection with an empty profile list](/img/docs/setup-client/login-window-profiles.png "Profile selection on first start")
+![Profile selection with an empty profile list](/img/docs/setup-client/login-window-profiles.webp "Profile selection on first start")
 
 Create at least one profile to continue. A profile stores the server address,
 the account and the session for one server, so you can keep several profiles if
@@ -39,7 +39,7 @@ The demo profile disappears once you create a profile of your own.
 
 Choose **New Profile → Sign In**.
 
-![Sign-in form with server URL, username and password](/img/docs/setup-client/login-window-signin.png "Signing in with an existing account")
+![Sign-in form with server URL, username and password](/img/docs/setup-client/login-window-signin.webp "Signing in with an existing account")
 
 Enter the server URL, your username and password. Check **Sign in using your
 Identity Provider** if the server uses SSO.
@@ -51,7 +51,7 @@ in immediately.
 
 Choose **New Profile → Sign Up**.
 
-![Sign-up form for a new server account](/img/docs/setup-client/login-window-signup.png "Creating a new account")
+![Sign-up form for a new server account](/img/docs/setup-client/login-window-signup.webp "Creating a new account")
 
 Enter the server URL and fill out the remaining fields. Depending on the server
 configuration, the new user is either activated immediately or has to be
@@ -61,7 +61,7 @@ approved by an administrator:
 - **Manual activation:** the client shows a pending screen until an admin
   activates the account, then signs you in automatically.
 
-![Pending activation screen after creating an account](/img/docs/setup-client/login-window-pending-activation.png "Waiting for administrator approval")
+![Pending activation screen after creating an account](/img/docs/setup-client/login-window-pending-activation.webp "Waiting for administrator approval")
 
 ## Server input validation
 
@@ -88,7 +88,7 @@ Open the gear icon in the login window to add request headers. Each header is
 sent with every request the client makes, which helps when your server sits
 behind a proxy that expects custom headers.
 
-![Login window settings for additional request headers](/img/docs/setup-client/login-window-settings.png "Request headers for reverse proxies")
+![Login window settings for additional request headers](/img/docs/setup-client/login-window-settings.webp "Request headers for reverse proxies")
 
 ## Next steps
 

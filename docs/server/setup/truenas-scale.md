@@ -62,7 +62,7 @@ You should also take a moment to read the [Configuration](/docs/server/configura
 
 ## Step 1: Log in to your TrueNAS Scale Dashboard
 
-![Step 1](/img/docs/setup/scale/scale-login.png)
+![Step 1](/img/docs/setup/scale/scale-login.webp)
 
 ## Step 2: Configure User/Storage for GameVault
 
@@ -154,23 +154,23 @@ You are now ready to deploy GameVault!
 
 Go to **apps** -> **discover**
 
-![Scale-EE-Step-3](/img/docs/setup/scale/Scale-EE-Step-3.png)
+![Scale-EE-Step-3](/img/docs/setup/scale/Scale-EE-Step-3.webp)
 
 ## Step 4: Select "Install via YAML"
 
 Click the three-dot icon next to the "Custom App" button:
 
-![Scale-EE-Step-4](/img/docs/setup/scale/Scale-EE-Step-4.png)
+![Scale-EE-Step-4](/img/docs/setup/scale/Scale-EE-Step-4.webp)
 
 Then, select the option to "Install via YAML":
 
-![Scale-EE-Step-4a](/img/docs/setup/scale/Scale-EE-Step-4a.png)
+![Scale-EE-Step-4a](/img/docs/setup/scale/Scale-EE-Step-4a.webp)
 
 In the pop-out window, enter the name of the custom app. For this example, we used "gamevault-backend"
 
 Then, paste the entire contents of your docker-compose.yml file into the "Custom Config" section:
 
-![Scale-EE-Step-4b](/img/docs/setup/scale/Scale-EE-Step-4b.png)
+![Scale-EE-Step-4b](/img/docs/setup/scale/Scale-EE-Step-4b.webp)
 
 Make sure you have all your needed changes per the rest of the documentation, then click "Save".
 
@@ -206,11 +206,11 @@ During setup:
 
 To stop the GameVault server, navigate to the main **Apps** page, and check the box next to your running instance of GameVault:
 
-![Scale-EE-Stop1](/img/docs/setup/scale/Scale-EE-Stop1.png)
+![Scale-EE-Stop1](/img/docs/setup/scale/Scale-EE-Stop1.webp)
 
 Then, click the drop-down menu for "Select action", and choose "Stop All Selected"
 
-![Scale-EE-Stop2](/img/docs/setup/scale/Scale-EE-Stop2.png)
+![Scale-EE-Stop2](/img/docs/setup/scale/Scale-EE-Stop2.webp)
 
 This will shut down GameVault and the database.
 
@@ -220,15 +220,15 @@ Navigate to "Apps" and choose the GameVault-backend App you have created.
 
 Under the "Workloads" section, you will see two "Containers" running:
 
-![Scale-EE-logs1](/img/docs/setup/scale/Scale-EE-logs1.png)
+![Scale-EE-logs1](/img/docs/setup/scale/Scale-EE-logs1.webp)
 
 Click the "view logs" icon next to either the database container (db) or the GameVault container (gamevault-backend) to open the logs:
 
-![Scale-EE-logs2](/img/docs/setup/scale/Scale-EE-logs2.png)
+![Scale-EE-logs2](/img/docs/setup/scale/Scale-EE-logs2.webp)
 
 In the new window that opens, choose the number of previous log lines you would like to view (500 is normal), then click "Connect":
 
-![Scale-EE-logs3](/img/docs/setup/scale/Scale-EE-logs3.png)
+![Scale-EE-logs3](/img/docs/setup/scale/Scale-EE-logs3.webp)
 
 You will see the previous number of log lines up to the number you entered, and all new log entries will appear as they are written!
 

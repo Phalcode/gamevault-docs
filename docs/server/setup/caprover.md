@@ -18,19 +18,19 @@ In this guide, you will learn how to connect to our [third-party repository](htt
 
 Log in to your CapRover dashboard.
 
-![Step 1](/img/docs/setup/caprover/caprover1.png)
+![Step 1](/img/docs/setup/caprover/caprover1.webp)
 
 ## Step 2: Navigate to the One-Click-Apps/Databases
 
 Go to "Apps" and click on "One-Click Apps/Databases."
 
-![Step 2](/img/docs/setup/caprover/caprover2.png)
+![Step 2](/img/docs/setup/caprover/caprover2.webp)
 
 ## Step 3: Connect Phalcode's third-party repository
 
 Scroll down to the bottom. Under "3rd party repositories," copy and paste the following link: `https://phalcode.github.io/caprover-one-click-apps`. Click the "Connect New Repository" button.
 
-![Step 3](/img/docs/setup/caprover/caprover3.png)
+![Step 3](/img/docs/setup/caprover/caprover3.webp)
 
 ## Step 4: Install our GameVault One-Click-App
 
@@ -38,19 +38,19 @@ Now, all you need to do is search for 'GameVault' using the search box and follo
 
 If you can't find GameVault in the list, try reloading the page and search again.
 
-![Step 4](/img/docs/setup/caprover/caprover4.png)
+![Step 4](/img/docs/setup/caprover/caprover4.webp)
 
 ## Step 5: Enable WebSocket Support
 
 Go to "Apps" and click on the GameVault App you just created. Make sure WebSocket Support is enabled.
 
-![Step 5](/img/docs/setup/caprover/caprover5.png)
+![Step 5](/img/docs/setup/caprover/caprover5.webp)
 
 ## Step 6: Configuring Volumes
 
 Configure your mounted volumes as you like.
 
-![Step 6](/img/docs/setup/caprover/caprover6.png)
+![Step 6](/img/docs/setup/caprover/caprover6.webp)
 
 ## Conclusion
 

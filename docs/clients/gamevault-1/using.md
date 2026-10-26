@@ -15,7 +15,7 @@ See [Connect to a server](../../getting-started/connect-to-server.md#first-start
 
 ## Library
 
-![GameVault 1 library tab](/img/features/library.png "Library tab")
+![GameVault 1 library tab](/img/features/library.webp "Library tab")
 
 - Browse available and installed games, collapsing sections as needed.
 - Launch installed games with the play button on the box art, download others
@@ -27,7 +27,7 @@ See [Connect to a server](../../getting-started/connect-to-server.md#first-start
 
 ## Game page
 
-![GameVault 1 game page](/img/features/game.png "Game page")
+![GameVault 1 game page](/img/features/game.webp "Game page")
 
 - Media player for trailers, gameplay videos and screenshots.
 - Description and notes, rendered as Markdown.
@@ -64,13 +64,13 @@ Settings that affect every user on the server. Visible to editors and higher.
   loads the current value into the text box; the button in the top right clears
   all overwrites. Multiple entries in one field are comma-separated.
 
-![GameVault 1 metadata settings](/img/features/gamesettings_metadata.png "Metadata providers")
+![GameVault 1 metadata settings](/img/features/gamesettings_metadata.webp "Metadata providers")
 
-![GameVault 1 custom metadata](/img/features/gamesettings_custom_metadata.png "Custom metadata")
+![GameVault 1 custom metadata](/img/features/gamesettings_custom_metadata.webp "Custom metadata")
 
 ## Downloads
 
-![GameVault 1 downloads tab](/img/features/downloads.png "Downloads tab")
+![GameVault 1 downloads tab](/img/features/downloads.webp "Downloads tab")
 
 - Monitor running and finished downloads with statistics and progress.
 - Abort a download.
@@ -80,7 +80,7 @@ Settings that affect every user on the server. Visible to editors and higher.
 
 ## Community
 
-![GameVault 1 community tab](/img/features/community.png "Community tab")
+![GameVault 1 community tab](/img/features/community.webp "Community tab")
 
 - See every user on the server and select one to see their progress.
 - Sort or delete progress entries.
@@ -96,7 +96,7 @@ Open your avatar, then the gear icon in the panel.
 
 ## Administration
 
-![GameVault 1 admin tab](/img/features/admin.png "Admin tab")
+![GameVault 1 admin tab](/img/features/admin.webp "Admin tab")
 
 Visible to admins only.
 
@@ -107,7 +107,7 @@ Visible to admins only.
 
 ## News
 
-![GameVault 1 news](/img/features/news.png "News dialog")
+![GameVault 1 news](/img/features/news.webp "News dialog")
 
 - The button in the bottom left opens GameVault news and your server's news.
 - A red badge marks new posts.

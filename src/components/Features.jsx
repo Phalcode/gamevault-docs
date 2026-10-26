@@ -6,7 +6,7 @@ import ImgCommunity from "@site/static/img/features/gv2-community.webp";
 import ImgGame from "@site/static/img/features/gv2-game.webp";
 import ImgMetadata from "@site/static/img/features/gv2-metadata.webp";
 import ImgLibrary from "@site/static/img/features/gv2-library.webp";
-import ImgStars from "@site/static/img/features/stars.png";
+import ImgStars from "@site/static/img/features/stars.webp";
 import ImgStore from "@site/static/img/features/gv2-install.webp";
 
 const features = [

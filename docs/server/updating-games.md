@@ -44,7 +44,7 @@ When multiple versions exist, the server chooses the default version by ranking 
 
 The client also shows the user if a new version of the installed game is available on the server.
 
-![update available indicator](/img/docs/updating-games/update-available-indicator.png)
+![update available indicator](/img/docs/updating-games/update-available-indicator.webp)
 
 ## Changing or Moving a Game
 

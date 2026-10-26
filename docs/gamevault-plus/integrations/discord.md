@@ -5,7 +5,7 @@ description: Show the game you are playing in Discord with GameVault+ Rich Prese
 
 GameVault+ integrates with [Discord](https://discord.com) through Discord Rich Presence. When enabled, Discord shows the game you are currently playing.
 
-![Discord Integration Showcase](/img/plus/integrations/discord/showcase.png)
+![Discord Integration Showcase](/img/plus/integrations/discord/showcase.webp)
 
 ## Setup Guide
 

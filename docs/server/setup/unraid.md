@@ -29,7 +29,7 @@ POSTGRES_DB: gamevault
 
 Make sure you remember the password and port you set we will use this in step 3
 
-![Step 2](/img/docs/setup/unraid/unraid2.png)
+![Step 2](/img/docs/setup/unraid/unraid2.webp)
 
 ## Step 3: Setting up your GameVault Backend server
 
@@ -37,7 +37,7 @@ Search for `gamevault-backend` on the Unraid app store making sure to click the 
 
 Click install
 
-![Step 3](/img/docs/setup/unraid/unraid3.png)
+![Step 3](/img/docs/setup/unraid/unraid3.webp)
 
 ### Alternative Step 3: Running without a PostgreSQL Database
 
@@ -47,7 +47,7 @@ We don't recommend it but you can run GameVault without a PostgreSQL Database to
 
 Using the password and port fill out the information that is required and click apply at the bottom.
 
-![Step 4](/img/docs/setup/unraid/unraid4.png)
+![Step 4](/img/docs/setup/unraid/unraid4.webp)
 
 Your GameVault should now be available at `http://tower.local:8080/` or `HOSTNAME:PORT` if you changed your hostname or port.
 
