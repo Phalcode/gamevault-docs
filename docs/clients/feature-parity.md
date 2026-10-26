@@ -31,8 +31,7 @@ logs, the built-in updater with channels, Streamer/OPSEC mode, tray integration
 and gamepad navigation.
 
 **GameVault 1 is ahead on:** GameVault+ (cloud saves, profiles, themes,
-integrations), offline progress sync, desktop shortcuts, a random game picker
-and custom themes.
+integrations), desktop shortcuts, a random game picker and custom themes.
 
 If you depend on a GameVault+ feature, stay on
 [GameVault 1](gamevault-1/overview.md) until the corresponding issue is closed.
@@ -99,14 +98,14 @@ Everything else can move to [GameVault 2](gamevault-2/overview.md).
 
 ## Progress, users and community
 
-| Feature                             | GameVault 2 | GameVault 1 | Notes                                                                               |
-| ----------------------------------- | ----------- | ----------- | ----------------------------------------------------------------------------------- |
-| Playtime tracking                   | ✅          | ✅          |                                                                                     |
-| Offline playtime and progress sync  | ❌          | ✅          | [#54](https://github.com/Phalcode/gamevault-frontend/issues/54)                     |
-| User profiles, avatars, backgrounds | ✅          | ✅          |                                                                                     |
-| Community view                      | ✅          | ✅          |                                                                                     |
-| User and game administration        | ✅          | ✅          |                                                                                     |
-| Multiple profiles per installation  | ❌          | ✅          | GameVault+ feature, [#48](https://github.com/Phalcode/gamevault-frontend/issues/48) |
+| Feature                             | GameVault 2 | GameVault 1 | Notes                                                                                                  |
+| ----------------------------------- | ----------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| Playtime tracking                   | ✅          | ✅          |                                                                                                        |
+| Offline playtime and progress sync  | ✅          | ✅          | Minutes are buffered and sent on reconnect, see [Data locations](gamevault-2/data.md#offline-playtime) |
+| User profiles, avatars, backgrounds | ✅          | ✅          |                                                                                                        |
+| Community view                      | ✅          | ✅          |                                                                                                        |
+| User and game administration        | ✅          | ✅          |                                                                                                        |
+| Multiple profiles per installation  | ❌          | ✅          | GameVault+ feature, [#48](https://github.com/Phalcode/gamevault-frontend/issues/48)                    |
 
 ## Settings, data and customization
 

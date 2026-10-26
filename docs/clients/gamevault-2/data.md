@@ -42,6 +42,19 @@ Deleting the `Download` folder after a successful installation frees the archive
 without touching the installed game; the client also offers to do that
 automatically under **Settings → Downloads**.
 
+## Offline playtime
+
+While the server is unreachable, the playtime tracker stores the minutes it
+cannot credit next to the installed game:
+
+| Path                                                                       | Contents                          |
+| -------------------------------------------------------------------------- | --------------------------------- |
+| `<Root>/GameVault/<Title>/Versions/<Version>/.gamevault.offline_time.json` | Minutes waiting for the next sync |
+
+The client sends them when it starts, when the connection returns and on every
+retry while a balance is open. Uninstalling a version deletes the file with it,
+so reconnect before you remove a game you played without a connection.
+
 ## Resetting the client
 
 To start from scratch, quit GameVault 2 and delete the application-data
