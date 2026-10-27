@@ -11,7 +11,7 @@ GameVault 2 is planned; the steps on this page describe GameVault 1.
 
 Activate GameVault+ on the client in two steps.
 
-## Linking Your Phalcode Account
+## Linking Your Phalcode® Account
 
 1. Open the GameVault Client Application and go to the `Settings` tab. Then, click on the `GameVault+` button.
 2. Click the `Log In` button and enter your credentials to sign in.

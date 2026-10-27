@@ -36,8 +36,9 @@ For code, open a pull request in the repository you want to change. For bugs and
 ideas, open an issue with enough detail to reproduce the problem.
 
 Before contributing code, read and accept the terms in the project's
-`CONTRIBUTING.md`. They name Phalcode as owner of your contribution and transfer
-the rights to us, which keeps licensing and monetisation of the project clear.
+`CONTRIBUTING.md`. They name Phalcode® as owner of your contribution and
+transfer the rights to us, which keeps licensing and monetisation of the project
+clear.
 
 ## Publishing Adaptations of GameVault
 
@@ -45,7 +46,7 @@ The licence forbids commercial adaptations. Non-commercial derivatives are
 allowed under the conditions below.
 
 GameVault is developed commercially. Third-party software may not use the
-trademarks GameVault™ or Phalcode™ without our consent, and we enforce that to
+trademarks GameVault™ or Phalcode® without our consent, and we enforce that to
 keep unauthorised products from being associated with us.
 
 Derivatives must not look like official products. Users otherwise assume we
@@ -58,5 +59,5 @@ Derivatives are welcome under a distinct name such as "GameVaulTux" or
 unofficial.
 
 Publishing an official product under our brand requires a formal agreement that
-names Phalcode as sole rights holder and transfers liabilities, rights and
+names Phalcode® as sole rights holder and transfers liabilities, rights and
 responsibilities to us.

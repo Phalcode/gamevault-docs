@@ -137,4 +137,4 @@ Once complete, you can feature your plugin [right here in the documentation](met
 
 ## Example plugins
 
-Phalcode publishes [example plugins](https://github.com/Phalcode/gamevault-backend-example-plugins). The recommended reference is the [Release Radar](https://github.com/Phalcode/gamevault-backend-example-plugins/tree/main/v1/release-radar) example, which publishes the most recently added games into the server news.
+Phalcode® publishes [example plugins](https://github.com/Phalcode/gamevault-backend-example-plugins). The recommended reference is the [Release Radar](https://github.com/Phalcode/gamevault-backend-example-plugins/tree/main/v1/release-radar) example, which publishes the most recently added games into the server news.

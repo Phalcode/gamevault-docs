@@ -403,7 +403,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://phalco.de">Phalcode</a> - All Rights Reserved.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <a href="https://phalco.de">Phalcode®</a> - All Rights Reserved.`,
       },
       prism: {
         theme: lightTheme,

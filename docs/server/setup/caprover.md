@@ -26,7 +26,7 @@ Go to "Apps" and click on "One-Click Apps/Databases."
 
 ![Step 2](/img/docs/setup/caprover/caprover2.webp)
 
-## Step 3: Connect Phalcode's third-party repository
+## Step 3: Connect the Phalcode® third-party repository
 
 Scroll down to the bottom. Under "3rd party repositories," copy and paste the following link: `https://phalcode.github.io/caprover-one-click-apps`. Click the "Connect New Repository" button.
 

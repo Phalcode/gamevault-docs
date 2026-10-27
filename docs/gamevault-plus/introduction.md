@@ -37,16 +37,16 @@ Three plans:
 
 ## Get started
 
-1. [Sign up or sign in](https://phalco.de/account/login) to your Phalcode
+1. [Sign up or sign in](https://phalco.de/account/login) to your Phalcode®
    account.
 2. [Subscribe to a GameVault+ plan](https://phalco.de/products/gamevault-plus/checkout).
 3. [Enable GameVault+ in your client](/docs/gamevault-plus/client-setup).
 
 ## Questions and answers
 
-### What is Phalcode?
+### What is Phalcode®?
 
-Phalcode is the company behind GameVault: two friends in Germany writing the
+Phalcode® is the company behind GameVault: two friends in Germany writing the
 software. More on our [website](https://phalco.de).
 
 ### I have trouble with my subscription and I need support. How can I contact you?
@@ -80,13 +80,13 @@ Yes. Features are added as they are finished.
 Sharing depends on your subscription plan:
 
 - **Family & friends plan**: share with up to 5 people through the **Manage
-  members** button on the [Phalcode account page](https://phalco.de/account).
-- **Flex and smart saver plans**: one person, no sharing. Sharing the Phalcode
+  members** button on the [Phalcode® account page](https://phalco.de/account).
+- **Flex and smart saver plans**: one person, no sharing. Sharing the Phalcode®
   account itself is not allowed either.
 
 ### How can I manage members of my Family & Friends subscription?
 
-Open the [Phalcode account page](https://phalco.de/account). Shareable
+Open the [Phalcode® account page](https://phalco.de/account). Shareable
 subscriptions show a **Manage members** button, which opens a dialog for up to
 five people. Changes take about five minutes to apply.
 
@@ -97,8 +97,8 @@ individual features off on their server, save file uploads for example.
 
 ### How many devices can I use with my GameVault+ subscription?
 
-There is no device limit. Sharing your Phalcode account with other people is not
-allowed.
+There is no device limit. Sharing your Phalcode® account with other people is
+not allowed.
 
 ### Can GameVault+ be used offline?
 
