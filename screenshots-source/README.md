@@ -13,3 +13,10 @@ magick source.png -strip -resize 1600x -quality 85 static/img/screenshots/<date>
 
 Keep the folder name as the capture date, and never commit the Windows
 `:Zone.Identifier` sidecar files.
+
+The star chart in `static/img/features/stars.webp` is generated instead of
+captured. Open this URL and save the SVG as a 1600 px wide WebP:
+
+```text
+https://api.star-history.com/svg?repos=Phalcode/gamevault-backend,Phalcode/gamevault-app,Phalcode/gamevault-frontend&type=Date
+```
