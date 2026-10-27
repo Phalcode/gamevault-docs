@@ -1,132 +1,138 @@
 ---
-title: "Introduction"
-hide_title: true
+title: GameVault+
 image: "/img/gamevault-plus.png"
 sidebar_position: 1
-description: Upgrade your gaming experience with GameVault+, an affordable premium add-on that brings exclusive nice-to-have features to enhance your GameVault application. Support our development team while enjoying the premium features.
+description: What GameVault+ includes, which client supports it and how the subscription funds development.
 ---
 
-<div class="gamevault-plus-banner" >
-    <img src="/img/gamevault-plus.png" alt="GameVault+ Banner"/>
-    <strong>GameVault+</strong>
-</div>
+GameVault+ is the optional subscription for GameVault. It funds development and
+adds extra features; the server and clients stay free without it. Features are
+added as they are finished.
 
-## Introduction
-
-Welcome to **GameVault+**, the premium upgrade subscription designed for enthusiasts seeking an enhanced GameVault experience. Here we are gradually adding a variety of exquisite nice to have features to enrich your time with GameVault while supporting us as developers and keeping this project alive. The subscription is priced affordably and is entirely optional, ensuring that our core product remains freely accessible to all.
-
-:::note Cross-platform client
-GameVault+ is currently available in the **legacy Windows app**. Support for the **cross-platform client** is coming soon
+:::note GameVault 2
+GameVault+ is currently available in GameVault 1. Support for GameVault 2 is coming soon. The [feature comparison](../clients/feature-parity.md#gamevault) lists every GameVault+ feature and its tracking issue.
 :::
 
-### [Subscribe to GameVault+ Here](https://phalco.de/products/gamevault-plus/checkout)
+Plans start at €4.99 per month.
+[Subscribe to GameVault+](https://phalco.de/products/gamevault-plus/checkout)
 
-## Feature List
+## Features
 
-As of now, we are offering the following features:
-
-- 📸 Animated profile pictures
-- ☁️ [Cloud Saves](./cloud-saves.md)
-- 🎮 [Playnite Integration](./integrations/playnite.md)
-- 🚂 [Steam Integration](./integrations/steam.md)
-- 💬 [Discord Integration](./integrations/discord.md)
-- 🎨 [Additional built-in and customizable Themes](./themes.md)
-- 💻 [GameVault Client APIs (Advanced Interfaces used for Integrations)](./client-apis.md)
-- 👯 [Multi-Profile Usage](./multi-profile.md)
+- Animated profile pictures
+- [Cloud saves](./cloud-saves.md)
+- [Playnite integration](./integrations/playnite.md)
+- [Steam integration](./integrations/steam.md)
+- [Discord integration](./integrations/discord.md)
+- [Additional built-in and custom themes](./themes.md)
+- [Client APIs](./client-apis.md) for integrations
+- [Multiple profiles](./multi-profile.md) per installation
 
 ## Pricing
 
-GameVault+ offers three affordable subscription options:
+Three plans:
 
-1. **Flex Plan**: A personal subscription for just €4.99/month.
+1. **Flex plan**: €4.99 per month for one person.
+2. **Smart saver plan**: €49.90 per year for one person.
+3. **Family & friends plan**: €8.99 per month for you and up to 5 others.
 
-2. **Smart Saver Plan**: A personal subscription at €49.90/year, offering great savings.
+## Get started
 
-3. **Family & Friends Plan**: For you and up to 5 others in your family or friend circle for only €8.99/month.
+1. [Sign up or sign in](https://phalco.de/account/login) to your Phalcode®
+   account.
+2. [Subscribe to a GameVault+ plan](https://phalco.de/products/gamevault-plus/checkout).
+3. [Enable GameVault+ in your client](/docs/gamevault-plus/client-setup).
 
-## Get Started
+## Questions and answers
 
-1. [Sign up or sign in](https://phalco.de/account/login) to your personal Phalcode account
-2. [Subscribe to a GameVault+ Plan](https://phalco.de/products/gamevault-plus/checkout)
-3. [Set up your GameVault Client Application](/docs/gamevault-plus/client-setup)
-4. **Enjoy premium features while supporting us 🥳💃**
+### What is Phalcode®?
 
-## Questions and Answers
-
-### What is Phalcode?
-
-Phalcode is the small startup company developing GameVault. We are just two friends developing software and based in germany. You can find more information about us on our [website](https://phalco.de).
+Phalcode® is the company behind GameVault: two friends in Germany writing the
+software. More on our [website](https://phalco.de).
 
 ### I have trouble with my subscription and I need support. How can I contact you?
 
-Please contact the developers **directly** either on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de). Do **not** use the public discord channels for support regarding your personal GameVault+ subscription or billing details.
+Write to us on [Discord](https://discord.gg/NEdNen2dSu) or by
+[email](mailto:contact@phalco.de). Keep subscription and billing questions out
+of the public Discord channels.
 
 ### How do I manage billing and payments?
 
-GameVault+ uses the Stripe billing system for your convenience. Easily handle your subscription, review billing details, and make changes through [our Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
+Billing runs through Stripe. Manage the subscription, invoices and payment
+details in the
+[Customer Portal](https://billing.stripe.com/p/login/7sI9B10uP6kj36M000).
 
 ### What payment methods are accepted for GameVault+ subscriptions?
 
-We offer several easy ways to pay for your GameVault+ subscription. You can use credit or debit cards, popular digital wallets, various bank redirects or even SEPA direct debit transfers. We want to make it convenient for you to choose how you pay.
+Credit and debit cards, digital wallets, bank redirects and SEPA direct debit.
 
-:::note Important: Potential Delays
-Please be aware that if you use Multibanco, Bancontact, iDEAL, SOFORT or SEPA Direct Debit as your payment method, there might be delays in confirming your payment. To get your GameVault+ subscription quickly, we recommend using a payment method that confirms faster.
+:::note Delayed confirmation
+Multibanco, Bancontact, iDEAL, SOFORT and SEPA direct debit can take longer to
+confirm. Pick a method that confirms immediately if you want the subscription
+right away.
 :::
 
 ### Are there going to be more features added to GameVault+?
 
-Of course! You are the people keeping our project alive after all.
-
-Expect updates with awesome new GameVault+ content and improvements down the road. We are committed to enhancing the GameVault+ experience.
+Yes. Features are added as they are finished.
 
 ### Can I share GameVault+ with others?
 
 Sharing depends on your subscription plan:
 
-- **Family & Friends Plan**: You can share GameVault+ with up to 5 other people in your family or friend circle using the **Manage Members** button on the [Phalcode Account Page](https://phalco.de/account).
-- **Flex Plan and Smart Saver Plan**: These are personal plans and cannot be shared. Sharing your Phalcode account is also not allowed.
+- **Family & friends plan**: share with up to 5 people through the **Manage
+  members** button on the [Phalcode® account page](https://phalco.de/account).
+- **Flex and smart saver plans**: one person, no sharing. Sharing the Phalcode®
+  account itself is not allowed either.
 
 ### How can I manage members of my Family & Friends subscription?
 
-To manage your Family & Friends subscription members, visit the [Phalcode Account Page](https://phalco.de/account). If your subscription is shareable, you'll find a **Manage Members** button. Click it to open a dialog where you can add up to five people to share your subscription. Changes to your subscription members should take effect in about 5 minutes.
+Open the [Phalcode® account page](https://phalco.de/account). Shareable
+subscriptions show a **Manage members** button, which opens a dialog for up to
+five people. Changes take about five minutes to apply.
 
 ### Does GameVault+ support multiple GameVault Servers?
 
-You can enjoy the benefits of GameVault+ on any GameVault Server you connect to. However, keep in mind that server administrators may choose to disable certain features (like uploading save files) offered by GameVault+ in their configurations.
+Yes. GameVault+ works on every server you connect to, but admins can turn
+individual features off on their server, save file uploads for example.
 
 ### How many devices can I use with my GameVault+ subscription?
 
-There is currently no limit on the number of devices you can use with your subscription. However, sharing your personal Phalcode account with others is not permitted.
+There is no device limit. Sharing your Phalcode® account with other people is
+not allowed.
 
 ### Can GameVault+ be used offline?
 
-Initially, you'll need an internet connection to download and set up your GameVault+ license.
+Setting up the licence needs an internet connection once. After that GameVault+
+works offline for the rest of the subscription period. An annual plan therefore
+only goes online once a year.
 
-Once that setup is complete, GameVault+ can be accessed offline throughout your current subscription period. For those who prefer offline access, we suggest opting for an annual subscription, as it technically only requires an internet connection once a year.
+### How does GameVault+ handle my data?
 
-### How does GameVault+ ensure user privacy protection?
-
-At Phalcode, keeping user privacy safe is our very top priority. We use strong security measures, including encryption, to protect user data. We also follow GDPR rules to make sure we're following privacy laws.
-
-Additionally, all billing and payment info is stored securely on the servers of our billing partner, Stripe, which meets PCI compliance standards. For more details on Stripe's security, you can check it out [here](https://docs.stripe.com/security).
-
-You can find all details in our [privacy policy](https://phalco.de/privacy).
+Data is encrypted and handled under the GDPR. Billing and payment data sits at
+our payment provider Stripe, which is PCI compliant; see
+[Stripe's security page](https://docs.stripe.com/security). The
+[privacy policy](https://phalco.de/privacy) has the details.
 
 ### Will GameVault+ support more integrations with other software in the future?
 
-We hope so. We're actively exploring partnerships and integrations with other gaming platforms and tools to provide a more interconnected gaming experience.
+Probably. We are talking to other platforms and tools about integrations.
 
 ### Can users suggest or vote on new features for GameVault+?
 
-Certainly! We encourage user feedback and suggestions. While we may not implement every idea, we value community input in shaping the future of GameVault+. Share your ideas through our feedback channels, primarily on [Github](https://github.com/Phalcode/gamevault-app/issues) and [Discord](https://discord.gg/NEdNen2dSu).
+Yes, though not every idea makes it in. Post suggestions on
+[GitHub](https://github.com/Phalcode/gamevault-app/issues) or
+[Discord](https://discord.gg/NEdNen2dSu).
 
-### Which Client Application versions are supported?
+### Which client versions are supported?
 
-GameVault+ features are available from the official GameVault Client application version 1.9.0.0 and above. It does not matter if you got it from the Microsoft Store or used an alternative installation option.
+GameVault+ needs the official client, version 1.9.0.0 or newer, from the
+Microsoft Store or from another installation option.
 
-### Are bulk/commercial licenses available for GameVault+?
+### Are bulk or commercial licences available?
 
-There are, but for commercial/bulk use, please either on [Discord](https://discord.gg/NEdNen2dSu) or via our [email](mailto:contact@phalco.de) to discuss an individual licensing agreement. Personal and Family & Friends subscriptions are tailored for individual users and private groups, but we're happy to collaborate with businesses and organizations for customized solutions and volume licenses.
+Yes, through an individual agreement: write to us on
+[Discord](https://discord.gg/NEdNen2dSu) or by [email](mailto:contact@phalco.de).
+Personal and family plans are meant for private use.
 
 ### What if I can't afford GameVault+ or don't want to purchase it?
 
@@ -136,4 +142,6 @@ If you're unable to purchase it, you're welcome to explore ways to _work around_
 
 ### Why is there no lifetime license?
 
-Lifetime licenses might seem appealing, but they’re not practical for covering the ongoing costs of developing and maintaining GameVault. Maintaining servers, providing updates, and developing new features require continuous investment, which a one-time payment simply doesn’t support. GameVault+ exists to provide "thank you" features for continuous support, and a lifetime license would undermine that purpose entirely.
+A one-time payment does not cover servers, updates and new features, which cost
+money every month. GameVault+ is a thank-you for continuous support, and a
+lifetime licence would remove that link.

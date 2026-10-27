@@ -1,10 +1,11 @@
 ---
-title: "Steam"
+title: Steam
+description: Add GameVault titles to your Steam library as Non-Steam Games and launch them from Steam.
 ---
 
 GameVault+ integrates with [Steam](https://steampowered.com) through Steam Sync. When enabled, your installed games are added to your Steam library as Non-Steam Games. Starting them from Steam launches them through GameVault and keeps your configured launch options.
 
-![Steam Integration Showcase](/img/plus/integrations/steam/showcase.png)
+![Steam Integration Showcase](/img/plus/integrations/steam/showcase.webp)
 
 ## Setup Guide
 
