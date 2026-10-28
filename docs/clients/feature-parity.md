@@ -31,7 +31,7 @@ logs, the built-in updater with channels, Streamer/OPSEC mode, tray integration
 and gamepad navigation.
 
 **GameVault 1 is ahead on:** GameVault+ (cloud saves, profiles, themes,
-integrations), desktop shortcuts, a random game picker and custom themes.
+integrations), desktop shortcuts and custom themes.
 
 If you depend on a GameVault+ feature, stay on
 [GameVault 1](gamevault-1/overview.md) until the corresponding issue is closed.
@@ -58,7 +58,7 @@ Everything else can move to [GameVault 2](gamevault-2/overview.md).
 | Bookmarks            | ✅          | ✅          |                                                                 |
 | Share links          | ✅          | ✅          |                                                                 |
 | News                 | ✅          | ✅          |                                                                 |
-| Random game picker   | ❌          | ✅          | [#57](https://github.com/Phalcode/gamevault-frontend/issues/57) |
+| Random game picker   | ✅          | ✅          | Picks from the whole library, independent of the active filters |
 
 ## Game details and metadata
 
