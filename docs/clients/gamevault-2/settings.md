@@ -46,7 +46,9 @@ volume.
 ## Startup
 
 - **Launch GameVault on computer startup**.
-- **Minimize to system tray on startup**.
+- **Minimize to system tray on startup**: stays in the tray only when the
+  autostart entry opens GameVault. Starting GameVault yourself always shows the
+  window.
 
 ![Startup settings with the two toggles for autostart and tray mode](/img/screenshots/2026-10-26/Settings/Startup.webp)
 
