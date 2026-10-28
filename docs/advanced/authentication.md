@@ -159,6 +159,21 @@ AUTH_OAUTH2_USERINFO_URL=https://discord.com/api/users/@me
 
 You can set the environment variable `SERVER_LOG_LEVEL` environment variable to `debug` to receive detailed logs about the authentication process.
 
+### Verifying the id_token
+
+By default GameVault reads the identity claims out of the token response without checking the signature of the `id_token`. For OpenID Connect providers you can switch on verification:
+
+```env
+AUTH_OAUTH2_ISSUER_URL=https://auth.example.com/application/o/gamevault
+AUTH_OAUTH2_VERIFY_ID_TOKEN=true
+```
+
+GameVault then fetches the JWKS through OpenID Connect discovery (`{issuer}/.well-known/openid-configuration`), verifies signature, `iss`, `aud` and expiry, and sends a `nonce` with the authorization request that has to come back inside the `id_token`. If your provider does not echo the nonce, set `AUTH_OAUTH2_REQUIRE_NONCE=false`. Providers that return no `id_token` at all keep working: GameVault logs a warning and falls back to the decoded claims.
+
+### Login rate limit
+
+Repeated failed password logins are throttled per client address and username. After `AUTH_RATE_LIMIT_MAX_ATTEMPTS` failures inside `AUTH_RATE_LIMIT_WINDOW_SECONDS`, the server answers with `429 Too Many Requests` and a `Retry-After` header. Successful logins, token refreshes and SSO logins are never limited. Disable it with `AUTH_RATE_LIMIT_ENABLED=false`. The counters live in memory, so each server process tracks its own.
+
 ### Limitations
 
 - Without plugins, only one OAuth2 Identity Provider can be used at a time.
