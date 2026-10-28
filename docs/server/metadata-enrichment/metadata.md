@@ -1,7 +1,7 @@
 ---
 title: Enriching your games with metadata
 description: Configure metadata providers such as IGDB to add covers, descriptions and release data.
-sidebar_position: 0.01
+sidebar_position: 1
 ---
 
 Research shows that nobody wants to see blank placeholder images and missing descriptions in their library. We want those games enriched with some **juicy metadata**.

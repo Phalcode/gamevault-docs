@@ -1,6 +1,6 @@
 ---
 description: Back up the GameVault database, media and configuration, and restore them on a new server.
-sidebar_position: 7.5
+sidebar_position: 11
 ---
 
 # Database Backup & Restoration

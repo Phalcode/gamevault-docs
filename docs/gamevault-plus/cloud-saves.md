@@ -1,7 +1,7 @@
 ---
 title: Cloud saves
 description: Back up and restore save games through GameVault Server with Ludusavi.
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 GameVault+ supports cross-device savefile synchronization. Your GameVault server backs up saves automatically, so you can switch computers or reinstall a game without losing progress.

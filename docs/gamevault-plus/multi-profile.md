@@ -1,6 +1,7 @@
 ---
 title: Multi-profile usage
 description: Keep several server accounts signed in on one device and switch between them.
+sidebar_position: 6
 ---
 
 GameVault+ lets one installation keep several profiles, each with its own server

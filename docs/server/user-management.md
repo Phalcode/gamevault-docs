@@ -1,6 +1,6 @@
 ---
 description: Create users, assign roles, activate accounts and recover admin access.
-sidebar_position: 6
+sidebar_position: 8
 ---
 
 # User management

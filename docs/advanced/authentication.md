@@ -1,5 +1,6 @@
 ---
 description: Authenticate against the GameVault API with JWTs, API keys or OAuth2 single sign-on.
+sidebar_position: 3
 ---
 
 # Authentication

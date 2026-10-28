@@ -1,5 +1,6 @@
 ---
 description: Connect GameVault Server to IGDB and fetch covers, descriptions and release metadata.
+sidebar_position: 2
 ---
 
 # IGDB

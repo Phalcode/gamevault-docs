@@ -1,6 +1,6 @@
 ---
 description: Subscribe to GameVault Server real-time events such as downloads, progress and online activities.
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # WebSockets

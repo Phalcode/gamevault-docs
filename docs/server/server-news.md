@@ -1,6 +1,6 @@
 ---
 description: Publish server news and announcements to every connected GameVault client.
-sidebar_position: 11
+sidebar_position: 15
 ---
 
 # Server News

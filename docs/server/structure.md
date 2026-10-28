@@ -1,6 +1,6 @@
 ---
 description: Name game files and folders correctly so GameVault can detect, index and match them.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # File and Folder Structure

@@ -1,5 +1,6 @@
 ---
 title: GameVault+
+sidebar_label: Overview
 image: "/img/gamevault-plus.png"
 sidebar_position: 1
 description: What GameVault+ includes, which client supports it and how the subscription funds development.

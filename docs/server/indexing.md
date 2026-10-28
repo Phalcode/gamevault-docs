@@ -1,6 +1,6 @@
 ---
 description: How GameVault indexes game files, when indexing runs and how to trigger a rescan.
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # Game Indexing

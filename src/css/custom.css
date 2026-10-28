@@ -663,6 +663,12 @@ blockquote {
   padding: 0.65rem 0.75rem;
 }
 
+.navbar-sidebar .menu__list .menu__list {
+  margin-left: 0.35rem;
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--color-gv-line);
+}
+
 /* ---------------------------------------------------------------- */
 /* Docs shell                                                        */
 /* ---------------------------------------------------------------- */
@@ -1547,6 +1553,19 @@ summary {
   border-color: var(--color-gv-line-strong);
 }
 
+/* Laptop widths are tighter than the sum of the navbar items, which squashed
+   the site title to "Ga...". Drop the donation pill (it stays in the mobile
+   drawer and the footer) and shrink the search field instead. */
+@media (min-width: 997px) and (max-width: 1200px) {
+  .gv-nav-pill {
+    display: none;
+  }
+
+  .dsla-search-wrapper {
+    width: 12rem;
+  }
+}
+
 @media (max-width: 996px) {
   :root {
     --ifm-navbar-height: 4rem;
@@ -1558,6 +1577,12 @@ summary {
 
   .dsla-search-wrapper {
     width: 9rem;
+  }
+
+  /* The search field is absolutely positioned on mobile, so reserve its
+     space instead of letting it cover the logo and title. */
+  .navbar__inner {
+    padding-right: 10.5rem;
   }
 
   .navbar-sidebar {
@@ -1597,6 +1622,20 @@ summary {
 
   .markdown table {
     display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar__title {
+    display: none;
+  }
+
+  .dsla-search-wrapper {
+    width: 7.5rem;
+  }
+
+  .navbar__inner {
+    padding-right: 9rem;
   }
 }
 

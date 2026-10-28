@@ -1,6 +1,6 @@
 ---
 description: Prepare game files, place them in the files volume and let GameVault Server index the library.
-sidebar_position: 3
+sidebar_position: 5
 sidebar_title: Adding games
 ---
 

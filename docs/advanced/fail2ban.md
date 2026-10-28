@@ -1,7 +1,7 @@
 ---
 title: Configuring Fail2Ban for GameVault
 description: Protect the GameVault Server login endpoint from brute-force attempts with Fail2Ban.
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 :::note Community-Created Guide
