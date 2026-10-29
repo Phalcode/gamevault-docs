@@ -156,10 +156,10 @@ can download game files but cannot install or launch them locally.
 
 ### ANALYTICS: Anonymous usage reports
 
-| Property              | Description                                                                                                                                                                                        | Default                   | Possible Values      |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------------- |
-| `ANALYTICS_ENABLED`   | Send anonymous usage reports.                                                                                                                                                                      | `true`                    | `true`, `false`      |
-| `ANALYTICS_ENDPOINTS` | Collector domains in priority order, comma separated. The first one whose host resolves is used, and every event carries the collector it went to. `ANALYTICS_ENDPOINT` still sets a single value. | `https://api.swetrix.com` | Comma separated URLs |
+| Property              | Description                                                                                                                                                                                                                                                                                  | Default                   | Possible Values      |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | -------------------- |
+| `ANALYTICS_ENABLED`   | Send anonymous usage reports.                                                                                                                                                                                                                                                                | `true`                    | `true`, `false`      |
+| `ANALYTICS_ENDPOINTS` | Collector domains in priority order, comma separated. The first one whose host resolves is used, and every event carries the collector it went to. `ANALYTICS_ENDPOINT` still sets a single value. Unset, the public Swetrix collector and the bundled GameVault mirrors are tried in order. | `https://api.swetrix.com` | Comma separated URLs |
 
 ### VOLUMES: Storage Folder Paths {#volumes}
 
