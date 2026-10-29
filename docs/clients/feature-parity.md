@@ -77,13 +77,14 @@ Everything else can move to [GameVault 2](gamevault-2/overview.md).
 
 ## Downloads and installation
 
-| Feature                               | GameVault 2 | GameVault 1 | Notes                                            |
-| ------------------------------------- | ----------- | ----------- | ------------------------------------------------ |
-| Download queue                        | ✅          | ✅          |                                                  |
-| Extraction and automatic installation | ✅          | ✅          |                                                  |
-| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step |
-| Choose download and install folders   | ✅          | ✅          |                                                  |
-| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated    |
+| Feature                               | GameVault 2 | GameVault 1 | Notes                                                                                                                   |
+| ------------------------------------- | ----------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Download queue                        | ✅          | ✅          |                                                                                                                         |
+| Extraction and automatic installation | ✅          | ✅          |                                                                                                                         |
+| Default extraction passwords          | ❌          | ✅          | GameVault 2 will try multiple saved passwords in order, [#61](https://github.com/Phalcode/gamevault-frontend/issues/61) |
+| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step                                                                        |
+| Choose download and install folders   | ✅          | ✅          |                                                                                                                         |
+| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated                                                                           |
 
 ## Launching and operating systems
 
