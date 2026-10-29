@@ -154,6 +154,14 @@ can download game files but cannot install or launch them locally.
 | `WEB_UI_ENABLED` | Serve the Web UI. Aliases: `SERVER_WEB_UI_ENABLED`, `SERVER_LANDING_PAGE_ENABLED`. | `true`  | `true`, `false`        |
 | `WEB_UI_VERSION` | Pin a specific Web UI build instead of the bundled version.                        | -       | A released version tag |
 
+### ANALYTICS: Anonymous usage reports
+
+| Property                           | Description                                | Default                                    | Possible Values      |
+| ---------------------------------- | ------------------------------------------ | ------------------------------------------ | -------------------- |
+| `ANALYTICS_ENABLED`                | Send anonymous usage reports.              | `true`                                     | `true`, `false`      |
+| `ANALYTICS_ENDPOINT`               | Collector base URL, `/custom` is appended. | `https://analytics.platform.phalco.de/log` | A URL                |
+| `ANALYTICS_FLUSH_INTERVAL_SECONDS` | How often aggregated counters are sent.    | `60`                                       | A number of seconds  |
+
 ### VOLUMES: Storage Folder Paths {#volumes}
 
 | Property            | Description                                                                                                                                                       | Default      | Possible Values       |

@@ -67,7 +67,9 @@ volume.
 
 ## Privacy
 
-- **Usage analytics**: anonymous usage statistics. Off means no telemetry.
+- **Usage analytics**: anonymous usage statistics and error reports. Off stops
+  every request immediately, and the choice is kept in the app settings, so it
+  survives updates.
 
 ## About
 
