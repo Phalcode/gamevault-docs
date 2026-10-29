@@ -13,7 +13,9 @@ Where the files end up is described under [data locations](data.md).
 
 The library shows every game your server offers and the ones you already have
 installed. Use the search, filter and sort controls above the grid; bookmarks
-collect the games you keep coming back to.
+collect the games you keep coming back to. The same controls apply to the
+**Installed games** section, and they keep working while the server is
+unreachable because the client reads the cached game data.
 
 ![GameVault 2 library with three installed games above the server games](/img/screenshots/2026-10-26/Library/Library_GamesInstalled.webp "Installed games are listed above the server library")
 
