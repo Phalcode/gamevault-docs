@@ -156,11 +156,10 @@ can download game files but cannot install or launch them locally.
 
 ### ANALYTICS: Anonymous usage reports
 
-| Property                           | Description                                | Default                                    | Possible Values      |
-| ---------------------------------- | ------------------------------------------ | ------------------------------------------ | -------------------- |
-| `ANALYTICS_ENABLED`                | Send anonymous usage reports.              | `true`                                     | `true`, `false`      |
-| `ANALYTICS_ENDPOINT`               | Collector base URL, `/custom` is appended. | `https://analytics.platform.phalco.de/log` | A URL                |
-| `ANALYTICS_FLUSH_INTERVAL_SECONDS` | How often aggregated counters are sent.    | `60`                                       | A number of seconds  |
+| Property             | Description                   | Default                                    | Possible Values |
+| -------------------- | ----------------------------- | ------------------------------------------ | --------------- |
+| `ANALYTICS_ENABLED`  | Send anonymous usage reports. | `true`                                     | `true`, `false` |
+| `ANALYTICS_ENDPOINT` | Collector base URL.                | `https://analytics.platform.phalco.de/log` | A URL           |
 
 ### VOLUMES: Storage Folder Paths {#volumes}
 
