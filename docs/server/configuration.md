@@ -159,7 +159,7 @@ can download game files but cannot install or launch them locally.
 | Property             | Description                   | Default                                    | Possible Values |
 | -------------------- | ----------------------------- | ------------------------------------------ | --------------- |
 | `ANALYTICS_ENABLED`  | Send anonymous usage reports. | `true`                                     | `true`, `false` |
-| `ANALYTICS_ENDPOINT` | Collector base URL.                | `https://analytics.platform.phalco.de/log` | A URL           |
+| `ANALYTICS_ENDPOINT` | Collector base URL.           | `https://analytics.platform.phalco.de/log` | A URL           |
 
 ### VOLUMES: Storage Folder Paths {#volumes}
 
