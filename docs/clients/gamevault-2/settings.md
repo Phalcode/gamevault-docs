@@ -69,7 +69,8 @@ volume.
 
 - **Usage analytics**: anonymous usage statistics and error reports. Off stops
   every request immediately, and the choice is kept in the app settings, so it
-  survives updates.
+  survives updates. Reports go to the first collector that answers and never
+  contain search terms, titles, file paths or server addresses.
 
 ## About
 
