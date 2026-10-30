@@ -24,14 +24,10 @@ description: Connect GameVault Server to IGDB and fetch covers, descriptions and
 7. Copy your **Client ID** and **Client Secret** and configure them in GameVaults `METADATA_IGDB_CLIENT_ID` and `METADATA_IGDB_CLIENT_SECRET` environment variables.
 8. **Done!** 🥳 Now just restart your server and it should do it's magic. If you have lots of games, it may take a while to fetch all metadata. You can check the progress in the server logs.
 
-## Configurations
+## Configuration
 
-| Property                      | Description                            | Default | Possible Values    |
-| ----------------------------- | -------------------------------------- | ------- | ------------------ |
-| `METADATA_IGDB_ENABLED`       | Enables / Disables the Provider        | `true`  | `true`, `false`    |
-| `METADATA_IGDB_PRIORITY`      | Priority of the Provider               | `10`    | Any Integer        |
-| `METADATA_IGDB_CLIENT_ID`     | Your developer.twitch.tv Client ID     | -       | Your Client-ID     |
-| `METADATA_IGDB_CLIENT_SECRET` | Your developer.twitch.tv Client Secret | -       | Your Client-Secret |
+The provider is configured with the `METADATA_IGDB_*` variables on the
+[configuration page](../configuration.md#metadata).
 
 :::note
 The IGDB provider is automatically disabled if `METADATA_IGDB_CLIENT_ID` or `METADATA_IGDB_CLIENT_SECRET` are not set.

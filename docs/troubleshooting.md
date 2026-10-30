@@ -41,13 +41,9 @@ and [admin password recovery](server/user-management.md#admin-password-recovery)
 ## Permissions denied / EACCES
 
 GameVault runs as a non-root user (`1000:1000` by default). The container user
-must be able to read and write every mapped volume:
-
-- game files (`VOLUMES_FILES`)
-- media (`VOLUMES_MEDIA`)
-- save files (`VOLUMES_SAVEFILES`)
-- logs (`VOLUMES_LOGS`)
-- the SQLite database (`VOLUMES_SQLITEDB`)
+must be able to read and write every mapped volume: the game files, media,
+savefile and log folders, and the SQLite database folder. The variable names are
+listed under [VOLUMES](server/configuration.md#volumes).
 
 Either grant the correct permissions on the host or set `PUID` and `PGID` to a
 user that owns the folders. Do not run the container as root.

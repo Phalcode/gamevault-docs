@@ -144,15 +144,19 @@ Below are all available configuration variables, organized by category.
 | `SERVER_HTTPS_CERT_PATH`                | The file path to the TLS certificate used for HTTPS.                                                                                                                                                           | -             | Any valid file path                                                                          |
 | `SERVER_HTTPS_CA_CERT_PATH`             | The file path to the CA certificate used for HTTPS (e.g. for client certificate verification).                                                                                                                 | -             | Any valid file path                                                                          |
 
-### WEB_UI: Built-in web client
+### WEB_UI: Built-in web client {#web-ui}
 
-The server ships GameVault 2 as a browser UI on the same port as the API. It
-can download game files but cannot install or launch them locally.
+The server serves GameVault 2 as a browser UI on the same port as the API. It
+can download game files but cannot install or launch them locally. The build is
+downloaded from GitHub and cached in the config volume; the
+[Web UI page](../clients/gamevault-2/web-ui.md#version-selection) explains
+which version is served and when.
 
-| Property         | Description                                                                        | Default | Possible Values        |
-| ---------------- | ---------------------------------------------------------------------------------- | ------- | ---------------------- |
-| `WEB_UI_ENABLED` | Serve the Web UI. Aliases: `SERVER_WEB_UI_ENABLED`, `SERVER_LANDING_PAGE_ENABLED`. | `true`  | `true`, `false`        |
-| `WEB_UI_VERSION` | Pin a specific Web UI build instead of the bundled version.                        | -       | A released version tag |
+| Property          | Description                                                                             | Default | Possible Values                                         |
+| ----------------- | --------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------- |
+| `WEB_UI_ENABLED`  | Serve the Web UI. Aliases: `SERVER_WEB_UI_ENABLED`, `SERVER_LANDING_PAGE_ENABLED`.      | `true`  | `true`, `false`                                         |
+| `WEB_UI_VERSION`  | Pin a Web UI release, or `unstable` / `early-access` for the moving pre-release builds. | -       | A release tag like `17.1.0`, `unstable`, `early-access` |
+| `WEB_UI_CSP_MODE` | Content-Security-Policy header for the Web UI assets.                                   | `off`   | `off`, `report-only`, `enforce`                         |
 
 ### ANALYTICS: Anonymous usage reports
 
@@ -200,14 +204,14 @@ can download game files but cannot install or launch them locally.
 | `USERS_REQUIRE_LAST_NAME`  | Require **Last Name** for new registrations.                                                                                    | `false` | `true`, `false` |
 | `USERS_REQUIRE_BIRTH_DATE` | Require **Birth Date** for new registrations. (**Automatically set to `true` when `PARENTAL_AGE_RESTRICTION_ENABLED` is true**) | `false` | `true`, `false` |
 
-### PARENTAL: Parental Control & Age Restrictions
+### PARENTAL: Parental Control & Age Restrictions {#parental}
 
 | Property                           | Description                                                                                 | Default | Possible Values |
 | ---------------------------------- | ------------------------------------------------------------------------------------------- | ------- | --------------- |
 | `PARENTAL_AGE_RESTRICTION_ENABLED` | Determines whether age-based parental restrictions are enforced.                            | `false` | `true`, `false` |
 | `PARENTAL_AGE_OF_MAJORITY`         | The age at which an individual is legally recognized as an adult for parental restrictions. | `18`    | Any number      |
 
-### GAMES: Game Library & Upload Settings
+### GAMES: Game Library & Upload Settings {#games}
 
 | Property                                         | Description                                                                                                                                                                                                                                                                                                                                                                                           | Default                                                             | Possible Values                           |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------------- |
@@ -222,7 +226,7 @@ can download game files but cannot install or launch them locally.
 | `GAMES_WINDOWS_SETUP_DEFAULT_INSTALL_PARAMETERS` | Default command-line parameters used for Windows application setup files. These are used to attempt a silent installation.                                                                                                                                                                                                                                                                            | `/D="%INSTALLDIR%" /S /DIR="%INSTALLDIR%" /SILENT /COMPONENTS=text` | Any string                                |
 | `GAMES_MAX_UPLOAD_SIZE`                          | The maximum file size allowed for game uploads via the API. Set it to 0 to disable game uploads.                                                                                                                                                                                                                                                                                                      | `100 gb`                                                            | e.g. "50 gb", "100 gb", "1 tb"            |
 
-### MEDIA: Image & Media Upload Settings
+### MEDIA: Image & Media Upload Settings {#media}
 
 | Property                       | Description                                                                       | Default                                  | Possible Values                     |
 | ------------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------- | ----------------------------------- |
@@ -239,7 +243,7 @@ can download game files but cannot install or launch them locally.
 | `SAVEFILES_MAX_SIZE`  | Sets the maximum size for savefile uploads.                                                                                                     | `1 gb`  | e.g. "10 mb", "5 gb", "300 kb" |
 | `SAVEFILES_MAX_SAVES` | Sets the maximum number of savefiles per game and per user. Once this limit is reached, the oldest savefile will be deleted on the next upload. | `10`    | Any number                     |
 
-### METADATA: Game Information Providers
+### METADATA: Game Information Providers {#metadata}
 
 | Property                            | Description                                                                                                                                                            | Default | Possible Values    |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------------------ |

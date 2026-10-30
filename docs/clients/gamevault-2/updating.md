@@ -16,6 +16,16 @@ Settings, profiles and installed games stay in place across updates.
 **Settings → About** shows the installed version, the channel and the last
 update check. Include this information when you report a bug.
 
+## Client and server versions
+
+The major version is the compatibility boundary. GameVault Frontend 17.x works with
+every GameVault Server 17.x, and the server serves the newest 17.x Web UI.
+
+When you connect to a server with an older major version, the client shows a
+warning after login. The app stays usable, but features that need a newer server
+may be missing or fail. Update the server or ask your admin to update it. The
+warning appears once per server version.
+
 ## Switching channels
 
 GameVault 2 offers three channels: **stable** (default), **early-access** and

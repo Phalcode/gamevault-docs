@@ -85,15 +85,13 @@ This is fully transparent for API consumers and requires no configuration.
 ## Media Garbage Collection
 
 :::danger Potential data loss
-Garbage collection **can result in data loss**, as it will **delete any files inside the media folder** without an association in the database. For example if you set up a new, empty database. It is advisable to regularly back up your media just to be safe. If you don't want to lose any data, you can disable garbage collection by setting the `MEDIA_GC_DISABLED` environment variable to `true`.
+Garbage collection **can result in data loss**, as it will **delete any files inside the media folder** without an association in the database. For example if you set up a new, empty database. It is advisable to regularly back up your media just to be safe. Garbage collection can be turned off on the [configuration page](configuration.md#media).
 :::
 
-GameVault regularly cleans up its media in the database and filesystem to keep things tidy. We call this process garbage collection.
-
-You can control how often the garbage colletion happens by changing the value of `MEDIA_GC_INTERVAL_IN_MINUTES`.
+GameVault regularly cleans up its media in the database and filesystem to keep things tidy. We call this process garbage collection. The interval is configured on the [configuration page](configuration.md#media).
 
 During cleanup, GameVault first gets rid of all media in the database that aren't used. Afterwards, it deletes all media files in the media folder that don't match any database entries. So please don't put any files in the media folder that you don't want to be deleted.
 
 ### Turning off Garbage Collection
 
-If you want to turn off this feature, you can disableit by setting the `MEDIA_GC_DISABLED` environment variable to `true`.
+Set `MEDIA_GC_DISABLED` to `true`; see [MEDIA](configuration.md#media).
