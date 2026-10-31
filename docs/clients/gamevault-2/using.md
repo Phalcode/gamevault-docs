@@ -200,9 +200,23 @@ activation state.
 ## Gamepad navigation
 
 GameVault 2 supports gamepad navigation, which is what you want on a Steam Deck
-or a couch setup. The D-pad or left stick moves the focus ring, **A** activates
-the focused element and **B** goes back. The same navigation works in the Web UI
-when the browser exposes the Gamepad API.
+or a couch setup. It follows console conventions, and the control hints appear
+while a controller is connected and in use:
+
+| Input | Action |
+| --- | --- |
+| D-pad / left stick | Move the focus ring. Tapping moves one step; holding accelerates through a shelf. |
+| **A** | Select the focused element. |
+| **B** | Go back, close a menu or dialog. While a game card's actions are open, it returns to the card. |
+| **X** | Open or cycle a game card's actions (bookmark, settings, play or download). |
+| **LB / RB** | Switch to the previous or next section in the sidebar. |
+| **LT / RT** | Page up or page down. |
+| Right stick | Scroll the focused list smoothly. |
+| **Start** | Jump between the sidebar and the page content. |
+
+Menus and dialogs keep the navigation inside themselves, and going back to the
+library restores the focus to the card you opened. The same navigation works in
+the Web UI when the browser exposes the Gamepad API.
 
 ## Minimising and exiting
 
