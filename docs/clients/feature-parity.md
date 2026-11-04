@@ -62,29 +62,29 @@ Everything else can move to [GameVault 2](gamevault-2/overview.md).
 
 ## Game details and metadata
 
-| Feature                                          | GameVault 2 | GameVault 1 | Notes                                                           |
-| ------------------------------------------------ | ----------- | ----------- | --------------------------------------------------------------- |
-| Media player                                     | ✅          | ✅          | Trailers, videos, screenshots                                   |
-| Markdown descriptions                            | ✅          | ✅          |                                                                 |
-| Progress states                                  | ✅          | ✅          |                                                                 |
-| Community progress                               | ✅          | ✅          |                                                                 |
-| Multiple versions and version picker             | ✅          | ❌          | GameVault 1 always downloads the server default                 |
-| Edit images (editor role)                        | ✅          | ✅          |                                                                 |
-| Metadata remap and custom metadata (editor role) | ✅          | ✅          |                                                                 |
-| Per-game executable and launch overrides         | ✅          | ✅          | Applies server-wide                                             |
-| Desktop shortcuts                                | ❌          | ✅          | [#55](https://github.com/Phalcode/gamevault-frontend/issues/55) |
-| Uninstall and disk usage                         | ✅          | ✅          |                                                                 |
+| Feature                                          | GameVault 2 | GameVault 1 | Notes                                                             |
+| ------------------------------------------------ | ----------- | ----------- | ----------------------------------------------------------------- |
+| Media player                                     | ✅          | ✅          | Trailers, videos, screenshots                                     |
+| Markdown descriptions                            | ✅          | ✅          |                                                                   |
+| Progress states                                  | ✅          | ✅          |                                                                   |
+| Community progress                               | ✅          | ✅          |                                                                   |
+| Multiple versions and version picker             | ✅          | ❌          | GameVault 1 always downloads the server default                   |
+| Edit images (editor role)                        | ✅          | ✅          |                                                                   |
+| Metadata remap and custom metadata (editor role) | ✅          | ✅          |                                                                   |
+| Per-game executable and launch overrides         | ✅          | ✅          | Applies server-wide                                               |
+| Desktop shortcuts                                | ✅          | ✅          | Created from Game Settings → Launch Options, removed on uninstall |
+| Uninstall and disk usage                         | ✅          | ✅          |                                                                   |
 
 ## Downloads and installation
 
-| Feature                               | GameVault 2 | GameVault 1 | Notes                                                                                                                   |
-| ------------------------------------- | ----------- | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Download queue                        | ✅          | ✅          |                                                                                                                         |
-| Extraction and automatic installation | ✅          | ✅          |                                                                                                                         |
-| Default extraction passwords          | ❌          | ✅          | GameVault 2 will try multiple saved passwords in order, [#61](https://github.com/Phalcode/gamevault-frontend/issues/61) |
-| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step                                                                        |
-| Choose download and install folders   | ✅          | ✅          |                                                                                                                         |
-| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated                                                                           |
+| Feature                               | GameVault 2 | GameVault 1 | Notes                                                                                                      |
+| ------------------------------------- | ----------- | ----------- | ---------------------------------------------------------------------------------------------------------- |
+| Download queue                        | ✅          | ✅          |                                                                                                            |
+| Extraction and automatic installation | ✅          | ✅          |                                                                                                            |
+| Default extraction passwords          | ✅          | ✅          | Sets the archive passwords tried in order, [#61](https://github.com/Phalcode/gamevault-frontend/issues/61) |
+| Auto-delete source files              | ✅          | ⚠️          | GameVault 1 offers a manual "clear remains" step                                                           |
+| Choose download and install folders   | ✅          | ✅          |                                                                                                            |
+| Versioned folder layout               | ✅          | ⚠️          | GameVault 2 keeps title and version separated                                                              |
 
 ## Launching and operating systems
 
@@ -113,6 +113,7 @@ Everything else can move to [GameVault 2](gamevault-2/overview.md).
 | Feature                             | GameVault 2 | GameVault 1 | Notes                                                                               |
 | ----------------------------------- | ----------- | ----------- | ----------------------------------------------------------------------------------- |
 | Light, dark, system theme           | ✅          | ✅          |                                                                                     |
+| Interface translation               | ✅          | ❌          | Local Mozilla engine, works offline after the one-time model download               |
 | Custom and premium themes           | ❌          | ✅          | GameVault+ feature, [#49](https://github.com/Phalcode/gamevault-frontend/issues/49) |
 | Ignore list                         | ✅          | ✅          |                                                                                     |
 | Clear image cache                   | ✅          | ✅          |                                                                                     |
@@ -126,16 +127,16 @@ GameVault+ is currently available in GameVault 1 only. The
 [GameVault+ documentation](../gamevault-plus/introduction.md) describes the
 features themselves.
 
-| Feature                            | GameVault 2 | GameVault 1 | Notes                                                                                                           |
-| ---------------------------------- | ----------- | ----------- | --------------------------------------------------------------------------------------------------------------- |
-| Account sign-in and license        | ❌          | ✅          | [#46](https://github.com/Phalcode/gamevault-frontend/issues/46)                                                 |
-| Cloud saves (Ludusavi)             | ❌          | ✅          | [#47](https://github.com/Phalcode/gamevault-frontend/issues/47)                                                 |
-| Multiple profiles                  | ❌          | ✅          | [#48](https://github.com/Phalcode/gamevault-frontend/issues/48)                                                 |
-| Premium and custom themes          | ❌          | ✅          | [#49](https://github.com/Phalcode/gamevault-frontend/issues/49)                                                 |
-| Steam integration                  | ❌          | ✅          | [#50](https://github.com/Phalcode/gamevault-frontend/issues/50)                                                 |
-| Discord Rich Presence              | ❌          | ✅          | [#51](https://github.com/Phalcode/gamevault-frontend/issues/51)                                                 |
-| Playnite integration               | ❌          | ✅          | [#52](https://github.com/Phalcode/gamevault-frontend/issues/52)                                                 |
-| Client APIs (CLI, URI, named pipe) | ⚠️          | ✅          | GameVault 2 handles `gamevault://install` only, [#53](https://github.com/Phalcode/gamevault-frontend/issues/53) |
+| Feature                            | GameVault 2 | GameVault 1 | Notes                                                                                                                           |
+| ---------------------------------- | ----------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Account sign-in and license        | ❌          | ✅          | [#46](https://github.com/Phalcode/gamevault-frontend/issues/46)                                                                 |
+| Cloud saves (Ludusavi)             | ❌          | ✅          | [#47](https://github.com/Phalcode/gamevault-frontend/issues/47)                                                                 |
+| Multiple profiles                  | ❌          | ✅          | [#48](https://github.com/Phalcode/gamevault-frontend/issues/48)                                                                 |
+| Premium and custom themes          | ❌          | ✅          | [#49](https://github.com/Phalcode/gamevault-frontend/issues/49)                                                                 |
+| Steam integration                  | ❌          | ✅          | [#50](https://github.com/Phalcode/gamevault-frontend/issues/50)                                                                 |
+| Discord Rich Presence              | ❌          | ✅          | [#51](https://github.com/Phalcode/gamevault-frontend/issues/51)                                                                 |
+| Playnite integration               | ❌          | ✅          | [#52](https://github.com/Phalcode/gamevault-frontend/issues/52)                                                                 |
+| Client APIs (CLI, URI, named pipe) | ⚠️          | ✅          | GameVault 2 handles `gamevault://show` and `gamevault://start`, [#53](https://github.com/Phalcode/gamevault-frontend/issues/53) |
 
 ## Keeping this page current
 

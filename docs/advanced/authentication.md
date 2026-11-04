@@ -45,6 +45,10 @@ You can generate a Bearer token using one of the login endpoints:
 
 On success, both methods return an `access_token` and `refresh_token`. You can use the access token for authenticated requests to the GameVault API. The refresh token can be used to request a new access token when the current one expires.
 
+### Failed logins and rate limiting
+
+Login errors do not reveal whether a username exists, and both cases take the same amount of time. Failed password logins are also rate limited per client address and username. Successful logins and token refreshes do not count against the limit. Rate limiting is on by default and can be tuned with the `AUTH_RATE_LIMIT` variables on the [Configuration](../server/configuration.md#auth) page.
+
 ### Token Expiration
 
 Generated access tokens are valid for **5 minutes**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server/configuration.md) page.
@@ -56,6 +60,8 @@ When your access token expires, request a new token pair using your refresh toke
 ### Revoking Tokens
 
 You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your refresh token. This will effectively log out the user, by blocking future token refreshes.
+
+Access tokens stay valid until they expire, because they are checked without a database lookup. Enable `AUTH_ACCESS_TOKEN_SESSION_BINDING_ENABLED` on the [Configuration](../server/configuration.md#auth) page to bind every access token to its session, so revoking a session also invalidates the access tokens that belong to it.
 
 ## API-Key Authentication (Machine-to-Machine)
 
@@ -128,6 +134,10 @@ Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requir
    ```
 
 7. Authentication is now complete. Use the provided access token for authenticated requests to the GameVault API.
+
+### Verifying the ID token
+
+Without further settings GameVault reads the user data from the `id_token` without checking its signature. Set the issuer URL, and a JWKS URL when your provider's discovery document is unavailable, plus `AUTH_OAUTH2_VERIFY_ID_TOKEN` to have the server verify the token's signature, issuer and audience. Nonce checking is part of that verification and rejects tokens that do not carry the nonce from the authorization request. All four switches are described under [AUTH](../server/configuration.md#auth).
 
 ### Examples
 

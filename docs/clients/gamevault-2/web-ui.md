@@ -17,6 +17,7 @@ local automation: extraction, installation, launching and playtime tracking.
 | Progress, community, profiles          | ✅                | ✅                           |
 | Administration                         | ✅                | ✅                           |
 | Streamer / OPSEC mode                  | ✅                | ✅                           |
+| Interface translation                  | ✅ local engine   | ⚠️ browser translation       |
 | Download game files                    | ✅ download queue | ✅ direct browser download   |
 | Playtime tracking while playing        | ✅                | ❌                           |
 | Extract and install games              | ✅ automatic      | ❌ manual                    |
@@ -29,6 +30,11 @@ The Web UI fits browsing your library from another device, checking what your
 community is playing, or doing administrative work without installing anything.
 If you need installation or playtime tracking, use the
 [desktop app](installation.md).
+
+The page is served in English and declares itself translatable, so the
+browser's own translation works on it. Passwords, server addresses, file paths
+and version numbers are marked as untranslated, so technical details survive
+translation unchanged.
 
 ## Opening the Web UI
 

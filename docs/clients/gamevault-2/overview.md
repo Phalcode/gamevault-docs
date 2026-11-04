@@ -20,6 +20,7 @@ using [GameVault 1](../gamevault-1/overview.md) for now.
 - Browse, search, filter and bookmark your server's library.
 - Download games, choose between versions, extract and install them.
 - Launch games, track playtime and report progress to the server.
+- Saved archive passwords, desktop shortcuts and local interface translation.
 - Native Linux support with umu-launcher, per-game Proton prefixes and
   gamepad navigation.
 - A built-in updater with stable, early-access and unstable channels.
