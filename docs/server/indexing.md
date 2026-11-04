@@ -67,7 +67,7 @@ Use these two settings to skip files/folders during directory-based scans (start
 - `GAMES_SEARCH_EXCLUDE_FILE_REGEX`: matches against the **file name** only (for example `MyGame Demo.zip`).
 - `GAMES_SEARCH_EXCLUDE_DIR_REGEX`: matches against each **directory name** only while scanning recursively (for example `screenshots`).
 
-Patterns use JavaScript `RegExp` syntax.
+Patterns use JavaScript `RegExp` syntax. Both settings are listed under [GAMES](configuration.md#games).
 
 ### Examples
 

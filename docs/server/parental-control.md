@@ -36,7 +36,8 @@ New users are then asked for their birth date during registration.
 ## Changing the age of majority
 
 Below the age of majority a user cannot change their own birth date; an admin has
-to set it. The default comes from `PARENTAL_AGE_OF_MAJORITY`, which is `18`.
+to set it. The default comes from `PARENTAL_AGE_OF_MAJORITY`; see
+[PARENTAL](configuration.md#parental).
 
 ## Overriding the age rating of a game
 

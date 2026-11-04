@@ -13,13 +13,20 @@ Where the files end up is described under [data locations](data.md).
 
 The library shows every game your server offers and the ones you already have
 installed. Use the search, filter and sort controls above the grid; bookmarks
-collect the games you keep coming back to.
+collect the games you keep coming back to. The list opens sorted by **Recent**:
+installed games by when you last played or installed them, the server library by
+newest additions. Picking another sort is remembered. The dice button in the
+toolbar opens a random game from the whole library, ignoring the active filters.
+The same controls apply to the **Installed games** section, and they keep
+working while the server is unreachable because the client reads the cached game
+data.
 
 ![GameVault 2 library with three installed games above the server games](/img/screenshots/2026-10-26/Library/Library_GamesInstalled.webp "Installed games are listed above the server library")
 
 The game page adds the media player for trailers and screenshots, the full
 description, the progress of every user, and buttons to download or launch the
-game.
+game. With [interface translation](settings.md#appearance) turned on, the
+description and notes get a **Translate** button that translates them on demand.
 
 ![Game page with trailer player, playtime statistics and metadata sidebar](/img/screenshots/2026-10-26/Game/GameView.webp "The game page brings media player, progress and metadata together")
 
@@ -54,6 +61,15 @@ GameVault serves games as archives, so a download has to be extracted before it
 can be installed. Press **Extract** after the download finishes. The progress
 bar shows the extraction progress and an estimate; large or heavily compressed
 games take longer.
+
+Archives can be password protected. When one is, the download card asks for the
+password and tells you which passwords were already tried: a password you type
+on the card first, then your
+[default extraction passwords](settings.md#downloads) in their configured order.
+Tick **Save this password for future downloads** to add the one that worked to
+that list, which lets auto-extract unpack protected downloads unattended. When
+none of the passwords open the archive, GameVault asks again instead of failing
+silently.
 
 If extraction fails, the client shows the error and offers a retry. Retrying
 needs the archive, so do not delete it first. Repeated failures usually mean a
@@ -118,7 +134,10 @@ tabs change things on your computer:
 
 - **Installation**: installation folder, uninstall and disk usage.
 - **Game files**: the files on the server. Only admins can delete them.
-- **Launch options**: executable, launch parameters, run as administrator.
+- **Launch options**: executable, launch parameters, run as administrator and
+  **Create Desktop Shortcut**. The shortcut starts the game directly and uses the
+  executable's icon, or the cover when the executable has none. Uninstalling the
+  last installed version removes it again.
 
 ![Installation tab with the install path, uninstall button and disk usage ring](/img/screenshots/2026-10-26/Game/Settings/Installation.webp "Installation tab: path, uninstall and disk usage")
 
@@ -198,9 +217,23 @@ activation state.
 ## Gamepad navigation
 
 GameVault 2 supports gamepad navigation, which is what you want on a Steam Deck
-or a couch setup. The D-pad or left stick moves the focus ring, **A** activates
-the focused element and **B** goes back. The same navigation works in the Web UI
-when the browser exposes the Gamepad API.
+or a couch setup. It follows console conventions, and the control hints appear
+while a controller is connected and in use:
+
+| Input              | Action                                                                                         |
+| ------------------ | ---------------------------------------------------------------------------------------------- |
+| D-pad / left stick | Move the focus ring. Tapping moves one step; holding accelerates through a shelf.              |
+| **A**              | Select the focused element.                                                                    |
+| **B**              | Go back, close a menu or dialog. While a game card's actions are open, it returns to the card. |
+| **X**              | Open or cycle a game card's actions (bookmark, settings, play or download).                    |
+| **LB / RB**        | Switch to the previous or next section in the sidebar.                                         |
+| **LT / RT**        | Page up or page down.                                                                          |
+| Right stick        | Scroll the focused list smoothly.                                                              |
+| **Start**          | Jump between the sidebar and the page content.                                                 |
+
+Menus and dialogs keep the navigation inside themselves, and going back to the
+library restores the focus to the card you opened. The same navigation works in
+the Web UI when the browser exposes the Gamepad API.
 
 ## Minimising and exiting
 

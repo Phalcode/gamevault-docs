@@ -35,10 +35,18 @@ Ways to help that need no code:
 For code, open a pull request in the repository you want to change. For bugs and
 ideas, open an issue with enough detail to reproduce the problem.
 
-Before contributing code, read and accept the terms in the project's
-`CONTRIBUTING.md`. They name Phalcode® as owner of your contribution and
-transfer the rights to us, which keeps licensing and monetisation of the project
-clear.
+Before submitting code, documentation, or other copyrightable material for inclusion,
+review the Contributor License Agreement in the relevant repository:
+
+- [Application](https://github.com/Phalcode/gamevault-app/blob/develop/CONTRIBUTING.md#contributor-license-agreement-cla)
+- [Frontend](https://github.com/Phalcode/gamevault-frontend/blob/develop/CONTRIBUTING.md#contributor-license-agreement-cla)
+- [Backend](https://github.com/Phalcode/gamevault-backend/blob/develop/CONTRIBUTING.md#contributor-license-agreement-cla)
+- [Documentation](https://github.com/Phalcode/gamevault-docs/blob/develop/CONTRIBUTING.md#contributor-license-agreement-cla)
+
+You retain ownership of your contribution and grant Phalcode the rights described
+in that agreement, including sublicensing, relicensing, and commercial distribution.
+Knowingly submitting a contribution after receiving clear notice of the agreement
+and an opportunity to review it indicates acceptance of its terms.
 
 ## Publishing Adaptations of GameVault
 

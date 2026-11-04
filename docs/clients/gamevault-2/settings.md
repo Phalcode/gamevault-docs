@@ -19,6 +19,10 @@ sense in a browser.
   per-game structure is described under [data locations](data.md#games-and-downloads).
 - **Download speed limit**: bandwidth cap in KB/s, `0` means unlimited.
 - **Auto-extract downloads**: unpack archives right after download.
+- **Default extraction passwords**: passwords your game archives may use,
+  tried in order when an archive is protected. A password typed on a download
+  card goes first; see [extracting](using.md#extracting). The list is kept per
+  server and account.
 - **Auto-install games**: start installers or copy portable games
   automatically, and mark files executable where needed.
 - **Auto-delete source files**: remove archives and extracted files after a
@@ -31,6 +35,13 @@ sense in a browser.
 - **Zoom**: scale the interface.
 - **Streamer / OPSEC mode**: mask user names, emails and the server URL; see
   [OPSEC mode](opsec-mode.md).
+- **Interface translation**: translate the interface into your language with
+  Mozilla's translation engine running on your computer. The model for the
+  chosen language is downloaded once and works offline afterwards; **Off**
+  restores the English original. Titles, tags, descriptions, notes and user
+  names stay untranslated, and passwords, server addresses, file paths and
+  version numbers are never translated. This is a desktop app setting; the Web
+  UI relies on your browser's translation instead.
 - **Smooth scrolling** and **hardware acceleration**: rendering switches for
   Linux/WebKitGTK systems.
 
@@ -46,7 +57,9 @@ volume.
 ## Startup
 
 - **Launch GameVault on computer startup**.
-- **Minimize to system tray on startup**.
+- **Minimize to system tray on startup**: stays in the tray only when the
+  autostart entry opens GameVault. Starting GameVault yourself always shows the
+  window.
 
 ![Startup settings with the two toggles for autostart and tray mode](/img/screenshots/2026-10-26/Settings/Startup.webp)
 
@@ -65,7 +78,11 @@ volume.
 
 ## Privacy
 
-- **Usage analytics**: anonymous usage statistics. Off means no telemetry.
+- **Usage analytics**: anonymous usage statistics, feature usage, error reports
+  and sampled session replays with text masked. Off stops every request
+  immediately, and the choice is kept in the app settings, so it survives
+  updates. Reports go to the first collector that answers and never contain
+  search terms, titles, file paths or server addresses.
 
 ## About
 

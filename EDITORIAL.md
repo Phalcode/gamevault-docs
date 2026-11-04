@@ -105,6 +105,15 @@ the body or a troubleshooting section.
 - When a page moves, add a redirect entry in `docusaurus.config.js`.
 - Check `pnpm build`: it fails on broken links and anchors.
 
+## Configuration variables
+
+`docs/server/configuration.md` is the only page that documents environment
+variables, defaults and possible values. Other pages link to the matching
+section (`configuration.md#web-ui`, `configuration.md#volumes`, ...) instead of
+repeating a table or restating a default. Setup pages may still show concrete
+Compose or environment snippets, because those are examples rather than
+reference.
+
 ## Legacy content
 
 GameVault 1 is maintenance-only. Legacy pages must:

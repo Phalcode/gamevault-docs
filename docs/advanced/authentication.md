@@ -46,6 +46,10 @@ You can generate a Bearer token using one of the login endpoints:
 
 On success, both methods return an `access_token` and `refresh_token`. You can use the access token for authenticated requests to the GameVault API. The refresh token can be used to request a new access token when the current one expires.
 
+### Failed logins and rate limiting
+
+Login errors do not reveal whether a username exists, and both cases take the same amount of time. Failed password logins are also rate limited per client address and username: after `AUTH_RATE_LIMIT_MAX_ATTEMPTS` failures inside `AUTH_RATE_LIMIT_WINDOW_SECONDS`, the server answers with `429 Too Many Requests` and a `Retry-After` header. Successful logins, token refreshes and SSO logins are never limited. The counters live in memory, so each server process tracks its own. Rate limiting is on by default and can be tuned with the `AUTH_RATE_LIMIT` variables on the [Configuration](../server/configuration.md#auth) page.
+
 ### Token Expiration
 
 Generated access tokens are valid for **5 minutes**, and refresh tokens for **30 days**. These durations can be adjusted on the [Configuration](../server/configuration.md) page.
@@ -57,6 +61,8 @@ When your access token expires, request a new token pair using your refresh toke
 ### Revoking Tokens
 
 You can revoke a token by calling the `POST /api/auth/revoke` endpoint with your refresh token. This will effectively log out the user, by blocking future token refreshes.
+
+Access tokens stay valid until they expire, because they are checked without a database lookup. Enable `AUTH_ACCESS_TOKEN_SESSION_BINDING_ENABLED` on the [Configuration](../server/configuration.md#auth) page to bind every access token to its session, so revoking a session also invalidates the access tokens that belong to it.
 
 ## API-Key Authentication (Machine-to-Machine)
 
@@ -130,6 +136,24 @@ Setting up single sign-on (SSO) using OAuth2 authentication for GameVault requir
 
 7. Authentication is now complete. Use the provided access token for authenticated requests to the GameVault API.
 
+### Verifying the ID token
+
+Without further settings GameVault reads the user data from the `id_token` without checking its signature. For OpenID Connect providers switch verification on:
+
+```env
+AUTH_OAUTH2_ISSUER_URL=https://auth.example.com/application/o/gamevault
+AUTH_OAUTH2_VERIFY_ID_TOKEN=true
+```
+
+GameVault then fetches the JWKS through OpenID Connect discovery
+(`{issuer}/.well-known/openid-configuration`, or the configured
+`AUTH_OAUTH2_JWKS_URL`), verifies signature, `iss`, `aud` and expiry, and sends a
+`nonce` with the authorization request that has to come back inside the
+`id_token`. If your provider does not echo the nonce, set
+`AUTH_OAUTH2_REQUIRE_NONCE=false`. Providers that return no `id_token` at all
+keep working: the server logs a warning and falls back to the decoded claims.
+All four switches are described under [AUTH](../server/configuration.md#auth).
+
 ### Examples
 
 You can find working example configurations for popular identity providers below to get an idea of how to set them up.
@@ -158,21 +182,6 @@ AUTH_OAUTH2_USERINFO_URL=https://discord.com/api/users/@me
 ### Debugging OAuth2 Authentication
 
 You can set the environment variable `SERVER_LOG_LEVEL` environment variable to `debug` to receive detailed logs about the authentication process.
-
-### Verifying the id_token
-
-By default GameVault reads the identity claims out of the token response without checking the signature of the `id_token`. For OpenID Connect providers you can switch on verification:
-
-```env
-AUTH_OAUTH2_ISSUER_URL=https://auth.example.com/application/o/gamevault
-AUTH_OAUTH2_VERIFY_ID_TOKEN=true
-```
-
-GameVault then fetches the JWKS through OpenID Connect discovery (`{issuer}/.well-known/openid-configuration`), verifies signature, `iss`, `aud` and expiry, and sends a `nonce` with the authorization request that has to come back inside the `id_token`. If your provider does not echo the nonce, set `AUTH_OAUTH2_REQUIRE_NONCE=false`. Providers that return no `id_token` at all keep working: GameVault logs a warning and falls back to the decoded claims.
-
-### Login rate limit
-
-Repeated failed password logins are throttled per client address and username. After `AUTH_RATE_LIMIT_MAX_ATTEMPTS` failures inside `AUTH_RATE_LIMIT_WINDOW_SECONDS`, the server answers with `429 Too Many Requests` and a `Retry-After` header. Successful logins, token refreshes and SSO logins are never limited. Disable it with `AUTH_RATE_LIMIT_ENABLED=false`. The counters live in memory, so each server process tracks its own.
 
 ### Limitations
 
