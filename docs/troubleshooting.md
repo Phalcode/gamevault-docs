@@ -31,6 +31,30 @@ complete log file. Never paste secrets; replace them with `**REDACTED**`.
 - A `500` response usually points to a server-side problem. Check the server
   logs before changing client settings.
 
+## Downloads fail behind an internal certificate authority
+
+A server behind a reverse proxy with certificates from your own CA works only
+when the client machine trusts that CA. GameVault 2 signs in through the system
+browser engine, but downloads, playtime sync and native image requests use the
+system trust store directly, so install the root certificate where the operating
+system expects it:
+
+- **Windows**: import the root certificate under _Trusted Root Certification
+  Authorities_ for the local machine (`certlm.msc`) or the current user
+  (`certmgr.msc`).
+- **Linux**: copy it to `/usr/local/share/ca-certificates/` and run
+  `sudo update-ca-certificates`.
+- **macOS**: add it to the _System_ keychain and set it to _Always Trust_.
+
+Signing in succeeds while downloads fail when the certificate is only trusted
+for the current user or only by the browser, so check the machine-wide store.
+The download card shows the reason, for example `invalid peer certificate:
+UnknownIssuer`, which means that machine still does not trust the CA.
+
+Pointing the client at the server IP over `http://` skips TLS entirely. Use it
+only to confirm the cause on a network you trust, since credentials and file
+names then travel unencrypted.
+
 ## The first admin account does not work
 
 Register the first user after the server starts. The first registered account is
